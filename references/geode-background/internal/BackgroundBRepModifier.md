@@ -46,7 +46,7 @@ public BackgroundSolidModifier & solid_modifier(const Block3D & block)
 ### modifiable_solid
 
 ```cpp
-public ModifiableObject modifiable_solid(const Block3D & block)
+public ModifiableBackgroundSolid modifiable_solid(const Block3D & block)
 ```
 
 

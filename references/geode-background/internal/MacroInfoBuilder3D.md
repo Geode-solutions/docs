@@ -39,7 +39,7 @@ public void ~MacroInfoBuilder3D()
 ### add_macro_facet_info
 
 ```cpp
-public void add_macro_facet_info(const MeshPolygon & macro_facet, Span background_solid_facets_id)
+public void add_macro_facet_info(const MeshPolygon & macro_facet, absl::Span<const index_t> background_solid_facets_id)
 ```
 
 
@@ -60,21 +60,21 @@ public void remove_macro_facet_info(const MeshPolygon & macro_facet, index_t bac
 ### update_information
 
 ```cpp
-public void update_information(const class TetrahedralSolidModifier::SplitInfo & split_info)
+public void update_information(const TetrahedralSolidModifier::SplitInfo & split_info)
 ```
 
 
 ### update_information
 
 ```cpp
-public void update_information(const class TetrahedralSolidModifier::SplitEdgeInfo & split_info)
+public void update_information(const TetrahedralSolidModifier::SplitEdgeInfo & split_info)
 ```
 
 
 ### update_information
 
 ```cpp
-public void update_information(const class TetrahedralSolidModifier::CollapseEdgeInfo & collapse_info)
+public void update_information(const TetrahedralSolidModifier::CollapseEdgeInfo & collapse_info)
 ```
 
 
@@ -95,7 +95,7 @@ public void update_facet(const FacetMultiMapping & mapping)
 ### update_facets
 
 ```cpp
-public void update_facets(Span mappings)
+public void update_facets(absl::Span<const FacetMultiMapping> mappings)
 ```
 
 
@@ -109,7 +109,7 @@ public void update_facet(const FacetMapping & mapping)
 ### update_facets
 
 ```cpp
-public void update_facets(Span mappings)
+public void update_facets(absl::Span<const FacetMapping> mappings)
 ```
 
 

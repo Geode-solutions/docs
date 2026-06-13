@@ -53,21 +53,21 @@ public const EdgedCurve1D & line()
 ### clone
 
 ```cpp
-public tuple clone()
+public std::tuple<std::unique_ptr<EdgedCurve1D>, std::unique_ptr<BackgroundLine>> clone()
 ```
 
 
 ### clone_line
 
 ```cpp
-public unique_ptr clone_line()
+public std::unique_ptr<EdgedCurve1D> clone_line()
 ```
 
 
 ### macro_edge_path
 
 ```cpp
-public optional macro_edge_path(const std::array<index_t, 2> & edge_vertices, const MeshEdge & macro_edge)
+public std::optional<std::vector<index_t>> macro_edge_path(const std::array<index_t, 2> & edge_vertices, const MeshEdge & macro_edge)
 ```
 
 

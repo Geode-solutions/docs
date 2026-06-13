@@ -46,7 +46,7 @@ public const std::array<index_t, 2> & edge_vertices(index_t edge_id)
 ### common_macro_edges
 
 ```cpp
-public vector common_macro_edges(index_t vertex, index_t other_vertex)
+public std::vector<MeshEdge> common_macro_edges(index_t vertex, index_t other_vertex)
 ```
 
 
@@ -60,7 +60,7 @@ public void add_macro_edge_to_background_mesh_edge(const MeshEdge & macro_edge, 
 ### add_macro_edge_to_background_mesh_vertices
 
 ```cpp
-public void add_macro_edge_to_background_mesh_vertices(const MeshEdge & macro_edge, Span background_mesh_vertex_ids, MacroEdgesKey )
+public void add_macro_edge_to_background_mesh_vertices(const MeshEdge & macro_edge, absl::Span<const index_t> background_mesh_vertex_ids, MacroEdgesKey )
 ```
 
 

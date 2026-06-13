@@ -17,7 +17,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public std::vector<BackgroundPointIntersection<dimension> > sub_edge_boundaries
+public std::vector<BackgroundPointIntersection<dimension>> sub_edge_boundaries
 
 ```
 
@@ -29,20 +29,6 @@ public std::vector<SUB_EDGE_LOCATION> sub_edges_locations
 
 
 ## Functions
-
-### MacroEdgeInsertionInfo
-
-```cpp
-public void MacroEdgeInsertionInfo<dimension>()
-```
-
-
-### MacroEdgeInsertionInfo
-
-```cpp
-public void MacroEdgeInsertionInfo<dimension>(const Mesh & mesh, const BackgroundEdgeVertices & edge_vertices)
-```
-
 
 ### update_vertices
 
@@ -62,6 +48,20 @@ public void sort(const Segment<dimension> & segment)
 
 ```cpp
 public INSERTION_STATUS insertion_status(const Segment<dimension> & segment)
+```
+
+
+### MacroEdgeInsertionInfo
+
+```cpp
+public void MacroEdgeInsertionInfo<dimension>()
+```
+
+
+### MacroEdgeInsertionInfo
+
+```cpp
+public void MacroEdgeInsertionInfo<dimension>(const Mesh & mesh, const BackgroundEdgeVertices & edge_vertices)
 ```
 
 

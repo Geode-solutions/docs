@@ -46,7 +46,7 @@ public void DetermineSplitsOrderException()
 ### DetermineSplitsOrderException
 
 ```cpp
-public void DetermineSplitsOrderException(queue element2split_in)
+public void DetermineSplitsOrderException(std::queue<SurfaceElement2Split> element2split_in)
 ```
 
 

@@ -25,6 +25,13 @@ Inherits from BRepGeometricConstraintModifier
 ### BackgroundBRepGeometricConstraintModifier
 
 ```cpp
+public void BackgroundBRepGeometricConstraintModifier(BackgroundBRepGeometricConstraintModifier && )
+```
+
+
+### BackgroundBRepGeometricConstraintModifier
+
+```cpp
 public void BackgroundBRepGeometricConstraintModifier(const BackgroundBRepGeometricConstraintModifier & )
 ```
 
@@ -33,13 +40,6 @@ public void BackgroundBRepGeometricConstraintModifier(const BackgroundBRepGeomet
 
 ```cpp
 public BackgroundBRepGeometricConstraintModifier & operator=(const BackgroundBRepGeometricConstraintModifier & )
-```
-
-
-### BackgroundBRepGeometricConstraintModifier
-
-```cpp
-public void BackgroundBRepGeometricConstraintModifier(BackgroundBRepGeometricConstraintModifier && )
 ```
 
 
@@ -53,7 +53,7 @@ public BackgroundBRepGeometricConstraintModifier & operator=(BackgroundBRepGeome
 ### BackgroundBRepGeometricConstraintModifier
 
 ```cpp
-public void BackgroundBRepGeometricConstraintModifier(ModifiableObject brep, BackgroundBRepBuilder & builder, Constraints constraints)
+public void BackgroundBRepGeometricConstraintModifier(ModifiableBackgroundBRep brep, BackgroundBRepBuilder & builder, Constraints constraints)
 ```
 
 
@@ -88,42 +88,42 @@ public BackgroundBRepBuilder & background_builder()
 ### swap_edge
 
 ```cpp
-public flat_hash_map swap_edge(const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex, const BRepEdgeTShape & tshapes)
+public absl::flat_hash_map<uuid, std::vector<index_t>> swap_edge(const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex, const BRepEdgeTShape & tshapes)
 ```
 
 
 ### swap_facet
 
 ```cpp
-public flat_hash_map swap_facet(const Block3D & block, const PolyhedronFacet & facet, const BRepFacetTShape & tshape_apexes)
+public absl::flat_hash_map<uuid, std::vector<index_t>> swap_facet(const Block3D & block, const PolyhedronFacet & facet, const BRepFacetTShape & tshape_apexes)
 ```
 
 
 ### split_collapse_edge
 
 ```cpp
-public flat_hash_map split_collapse_edge(const Block3D & block, const PolyhedronFacetEdge & edge, const index_t apex, const BRepEdgeTShape & tshapes)
+public absl::flat_hash_map<uuid, std::vector<index_t>> split_collapse_edge(const Block3D & block, const PolyhedronFacetEdge & edge, const index_t apex, const BRepEdgeTShape & tshapes)
 ```
 
 
 ### split_collapse_edge
 
 ```cpp
-public flat_hash_map split_collapse_edge(const Block3D & block, const PolyhedronFacetEdge & edge, const index_t apex, const Point3D & point, const BRepEdgeTShape & tshapes)
+public absl::flat_hash_map<uuid, std::vector<index_t>> split_collapse_edge(const Block3D & block, const PolyhedronFacetEdge & edge, const index_t apex, const Point3D & point, const BRepEdgeTShape & tshapes)
 ```
 
 
 ### split_collapse_facet
 
 ```cpp
-public flat_hash_map split_collapse_facet(const Block3D & block, const PolyhedronFacet & facet, const BRepFacetTShape & tshape_apexes)
+public absl::flat_hash_map<uuid, std::vector<index_t>> split_collapse_facet(const Block3D & block, const PolyhedronFacet & facet, const BRepFacetTShape & tshape_apexes)
 ```
 
 
 ### split_collapse_facet
 
 ```cpp
-public flat_hash_map split_collapse_facet(const Block3D & block, const PolyhedronFacet & facet, const Point3D & point, const BRepFacetTShape & tshape_apexes)
+public absl::flat_hash_map<uuid, std::vector<index_t>> split_collapse_facet(const Block3D & block, const PolyhedronFacet & facet, const Point3D & point, const BRepFacetTShape & tshape_apexes)
 ```
 
 

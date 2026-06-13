@@ -53,7 +53,7 @@ public CollapseEdgeInfo collapse_edge(index_t edge, const Point1D & point)
 ### clean_edges
 
 ```cpp
-public vector clean_edges()
+public std::vector<index_t> clean_edges()
 ```
 
 

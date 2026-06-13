@@ -25,17 +25,17 @@ public linked_hash_map info
 
 ## Functions
 
-### ElementInsertionInfo
-
-```cpp
-public void ElementInsertionInfo()
-```
-
-
 ### add
 
 ```cpp
 public void add(INSERTION_STATUS insertion_status, geode::index_t element_id)
+```
+
+
+### ElementInsertionInfo
+
+```cpp
+public void ElementInsertionInfo()
 ```
 
 

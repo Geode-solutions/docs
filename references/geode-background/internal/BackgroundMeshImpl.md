@@ -33,7 +33,7 @@ public const Mesh & mesh()
 ### clone
 
 ```cpp
-public std::tuple<std::unique_ptr<Mesh>, std::unique_ptr<Background> > clone()
+public std::tuple<std::unique_ptr<Mesh>, std::unique_ptr<Background>> clone()
 ```
 
 

@@ -91,6 +91,11 @@ public BijectiveMapping solid_to_mesh_facet_mapping
 
 ```
 
+```cpp
+public static const auto REMOVED_ATTRIBUTE_NAME
+
+```
+
 
 
 ## Functions
@@ -112,14 +117,14 @@ public CorafinatedSurface & operator=(const CorafinatedSurface & )
 ### CorafinatedSurface
 
 ```cpp
-public void CorafinatedSurface()
+public void CorafinatedSurface(CorafinatedSurface && other)
 ```
 
 
 ### CorafinatedSurface
 
 ```cpp
-public void CorafinatedSurface(CorafinatedSurface && other)
+public void CorafinatedSurface()
 ```
 
 
@@ -133,14 +138,14 @@ public void ~CorafinatedSurface()
 ### modifiable_surface
 
 ```cpp
-public ModifiableObject modifiable_surface()
+public ModifiableBackgroundSurface modifiable_surface()
 ```
 
 
 ### point3d
 
 ```cpp
-public Point point3d(index_t vertex)
+public Point3D point3d(index_t vertex)
 ```
 
 

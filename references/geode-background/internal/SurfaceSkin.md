@@ -82,14 +82,14 @@ public SurfaceSkin & operator=(const SurfaceSkin & )
 ### SurfaceSkin
 
 ```cpp
-public void SurfaceSkin(ModifiableObject solid)
+public void SurfaceSkin(ModifiableBackgroundSolid solid)
 ```
 
 
 ### SurfaceSkin
 
 ```cpp
-public void SurfaceSkin(ModifiableObject solid, std::unique_ptr<TriangulatedSurface2D> && mesh, const GenericMapping<index_t> & corafinated_vertex_mapping, bool solid_oriented)
+public void SurfaceSkin(ModifiableBackgroundSolid solid, std::unique_ptr<TriangulatedSurface2D> && mesh, const GenericMapping<index_t> & corafinated_vertex_mapping, bool solid_oriented)
 ```
 
 

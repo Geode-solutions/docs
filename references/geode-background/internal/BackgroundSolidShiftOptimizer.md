@@ -25,14 +25,14 @@ Inherits from TetrahedralSolidShiftOptimizer
 ### BackgroundSolidShiftOptimizer
 
 ```cpp
-public void BackgroundSolidShiftOptimizer(const BackgroundSolidShiftOptimizer & )
+public void BackgroundSolidShiftOptimizer(BackgroundSolidConstraintModifier & constraint_modifier, const TetrahedralSolidInternalDistanceImprovementSimulator & improvement_simulator)
 ```
 
 
-### operator=
+### BackgroundSolidShiftOptimizer
 
 ```cpp
-public BackgroundSolidShiftOptimizer & operator=(const BackgroundSolidShiftOptimizer & )
+public void BackgroundSolidShiftOptimizer(const BackgroundSolidShiftOptimizer & )
 ```
 
 
@@ -46,14 +46,14 @@ public void BackgroundSolidShiftOptimizer(BackgroundSolidShiftOptimizer && )
 ### operator=
 
 ```cpp
-public BackgroundSolidShiftOptimizer & operator=(BackgroundSolidShiftOptimizer && )
+public BackgroundSolidShiftOptimizer & operator=(const BackgroundSolidShiftOptimizer & )
 ```
 
 
-### BackgroundSolidShiftOptimizer
+### operator=
 
 ```cpp
-public void BackgroundSolidShiftOptimizer(BackgroundSolidConstraintModifier & constraint_modifier, const TetrahedralSolidInternalDistanceImprovementSimulator & improvement_simulator)
+public BackgroundSolidShiftOptimizer & operator=(BackgroundSolidShiftOptimizer && )
 ```
 
 

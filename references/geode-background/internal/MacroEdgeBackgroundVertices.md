@@ -30,17 +30,17 @@ public index_t end
 
 ## Functions
 
-### MacroEdgeBackgroundVertices
-
-```cpp
-public void MacroEdgeBackgroundVertices()
-```
-
-
 ### update_vertices
 
 ```cpp
 public void update_vertices(const VerticesModifier & modifier)
+```
+
+
+### MacroEdgeBackgroundVertices
+
+```cpp
+public void MacroEdgeBackgroundVertices()
 ```
 
 

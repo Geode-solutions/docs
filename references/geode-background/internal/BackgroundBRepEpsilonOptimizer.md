@@ -32,7 +32,7 @@ public void BackgroundBRepEpsilonOptimizer(BackgroundBRepGeometricConstraintModi
 ### optimize
 
 ```cpp
-public void optimize(Span tetrahedra)
+public void optimize(absl::Span<const BlockElement<index_t>> tetrahedra)
 ```
 
 

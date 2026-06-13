@@ -81,7 +81,7 @@ public BijectiveMapping<index_t> replace_vertex(index_t old_id, index_t new_id)
 ### clean_triangles
 
 ```cpp
-public vector clean_triangles()
+public std::vector<index_t> clean_triangles()
 ```
 
 

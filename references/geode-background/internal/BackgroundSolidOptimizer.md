@@ -29,17 +29,17 @@ public void BackgroundSolidOptimizer(const BackgroundSolidOptimizer & )
 ```
 
 
-### operator=
-
-```cpp
-public BackgroundSolidOptimizer & operator=(const BackgroundSolidOptimizer & )
-```
-
-
 ### BackgroundSolidOptimizer
 
 ```cpp
 public void BackgroundSolidOptimizer(BackgroundSolidOptimizer && )
+```
+
+
+### operator=
+
+```cpp
+public BackgroundSolidOptimizer & operator=(const BackgroundSolidOptimizer & )
 ```
 
 

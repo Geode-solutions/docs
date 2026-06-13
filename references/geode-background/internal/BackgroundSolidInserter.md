@@ -25,7 +25,7 @@ Options
 ### BackgroundSolidInserter
 
 ```cpp
-public void BackgroundSolidInserter(ModifiableObject solid, BackgroundSolidBuilder & builder, TetrahedralSolidBuilder3D & solid_builder, const Options & options)
+public void BackgroundSolidInserter(ModifiableBackgroundSolid solid, BackgroundSolidBuilder & builder, TetrahedralSolidBuilder3D & solid_builder, const Options & options)
 ```
 
 
@@ -53,7 +53,7 @@ public ElementInsertionInfo insert_surface(const TriangulatedSurface3D & mesh)
 ### insert_surface_triangles
 
 ```cpp
-public ElementInsertionInfo insert_surface_triangles(const TriangulatedSurface3D & mesh, Span triangle_ids)
+public ElementInsertionInfo insert_surface_triangles(const TriangulatedSurface3D & mesh, absl::Span<const index_t> triangle_ids)
 ```
 
 
@@ -67,7 +67,7 @@ public ElementInsertionInfo insert_curve(const EdgedCurve3D & mesh)
 ### insert_curve_edges
 
 ```cpp
-public ElementInsertionInfo insert_curve_edges(const EdgedCurve3D & mesh, Span edges_ids)
+public ElementInsertionInfo insert_curve_edges(const EdgedCurve3D & mesh, absl::Span<const index_t> edges_ids)
 ```
 
 
@@ -81,14 +81,14 @@ public ElementInsertionInfo insert_point_set(const PointSet3D & mesh)
 ### insert_point_set_points
 
 ```cpp
-public ElementInsertionInfo insert_point_set_points(const PointSet3D & mesh, Span vertex_ids)
+public ElementInsertionInfo insert_point_set_points(const PointSet3D & mesh, absl::Span<const index_t> vertex_ids)
 ```
 
 
 ### insert_scalar_function_isovalues
 
 ```cpp
-public void insert_scalar_function_isovalues(basic_string_view function_name, Span isovalues)
+public void insert_scalar_function_isovalues(std::string_view function_name, absl::Span<const double> isovalues)
 ```
 
 

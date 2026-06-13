@@ -53,14 +53,14 @@ public const TriangulatedSurface2D & surface()
 ### clone
 
 ```cpp
-public tuple clone()
+public std::tuple<std::unique_ptr<TriangulatedSurface2D>, std::unique_ptr<BackgroundSurface>> clone()
 ```
 
 
 ### clone_surface
 
 ```cpp
-public unique_ptr clone_surface()
+public std::unique_ptr<TriangulatedSurface2D> clone_surface()
 ```
 
 
@@ -81,21 +81,21 @@ public const std::array<index_t, 2> & edge_vertices(index_t edge_id)
 ### macro_edge_path
 
 ```cpp
-public optional macro_edge_path(const std::array<index_t, 2> & edge_vertices, const MeshEdge & macro_edge)
+public std::optional<std::vector<OrientedEdge>> macro_edge_path(const std::array<index_t, 2> & edge_vertices, const MeshEdge & macro_edge)
 ```
 
 
 ### macro_element_patch
 
 ```cpp
-public optional macro_element_patch(Span boundary_edges, const MeshElement & macro_element)
+public std::optional<std::vector<index_t>> macro_element_patch(absl::Span<const index_t> boundary_edges, const MeshElement & macro_element)
 ```
 
 
 ### common_macro_facets
 
 ```cpp
-public vector common_macro_facets(const std::array<index_t, 3> & facet_vertices)
+public std::vector<MeshElement> common_macro_facets(const std::array<index_t, 3> & facet_vertices)
 ```
 
 

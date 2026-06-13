@@ -29,17 +29,17 @@ public void BackgroundBRepInserter(const BackgroundBRepInserter & )
 ```
 
 
-### operator=
-
-```cpp
-public BackgroundBRepInserter & operator=(const BackgroundBRepInserter & )
-```
-
-
 ### BackgroundBRepInserter
 
 ```cpp
 public void BackgroundBRepInserter(BackgroundBRepInserter && )
+```
+
+
+### operator=
+
+```cpp
+public BackgroundBRepInserter & operator=(const BackgroundBRepInserter & )
 ```
 
 
@@ -53,7 +53,7 @@ public BackgroundBRepInserter & operator=(BackgroundBRepInserter && )
 ### BackgroundBRepInserter
 
 ```cpp
-public void BackgroundBRepInserter(ModifiableObject background_brep, BackgroundBRepBuilder & background_builder, BRepBuilder & builder, const Options & options)
+public void BackgroundBRepInserter(ModifiableBackgroundBRep background_brep, BackgroundBRepBuilder & background_builder, BRepBuilder & builder, const Options & options)
 ```
 
 
@@ -67,35 +67,35 @@ public void ~BackgroundBRepInserter()
 ### insert_curve
 
 ```cpp
-public linked_hash_map insert_curve(const EdgedCurve3D & mesh)
+public BlockElementInsertionInfo insert_curve(const EdgedCurve3D & mesh)
 ```
 
 
 ### insert_curve_edges
 
 ```cpp
-public linked_hash_map insert_curve_edges(const EdgedCurve3D & mesh, Span edges)
+public BlockElementInsertionInfo insert_curve_edges(const EdgedCurve3D & mesh, absl::Span<const index_t> edges)
 ```
 
 
 ### insert_surface
 
 ```cpp
-public linked_hash_map insert_surface(const TriangulatedSurface3D & mesh)
+public BlockElementInsertionInfo insert_surface(const TriangulatedSurface3D & mesh)
 ```
 
 
 ### insert_surface_triangles
 
 ```cpp
-public linked_hash_map insert_surface_triangles(const TriangulatedSurface3D & mesh, Span triangles)
+public BlockElementInsertionInfo insert_surface_triangles(const TriangulatedSurface3D & mesh, absl::Span<const index_t> triangles)
 ```
 
 
 ### insert_scalar_function_isovalues
 
 ```cpp
-public linked_hash_map insert_scalar_function_isovalues(basic_string_view function_name, Span isovalues)
+public absl::linked_hash_map<uuid, std::vector<MeshPolygon>> insert_scalar_function_isovalues(std::string_view function_name, absl::Span<const double> isovalues)
 ```
 
 

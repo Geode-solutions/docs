@@ -76,6 +76,11 @@ public BijectiveMapping solid_to_mesh_edge_mapping
 
 ```
 
+```cpp
+public static const auto REMOVED_ATTRIBUTE_NAME
+
+```
+
 
 
 ## Functions
@@ -97,14 +102,14 @@ public CorafinatedLine & operator=(const CorafinatedLine & )
 ### CorafinatedLine
 
 ```cpp
-public void CorafinatedLine()
+public void CorafinatedLine(CorafinatedLine && other)
 ```
 
 
 ### CorafinatedLine
 
 ```cpp
-public void CorafinatedLine(CorafinatedLine && other)
+public void CorafinatedLine()
 ```
 
 
@@ -118,14 +123,14 @@ public void ~CorafinatedLine()
 ### modifiable_line
 
 ```cpp
-public ModifiableObject modifiable_line()
+public ModifiableBackgroundLine modifiable_line()
 ```
 
 
 ### point3d
 
 ```cpp
-public Point point3d(index_t vertex)
+public Point3D point3d(index_t vertex)
 ```
 
 

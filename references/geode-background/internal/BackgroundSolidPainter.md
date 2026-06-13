@@ -33,7 +33,7 @@ public void ~BackgroundSolidPainter()
 ### paint_volume
 
 ```cpp
-public void paint_volume(const uuid & volume_uuid, Span bounding_surface_uuids, Span oriented_surfaces)
+public void paint_volume(const uuid & volume_uuid, absl::Span<const uuid> bounding_surface_uuids, absl::Span<const std::pair<std::reference_wrapper<const TriangulatedSurface3D>, bool>> oriented_surfaces)
 ```
 
 

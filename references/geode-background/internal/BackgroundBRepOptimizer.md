@@ -29,17 +29,17 @@ public void BackgroundBRepOptimizer(const BackgroundBRepOptimizer & )
 ```
 
 
-### operator=
-
-```cpp
-public BackgroundBRepOptimizer & operator=(const BackgroundBRepOptimizer & )
-```
-
-
 ### BackgroundBRepOptimizer
 
 ```cpp
 public void BackgroundBRepOptimizer(BackgroundBRepOptimizer && )
+```
+
+
+### operator=
+
+```cpp
+public BackgroundBRepOptimizer & operator=(const BackgroundBRepOptimizer & )
 ```
 
 

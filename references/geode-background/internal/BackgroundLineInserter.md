@@ -19,7 +19,7 @@ const name = words.join('-');
 ### BackgroundLineInserter
 
 ```cpp
-public void BackgroundLineInserter(ModifiableObject line, BackgroundLineBuilder & builder)
+public void BackgroundLineInserter(ModifiableBackgroundLine line, BackgroundLineBuilder & builder)
 ```
 
 
@@ -40,7 +40,7 @@ public ElementInsertionInfo insert_curve(const EdgedCurve1D & mesh)
 ### insert_curve_edges
 
 ```cpp
-public ElementInsertionInfo insert_curve_edges(const EdgedCurve1D & mesh, Span edge_ids)
+public ElementInsertionInfo insert_curve_edges(const EdgedCurve1D & mesh, absl::Span<const index_t> edge_ids)
 ```
 
 

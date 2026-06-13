@@ -45,7 +45,7 @@ public void SurfaceElement2Split()
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 

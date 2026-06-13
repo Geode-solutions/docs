@@ -33,7 +33,7 @@ public void ~MacroEdgesBuilder()
 ### add_macro_edge_info
 
 ```cpp
-public void add_macro_edge_info(const MeshEdge & macro_edge, Span background_surface_edge_ids)
+public void add_macro_edge_info(const MeshEdge & macro_edge, absl::Span<const index_t> background_surface_edge_ids)
 ```
 
 

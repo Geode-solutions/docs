@@ -77,21 +77,21 @@ public LineSkin & operator=(const LineSkin & )
 ### LineSkin
 
 ```cpp
-public void LineSkin(ModifiableObject solid)
+public void LineSkin(ModifiableBackgroundSolid solid)
 ```
 
 
 ### LineSkin
 
 ```cpp
-public void LineSkin(ModifiableObject solid, std::unique_ptr<EdgedCurve1D> && mesh, const GenericMapping<index_t> & corafinated_vertex_mapping)
+public void LineSkin(ModifiableBackgroundSolid solid, std::unique_ptr<EdgedCurve1D> && mesh, const GenericMapping<index_t> & corafinated_vertex_mapping)
 ```
 
 
 ### LineSkin
 
 ```cpp
-public void LineSkin(ModifiableObject solid, std::unique_ptr<EdgedCurve1D> && mesh, std::unique_ptr<BackgroundLine> && background, const GenericMapping<index_t> & corafinated_vertex_mapping)
+public void LineSkin(ModifiableBackgroundSolid solid, std::unique_ptr<EdgedCurve1D> && mesh, std::unique_ptr<BackgroundLine> && background, const GenericMapping<index_t> & corafinated_vertex_mapping)
 ```
 
 

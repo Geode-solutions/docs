@@ -39,7 +39,7 @@ public BackgroundSurfaceConstraintModifier & operator=(const BackgroundSurfaceCo
 ### BackgroundSurfaceConstraintModifier
 
 ```cpp
-public void BackgroundSurfaceConstraintModifier(ModifiableObject surface, BackgroundSurfaceBuilder & builder, CommonConstraints constraints)
+public void BackgroundSurfaceConstraintModifier(ModifiableBackgroundSurface surface, BackgroundSurfaceBuilder & builder, Constraints constraints)
 ```
 
 
@@ -88,7 +88,7 @@ public BackgroundSurfaceBuilder & background_builder()
 ### swap_edge
 
 ```cpp
-public vector swap_edge(const PolygonEdge & edge, const std::optional<PolygonVertex> & tshape_apex)
+public std::vector<index_t> swap_edge(const PolygonEdge & edge, const std::optional<PolygonVertex> & tshape_apex)
 ```
 
 

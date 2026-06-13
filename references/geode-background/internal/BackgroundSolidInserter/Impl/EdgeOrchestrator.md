@@ -25,7 +25,7 @@ Inherits from InserterOrchestrator<EdgedCurve3D>
 ### EdgeOrchestrator
 
 ```cpp
-public void EdgeOrchestrator(class BackgroundSolidInserter::Impl & inserter, ProgressLogger & logger, const EdgedCurve3D & curve_mesh)
+public void EdgeOrchestrator(BackgroundSolidInserter::Impl & inserter, ProgressLogger & logger, const EdgedCurve3D & curve_mesh)
 ```
 
 

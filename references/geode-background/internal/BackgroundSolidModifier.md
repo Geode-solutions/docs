@@ -123,7 +123,7 @@ public SwapEdgeInfo swap_edge(const PolyhedronFacetEdge & edge, index_t apex)
 ### clean_tetrahedra
 
 ```cpp
-public vector clean_tetrahedra()
+public std::vector<index_t> clean_tetrahedra()
 ```
 
 

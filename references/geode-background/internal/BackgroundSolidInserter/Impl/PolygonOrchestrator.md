@@ -25,7 +25,7 @@ Inherits from InserterOrchestrator<TriangulatedSurface3D>
 ### PolygonOrchestrator
 
 ```cpp
-public void PolygonOrchestrator(class BackgroundSolidInserter::Impl & inserter, ProgressLogger & logger, const TriangulatedSurface3D & surface_mesh)
+public void PolygonOrchestrator(BackgroundSolidInserter::Impl & inserter, ProgressLogger & logger, const TriangulatedSurface3D & surface_mesh)
 ```
 
 

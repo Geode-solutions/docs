@@ -29,17 +29,17 @@ public void InserterOrchestrator<Mesh>(const InserterOrchestrator<Mesh> & )
 ```
 
 
-### operator=
-
-```cpp
-public InserterOrchestrator<Mesh> & operator=(const InserterOrchestrator<Mesh> & )
-```
-
-
 ### InserterOrchestrator
 
 ```cpp
 public void InserterOrchestrator<Mesh>(InserterOrchestrator<Mesh> && )
+```
+
+
+### operator=
+
+```cpp
+public InserterOrchestrator<Mesh> & operator=(const InserterOrchestrator<Mesh> & )
 ```
 
 
@@ -60,14 +60,14 @@ public ElementInsertionInfo && output_insertion_info()
 ### insert_vertices
 
 ```cpp
-public void insert_vertices(Span elements)
+public void insert_vertices(absl::Span<const index_t> elements)
 ```
 
 
 ### InserterOrchestrator
 
 ```cpp
-protected void InserterOrchestrator<Mesh>(class BackgroundSolidInserter::Impl & inserter, ProgressLogger & logger, const Mesh & mesh)
+protected void InserterOrchestrator<Mesh>(BackgroundSolidInserter::Impl & inserter, ProgressLogger & logger, const Mesh & mesh)
 ```
 
 
@@ -108,7 +108,7 @@ protected ElementInsertionInfo & insertion_info()
 ### inserter
 
 ```cpp
-protected class BackgroundSolidInserter::Impl & inserter()
+protected BackgroundSolidInserter::Impl & inserter()
 ```
 
 
@@ -122,7 +122,7 @@ protected const Mesh & mesh()
 ### mesh_vertex_to_background_vertex
 
 ```cpp
-protected Span mesh_vertex_to_background_vertex()
+protected absl::Span<const MacroVertexInBackgroundVertex> mesh_vertex_to_background_vertex()
 ```
 
 

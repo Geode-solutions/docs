@@ -22,6 +22,13 @@ Inherits from TetrahedralSolidInternalDistanceImprovementSimulator
 
 ## Functions
 
+### internal_distances
+
+```cpp
+public const InternalDistances & internal_distances(index_t )
+```
+
+
 ### BackgroundSolidEpsilonOptimizerImprovementSimulator
 
 ```cpp
@@ -40,13 +47,6 @@ public double metric(const Tetrahedron & tetrahedron)
 
 ```cpp
 public bool require_improvement(index_t tetrahedron_id)
-```
-
-
-### internal_distances
-
-```cpp
-public const InternalDistances & internal_distances(index_t )
 ```
 
 

@@ -25,14 +25,14 @@ Inherits from TriangulatedSurfaceOptimizer2D
 ### BackgroundSurfaceOptimizer
 
 ```cpp
-public void BackgroundSurfaceOptimizer(const BackgroundSurfaceOptimizer & )
+public void BackgroundSurfaceOptimizer(BackgroundSurfaceConstraintModifier & constraint_modifier, const TriangulatedSurfaceInternalDistanceImprovementSimulator2D & improvement_simulator)
 ```
 
 
-### operator=
+### BackgroundSurfaceOptimizer
 
 ```cpp
-public BackgroundSurfaceOptimizer & operator=(const BackgroundSurfaceOptimizer & )
+public void BackgroundSurfaceOptimizer(const BackgroundSurfaceOptimizer & )
 ```
 
 
@@ -46,14 +46,14 @@ public void BackgroundSurfaceOptimizer(BackgroundSurfaceOptimizer && )
 ### operator=
 
 ```cpp
-public BackgroundSurfaceOptimizer & operator=(BackgroundSurfaceOptimizer && )
+public BackgroundSurfaceOptimizer & operator=(const BackgroundSurfaceOptimizer & )
 ```
 
 
-### BackgroundSurfaceOptimizer
+### operator=
 
 ```cpp
-public void BackgroundSurfaceOptimizer(BackgroundSurfaceConstraintModifier & constraint_modifier, const TriangulatedSurfaceInternalDistanceImprovementSimulator2D & improvement_simulator)
+public BackgroundSurfaceOptimizer & operator=(BackgroundSurfaceOptimizer && )
 ```
 
 

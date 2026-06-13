@@ -19,7 +19,7 @@ const name = words.join('-');
 ### BackgroundSurfaceInserter
 
 ```cpp
-public void BackgroundSurfaceInserter(ModifiableObject surface, BackgroundSurfaceBuilder & builder)
+public void BackgroundSurfaceInserter(ModifiableBackgroundSurface surface, BackgroundSurfaceBuilder & builder)
 ```
 
 
@@ -40,7 +40,7 @@ public ElementInsertionInfo insert_curve(const EdgedCurve2D & mesh)
 ### insert_curve_edges
 
 ```cpp
-public ElementInsertionInfo insert_curve_edges(const EdgedCurve2D & mesh, Span edges_ids)
+public ElementInsertionInfo insert_curve_edges(const EdgedCurve2D & mesh, absl::Span<const index_t> edges_ids)
 ```
 
 
@@ -54,7 +54,7 @@ public ElementInsertionInfo insert_point_set(const PointSet2D & mesh)
 ### insert_point_set_points
 
 ```cpp
-public ElementInsertionInfo insert_point_set_points(const PointSet2D & mesh, Span vertex_ids)
+public ElementInsertionInfo insert_point_set_points(const PointSet2D & mesh, absl::Span<const index_t> vertex_ids)
 ```
 
 
@@ -68,14 +68,14 @@ public ElementInsertionInfo insert_surface(const TriangulatedSurface2D & mesh)
 ### insert_surface_triangles
 
 ```cpp
-public ElementInsertionInfo insert_surface_triangles(const TriangulatedSurface2D & mesh, Span triangle_ids)
+public ElementInsertionInfo insert_surface_triangles(const TriangulatedSurface2D & mesh, absl::Span<const index_t> triangle_ids)
 ```
 
 
 ### insert_scalar_function_isovalues
 
 ```cpp
-public void insert_scalar_function_isovalues(basic_string_view function_name, Span isovalues)
+public void insert_scalar_function_isovalues(absl::string_view function_name, absl::Span<const double> isovalues)
 ```
 
 

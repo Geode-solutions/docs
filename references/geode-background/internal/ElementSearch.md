@@ -53,7 +53,7 @@ public void ~ElementSearch<Mesh>()
 ### initial_containing_element
 
 ```cpp
-public optional initial_containing_element(const Point<Mesh::dim> & point)
+public std::optional<index_t> initial_containing_element(const Point<Mesh::dim> & point)
 ```
 
 

@@ -39,7 +39,7 @@ public BackgroundSolidConstraintModifier & operator=(const BackgroundSolidConstr
 ### BackgroundSolidConstraintModifier
 
 ```cpp
-public void BackgroundSolidConstraintModifier(ModifiableObject solid, BackgroundSolidBuilder & builder, Constraints constraints)
+public void BackgroundSolidConstraintModifier(ModifiableBackgroundSolid solid, BackgroundSolidBuilder & builder, Constraints constraints)
 ```
 
 
@@ -88,14 +88,14 @@ public BackgroundSolidBuilder & background_builder()
 ### swap_edge
 
 ```cpp
-public vector swap_edge(const PolyhedronFacetEdge & edge, index_t apex, const std::optional<SolidEdgeTShape> & tshape)
+public std::vector<index_t> swap_edge(const PolyhedronFacetEdge & edge, index_t apex, const std::optional<SolidEdgeTShape> & tshape)
 ```
 
 
 ### swap_facet
 
 ```cpp
-public vector swap_facet(const PolyhedronFacet & facet, const std::optional<PolyhedronVertex> & tshape_apex)
+public std::vector<index_t> swap_facet(const PolyhedronFacet & facet, const std::optional<PolyhedronVertex> & tshape_apex)
 ```
 
 

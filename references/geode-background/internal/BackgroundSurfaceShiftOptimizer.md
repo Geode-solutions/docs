@@ -25,14 +25,14 @@ Inherits from TriangulatedSurfaceShiftOptimizer2D
 ### BackgroundSurfaceShiftOptimizer
 
 ```cpp
-public void BackgroundSurfaceShiftOptimizer(const BackgroundSurfaceShiftOptimizer & )
+public void BackgroundSurfaceShiftOptimizer(BackgroundSurfaceConstraintModifier & constraint_modifier, const TriangulatedSurfaceInternalDistanceImprovementSimulator2D & improvement_simulator)
 ```
 
 
-### operator=
+### BackgroundSurfaceShiftOptimizer
 
 ```cpp
-public BackgroundSurfaceShiftOptimizer & operator=(const BackgroundSurfaceShiftOptimizer & )
+public void BackgroundSurfaceShiftOptimizer(const BackgroundSurfaceShiftOptimizer & )
 ```
 
 
@@ -46,14 +46,14 @@ public void BackgroundSurfaceShiftOptimizer(BackgroundSurfaceShiftOptimizer && )
 ### operator=
 
 ```cpp
-public BackgroundSurfaceShiftOptimizer & operator=(BackgroundSurfaceShiftOptimizer && )
+public BackgroundSurfaceShiftOptimizer & operator=(const BackgroundSurfaceShiftOptimizer & )
 ```
 
 
-### BackgroundSurfaceShiftOptimizer
+### operator=
 
 ```cpp
-public void BackgroundSurfaceShiftOptimizer(BackgroundSurfaceConstraintModifier & constraint_modifier, const TriangulatedSurfaceInternalDistanceImprovementSimulator2D & improvement_simulator)
+public BackgroundSurfaceShiftOptimizer & operator=(BackgroundSurfaceShiftOptimizer && )
 ```
 
 

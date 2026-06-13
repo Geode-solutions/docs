@@ -82,7 +82,7 @@ public void ~Options()
 ### default_metric
 
 ```cpp
-public const Metric3D & default_metric()
+public static const Metric3D & default_metric()
 ```
 
 

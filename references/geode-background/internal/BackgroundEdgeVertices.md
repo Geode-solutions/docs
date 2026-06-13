@@ -30,17 +30,17 @@ public array background_vertices
 
 ## Functions
 
-### BackgroundEdgeVertices
-
-```cpp
-public void BackgroundEdgeVertices()
-```
-
-
 ### update_vertices
 
 ```cpp
 public void update_vertices(const VerticesModifier & modifier)
+```
+
+
+### BackgroundEdgeVertices
+
+```cpp
+public void BackgroundEdgeVertices()
 ```
 
 

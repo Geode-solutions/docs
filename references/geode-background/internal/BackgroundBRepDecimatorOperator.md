@@ -16,18 +16,18 @@ const name = words.join('-');
 
 ## Functions
 
+### skip_edge
+
+```cpp
+public bool skip_edge(const Block3D & block, const std::array<index_t, 2> & edge)
+```
+
 ### ~BackgroundBRepDecimatorOperator
 
 ```cpp
 public void ~BackgroundBRepDecimatorOperator()
 ```
 
-
-### skip_edge
-
-```cpp
-public bool skip_edge(const Block3D & block, const std::array<index_t, 2> & edge)
-```
 
 ### BackgroundBRepDecimatorOperator
 
