@@ -44,7 +44,7 @@ bool section_surfaces_are_meshed(const Section & section)
 ### components_uuids
 
 ```cpp
-vector components_uuids(const Model & model, index_t unique_vertex_index, const geode::ComponentType & type)
+std::vector<uuid> components_uuids(const Model & model, index_t unique_vertex_index, const geode::ComponentType & type)
 ```
 
 
@@ -58,7 +58,7 @@ bool model_component_vertices_are_associated_to_unique_vertices(const Model & mo
 ### model_component_vertices_not_associated_to_unique_vertices
 
 ```cpp
-InspectionIssues model_component_vertices_not_associated_to_unique_vertices(const Model & model, const ComponentID & component_id, const Mesh & component_mesh)
+InspectionIssues<index_t> model_component_vertices_not_associated_to_unique_vertices(const Model & model, const ComponentID & component_id, const Mesh & component_mesh)
 ```
 
 
@@ -79,7 +79,7 @@ index_t nb_expected_block_cmvs(const BRep & brep, index_t unique_vertex_id, cons
 ### wrong_nb_expected_block_cmvs
 
 ```cpp
-optional wrong_nb_expected_block_cmvs(const BRep & brep, index_t unique_vertex_id, const geode::uuid & block_uuid, const VertexCMVsByComponent & unique_vertex_cmvs)
+std::optional<std::string> wrong_nb_expected_block_cmvs(const BRep & brep, index_t unique_vertex_id, const geode::uuid & block_uuid, const VertexCMVsByComponent & unique_vertex_cmvs)
 ```
 
 

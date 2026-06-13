@@ -29,6 +29,13 @@ Inherits from AddInspectors<Section, SectionMeshesInspector, SectionTopologyInsp
 ### SectionInspector
 
 ```cpp
+public void SectionInspector(const Section & section)
+```
+
+
+### SectionInspector
+
+```cpp
 public void SectionInspector(const SectionInspector & )
 ```
 
@@ -37,13 +44,6 @@ public void SectionInspector(const SectionInspector & )
 
 ```cpp
 public SectionInspector & operator=(const SectionInspector & )
-```
-
-
-### SectionInspector
-
-```cpp
-public void SectionInspector(const Section & section)
 ```
 
 

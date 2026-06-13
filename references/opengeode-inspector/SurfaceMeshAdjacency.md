@@ -58,7 +58,7 @@ public bool mesh_has_wrong_adjacencies()
 ### polygon_edges_with_wrong_adjacency
 
 ```cpp
-public InspectionIssues polygon_edges_with_wrong_adjacency()
+public InspectionIssues<PolygonEdge> polygon_edges_with_wrong_adjacency()
 ```
 
 

@@ -123,6 +123,13 @@ ObjectValidity is_brep_valid(const BRep & brep)
 ```
 
 
+### is_section_valid
+
+```cpp
+ObjectValidity is_section_valid(const Section & section)
+```
+
+
 ### is_edged_curve_valid
 
 ```cpp
@@ -134,13 +141,6 @@ ObjectValidity is_edged_curve_valid(const EdgedCurve<dimension> & curve)
 
 ```cpp
 ObjectValidity is_pointset_valid(const PointSet<dimension> & pointset)
-```
-
-
-### is_section_valid
-
-```cpp
-ObjectValidity is_section_valid(const Section & section)
 ```
 
 

@@ -29,20 +29,6 @@ Inherits from AddInspectors<EdgedCurve<dimension>, EdgedCurveColocation<dimensio
 ### EdgedCurveInspector
 
 ```cpp
-public void EdgedCurveInspector<dimension>(const EdgedCurveInspector<dimension> & )
-```
-
-
-### operator=
-
-```cpp
-public EdgedCurveInspector<dimension> & operator=(const EdgedCurveInspector<dimension> & )
-```
-
-
-### EdgedCurveInspector
-
-```cpp
 public void EdgedCurveInspector<dimension>(const EdgedCurve<dimension> & mesh)
 ```
 
@@ -51,6 +37,20 @@ public void EdgedCurveInspector<dimension>(const EdgedCurve<dimension> & mesh)
 
 ```cpp
 public EdgedCurveInspectionResult inspect_edged_curve()
+```
+
+
+### EdgedCurveInspector
+
+```cpp
+public void EdgedCurveInspector<dimension>(const EdgedCurveInspector<dimension> & )
+```
+
+
+### operator=
+
+```cpp
+public EdgedCurveInspector<dimension> & operator=(const EdgedCurveInspector<dimension> & )
 ```
 
 

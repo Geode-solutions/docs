@@ -29,20 +29,6 @@ Inherits from AddInspectors<BRep, BRepMeshesInspector, BRepTopologyInspector>
 ### BRepInspector
 
 ```cpp
-public void BRepInspector(const BRepInspector & )
-```
-
-
-### operator=
-
-```cpp
-public BRepInspector & operator=(const BRepInspector & )
-```
-
-
-### BRepInspector
-
-```cpp
 public void BRepInspector(const BRep & brep)
 ```
 
@@ -51,6 +37,20 @@ public void BRepInspector(const BRep & brep)
 
 ```cpp
 public BRepInspectionResult inspect_brep()
+```
+
+
+### BRepInspector
+
+```cpp
+public void BRepInspector(const BRepInspector & )
+```
+
+
+### operator=
+
+```cpp
+public BRepInspector & operator=(const BRepInspector & )
 ```
 
 

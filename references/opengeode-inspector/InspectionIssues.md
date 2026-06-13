@@ -19,7 +19,7 @@ const name = words.join('-');
 ### InspectionIssues
 
 ```cpp
-public void InspectionIssues<IssueType>(basic_string_view issue_description)
+public void InspectionIssues<IssueType>(std::string_view issue_description)
 ```
 
 
@@ -33,7 +33,7 @@ public void InspectionIssues<IssueType>()
 ### set_description
 
 ```cpp
-public void set_description(basic_string_view issue_description)
+public void set_description(std::string_view issue_description)
 ```
 
 
@@ -47,21 +47,21 @@ public index_t nb_issues()
 ### add_issue
 
 ```cpp
-public void add_issue(IssueType issue, basic_string message)
+public void add_issue(IssueType issue, std::string message)
 ```
 
 
 ### description
 
 ```cpp
-public basic_string_view description()
+public std::string_view description()
 ```
 
 
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 

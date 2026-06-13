@@ -40,14 +40,14 @@ public index_t nb_issues()
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 
 ### inspection_type
 
 ```cpp
-public basic_string inspection_type()
+public std::string inspection_type()
 ```
 
 

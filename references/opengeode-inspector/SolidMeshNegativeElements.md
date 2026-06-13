@@ -61,7 +61,7 @@ public bool mesh_has_negative_elements()
 ### negative_polyhedra
 
 ```cpp
-public InspectionIssues negative_polyhedra()
+public InspectionIssues<index_t> negative_polyhedra()
 ```
 
 

@@ -29,20 +29,6 @@ Inherits from BRepUniqueVerticesColocation, BRepComponentMeshesAdjacency, BRepCo
 ### BRepMeshesInspector
 
 ```cpp
-public void BRepMeshesInspector(const BRepMeshesInspector & )
-```
-
-
-### operator=
-
-```cpp
-public BRepMeshesInspector & operator=(const BRepMeshesInspector & )
-```
-
-
-### BRepMeshesInspector
-
-```cpp
 public void BRepMeshesInspector(const BRep & brep)
 ```
 
@@ -51,6 +37,20 @@ public void BRepMeshesInspector(const BRep & brep)
 
 ```cpp
 public BRepMeshesInspectionResult inspect_brep_meshes()
+```
+
+
+### BRepMeshesInspector
+
+```cpp
+public void BRepMeshesInspector(const BRepMeshesInspector & )
+```
+
+
+### operator=
+
+```cpp
+public BRepMeshesInspector & operator=(const BRepMeshesInspector & )
 ```
 
 

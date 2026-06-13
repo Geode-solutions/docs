@@ -64,7 +64,7 @@ public bool mesh_has_colocated_points()
 ### colocated_points_groups
 
 ```cpp
-public InspectionIssues colocated_points_groups()
+public InspectionIssues<std::vector<index_t>> colocated_points_groups()
 ```
 
 

@@ -25,13 +25,6 @@ public vector invalidities
 
 ## Functions
 
-### operator bool
-
-```cpp
-public bool operator bool()
-```
-
-
 ### nb_issues
 
 ```cpp
@@ -39,10 +32,17 @@ public index_t nb_issues()
 ```
 
 
+### operator bool
+
+```cpp
+public bool operator bool()
+```
+
+
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 

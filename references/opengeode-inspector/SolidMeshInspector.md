@@ -38,20 +38,6 @@ Inherits from AddInspectors<SolidMesh<dimension>, SolidMeshAdjacency<dimension>,
 ### SolidMeshInspector
 
 ```cpp
-public void SolidMeshInspector<dimension>(const SolidMeshInspector<dimension> & )
-```
-
-
-### operator=
-
-```cpp
-public SolidMeshInspector<dimension> & operator=(const SolidMeshInspector<dimension> & )
-```
-
-
-### SolidMeshInspector
-
-```cpp
 public void SolidMeshInspector<dimension>(const SolidMesh<dimension> & mesh)
 ```
 
@@ -60,6 +46,20 @@ public void SolidMeshInspector<dimension>(const SolidMesh<dimension> & mesh)
 
 ```cpp
 public SolidInspectionResult inspect_solid()
+```
+
+
+### SolidMeshInspector
+
+```cpp
+public void SolidMeshInspector<dimension>(const SolidMeshInspector<dimension> & )
+```
+
+
+### operator=
+
+```cpp
+public SolidMeshInspector<dimension> & operator=(const SolidMeshInspector<dimension> & )
 ```
 
 

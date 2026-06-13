@@ -23,6 +23,13 @@ const name = words.join('-');
 
 ## Functions
 
+### ~ComponentMeshesDegeneration
+
+```cpp
+public void ~ComponentMeshesDegeneration<Model>()
+```
+
+
 ### ComponentMeshesDegeneration
 
 ```cpp
@@ -34,13 +41,6 @@ public void ComponentMeshesDegeneration<Model>(const ComponentMeshesDegeneration
 
 ```cpp
 public ComponentMeshesDegeneration<Model> & operator=(const ComponentMeshesDegeneration<Model> & )
-```
-
-
-### ~ComponentMeshesDegeneration
-
-```cpp
-public void ~ComponentMeshesDegeneration<Model>()
 ```
 
 

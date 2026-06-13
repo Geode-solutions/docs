@@ -47,6 +47,20 @@ Inherits from AddInspectors<SurfaceMesh<dimension>, SurfaceMeshAdjacency<dimensi
 ### SurfaceMeshInspector
 
 ```cpp
+public void SurfaceMeshInspector<dimension>(const SurfaceMesh<dimension> & mesh)
+```
+
+
+### inspect_surface
+
+```cpp
+public SurfaceInspectionResult inspect_surface()
+```
+
+
+### SurfaceMeshInspector
+
+```cpp
 public void SurfaceMeshInspector<dimension>(const SurfaceMeshInspector<dimension> & )
 ```
 
@@ -58,24 +72,10 @@ public SurfaceMeshInspector<dimension> & operator=(const SurfaceMeshInspector<di
 ```
 
 
-### SurfaceMeshInspector
-
-```cpp
-public void SurfaceMeshInspector<dimension>(const SurfaceMesh<dimension> & mesh)
-```
-
-
 ### ~SurfaceMeshInspector
 
 ```cpp
 public void ~SurfaceMeshInspector<dimension>()
-```
-
-
-### inspect_surface
-
-```cpp
-public SurfaceInspectionResult inspect_surface()
 ```
 
 

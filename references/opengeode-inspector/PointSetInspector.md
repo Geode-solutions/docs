@@ -47,6 +47,13 @@ Inherits from AddInspectors<PointSet<dimension>, PointSetColocation<dimension> >
 ### PointSetInspector
 
 ```cpp
+public void PointSetInspector<dimension>(const PointSet<dimension> & mesh)
+```
+
+
+### PointSetInspector
+
+```cpp
 public void PointSetInspector<dimension>(const PointSetInspector<dimension> & )
 ```
 
@@ -55,13 +62,6 @@ public void PointSetInspector<dimension>(const PointSetInspector<dimension> & )
 
 ```cpp
 public PointSetInspector<dimension> & operator=(const PointSetInspector<dimension> & )
-```
-
-
-### PointSetInspector
-
-```cpp
-public void PointSetInspector<dimension>(const PointSet<dimension> & mesh)
 ```
 
 

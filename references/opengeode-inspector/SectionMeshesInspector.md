@@ -29,20 +29,6 @@ Inherits from SectionUniqueVerticesColocation, SectionComponentMeshesAdjacency, 
 ### SectionMeshesInspector
 
 ```cpp
-public void SectionMeshesInspector(const SectionMeshesInspector & )
-```
-
-
-### operator=
-
-```cpp
-public SectionMeshesInspector & operator=(const SectionMeshesInspector & )
-```
-
-
-### SectionMeshesInspector
-
-```cpp
 public void SectionMeshesInspector(const Section & section)
 ```
 
@@ -51,6 +37,20 @@ public void SectionMeshesInspector(const Section & section)
 
 ```cpp
 public SectionMeshesInspectionResult inspect_section_meshes()
+```
+
+
+### SectionMeshesInspector
+
+```cpp
+public void SectionMeshesInspector(const SectionMeshesInspector & )
+```
+
+
+### operator=
+
+```cpp
+public SectionMeshesInspector & operator=(const SectionMeshesInspector & )
 ```
 
 

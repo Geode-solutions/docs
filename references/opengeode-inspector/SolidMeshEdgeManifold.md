@@ -58,7 +58,7 @@ public bool mesh_edges_are_manifold()
 ### non_manifold_edges
 
 ```cpp
-public InspectionIssues non_manifold_edges()
+public InspectionIssues<std::array<index_t, 2>> non_manifold_edges()
 ```
 
 

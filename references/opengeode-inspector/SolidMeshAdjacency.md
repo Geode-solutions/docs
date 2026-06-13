@@ -58,7 +58,7 @@ public bool mesh_has_wrong_adjacencies()
 ### polyhedron_facets_with_wrong_adjacency
 
 ```cpp
-public InspectionIssues polyhedron_facets_with_wrong_adjacency()
+public InspectionIssues<PolyhedronFacet> polyhedron_facets_with_wrong_adjacency()
 ```
 
 

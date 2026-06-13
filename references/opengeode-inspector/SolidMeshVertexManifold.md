@@ -61,7 +61,7 @@ public bool mesh_vertices_are_manifold()
 ### non_manifold_vertices
 
 ```cpp
-public InspectionIssues non_manifold_vertices()
+public InspectionIssues<index_t> non_manifold_vertices()
 ```
 
 

@@ -58,7 +58,7 @@ public bool mesh_facets_are_manifold()
 ### non_manifold_facets
 
 ```cpp
-public InspectionIssues non_manifold_facets()
+public InspectionIssues<PolyhedronFacetVertices> non_manifold_facets()
 ```
 
 

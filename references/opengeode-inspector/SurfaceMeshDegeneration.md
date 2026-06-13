@@ -58,28 +58,28 @@ public bool is_mesh_degenerated()
 ### small_edges
 
 ```cpp
-public InspectionIssues small_edges(double threshold)
+public InspectionIssues<index_t> small_edges(double threshold)
 ```
 
 
 ### degenerated_edges
 
 ```cpp
-public InspectionIssues degenerated_edges()
+public InspectionIssues<index_t> degenerated_edges()
 ```
 
 
 ### small_height_polygons
 
 ```cpp
-public InspectionIssues small_height_polygons(double threshold)
+public InspectionIssues<index_t> small_height_polygons(double threshold)
 ```
 
 
 ### degenerated_polygons
 
 ```cpp
-public InspectionIssues degenerated_polygons()
+public InspectionIssues<index_t> degenerated_polygons()
 ```
 
 

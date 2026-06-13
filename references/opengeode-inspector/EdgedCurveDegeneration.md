@@ -64,14 +64,14 @@ public bool is_mesh_degenerated()
 ### degenerated_edges
 
 ```cpp
-public InspectionIssues degenerated_edges()
+public InspectionIssues<index_t> degenerated_edges()
 ```
 
 
 ### small_edges
 
 ```cpp
-public InspectionIssues small_edges(double threshold)
+public InspectionIssues<index_t> small_edges(double threshold)
 ```
 
 

@@ -61,7 +61,7 @@ public bool meshes_have_intersections()
 ### intersecting_elements
 
 ```cpp
-public InspectionIssues intersecting_elements()
+public InspectionIssues<std::pair<index_t, index_t>> intersecting_elements()
 ```
 
 

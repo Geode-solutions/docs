@@ -19,7 +19,7 @@ const name = words.join('-');
 ### InspectionIssuesMap
 
 ```cpp
-public void InspectionIssuesMap<IssueType>(basic_string_view issue_description)
+public void InspectionIssuesMap<IssueType>(std::string_view issue_description)
 ```
 
 
@@ -33,14 +33,14 @@ public void InspectionIssuesMap<IssueType>()
 ### set_description
 
 ```cpp
-public void set_description(basic_string_view issue_description)
+public void set_description(std::string_view issue_description)
 ```
 
 
 ### description
 
 ```cpp
-public basic_string_view description()
+public std::string_view description()
 ```
 
 
@@ -61,14 +61,14 @@ public void add_issues_to_map(const uuid & id_to_issues, InspectionIssues<IssueT
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 
 ### issues_map
 
 ```cpp
-public const absl::flat_hash_map<uuid, InspectionIssues<IssueType> > & issues_map()
+public const absl::flat_hash_map<uuid, InspectionIssues<IssueType>> & issues_map()
 ```
 
 

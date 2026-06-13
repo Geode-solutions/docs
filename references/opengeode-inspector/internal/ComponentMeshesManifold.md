@@ -26,6 +26,13 @@ const name = words.join('-');
 ### ComponentMeshesManifold
 
 ```cpp
+protected void ComponentMeshesManifold<Model>(const Model & model)
+```
+
+
+### ComponentMeshesManifold
+
+```cpp
 public void ComponentMeshesManifold<Model>(const ComponentMeshesManifold<Model> & )
 ```
 
@@ -47,14 +54,7 @@ public void add_surfaces_meshes_non_manifold_vertices(InspectionIssuesMap<index_
 ### add_surfaces_meshes_non_manifold_edges
 
 ```cpp
-public void add_surfaces_meshes_non_manifold_edges(InspectionIssuesMap<std::array<index_t, 2> > & issues_map)
-```
-
-
-### ComponentMeshesManifold
-
-```cpp
-protected void ComponentMeshesManifold<Model>(const Model & model)
+public void add_surfaces_meshes_non_manifold_edges(InspectionIssuesMap<std::array<index_t, 2>> & issues_map)
 ```
 
 
