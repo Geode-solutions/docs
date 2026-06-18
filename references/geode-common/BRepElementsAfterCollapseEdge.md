@@ -23,7 +23,7 @@ Inherits from ModelElementsAfterCollapseEdge3D
 ## Members
 
 ```cpp
-public flat_hash_map block_tetrahedra
+public linked_hash_map block_tetrahedra
 
 ```
 
