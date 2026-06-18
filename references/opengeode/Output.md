@@ -22,12 +22,6 @@ Inherits from IOFile
 
 ## Functions
 
-### write
-
-```cpp
-public vector write(const Object & object)
-```
-
 ### is_saveable
 
 ```cpp
@@ -38,9 +32,15 @@ public bool is_saveable(const Object & )
 ### Output
 
 ```cpp
-protected void Output<Object>(basic_string_view filename)
+protected void Output<Object>(std::string_view filename)
 ```
 
+
+### write
+
+```cpp
+public std::vector<std::string> write(const Object & object)
+```
 
 
 

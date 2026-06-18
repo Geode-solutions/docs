@@ -38,56 +38,56 @@ Inherits from Component<dimension>
 ### BlockCollection
 
 ```cpp
-public void BlockCollection<>(const BlockCollection<> & )
+public void BlockCollection<value-parameter-0-0>(const BlockCollection<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public BlockCollection<> & operator=(const BlockCollection<> & )
+public BlockCollection<dimension> & operator=(const BlockCollection<dimension> & )
 ```
 
 
 ### BlockCollection
 
 ```cpp
-public void BlockCollection<>(BlockCollection<> && other)
+public void BlockCollection<value-parameter-0-0>(BlockCollection<dimension> && other)
 ```
 
 
 ### ~BlockCollection
 
 ```cpp
-public void ~BlockCollection<>()
+public void ~BlockCollection<value-parameter-0-0>()
 ```
 
 
 ### component_type_static
 
 ```cpp
-public NamedType component_type_static()
+public static ComponentType component_type_static()
 ```
 
 
 ### component_type
 
 ```cpp
-public NamedType component_type()
+public ComponentType component_type()
 ```
 
 
 ### BlockCollection
 
 ```cpp
-public void BlockCollection<>(BlockCollectionsKey )
+public void BlockCollection<value-parameter-0-0>(BlockCollectionsKey )
 ```
 
 
 ### set_block_collection_name
 
 ```cpp
-public void set_block_collection_name(basic_string_view name, BlockCollectionsBuilderKey )
+public void set_block_collection_name(std::string_view name, BlockCollectionsBuilderKey )
 ```
 
 

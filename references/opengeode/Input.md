@@ -22,6 +22,13 @@ Inherits from IOFile
 
 ## Functions
 
+### Input
+
+```cpp
+protected void Input<Object, Args...>(std::string_view filename)
+```
+
+
 ### additional_files
 
 ```cpp
@@ -50,13 +57,6 @@ public Object read(const Args &... args)
 
 ```cpp
 public void ~Input<Object, Args...>()
-```
-
-
-### Input
-
-```cpp
-protected void Input<Object, Args...>(basic_string_view filename)
 ```
 
 

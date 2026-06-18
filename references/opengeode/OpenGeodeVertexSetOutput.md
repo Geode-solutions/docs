@@ -25,7 +25,7 @@ Inherits from VertexSetOutput
 ### OpenGeodeVertexSetOutput
 
 ```cpp
-public void OpenGeodeVertexSetOutput(basic_string_view filename)
+public void OpenGeodeVertexSetOutput(std::string_view filename)
 ```
 
 
@@ -39,7 +39,7 @@ public bool is_saveable(const VertexSet & mesh)
 ### write
 
 ```cpp
-public vector write(const VertexSet & mesh)
+public std::vector<std::string> write(const VertexSet & mesh)
 ```
 
 

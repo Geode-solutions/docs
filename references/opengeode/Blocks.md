@@ -23,9 +23,9 @@ const name = words.join('-');
 
 ## Records
 
-BlockRangeBase
-
 BlockRange
+
+BlockRangeBase
 
 
 
@@ -34,21 +34,21 @@ BlockRange
 ### Blocks
 
 ```cpp
-public void Blocks<>(const Blocks<> & )
+public void Blocks<value-parameter-0-0>(const Blocks<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public Blocks<> & operator=(const Blocks<> & )
+public Blocks<dimension> & operator=(const Blocks<dimension> & )
 ```
 
 
 ### ~Blocks
 
 ```cpp
-public void ~Blocks<>()
+public void ~Blocks<value-parameter-0-0>()
 ```
 
 
@@ -96,6 +96,36 @@ public BlockRange active_blocks()
 ```
 
 
+### save_blocks
+
+```cpp
+public void save_blocks(std::string_view directory)
+```
+
+
+ Save each Block in a file located in the specified directory
+
+### Blocks
+
+```cpp
+protected void Blocks<value-parameter-0-0>()
+```
+
+
+### Blocks
+
+```cpp
+protected void Blocks<value-parameter-0-0>(Blocks<dimension> && other)
+```
+
+
+### operator=
+
+```cpp
+protected Blocks<dimension> & operator=(Blocks<dimension> && other)
+```
+
+
 ### components
 
 ```cpp
@@ -114,36 +144,6 @@ public bool has_component(const uuid & id)
 
 ```cpp
 public const Block<dimension> & component(const uuid & id)
-```
-
-
-### save_blocks
-
-```cpp
-public void save_blocks(basic_string_view directory)
-```
-
-
- Save each Block in a file located in the specified directory
-
-### Blocks
-
-```cpp
-protected void Blocks<>()
-```
-
-
-### Blocks
-
-```cpp
-protected void Blocks<>(Blocks<> && other)
-```
-
-
-### operator=
-
-```cpp
-protected Blocks<> & operator=(Blocks<> && other)
 ```
 
 
@@ -185,7 +185,7 @@ public void delete_block(const Block<dimension> & block, BlocksBuilderKey key)
 ### load_blocks
 
 ```cpp
-public void load_blocks(basic_string_view directory, BlocksBuilderKey key)
+public void load_blocks(std::string_view directory, BlocksBuilderKey key)
 ```
 
 

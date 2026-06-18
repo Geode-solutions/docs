@@ -20,26 +20,35 @@ Inherits from VertexSetBuilder, CoordinateReferenceSystemManagersBuilder<dimensi
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### SolidMeshBuilder
 
 ```cpp
-public void SolidMeshBuilder<>(SolidMeshBuilder<> && )
+public void SolidMeshBuilder<value-parameter-0-0>(SolidMeshBuilder<dimension> && )
 ```
 
 
 ### ~SolidMeshBuilder
 
 ```cpp
-public void ~SolidMeshBuilder<>()
+public void ~SolidMeshBuilder<value-parameter-0-0>()
 ```
 
 
 ### create
 
 ```cpp
-public std::unique_ptr<SolidMeshBuilder<dimension> > create(SolidMesh<dimension> & mesh)
+public static std::unique_ptr<SolidMeshBuilder<dimension>> create(SolidMesh<dimension> & mesh)
 ```
 
 
@@ -77,7 +86,7 @@ public index_t create_point(Point<dimension> point)
 ### create_polyhedron
 
 ```cpp
-public index_t create_polyhedron(Span vertices, Span facets)
+public index_t create_polyhedron(absl::Span<const index_t> vertices, absl::Span<const std::vector<local_index_t>> facets)
 ```
 
 
@@ -166,7 +175,7 @@ public void compute_polyhedron_adjacencies()
 ### compute_polyhedron_adjacencies
 
 ```cpp
-public void compute_polyhedron_adjacencies(Span polyhedra_to_connect)
+public void compute_polyhedron_adjacencies(absl::Span<const index_t> polyhedra_to_connect)
 ```
 
 
@@ -177,7 +186,7 @@ public void compute_polyhedron_adjacencies(Span polyhedra_to_connect)
 ### delete_polyhedra
 
 ```cpp
-public vector delete_polyhedra(const std::vector<bool> & to_delete)
+public std::vector<index_t> delete_polyhedra(const std::vector<bool> & to_delete)
 ```
 
 
@@ -190,7 +199,7 @@ public vector delete_polyhedra(const std::vector<bool> & to_delete)
 ### permute_polyhedra
 
 ```cpp
-public vector permute_polyhedra(Span permutation)
+public std::vector<index_t> permute_polyhedra(absl::Span<const index_t> permutation)
 ```
 
 
@@ -203,7 +212,7 @@ public vector permute_polyhedra(Span permutation)
 ### delete_isolated_vertices
 
 ```cpp
-public vector delete_isolated_vertices()
+public std::vector<index_t> delete_isolated_vertices()
 ```
 
 
@@ -252,14 +261,14 @@ public void copy(const SolidMesh<dimension> & solid_mesh)
 ### SolidMeshBuilder
 
 ```cpp
-protected void SolidMeshBuilder<>(SolidMesh<dimension> & mesh)
+protected void SolidMeshBuilder<value-parameter-0-0>(SolidMesh<dimension> & mesh)
 ```
 
 
 ### update_polyhedron_info
 
 ```cpp
-protected void update_polyhedron_info(index_t polyhedron_id, Span vertices)
+protected void update_polyhedron_info(index_t polyhedron_id, absl::Span<const index_t> vertices)
 ```
 
 
@@ -270,6 +279,15 @@ protected void update_polyhedron_info(index_t polyhedron_id, Span vertices)
 
 ```cpp
 Inherits from VertexSetBuilder, CoordinateReferenceSystemManagersBuilder<3U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 

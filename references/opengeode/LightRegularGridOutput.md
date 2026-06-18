@@ -40,17 +40,17 @@ Inherits from Output<LightRegularGrid<dimension> >
 
 ## Functions
 
-### LightRegularGridOutput
-
-```cpp
-public void LightRegularGridOutput<dimension>(basic_string_view filename)
-```
-
-
 ### write
 
 ```cpp
-public vector write(const LightRegularGrid<dimension> & grid)
+public std::vector<std::string> write(const LightRegularGrid<dimension> & grid)
+```
+
+
+### LightRegularGridOutput
+
+```cpp
+public void LightRegularGridOutput<dimension>(std::string_view filename)
 ```
 
 

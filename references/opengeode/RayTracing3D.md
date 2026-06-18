@@ -60,21 +60,21 @@ public void ~RayTracing3D()
 ### closest_polygon
 
 ```cpp
-public optional closest_polygon()
+public std::optional<PolygonDistance> closest_polygon()
 ```
 
 
 ### closest_polygons
 
 ```cpp
-public optional closest_polygons(index_t nb_closest_wanted)
+public std::optional<absl::FixedArray<PolygonDistance>> closest_polygons(index_t nb_closest_wanted)
 ```
 
 
 ### all_intersections
 
 ```cpp
-public vector all_intersections()
+public std::vector<PolygonDistance> all_intersections()
 ```
 
 

@@ -25,7 +25,7 @@ Inherits from Output<Graph>
 ### GraphOutput
 
 ```cpp
-protected void GraphOutput(basic_string_view filename)
+protected void GraphOutput(std::string_view filename)
 ```
 
 

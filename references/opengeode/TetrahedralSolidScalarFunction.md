@@ -33,7 +33,7 @@ public void ~TetrahedralSolidScalarFunction<dimension>()
 ### create
 
 ```cpp
-public TetrahedralSolidScalarFunction create(const TetrahedralSolid<dimension> & solid, basic_string_view function_name, double value)
+public static TetrahedralSolidScalarFunction<dimension> create(const TetrahedralSolid<dimension> & solid, std::string_view function_name, double value)
 ```
 
 
@@ -42,7 +42,7 @@ public TetrahedralSolidScalarFunction create(const TetrahedralSolid<dimension> &
 ### find
 
 ```cpp
-public TetrahedralSolidScalarFunction find(const TetrahedralSolid<dimension> & solid, basic_string_view function_name)
+public static TetrahedralSolidScalarFunction<dimension> find(const TetrahedralSolid<dimension> & solid, std::string_view function_name)
 ```
 
 

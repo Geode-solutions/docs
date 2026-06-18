@@ -25,7 +25,7 @@ Inherits from LightRegularGridInput<dimension>
 ### OpenGeodeLightRegularGridInput
 
 ```cpp
-public void OpenGeodeLightRegularGridInput<dimension>(basic_string_view filename)
+public void OpenGeodeLightRegularGridInput<dimension>(std::string_view filename)
 ```
 
 

@@ -119,14 +119,14 @@ public AttributeManager & relation_attribute_manager()
 ### relation_edge_index
 
 ```cpp
-public optional relation_edge_index(const uuid & component_id1, const uuid & component_id2)
+public std::optional<index_t> relation_edge_index(const uuid & component_id1, const uuid & component_id2)
 ```
 
 
 ### relation_components_from_index
 
 ```cpp
-public tuple relation_components_from_index(index_t id)
+public std::tuple<ComponentID, ComponentID> relation_components_from_index(index_t id)
 ```
 
 
@@ -154,7 +154,7 @@ protected void initialize_attributes()
 ### vertex_id
 
 ```cpp
-protected optional vertex_id(const uuid & component_id)
+protected std::optional<index_t> vertex_id(const uuid & component_id)
 ```
 
 

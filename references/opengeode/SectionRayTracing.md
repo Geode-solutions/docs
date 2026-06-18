@@ -40,7 +40,7 @@ public bool is_point_inside_surface(const Point2D & point, const Surface2D & sur
 ### surface_containing_point
 
 ```cpp
-public optional surface_containing_point(const Point2D & point)
+public std::optional<uuid> surface_containing_point(const Point2D & point)
 ```
 
 

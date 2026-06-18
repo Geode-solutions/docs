@@ -25,7 +25,7 @@ Inherits from Output<EdgedCurve<dimension> >
 ### EdgedCurveOutput
 
 ```cpp
-protected void EdgedCurveOutput<dimension>(basic_string_view filename)
+protected void EdgedCurveOutput<dimension>(std::string_view filename)
 ```
 
 

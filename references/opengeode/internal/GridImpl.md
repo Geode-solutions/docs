@@ -22,6 +22,18 @@ Inherits from ArrayImpl<dimension>
 
 ## Functions
 
+### do_update_origin
+
+```cpp
+protected void do_update_origin(RegularGrid<dimension> & grid, const Point<dimension> & origin)
+```
+
+### do_update_origin_and_directions
+
+```cpp
+protected void do_update_origin_and_directions(RegularGrid<dimension> & grid, const Point<dimension> & origin, const std::array<Vector<dimension>, dimension> & directions)
+```
+
 ### vertex_index
 
 ```cpp
@@ -35,18 +47,6 @@ public index_t vertex_index(const Grid<dimension> & grid, const VertexIndices & 
 public VertexIndices vertex_indices(const Grid<dimension> & grid, index_t index)
 ```
 
-
-### do_update_origin
-
-```cpp
-protected void do_update_origin(RegularGrid<dimension> & grid, const Point<dimension> & origin)
-```
-
-### do_update_origin_and_directions
-
-```cpp
-protected void do_update_origin_and_directions(RegularGrid<dimension> & grid, const Point<dimension> & origin, const std::array<Vector<dimension>, dimension> & directions)
-```
 
 
 

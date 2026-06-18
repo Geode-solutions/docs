@@ -37,7 +37,7 @@ public DynamicNNSearch<dimension> & operator=(const DynamicNNSearch<dimension> &
 ### DynamicNNSearch
 
 ```cpp
-public void DynamicNNSearch<dimension>(std::vector<Point<dimension> > points)
+public void DynamicNNSearch<dimension>(std::vector<Point<dimension>> points)
 ```
 
 
@@ -79,7 +79,7 @@ public void add_point(const Point<dimension> & point)
 ### radius_neighbors
 
 ```cpp
-public vector radius_neighbors(const Point<dimension> & point, double threshold_distance)
+public std::vector<index_t> radius_neighbors(const Point<dimension> & point, double threshold_distance)
 ```
 
 

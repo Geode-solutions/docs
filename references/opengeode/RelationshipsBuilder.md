@@ -84,7 +84,7 @@ public void copy_relationships(const ModelCopyMapping & mapping, const Relations
 ### load_relationships
 
 ```cpp
-public void load_relationships(basic_string_view directory)
+public void load_relationships(std::string_view directory)
 ```
 
 

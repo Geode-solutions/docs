@@ -20,6 +20,15 @@ Inherits from VertexSetBuilder, CoordinateReferenceSystemManagersBuilder<2U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class SurfaceMeshBuilder
 
 
@@ -29,6 +38,15 @@ Inherits from VertexSetBuilder, CoordinateReferenceSystemManagersBuilder<2U>
 
 ```cpp
 Inherits from VertexSetBuilder, CoordinateReferenceSystemManagersBuilder<dimension>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 
@@ -52,7 +70,7 @@ public void ~SurfaceMeshBuilder<dimension>()
 ### create
 
 ```cpp
-public std::unique_ptr<SurfaceMeshBuilder<dimension> > create(SurfaceMesh<dimension> & mesh)
+public static std::unique_ptr<SurfaceMeshBuilder<dimension>> create(SurfaceMesh<dimension> & mesh)
 ```
 
 
@@ -83,7 +101,7 @@ public index_t create_point(Point<dimension> point)
 ### create_polygon
 
 ```cpp
-public index_t create_polygon(Span vertices)
+public index_t create_polygon(absl::Span<const index_t> vertices)
 ```
 
 
@@ -109,7 +127,7 @@ public void set_polygon_vertex(const PolygonVertex & polygon_vertex, index_t ver
 ### replace_vertex
 
 ```cpp
-public BijectiveMapping replace_vertex(index_t old_vertex_id, index_t new_vertex_id)
+public geode::BijectiveMapping<index_t> replace_vertex(index_t old_vertex_id, index_t new_vertex_id)
 ```
 
 
@@ -168,7 +186,7 @@ public void compute_polygon_adjacencies()
 ### compute_polygon_adjacencies
 
 ```cpp
-public void compute_polygon_adjacencies(Span polygons_to_connect)
+public void compute_polygon_adjacencies(absl::Span<const index_t> polygons_to_connect)
 ```
 
 
@@ -179,7 +197,7 @@ public void compute_polygon_adjacencies(Span polygons_to_connect)
 ### delete_polygons
 
 ```cpp
-public vector delete_polygons(const std::vector<bool> & to_delete)
+public std::vector<index_t> delete_polygons(const std::vector<bool> & to_delete)
 ```
 
 
@@ -192,7 +210,7 @@ public vector delete_polygons(const std::vector<bool> & to_delete)
 ### permute_polygons
 
 ```cpp
-public vector permute_polygons(Span permutation)
+public std::vector<index_t> permute_polygons(absl::Span<const index_t> permutation)
 ```
 
 
@@ -205,7 +223,7 @@ public vector permute_polygons(Span permutation)
 ### delete_isolated_vertices
 
 ```cpp
-public vector delete_isolated_vertices()
+public std::vector<index_t> delete_isolated_vertices()
 ```
 
 
@@ -265,6 +283,15 @@ protected void SurfaceMeshBuilder<dimension>(SurfaceMesh<dimension> & mesh)
 
 ```cpp
 Inherits from VertexSetBuilder, CoordinateReferenceSystemManagersBuilder<3U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 

@@ -33,28 +33,28 @@ Inherits from Singleton
 ### register_creator
 
 ```cpp
-public void register_creator(Key key)
+public static void register_creator(Key key)
 ```
 
 
 ### create
 
 ```cpp
-public std::unique_ptr<BaseClass> create(const Key & key, Args... args)
+public static std::unique_ptr<BaseClass> create(const Key & key, Args... args)
 ```
 
 
 ### list_creators
 
 ```cpp
-public absl::FixedArray<Key> list_creators()
+public static absl::FixedArray<Key> list_creators()
 ```
 
 
 ### has_creator
 
 ```cpp
-public bool has_creator(const Key & key)
+public static bool has_creator(const Key & key)
 ```
 
 

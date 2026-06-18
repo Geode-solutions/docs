@@ -26,7 +26,7 @@ public index_t nb_mappings()
 ### index
 
 ```cpp
-public optional index(const uuid & id)
+public std::optional<index_t> index(const uuid & id)
 ```
 
 
@@ -54,7 +54,7 @@ public void set_new_mapping(const uuid & id, const index_t index)
 ### update
 
 ```cpp
-public void update(Span old2new)
+public void update(absl::Span<const index_t> old2new)
 ```
 
 

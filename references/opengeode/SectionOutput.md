@@ -25,7 +25,7 @@ Inherits from Output<Section>
 ### SectionOutput
 
 ```cpp
-protected void SectionOutput(basic_string_view filename)
+protected void SectionOutput(std::string_view filename)
 ```
 
 

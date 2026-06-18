@@ -25,14 +25,7 @@ Inherits from SectionInput
 ### OpenGeodeSectionInput
 
 ```cpp
-public void OpenGeodeSectionInput(basic_string_view filename)
-```
-
-
-### extension
-
-```cpp
-public basic_string_view extension()
+public void OpenGeodeSectionInput(std::string_view filename)
 ```
 
 
@@ -40,6 +33,13 @@ public basic_string_view extension()
 
 ```cpp
 public Section read()
+```
+
+
+### extension
+
+```cpp
+public static std::string_view extension()
 ```
 
 

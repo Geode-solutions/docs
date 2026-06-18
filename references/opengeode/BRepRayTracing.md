@@ -33,7 +33,7 @@ public void ~BRepRayTracing()
 ### find_intersections_with_boundaries
 
 ```cpp
-public flat_hash_map find_intersections_with_boundaries(const InfiniteLine3D & infinite_line, const Block3D & block)
+public BoundarySurfaceIntersections find_intersections_with_boundaries(const InfiniteLine3D & infinite_line, const Block3D & block)
 ```
 
 
@@ -47,7 +47,7 @@ public bool is_point_inside_block(const Point3D & point, const Block3D & block)
 ### block_containing_point
 
 ```cpp
-public optional block_containing_point(const Point3D & point)
+public std::optional<uuid> block_containing_point(const Point3D & point)
 ```
 
 

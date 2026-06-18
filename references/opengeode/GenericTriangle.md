@@ -14,10 +14,37 @@ const name = words.join('-');
 # class GenericTriangle
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class GenericTriangle
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class GenericTriangle
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
 
 
 ## Functions
@@ -67,35 +94,35 @@ public Point<dimension> barycenter()
 ### normal
 
 ```cpp
-public typename std::enable_if<T == 3, optional<Vector3D> >::type normal()
+public typename std::enable_if<T == 3, std::optional<Vector3D>>::type normal()
 ```
 
 
 ### plane
 
 ```cpp
-public typename std::enable_if<T == 3, optional<Plane> >::type plane()
+public typename std::enable_if<T == 3, std::optional<Plane>>::type plane()
 ```
 
 
 ### owner_plane
 
 ```cpp
-public typename std::enable_if<T == 3, optional<OwnerPlane> >::type owner_plane()
+public typename std::enable_if<T == 3, std::optional<OwnerPlane>>::type owner_plane()
 ```
 
 
 ### pivot
 
 ```cpp
-public typename std::enable_if<T == 3, optional<local_index_t> >::type pivot()
+public typename std::enable_if<T == 3, std::optional<local_index_t>>::type pivot()
 ```
 
 
 ### pivot_and_normal
 
 ```cpp
-public typename std::enable_if<T == 3, optional<std::pair<local_index_t, Vector3D> > >::type pivot_and_normal()
+public typename std::enable_if<T == 3, std::optional<std::pair<local_index_t, Vector3D>>>::type pivot_and_normal()
 ```
 
 
@@ -151,7 +178,7 @@ public bool is_degenerated()
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 
@@ -160,6 +187,24 @@ public basic_string string()
 # class GenericTriangle
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class GenericTriangle
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
 
 

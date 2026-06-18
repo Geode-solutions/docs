@@ -20,82 +20,91 @@ Inherits from EdgedCurve<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### OpenGeodeEdgedCurve
 
 ```cpp
-public void OpenGeodeEdgedCurve<>(const OpenGeodeEdgedCurve<> & )
+public void OpenGeodeEdgedCurve<value-parameter-0-0>(const OpenGeodeEdgedCurve<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public OpenGeodeEdgedCurve<> & operator=(const OpenGeodeEdgedCurve<> & )
-```
-
-
-### OpenGeodeEdgedCurve
-
-```cpp
-public void OpenGeodeEdgedCurve<>()
-```
-
-
-### OpenGeodeEdgedCurve
-
-```cpp
-public void OpenGeodeEdgedCurve<>(OpenGeodeEdgedCurve<> && other)
-```
-
-
-### operator=
-
-```cpp
-public OpenGeodeEdgedCurve<> & operator=(OpenGeodeEdgedCurve<> && other)
-```
-
-
-### ~OpenGeodeEdgedCurve
-
-```cpp
-public void ~OpenGeodeEdgedCurve<>()
+public OpenGeodeEdgedCurve<dimension> & operator=(const OpenGeodeEdgedCurve<dimension> & )
 ```
 
 
 ### impl_name_static
 
 ```cpp
-public NamedType impl_name_static()
+public static MeshImpl impl_name_static()
 ```
 
 
 ### impl_name
 
 ```cpp
-public NamedType impl_name()
+public MeshImpl impl_name()
 ```
 
 
 ### type_name
 
 ```cpp
-public NamedType type_name()
+public MeshType type_name()
+```
+
+
+### OpenGeodeEdgedCurve
+
+```cpp
+public void OpenGeodeEdgedCurve<value-parameter-0-0>()
 ```
 
 
 ### native_extension_static
 
 ```cpp
-public basic_string_view native_extension_static()
+public static std::string_view native_extension_static()
+```
+
+
+### OpenGeodeEdgedCurve
+
+```cpp
+public void OpenGeodeEdgedCurve<value-parameter-0-0>(OpenGeodeEdgedCurve<dimension> && other)
 ```
 
 
 ### native_extension
 
 ```cpp
-public basic_string_view native_extension()
+public std::string_view native_extension()
+```
+
+
+### operator=
+
+```cpp
+public OpenGeodeEdgedCurve<dimension> & operator=(OpenGeodeEdgedCurve<dimension> && other)
+```
+
+
+### ~OpenGeodeEdgedCurve
+
+```cpp
+public void ~OpenGeodeEdgedCurve<value-parameter-0-0>()
 ```
 
 
@@ -124,6 +133,15 @@ Inherits from EdgedCurve<1U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class OpenGeodeEdgedCurve
 
 
@@ -133,11 +151,29 @@ Inherits from EdgedCurve<3U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class OpenGeodeEdgedCurve
 
 
 ```cpp
 Inherits from EdgedCurve<2U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 

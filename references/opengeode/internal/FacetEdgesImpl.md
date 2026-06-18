@@ -32,14 +32,14 @@ public void FacetEdgesImpl<dimension>()
 ### find_edge
 
 ```cpp
-public optional find_edge(const std::array<index_t, 2> & edge_vertices)
+public std::optional<index_t> find_edge(const std::array<index_t, 2> & edge_vertices)
 ```
 
 
 ### find_or_create_edge
 
 ```cpp
-public index_t find_or_create_edge(array edge_vertices)
+public index_t find_or_create_edge(std::array<index_t, 2> edge_vertices)
 ```
 
 
@@ -53,35 +53,35 @@ public const std::array<index_t, 2> & edge_vertices(const index_t edge_id)
 ### update_edge_vertex
 
 ```cpp
-public BijectiveMapping update_edge_vertex(array edge_vertices, const index_t edge_vertex_id, const index_t new_vertex_id)
+public BijectiveMapping<index_t> update_edge_vertex(std::array<index_t, 2> edge_vertices, const index_t edge_vertex_id, const index_t new_vertex_id)
 ```
 
 
 ### update_edge_vertices
 
 ```cpp
-public vector update_edge_vertices(Span old2new)
+public std::vector<index_t> update_edge_vertices(absl::Span<const index_t> old2new)
 ```
 
 
 ### remove_edge
 
 ```cpp
-public void remove_edge(array edge_vertices)
+public void remove_edge(std::array<index_t, 2> edge_vertices)
 ```
 
 
 ### delete_edges
 
 ```cpp
-public vector delete_edges(const std::vector<bool> & to_delete)
+public std::vector<index_t> delete_edges(const std::vector<bool> & to_delete)
 ```
 
 
 ### remove_isolated_edges
 
 ```cpp
-public vector remove_isolated_edges()
+public std::vector<index_t> remove_isolated_edges()
 ```
 
 
@@ -102,7 +102,7 @@ public AttributeManager & edge_attribute_manager()
 ### overwrite_edges
 
 ```cpp
-public void overwrite_edges(const detail::FacetStorage<std::array<index_t, 2> > & from)
+public void overwrite_edges(const detail::FacetStorage<std::array<index_t, 2>> & from)
 ```
 
 

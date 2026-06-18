@@ -40,7 +40,7 @@ PolyhedronOrigin
 ### SolidMeshMerger
 
 ```cpp
-public void SolidMeshMerger<dimension>(absl::Span<const std::reference_wrapper<const SolidMesh<dimension> > > solids)
+public void SolidMeshMerger<dimension>(absl::Span<const std::reference_wrapper<const SolidMesh<dimension>>> solids)
 ```
 
 
@@ -61,14 +61,14 @@ public void ~SolidMeshMerger<dimension>()
 ### merge
 
 ```cpp
-public std::unique_ptr<SolidMesh<dimension> > merge(double epsilon)
+public std::unique_ptr<SolidMesh<dimension>> merge(double epsilon)
 ```
 
 
 ### merge
 
 ```cpp
-public std::unique_ptr<SolidMesh<dimension> > merge(const Frame<dimension> & epsilons_frame)
+public std::unique_ptr<SolidMesh<dimension>> merge(const Frame<dimension> & epsilons_frame)
 ```
 
 

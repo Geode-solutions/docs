@@ -25,7 +25,7 @@ Inherits from Input<std::unique_ptr<PolygonalSurface<dimension> >, MeshImpl>
 ### PolygonalSurfaceInput
 
 ```cpp
-protected void PolygonalSurfaceInput<dimension>(basic_string_view filename)
+protected void PolygonalSurfaceInput<dimension>(std::string_view filename)
 ```
 
 

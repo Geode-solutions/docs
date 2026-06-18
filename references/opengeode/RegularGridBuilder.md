@@ -20,7 +20,23 @@ Inherits from SurfaceMeshBuilder<2>, GridBuilder<2>
 
 
 
+## Members
+
+```cpp
+public static const index_t dim
+
+```
+
+
+
 ## Functions
+
+### create
+
+```cpp
+public static std::unique_ptr<RegularGridBuilder<2>> create(RegularGrid2D & grid)
+```
+
 
 ### RegularGridBuilder
 
@@ -29,31 +45,24 @@ public void RegularGridBuilder(RegularGridBuilder<2> && )
 ```
 
 
-### create
+### initialize_grid
 
 ```cpp
-public unique_ptr create(RegularGrid2D & grid)
+public void initialize_grid(const Point2D & origin, std::array<index_t, 2> cells_number, std::array<double, 2> cells_length)
 ```
 
 
 ### initialize_grid
 
 ```cpp
-public void initialize_grid(const Point2D & origin, array cells_number, array cells_length)
+public void initialize_grid(const Point2D & origin, std::array<index_t, 2> cells_number, double cells_length)
 ```
 
 
 ### initialize_grid
 
 ```cpp
-public void initialize_grid(const Point2D & origin, array cells_number, double cells_length)
-```
-
-
-### initialize_grid
-
-```cpp
-public void initialize_grid(Point origin, array cells_number, array cell_directions)
+public void initialize_grid(Point2D origin, std::array<index_t, 2> cells_number, std::array<Vector2D, 2> cell_directions)
 ```
 
 
@@ -66,7 +75,7 @@ public void update_origin(const Point2D & origin)
 ### update_origin_and_directions
 
 ```cpp
-public void update_origin_and_directions(Point origin, array cell_directions)
+public void update_origin_and_directions(Point2D origin, std::array<Vector2D, 2> cell_directions)
 ```
 
 ### copy
@@ -96,7 +105,30 @@ Inherits from SolidMeshBuilder<3>, GridBuilder<3>
 
 
 
+## Members
+
+```cpp
+public static const index_t dim
+
+```
+
+
+
 ## Functions
+
+### create
+
+```cpp
+public static std::unique_ptr<RegularGridBuilder<3>> create(RegularGrid3D & grid)
+```
+
+
+### initialize_grid
+
+```cpp
+public void initialize_grid(const Point3D & origin, std::array<index_t, 3> cells_number, std::array<double, 3> cells_length)
+```
+
 
 ### RegularGridBuilder
 
@@ -105,31 +137,17 @@ public void RegularGridBuilder(RegularGridBuilder<3> && )
 ```
 
 
-### create
+### initialize_grid
 
 ```cpp
-public unique_ptr create(RegularGrid3D & grid)
+public void initialize_grid(const Point3D & origin, std::array<index_t, 3> cells_number, double cells_length)
 ```
 
 
 ### initialize_grid
 
 ```cpp
-public void initialize_grid(const Point3D & origin, array cells_number, array cells_length)
-```
-
-
-### initialize_grid
-
-```cpp
-public void initialize_grid(const Point3D & origin, array cells_number, double cells_length)
-```
-
-
-### initialize_grid
-
-```cpp
-public void initialize_grid(Point origin, array cells_number, array cell_directions)
+public void initialize_grid(Point3D origin, std::array<index_t, 3> cells_number, std::array<Vector3D, 3> cell_directions)
 ```
 
 
@@ -142,7 +160,7 @@ public void update_origin(const Point3D & origin)
 ### update_origin_and_directions
 
 ```cpp
-public void update_origin_and_directions(Point origin, array cell_directions)
+public void update_origin_and_directions(Point3D origin, std::array<Vector3D, 3> cell_directions)
 ```
 
 ### copy

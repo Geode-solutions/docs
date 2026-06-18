@@ -14,7 +14,25 @@ const name = words.join('-');
 # class GenericCircle
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class GenericCircle
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
 
 
 ## Functions
@@ -71,12 +89,21 @@ public double radius()
 ### bounding_box
 
 ```cpp
-public BoundingBox bounding_box()
+public BoundingBox3D bounding_box()
 ```
 
 
 
 
 # class GenericCircle
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
 
 

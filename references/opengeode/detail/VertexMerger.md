@@ -60,7 +60,7 @@ public const VertexOrigins & vertex_origins(index_t vertex)
 ### VertexMerger
 
 ```cpp
-protected void VertexMerger<Mesh>(absl::Span<const std::reference_wrapper<const Mesh> > meshes)
+protected void VertexMerger<Mesh>(absl::Span<const std::reference_wrapper<const Mesh>> meshes)
 ```
 
 
@@ -81,7 +81,7 @@ protected void ~VertexMerger<Mesh>()
 ### meshes
 
 ```cpp
-protected absl::Span<const std::reference_wrapper<const Mesh> > meshes()
+protected absl::Span<const std::reference_wrapper<const Mesh>> meshes()
 ```
 
 

@@ -14,12 +14,21 @@ const name = words.join('-');
 # class Cylinder
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### Cylinder
 
 ```cpp
-public void Cylinder(Segment axis, double radius)
+public void Cylinder(Segment3D axis, double radius)
 ```
 
 

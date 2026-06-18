@@ -47,49 +47,49 @@ public bool epsilon_intersects(const Triangle<3> & triangle)
 ### BoundingBox
 
 ```cpp
-public void BoundingBox<>()
+public void BoundingBox<value-parameter-0-0>()
 ```
 
 
 ### BoundingBox
 
 ```cpp
-public void BoundingBox<>(Point<dimension> min, Point<dimension> max)
+public void BoundingBox<value-parameter-0-0>(Point<dimension> min, Point<dimension> max)
 ```
 
 
 ### BoundingBox
 
 ```cpp
-public void BoundingBox<>(const BoundingBox<> & other)
+public void BoundingBox<value-parameter-0-0>(const BoundingBox<dimension> & other)
 ```
 
 
 ### operator=
 
 ```cpp
-public BoundingBox<> & operator=(const BoundingBox<> & other)
+public BoundingBox<dimension> & operator=(const BoundingBox<dimension> & other)
 ```
 
 
 ### BoundingBox
 
 ```cpp
-public void BoundingBox<>(BoundingBox<> && other)
+public void BoundingBox<value-parameter-0-0>(BoundingBox<dimension> && other)
 ```
 
 
 ### operator=
 
 ```cpp
-public BoundingBox<> & operator=(BoundingBox<> && other)
+public BoundingBox<dimension> & operator=(BoundingBox<dimension> && other)
 ```
 
 
 ### ~BoundingBox
 
 ```cpp
-public void ~BoundingBox<>()
+public void ~BoundingBox<value-parameter-0-0>()
 ```
 
 
@@ -293,7 +293,7 @@ public double n_volume()
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 

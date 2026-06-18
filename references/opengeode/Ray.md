@@ -34,28 +34,28 @@ Inherits from GenericLine<RefPoint<dimension>, dimension>
 ### Ray
 
 ```cpp
-public void Ray<>(const Vector<dimension> & direction, const Point<dimension> & origin)
+public void Ray<value-parameter-0-0>(const Vector<dimension> & direction, const Point<dimension> & origin)
 ```
 
 
 ### Ray
 
 ```cpp
-public void Ray<>(const Segment<dimension> & segment)
+public void Ray<value-parameter-0-0>(const Segment<dimension> & segment)
 ```
 
 
 ### Ray
 
 ```cpp
-public void Ray<>(const Ray<dimension> & other)
+public void Ray<value-parameter-0-0>(const Ray<dimension> & other)
 ```
 
 
 ### Ray
 
 ```cpp
-public void Ray<>(const OwnerRay<dimension> & other)
+public void Ray<value-parameter-0-0>(const OwnerRay<dimension> & other)
 ```
 
 
@@ -69,7 +69,7 @@ public Ray<dimension> & operator=(const Ray<dimension> & other)
 ### Ray
 
 ```cpp
-public void Ray<>(Ray<dimension> && other)
+public void Ray<value-parameter-0-0>(Ray<dimension> && other)
 ```
 
 

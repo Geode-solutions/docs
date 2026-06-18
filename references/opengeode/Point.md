@@ -14,16 +14,52 @@ const name = words.join('-');
 # class Point
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class Point
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class Point
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
 
 
 # class Point
 
 
  Description of a point in the given dimension with double coordinates
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
 
 
 
@@ -32,7 +68,7 @@ const name = words.join('-');
 ### Point
 
 ```cpp
-public void Point<>()
+public void Point<value-parameter-0-0>()
 ```
 
 
@@ -41,7 +77,7 @@ public void Point<>()
 ### Point
 
 ```cpp
-public void Point<>(std::array<double, dimension> values)
+public void Point<value-parameter-0-0>(std::array<double, dimension> values)
 ```
 
 
@@ -62,56 +98,56 @@ public void set_value(local_index_t index, double coordinate)
 ### operator==
 
 ```cpp
-public bool operator==(const Point<> & other)
+public bool operator==(const Point<dimension> & other)
 ```
 
 
 ### operator!=
 
 ```cpp
-public bool operator!=(const Point<> & other)
+public bool operator!=(const Point<dimension> & other)
 ```
 
 
 ### operator<
 
 ```cpp
-public bool operator<(const Point<> & other)
+public bool operator<(const Point<dimension> & other)
 ```
 
 
 ### operator<=
 
 ```cpp
-public bool operator<=(const Point<> & other)
+public bool operator<=(const Point<dimension> & other)
 ```
 
 
 ### operator*
 
 ```cpp
-public Point operator*(double multiplier)
+public Point<dimension> operator*(double multiplier)
 ```
 
 
 ### operator/
 
 ```cpp
-public Point operator/(double divider)
+public Point<dimension> operator/(double divider)
 ```
 
 
 ### operator+
 
 ```cpp
-public Point operator+(const Point<> & other)
+public Point<dimension> operator+(const Point<dimension> & other)
 ```
 
 
 ### operator-
 
 ```cpp
-public Point operator-(const Point<> & other)
+public Point<dimension> operator-(const Point<dimension> & other)
 ```
 
 
@@ -132,28 +168,28 @@ public void operator/=(double divider)
 ### operator+=
 
 ```cpp
-public void operator+=(const Point<> & other)
+public void operator+=(const Point<dimension> & other)
 ```
 
 
 ### operator-=
 
 ```cpp
-public void operator-=(const Point<> & other)
+public void operator-=(const Point<dimension> & other)
 ```
 
 
 ### inexact_equal
 
 ```cpp
-public bool inexact_equal(const Point<> & other)
+public bool inexact_equal(const Point<dimension> & other)
 ```
 
 
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 
@@ -169,6 +205,24 @@ public Point<dimension - 1> project_point(local_index_t axis_to_remove)
 # class Point
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class Point
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
 
 

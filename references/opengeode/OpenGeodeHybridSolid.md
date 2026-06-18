@@ -20,82 +20,91 @@ Inherits from HybridSolid<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### OpenGeodeHybridSolid
 
 ```cpp
-public void OpenGeodeHybridSolid<>(const OpenGeodeHybridSolid<> & )
+public void OpenGeodeHybridSolid<value-parameter-0-0>(const OpenGeodeHybridSolid<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public OpenGeodeHybridSolid<> & operator=(const OpenGeodeHybridSolid<> & )
-```
-
-
-### OpenGeodeHybridSolid
-
-```cpp
-public void OpenGeodeHybridSolid<>()
-```
-
-
-### OpenGeodeHybridSolid
-
-```cpp
-public void OpenGeodeHybridSolid<>(OpenGeodeHybridSolid<> && other)
-```
-
-
-### operator=
-
-```cpp
-public OpenGeodeHybridSolid<> & operator=(OpenGeodeHybridSolid<> && other)
-```
-
-
-### ~OpenGeodeHybridSolid
-
-```cpp
-public void ~OpenGeodeHybridSolid<>()
+public OpenGeodeHybridSolid<dimension> & operator=(const OpenGeodeHybridSolid<dimension> & )
 ```
 
 
 ### impl_name_static
 
 ```cpp
-public NamedType impl_name_static()
+public static MeshImpl impl_name_static()
 ```
 
 
 ### impl_name
 
 ```cpp
-public NamedType impl_name()
+public MeshImpl impl_name()
 ```
 
 
 ### type_name
 
 ```cpp
-public NamedType type_name()
+public MeshType type_name()
 ```
 
 
 ### native_extension_static
 
 ```cpp
-public basic_string_view native_extension_static()
+public static std::string_view native_extension_static()
 ```
 
 
 ### native_extension
 
 ```cpp
-public basic_string_view native_extension()
+public std::string_view native_extension()
+```
+
+
+### OpenGeodeHybridSolid
+
+```cpp
+public void OpenGeodeHybridSolid<value-parameter-0-0>()
+```
+
+
+### OpenGeodeHybridSolid
+
+```cpp
+public void OpenGeodeHybridSolid<value-parameter-0-0>(OpenGeodeHybridSolid<dimension> && other)
+```
+
+
+### operator=
+
+```cpp
+public OpenGeodeHybridSolid<dimension> & operator=(OpenGeodeHybridSolid<dimension> && other)
+```
+
+
+### ~OpenGeodeHybridSolid
+
+```cpp
+public void ~OpenGeodeHybridSolid<value-parameter-0-0>()
 ```
 
 
@@ -158,7 +167,7 @@ public void remove_polyhedra(const std::vector<bool> & to_delete, OGHybridSolidK
 ### permute_polyhedra
 
 ```cpp
-public void permute_polyhedra(Span permutation, OGHybridSolidKey )
+public void permute_polyhedra(absl::Span<const index_t> permutation, OGHybridSolidKey )
 ```
 
 
@@ -176,6 +185,15 @@ public void copy_polyhedra(const OpenGeodeHybridSolid<dimension> & solid_mesh, O
 
 ```cpp
 Inherits from HybridSolid<3U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 

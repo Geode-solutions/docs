@@ -28,6 +28,19 @@ const name = words.join('-');
 ### AABBTree
 
 ```cpp
+public void AABBTree<dimension>()
+```
+
+
+
+
+**brief** AABB is a search tree for fast spatial request using the bounding box organisation of elements stored in a single container.
+
+**bboxes** container containing elements bounding boxes. Each element can then be accessed using the index of its box in the tree which should match the index in its initial container.
+
+### AABBTree
+
+```cpp
 public void AABBTree<dimension>(const AABBTree<dimension> & )
 ```
 
@@ -42,20 +55,7 @@ public AABBTree<dimension> & operator=(const AABBTree<dimension> & )
 ### AABBTree
 
 ```cpp
-public void AABBTree<dimension>()
-```
-
-
-
-
-**brief** AABB is a search tree for fast spatial request using the bounding box organisation of elements stored in a single container.
-
-**bboxes** container containing elements bounding boxes. Each element can then be accessed using the index of its box in the tree which should match the index in its initial container.
-
-### AABBTree
-
-```cpp
-public void AABBTree<dimension>(absl::Span<const BoundingBox<dimension> > bboxes)
+public void AABBTree<dimension>(absl::Span<const BoundingBox<dimension>> bboxes)
 ```
 
 
@@ -103,7 +103,7 @@ public const BoundingBox<dimension> & bounding_box()
 ### containing_boxes
 
 ```cpp
-public vector containing_boxes(const Point<dimension> & query)
+public std::vector<index_t> containing_boxes(const Point<dimension> & query)
 ```
 
 
@@ -116,7 +116,7 @@ public vector containing_boxes(const Point<dimension> & query)
 ### closest_element_box
 
 ```cpp
-public tuple closest_element_box(const Point<dimension> & query, const EvalDistance & action)
+public std::tuple<index_t, double> closest_element_box(const Point<dimension> & query, const EvalDistance & action)
 ```
 
 

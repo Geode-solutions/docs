@@ -42,7 +42,7 @@ public void ~TetrahedralSolidPointFunction<dimension, point_dimension>()
 ### create
 
 ```cpp
-public TetrahedralSolidPointFunction create(const TetrahedralSolid<dimension> & solid, basic_string_view function_name, Point<point_dimension> value)
+public static TetrahedralSolidPointFunction<dimension, point_dimension> create(const TetrahedralSolid<dimension> & solid, std::string_view function_name, Point<point_dimension> value)
 ```
 
 
@@ -51,7 +51,7 @@ public TetrahedralSolidPointFunction create(const TetrahedralSolid<dimension> & 
 ### find
 
 ```cpp
-public TetrahedralSolidPointFunction find(const TetrahedralSolid<dimension> & solid, basic_string_view function_name)
+public static TetrahedralSolidPointFunction<dimension, point_dimension> find(const TetrahedralSolid<dimension> & solid, std::string_view function_name)
 ```
 
 

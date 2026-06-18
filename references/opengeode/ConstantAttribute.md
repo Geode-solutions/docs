@@ -29,7 +29,7 @@ Inherits from ReadOnlyAttribute<T>
 ### ConstantAttribute
 
 ```cpp
-public void ConstantAttribute<T>(T value, AttributeProperties properties, PassKey )
+public void ConstantAttribute<T>(T value, AttributeProperties properties, AttributeBase::AttributeKey )
 ```
 
 
@@ -71,84 +71,84 @@ public void modify_value(Modifier modifier)
 ### compute_value
 
 ```cpp
-public void compute_value(index_t , index_t , PassKey )
+public void compute_value(index_t , index_t , AttributeBase::AttributeKey )
 ```
 
 
 ### compute_value
 
 ```cpp
-public void compute_value(const AttributeLinearInterpolation & , index_t , PassKey )
+public void compute_value(const AttributeLinearInterpolation & , index_t , AttributeBase::AttributeKey )
 ```
 
 
 ### resize
 
 ```cpp
-public void resize(index_t , PassKey )
+public void resize(index_t , AttributeBase::AttributeKey )
 ```
 
 
 ### reserve
 
 ```cpp
-public void reserve(index_t , PassKey )
+public void reserve(index_t , AttributeBase::AttributeKey )
 ```
 
 
 ### delete_elements
 
 ```cpp
-public void delete_elements(const std::vector<bool> & , PassKey )
+public void delete_elements(const std::vector<bool> & , AttributeBase::AttributeKey )
 ```
 
 
 ### permute_elements
 
 ```cpp
-public void permute_elements(Span , PassKey )
+public void permute_elements(absl::Span<const index_t> , AttributeBase::AttributeKey )
 ```
 
 
 ### clone
 
 ```cpp
-public shared_ptr clone(PassKey )
+public std::shared_ptr<AttributeBase> clone(AttributeBase::AttributeKey )
 ```
 
 
 ### copy
 
 ```cpp
-public void copy(const AttributeBase & attribute, index_t , PassKey )
+public void copy(const AttributeBase & attribute, index_t , AttributeBase::AttributeKey )
 ```
 
 
 ### extract
 
 ```cpp
-public shared_ptr extract(Span , index_t , PassKey )
+public std::shared_ptr<AttributeBase> extract(absl::Span<const index_t> , index_t , AttributeBase::AttributeKey )
 ```
 
 
 ### extract
 
 ```cpp
-public shared_ptr extract(const GenericMapping<index_t> & , index_t , PassKey )
+public std::shared_ptr<AttributeBase> extract(const GenericMapping<index_t> & , index_t , AttributeBase::AttributeKey )
 ```
 
 
 ### import
 
 ```cpp
-public void import(Span , const std::shared_ptr<AttributeBase> & from, PassKey )
+public void import(absl::Span<const index_t> , const std::shared_ptr<AttributeBase> & from, AttributeBase::AttributeKey )
 ```
 
 
 ### import
 
 ```cpp
-public void import(const GenericMapping<index_t> & , const std::shared_ptr<AttributeBase> & from, PassKey )
+public void import(const GenericMapping<index_t> & , const std::shared_ptr<AttributeBase> & from, AttributeBase::AttributeKey )
 ```
 
 

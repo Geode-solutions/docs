@@ -29,13 +29,6 @@ public void Singleton(const Singleton & )
 ```
 
 
-### operator=
-
-```cpp
-public Singleton & operator=(const Singleton & )
-```
-
-
 ### Singleton
 
 ```cpp
@@ -46,7 +39,21 @@ public void Singleton(Singleton && )
 ### operator=
 
 ```cpp
+public Singleton & operator=(const Singleton & )
+```
+
+
+### operator=
+
+```cpp
 public Singleton & operator=(Singleton && )
+```
+
+
+### instance
+
+```cpp
+protected static SingletonType & instance()
 ```
 
 
@@ -61,13 +68,6 @@ public void ~Singleton()
 
 ```cpp
 protected void Singleton()
-```
-
-
-### instance
-
-```cpp
-protected SingletonType & instance()
 ```
 
 

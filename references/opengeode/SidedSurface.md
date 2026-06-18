@@ -31,6 +31,16 @@ public PolygonEdge edge
 
 ```
 
+```cpp
+public static const local_index_t POSITIVE
+
+```
+
+```cpp
+public static const local_index_t NEGATIVE
+
+```
+
 
 
 ## Functions

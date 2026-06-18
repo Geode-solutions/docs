@@ -29,56 +29,56 @@ Inherits from Component<dimension>
 ### LineCollection
 
 ```cpp
-public void LineCollection<>(const LineCollection<> & )
+public void LineCollection<value-parameter-0-0>(const LineCollection<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public LineCollection<> & operator=(const LineCollection<> & )
+public LineCollection<dimension> & operator=(const LineCollection<dimension> & )
 ```
 
 
 ### LineCollection
 
 ```cpp
-public void LineCollection<>(LineCollection<> && other)
+public void LineCollection<value-parameter-0-0>(LineCollection<dimension> && other)
 ```
 
 
 ### ~LineCollection
 
 ```cpp
-public void ~LineCollection<>()
+public void ~LineCollection<value-parameter-0-0>()
 ```
 
 
 ### component_type_static
 
 ```cpp
-public NamedType component_type_static()
+public static ComponentType component_type_static()
 ```
 
 
 ### component_type
 
 ```cpp
-public NamedType component_type()
+public ComponentType component_type()
 ```
 
 
 ### LineCollection
 
 ```cpp
-public void LineCollection<>(LineCollectionsKey )
+public void LineCollection<value-parameter-0-0>(LineCollectionsKey )
 ```
 
 
 ### set_line_collection_name
 
 ```cpp
-public void set_line_collection_name(basic_string_view name, LineCollectionsBuilderKey )
+public void set_line_collection_name(std::string_view name, LineCollectionsBuilderKey )
 ```
 
 

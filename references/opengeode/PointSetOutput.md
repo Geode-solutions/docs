@@ -25,7 +25,7 @@ Inherits from Output<PointSet<dimension> >
 ### PointSetOutput
 
 ```cpp
-protected void PointSetOutput<dimension>(basic_string_view filename)
+protected void PointSetOutput<dimension>(std::string_view filename)
 ```
 
 

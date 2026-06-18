@@ -19,17 +19,17 @@ const name = words.join('-');
 
 ## Functions
 
-### AnisotropicDistanceToTetrahedron
-
-```cpp
-public void AnisotropicDistanceToTetrahedron<dimension>(const TetrahedralSolid<dimension> & mesh, const CoordinateSystem<dimension> & coordinate_system)
-```
-
-
 ### operator()
 
 ```cpp
 public double operator()(const Point<dimension> & query, index_t cur_box)
+```
+
+
+### AnisotropicDistanceToTetrahedron
+
+```cpp
+public void AnisotropicDistanceToTetrahedron<dimension>(const TetrahedralSolid<dimension> & mesh, const CoordinateSystem<dimension> & coordinate_system)
 ```
 
 

@@ -46,7 +46,7 @@ public NNSearch<dimension> & operator=(const NNSearch<dimension> & )
 ### NNSearch
 
 ```cpp
-public void NNSearch<dimension>(std::vector<Point<dimension> > points)
+public void NNSearch<dimension>(std::vector<Point<dimension>> points)
 ```
 
 
@@ -94,7 +94,7 @@ public index_t closest_neighbor(const Point<dimension> & point)
 ### radius_neighbors
 
 ```cpp
-public vector radius_neighbors(const Point<dimension> & point, double threshold_distance)
+public std::vector<index_t> radius_neighbors(const Point<dimension> & point, double threshold_distance)
 ```
 
 
@@ -109,7 +109,7 @@ public vector radius_neighbors(const Point<dimension> & point, double threshold_
 ### frame_neighbors
 
 ```cpp
-public vector frame_neighbors(const Point<dimension> & point, const Frame<dimension> & epsilons_frame)
+public std::vector<index_t> frame_neighbors(const Point<dimension> & point, const Frame<dimension> & epsilons_frame)
 ```
 
 
@@ -124,7 +124,7 @@ public vector frame_neighbors(const Point<dimension> & point, const Frame<dimens
 ### neighbors
 
 ```cpp
-public vector neighbors(const Point<dimension> & point, index_t nb_neighbors)
+public std::vector<index_t> neighbors(const Point<dimension> & point, index_t nb_neighbors)
 ```
 
 

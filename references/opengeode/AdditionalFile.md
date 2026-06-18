@@ -33,7 +33,7 @@ public bool is_missing
 ### AdditionalFile
 
 ```cpp
-public void AdditionalFile(basic_string filename_in, bool is_missing_in)
+public void AdditionalFile(std::string filename_in, bool is_missing_in)
 ```
 
 

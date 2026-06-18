@@ -43,28 +43,28 @@ Inherits from GenericLine<RefPoint<dimension>, dimension>
 ### InfiniteLine
 
 ```cpp
-public void InfiniteLine<>(const Vector<dimension> & direction, const Point<dimension> & origin)
+public void InfiniteLine<value-parameter-0-0>(const Vector<dimension> & direction, const Point<dimension> & origin)
 ```
 
 
 ### InfiniteLine
 
 ```cpp
-public void InfiniteLine<>(const Segment<dimension> & segment)
+public void InfiniteLine<value-parameter-0-0>(const Segment<dimension> & segment)
 ```
 
 
 ### InfiniteLine
 
 ```cpp
-public void InfiniteLine<>(const InfiniteLine<dimension> & other)
+public void InfiniteLine<value-parameter-0-0>(const InfiniteLine<dimension> & other)
 ```
 
 
 ### InfiniteLine
 
 ```cpp
-public void InfiniteLine<>(const OwnerInfiniteLine<dimension> & other)
+public void InfiniteLine<value-parameter-0-0>(const OwnerInfiniteLine<dimension> & other)
 ```
 
 
@@ -78,7 +78,7 @@ public InfiniteLine<dimension> & operator=(const InfiniteLine<dimension> & other
 ### InfiniteLine
 
 ```cpp
-public void InfiniteLine<>(InfiniteLine<dimension> && other)
+public void InfiniteLine<value-parameter-0-0>(InfiniteLine<dimension> && other)
 ```
 
 

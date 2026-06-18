@@ -40,14 +40,14 @@ public void ~SplitAlongSurfaceMeshBorders<Model>()
 ### split_all_surfaces
 
 ```cpp
-public vector split_all_surfaces()
+public std::vector<std::pair<ComponentMeshVertex, ComponentMeshVertex>> split_all_surfaces()
 ```
 
 
 ### split_surface
 
 ```cpp
-public vector split_surface(const Surface<Model::dim> & surface)
+public std::vector<std::pair<ComponentMeshVertex, ComponentMeshVertex>> split_surface(const Surface<Model::dim> & surface)
 ```
 
 

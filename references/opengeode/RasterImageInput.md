@@ -25,7 +25,7 @@ Inherits from Input<RasterImage<dimension> >
 ### RasterImageInput
 
 ```cpp
-protected void RasterImageInput<dimension>(basic_string_view filename)
+protected void RasterImageInput<dimension>(std::string_view filename)
 ```
 
 

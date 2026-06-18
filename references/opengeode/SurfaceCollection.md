@@ -29,56 +29,56 @@ Inherits from Component<dimension>
 ### SurfaceCollection
 
 ```cpp
-public void SurfaceCollection<>(const SurfaceCollection<> & )
+public void SurfaceCollection<value-parameter-0-0>(const SurfaceCollection<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public SurfaceCollection<> & operator=(const SurfaceCollection<> & )
+public SurfaceCollection<dimension> & operator=(const SurfaceCollection<dimension> & )
 ```
 
 
 ### SurfaceCollection
 
 ```cpp
-public void SurfaceCollection<>(SurfaceCollection<> && other)
+public void SurfaceCollection<value-parameter-0-0>(SurfaceCollection<dimension> && other)
 ```
 
 
 ### ~SurfaceCollection
 
 ```cpp
-public void ~SurfaceCollection<>()
+public void ~SurfaceCollection<value-parameter-0-0>()
 ```
 
 
 ### component_type_static
 
 ```cpp
-public NamedType component_type_static()
+public static ComponentType component_type_static()
 ```
 
 
 ### component_type
 
 ```cpp
-public NamedType component_type()
+public ComponentType component_type()
 ```
 
 
 ### SurfaceCollection
 
 ```cpp
-public void SurfaceCollection<>(SurfaceCollectionsKey )
+public void SurfaceCollection<value-parameter-0-0>(SurfaceCollectionsKey )
 ```
 
 
 ### set_surface_collection_name
 
 ```cpp
-public void set_surface_collection_name(basic_string_view name, SurfaceCollectionsBuilderKey )
+public void set_surface_collection_name(std::string_view name, SurfaceCollectionsBuilderKey )
 ```
 
 

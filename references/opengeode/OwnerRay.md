@@ -52,21 +52,21 @@ Inherits from GenericLine<Point<dimension>, dimension>
 ### OwnerRay
 
 ```cpp
-public void OwnerRay<>(const Vector<dimension> & direction, Point<dimension> origin)
+public void OwnerRay<value-parameter-0-0>(const Vector<dimension> & direction, Point<dimension> origin)
 ```
 
 
 ### OwnerRay
 
 ```cpp
-public void OwnerRay<>(const Segment<dimension> & segment)
+public void OwnerRay<value-parameter-0-0>(const Segment<dimension> & segment)
 ```
 
 
 ### OwnerRay
 
 ```cpp
-public void OwnerRay<>(const OwnerRay<dimension> & other)
+public void OwnerRay<value-parameter-0-0>(const OwnerRay<dimension> & other)
 ```
 
 
@@ -80,7 +80,7 @@ public OwnerRay<dimension> & operator=(const OwnerRay<dimension> & other)
 ### OwnerRay
 
 ```cpp
-public void OwnerRay<>(OwnerRay<dimension> && other)
+public void OwnerRay<value-parameter-0-0>(OwnerRay<dimension> && other)
 ```
 
 

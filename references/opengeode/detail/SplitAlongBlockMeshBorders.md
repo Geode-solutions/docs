@@ -33,14 +33,14 @@ public void ~SplitAlongBlockMeshBorders()
 ### split_all_blocks
 
 ```cpp
-public vector split_all_blocks()
+public std::vector<std::pair<ComponentMeshVertex, ComponentMeshVertex>> split_all_blocks()
 ```
 
 
 ### split_block
 
 ```cpp
-public vector split_block(const Block3D & block)
+public std::vector<std::pair<ComponentMeshVertex, ComponentMeshVertex>> split_block(const Block3D & block)
 ```
 
 

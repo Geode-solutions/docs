@@ -20,11 +20,29 @@ Inherits from Graph, CoordinateReferenceSystemManagers<2U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class EdgedCurve
 
 
 ```cpp
 Inherits from Graph, CoordinateReferenceSystemManagers<1U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 
@@ -38,40 +56,49 @@ Inherits from Graph, CoordinateReferenceSystemManagers<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### ~EdgedCurve
 
 ```cpp
-public void ~EdgedCurve<>()
+public void ~EdgedCurve<value-parameter-0-0>()
 ```
 
 
 ### create
 
 ```cpp
-public std::unique_ptr<EdgedCurve<dimension> > create()
+public static std::unique_ptr<EdgedCurve<dimension>> create()
 ```
 
 
 ### create
 
 ```cpp
-public std::unique_ptr<EdgedCurve<dimension> > create(const MeshImpl & impl)
+public static std::unique_ptr<EdgedCurve<dimension>> create(const MeshImpl & impl)
 ```
 
 
 ### type_name_static
 
 ```cpp
-public NamedType type_name_static()
+public static MeshType type_name_static()
 ```
 
 
 ### clone
 
 ```cpp
-public std::unique_ptr<EdgedCurve<dimension> > clone()
+public std::unique_ptr<EdgedCurve<dimension>> clone()
 ```
 
 
@@ -124,21 +151,21 @@ public BoundingBox<dimension> bounding_box()
 ### EdgedCurve
 
 ```cpp
-protected void EdgedCurve<>()
+protected void EdgedCurve<value-parameter-0-0>()
 ```
 
 
 ### EdgedCurve
 
 ```cpp
-protected void EdgedCurve<>(EdgedCurve<> && other)
+protected void EdgedCurve<value-parameter-0-0>(EdgedCurve<dimension> && other)
 ```
 
 
 ### operator=
 
 ```cpp
-protected EdgedCurve<> & operator=(EdgedCurve<> && other)
+protected EdgedCurve<dimension> & operator=(EdgedCurve<dimension> && other)
 ```
 
 
@@ -149,6 +176,15 @@ protected EdgedCurve<> & operator=(EdgedCurve<> && other)
 
 ```cpp
 Inherits from Graph, CoordinateReferenceSystemManagers<3U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 

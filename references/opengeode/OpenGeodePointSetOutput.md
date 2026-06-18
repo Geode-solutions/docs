@@ -25,7 +25,7 @@ Inherits from PointSetOutput<dimension>
 ### OpenGeodePointSetOutput
 
 ```cpp
-public void OpenGeodePointSetOutput<dimension>(basic_string_view filename)
+public void OpenGeodePointSetOutput<dimension>(std::string_view filename)
 ```
 
 
@@ -39,7 +39,7 @@ public bool is_saveable(const PointSet<dimension> & mesh)
 ### write
 
 ```cpp
-public vector write(const PointSet<dimension> & mesh)
+public std::vector<std::string> write(const PointSet<dimension> & mesh)
 ```
 
 

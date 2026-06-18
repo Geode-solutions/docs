@@ -20,11 +20,29 @@ Inherits from CellArray<3U>, Identifier
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class RasterImage
 
 
 ```cpp
 Inherits from CellArray<1U>, Identifier
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 
@@ -38,6 +56,15 @@ Inherits from CellArray<2U>, Identifier
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class RasterImage
 
 
@@ -47,7 +74,30 @@ Inherits from CellArray<dimension>, Identifier
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
+
+### native_extension_static
+
+```cpp
+public static std::string native_extension_static()
+```
+
+
+### native_extension
+
+```cpp
+public std::string native_extension()
+```
+
 
 ### RasterImage
 
@@ -84,20 +134,6 @@ public void ~RasterImage<dimension>()
 ```
 
 
-### native_extension_static
-
-```cpp
-public basic_string native_extension_static()
-```
-
-
-### native_extension
-
-```cpp
-public basic_string native_extension()
-```
-
-
 ### cell_index
 
 ```cpp
@@ -129,7 +165,7 @@ public void set_color(index_t index, RGBColor color)
 ### clone
 
 ```cpp
-public RasterImage clone()
+public RasterImage<dimension> clone()
 ```
 
 

@@ -25,7 +25,7 @@ Inherits from Input<Section>
 ### SectionInput
 
 ```cpp
-protected void SectionInput(basic_string_view filename)
+protected void SectionInput(std::string_view filename)
 ```
 
 

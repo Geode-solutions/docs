@@ -25,35 +25,35 @@ Inherits from VertexSet
 ### impl_name_static
 
 ```cpp
-public NamedType impl_name_static()
+public static MeshImpl impl_name_static()
 ```
 
 
 ### impl_name
 
 ```cpp
-public NamedType impl_name()
+public MeshImpl impl_name()
 ```
 
 
 ### type_name
 
 ```cpp
-public NamedType type_name()
+public MeshType type_name()
 ```
 
 
 ### native_extension_static
 
 ```cpp
-public basic_string_view native_extension_static()
+public static std::string_view native_extension_static()
 ```
 
 
 ### native_extension
 
 ```cpp
-public basic_string_view native_extension()
+public std::string_view native_extension()
 ```
 
 

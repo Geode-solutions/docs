@@ -14,7 +14,35 @@ const name = words.join('-');
 # class GenericTetrahedron
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+```cpp
+public static array tetrahedron_facet_vertex
+
+```
+
+
+
 # class GenericTetrahedron
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+```cpp
+public static array tetrahedron_facet_vertex
+
+```
+
 
 
 ## Functions
@@ -57,7 +85,7 @@ public GenericTetrahedron<PointType> & operator=(GenericTetrahedron<PointType> &
 ### barycenter
 
 ```cpp
-public Point barycenter()
+public Point3D barycenter()
 ```
 
 
@@ -78,7 +106,7 @@ public const std::array<PointType, 4> & vertices()
 ### bounding_box
 
 ```cpp
-public BoundingBox bounding_box()
+public BoundingBox3D bounding_box()
 ```
 
 
@@ -92,12 +120,26 @@ public bool is_degenerated()
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 
 
 
 # class GenericTetrahedron
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+```cpp
+public static array tetrahedron_facet_vertex
+
+```
+
 
 

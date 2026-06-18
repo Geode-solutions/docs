@@ -24,25 +24,34 @@ Inherits from SolidMeshBuilder<dimension>
 
 
 
-## Functions
-
-### PolyhedralSolidBuilder
+## Members
 
 ```cpp
-public void PolyhedralSolidBuilder<>(PolyhedralSolidBuilder<> && )
+public static const auto dim
+
 ```
 
+
+
+## Functions
 
 ### create
 
 ```cpp
-public std::unique_ptr<PolyhedralSolidBuilder<dimension> > create(PolyhedralSolid<dimension> & mesh)
+public static std::unique_ptr<PolyhedralSolidBuilder<dimension>> create(PolyhedralSolid<dimension> & mesh)
 ```
 
 
  Create the builder associated with a PolyhedralSolid.
 
 **mesh** [in] The PolyhedralSolid to build/modify
+
+### PolyhedralSolidBuilder
+
+```cpp
+public void PolyhedralSolidBuilder<value-parameter-0-0>(PolyhedralSolidBuilder<dimension> && )
+```
+
 
 ### copy
 
@@ -54,7 +63,7 @@ public void copy(const PolyhedralSolid<dimension> & polyhedral_solid)
 ### PolyhedralSolidBuilder
 
 ```cpp
-protected void PolyhedralSolidBuilder<>(PolyhedralSolid<dimension> & mesh)
+protected void PolyhedralSolidBuilder<value-parameter-0-0>(PolyhedralSolid<dimension> & mesh)
 ```
 
 
@@ -65,6 +74,15 @@ protected void PolyhedralSolidBuilder<>(PolyhedralSolid<dimension> & mesh)
 
 ```cpp
 Inherits from SolidMeshBuilder<3U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 

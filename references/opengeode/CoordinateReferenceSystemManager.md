@@ -19,21 +19,21 @@ const name = words.join('-');
 ### CoordinateReferenceSystemManager
 
 ```cpp
-public void CoordinateReferenceSystemManager<>()
+public void CoordinateReferenceSystemManager<value-parameter-0-0>()
 ```
 
 
 ### CoordinateReferenceSystemManager
 
 ```cpp
-public void CoordinateReferenceSystemManager<>(CoordinateReferenceSystemManager<> && other)
+public void CoordinateReferenceSystemManager<value-parameter-0-0>(CoordinateReferenceSystemManager<dimension> && other)
 ```
 
 
 ### ~CoordinateReferenceSystemManager
 
 ```cpp
-public void ~CoordinateReferenceSystemManager<>()
+public void ~CoordinateReferenceSystemManager<value-parameter-0-0>()
 ```
 
 
@@ -47,7 +47,7 @@ public index_t nb_coordinate_reference_systems()
 ### find_coordinate_reference_system
 
 ```cpp
-public const CoordinateReferenceSystem<dimension> & find_coordinate_reference_system(basic_string_view name)
+public const CoordinateReferenceSystem<dimension> & find_coordinate_reference_system(std::string_view name)
 ```
 
 
@@ -61,42 +61,42 @@ public const CoordinateReferenceSystem<dimension> & active_coordinate_reference_
 ### active_coordinate_reference_system_name
 
 ```cpp
-public basic_string_view active_coordinate_reference_system_name()
+public std::string_view active_coordinate_reference_system_name()
 ```
 
 
 ### coordinate_reference_system_names
 
 ```cpp
-public FixedArray coordinate_reference_system_names()
+public absl::FixedArray<std::string_view> coordinate_reference_system_names()
 ```
 
 
 ### coordinate_reference_system_exists
 
 ```cpp
-public bool coordinate_reference_system_exists(basic_string_view name)
+public bool coordinate_reference_system_exists(std::string_view name)
 ```
 
 
 ### register_coordinate_reference_system
 
 ```cpp
-public void register_coordinate_reference_system(basic_string_view name, std::shared_ptr<CoordinateReferenceSystem<dimension> > && crs, CRSManagerKey )
+public void register_coordinate_reference_system(std::string_view name, std::shared_ptr<CoordinateReferenceSystem<dimension>> && crs, CRSManagerKey )
 ```
 
 
 ### delete_coordinate_reference_system
 
 ```cpp
-public void delete_coordinate_reference_system(basic_string_view name, CRSManagerKey )
+public void delete_coordinate_reference_system(std::string_view name, CRSManagerKey )
 ```
 
 
 ### set_active_coordinate_reference_system
 
 ```cpp
-public void set_active_coordinate_reference_system(basic_string_view name, CRSManagerKey )
+public void set_active_coordinate_reference_system(std::string_view name, CRSManagerKey )
 ```
 
 
@@ -110,7 +110,7 @@ public CoordinateReferenceSystem<dimension> & modifiable_active_coordinate_refer
 ### modifiable_coordinate_reference_system
 
 ```cpp
-public CoordinateReferenceSystem<dimension> & modifiable_coordinate_reference_system(basic_string_view name, CRSManagerKey )
+public CoordinateReferenceSystem<dimension> & modifiable_coordinate_reference_system(std::string_view name, CRSManagerKey )
 ```
 
 

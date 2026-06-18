@@ -16,9 +16,9 @@ const name = words.join('-');
 
 ## Records
 
-LineRangeBase
-
 LineRange
+
+LineRangeBase
 
 
 
@@ -27,21 +27,21 @@ LineRange
 ### Lines
 
 ```cpp
-public void Lines<>(const Lines<> & )
+public void Lines<value-parameter-0-0>(const Lines<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public Lines<> & operator=(const Lines<> & )
+public Lines<dimension> & operator=(const Lines<dimension> & )
 ```
 
 
 ### ~Lines
 
 ```cpp
-public void ~Lines<>()
+public void ~Lines<value-parameter-0-0>()
 ```
 
 
@@ -87,6 +87,34 @@ public LineRange active_lines()
 ```
 
 
+### save_lines
+
+```cpp
+public void save_lines(std::string_view directory)
+```
+
+
+### Lines
+
+```cpp
+protected void Lines<value-parameter-0-0>()
+```
+
+
+### Lines
+
+```cpp
+protected void Lines<value-parameter-0-0>(Lines<dimension> && other)
+```
+
+
+### operator=
+
+```cpp
+protected Lines<dimension> & operator=(Lines<dimension> && other)
+```
+
+
 ### components
 
 ```cpp
@@ -105,34 +133,6 @@ public bool has_component(const uuid & id)
 
 ```cpp
 public const Line<dimension> & component(const uuid & id)
-```
-
-
-### save_lines
-
-```cpp
-public void save_lines(basic_string_view directory)
-```
-
-
-### Lines
-
-```cpp
-protected void Lines<>()
-```
-
-
-### Lines
-
-```cpp
-protected void Lines<>(Lines<> && other)
-```
-
-
-### operator=
-
-```cpp
-protected Lines<> & operator=(Lines<> && other)
 ```
 
 
@@ -174,7 +174,7 @@ public void delete_line(const Line<dimension> & line, LinesBuilderKey key)
 ### load_lines
 
 ```cpp
-public void load_lines(basic_string_view directory, LinesBuilderKey key)
+public void load_lines(std::string_view directory, LinesBuilderKey key)
 ```
 
 

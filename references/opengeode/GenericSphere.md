@@ -14,10 +14,37 @@ const name = words.join('-');
 # class GenericSphere
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class GenericSphere
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class GenericSphere
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
 
 
 ## Functions
@@ -83,6 +110,24 @@ public BoundingBox<dimension> bounding_box()
 # class GenericSphere
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class GenericSphere
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
 
 

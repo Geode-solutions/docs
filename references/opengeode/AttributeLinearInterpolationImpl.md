@@ -19,7 +19,7 @@ const name = words.join('-');
 ### compute
 
 ```cpp
-public std::array<double, array_size> compute(const AttributeLinearInterpolation & interpolator, const Attribute<std::array<double, array_size> > & attribute)
+public static std::array<double, array_size> compute(const AttributeLinearInterpolation & interpolator, const Attribute<std::array<double, array_size>> & attribute)
 ```
 
 
@@ -33,7 +33,7 @@ public std::array<double, array_size> compute(const AttributeLinearInterpolation
 ### compute
 
 ```cpp
-public GreyscaleColor compute(const AttributeLinearInterpolation & interpolator, const Attribute<GreyscaleColor> & attribute)
+public static GreyscaleColor compute(const AttributeLinearInterpolation & interpolator, const Attribute<GreyscaleColor> & attribute)
 ```
 
 
@@ -47,7 +47,7 @@ public GreyscaleColor compute(const AttributeLinearInterpolation & interpolator,
 ### compute
 
 ```cpp
-public double compute(const AttributeLinearInterpolation & interpolator, const Attribute<double> & attribute)
+public static double compute(const AttributeLinearInterpolation & interpolator, const Attribute<double> & attribute)
 ```
 
 
@@ -61,7 +61,7 @@ public double compute(const AttributeLinearInterpolation & interpolator, const A
 ### compute
 
 ```cpp
-public Point<dimension> compute(const AttributeLinearInterpolation & interpolator, const Attribute<Point<dimension> > & attribute)
+public static Point<dimension> compute(const AttributeLinearInterpolation & interpolator, const Attribute<Point<dimension>> & attribute)
 ```
 
 
@@ -75,7 +75,7 @@ public Point<dimension> compute(const AttributeLinearInterpolation & interpolato
 ### compute
 
 ```cpp
-public Vector<dimension> compute(const AttributeLinearInterpolation & interpolator, const Attribute<Vector<dimension> > & attribute)
+public static Vector<dimension> compute(const AttributeLinearInterpolation & interpolator, const Attribute<Vector<dimension>> & attribute)
 ```
 
 
@@ -89,7 +89,7 @@ public Vector<dimension> compute(const AttributeLinearInterpolation & interpolat
 ### compute
 
 ```cpp
-public RGBColor compute(const AttributeLinearInterpolation & interpolator, const Attribute<RGBColor> & attribute)
+public static RGBColor compute(const AttributeLinearInterpolation & interpolator, const Attribute<RGBColor> & attribute)
 ```
 
 
@@ -107,7 +107,7 @@ public RGBColor compute(const AttributeLinearInterpolation & interpolator, const
 ### compute
 
 ```cpp
-public AttributeType compute(const AttributeLinearInterpolation & , const Attribute<AttributeType> & attribute)
+public static AttributeType compute(const AttributeLinearInterpolation & , const Attribute<AttributeType> & attribute)
 ```
 
 
@@ -121,7 +121,7 @@ public AttributeType compute(const AttributeLinearInterpolation & , const Attrib
 ### compute
 
 ```cpp
-public std::array<float, array_size> compute(const AttributeLinearInterpolation & interpolator, const Attribute<std::array<float, array_size> > & attribute)
+public static std::array<float, array_size> compute(const AttributeLinearInterpolation & interpolator, const Attribute<std::array<float, array_size>> & attribute)
 ```
 
 
@@ -135,7 +135,7 @@ public std::array<float, array_size> compute(const AttributeLinearInterpolation 
 ### compute
 
 ```cpp
-public float compute(const AttributeLinearInterpolation & interpolator, const Attribute<float> & attribute)
+public static float compute(const AttributeLinearInterpolation & interpolator, const Attribute<float> & attribute)
 ```
 
 

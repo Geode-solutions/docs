@@ -41,6 +41,13 @@ public void ComponentMeshVertex(ComponentID component_id_in, index_t vertex_id_i
 ```
 
 
+### string
+
+```cpp
+public std::string string()
+```
+
+
 ### ~ComponentMeshVertex
 
 ```cpp
@@ -73,13 +80,6 @@ public bool operator<(const ComponentMeshVertex & other)
 
 ```cpp
 public void serialize(Archive & serializer)
-```
-
-
-### string
-
-```cpp
-public basic_string string()
 ```
 
 

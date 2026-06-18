@@ -16,24 +16,10 @@ const name = words.join('-');
 
 ## Functions
 
-### load_model_boundaries
+### create_model_boundary
 
 ```cpp
-public void load_model_boundaries(basic_string_view directory)
-```
-
-
-### set_model_boundary_name
-
-```cpp
-public void set_model_boundary_name(const uuid & id, basic_string_view name)
-```
-
-
-### set_model_boundary_active
-
-```cpp
-public void set_model_boundary_active(const uuid & id, bool active)
+protected const uuid & create_model_boundary()
 ```
 
 
@@ -44,10 +30,24 @@ protected void ModelBoundariesBuilder<dimension>(ModelBoundaries<dimension> & bo
 ```
 
 
-### create_model_boundary
+### load_model_boundaries
 
 ```cpp
-protected const uuid & create_model_boundary()
+public void load_model_boundaries(std::string_view directory)
+```
+
+
+### set_model_boundary_name
+
+```cpp
+public void set_model_boundary_name(const uuid & id, std::string_view name)
+```
+
+
+### set_model_boundary_active
+
+```cpp
+public void set_model_boundary_active(const uuid & id, bool active)
 ```
 
 

@@ -41,7 +41,7 @@ public void GenericMeshAccessor<TetrahedralSolid<dimension> >(const TetrahedralS
 ### element
 
 ```cpp
-public Tetrahedron element(index_t tetrahedron_id)
+public Element element(index_t tetrahedron_id)
 ```
 
 
@@ -111,7 +111,7 @@ public index_t element_vertex(const ElementVertex & polygon_vertex)
 ### element_vertices
 
 ```cpp
-public InlinedVector element_vertices(index_t polygon_id)
+public ElementVertices element_vertices(index_t polygon_id)
 ```
 
 
@@ -125,21 +125,21 @@ public Point<dimension> element_barycenter(index_t polygon_id)
 ### element_facet_vertices
 
 ```cpp
-public array element_facet_vertices(const ElementFacet & element_facet)
+public ElementFacetVertices element_facet_vertices(const ElementFacet & element_facet)
 ```
 
 
 ### element_adjacent
 
 ```cpp
-public optional element_adjacent(const ElementFacet & element_facet)
+public std::optional<index_t> element_adjacent(const ElementFacet & element_facet)
 ```
 
 
 ### element_adjacent_facet
 
 ```cpp
-public optional element_adjacent_facet(const ElementFacet & element_facet)
+public std::optional<ElementFacet> element_adjacent_facet(const ElementFacet & element_facet)
 ```
 
 
@@ -182,7 +182,7 @@ Inherits from GenericMeshAccessor<SurfaceMesh<dimension> >
 ### GenericMeshAccessor
 
 ```cpp
-public void GenericMeshAccessor<TriangulatedSurface<> >(const TriangulatedSurface<dimension> & mesh)
+public void GenericMeshAccessor<TriangulatedSurface<dimension> >(const TriangulatedSurface<dimension> & mesh)
 ```
 
 
@@ -212,7 +212,7 @@ Inherits from GenericMeshAccessor<SolidMesh<dimension> >
 ### GenericMeshAccessor
 
 ```cpp
-public void GenericMeshAccessor<SolidMesh<> >(const SolidMesh<dimension> & mesh)
+public void GenericMeshAccessor<SolidMesh<dimension> >(const SolidMesh<dimension> & mesh)
 ```
 
 
@@ -268,7 +268,7 @@ public index_t element_vertex(const ElementVertex & polyhedron_vertex)
 ### element_vertices
 
 ```cpp
-public InlinedVector element_vertices(index_t polyhedron_id)
+public ElementVertices element_vertices(index_t polyhedron_id)
 ```
 
 
@@ -282,21 +282,21 @@ public Point<dimension> element_barycenter(index_t polyhedron_id)
 ### element_facet_vertices
 
 ```cpp
-public InlinedVector element_facet_vertices(const ElementFacet & element_facet)
+public ElementFacetVertices element_facet_vertices(const ElementFacet & element_facet)
 ```
 
 
 ### element_adjacent
 
 ```cpp
-public optional element_adjacent(const ElementFacet & element_facet)
+public std::optional<index_t> element_adjacent(const ElementFacet & element_facet)
 ```
 
 
 ### element_adjacent_facet
 
 ```cpp
-public optional element_adjacent_facet(PolyhedronFacet element_facet)
+public std::optional<ElementFacet> element_adjacent_facet(ElementFacet element_facet)
 ```
 
 

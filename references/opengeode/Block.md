@@ -38,49 +38,42 @@ Inherits from Component<dimension>
 ### Block
 
 ```cpp
-public void Block<>(const Block<> & )
+public void Block<value-parameter-0-0>(const Block<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public Block<> & operator=(const Block<> & )
-```
-
-
-### Block
-
-```cpp
-public void Block<>(Block<> && other)
-```
-
-
-### ~Block
-
-```cpp
-public void ~Block<>()
+public Block<dimension> & operator=(const Block<dimension> & )
 ```
 
 
 ### component_type_static
 
 ```cpp
-public NamedType component_type_static()
+public static ComponentType component_type_static()
+```
+
+
+### Block
+
+```cpp
+public void Block<value-parameter-0-0>(Block<dimension> && other)
 ```
 
 
 ### component_type
 
 ```cpp
-public NamedType component_type()
+public ComponentType component_type()
 ```
 
 
-### mesh
+### ~Block
 
 ```cpp
-public const TypedMesh & mesh()
+public void ~Block<value-parameter-0-0>()
 ```
 
 
@@ -94,28 +87,21 @@ public const MeshImpl & mesh_type()
 ### Block
 
 ```cpp
-public void Block<>(BlocksKey key)
+public void Block<value-parameter-0-0>(BlocksKey key)
+```
+
+
+### mesh
+
+```cpp
+public const TypedMesh & mesh()
 ```
 
 
 ### Block
 
 ```cpp
-public void Block<>(const MeshImpl & impl, BlocksKey key)
-```
-
-
-### set_mesh
-
-```cpp
-public void set_mesh(std::unique_ptr<Mesh> mesh, BlocksKey key)
-```
-
-
-### set_mesh
-
-```cpp
-public void set_mesh(std::unique_ptr<Mesh> mesh, BlocksBuilderKey key)
+public void Block<value-parameter-0-0>(const MeshImpl & impl, BlocksKey key)
 ```
 
 
@@ -133,10 +119,24 @@ public TypedMesh & modifiable_mesh(BlocksBuilderKey )
 ```
 
 
+### set_mesh
+
+```cpp
+public void set_mesh(std::unique_ptr<Mesh> mesh, BlocksKey key)
+```
+
+
+### set_mesh
+
+```cpp
+public void set_mesh(std::unique_ptr<Mesh> mesh, BlocksBuilderKey key)
+```
+
+
 ### set_block_name
 
 ```cpp
-public void set_block_name(basic_string_view name, BlocksBuilderKey key)
+public void set_block_name(std::string_view name, BlocksBuilderKey key)
 ```
 
 

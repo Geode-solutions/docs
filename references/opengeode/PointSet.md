@@ -20,6 +20,15 @@ Inherits from VertexSet, CoordinateReferenceSystemManagers<2U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class PointSet
 
 
@@ -33,12 +42,21 @@ Inherits from VertexSet, CoordinateReferenceSystemManagers<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### create
 
 ```cpp
-public std::unique_ptr<PointSet<dimension> > create()
+public static std::unique_ptr<PointSet<dimension>> create()
 ```
 
 
@@ -47,7 +65,7 @@ public std::unique_ptr<PointSet<dimension> > create()
 ### create
 
 ```cpp
-public std::unique_ptr<PointSet<dimension> > create(const MeshImpl & impl)
+public static std::unique_ptr<PointSet<dimension>> create(const MeshImpl & impl)
 ```
 
 
@@ -58,14 +76,35 @@ public std::unique_ptr<PointSet<dimension> > create(const MeshImpl & impl)
 ### type_name_static
 
 ```cpp
-public NamedType type_name_static()
+public static MeshType type_name_static()
+```
+
+
+### PointSet
+
+```cpp
+protected void PointSet<value-parameter-0-0>()
+```
+
+
+### PointSet
+
+```cpp
+protected void PointSet<value-parameter-0-0>(PointSet<dimension> && other)
+```
+
+
+### operator=
+
+```cpp
+protected PointSet<dimension> & operator=(PointSet<dimension> && other)
 ```
 
 
 ### clone
 
 ```cpp
-public std::unique_ptr<PointSet<dimension> > clone()
+public std::unique_ptr<PointSet<dimension>> clone()
 ```
 
 
@@ -78,27 +117,6 @@ public BoundingBox<dimension> bounding_box()
 
  Compute the bounding box from mesh vertices
 
-### PointSet
-
-```cpp
-protected void PointSet<>()
-```
-
-
-### PointSet
-
-```cpp
-protected void PointSet<>(PointSet<> && other)
-```
-
-
-### operator=
-
-```cpp
-protected PointSet<> & operator=(PointSet<> && other)
-```
-
-
 
 
 # class PointSet
@@ -110,11 +128,29 @@ Inherits from VertexSet, CoordinateReferenceSystemManagers<3U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class PointSet
 
 
 ```cpp
 Inherits from VertexSet, CoordinateReferenceSystemManagers<1U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 

@@ -68,7 +68,7 @@ public bool operator<(const PolyhedronFacetEdge & other)
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 

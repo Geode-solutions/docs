@@ -17,7 +17,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public std::vector<Point<dimension> > unique_points
+public std::vector<Point<dimension>> unique_points
 
 ```
 
@@ -59,14 +59,14 @@ public index_t nb_colocated_points()
 ### points_mapping
 
 ```cpp
-public GenericMapping points_mapping()
+public geode::GenericMapping<geode::index_t> points_mapping()
 ```
 
 
 ### vertices_mapping
 
 ```cpp
-public GenericMapping vertices_mapping()
+public geode::GenericMapping<geode::index_t> vertices_mapping()
 ```
 
 

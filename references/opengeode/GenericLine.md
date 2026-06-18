@@ -14,7 +14,25 @@ const name = words.join('-');
 # class GenericLine
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class GenericLine
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
 
 
 ## Functions
@@ -87,15 +105,60 @@ public typename std::enable_if<T == 2, double>::type line_constant()
 # class GenericLine
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class GenericLine
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class GenericLine
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class GenericLine
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class GenericLine
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
 
 

@@ -25,7 +25,7 @@ Inherits from LineRangeBase
 ### LineRange
 
 ```cpp
-public void LineRange(const Lines<> & lines)
+public void LineRange(const Lines<dimension> & lines)
 ```
 
 

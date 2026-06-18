@@ -19,24 +19,10 @@ const name = words.join('-');
 
 ## Functions
 
-### load_line_collections
+### create_line_collection
 
 ```cpp
-public void load_line_collections(basic_string_view directory)
-```
-
-
-### set_line_collection_name
-
-```cpp
-public void set_line_collection_name(const uuid & id, basic_string_view name)
-```
-
-
-### set_line_collection_active
-
-```cpp
-public void set_line_collection_active(const uuid & id, bool active)
+protected const uuid & create_line_collection()
 ```
 
 
@@ -47,10 +33,24 @@ protected void LineCollectionsBuilder<dimension>(LineCollections<dimension> & co
 ```
 
 
-### create_line_collection
+### load_line_collections
 
 ```cpp
-protected const uuid & create_line_collection()
+public void load_line_collections(std::string_view directory)
+```
+
+
+### set_line_collection_name
+
+```cpp
+public void set_line_collection_name(const uuid & id, std::string_view name)
+```
+
+
+### set_line_collection_active
+
+```cpp
+public void set_line_collection_active(const uuid & id, bool active)
 ```
 
 

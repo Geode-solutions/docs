@@ -29,7 +29,7 @@ Inherits from ReadOnlyAttribute<T>
 ### SparseAttribute
 
 ```cpp
-public void SparseAttribute<T>(T default_value, AttributeProperties properties, PassKey )
+public void SparseAttribute<T>(T default_value, AttributeProperties properties, AttributeBase::AttributeKey )
 ```
 
 
@@ -64,14 +64,14 @@ public void modify_value(index_t element, Modifier modifier)
 ### compute_value
 
 ```cpp
-public void compute_value(index_t from_element, index_t to_element, PassKey )
+public void compute_value(index_t from_element, index_t to_element, AttributeBase::AttributeKey )
 ```
 
 
 ### compute_value
 
 ```cpp
-public void compute_value(const AttributeLinearInterpolation & interpolation, index_t to_element, PassKey )
+public void compute_value(const AttributeLinearInterpolation & interpolation, index_t to_element, AttributeBase::AttributeKey )
 ```
 
 

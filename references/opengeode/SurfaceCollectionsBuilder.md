@@ -22,24 +22,10 @@ const name = words.join('-');
 
 ## Functions
 
-### load_surface_collections
+### create_surface_collection
 
 ```cpp
-public void load_surface_collections(basic_string_view directory)
-```
-
-
-### set_surface_collection_name
-
-```cpp
-public void set_surface_collection_name(const uuid & id, basic_string_view name)
-```
-
-
-### set_surface_collection_active
-
-```cpp
-public void set_surface_collection_active(const uuid & id, bool active)
+protected const uuid & create_surface_collection()
 ```
 
 
@@ -50,10 +36,24 @@ protected void SurfaceCollectionsBuilder<dimension>(SurfaceCollections<dimension
 ```
 
 
-### create_surface_collection
+### load_surface_collections
 
 ```cpp
-protected const uuid & create_surface_collection()
+public void load_surface_collections(std::string_view directory)
+```
+
+
+### set_surface_collection_name
+
+```cpp
+public void set_surface_collection_name(const uuid & id, std::string_view name)
+```
+
+
+### set_surface_collection_active
+
+```cpp
+public void set_surface_collection_active(const uuid & id, bool active)
 ```
 
 

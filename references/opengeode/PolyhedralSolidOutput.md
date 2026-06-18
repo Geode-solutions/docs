@@ -25,7 +25,7 @@ Inherits from Output<PolyhedralSolid<dimension> >
 ### PolyhedralSolidOutput
 
 ```cpp
-protected void PolyhedralSolidOutput<dimension>(basic_string_view filename)
+protected void PolyhedralSolidOutput<dimension>(std::string_view filename)
 ```
 
 

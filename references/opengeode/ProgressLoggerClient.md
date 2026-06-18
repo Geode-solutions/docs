@@ -16,41 +16,41 @@ const name = words.join('-');
 
 ## Functions
 
-### ~ProgressLoggerClient
+### ProgressLoggerClient
 
 ```cpp
-public void ~ProgressLoggerClient()
+protected void ProgressLoggerClient()
 ```
 
 
 ### start
 
 ```cpp
-public void start(const uuid & progress_logger_id, LEVEL level, const std::string & message, index_t nb_steps)
+public void start(const uuid & progress_logger_id, Logger::LEVEL level, const std::string & message, index_t nb_steps)
 ```
 
 ### update
 
 ```cpp
-public void update(const uuid & progress_logger_id, LEVEL level, index_t current_step, index_t nb_steps)
+public void update(const uuid & progress_logger_id, Logger::LEVEL level, index_t current_step, index_t nb_steps)
 ```
 
 ### completed
 
 ```cpp
-public void completed(const uuid & progress_logger_id, LEVEL level)
+public void completed(const uuid & progress_logger_id, Logger::LEVEL level)
 ```
 
 ### failed
 
 ```cpp
-public void failed(const uuid & progress_logger_id, LEVEL level)
+public void failed(const uuid & progress_logger_id, Logger::LEVEL level)
 ```
 
-### ProgressLoggerClient
+### ~ProgressLoggerClient
 
 ```cpp
-protected void ProgressLoggerClient()
+public void ~ProgressLoggerClient()
 ```
 
 

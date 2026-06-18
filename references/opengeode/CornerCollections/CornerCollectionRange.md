@@ -25,7 +25,7 @@ Inherits from CornerCollectionRangeBase
 ### CornerCollectionRange
 
 ```cpp
-public void CornerCollectionRange(const CornerCollections<> & boundaries)
+public void CornerCollectionRange(const CornerCollections<dimension> & boundaries)
 ```
 
 

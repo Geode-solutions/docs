@@ -19,7 +19,7 @@ const name = words.join('-');
 ### ProgressLogger
 
 ```cpp
-public void ProgressLogger(LEVEL level, const std::string & message, index_t nb_steps)
+public void ProgressLogger(Logger::LEVEL level, const std::string & message, index_t nb_steps)
 ```
 
 
@@ -61,7 +61,7 @@ public index_t increment_nb_steps(index_t nb_steps)
 ### set_refresh_interval
 
 ```cpp
-public void set_refresh_interval(Duration refresh_interval)
+public void set_refresh_interval(absl::Duration refresh_interval)
 ```
 
 

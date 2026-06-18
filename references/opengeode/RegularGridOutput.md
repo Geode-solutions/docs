@@ -25,7 +25,7 @@ Inherits from Output<RegularGrid<dimension> >
 ### RegularGridOutput
 
 ```cpp
-protected void RegularGridOutput<dimension>(basic_string_view filename)
+protected void RegularGridOutput<dimension>(std::string_view filename)
 ```
 
 

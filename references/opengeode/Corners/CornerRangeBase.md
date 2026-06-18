@@ -66,7 +66,7 @@ public void set_active_only()
 ### CornerRangeBase
 
 ```cpp
-protected void CornerRangeBase(const Corners<> & corners)
+protected void CornerRangeBase(const Corners<dimension> & corners)
 ```
 
 

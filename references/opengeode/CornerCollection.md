@@ -29,56 +29,56 @@ Inherits from Component<dimension>
 ### CornerCollection
 
 ```cpp
-public void CornerCollection<>(const CornerCollection<> & )
+public void CornerCollection<value-parameter-0-0>(const CornerCollection<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public CornerCollection<> & operator=(const CornerCollection<> & )
+public CornerCollection<dimension> & operator=(const CornerCollection<dimension> & )
 ```
 
 
 ### CornerCollection
 
 ```cpp
-public void CornerCollection<>(CornerCollection<> && other)
+public void CornerCollection<value-parameter-0-0>(CornerCollection<dimension> && other)
 ```
 
 
 ### ~CornerCollection
 
 ```cpp
-public void ~CornerCollection<>()
+public void ~CornerCollection<value-parameter-0-0>()
 ```
 
 
 ### component_type_static
 
 ```cpp
-public NamedType component_type_static()
+public static ComponentType component_type_static()
 ```
 
 
 ### component_type
 
 ```cpp
-public NamedType component_type()
+public ComponentType component_type()
 ```
 
 
 ### CornerCollection
 
 ```cpp
-public void CornerCollection<>(CornerCollectionsKey )
+public void CornerCollection<value-parameter-0-0>(CornerCollectionsKey )
 ```
 
 
 ### set_corner_collection_name
 
 ```cpp
-public void set_corner_collection_name(basic_string_view name, CornerCollectionsBuilderKey )
+public void set_corner_collection_name(std::string_view name, CornerCollectionsBuilderKey )
 ```
 
 

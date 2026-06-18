@@ -31,6 +31,20 @@ Inherits from CoordinateReferenceSystem<dimension>
 
 ## Functions
 
+### type_name_static
+
+```cpp
+public static CRSType type_name_static()
+```
+
+
+### type_name
+
+```cpp
+public CRSType type_name()
+```
+
+
 ### AttributeCoordinateReferenceSystem
 
 ```cpp
@@ -41,7 +55,7 @@ public void AttributeCoordinateReferenceSystem<dimension>(AttributeManager & man
 ### AttributeCoordinateReferenceSystem
 
 ```cpp
-public void AttributeCoordinateReferenceSystem<dimension>(AttributeManager & manager, basic_string_view attribute_name)
+public void AttributeCoordinateReferenceSystem<dimension>(AttributeManager & manager, std::string_view attribute_name)
 ```
 
 
@@ -49,20 +63,6 @@ public void AttributeCoordinateReferenceSystem<dimension>(AttributeManager & man
 
 ```cpp
 public void ~AttributeCoordinateReferenceSystem<dimension>()
-```
-
-
-### type_name_static
-
-```cpp
-public NamedType type_name_static()
-```
-
-
-### type_name
-
-```cpp
-public NamedType type_name()
 ```
 
 
@@ -83,7 +83,7 @@ public void set_point(index_t point_id, Point<dimension> point)
 ### attribute_name
 
 ```cpp
-public basic_string_view attribute_name()
+public std::string_view attribute_name()
 ```
 
 

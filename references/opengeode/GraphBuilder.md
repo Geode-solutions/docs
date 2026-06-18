@@ -36,7 +36,7 @@ public void GraphBuilder(GraphBuilder && )
 ### create
 
 ```cpp
-public std::unique_ptr<GraphBuilder> create(Graph & mesh)
+public static std::unique_ptr<GraphBuilder> create(Graph & mesh)
 ```
 
 
@@ -133,7 +133,7 @@ public void replace_vertex(index_t old_vertex_id, index_t new_vertex_id)
 ### delete_edges
 
 ```cpp
-public vector delete_edges(const std::vector<bool> & to_delete)
+public std::vector<index_t> delete_edges(const std::vector<bool> & to_delete)
 ```
 
 
@@ -146,7 +146,7 @@ public vector delete_edges(const std::vector<bool> & to_delete)
 ### permute_edges
 
 ```cpp
-public vector permute_edges(Span permutation)
+public std::vector<index_t> permute_edges(absl::Span<const index_t> permutation)
 ```
 
 
@@ -159,7 +159,7 @@ public vector permute_edges(Span permutation)
 ### delete_isolated_vertices
 
 ```cpp
-public vector delete_isolated_vertices()
+public std::vector<index_t> delete_isolated_vertices()
 ```
 
 
@@ -170,7 +170,7 @@ public vector delete_isolated_vertices()
 ### delete_isolated_vertices
 
 ```cpp
-public vector delete_isolated_vertices(Span isolated_vertices)
+public std::vector<index_t> delete_isolated_vertices(absl::Span<const index_t> isolated_vertices)
 ```
 
 

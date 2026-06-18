@@ -25,7 +25,7 @@ Inherits from Input<BRep>
 ### BRepInput
 
 ```cpp
-protected void BRepInput(basic_string_view filename)
+protected void BRepInput(std::string_view filename)
 ```
 
 

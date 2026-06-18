@@ -25,14 +25,14 @@ Inherits from RasterImageOutput<dimension>
 ### OpenGeodeRasterImageOutput
 
 ```cpp
-public void OpenGeodeRasterImageOutput<dimension>(basic_string_view filename)
+public void OpenGeodeRasterImageOutput<dimension>(std::string_view filename)
 ```
 
 
 ### write
 
 ```cpp
-public vector write(const RasterImage<dimension> & mesh)
+public std::vector<std::string> write(const RasterImage<dimension> & mesh)
 ```
 
 

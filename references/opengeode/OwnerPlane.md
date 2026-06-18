@@ -25,7 +25,7 @@ Inherits from GenericPlane<Point3D>
 ### OwnerPlane
 
 ```cpp
-public void OwnerPlane(const Vector3D & normal, Point origin)
+public void OwnerPlane(const Vector3D & normal, Point3D origin)
 ```
 
 

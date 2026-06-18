@@ -43,21 +43,21 @@ Inherits from GenericTriangle<RefPoint<dimension>, dimension>
 ### Triangle
 
 ```cpp
-public void Triangle<>(const Point<dimension> & point0, const Point<dimension> & point1, const Point<dimension> & point2)
+public void Triangle<value-parameter-0-0>(const Point<dimension> & point0, const Point<dimension> & point1, const Point<dimension> & point2)
 ```
 
 
 ### Triangle
 
 ```cpp
-public void Triangle<>(const Triangle<dimension> & other)
+public void Triangle<value-parameter-0-0>(const Triangle<dimension> & other)
 ```
 
 
 ### Triangle
 
 ```cpp
-public void Triangle<>(const OwnerTriangle<dimension> & other)
+public void Triangle<value-parameter-0-0>(const OwnerTriangle<dimension> & other)
 ```
 
 
@@ -71,7 +71,7 @@ public Triangle<dimension> & operator=(const Triangle<dimension> & other)
 ### Triangle
 
 ```cpp
-public void Triangle<>(Triangle<dimension> && other)
+public void Triangle<value-parameter-0-0>(Triangle<dimension> && other)
 ```
 
 

@@ -47,7 +47,7 @@ protected void set_texture_coordinates_impl(index_t element, local_index_t verte
 ### TextureImpl
 
 ```cpp
-protected void TextureImpl<dimension>(AttributeManager & manager, basic_string_view name)
+protected void TextureImpl<dimension>(AttributeManager & manager, std::string_view name)
 ```
 
 

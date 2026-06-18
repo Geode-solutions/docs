@@ -39,7 +39,7 @@ public void ~TriangulatedSurfaceScalarFunction<dimension>()
 ### create
 
 ```cpp
-public TriangulatedSurfaceScalarFunction create(const TriangulatedSurface<dimension> & solid, basic_string_view function_name, double value)
+public static TriangulatedSurfaceScalarFunction<dimension> create(const TriangulatedSurface<dimension> & solid, std::string_view function_name, double value)
 ```
 
 
@@ -48,7 +48,7 @@ public TriangulatedSurfaceScalarFunction create(const TriangulatedSurface<dimens
 ### find
 
 ```cpp
-public TriangulatedSurfaceScalarFunction find(const TriangulatedSurface<dimension> & solid, basic_string_view function_name)
+public static TriangulatedSurfaceScalarFunction<dimension> find(const TriangulatedSurface<dimension> & solid, std::string_view function_name)
 ```
 
 

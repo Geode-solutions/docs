@@ -47,28 +47,28 @@ public const Registry & collection_components()
 ### add_mesh_component
 
 ```cpp
-public void add_mesh_component(const ComponentType & type, const uuid & id, PassKey key)
+public void add_mesh_component(const ComponentType & type, const uuid & id, RegistryBuilder key)
 ```
 
 
 ### add_collection_component
 
 ```cpp
-public void add_collection_component(const ComponentType & type, const uuid & id, PassKey key)
+public void add_collection_component(const ComponentType & type, const uuid & id, RegistryBuilder key)
 ```
 
 
 ### remove_mesh_component
 
 ```cpp
-public void remove_mesh_component(const ComponentType & type, const uuid & id, PassKey key)
+public void remove_mesh_component(const ComponentType & type, const uuid & id, RegistryBuilder key)
 ```
 
 
 ### remove_collection_component
 
 ```cpp
-public void remove_collection_component(const ComponentType & type, const uuid & id, PassKey key)
+public void remove_collection_component(const ComponentType & type, const uuid & id, RegistryBuilder key)
 ```
 
 

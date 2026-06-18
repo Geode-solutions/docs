@@ -19,10 +19,10 @@ const name = words.join('-');
 
 ## Functions
 
-### load_blocks
+### create_block
 
 ```cpp
-public void load_blocks(basic_string_view directory)
+protected const uuid & create_block()
 ```
 
 
@@ -37,10 +37,24 @@ public std::unique_ptr<typename Mesh::Builder> block_mesh_builder(const uuid & i
 
 **id** [in] Unique index of the Block
 
+### load_blocks
+
+```cpp
+public void load_blocks(std::string_view directory)
+```
+
+
+### BlocksBuilder
+
+```cpp
+protected void BlocksBuilder<dimension>(Blocks<dimension> & blocks)
+```
+
+
 ### set_block_name
 
 ```cpp
-public void set_block_name(const uuid & id, basic_string_view name)
+public void set_block_name(const uuid & id, std::string_view name)
 ```
 
 
@@ -54,21 +68,7 @@ public void set_block_active(const uuid & id, bool active)
 ### steal_block_mesh
 
 ```cpp
-public std::unique_ptr<SolidMesh<dimension> > steal_block_mesh(const uuid & id)
-```
-
-
-### BlocksBuilder
-
-```cpp
-protected void BlocksBuilder<dimension>(Blocks<dimension> & blocks)
-```
-
-
-### create_block
-
-```cpp
-protected const uuid & create_block()
+public std::unique_ptr<SolidMesh<dimension>> steal_block_mesh(const uuid & id)
 ```
 
 
@@ -103,7 +103,7 @@ protected void delete_block(const Block<dimension> & block)
 ### set_block_mesh
 
 ```cpp
-protected void set_block_mesh(const uuid & id, std::unique_ptr<SolidMesh<dimension> > mesh)
+protected void set_block_mesh(const uuid & id, std::unique_ptr<SolidMesh<dimension>> mesh)
 ```
 
 

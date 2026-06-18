@@ -25,14 +25,14 @@ Inherits from GenericTriangle<Point<dimension>, dimension>
 ### OwnerTriangle
 
 ```cpp
-public void OwnerTriangle<>(Point<dimension> point0, Point<dimension> point1, Point<dimension> point2)
+public void OwnerTriangle<value-parameter-0-0>(Point<dimension> point0, Point<dimension> point1, Point<dimension> point2)
 ```
 
 
 ### OwnerTriangle
 
 ```cpp
-public void OwnerTriangle<>(const OwnerTriangle<dimension> & other)
+public void OwnerTriangle<value-parameter-0-0>(const OwnerTriangle<dimension> & other)
 ```
 
 
@@ -46,7 +46,7 @@ public OwnerTriangle<dimension> & operator=(const OwnerTriangle<dimension> & oth
 ### OwnerTriangle
 
 ```cpp
-public void OwnerTriangle<>(OwnerTriangle<dimension> && other)
+public void OwnerTriangle<value-parameter-0-0>(OwnerTriangle<dimension> && other)
 ```
 
 

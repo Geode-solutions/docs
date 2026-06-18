@@ -79,7 +79,7 @@ public EdgeVertex opposite()
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 

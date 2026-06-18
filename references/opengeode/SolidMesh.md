@@ -24,6 +24,15 @@ Inherits from VertexSet, CoordinateReferenceSystemManagers<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### SolidMesh
@@ -50,7 +59,7 @@ public void ~SolidMesh<dimension>()
 ### create
 
 ```cpp
-public std::unique_ptr<SolidMesh<dimension> > create()
+public static std::unique_ptr<SolidMesh<dimension>> create()
 ```
 
 
@@ -59,7 +68,7 @@ public std::unique_ptr<SolidMesh<dimension> > create()
 ### create
 
 ```cpp
-public std::unique_ptr<SolidMesh<dimension> > create(const MeshImpl & impl)
+public static std::unique_ptr<SolidMesh<dimension>> create(const MeshImpl & impl)
 ```
 
 
@@ -70,7 +79,7 @@ public std::unique_ptr<SolidMesh<dimension> > create(const MeshImpl & impl)
 ### clone
 
 ```cpp
-public std::unique_ptr<SolidMesh<dimension> > clone()
+public std::unique_ptr<SolidMesh<dimension>> clone()
 ```
 
 
@@ -175,7 +184,7 @@ public PolyhedronVertex polyhedron_facet_vertex_id(const PolyhedronFacetVertex &
 ### polyhedron_facet_edge_vertices
 
 ```cpp
-public array polyhedron_facet_edge_vertices(const PolyhedronFacetEdge & polyhedron_facet_edge)
+public std::array<index_t, 2> polyhedron_facet_edge_vertices(const PolyhedronFacetEdge & polyhedron_facet_edge)
 ```
 
 
@@ -207,21 +216,21 @@ public PolyhedronEdgesVertices polyhedron_edges_vertices(index_t polyhedron)
 ### polyhedron_facet_from_vertices
 
 ```cpp
-public std::optional<PolyhedronFacet> polyhedron_facet_from_vertices(InlinedVector polyhedron_facet_vertices)
+public std::optional<PolyhedronFacet> polyhedron_facet_from_vertices(PolyhedronFacetVertices polyhedron_facet_vertices)
 ```
 
 
 ### polyhedron_facet_from_vertices
 
 ```cpp
-public std::optional<PolyhedronFacet> polyhedron_facet_from_vertices(InlinedVector polyhedron_facet_vertices, index_t polyhedron_id)
+public std::optional<PolyhedronFacet> polyhedron_facet_from_vertices(PolyhedronFacetVertices polyhedron_facet_vertices, index_t polyhedron_id)
 ```
 
 
 ### polyhedron_facet_vertices
 
 ```cpp
-public InlinedVector polyhedron_facet_vertices(const PolyhedronFacet & polyhedron_facet)
+public PolyhedronFacetVertices polyhedron_facet_vertices(const PolyhedronFacet & polyhedron_facet)
 ```
 
 
@@ -249,7 +258,7 @@ public PolyhedronFacets polyhedron_vertex_facets(const PolyhedronVertex & polyhe
 ### polyhedron_adjacent
 
 ```cpp
-public optional polyhedron_adjacent(const PolyhedronFacet & polyhedron_facet)
+public std::optional<index_t> polyhedron_adjacent(const PolyhedronFacet & polyhedron_facet)
 ```
 
 
@@ -505,7 +514,7 @@ public PolyhedraAroundEdge polyhedra_around_edge(const PolyhedronFacetEdge & edg
 ### polyhedron_around_edge
 
 ```cpp
-public optional polyhedron_around_edge(const std::array<index_t, 2> & vertices)
+public std::optional<index_t> polyhedron_around_edge(const std::array<index_t, 2> & vertices)
 ```
 
 
@@ -533,7 +542,7 @@ public PolyhedraAroundEdge polyhedra_around_edge(const std::array<index_t, 2> & 
 ### polyhedra_from_facet_vertices
 
 ```cpp
-public PolyhedraAroundFacet polyhedra_from_facet_vertices(InlinedVector facet_vertices)
+public PolyhedraAroundFacet polyhedra_from_facet_vertices(PolyhedronFacetVertices facet_vertices)
 ```
 
 
@@ -544,7 +553,7 @@ public PolyhedraAroundFacet polyhedra_from_facet_vertices(InlinedVector facet_ve
 ### edge_vertices_in_polyhedron
 
 ```cpp
-public array edge_vertices_in_polyhedron(index_t polyhedron_id, const std::array<index_t, 2> & edge_vertices)
+public std::array<local_index_t, 2> edge_vertices_in_polyhedron(index_t polyhedron_id, const std::array<index_t, 2> & edge_vertices)
 ```
 
 
@@ -725,6 +734,15 @@ protected SolidMesh<dimension> & operator=(SolidMesh<dimension> && other)
 
 ```cpp
 Inherits from VertexSet, CoordinateReferenceSystemManagers<3U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 

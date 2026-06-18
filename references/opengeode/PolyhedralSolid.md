@@ -20,6 +20,15 @@ Inherits from SolidMesh<3U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class PolyhedralSolid
 
 
@@ -33,7 +42,36 @@ Inherits from SolidMesh<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
+
+### create
+
+```cpp
+public static std::unique_ptr<PolyhedralSolid<dimension>> create()
+```
+
+
+ Create a new PolyhedralSolid using default data structure.
+
+### create
+
+```cpp
+public static std::unique_ptr<PolyhedralSolid<dimension>> create(const MeshImpl & impl)
+```
+
+
+ Create a new PolyhedralSolid using a specified data structure.
+
+**impl** [in] Data structure implementation.
 
 ### PolyhedralSolid
 
@@ -49,37 +87,17 @@ public PolyhedralSolid<dimension> & operator=(const PolyhedralSolid<dimension> &
 ```
 
 
-### create
-
-```cpp
-public std::unique_ptr<PolyhedralSolid<dimension> > create()
-```
-
-
- Create a new PolyhedralSolid using default data structure.
-
-### create
-
-```cpp
-public std::unique_ptr<PolyhedralSolid<dimension> > create(const MeshImpl & impl)
-```
-
-
- Create a new PolyhedralSolid using a specified data structure.
-
-**impl** [in] Data structure implementation.
-
 ### type_name_static
 
 ```cpp
-public NamedType type_name_static()
+public static MeshType type_name_static()
 ```
 
 
 ### clone
 
 ```cpp
-public std::unique_ptr<PolyhedralSolid<dimension> > clone()
+public std::unique_ptr<PolyhedralSolid<dimension>> clone()
 ```
 
 

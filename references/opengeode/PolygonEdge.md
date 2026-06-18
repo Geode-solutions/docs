@@ -48,13 +48,6 @@ public void PolygonEdge(index_t polygon_id_in, local_index_t edge_id_in)
 ```
 
 
-### PolygonEdge
-
-```cpp
-public void PolygonEdge(const PolygonVertex & polygon_vertex)
-```
-
-
 ### operator==
 
 ```cpp
@@ -79,7 +72,14 @@ public bool operator<(const PolygonEdge & other)
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
+```
+
+
+### PolygonEdge
+
+```cpp
+public void PolygonEdge(const PolygonVertex & polygon_vertex)
 ```
 
 

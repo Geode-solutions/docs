@@ -50,7 +50,7 @@ public void EdgeDistance()
 ### EdgeDistance
 
 ```cpp
-public void EdgeDistance(index_t edge_in, double distance_in, POSITION position_in, Point point_in)
+public void EdgeDistance(index_t edge_in, double distance_in, POSITION position_in, Point2D point_in)
 ```
 
 

@@ -14,7 +14,25 @@ const name = words.join('-');
 # class GenericPolygon
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class GenericPolygon
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
 
 
 ## Functions
@@ -64,21 +82,21 @@ public Point<dimension> barycenter()
 ### normal
 
 ```cpp
-public typename std::enable_if<T == 3, optional<Vector3D> >::type normal()
+public typename std::enable_if<T == 3, std::optional<Vector3D>>::type normal()
 ```
 
 
 ### plane
 
 ```cpp
-public typename std::enable_if<T == 3, optional<Plane> >::type plane()
+public typename std::enable_if<T == 3, std::optional<Plane>>::type plane()
 ```
 
 
 ### owner_plane
 
 ```cpp
-public typename std::enable_if<T == 3, optional<OwnerPlane> >::type owner_plane()
+public typename std::enable_if<T == 3, std::optional<OwnerPlane>>::type owner_plane()
 ```
 
 
@@ -113,7 +131,7 @@ public BoundingBox<dimension> bounding_box()
 ### triangulate
 
 ```cpp
-public std::vector<std::array<index_t, 3> > triangulate()
+public std::vector<std::array<index_t, 3>> triangulate()
 ```
 
 
@@ -134,7 +152,7 @@ public bool is_degenerated()
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 
@@ -143,9 +161,36 @@ public basic_string string()
 # class GenericPolygon
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class GenericPolygon
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class GenericPolygon
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
 
 

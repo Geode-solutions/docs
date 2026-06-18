@@ -34,14 +34,14 @@ Inherits from GenericPolygon<Point<dimension>, dimension>
 ### OwnerPolygon
 
 ```cpp
-public void OwnerPolygon<>(std::vector<Point<dimension> > vertices)
+public void OwnerPolygon<value-parameter-0-0>(std::vector<Point<dimension>> vertices)
 ```
 
 
 ### OwnerPolygon
 
 ```cpp
-public void OwnerPolygon<>(const OwnerPolygon<dimension> & other)
+public void OwnerPolygon<value-parameter-0-0>(const OwnerPolygon<dimension> & other)
 ```
 
 
@@ -55,7 +55,7 @@ public OwnerPolygon<dimension> & operator=(const OwnerPolygon<dimension> & other
 ### OwnerPolygon
 
 ```cpp
-public void OwnerPolygon<>(OwnerPolygon<dimension> && other)
+public void OwnerPolygon<value-parameter-0-0>(OwnerPolygon<dimension> && other)
 ```
 
 

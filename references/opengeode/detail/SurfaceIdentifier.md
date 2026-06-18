@@ -29,17 +29,17 @@ public void SurfaceIdentifier<dimension>(const SurfaceIdentifier<dimension> & )
 ```
 
 
-### operator=
-
-```cpp
-public SurfaceIdentifier<dimension> & operator=(const SurfaceIdentifier<dimension> & )
-```
-
-
 ### SurfaceIdentifier
 
 ```cpp
 public void SurfaceIdentifier<dimension>(SurfaceIdentifier<dimension> && )
+```
+
+
+### operator=
+
+```cpp
+public SurfaceIdentifier<dimension> & operator=(const SurfaceIdentifier<dimension> & )
 ```
 
 
@@ -81,7 +81,7 @@ public index_t polygon_identifier(index_t polygon)
 ### identified_connected_polygons
 
 ```cpp
-public FixedArray identified_connected_polygons()
+public absl::FixedArray<std::vector<index_t>> identified_connected_polygons()
 ```
 
 

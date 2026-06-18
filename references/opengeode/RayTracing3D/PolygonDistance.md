@@ -50,7 +50,7 @@ public void PolygonDistance()
 ### PolygonDistance
 
 ```cpp
-public void PolygonDistance(index_t polygon_in, double distance_in, POSITION position_in, Point point_in)
+public void PolygonDistance(index_t polygon_in, double distance_in, POSITION position_in, Point3D point_in)
 ```
 
 

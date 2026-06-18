@@ -25,7 +25,7 @@ Inherits from Input<std::unique_ptr<VertexSet>, MeshImpl>
 ### VertexSetInput
 
 ```cpp
-protected void VertexSetInput(basic_string_view filename)
+protected void VertexSetInput(std::string_view filename)
 ```
 
 

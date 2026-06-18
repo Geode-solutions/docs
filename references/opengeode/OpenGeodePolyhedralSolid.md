@@ -20,6 +20,15 @@ Inherits from PolyhedralSolid<3U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class OpenGeodePolyhedralSolid
 
 
@@ -29,82 +38,91 @@ Inherits from PolyhedralSolid<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### OpenGeodePolyhedralSolid
 
 ```cpp
-public void OpenGeodePolyhedralSolid<>(const OpenGeodePolyhedralSolid<> & )
+public void OpenGeodePolyhedralSolid<value-parameter-0-0>(const OpenGeodePolyhedralSolid<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public OpenGeodePolyhedralSolid<> & operator=(const OpenGeodePolyhedralSolid<> & )
-```
-
-
-### OpenGeodePolyhedralSolid
-
-```cpp
-public void OpenGeodePolyhedralSolid<>()
-```
-
-
-### OpenGeodePolyhedralSolid
-
-```cpp
-public void OpenGeodePolyhedralSolid<>(OpenGeodePolyhedralSolid<> && other)
-```
-
-
-### operator=
-
-```cpp
-public OpenGeodePolyhedralSolid<> & operator=(OpenGeodePolyhedralSolid<> && other)
-```
-
-
-### ~OpenGeodePolyhedralSolid
-
-```cpp
-public void ~OpenGeodePolyhedralSolid<>()
+public OpenGeodePolyhedralSolid<dimension> & operator=(const OpenGeodePolyhedralSolid<dimension> & )
 ```
 
 
 ### impl_name_static
 
 ```cpp
-public NamedType impl_name_static()
+public static MeshImpl impl_name_static()
 ```
 
 
 ### impl_name
 
 ```cpp
-public NamedType impl_name()
+public MeshImpl impl_name()
 ```
 
 
 ### type_name
 
 ```cpp
-public NamedType type_name()
+public MeshType type_name()
 ```
 
 
 ### native_extension_static
 
 ```cpp
-public basic_string_view native_extension_static()
+public static std::string_view native_extension_static()
 ```
 
 
 ### native_extension
 
 ```cpp
-public basic_string_view native_extension()
+public std::string_view native_extension()
+```
+
+
+### OpenGeodePolyhedralSolid
+
+```cpp
+public void OpenGeodePolyhedralSolid<value-parameter-0-0>()
+```
+
+
+### OpenGeodePolyhedralSolid
+
+```cpp
+public void OpenGeodePolyhedralSolid<value-parameter-0-0>(OpenGeodePolyhedralSolid<dimension> && other)
+```
+
+
+### operator=
+
+```cpp
+public OpenGeodePolyhedralSolid<dimension> & operator=(OpenGeodePolyhedralSolid<dimension> && other)
+```
+
+
+### ~OpenGeodePolyhedralSolid
+
+```cpp
+public void ~OpenGeodePolyhedralSolid<value-parameter-0-0>()
 ```
 
 
@@ -118,7 +136,7 @@ public void set_vertex(index_t vertex_id, Point<dimension> point, OGPolyhedralSo
 ### add_polyhedron
 
 ```cpp
-public void add_polyhedron(Span vertices, Span facets, OGPolyhedralSolidKey )
+public void add_polyhedron(absl::Span<const index_t> vertices, absl::Span<const std::vector<local_index_t>> facets, OGPolyhedralSolidKey )
 ```
 
 
@@ -132,7 +150,7 @@ public void remove_polyhedra(const std::vector<bool> & to_delete, OGPolyhedralSo
 ### permute_polyhedra
 
 ```cpp
-public void permute_polyhedra(Span permutation, OGPolyhedralSolidKey )
+public void permute_polyhedra(absl::Span<const index_t> permutation, OGPolyhedralSolidKey )
 ```
 
 

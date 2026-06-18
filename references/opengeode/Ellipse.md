@@ -43,21 +43,21 @@ Inherits from GenericEllipse<RefPoint<dimension>, RefFrame<dimension>, dimension
 ### Ellipse
 
 ```cpp
-public void Ellipse<>(const Point<dimension> & center, const Frame<dimension> & axes)
+public void Ellipse<value-parameter-0-0>(const Point<dimension> & center, const Frame<dimension> & axes)
 ```
 
 
 ### Ellipse
 
 ```cpp
-public void Ellipse<>(const Ellipse<dimension> & other)
+public void Ellipse<value-parameter-0-0>(const Ellipse<dimension> & other)
 ```
 
 
 ### Ellipse
 
 ```cpp
-public void Ellipse<>(const OwnerEllipse<dimension> & other)
+public void Ellipse<value-parameter-0-0>(const OwnerEllipse<dimension> & other)
 ```
 
 
@@ -71,7 +71,7 @@ public Ellipse<dimension> & operator=(const Ellipse<dimension> & other)
 ### Ellipse
 
 ```cpp
-public void Ellipse<>(Ellipse<dimension> && other)
+public void Ellipse<value-parameter-0-0>(Ellipse<dimension> && other)
 ```
 
 

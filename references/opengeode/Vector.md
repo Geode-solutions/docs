@@ -29,28 +29,28 @@ Inherits from Point<dimension>
 ### Vector
 
 ```cpp
-public void Vector<>()
+public void Vector<value-parameter-0-0>()
 ```
 
 
 ### Vector
 
 ```cpp
-public void Vector<>(const Point<dimension> & vector)
+public void Vector<value-parameter-0-0>(const Point<dimension> & vector)
 ```
 
 
 ### Vector
 
 ```cpp
-public void Vector<>(std::array<double, dimension> values)
+public void Vector<value-parameter-0-0>(std::array<double, dimension> values)
 ```
 
 
 ### Vector
 
 ```cpp
-public void Vector<>(const Point<dimension> & from, const Point<dimension> & to)
+public void Vector<value-parameter-0-0>(const Point<dimension> & from, const Point<dimension> & to)
 ```
 
 
@@ -71,28 +71,28 @@ public double length()
 ### operator*
 
 ```cpp
-public Vector operator*(double multiplier)
+public Vector<dimension> operator*(double multiplier)
 ```
 
 
 ### operator/
 
 ```cpp
-public Vector operator/(double divider)
+public Vector<dimension> operator/(double divider)
 ```
 
 
 ### operator+
 
 ```cpp
-public Vector operator+(const Vector<> & other)
+public Vector<dimension> operator+(const Vector<dimension> & other)
 ```
 
 
 ### operator-
 
 ```cpp
-public Vector operator-(const Vector<> & other)
+public Vector<dimension> operator-(const Vector<dimension> & other)
 ```
 
 
@@ -113,35 +113,35 @@ public void operator/=(double divider)
 ### operator+=
 
 ```cpp
-public void operator+=(const Vector<> & other)
+public void operator+=(const Vector<dimension> & other)
 ```
 
 
 ### operator-=
 
 ```cpp
-public void operator-=(const Vector<> & other)
+public void operator-=(const Vector<dimension> & other)
 ```
 
 
 ### normalize
 
 ```cpp
-public Vector normalize()
+public Vector<dimension> normalize()
 ```
 
 
 ### dot
 
 ```cpp
-public double dot(const Vector<> & other)
+public double dot(const Vector<dimension> & other)
 ```
 
 
 ### cross
 
 ```cpp
-public Vector cross(const Vector<> & other)
+public Vector<dimension> cross(const Vector<dimension> & other)
 ```
 
 

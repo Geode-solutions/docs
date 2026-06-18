@@ -24,6 +24,15 @@ Inherits from Topology, Corners3D, Lines3D, Surfaces3D, Blocks3D, ModelBoundarie
 
 
 
+## Members
+
+```cpp
+public static const index_t dim
+
+```
+
+
+
 ## Records
 
 BoundaryCornerRange
@@ -32,11 +41,15 @@ BoundaryLineRange
 
 BoundarySurfaceRange
 
+EmbeddingBlockRange
+
+EmbeddingSurfaceRange
+
+IncidentBlockRange
+
 IncidentLineRange
 
 IncidentSurfaceRange
-
-IncidentBlockRange
 
 InternalCornerRange
 
@@ -44,9 +57,7 @@ InternalLineRange
 
 InternalSurfaceRange
 
-EmbeddingSurfaceRange
-
-EmbeddingBlockRange
+ItemBlockRange
 
 ItemCornerRange
 
@@ -54,11 +65,44 @@ ItemLineRange
 
 ItemSurfaceRange
 
-ItemBlockRange
-
 
 
 ## Functions
+
+### boundaries
+
+```cpp
+public BoundaryCornerRange boundaries(const Line3D & line)
+```
+
+
+### boundaries
+
+```cpp
+public BoundarySurfaceRange boundaries(const Block3D & block)
+```
+
+
+### incidences
+
+```cpp
+public IncidentLineRange incidences(const Corner3D & corner)
+```
+
+
+### native_extension_static
+
+```cpp
+public static std::string_view native_extension_static()
+```
+
+
+### native_extension
+
+```cpp
+public std::string_view native_extension()
+```
+
 
 ### BRep
 
@@ -105,28 +149,7 @@ public const Component3D & component(const uuid & component_id)
 ### boundaries
 
 ```cpp
-public BoundaryCornerRange boundaries(const Line3D & line)
-```
-
-
-### boundaries
-
-```cpp
 public BoundaryLineRange boundaries(const Surface3D & surface)
-```
-
-
-### boundaries
-
-```cpp
-public BoundarySurfaceRange boundaries(const Block3D & block)
-```
-
-
-### incidences
-
-```cpp
-public IncidentLineRange incidences(const Corner3D & corner)
 ```
 
 
@@ -435,20 +458,6 @@ public BoundingBox3D bounding_box()
 
 ```cpp
 public BoundingBox3D active_components_bounding_box()
-```
-
-
-### native_extension_static
-
-```cpp
-public basic_string_view native_extension_static()
-```
-
-
-### native_extension
-
-```cpp
-public basic_string_view native_extension()
 ```
 
 

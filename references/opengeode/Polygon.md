@@ -34,14 +34,14 @@ Inherits from GenericPolygon<RefPoint<dimension>, dimension>
 ### Polygon
 
 ```cpp
-public void Polygon<>(std::vector<RefPoint<dimension> > vertices)
+public void Polygon<value-parameter-0-0>(std::vector<RefPoint<dimension>> vertices)
 ```
 
 
 ### Polygon
 
 ```cpp
-public void Polygon<>(const Polygon<dimension> & other)
+public void Polygon<value-parameter-0-0>(const Polygon<dimension> & other)
 ```
 
 
@@ -55,7 +55,7 @@ public Polygon<dimension> & operator=(const Polygon<dimension> & other)
 ### Polygon
 
 ```cpp
-public void Polygon<>(Polygon<dimension> && other)
+public void Polygon<value-parameter-0-0>(Polygon<dimension> && other)
 ```
 
 

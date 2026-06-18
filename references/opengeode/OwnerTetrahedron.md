@@ -25,7 +25,7 @@ Inherits from GenericTetrahedron<Point3D>
 ### OwnerTetrahedron
 
 ```cpp
-public void OwnerTetrahedron(Point point0, Point point1, Point point2, Point point3)
+public void OwnerTetrahedron(Point3D point0, Point3D point1, Point3D point2, Point3D point3)
 ```
 
 

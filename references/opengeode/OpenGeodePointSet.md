@@ -20,6 +20,15 @@ Inherits from PointSet<1U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class OpenGeodePointSet
 
 
@@ -29,82 +38,91 @@ Inherits from PointSet<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### OpenGeodePointSet
 
 ```cpp
-public void OpenGeodePointSet<>(const OpenGeodePointSet<> & )
+public void OpenGeodePointSet<value-parameter-0-0>(const OpenGeodePointSet<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public OpenGeodePointSet<> & operator=(const OpenGeodePointSet<> & )
-```
-
-
-### OpenGeodePointSet
-
-```cpp
-public void OpenGeodePointSet<>()
-```
-
-
-### OpenGeodePointSet
-
-```cpp
-public void OpenGeodePointSet<>(OpenGeodePointSet<> && other)
-```
-
-
-### operator=
-
-```cpp
-public OpenGeodePointSet<> & operator=(OpenGeodePointSet<> && other)
-```
-
-
-### ~OpenGeodePointSet
-
-```cpp
-public void ~OpenGeodePointSet<>()
+public OpenGeodePointSet<dimension> & operator=(const OpenGeodePointSet<dimension> & )
 ```
 
 
 ### impl_name_static
 
 ```cpp
-public NamedType impl_name_static()
+public static MeshImpl impl_name_static()
 ```
 
 
 ### impl_name
 
 ```cpp
-public NamedType impl_name()
+public MeshImpl impl_name()
+```
+
+
+### OpenGeodePointSet
+
+```cpp
+public void OpenGeodePointSet<value-parameter-0-0>()
 ```
 
 
 ### type_name
 
 ```cpp
-public NamedType type_name()
+public MeshType type_name()
+```
+
+
+### OpenGeodePointSet
+
+```cpp
+public void OpenGeodePointSet<value-parameter-0-0>(OpenGeodePointSet<dimension> && other)
 ```
 
 
 ### native_extension_static
 
 ```cpp
-public basic_string_view native_extension_static()
+public static std::string_view native_extension_static()
+```
+
+
+### operator=
+
+```cpp
+public OpenGeodePointSet<dimension> & operator=(OpenGeodePointSet<dimension> && other)
+```
+
+
+### ~OpenGeodePointSet
+
+```cpp
+public void ~OpenGeodePointSet<value-parameter-0-0>()
 ```
 
 
 ### native_extension
 
 ```cpp
-public basic_string_view native_extension()
+public std::string_view native_extension()
 ```
 
 
@@ -126,11 +144,29 @@ Inherits from PointSet<3U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class OpenGeodePointSet
 
 
 ```cpp
 Inherits from PointSet<2U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 

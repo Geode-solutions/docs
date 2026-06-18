@@ -22,24 +22,24 @@ Inherits from SectionOutput
 
 ## Functions
 
+### save_section_files
+
+```cpp
+public void save_section_files(const Section & section, std::string_view directory)
+```
+
+
 ### OpenGeodeSectionOutput
 
 ```cpp
-public void OpenGeodeSectionOutput(basic_string_view filename)
+public void OpenGeodeSectionOutput(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
-```
-
-
-### save_section_files
-
-```cpp
-public void save_section_files(const Section & section, basic_string_view directory)
+public static std::string_view extension()
 ```
 
 
@@ -53,7 +53,7 @@ public void archive_section_files(const ZipFile & zip_writer)
 ### write
 
 ```cpp
-public vector write(const Section & section)
+public std::vector<std::string> write(const Section & section)
 ```
 
 

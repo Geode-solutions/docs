@@ -14,40 +14,56 @@ const name = words.join('-');
 # class SolidFacets
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### SolidFacets
 
 ```cpp
-public void SolidFacets<>(const SolidFacets<> & )
+public void SolidFacets<value-parameter-0-0>(const SolidFacets<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public SolidFacets<> & operator=(const SolidFacets<> & )
+public SolidFacets<dimension> & operator=(const SolidFacets<dimension> & )
+```
+
+
+### find_or_create_facet
+
+```cpp
+public index_t find_or_create_facet(PolyhedronFacetVertices facet_vertices, SolidFacetsKey )
 ```
 
 
 ### SolidFacets
 
 ```cpp
-public void SolidFacets<>()
+public void SolidFacets<value-parameter-0-0>()
 ```
 
 
 ### SolidFacets
 
 ```cpp
-public void SolidFacets<>(const SolidMesh<dimension> & solid)
+public void SolidFacets<value-parameter-0-0>(const SolidMesh<dimension> & solid)
 ```
 
 
 ### ~SolidFacets
 
 ```cpp
-public void ~SolidFacets<>()
+public void ~SolidFacets<value-parameter-0-0>()
 ```
 
 
@@ -79,7 +95,7 @@ public const PolyhedronFacetVertices & facet_vertices(index_t facet_id)
 ### facet_from_vertices
 
 ```cpp
-public optional facet_from_vertices(const PolyhedronFacetVertices & vertices)
+public std::optional<index_t> facet_from_vertices(const PolyhedronFacetVertices & vertices)
 ```
 
 
@@ -106,42 +122,35 @@ public AttributeManager & facet_attribute_manager()
 ### update_facet_vertices
 
 ```cpp
-public vector update_facet_vertices(Span old2new, SolidFacetsKey )
+public std::vector<index_t> update_facet_vertices(absl::Span<const index_t> old2new, SolidFacetsKey )
 ```
 
 
 ### update_facet_vertex
 
 ```cpp
-public BijectiveMapping update_facet_vertex(InlinedVector facet_vertices, index_t facet_vertex_id, index_t new_vertex_id, SolidFacetsKey )
+public BijectiveMapping<index_t> update_facet_vertex(PolyhedronFacetVertices facet_vertices, index_t facet_vertex_id, index_t new_vertex_id, SolidFacetsKey )
 ```
 
 
 ### remove_facet
 
 ```cpp
-public void remove_facet(InlinedVector facet_vertices, SolidFacetsKey )
+public void remove_facet(PolyhedronFacetVertices facet_vertices, SolidFacetsKey )
 ```
 
 
 ### delete_facets
 
 ```cpp
-public vector delete_facets(const std::vector<bool> & to_delete, SolidFacetsKey )
+public std::vector<index_t> delete_facets(const std::vector<bool> & to_delete, SolidFacetsKey )
 ```
 
 
 ### remove_isolated_facets
 
 ```cpp
-public vector remove_isolated_facets(SolidFacetsKey )
-```
-
-
-### find_or_create_facet
-
-```cpp
-public index_t find_or_create_facet(InlinedVector facet_vertices, SolidFacetsKey )
+public std::vector<index_t> remove_isolated_facets(SolidFacetsKey )
 ```
 
 
@@ -155,5 +164,14 @@ public void overwrite_facets(const SolidFacets<dimension> & from, SolidFacetsKey
 
 
 # class SolidFacets
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
 
 

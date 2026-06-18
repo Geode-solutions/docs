@@ -19,7 +19,7 @@ const name = words.join('-');
 ### Growable
 
 ```cpp
-public void Growable<Archive, T>(absl::FixedArray<std::function<void (Archive &, T &)> > serializers)
+public void Growable<Archive, T>(absl::FixedArray<std::function<void (Archive &, T &)>> serializers)
 ```
 
 

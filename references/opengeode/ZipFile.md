@@ -19,7 +19,7 @@ const name = words.join('-');
 ### ZipFile
 
 ```cpp
-public void ZipFile(basic_string_view file, basic_string_view archive_temp_filename)
+public void ZipFile(std::string_view file, std::string_view archive_temp_filename)
 ```
 
 
@@ -40,14 +40,14 @@ public void archive_files(absl::Span<const std::string_view> & files)
 ### archive_file
 
 ```cpp
-public void archive_file(basic_string_view file)
+public void archive_file(std::string_view file)
 ```
 
 
 ### directory
 
 ```cpp
-public basic_string directory()
+public std::string directory()
 ```
 
 

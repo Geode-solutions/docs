@@ -29,7 +29,7 @@ Inherits from CornerRangeBase
 ### CornerRange
 
 ```cpp
-public void CornerRange(const Corners<> & corners)
+public void CornerRange(const Corners<dimension> & corners)
 ```
 
 

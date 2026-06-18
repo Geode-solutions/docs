@@ -25,7 +25,7 @@ Inherits from Output<TriangulatedSurface<dimension> >
 ### TriangulatedSurfaceOutput
 
 ```cpp
-protected void TriangulatedSurfaceOutput<dimension>(basic_string_view filename)
+protected void TriangulatedSurfaceOutput<dimension>(std::string_view filename)
 ```
 
 

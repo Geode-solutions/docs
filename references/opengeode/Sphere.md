@@ -43,21 +43,21 @@ Inherits from GenericSphere<RefPoint<dimension>, dimension>
 ### Sphere
 
 ```cpp
-public void Sphere<>(const Point<dimension> & origin, double radius)
+public void Sphere<value-parameter-0-0>(const Point<dimension> & origin, double radius)
 ```
 
 
 ### Sphere
 
 ```cpp
-public void Sphere<>(const Sphere<dimension> & other)
+public void Sphere<value-parameter-0-0>(const Sphere<dimension> & other)
 ```
 
 
 ### Sphere
 
 ```cpp
-public void Sphere<>(const OwnerSphere<dimension> & other)
+public void Sphere<value-parameter-0-0>(const OwnerSphere<dimension> & other)
 ```
 
 
@@ -71,7 +71,7 @@ public Sphere<dimension> & operator=(const Sphere<dimension> & other)
 ### Sphere
 
 ```cpp
-public void Sphere<>(Sphere<dimension> && other)
+public void Sphere<value-parameter-0-0>(Sphere<dimension> && other)
 ```
 
 

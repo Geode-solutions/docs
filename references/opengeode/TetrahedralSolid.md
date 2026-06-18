@@ -20,6 +20,15 @@ Inherits from SolidMesh<3U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class TetrahedralSolid
 
 
@@ -29,12 +38,42 @@ Inherits from SolidMesh<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
+
+### TetrahedralSolid
+
+```cpp
+protected void TetrahedralSolid<value-parameter-0-0>()
+```
+
+
+### TetrahedralSolid
+
+```cpp
+protected void TetrahedralSolid<value-parameter-0-0>(TetrahedralSolid<dimension> && other)
+```
+
+
+### operator=
+
+```cpp
+protected TetrahedralSolid<dimension> & operator=(TetrahedralSolid<dimension> && other)
+```
+
 
 ### create
 
 ```cpp
-public std::unique_ptr<TetrahedralSolid<dimension> > create()
+public static std::unique_ptr<TetrahedralSolid<dimension>> create()
 ```
 
 
@@ -43,7 +82,7 @@ public std::unique_ptr<TetrahedralSolid<dimension> > create()
 ### create
 
 ```cpp
-public std::unique_ptr<TetrahedralSolid<dimension> > create(const MeshImpl & impl)
+public static std::unique_ptr<TetrahedralSolid<dimension>> create(const MeshImpl & impl)
 ```
 
 
@@ -54,14 +93,14 @@ public std::unique_ptr<TetrahedralSolid<dimension> > create(const MeshImpl & imp
 ### type_name_static
 
 ```cpp
-public NamedType type_name_static()
+public static MeshType type_name_static()
 ```
 
 
 ### clone
 
 ```cpp
-public std::unique_ptr<TetrahedralSolid<dimension> > clone()
+public std::unique_ptr<TetrahedralSolid<dimension>> clone()
 ```
 
 
@@ -131,7 +170,7 @@ public std::optional<PolyhedronFacet> polyhedron_adjacent_facet(const Polyhedron
 ### opposite_edge_vertices
 
 ```cpp
-public array opposite_edge_vertices(index_t tetrahedron_id, const std::array<index_t, 2> & edge_vertices)
+public std::array<index_t, 2> opposite_edge_vertices(index_t tetrahedron_id, const std::array<index_t, 2> & edge_vertices)
 ```
 
 
@@ -182,27 +221,6 @@ public Triangle<dimension> triangle(const PolyhedronFacet & facet)
 
 
  Return a geometrical Triangle from a tetrahedron facet of the mesh.
-
-### TetrahedralSolid
-
-```cpp
-protected void TetrahedralSolid<>()
-```
-
-
-### TetrahedralSolid
-
-```cpp
-protected void TetrahedralSolid<>(TetrahedralSolid<> && other)
-```
-
-
-### operator=
-
-```cpp
-protected TetrahedralSolid<> & operator=(TetrahedralSolid<> && other)
-```
-
 
 
 

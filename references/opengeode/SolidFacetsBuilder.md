@@ -23,21 +23,21 @@ const name = words.join('-');
 ### SolidFacetsBuilder
 
 ```cpp
-public void SolidFacetsBuilder<>(SolidFacets<dimension> & facets)
+public void SolidFacetsBuilder<value-parameter-0-0>(SolidFacets<dimension> & facets)
 ```
 
 
 ### SolidFacetsBuilder
 
 ```cpp
-public void SolidFacetsBuilder<>(SolidFacetsBuilder<> && )
+public void SolidFacetsBuilder<value-parameter-0-0>(SolidFacetsBuilder<dimension> && )
 ```
 
 
 ### delete_isolated_facets
 
 ```cpp
-public vector delete_isolated_facets()
+public std::vector<index_t> delete_isolated_facets()
 ```
 
 
@@ -48,35 +48,35 @@ public vector delete_isolated_facets()
 ### find_or_create_facet
 
 ```cpp
-public index_t find_or_create_facet(InlinedVector facet_vertices)
+public index_t find_or_create_facet(PolyhedronFacetVertices facet_vertices)
 ```
 
 
 ### delete_facets
 
 ```cpp
-public vector delete_facets(const std::vector<bool> & to_delete)
+public std::vector<index_t> delete_facets(const std::vector<bool> & to_delete)
 ```
 
 
 ### remove_facet
 
 ```cpp
-public void remove_facet(InlinedVector facet_vertices)
+public void remove_facet(PolyhedronFacetVertices facet_vertices)
 ```
 
 
 ### update_facet_vertex
 
 ```cpp
-public BijectiveMapping update_facet_vertex(InlinedVector facet_vertices, index_t facet_vertex_id, index_t new_vertex_id)
+public geode::BijectiveMapping<index_t> update_facet_vertex(PolyhedronFacetVertices facet_vertices, index_t facet_vertex_id, index_t new_vertex_id)
 ```
 
 
 ### update_facet_vertices
 
 ```cpp
-public vector update_facet_vertices(Span old2new)
+public std::vector<index_t> update_facet_vertices(absl::Span<const index_t> old2new)
 ```
 
 

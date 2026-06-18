@@ -40,7 +40,7 @@ public void set_value(double value)
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 

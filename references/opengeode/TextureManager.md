@@ -56,14 +56,14 @@ public index_t nb_textures()
 ### find_or_create_texture
 
 ```cpp
-public Texture<dimension> & find_or_create_texture(basic_string_view name)
+public Texture<dimension> & find_or_create_texture(std::string_view name)
 ```
 
 
 ### find_texture
 
 ```cpp
-public const Texture<dimension> & find_texture(basic_string_view name)
+public const Texture<dimension> & find_texture(std::string_view name)
 ```
 
 
@@ -77,14 +77,14 @@ public absl::FixedArray<std::string_view> texture_names()
 ### texture_exists
 
 ```cpp
-public bool texture_exists(basic_string_view name)
+public bool texture_exists(std::string_view name)
 ```
 
 
 ### delete_texture
 
 ```cpp
-public void delete_texture(basic_string_view name)
+public void delete_texture(std::string_view name)
 ```
 
 

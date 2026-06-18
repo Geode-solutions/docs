@@ -25,7 +25,7 @@ Inherits from RasterImageInput<dimension>
 ### OpenGeodeRasterImageInput
 
 ```cpp
-public void OpenGeodeRasterImageInput<dimension>(basic_string_view filename)
+public void OpenGeodeRasterImageInput<dimension>(std::string_view filename)
 ```
 
 

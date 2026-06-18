@@ -14,7 +14,25 @@ const name = words.join('-');
 # class GenericPlane
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class GenericPlane
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
 
 
 ## Functions
@@ -85,5 +103,14 @@ public double plane_constant()
 
 
 # class GenericPlane
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
 
 

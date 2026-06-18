@@ -22,17 +22,17 @@ const name = words.join('-');
 
 ## Functions
 
-### AnisotropicDistanceToTriangle
-
-```cpp
-public void AnisotropicDistanceToTriangle<dimension>(const TriangulatedSurface<dimension> & mesh, const CoordinateSystem<dimension> & coordinate_system)
-```
-
-
 ### operator()
 
 ```cpp
 public double operator()(const Point<dimension> & query, index_t cur_box)
+```
+
+
+### AnisotropicDistanceToTriangle
+
+```cpp
+public void AnisotropicDistanceToTriangle<dimension>(const TriangulatedSurface<dimension> & mesh, const CoordinateSystem<dimension> & coordinate_system)
 ```
 
 

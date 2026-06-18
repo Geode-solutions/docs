@@ -27,24 +27,6 @@ public void VertexIdentifierBuilder(VertexIdentifier & vertex_identifier)
 ```
 
 
-### register_mesh_component
-
-```cpp
-public void register_mesh_component(const MeshComponent & component)
-```
-
-
- Add a component in the VertexIdentifier
-
-### unregister_mesh_component
-
-```cpp
-public void unregister_mesh_component(const MeshComponent & component)
-```
-
-
- Remove a component from the VertexIdentifier and delete corresponding information (i.e. the attribute on component mesh).
-
 ### create_unique_vertex
 
 ```cpp
@@ -80,6 +62,15 @@ public void set_unique_vertex(ComponentMeshVertex component_vertex_id, index_t u
 
 **unique_vertex_id** [in] Unique vertex index.
 
+### register_mesh_component
+
+```cpp
+public void register_mesh_component(const MeshComponent & component)
+```
+
+
+ Add a component in the VertexIdentifier
+
 ### unset_unique_vertex
 
 ```cpp
@@ -93,10 +84,19 @@ public void unset_unique_vertex(const ComponentMeshVertex & component_vertex_id,
 
 **unique_vertex_id** [in] Unique vertex index.
 
+### unregister_mesh_component
+
+```cpp
+public void unregister_mesh_component(const MeshComponent & component)
+```
+
+
+ Remove a component from the VertexIdentifier and delete corresponding information (i.e. the attribute on component mesh).
+
 ### update_unique_vertices
 
 ```cpp
-public void update_unique_vertices(const ComponentID & component_id, Span old2new)
+public void update_unique_vertices(const ComponentID & component_id, absl::Span<const index_t> old2new)
 ```
 
 
@@ -109,7 +109,7 @@ public void update_unique_vertices(const ComponentID & component_id, Span old2ne
 ### load_unique_vertices
 
 ```cpp
-public void load_unique_vertices(basic_string_view directory)
+public void load_unique_vertices(std::string_view directory)
 ```
 
 

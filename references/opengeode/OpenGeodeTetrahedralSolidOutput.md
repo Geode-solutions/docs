@@ -25,7 +25,7 @@ Inherits from TetrahedralSolidOutput<dimension>
 ### OpenGeodeTetrahedralSolidOutput
 
 ```cpp
-public void OpenGeodeTetrahedralSolidOutput<dimension>(basic_string_view filename)
+public void OpenGeodeTetrahedralSolidOutput<dimension>(std::string_view filename)
 ```
 
 
@@ -39,7 +39,7 @@ public bool is_saveable(const TetrahedralSolid<dimension> & mesh)
 ### write
 
 ```cpp
-public vector write(const TetrahedralSolid<dimension> & mesh)
+public std::vector<std::string> write(const TetrahedralSolid<dimension> & mesh)
 ```
 
 

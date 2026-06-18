@@ -28,20 +28,6 @@ public array bytes_
 ### uuid
 
 ```cpp
-public void uuid()
-```
-
-
-### uuid
-
-```cpp
-public void uuid(basic_string_view string)
-```
-
-
-### uuid
-
-```cpp
 public void uuid(const uuid & )
 ```
 
@@ -74,6 +60,20 @@ public void ~uuid()
 ```
 
 
+### uuid
+
+```cpp
+public void uuid()
+```
+
+
+### uuid
+
+```cpp
+public void uuid(std::string_view string)
+```
+
+
 ### operator==
 
 ```cpp
@@ -98,7 +98,7 @@ public bool operator<(const uuid & other)
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 

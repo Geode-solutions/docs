@@ -34,6 +34,62 @@ public AttributeManager & operator=(const AttributeManager & )
 ```
 
 
+### find_generic_attribute
+
+```cpp
+public std::shared_ptr<AttributeBase> find_generic_attribute(std::string_view name)
+```
+
+
+ Recover the non-typed/generic Attribute from the attribute name. This can be used when attribute type is not known in a context.
+
+**name** [in] The associated attribute name to look for.
+
+**return** nullptr if no attribute matches the given name.
+
+### find_attribute
+
+```cpp
+public std::shared_ptr<ReadOnlyAttribute<T>> find_attribute(std::string_view name)
+```
+
+
+ Recover the typed Attribute from the attribute name
+
+**name** [in] The associated attribute name to look for
+
+**T** The type to of the ReadOnlyAttribute element
+
+**exception**if no Attribute found
+
+### find_or_create_attribute
+
+```cpp
+public std::shared_ptr<Attribute<T>> find_or_create_attribute(std::string_view name, T default_value, AttributeProperties properties)
+```
+
+
+ Recover or create the attribute from the manager and the attribute name. If the recovered Attribute is not a of the same type than the attribute, it replaces it by the Attribute corresponding to the attribute.
+
+**name** [in] The associated attribute name to look for
+
+**default_value** [in] The default value to use when new attribute element are created
+
+**properties** [in] The AttributeProperties to set the attribute flags for future modifications
+
+**Attribute** The attribute type to look for, such as ConstantAttribute
+
+**T** The type of the Attribute element
+
+**exception**if the Attribute replacement failed
+
+### find_or_create_attribute
+
+```cpp
+public std::shared_ptr<Attribute<T>> find_or_create_attribute(std::string_view name, T default_value)
+```
+
+
 ### AttributeManager
 
 ```cpp
@@ -59,62 +115,6 @@ public AttributeManager & operator=(AttributeManager && other)
 
 ```cpp
 public void ~AttributeManager()
-```
-
-
-### find_generic_attribute
-
-```cpp
-public shared_ptr find_generic_attribute(basic_string_view name)
-```
-
-
- Recover the non-typed/generic Attribute from the attribute name. This can be used when attribute type is not known in a context.
-
-**name** [in] The associated attribute name to look for.
-
-**return** nullptr if no attribute matches the given name.
-
-### find_attribute
-
-```cpp
-public std::shared_ptr<ReadOnlyAttribute<T> > find_attribute(basic_string_view name)
-```
-
-
- Recover the typed Attribute from the attribute name
-
-**name** [in] The associated attribute name to look for
-
-**T** The type to of the ReadOnlyAttribute element
-
-**exception**if no Attribute found
-
-### find_or_create_attribute
-
-```cpp
-public std::shared_ptr<Attribute<T> > find_or_create_attribute(basic_string_view name, T default_value, AttributeProperties properties)
-```
-
-
- Recover or create the attribute from the manager and the attribute name. If the recovered Attribute is not a of the same type than the attribute, it replaces it by the Attribute corresponding to the attribute.
-
-**name** [in] The associated attribute name to look for
-
-**default_value** [in] The default value to use when new attribute element are created
-
-**properties** [in] The AttributeProperties to set the attribute flags for future modifications
-
-**Attribute** The attribute type to look for, such as ConstantAttribute
-
-**T** The type of the Attribute element
-
-**exception**if the Attribute replacement failed
-
-### find_or_create_attribute
-
-```cpp
-public std::shared_ptr<Attribute<T> > find_or_create_attribute(basic_string_view name, T default_value)
 ```
 
 
@@ -209,7 +209,7 @@ public absl::FixedArray<std::string_view> attribute_names()
 ### attribute_exists
 
 ```cpp
-public bool attribute_exists(basic_string_view name)
+public bool attribute_exists(std::string_view name)
 ```
 
 
@@ -220,7 +220,7 @@ public bool attribute_exists(basic_string_view name)
 ### delete_attribute
 
 ```cpp
-public void delete_attribute(basic_string_view name)
+public void delete_attribute(std::string_view name)
 ```
 
 
@@ -231,7 +231,7 @@ public void delete_attribute(basic_string_view name)
 ### attribute_type
 
 ```cpp
-public basic_string_view attribute_type(basic_string_view name)
+public std::string_view attribute_type(std::string_view name)
 ```
 
 
@@ -242,14 +242,14 @@ public basic_string_view attribute_type(basic_string_view name)
 ### rename_attribute
 
 ```cpp
-public void rename_attribute(basic_string_view old_name, basic_string_view new_name)
+public void rename_attribute(std::string_view old_name, std::string_view new_name)
 ```
 
 
 ### set_attribute_properties
 
 ```cpp
-public void set_attribute_properties(basic_string_view attribute_name, const AttributeProperties & new_properties)
+public void set_attribute_properties(std::string_view attribute_name, const AttributeProperties & new_properties)
 ```
 
 
@@ -289,7 +289,7 @@ public void delete_elements(const std::vector<bool> & to_delete)
 ### permute_elements
 
 ```cpp
-public void permute_elements(Span permutation)
+public void permute_elements(absl::Span<const index_t> permutation)
 ```
 
 
@@ -320,14 +320,14 @@ public void copy(const AttributeManager & attribute_manager)
 ### import
 
 ```cpp
-public void import(const AttributeManager & attribute_manager, Span old2new)
+public void import(const AttributeManager & attribute_manager, absl::Span<const index_t> old2new)
 ```
 
 
 ### import
 
 ```cpp
-public void import(const AttributeManager & attribute_manager, Span old2new, basic_string_view attribute_name)
+public void import(const AttributeManager & attribute_manager, absl::Span<const index_t> old2new, std::string_view attribute_name)
 ```
 
 
@@ -341,7 +341,7 @@ public void import(const AttributeManager & attribute_manager, const GenericMapp
 ### import
 
 ```cpp
-public void import(const AttributeManager & attribute_manager, const GenericMapping<index_t> & old2new_mapping, basic_string_view attribute_name)
+public void import(const AttributeManager & attribute_manager, const GenericMapping<index_t> & old2new_mapping, std::string_view attribute_name)
 ```
 
 

@@ -45,7 +45,7 @@ public void ~GridPointFunction<dimension, point_dimension>()
 ### create
 
 ```cpp
-public GridPointFunction create(const Grid<dimension> & grid, basic_string_view function_name, Point<point_dimension> value)
+public static GridPointFunction<dimension, point_dimension> create(const Grid<dimension> & grid, std::string_view function_name, Point<point_dimension> value)
 ```
 
 
@@ -54,7 +54,7 @@ public GridPointFunction create(const Grid<dimension> & grid, basic_string_view 
 ### find
 
 ```cpp
-public GridPointFunction find(const Grid<dimension> & grid, basic_string_view function_name)
+public static GridPointFunction<dimension, point_dimension> find(const Grid<dimension> & grid, std::string_view function_name)
 ```
 
 

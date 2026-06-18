@@ -34,14 +34,14 @@ Inherits from GenericSphere<Point<dimension>, dimension>
 ### OwnerSphere
 
 ```cpp
-public void OwnerSphere<>(Point<dimension> origin, double radius)
+public void OwnerSphere<value-parameter-0-0>(Point<dimension> origin, double radius)
 ```
 
 
 ### OwnerSphere
 
 ```cpp
-public void OwnerSphere<>(const OwnerSphere<dimension> & other)
+public void OwnerSphere<value-parameter-0-0>(const OwnerSphere<dimension> & other)
 ```
 
 
@@ -55,7 +55,7 @@ public OwnerSphere<dimension> & operator=(const OwnerSphere<dimension> & other)
 ### OwnerSphere
 
 ```cpp
-public void OwnerSphere<>(OwnerSphere<dimension> && other)
+public void OwnerSphere<value-parameter-0-0>(OwnerSphere<dimension> && other)
 ```
 
 

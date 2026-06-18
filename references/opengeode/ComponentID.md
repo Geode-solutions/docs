@@ -30,7 +30,7 @@ public void ComponentID()
 ### ComponentID
 
 ```cpp
-public void ComponentID(NamedType component_type, uuid id)
+public void ComponentID(ComponentType component_type, uuid id)
 ```
 
 
@@ -86,7 +86,7 @@ public bool operator<(const ComponentID & other)
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 

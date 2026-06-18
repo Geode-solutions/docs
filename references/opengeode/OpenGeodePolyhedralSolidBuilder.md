@@ -24,6 +24,15 @@ Inherits from PolyhedralSolidBuilder<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### OpenGeodePolyhedralSolidBuilder
@@ -54,6 +63,15 @@ public void OpenGeodePolyhedralSolidBuilder<dimension>(OpenGeodePolyhedralSolidB
 
 ```cpp
 Inherits from PolyhedralSolidBuilder<3U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 

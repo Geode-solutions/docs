@@ -20,19 +20,28 @@ Inherits from SolidMeshBuilder<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
+
+### create
+
+```cpp
+public static std::unique_ptr<HybridSolidBuilder<dimension>> create(HybridSolid<dimension> & mesh)
+```
+
 
 ### HybridSolidBuilder
 
 ```cpp
 public void HybridSolidBuilder<dimension>(HybridSolidBuilder<dimension> && )
-```
-
-
-### create
-
-```cpp
-public std::unique_ptr<HybridSolidBuilder<dimension> > create(HybridSolid<dimension> & mesh)
 ```
 
 
@@ -109,6 +118,15 @@ protected void HybridSolidBuilder<dimension>(HybridSolid<dimension> & mesh)
 
 ```cpp
 Inherits from SolidMeshBuilder<3U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 

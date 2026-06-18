@@ -68,7 +68,7 @@ public void add_component(ComponentPtr component)
 ### save_components
 
 ```cpp
-public void save_components(basic_string_view filename)
+public void save_components(std::string_view filename)
 ```
 
 
@@ -82,14 +82,14 @@ public void delete_component(const uuid & component_id)
 ### load_components
 
 ```cpp
-public void load_components(basic_string_view filename)
+public void load_components(std::string_view filename)
 ```
 
 
 ### file_mapping
 
 ```cpp
-public flat_hash_map file_mapping(basic_string_view directory)
+public absl::flat_hash_map<std::string, std::string> file_mapping(std::string_view directory)
 ```
 
 

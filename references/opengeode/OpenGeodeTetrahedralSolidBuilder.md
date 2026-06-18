@@ -24,6 +24,15 @@ Inherits from TetrahedralSolidBuilder<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### OpenGeodeTetrahedralSolidBuilder
@@ -54,6 +63,15 @@ public void OpenGeodeTetrahedralSolidBuilder<dimension>(OpenGeodeTetrahedralSoli
 
 ```cpp
 Inherits from TetrahedralSolidBuilder<3U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 

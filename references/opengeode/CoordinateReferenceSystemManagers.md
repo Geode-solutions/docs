@@ -22,7 +22,7 @@ const name = words.join('-');
 ### ~CoordinateReferenceSystemManagers
 
 ```cpp
-public void ~CoordinateReferenceSystemManagers<>()
+public void ~CoordinateReferenceSystemManagers<value-parameter-0-0>()
 ```
 
 
@@ -99,21 +99,21 @@ public void set_point(index_t vertex, Point<dimension> point, CRSManagersKey )
 ### CoordinateReferenceSystemManagers
 
 ```cpp
-protected void CoordinateReferenceSystemManagers<>()
+protected void CoordinateReferenceSystemManagers<value-parameter-0-0>()
 ```
 
 
 ### CoordinateReferenceSystemManagers
 
 ```cpp
-protected void CoordinateReferenceSystemManagers<>(CoordinateReferenceSystemManagers<> && other)
+protected void CoordinateReferenceSystemManagers<value-parameter-0-0>(CoordinateReferenceSystemManagers<dimension> && other)
 ```
 
 
 ### operator=
 
 ```cpp
-protected CoordinateReferenceSystemManagers<> & operator=(CoordinateReferenceSystemManagers<> && other)
+protected CoordinateReferenceSystemManagers<dimension> & operator=(CoordinateReferenceSystemManagers<dimension> && other)
 ```
 
 

@@ -24,33 +24,21 @@ Inherits from TopologyBuilder, CornersBuilder2D, LinesBuilder2D, SurfacesBuilder
 
 
 
+## Members
+
+```cpp
+public static const index_t dim
+
+```
+
+
+
 ## Functions
 
 ### SectionBuilder
 
 ```cpp
-public void SectionBuilder(const SectionBuilder & )
-```
-
-
-### operator=
-
-```cpp
-public SectionBuilder & operator=(const SectionBuilder & )
-```
-
-
-### SectionBuilder
-
-```cpp
 public void SectionBuilder(Section & section)
-```
-
-
-### SectionBuilder
-
-```cpp
-public void SectionBuilder(SectionBuilder && other)
 ```
 
 
@@ -72,6 +60,27 @@ public void replace_components_meshes_by_others(Section && other, const ModelCop
 
 ```cpp
 public ModelCopyMapping copy_components(const Section & section)
+```
+
+
+### SectionBuilder
+
+```cpp
+public void SectionBuilder(const SectionBuilder & )
+```
+
+
+### operator=
+
+```cpp
+public SectionBuilder & operator=(const SectionBuilder & )
+```
+
+
+### SectionBuilder
+
+```cpp
+public void SectionBuilder(SectionBuilder && other)
 ```
 
 
@@ -232,14 +241,14 @@ public void add_surface_collection(const uuid & surface_collection_id)
 ### update_corner_mesh
 
 ```cpp
-public void update_corner_mesh(const Corner2D & corner, unique_ptr mesh)
+public void update_corner_mesh(const Corner2D & corner, std::unique_ptr<PointSet2D> mesh)
 ```
 
 
 ### update_line_mesh
 
 ```cpp
-public void update_line_mesh(const Line2D & line, unique_ptr mesh)
+public void update_line_mesh(const Line2D & line, std::unique_ptr<EdgedCurve2D> mesh)
 ```
 
 

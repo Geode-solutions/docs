@@ -25,7 +25,7 @@ Inherits from Input<std::unique_ptr<HybridSolid<dimension> >, MeshImpl>
 ### HybridSolidInput
 
 ```cpp
-protected void HybridSolidInput<dimension>(basic_string_view filename)
+protected void HybridSolidInput<dimension>(std::string_view filename)
 ```
 
 

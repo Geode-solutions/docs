@@ -33,7 +33,7 @@ public void set_id(const uuid & unique_id)
 ### set_name
 
 ```cpp
-public void set_name(basic_string_view name)
+public void set_name(std::string_view name)
 ```
 
 
@@ -47,7 +47,7 @@ public void copy_identifier(const Identifier & other)
 ### load_identifier
 
 ```cpp
-public void load_identifier(basic_string_view directory)
+public void load_identifier(std::string_view directory)
 ```
 
 

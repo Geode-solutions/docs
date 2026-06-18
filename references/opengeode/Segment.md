@@ -34,21 +34,21 @@ Inherits from GenericSegment<RefPoint<dimension>, dimension>
 ### Segment
 
 ```cpp
-public void Segment<>(const Point<dimension> & point0, const Point<dimension> & point1)
+public void Segment<value-parameter-0-0>(const Point<dimension> & point0, const Point<dimension> & point1)
 ```
 
 
 ### Segment
 
 ```cpp
-public void Segment<>(const Segment<dimension> & other)
+public void Segment<value-parameter-0-0>(const Segment<dimension> & other)
 ```
 
 
 ### Segment
 
 ```cpp
-public void Segment<>(const OwnerSegment<dimension> & other)
+public void Segment<value-parameter-0-0>(const OwnerSegment<dimension> & other)
 ```
 
 
@@ -62,7 +62,7 @@ public Segment<dimension> & operator=(const Segment<dimension> & other)
 ### Segment
 
 ```cpp
-public void Segment<>(Segment<dimension> && other)
+public void Segment<value-parameter-0-0>(Segment<dimension> && other)
 ```
 
 

@@ -20,11 +20,29 @@ Inherits from SurfaceMesh<3U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class TriangulatedSurface
 
 
 ```cpp
 Inherits from SurfaceMesh<2U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 
@@ -42,12 +60,21 @@ Inherits from SurfaceMesh<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### create
 
 ```cpp
-public std::unique_ptr<TriangulatedSurface<dimension> > create()
+public static std::unique_ptr<TriangulatedSurface<dimension>> create()
 ```
 
 
@@ -56,7 +83,7 @@ public std::unique_ptr<TriangulatedSurface<dimension> > create()
 ### create
 
 ```cpp
-public std::unique_ptr<TriangulatedSurface<dimension> > create(const MeshImpl & impl)
+public static std::unique_ptr<TriangulatedSurface<dimension>> create(const MeshImpl & impl)
 ```
 
 
@@ -67,14 +94,28 @@ public std::unique_ptr<TriangulatedSurface<dimension> > create(const MeshImpl & 
 ### type_name_static
 
 ```cpp
-public NamedType type_name_static()
+public static MeshType type_name_static()
 ```
 
 
 ### clone
 
 ```cpp
-public std::unique_ptr<TriangulatedSurface<dimension> > clone()
+public std::unique_ptr<TriangulatedSurface<dimension>> clone()
+```
+
+
+### TriangulatedSurface
+
+```cpp
+protected void TriangulatedSurface<value-parameter-0-0>()
+```
+
+
+### TriangulatedSurface
+
+```cpp
+protected void TriangulatedSurface<value-parameter-0-0>(TriangulatedSurface<dimension> && other)
 ```
 
 
@@ -85,24 +126,10 @@ public Triangle<dimension> triangle(index_t triangle_id)
 ```
 
 
-### TriangulatedSurface
-
-```cpp
-protected void TriangulatedSurface<>()
-```
-
-
-### TriangulatedSurface
-
-```cpp
-protected void TriangulatedSurface<>(TriangulatedSurface<> && other)
-```
-
-
 ### operator=
 
 ```cpp
-protected TriangulatedSurface<> & operator=(TriangulatedSurface<> && other)
+protected TriangulatedSurface<dimension> & operator=(TriangulatedSurface<dimension> && other)
 ```
 
 

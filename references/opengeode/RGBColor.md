@@ -103,7 +103,7 @@ public void operator+=(const RGBColor & other)
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 

@@ -18,6 +18,15 @@ const name = words.join('-');
 
 
 
+## Members
+
+```cpp
+public static const auto POINTS_NAME
+
+```
+
+
+
 ## Functions
 
 ### get_point
@@ -44,7 +53,7 @@ public index_t nb_points()
 ### attribute_name
 
 ```cpp
-public basic_string_view attribute_name()
+public std::string_view attribute_name()
 ```
 
 
@@ -79,7 +88,7 @@ protected void PointsImpl<dimension>(AttributeManager & manager)
 ### PointsImpl
 
 ```cpp
-protected void PointsImpl<dimension>(AttributeManager & manager, basic_string_view attribute_name)
+protected void PointsImpl<dimension>(AttributeManager & manager, std::string_view attribute_name)
 ```
 
 

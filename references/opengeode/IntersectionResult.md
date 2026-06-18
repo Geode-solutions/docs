@@ -27,7 +27,7 @@ public INTERSECTION_TYPE type
 ```
 
 ```cpp
-public std::optional<CorrectnessInfo<Intersection> > correctness
+public std::optional<CorrectnessInfo<Intersection>> correctness
 
 ```
 

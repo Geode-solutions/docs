@@ -19,6 +19,20 @@ const name = words.join('-');
 
 ## Functions
 
+### register_coordinate_reference_system
+
+```cpp
+public void register_coordinate_reference_system(std::string_view name, std::shared_ptr<CoordinateReferenceSystem<dimension>> && crs)
+```
+
+
+### delete_coordinate_reference_system
+
+```cpp
+public void delete_coordinate_reference_system(std::string_view name)
+```
+
+
 ### CoordinateReferenceSystemManagerBuilder
 
 ```cpp
@@ -26,24 +40,10 @@ public void CoordinateReferenceSystemManagerBuilder<dimension>(CoordinateReferen
 ```
 
 
-### register_coordinate_reference_system
-
-```cpp
-public void register_coordinate_reference_system(basic_string_view name, std::shared_ptr<CoordinateReferenceSystem<dimension> > && crs)
-```
-
-
-### delete_coordinate_reference_system
-
-```cpp
-public void delete_coordinate_reference_system(basic_string_view name)
-```
-
-
 ### set_active_coordinate_reference_system
 
 ```cpp
-public void set_active_coordinate_reference_system(basic_string_view name)
+public void set_active_coordinate_reference_system(std::string_view name)
 ```
 
 
@@ -57,7 +57,7 @@ public CoordinateReferenceSystem<dimension> & active_coordinate_reference_system
 ### coordinate_reference_system
 
 ```cpp
-public CoordinateReferenceSystem<dimension> & coordinate_reference_system(basic_string_view name)
+public CoordinateReferenceSystem<dimension> & coordinate_reference_system(std::string_view name)
 ```
 
 

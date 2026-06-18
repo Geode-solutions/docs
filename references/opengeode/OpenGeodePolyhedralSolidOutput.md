@@ -25,7 +25,7 @@ Inherits from PolyhedralSolidOutput<dimension>
 ### OpenGeodePolyhedralSolidOutput
 
 ```cpp
-public void OpenGeodePolyhedralSolidOutput<dimension>(basic_string_view filename)
+public void OpenGeodePolyhedralSolidOutput<dimension>(std::string_view filename)
 ```
 
 
@@ -39,7 +39,7 @@ public bool is_saveable(const PolyhedralSolid<dimension> & mesh)
 ### write
 
 ```cpp
-public vector write(const PolyhedralSolid<dimension> & mesh)
+public std::vector<std::string> write(const PolyhedralSolid<dimension> & mesh)
 ```
 
 

@@ -20,6 +20,15 @@ Inherits from GraphBuilder, CoordinateReferenceSystemManagersBuilder<2U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class EdgedCurveBuilder
 
 
@@ -29,11 +38,29 @@ Inherits from GraphBuilder, CoordinateReferenceSystemManagersBuilder<3U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class EdgedCurveBuilder
 
 
 ```cpp
 Inherits from GraphBuilder, CoordinateReferenceSystemManagersBuilder<1U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 
@@ -51,7 +78,27 @@ Inherits from GraphBuilder, CoordinateReferenceSystemManagersBuilder<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
+
+### create
+
+```cpp
+public static std::unique_ptr<EdgedCurveBuilder<dimension>> create(EdgedCurve<dimension> & mesh)
+```
+
+
+ Create the builder associated with an EdgedCurve.
+
+**mesh** [in] The EdgedCurve to build/modify
 
 ### EdgedCurveBuilder
 
@@ -59,17 +106,6 @@ Inherits from GraphBuilder, CoordinateReferenceSystemManagersBuilder<dimension>
 public void EdgedCurveBuilder<dimension>(EdgedCurveBuilder<dimension> && )
 ```
 
-
-### create
-
-```cpp
-public std::unique_ptr<EdgedCurveBuilder<dimension> > create(EdgedCurve<dimension> & mesh)
-```
-
-
- Create the builder associated with an EdgedCurve.
-
-**mesh** [in] The EdgedCurve to build/modify
 
 ### create_point
 

@@ -19,7 +19,7 @@ const name = words.join('-');
 ### SimplicialBRepCreator
 
 ```cpp
-public void SimplicialBRepCreator(BRep & brep, vector unique_points)
+public void SimplicialBRepCreator(BRep & brep, std::vector<Point3D> unique_points)
 ```
 
 
@@ -33,49 +33,49 @@ public void ~SimplicialBRepCreator()
 ### create_corners
 
 ```cpp
-public vector create_corners(Span definitions)
+public std::vector<uuid> create_corners(absl::Span<const CornerDefinition> definitions)
 ```
 
 
 ### create_lines
 
 ```cpp
-public vector create_lines(Span corners, Span definitions)
+public std::vector<uuid> create_lines(absl::Span<const uuid> corners, absl::Span<const LineDefinition> definitions)
 ```
 
 
 ### create_surfaces
 
 ```cpp
-public vector create_surfaces(Span lines, Span definitions)
+public std::vector<uuid> create_surfaces(absl::Span<const uuid> lines, absl::Span<const SurfaceDefinition> definitions)
 ```
 
 
 ### create_surfaces
 
 ```cpp
-public vector create_surfaces(Span corners, Span lines, Span definitions)
+public std::vector<uuid> create_surfaces(absl::Span<const uuid> corners, absl::Span<const uuid> lines, absl::Span<const SurfaceDefinition> definitions)
 ```
 
 
 ### create_blocks
 
 ```cpp
-public vector create_blocks(Span surfaces, Span definitions)
+public std::vector<uuid> create_blocks(absl::Span<const uuid> surfaces, absl::Span<const BlockDefinition> definitions)
 ```
 
 
 ### create_blocks
 
 ```cpp
-public vector create_blocks(Span corners, Span lines, Span surfaces, Span definitions)
+public std::vector<uuid> create_blocks(absl::Span<const uuid> corners, absl::Span<const uuid> lines, absl::Span<const uuid> surfaces, absl::Span<const BlockDefinition> definitions)
 ```
 
 
 ### create_model_boundaries
 
 ```cpp
-public vector create_model_boundaries(Span surfaces, Span definitions)
+public std::vector<uuid> create_model_boundaries(absl::Span<const uuid> surfaces, absl::Span<const BoundaryDefinition> definitions)
 ```
 
 

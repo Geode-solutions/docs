@@ -19,17 +19,17 @@ const name = words.join('-');
 
 ## Functions
 
-### AnisotropicDistanceToEdge
-
-```cpp
-public void AnisotropicDistanceToEdge<dimension>(const EdgedCurve<dimension> & mesh, const CoordinateSystem<dimension> & coordinate_system)
-```
-
-
 ### operator()
 
 ```cpp
 public double operator()(const Point<dimension> & query, index_t cur_box)
+```
+
+
+### AnisotropicDistanceToEdge
+
+```cpp
+public void AnisotropicDistanceToEdge<dimension>(const EdgedCurve<dimension> & mesh, const CoordinateSystem<dimension> & coordinate_system)
 ```
 
 

@@ -47,42 +47,42 @@ Inherits from Component<dimension>
 ### Corner
 
 ```cpp
-public void Corner<>(const Corner<> & )
+public void Corner<value-parameter-0-0>(const Corner<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public Corner<> & operator=(const Corner<> & )
+public Corner<dimension> & operator=(const Corner<dimension> & )
 ```
 
 
 ### Corner
 
 ```cpp
-public void Corner<>(Corner<> && other)
+public void Corner<value-parameter-0-0>(Corner<dimension> && other)
 ```
 
 
 ### ~Corner
 
 ```cpp
-public void ~Corner<>()
+public void ~Corner<value-parameter-0-0>()
 ```
 
 
 ### component_type_static
 
 ```cpp
-public NamedType component_type_static()
+public static ComponentType component_type_static()
 ```
 
 
 ### component_type
 
 ```cpp
-public NamedType component_type()
+public ComponentType component_type()
 ```
 
 
@@ -103,14 +103,14 @@ public const MeshImpl & mesh_type()
 ### Corner
 
 ```cpp
-public void Corner<>(CornersKey key)
+public void Corner<value-parameter-0-0>(CornersKey key)
 ```
 
 
 ### Corner
 
 ```cpp
-public void Corner<>(const MeshImpl & impl, CornersKey key)
+public void Corner<value-parameter-0-0>(const MeshImpl & impl, CornersKey key)
 ```
 
 
@@ -131,7 +131,7 @@ public void set_mesh(std::unique_ptr<Mesh> mesh, CornersBuilderKey key)
 ### set_corner_name
 
 ```cpp
-public void set_corner_name(basic_string_view name, CornersBuilderKey key)
+public void set_corner_name(std::string_view name, CornersBuilderKey key)
 ```
 
 

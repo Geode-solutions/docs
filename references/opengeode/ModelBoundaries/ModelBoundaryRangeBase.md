@@ -62,7 +62,7 @@ public void set_active_only()
 ### ModelBoundaryRangeBase
 
 ```cpp
-protected void ModelBoundaryRangeBase(const ModelBoundaries<> & boundaries)
+protected void ModelBoundaryRangeBase(const ModelBoundaries<dimension> & boundaries)
 ```
 
 

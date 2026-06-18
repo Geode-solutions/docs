@@ -16,32 +16,18 @@ const name = words.join('-');
 
 ## Records
 
-LineCollectionRangeBase
-
 LineCollectionRange
+
+LineCollectionRangeBase
 
 
 
 ## Functions
 
-### LineCollections
-
-```cpp
-public void LineCollections<>(const LineCollections<> & )
-```
-
-
-### operator=
-
-```cpp
-public LineCollections<> & operator=(const LineCollections<> & )
-```
-
-
 ### ~LineCollections
 
 ```cpp
-public void ~LineCollections<>()
+public void ~LineCollections<value-parameter-0-0>()
 ```
 
 
@@ -56,6 +42,34 @@ public index_t nb_line_collections()
 
 ```cpp
 public index_t nb_active_line_collections()
+```
+
+
+### LineCollections
+
+```cpp
+protected void LineCollections<value-parameter-0-0>()
+```
+
+
+### LineCollections
+
+```cpp
+protected void LineCollections<value-parameter-0-0>(LineCollections<dimension> && other)
+```
+
+
+### LineCollections
+
+```cpp
+public void LineCollections<value-parameter-0-0>(const LineCollections<dimension> & )
+```
+
+
+### operator=
+
+```cpp
+public LineCollections<dimension> & operator=(const LineCollections<dimension> & )
 ```
 
 
@@ -87,52 +101,17 @@ public LineCollectionRange active_line_collections()
 ```
 
 
-### components
-
-```cpp
-public LineCollectionRange components()
-```
-
-
-### has_component
-
-```cpp
-public bool has_component(const uuid & id)
-```
-
-
-### component
-
-```cpp
-public const LineCollection<dimension> & component(const uuid & id)
-```
-
-
 ### save_line_collections
 
 ```cpp
-public void save_line_collections(basic_string_view directory)
-```
-
-
-### LineCollections
-
-```cpp
-protected void LineCollections<>()
-```
-
-
-### LineCollections
-
-```cpp
-protected void LineCollections<>(LineCollections<> && other)
+public void save_line_collections(std::string_view directory)
 ```
 
 
 ### operator=
 
 ```cpp
-protected LineCollections<> & operator=(LineCollections<> && other)
+protected LineCollections<dimension> & operator=(LineCollections<dimension> && other)
 ```
 
 
@@ -160,7 +139,7 @@ public void delete_line_collection(const LineCollection<dimension> & boundary, L
 ### load_line_collections
 
 ```cpp
-public void load_line_collections(basic_string_view directory, LineCollectionsBuilderKey key)
+public void load_line_collections(std::string_view directory, LineCollectionsBuilderKey key)
 ```
 
 
@@ -175,6 +154,27 @@ public ModifiableLineCollectionRange modifiable_line_collections(LineCollections
 
 ```cpp
 public LineCollection<dimension> & modifiable_line_collection(const uuid & id, LineCollectionsBuilderKey key)
+```
+
+
+### components
+
+```cpp
+public LineCollectionRange components()
+```
+
+
+### has_component
+
+```cpp
+public bool has_component(const uuid & id)
+```
+
+
+### component
+
+```cpp
+public const LineCollection<dimension> & component(const uuid & id)
 ```
 
 

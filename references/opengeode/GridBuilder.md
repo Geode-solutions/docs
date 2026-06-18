@@ -14,10 +14,37 @@ const name = words.join('-');
 # class GridBuilder
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class GridBuilder
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class GridBuilder
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
 
 
 ## Functions
@@ -26,13 +53,6 @@ const name = words.join('-');
 
 ```cpp
 public void GridBuilder<dimension>(Grid<dimension> & grid)
-```
-
-
-### GridBuilder
-
-```cpp
-public void GridBuilder<dimension>(GridBuilder<dimension> && )
 ```
 
 
@@ -47,6 +67,13 @@ public void set_grid_origin(Point<dimension> origin)
 
 ```cpp
 public void set_grid_dimensions(std::array<index_t, dimension> cells_number, std::array<double, dimension> cells_length)
+```
+
+
+### GridBuilder
+
+```cpp
+public void GridBuilder<dimension>(GridBuilder<dimension> && )
 ```
 
 

@@ -25,7 +25,7 @@ Inherits from Input<std::unique_ptr<Graph>, MeshImpl>
 ### GraphInput
 
 ```cpp
-protected void GraphInput(basic_string_view filename)
+protected void GraphInput(std::string_view filename)
 ```
 
 

@@ -36,7 +36,7 @@ public void ~Graph()
 ### create
 
 ```cpp
-public std::unique_ptr<Graph> create()
+public static std::unique_ptr<Graph> create()
 ```
 
 
@@ -45,7 +45,7 @@ public std::unique_ptr<Graph> create()
 ### create
 
 ```cpp
-public std::unique_ptr<Graph> create(const MeshImpl & impl)
+public static std::unique_ptr<Graph> create(const MeshImpl & impl)
 ```
 
 
@@ -56,7 +56,7 @@ public std::unique_ptr<Graph> create(const MeshImpl & impl)
 ### type_name_static
 
 ```cpp
-public NamedType type_name_static()
+public static MeshType type_name_static()
 ```
 
 
@@ -81,7 +81,7 @@ public index_t edge_vertex(const EdgeVertex & edge_vertex)
 ### edge_vertices
 
 ```cpp
-public array edge_vertices(index_t edge_id)
+public std::array<index_t, 2> edge_vertices(index_t edge_id)
 ```
 
 
@@ -135,7 +135,7 @@ public bool is_vertex_isolated(index_t vertex_id)
 ### edge_from_vertices
 
 ```cpp
-public optional edge_from_vertices(index_t v0, index_t v1)
+public std::optional<index_t> edge_from_vertices(index_t v0, index_t v1)
 ```
 
 

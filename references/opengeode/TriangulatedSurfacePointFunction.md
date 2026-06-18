@@ -45,7 +45,7 @@ public void ~TriangulatedSurfacePointFunction<dimension, point_dimension>()
 ### create
 
 ```cpp
-public TriangulatedSurfacePointFunction create(const TriangulatedSurface<dimension> & solid, basic_string_view function_name, Point<point_dimension> value)
+public static TriangulatedSurfacePointFunction<dimension, point_dimension> create(const TriangulatedSurface<dimension> & solid, std::string_view function_name, Point<point_dimension> value)
 ```
 
 
@@ -54,7 +54,7 @@ public TriangulatedSurfacePointFunction create(const TriangulatedSurface<dimensi
 ### find
 
 ```cpp
-public TriangulatedSurfacePointFunction find(const TriangulatedSurface<dimension> & solid, basic_string_view function_name)
+public static TriangulatedSurfacePointFunction<dimension, point_dimension> find(const TriangulatedSurface<dimension> & solid, std::string_view function_name)
 ```
 
 

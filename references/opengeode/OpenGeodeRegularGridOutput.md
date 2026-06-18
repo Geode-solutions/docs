@@ -25,7 +25,7 @@ Inherits from RegularGridOutput<dimension>
 ### OpenGeodeRegularGridOutput
 
 ```cpp
-public void OpenGeodeRegularGridOutput<dimension>(basic_string_view filename)
+public void OpenGeodeRegularGridOutput<dimension>(std::string_view filename)
 ```
 
 
@@ -39,7 +39,7 @@ public bool is_saveable(const RegularGrid<dimension> & mesh)
 ### write
 
 ```cpp
-public vector write(const RegularGrid<dimension> & mesh)
+public std::vector<std::string> write(const RegularGrid<dimension> & mesh)
 ```
 
 

@@ -20,7 +20,30 @@ Inherits from Grid<dimension>, Identifier
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
+
+### native_extension_static
+
+```cpp
+public static std::string_view native_extension_static()
+```
+
+
+### native_extension
+
+```cpp
+public std::string_view native_extension()
+```
+
 
 ### LightRegularGrid
 
@@ -54,20 +77,6 @@ public LightRegularGrid<dimension> & operator=(LightRegularGrid<dimension> && ot
 
 ```cpp
 public void ~LightRegularGrid<dimension>()
-```
-
-
-### native_extension_static
-
-```cpp
-public basic_string_view native_extension_static()
-```
-
-
-### native_extension
-
-```cpp
-public basic_string_view native_extension()
 ```
 
 
@@ -134,18 +143,6 @@ public BoundingBox<dimension> bounding_box()
 ```
 
 
-### vertex_index
-
-```cpp
-public index_t vertex_index(const VertexIndices & index)
-```
-
-### cell_index
-
-```cpp
-public index_t cell_index(const CellIndices & index)
-```
-
 
 
 # class LightRegularGrid
@@ -157,11 +154,29 @@ Inherits from Grid<2U>, Identifier
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class LightRegularGrid
 
 
 ```cpp
 Inherits from Grid<3U>, Identifier
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 

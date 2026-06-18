@@ -20,35 +20,44 @@ Inherits from SolidMesh<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
+
+### create
+
+```cpp
+public static std::unique_ptr<HybridSolid<dimension>> create()
+```
+
+
+ Create a new HybridSolid using default data structure.
 
 ### HybridSolid
 
 ```cpp
-public void HybridSolid<>(const HybridSolid<> & )
+public void HybridSolid<value-parameter-0-0>(const HybridSolid<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public HybridSolid<> & operator=(const HybridSolid<> & )
+public HybridSolid<dimension> & operator=(const HybridSolid<dimension> & )
 ```
 
 
 ### create
 
 ```cpp
-public std::unique_ptr<HybridSolid<dimension> > create()
-```
-
-
- Create a new HybridSolid using default data structure.
-
-### create
-
-```cpp
-public std::unique_ptr<HybridSolid<dimension> > create(const MeshImpl & impl)
+public static std::unique_ptr<HybridSolid<dimension>> create(const MeshImpl & impl)
 ```
 
 
@@ -59,14 +68,35 @@ public std::unique_ptr<HybridSolid<dimension> > create(const MeshImpl & impl)
 ### type_name_static
 
 ```cpp
-public NamedType type_name_static()
+public static MeshType type_name_static()
 ```
 
 
 ### clone
 
 ```cpp
-public std::unique_ptr<HybridSolid<dimension> > clone()
+public std::unique_ptr<HybridSolid<dimension>> clone()
+```
+
+
+### HybridSolid
+
+```cpp
+protected void HybridSolid<value-parameter-0-0>()
+```
+
+
+### HybridSolid
+
+```cpp
+protected void HybridSolid<value-parameter-0-0>(HybridSolid<dimension> && other)
+```
+
+
+### operator=
+
+```cpp
+protected HybridSolid<dimension> & operator=(HybridSolid<dimension> && other)
 ```
 
 
@@ -75,27 +105,6 @@ public std::unique_ptr<HybridSolid<dimension> > clone()
 ```cpp
 public TYPE polyhedron_type(index_t polyhedron_id)
 ```
-
-### HybridSolid
-
-```cpp
-protected void HybridSolid<>()
-```
-
-
-### HybridSolid
-
-```cpp
-protected void HybridSolid<>(HybridSolid<> && other)
-```
-
-
-### operator=
-
-```cpp
-protected HybridSolid<> & operator=(HybridSolid<> && other)
-```
-
 
 
 
@@ -119,6 +128,15 @@ protected HybridSolid<> & operator=(HybridSolid<> && other)
 
 ```cpp
 Inherits from SolidMesh<3U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 

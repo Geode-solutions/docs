@@ -25,7 +25,7 @@ Inherits from Output<BRep>
 ### BRepOutput
 
 ```cpp
-protected void BRepOutput(basic_string_view filename)
+protected void BRepOutput(std::string_view filename)
 ```
 
 

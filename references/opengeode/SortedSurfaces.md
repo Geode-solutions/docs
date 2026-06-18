@@ -35,7 +35,7 @@ public void SortedSurfaces(index_t nb_surfaces)
 ### find
 
 ```cpp
-public InlinedVector find(const SidedSurface & surface)
+public absl::InlinedVector<index_t, 1> find(const SidedSurface & surface)
 ```
 
 

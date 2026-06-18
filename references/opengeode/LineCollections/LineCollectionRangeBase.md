@@ -62,7 +62,7 @@ public void set_active_only()
 ### LineCollectionRangeBase
 
 ```cpp
-protected void LineCollectionRangeBase(const LineCollections<> & collections)
+protected void LineCollectionRangeBase(const LineCollections<dimension> & collections)
 ```
 
 

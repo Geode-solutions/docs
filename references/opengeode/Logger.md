@@ -20,66 +20,66 @@ const name = words.join('-');
 
 ## Functions
 
-### level
-
-```cpp
-public LEVEL level()
-```
-
-
-### set_level
-
-```cpp
-public void set_level(LEVEL level)
-```
-
-
 ### log
 
 ```cpp
-public void log(LEVEL level, const Args &... args)
+public static void log(LEVEL level, const Args &... args)
 ```
 
 
 ### trace
 
 ```cpp
-public void trace(const Args &... args)
+public static void trace(const Args &... args)
 ```
 
 
 ### debug
 
 ```cpp
-public void debug(const Args &... args)
+public static void debug(const Args &... args)
 ```
 
 
 ### info
 
 ```cpp
-public void info(const Args &... args)
+public static void info(const Args &... args)
 ```
 
 
 ### warn
 
 ```cpp
-public void warn(const Args &... args)
+public static void warn(const Args &... args)
 ```
 
 
 ### error
 
 ```cpp
-public void error(const Args &... args)
+public static void error(const Args &... args)
 ```
 
 
 ### critical
 
 ```cpp
-public void critical(const Args &... args)
+public static void critical(const Args &... args)
+```
+
+
+### level
+
+```cpp
+public static LEVEL level()
+```
+
+
+### set_level
+
+```cpp
+public static void set_level(LEVEL level)
 ```
 
 

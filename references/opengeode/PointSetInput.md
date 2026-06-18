@@ -25,7 +25,7 @@ Inherits from Input<std::unique_ptr<PointSet<dimension> >, MeshImpl>
 ### PointSetInput
 
 ```cpp
-protected void PointSetInput<dimension>(basic_string_view filename)
+protected void PointSetInput<dimension>(std::string_view filename)
 ```
 
 

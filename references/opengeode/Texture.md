@@ -33,7 +33,7 @@ public Texture<2> & operator=(const Texture<2> & )
 ### Texture
 
 ```cpp
-public void Texture(AttributeManager & manager, basic_string_view name)
+public void Texture(AttributeManager & manager, std::string_view name)
 ```
 
 
@@ -105,7 +105,7 @@ public Texture<3> & operator=(const Texture<3> & )
 ### Texture
 
 ```cpp
-public void Texture(AttributeManager & manager, basic_string_view name)
+public void Texture(AttributeManager & manager, std::string_view name)
 ```
 
 
@@ -175,7 +175,7 @@ public Texture<1> & operator=(const Texture<1> & )
 ### Texture
 
 ```cpp
-public void Texture(AttributeManager & manager, basic_string_view name)
+public void Texture(AttributeManager & manager, std::string_view name)
 ```
 
 

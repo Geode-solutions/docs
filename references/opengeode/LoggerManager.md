@@ -26,49 +26,49 @@ public void ~LoggerManager()
 ### register_client
 
 ```cpp
-public LoggerClient & register_client(std::unique_ptr<LoggerClient> && client)
+public static LoggerClient & register_client(std::unique_ptr<LoggerClient> && client)
 ```
 
 
 ### trace
 
 ```cpp
-public void trace(const std::string & message)
+public static void trace(const std::string & message)
 ```
 
 
 ### debug
 
 ```cpp
-public void debug(const std::string & message)
+public static void debug(const std::string & message)
 ```
 
 
 ### info
 
 ```cpp
-public void info(const std::string & message)
+public static void info(const std::string & message)
 ```
 
 
 ### warn
 
 ```cpp
-public void warn(const std::string & message)
+public static void warn(const std::string & message)
 ```
 
 
 ### error
 
 ```cpp
-public void error(const std::string & message)
+public static void error(const std::string & message)
 ```
 
 
 ### critical
 
 ```cpp
-public void critical(const std::string & message)
+public static void critical(const std::string & message)
 ```
 
 

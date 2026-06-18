@@ -49,7 +49,7 @@ EdgeOrigin
 ### EdgedCurveMerger
 
 ```cpp
-public void EdgedCurveMerger<dimension>(absl::Span<const std::reference_wrapper<const EdgedCurve<dimension> > > curves)
+public void EdgedCurveMerger<dimension>(absl::Span<const std::reference_wrapper<const EdgedCurve<dimension>>> curves)
 ```
 
 
@@ -70,14 +70,14 @@ public void ~EdgedCurveMerger<dimension>()
 ### merge
 
 ```cpp
-public std::unique_ptr<EdgedCurve<dimension> > merge(double epsilon)
+public std::unique_ptr<EdgedCurve<dimension>> merge(double epsilon)
 ```
 
 
 ### merge
 
 ```cpp
-public std::unique_ptr<EdgedCurve<dimension> > merge(const Frame<dimension> & epsilons_frame)
+public std::unique_ptr<EdgedCurve<dimension>> merge(const Frame<dimension> & epsilons_frame)
 ```
 
 

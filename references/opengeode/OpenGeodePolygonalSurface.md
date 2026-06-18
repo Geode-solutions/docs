@@ -20,11 +20,29 @@ Inherits from PolygonalSurface<3U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class OpenGeodePolygonalSurface
 
 
 ```cpp
 Inherits from PolygonalSurface<2U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 
@@ -38,82 +56,91 @@ Inherits from PolygonalSurface<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### OpenGeodePolygonalSurface
 
 ```cpp
-public void OpenGeodePolygonalSurface<>(const OpenGeodePolygonalSurface<> & )
+public void OpenGeodePolygonalSurface<value-parameter-0-0>(const OpenGeodePolygonalSurface<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public OpenGeodePolygonalSurface<> & operator=(const OpenGeodePolygonalSurface<> & )
-```
-
-
-### OpenGeodePolygonalSurface
-
-```cpp
-public void OpenGeodePolygonalSurface<>()
-```
-
-
-### OpenGeodePolygonalSurface
-
-```cpp
-public void OpenGeodePolygonalSurface<>(OpenGeodePolygonalSurface<> && other)
-```
-
-
-### operator=
-
-```cpp
-public OpenGeodePolygonalSurface<> & operator=(OpenGeodePolygonalSurface<> && other)
-```
-
-
-### ~OpenGeodePolygonalSurface
-
-```cpp
-public void ~OpenGeodePolygonalSurface<>()
+public OpenGeodePolygonalSurface<dimension> & operator=(const OpenGeodePolygonalSurface<dimension> & )
 ```
 
 
 ### impl_name_static
 
 ```cpp
-public NamedType impl_name_static()
+public static MeshImpl impl_name_static()
 ```
 
 
 ### impl_name
 
 ```cpp
-public NamedType impl_name()
+public MeshImpl impl_name()
 ```
 
 
 ### type_name
 
 ```cpp
-public NamedType type_name()
+public MeshType type_name()
 ```
 
 
 ### native_extension_static
 
 ```cpp
-public basic_string_view native_extension_static()
+public static std::string_view native_extension_static()
 ```
 
 
 ### native_extension
 
 ```cpp
-public basic_string_view native_extension()
+public std::string_view native_extension()
+```
+
+
+### OpenGeodePolygonalSurface
+
+```cpp
+public void OpenGeodePolygonalSurface<value-parameter-0-0>()
+```
+
+
+### OpenGeodePolygonalSurface
+
+```cpp
+public void OpenGeodePolygonalSurface<value-parameter-0-0>(OpenGeodePolygonalSurface<dimension> && other)
+```
+
+
+### operator=
+
+```cpp
+public OpenGeodePolygonalSurface<dimension> & operator=(OpenGeodePolygonalSurface<dimension> && other)
+```
+
+
+### ~OpenGeodePolygonalSurface
+
+```cpp
+public void ~OpenGeodePolygonalSurface<value-parameter-0-0>()
 ```
 
 
@@ -141,7 +168,7 @@ public void set_polygon_adjacent(const PolygonEdge & polygon_edge, index_t adjac
 ### add_polygon
 
 ```cpp
-public void add_polygon(Span vertices, OGPolygonalSurfaceKey )
+public void add_polygon(absl::Span<const index_t> vertices, OGPolygonalSurfaceKey )
 ```
 
 
@@ -155,7 +182,7 @@ public void remove_polygons(const std::vector<bool> & to_delete, OGPolygonalSurf
 ### permute_polygons
 
 ```cpp
-public void permute_polygons(Span permutation, OGPolygonalSurfaceKey )
+public void permute_polygons(absl::Span<const index_t> permutation, OGPolygonalSurfaceKey )
 ```
 
 

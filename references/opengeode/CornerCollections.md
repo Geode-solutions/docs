@@ -22,32 +22,18 @@ const name = words.join('-');
 
 ## Records
 
-CornerCollectionRangeBase
-
 CornerCollectionRange
+
+CornerCollectionRangeBase
 
 
 
 ## Functions
 
-### CornerCollections
-
-```cpp
-public void CornerCollections<>(const CornerCollections<> & )
-```
-
-
-### operator=
-
-```cpp
-public CornerCollections<> & operator=(const CornerCollections<> & )
-```
-
-
 ### ~CornerCollections
 
 ```cpp
-public void ~CornerCollections<>()
+public void ~CornerCollections<value-parameter-0-0>()
 ```
 
 
@@ -62,6 +48,34 @@ public index_t nb_corner_collections()
 
 ```cpp
 public index_t nb_active_corner_collections()
+```
+
+
+### CornerCollections
+
+```cpp
+protected void CornerCollections<value-parameter-0-0>()
+```
+
+
+### CornerCollections
+
+```cpp
+protected void CornerCollections<value-parameter-0-0>(CornerCollections<dimension> && other)
+```
+
+
+### CornerCollections
+
+```cpp
+public void CornerCollections<value-parameter-0-0>(const CornerCollections<dimension> & )
+```
+
+
+### operator=
+
+```cpp
+public CornerCollections<dimension> & operator=(const CornerCollections<dimension> & )
 ```
 
 
@@ -93,52 +107,17 @@ public CornerCollectionRange active_corner_collections()
 ```
 
 
-### components
-
-```cpp
-public CornerCollectionRange components()
-```
-
-
-### has_component
-
-```cpp
-public bool has_component(const uuid & id)
-```
-
-
-### component
-
-```cpp
-public const CornerCollection<dimension> & component(const uuid & id)
-```
-
-
 ### save_corner_collections
 
 ```cpp
-public void save_corner_collections(basic_string_view directory)
-```
-
-
-### CornerCollections
-
-```cpp
-protected void CornerCollections<>()
-```
-
-
-### CornerCollections
-
-```cpp
-protected void CornerCollections<>(CornerCollections<> && other)
+public void save_corner_collections(std::string_view directory)
 ```
 
 
 ### operator=
 
 ```cpp
-protected CornerCollections<> & operator=(CornerCollections<> && other)
+protected CornerCollections<dimension> & operator=(CornerCollections<dimension> && other)
 ```
 
 
@@ -166,7 +145,7 @@ public void delete_corner_collection(const CornerCollection<dimension> & boundar
 ### load_corner_collections
 
 ```cpp
-public void load_corner_collections(basic_string_view directory, CornerCollectionsBuilderKey key)
+public void load_corner_collections(std::string_view directory, CornerCollectionsBuilderKey key)
 ```
 
 
@@ -181,6 +160,27 @@ public ModifiableCornerCollectionRange modifiable_corner_collections(CornerColle
 
 ```cpp
 public CornerCollection<dimension> & modifiable_corner_collection(const uuid & id, CornerCollectionsBuilderKey key)
+```
+
+
+### components
+
+```cpp
+public CornerCollectionRange components()
+```
+
+
+### has_component
+
+```cpp
+public bool has_component(const uuid & id)
+```
+
+
+### component
+
+```cpp
+public const CornerCollection<dimension> & component(const uuid & id)
 ```
 
 

@@ -25,7 +25,7 @@ Inherits from Output<RasterImage<dimension> >
 ### RasterImageOutput
 
 ```cpp
-protected void RasterImageOutput<dimension>(basic_string_view filename)
+protected void RasterImageOutput<dimension>(std::string_view filename)
 ```
 
 

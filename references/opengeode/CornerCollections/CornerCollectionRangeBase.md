@@ -62,7 +62,7 @@ public void set_active_only()
 ### CornerCollectionRangeBase
 
 ```cpp
-protected void CornerCollectionRangeBase(const CornerCollections<> & collections)
+protected void CornerCollectionRangeBase(const CornerCollections<dimension> & collections)
 ```
 
 

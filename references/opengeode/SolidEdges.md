@@ -18,40 +18,56 @@ const name = words.join('-');
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### SolidEdges
 
 ```cpp
-public void SolidEdges<>(const SolidEdges<> & )
+public void SolidEdges<value-parameter-0-0>(const SolidEdges<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public SolidEdges<> & operator=(const SolidEdges<> & )
+public SolidEdges<dimension> & operator=(const SolidEdges<dimension> & )
 ```
 
 
 ### SolidEdges
 
 ```cpp
-public void SolidEdges<>()
+public void SolidEdges<value-parameter-0-0>()
 ```
 
 
 ### SolidEdges
 
 ```cpp
-public void SolidEdges<>(const SolidMesh<dimension> & solid)
+public void SolidEdges<value-parameter-0-0>(const SolidMesh<dimension> & solid)
 ```
 
 
 ### ~SolidEdges
 
 ```cpp
-public void ~SolidEdges<>()
+public void ~SolidEdges<value-parameter-0-0>()
+```
+
+
+### find_or_create_edge
+
+```cpp
+public index_t find_or_create_edge(std::array<index_t, 2> edge_vertices, SolidEdgesKey )
 ```
 
 
@@ -83,7 +99,7 @@ public const std::array<index_t, 2> & edge_vertices(index_t edge_id)
 ### edge_from_vertices
 
 ```cpp
-public optional edge_from_vertices(const std::array<index_t, 2> & vertices)
+public std::optional<index_t> edge_from_vertices(const std::array<index_t, 2> & vertices)
 ```
 
 
@@ -110,42 +126,35 @@ public AttributeManager & edge_attribute_manager()
 ### update_edge_vertices
 
 ```cpp
-public void update_edge_vertices(Span old2new, SolidEdgesKey )
+public void update_edge_vertices(absl::Span<const index_t> old2new, SolidEdgesKey )
 ```
 
 
 ### update_edge_vertex
 
 ```cpp
-public BijectiveMapping update_edge_vertex(array edge_vertices, index_t edge_vertex_id, index_t new_vertex_id, SolidEdgesKey )
+public BijectiveMapping<index_t> update_edge_vertex(std::array<index_t, 2> edge_vertices, index_t edge_vertex_id, index_t new_vertex_id, SolidEdgesKey )
 ```
 
 
 ### remove_edge
 
 ```cpp
-public void remove_edge(array edge_vertices, SolidEdgesKey )
+public void remove_edge(std::array<index_t, 2> edge_vertices, SolidEdgesKey )
 ```
 
 
 ### delete_edges
 
 ```cpp
-public vector delete_edges(const std::vector<bool> & to_delete, SolidEdgesKey )
+public std::vector<index_t> delete_edges(const std::vector<bool> & to_delete, SolidEdgesKey )
 ```
 
 
 ### remove_isolated_edges
 
 ```cpp
-public vector remove_isolated_edges(SolidEdgesKey )
-```
-
-
-### find_or_create_edge
-
-```cpp
-public index_t find_or_create_edge(array edge_vertices, SolidEdgesKey )
+public std::vector<index_t> remove_isolated_edges(SolidEdgesKey )
 ```
 
 
@@ -159,5 +168,14 @@ public void overwrite_edges(const SolidEdges<dimension> & from, SolidEdgesKey )
 
 
 # class SolidEdges
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
 
 

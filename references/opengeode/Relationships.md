@@ -20,33 +20,33 @@ const name = words.join('-');
 
 ## Records
 
-RelationRangeIterator
-
-RelationRange
+BoundaryRange
 
 BoundaryRangeIterator
 
-BoundaryRange
-
-IncidenceRangeIterator
-
-IncidenceRange
-
-InternalRangeIterator
-
-InternalRange
-
-EmbeddingRangeIterator
-
-EmbeddingRange
-
-ItemRangeIterator
-
-ItemRange
+CollectionRange
 
 CollectionRangeIterator
 
-CollectionRange
+EmbeddingRange
+
+EmbeddingRangeIterator
+
+IncidenceRange
+
+IncidenceRangeIterator
+
+InternalRange
+
+InternalRangeIterator
+
+ItemRange
+
+ItemRangeIterator
+
+RelationRange
+
+RelationRangeIterator
 
 
 
@@ -223,7 +223,7 @@ public std::tuple<ComponentID, ComponentID> relation_from_index(index_t componen
 ### save_relationships
 
 ```cpp
-public void save_relationships(basic_string_view directory)
+public void save_relationships(std::string_view directory)
 ```
 
 
@@ -284,7 +284,7 @@ public void copy_relationships(const ModelCopyMapping & mapping, const Relations
 ### load_relationships
 
 ```cpp
-public void load_relationships(basic_string_view directory, RelationshipsBuilderKey )
+public void load_relationships(std::string_view directory, RelationshipsBuilderKey )
 ```
 
 

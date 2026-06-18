@@ -19,7 +19,7 @@ const name = words.join('-');
 ### UnzipFile
 
 ```cpp
-public void UnzipFile(basic_string_view file, basic_string_view unarchive_temp_filename)
+public void UnzipFile(std::string_view file, std::string_view unarchive_temp_filename)
 ```
 
 
@@ -40,7 +40,7 @@ public void extract_all()
 ### directory
 
 ```cpp
-public basic_string directory()
+public std::string directory()
 ```
 
 

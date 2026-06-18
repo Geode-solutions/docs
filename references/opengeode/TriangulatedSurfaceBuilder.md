@@ -20,11 +20,29 @@ Inherits from SurfaceMeshBuilder<2U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class TriangulatedSurfaceBuilder
 
 
 ```cpp
 Inherits from SurfaceMeshBuilder<3U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 
@@ -42,7 +60,27 @@ Inherits from SurfaceMeshBuilder<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
+
+### create
+
+```cpp
+public static std::unique_ptr<TriangulatedSurfaceBuilder<dimension>> create(TriangulatedSurface<dimension> & mesh)
+```
+
+
+ Create the builder associated with a TriangulatedSurface.
+
+**mesh** [in] The TriangulatedSurface to build/modify
 
 ### TriangulatedSurfaceBuilder
 
@@ -50,17 +88,6 @@ Inherits from SurfaceMeshBuilder<dimension>
 public void TriangulatedSurfaceBuilder<dimension>(TriangulatedSurfaceBuilder<dimension> && )
 ```
 
-
-### create
-
-```cpp
-public std::unique_ptr<TriangulatedSurfaceBuilder<dimension> > create(TriangulatedSurface<dimension> & mesh)
-```
-
-
- Create the builder associated with a TriangulatedSurface.
-
-**mesh** [in] The TriangulatedSurface to build/modify
 
 ### create_triangle
 

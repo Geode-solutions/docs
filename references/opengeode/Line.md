@@ -38,42 +38,42 @@ Inherits from Component<dimension>
 ### Line
 
 ```cpp
-public void Line<>(const Line<> & )
+public void Line<value-parameter-0-0>(const Line<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public Line<> & operator=(const Line<> & )
+public Line<dimension> & operator=(const Line<dimension> & )
 ```
 
 
 ### Line
 
 ```cpp
-public void Line<>(Line<> && other)
+public void Line<value-parameter-0-0>(Line<dimension> && other)
 ```
 
 
 ### ~Line
 
 ```cpp
-public void ~Line<>()
+public void ~Line<value-parameter-0-0>()
 ```
 
 
 ### component_type_static
 
 ```cpp
-public NamedType component_type_static()
+public static ComponentType component_type_static()
 ```
 
 
 ### component_type
 
 ```cpp
-public NamedType component_type()
+public ComponentType component_type()
 ```
 
 
@@ -94,14 +94,14 @@ public const MeshImpl & mesh_type()
 ### Line
 
 ```cpp
-public void Line<>(LinesKey key)
+public void Line<value-parameter-0-0>(LinesKey key)
 ```
 
 
 ### Line
 
 ```cpp
-public void Line<>(const MeshImpl & impl, LinesKey key)
+public void Line<value-parameter-0-0>(const MeshImpl & impl, LinesKey key)
 ```
 
 
@@ -122,7 +122,7 @@ public void set_mesh(std::unique_ptr<Mesh> mesh, LinesBuilderKey key)
 ### set_line_name
 
 ```cpp
-public void set_line_name(basic_string_view name, LinesBuilderKey key)
+public void set_line_name(std::string_view name, LinesBuilderKey key)
 ```
 
 

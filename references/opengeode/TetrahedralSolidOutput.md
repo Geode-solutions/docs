@@ -25,7 +25,7 @@ Inherits from Output<TetrahedralSolid<dimension> >
 ### TetrahedralSolidOutput
 
 ```cpp
-protected void TetrahedralSolidOutput<dimension>(basic_string_view filename)
+protected void TetrahedralSolidOutput<dimension>(std::string_view filename)
 ```
 
 

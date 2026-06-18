@@ -20,11 +20,29 @@ Inherits from SurfaceMesh<2U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class PolygonalSurface
 
 
 ```cpp
 Inherits from SurfaceMesh<3U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 
@@ -42,12 +60,21 @@ Inherits from SurfaceMesh<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### create
 
 ```cpp
-public std::unique_ptr<PolygonalSurface<dimension> > create()
+public static std::unique_ptr<PolygonalSurface<dimension>> create()
 ```
 
 
@@ -56,7 +83,7 @@ public std::unique_ptr<PolygonalSurface<dimension> > create()
 ### create
 
 ```cpp
-public std::unique_ptr<PolygonalSurface<dimension> > create(const MeshImpl & impl)
+public static std::unique_ptr<PolygonalSurface<dimension>> create(const MeshImpl & impl)
 ```
 
 
@@ -67,35 +94,35 @@ public std::unique_ptr<PolygonalSurface<dimension> > create(const MeshImpl & imp
 ### type_name_static
 
 ```cpp
-public NamedType type_name_static()
+public static MeshType type_name_static()
 ```
 
 
 ### clone
 
 ```cpp
-public std::unique_ptr<PolygonalSurface<dimension> > clone()
+public std::unique_ptr<PolygonalSurface<dimension>> clone()
 ```
 
 
 ### PolygonalSurface
 
 ```cpp
-protected void PolygonalSurface<>()
+protected void PolygonalSurface<value-parameter-0-0>()
 ```
 
 
 ### PolygonalSurface
 
 ```cpp
-protected void PolygonalSurface<>(PolygonalSurface<> && other)
+protected void PolygonalSurface<value-parameter-0-0>(PolygonalSurface<dimension> && other)
 ```
 
 
 ### operator=
 
 ```cpp
-protected PolygonalSurface<> & operator=(PolygonalSurface<> && other)
+protected PolygonalSurface<dimension> & operator=(PolygonalSurface<dimension> && other)
 ```
 
 

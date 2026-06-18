@@ -33,7 +33,7 @@ public FixedArray lambdas_
 ### AttributeLinearInterpolation
 
 ```cpp
-public void AttributeLinearInterpolation(Span indices, Span lambdas)
+public void AttributeLinearInterpolation(absl::Span<const index_t> indices, absl::Span<const double> lambdas)
 ```
 
 

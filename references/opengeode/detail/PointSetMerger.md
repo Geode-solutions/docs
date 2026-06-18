@@ -43,7 +43,7 @@ Inherits from VertexMerger<PointSet<dimension> >
 ### PointSetMerger
 
 ```cpp
-public void PointSetMerger<dimension>(absl::Span<const std::reference_wrapper<const PointSet<dimension> > > pointsets)
+public void PointSetMerger<dimension>(absl::Span<const std::reference_wrapper<const PointSet<dimension>>> pointsets)
 ```
 
 
@@ -64,14 +64,14 @@ public void ~PointSetMerger<dimension>()
 ### merge
 
 ```cpp
-public std::unique_ptr<PointSet<dimension> > merge(double epsilon)
+public std::unique_ptr<PointSet<dimension>> merge(double epsilon)
 ```
 
 
 ### merge
 
 ```cpp
-public std::unique_ptr<PointSet<dimension> > merge(const Frame<dimension> & frame)
+public std::unique_ptr<PointSet<dimension>> merge(const Frame<dimension> & frame)
 ```
 
 

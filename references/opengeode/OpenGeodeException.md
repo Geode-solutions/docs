@@ -28,20 +28,6 @@ Inherits from runtime_error
 
 ## Functions
 
-### OpenGeodeException
-
-```cpp
-public void OpenGeodeException(OpenGeodeException && )
-```
-
-
-### operator=
-
-```cpp
-public OpenGeodeException & operator=(OpenGeodeException && )
-```
-
-
 ### operator=
 
 ```cpp
@@ -63,6 +49,27 @@ public void ~OpenGeodeException()
 ```
 
 
+### type_name
+
+```cpp
+public std::string_view type_name()
+```
+
+
+### OpenGeodeException
+
+```cpp
+public void OpenGeodeException(OpenGeodeException && )
+```
+
+
+### operator=
+
+```cpp
+public OpenGeodeException & operator=(OpenGeodeException && )
+```
+
+
 ### type
 
 ```cpp
@@ -70,24 +77,24 @@ public TYPE type()
 ```
 
 
-### type_name
+### string
 
 ```cpp
-public basic_string_view type_name()
+public std::string string()
 ```
 
 
 ### project
 
 ```cpp
-public basic_string_view project()
+public std::string_view project()
 ```
 
 
 ### library
 
 ```cpp
-public basic_string_view library()
+public std::string_view library()
 ```
 
 
@@ -119,17 +126,10 @@ public void set_parent(OpenGeodeException && parent)
 ```
 
 
-### string
-
-```cpp
-public basic_string string()
-```
-
-
 ### OpenGeodeException
 
 ```cpp
-protected void OpenGeodeException(basic_string project, basic_string library, any data, TYPE type, const Args &... message)
+protected void OpenGeodeException(std::string project, std::string library, std::any data, TYPE type, const Args &... message)
 ```
 
 

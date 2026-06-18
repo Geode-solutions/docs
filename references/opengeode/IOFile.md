@@ -26,14 +26,14 @@ public void ~IOFile()
 ### filename
 
 ```cpp
-public basic_string_view filename()
+public std::string_view filename()
 ```
 
 
 ### IOFile
 
 ```cpp
-protected void IOFile(basic_string_view filename)
+protected void IOFile(std::string_view filename)
 ```
 
 

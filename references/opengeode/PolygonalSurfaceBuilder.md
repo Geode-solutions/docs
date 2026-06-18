@@ -20,11 +20,29 @@ Inherits from SurfaceMeshBuilder<2U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class PolygonalSurfaceBuilder
 
 
 ```cpp
 Inherits from SurfaceMeshBuilder<3U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 
@@ -42,7 +60,27 @@ Inherits from SurfaceMeshBuilder<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
+
+### create
+
+```cpp
+public static std::unique_ptr<PolygonalSurfaceBuilder<dimension>> create(PolygonalSurface<dimension> & mesh)
+```
+
+
+ Create the builder associated with a PolygonalSurface.
+
+**mesh** [in] The PolygonalSurface to build/modify
 
 ### PolygonalSurfaceBuilder
 
@@ -50,17 +88,6 @@ Inherits from SurfaceMeshBuilder<dimension>
 public void PolygonalSurfaceBuilder<dimension>(PolygonalSurfaceBuilder<dimension> && )
 ```
 
-
-### create
-
-```cpp
-public std::unique_ptr<PolygonalSurfaceBuilder<dimension> > create(PolygonalSurface<dimension> & mesh)
-```
-
-
- Create the builder associated with a PolygonalSurface.
-
-**mesh** [in] The PolygonalSurface to build/modify
 
 ### copy
 

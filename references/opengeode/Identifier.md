@@ -47,7 +47,7 @@ public const std::optional<std::string> & name()
 ### save_identifier
 
 ```cpp
-public void save_identifier(basic_string_view directory)
+public void save_identifier(std::string_view directory)
 ```
 
 
@@ -61,14 +61,14 @@ public void set_id(const uuid & unique_id, IdentifierKey )
 ### set_name
 
 ```cpp
-public void set_name(basic_string_view name, IdentifierKey )
+public void set_name(std::string_view name, IdentifierKey )
 ```
 
 
 ### load_identifier
 
 ```cpp
-public void load_identifier(basic_string_view directory, IdentifierKey )
+public void load_identifier(std::string_view directory, IdentifierKey )
 ```
 
 
@@ -103,7 +103,7 @@ protected void set_id(const uuid & unique_id)
 ### set_name
 
 ```cpp
-protected void set_name(basic_string_view name)
+protected void set_name(std::string_view name)
 ```
 
 

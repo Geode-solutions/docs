@@ -16,17 +16,17 @@ const name = words.join('-');
 
 ## Functions
 
-### ~CoordinateReferenceSystem
+### register_coordinate_reference_system_type
 
 ```cpp
-public void ~CoordinateReferenceSystem<>()
+public static void register_coordinate_reference_system_type(PContext & context, std::string_view name)
 ```
 
 
 ### type_name
 
 ```cpp
-public NamedType type_name()
+public CRSType type_name()
 ```
 
 ### point
@@ -41,17 +41,17 @@ public const Point<dimension> & point(index_t point_id)
 public void set_point(index_t point_id, Point<dimension> point)
 ```
 
-### register_coordinate_reference_system_type
+### ~CoordinateReferenceSystem
 
 ```cpp
-public void register_coordinate_reference_system_type(PContext & context, basic_string_view name)
+public void ~CoordinateReferenceSystem<value-parameter-0-0>()
 ```
 
 
 ### CoordinateReferenceSystem
 
 ```cpp
-protected void CoordinateReferenceSystem<>()
+protected void CoordinateReferenceSystem<value-parameter-0-0>()
 ```
 
 

@@ -20,6 +20,15 @@ Inherits from RegularGrid<2>
 
 
 
+## Members
+
+```cpp
+public static const index_t dim
+
+```
+
+
+
 ## Functions
 
 ### OpenGeodeRegularGrid
@@ -33,6 +42,41 @@ public void OpenGeodeRegularGrid(const OpenGeodeRegularGrid<2> & )
 
 ```cpp
 public OpenGeodeRegularGrid<2> & operator=(const OpenGeodeRegularGrid<2> & )
+```
+
+
+### impl_name_static
+
+```cpp
+public static MeshImpl impl_name_static()
+```
+
+
+### impl_name
+
+```cpp
+public MeshImpl impl_name()
+```
+
+
+### type_name
+
+```cpp
+public MeshType type_name()
+```
+
+
+### native_extension_static
+
+```cpp
+public static std::string_view native_extension_static()
+```
+
+
+### native_extension
+
+```cpp
+public std::string_view native_extension()
 ```
 
 
@@ -64,41 +108,6 @@ public void ~OpenGeodeRegularGrid()
 ```
 
 
-### impl_name_static
-
-```cpp
-public NamedType impl_name_static()
-```
-
-
-### impl_name
-
-```cpp
-public NamedType impl_name()
-```
-
-
-### type_name
-
-```cpp
-public NamedType type_name()
-```
-
-
-### native_extension_static
-
-```cpp
-public basic_string_view native_extension_static()
-```
-
-
-### native_extension
-
-```cpp
-public basic_string_view native_extension()
-```
-
-
 ### update_origin
 
 ```cpp
@@ -126,6 +135,15 @@ Inherits from RegularGrid<3>
 
 
 
+## Members
+
+```cpp
+public static const index_t dim
+
+```
+
+
+
 ## Functions
 
 ### OpenGeodeRegularGrid
@@ -139,6 +157,41 @@ public void OpenGeodeRegularGrid(const OpenGeodeRegularGrid<3> & )
 
 ```cpp
 public OpenGeodeRegularGrid<3> & operator=(const OpenGeodeRegularGrid<3> & )
+```
+
+
+### impl_name_static
+
+```cpp
+public static MeshImpl impl_name_static()
+```
+
+
+### impl_name
+
+```cpp
+public MeshImpl impl_name()
+```
+
+
+### type_name
+
+```cpp
+public MeshType type_name()
+```
+
+
+### native_extension_static
+
+```cpp
+public static std::string_view native_extension_static()
+```
+
+
+### native_extension
+
+```cpp
+public std::string_view native_extension()
 ```
 
 
@@ -167,41 +220,6 @@ public OpenGeodeRegularGrid<3> & operator=(OpenGeodeRegularGrid<3> && other)
 
 ```cpp
 public void ~OpenGeodeRegularGrid()
-```
-
-
-### impl_name_static
-
-```cpp
-public NamedType impl_name_static()
-```
-
-
-### impl_name
-
-```cpp
-public NamedType impl_name()
-```
-
-
-### type_name
-
-```cpp
-public NamedType type_name()
-```
-
-
-### native_extension_static
-
-```cpp
-public basic_string_view native_extension_static()
-```
-
-
-### native_extension
-
-```cpp
-public basic_string_view native_extension()
 ```
 
 

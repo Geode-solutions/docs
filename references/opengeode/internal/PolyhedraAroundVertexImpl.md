@@ -40,7 +40,7 @@ public void PolyhedraAroundVertexImpl()
 ### PolyhedraAroundVertexImpl
 
 ```cpp
-public void PolyhedraAroundVertexImpl(InlinedVector polyhedra_in, bool vertex_is_on_border_in)
+public void PolyhedraAroundVertexImpl(PolyhedraAroundVertex polyhedra_in, bool vertex_is_on_border_in)
 ```
 
 

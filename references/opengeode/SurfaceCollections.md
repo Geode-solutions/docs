@@ -19,32 +19,18 @@ const name = words.join('-');
 
 ## Records
 
-SurfaceCollectionRangeBase
-
 SurfaceCollectionRange
+
+SurfaceCollectionRangeBase
 
 
 
 ## Functions
 
-### SurfaceCollections
-
-```cpp
-public void SurfaceCollections<>(const SurfaceCollections<> & )
-```
-
-
-### operator=
-
-```cpp
-public SurfaceCollections<> & operator=(const SurfaceCollections<> & )
-```
-
-
 ### ~SurfaceCollections
 
 ```cpp
-public void ~SurfaceCollections<>()
+public void ~SurfaceCollections<value-parameter-0-0>()
 ```
 
 
@@ -59,6 +45,34 @@ public index_t nb_surface_collections()
 
 ```cpp
 public index_t nb_active_surface_collections()
+```
+
+
+### SurfaceCollections
+
+```cpp
+protected void SurfaceCollections<value-parameter-0-0>()
+```
+
+
+### SurfaceCollections
+
+```cpp
+protected void SurfaceCollections<value-parameter-0-0>(SurfaceCollections<dimension> && other)
+```
+
+
+### SurfaceCollections
+
+```cpp
+public void SurfaceCollections<value-parameter-0-0>(const SurfaceCollections<dimension> & )
+```
+
+
+### operator=
+
+```cpp
+public SurfaceCollections<dimension> & operator=(const SurfaceCollections<dimension> & )
 ```
 
 
@@ -90,52 +104,17 @@ public SurfaceCollectionRange active_surface_collections()
 ```
 
 
-### components
-
-```cpp
-public SurfaceCollectionRange components()
-```
-
-
-### has_component
-
-```cpp
-public bool has_component(const uuid & id)
-```
-
-
-### component
-
-```cpp
-public const SurfaceCollection<dimension> & component(const uuid & id)
-```
-
-
 ### save_surface_collections
 
 ```cpp
-public void save_surface_collections(basic_string_view directory)
-```
-
-
-### SurfaceCollections
-
-```cpp
-protected void SurfaceCollections<>()
-```
-
-
-### SurfaceCollections
-
-```cpp
-protected void SurfaceCollections<>(SurfaceCollections<> && other)
+public void save_surface_collections(std::string_view directory)
 ```
 
 
 ### operator=
 
 ```cpp
-protected SurfaceCollections<> & operator=(SurfaceCollections<> && other)
+protected SurfaceCollections<dimension> & operator=(SurfaceCollections<dimension> && other)
 ```
 
 
@@ -163,7 +142,7 @@ public void delete_surface_collection(const SurfaceCollection<dimension> & bound
 ### load_surface_collections
 
 ```cpp
-public void load_surface_collections(basic_string_view directory, SurfaceCollectionsBuilderKey key)
+public void load_surface_collections(std::string_view directory, SurfaceCollectionsBuilderKey key)
 ```
 
 
@@ -178,6 +157,27 @@ public ModifiableSurfaceCollectionRange modifiable_surface_collections(SurfaceCo
 
 ```cpp
 public SurfaceCollection<dimension> & modifiable_surface_collection(const uuid & id, SurfaceCollectionsBuilderKey key)
+```
+
+
+### components
+
+```cpp
+public SurfaceCollectionRange components()
+```
+
+
+### has_component
+
+```cpp
+public bool has_component(const uuid & id)
+```
+
+
+### component
+
+```cpp
+public const SurfaceCollection<dimension> & component(const uuid & id)
 ```
 
 

@@ -91,7 +91,7 @@ public bool has_component_mesh_vertices(index_t unique_vertex_id, const uuid & c
 ### save_unique_vertices
 
 ```cpp
-public void save_unique_vertices(basic_string_view directory)
+public void save_unique_vertices(std::string_view directory)
 ```
 
 
@@ -168,7 +168,7 @@ public void unset_unique_vertex(const ComponentMeshVertex & component_vertex_id,
 ### update_unique_vertices
 
 ```cpp
-public void update_unique_vertices(const ComponentID & component_id, Span old2new, BuilderKey )
+public void update_unique_vertices(const ComponentID & component_id, absl::Span<const index_t> old2new, BuilderKey )
 ```
 
 
@@ -181,7 +181,7 @@ public void update_unique_vertices(const ComponentID & component_id, Span old2ne
 ### load_unique_vertices
 
 ```cpp
-public void load_unique_vertices(basic_string_view directory, BuilderKey )
+public void load_unique_vertices(std::string_view directory, BuilderKey )
 ```
 
 

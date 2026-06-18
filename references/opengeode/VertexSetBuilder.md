@@ -26,6 +26,17 @@ Inherits from IdentifierBuilder
 
 ## Functions
 
+### create
+
+```cpp
+public static std::unique_ptr<VertexSetBuilder> create(VertexSet & mesh)
+```
+
+
+ Create the builder associated with a VertexSet.
+
+**mesh** [in] The VertexSet to build/modify
+
 ### VertexSetBuilder
 
 ```cpp
@@ -54,17 +65,6 @@ public void ~VertexSetBuilder()
 ```
 
 
-### create
-
-```cpp
-public unique_ptr create(VertexSet & mesh)
-```
-
-
- Create the builder associated with a VertexSet.
-
-**mesh** [in] The VertexSet to build/modify
-
 ### create_vertex
 
 ```cpp
@@ -92,7 +92,7 @@ public index_t create_vertices(index_t nb)
 ### delete_vertices
 
 ```cpp
-public vector delete_vertices(const std::vector<bool> & to_delete)
+public std::vector<index_t> delete_vertices(const std::vector<bool> & to_delete)
 ```
 
 
@@ -105,7 +105,7 @@ public vector delete_vertices(const std::vector<bool> & to_delete)
 ### permute_vertices
 
 ```cpp
-public vector permute_vertices(Span permutation)
+public std::vector<index_t> permute_vertices(absl::Span<const index_t> permutation)
 ```
 
 

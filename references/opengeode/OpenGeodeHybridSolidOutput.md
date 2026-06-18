@@ -25,7 +25,7 @@ Inherits from HybridSolidOutput<dimension>
 ### OpenGeodeHybridSolidOutput
 
 ```cpp
-public void OpenGeodeHybridSolidOutput<dimension>(basic_string_view filename)
+public void OpenGeodeHybridSolidOutput<dimension>(std::string_view filename)
 ```
 
 
@@ -39,7 +39,7 @@ public bool is_saveable(const HybridSolid<dimension> & mesh)
 ### write
 
 ```cpp
-public vector write(const HybridSolid<dimension> & mesh)
+public std::vector<std::string> write(const HybridSolid<dimension> & mesh)
 ```
 
 

@@ -20,9 +20,9 @@ const name = words.join('-');
 
 ## Records
 
-CornerRangeBase
-
 CornerRange
+
+CornerRangeBase
 
 
 
@@ -31,21 +31,28 @@ CornerRange
 ### Corners
 
 ```cpp
-public void Corners<>(const Corners<> & )
+protected void Corners<value-parameter-0-0>()
+```
+
+
+### Corners
+
+```cpp
+public void Corners<value-parameter-0-0>(const Corners<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public Corners<> & operator=(const Corners<> & )
+public Corners<dimension> & operator=(const Corners<dimension> & )
 ```
 
 
 ### ~Corners
 
 ```cpp
-public void ~Corners<>()
+public void ~Corners<value-parameter-0-0>()
 ```
 
 
@@ -93,6 +100,29 @@ public CornerRange active_corners()
 ```
 
 
+### save_corners
+
+```cpp
+public void save_corners(std::string_view directory)
+```
+
+
+ Save each Corner in a file located in the specified directory
+
+### Corners
+
+```cpp
+protected void Corners<value-parameter-0-0>(Corners<dimension> && other)
+```
+
+
+### operator=
+
+```cpp
+protected Corners<dimension> & operator=(Corners<dimension> && other)
+```
+
+
 ### components
 
 ```cpp
@@ -111,36 +141,6 @@ public bool has_component(const uuid & id)
 
 ```cpp
 public const Corner<dimension> & component(const uuid & id)
-```
-
-
-### save_corners
-
-```cpp
-public void save_corners(basic_string_view directory)
-```
-
-
- Save each Corner in a file located in the specified directory
-
-### Corners
-
-```cpp
-protected void Corners<>()
-```
-
-
-### Corners
-
-```cpp
-protected void Corners<>(Corners<> && other)
-```
-
-
-### operator=
-
-```cpp
-protected Corners<> & operator=(Corners<> && other)
 ```
 
 
@@ -182,7 +182,7 @@ public void delete_corner(const Corner<dimension> & corner, CornersBuilderKey ke
 ### load_corners
 
 ```cpp
-public void load_corners(basic_string_view directory, CornersBuilderKey key)
+public void load_corners(std::string_view directory, CornersBuilderKey key)
 ```
 
 

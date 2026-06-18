@@ -22,10 +22,10 @@ const name = words.join('-');
 
 ## Functions
 
-### load_surfaces
+### create_surface
 
 ```cpp
-public void load_surfaces(basic_string_view directory)
+protected const uuid & create_surface()
 ```
 
 
@@ -40,10 +40,24 @@ public std::unique_ptr<typename Mesh::Builder> surface_mesh_builder(const uuid &
 
 **id** [in] Unique index of the Surface
 
+### load_surfaces
+
+```cpp
+public void load_surfaces(std::string_view directory)
+```
+
+
+### SurfacesBuilder
+
+```cpp
+protected void SurfacesBuilder<value-parameter-0-0>(Surfaces<dimension> & surfaces)
+```
+
+
 ### set_surface_name
 
 ```cpp
-public void set_surface_name(const uuid & id, basic_string_view name)
+public void set_surface_name(const uuid & id, std::string_view name)
 ```
 
 
@@ -57,21 +71,7 @@ public void set_surface_active(const uuid & id, bool active)
 ### steal_surface_mesh
 
 ```cpp
-public std::unique_ptr<SurfaceMesh<dimension> > steal_surface_mesh(const uuid & id)
-```
-
-
-### SurfacesBuilder
-
-```cpp
-protected void SurfacesBuilder<>(Surfaces<dimension> & surfaces)
-```
-
-
-### create_surface
-
-```cpp
-protected const uuid & create_surface()
+public std::unique_ptr<SurfaceMesh<dimension>> steal_surface_mesh(const uuid & id)
 ```
 
 
@@ -106,7 +106,7 @@ protected void delete_surface(const Surface<dimension> & surface)
 ### set_surface_mesh
 
 ```cpp
-protected void set_surface_mesh(const uuid & id, std::unique_ptr<SurfaceMesh<dimension> > mesh)
+protected void set_surface_mesh(const uuid & id, std::unique_ptr<SurfaceMesh<dimension>> mesh)
 ```
 
 

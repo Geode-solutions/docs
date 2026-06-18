@@ -22,32 +22,18 @@ const name = words.join('-');
 
 ## Records
 
-BlockCollectionRangeBase
-
 BlockCollectionRange
+
+BlockCollectionRangeBase
 
 
 
 ## Functions
 
-### BlockCollections
-
-```cpp
-public void BlockCollections<>(const BlockCollections<> & )
-```
-
-
-### operator=
-
-```cpp
-public BlockCollections<> & operator=(const BlockCollections<> & )
-```
-
-
 ### ~BlockCollections
 
 ```cpp
-public void ~BlockCollections<>()
+public void ~BlockCollections<value-parameter-0-0>()
 ```
 
 
@@ -55,6 +41,27 @@ public void ~BlockCollections<>()
 
 ```cpp
 public index_t nb_block_collections()
+```
+
+
+### BlockCollections
+
+```cpp
+protected void BlockCollections<value-parameter-0-0>()
+```
+
+
+### BlockCollections
+
+```cpp
+public void BlockCollections<value-parameter-0-0>(const BlockCollections<dimension> & )
+```
+
+
+### operator=
+
+```cpp
+public BlockCollections<dimension> & operator=(const BlockCollections<dimension> & )
 ```
 
 
@@ -93,52 +100,24 @@ public BlockCollectionRange active_block_collections()
 ```
 
 
-### components
-
-```cpp
-public BlockCollectionRange components()
-```
-
-
-### has_component
-
-```cpp
-public bool has_component(const uuid & id)
-```
-
-
-### component
-
-```cpp
-public const BlockCollection<dimension> & component(const uuid & id)
-```
-
-
 ### save_block_collections
 
 ```cpp
-public void save_block_collections(basic_string_view directory)
+public void save_block_collections(std::string_view directory)
 ```
 
 
 ### BlockCollections
 
 ```cpp
-protected void BlockCollections<>()
-```
-
-
-### BlockCollections
-
-```cpp
-protected void BlockCollections<>(BlockCollections<> && other)
+protected void BlockCollections<value-parameter-0-0>(BlockCollections<dimension> && other)
 ```
 
 
 ### operator=
 
 ```cpp
-protected BlockCollections<> & operator=(BlockCollections<> && other)
+protected BlockCollections<dimension> & operator=(BlockCollections<dimension> && other)
 ```
 
 
@@ -166,7 +145,7 @@ public void delete_block_collection(const BlockCollection<dimension> & boundary,
 ### load_block_collections
 
 ```cpp
-public void load_block_collections(basic_string_view directory, BlockCollectionsBuilderKey key)
+public void load_block_collections(std::string_view directory, BlockCollectionsBuilderKey key)
 ```
 
 
@@ -181,6 +160,27 @@ public ModifiableBlockCollectionRange modifiable_block_collections(BlockCollecti
 
 ```cpp
 public BlockCollection<dimension> & modifiable_block_collection(const uuid & id, BlockCollectionsBuilderKey key)
+```
+
+
+### components
+
+```cpp
+public BlockCollectionRange components()
+```
+
+
+### has_component
+
+```cpp
+public bool has_component(const uuid & id)
+```
+
+
+### component
+
+```cpp
+public const BlockCollection<dimension> & component(const uuid & id)
 ```
 
 

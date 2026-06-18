@@ -20,12 +20,21 @@ Inherits from SurfaceMesh<2>, Grid<2>
 
 
 
+## Members
+
+```cpp
+public static const index_t dim
+
+```
+
+
+
 ## Functions
 
 ### create
 
 ```cpp
-public std::unique_ptr<RegularGrid2D> create()
+public static std::unique_ptr<RegularGrid2D> create()
 ```
 
 
@@ -34,7 +43,7 @@ public std::unique_ptr<RegularGrid2D> create()
 ### create
 
 ```cpp
-public std::unique_ptr<RegularGrid2D> create(const MeshImpl & impl)
+public static std::unique_ptr<RegularGrid2D> create(const MeshImpl & impl)
 ```
 
 
@@ -45,21 +54,7 @@ public std::unique_ptr<RegularGrid2D> create(const MeshImpl & impl)
 ### type_name_static
 
 ```cpp
-public NamedType type_name_static()
-```
-
-
-### native_extension
-
-```cpp
-public basic_string_view native_extension()
-```
-
-
-### native_extension_static
-
-```cpp
-public basic_string_view native_extension_static()
+public static MeshType type_name_static()
 ```
 
 
@@ -67,6 +62,13 @@ public basic_string_view native_extension_static()
 
 ```cpp
 public AttributeManager & cell_attribute_manager()
+```
+
+
+### native_extension
+
+```cpp
+public std::string_view native_extension()
 ```
 
 
@@ -81,6 +83,13 @@ public AttributeManager & grid_vertex_attribute_manager()
 
 ```cpp
 public std::unique_ptr<RegularGrid2D> clone()
+```
+
+
+### native_extension_static
+
+```cpp
+public static std::string_view native_extension_static()
 ```
 
 
@@ -123,12 +132,21 @@ Inherits from SolidMesh<3>, Grid<3>
 
 
 
+## Members
+
+```cpp
+public static const index_t dim
+
+```
+
+
+
 ## Functions
 
 ### create
 
 ```cpp
-public std::unique_ptr<RegularGrid3D> create()
+public static std::unique_ptr<RegularGrid3D> create()
 ```
 
 
@@ -137,7 +155,7 @@ public std::unique_ptr<RegularGrid3D> create()
 ### create
 
 ```cpp
-public std::unique_ptr<RegularGrid3D> create(const MeshImpl & impl)
+public static std::unique_ptr<RegularGrid3D> create(const MeshImpl & impl)
 ```
 
 
@@ -148,21 +166,7 @@ public std::unique_ptr<RegularGrid3D> create(const MeshImpl & impl)
 ### type_name_static
 
 ```cpp
-public NamedType type_name_static()
-```
-
-
-### native_extension
-
-```cpp
-public basic_string_view native_extension()
-```
-
-
-### native_extension_static
-
-```cpp
-public basic_string_view native_extension_static()
+public static MeshType type_name_static()
 ```
 
 
@@ -170,6 +174,13 @@ public basic_string_view native_extension_static()
 
 ```cpp
 public AttributeManager & cell_attribute_manager()
+```
+
+
+### native_extension
+
+```cpp
+public std::string_view native_extension()
 ```
 
 
@@ -184,6 +195,13 @@ public AttributeManager & grid_vertex_attribute_manager()
 
 ```cpp
 public std::unique_ptr<RegularGrid3D> clone()
+```
+
+
+### native_extension_static
+
+```cpp
+public static std::string_view native_extension_static()
 ```
 
 

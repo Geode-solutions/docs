@@ -19,28 +19,133 @@ const name = words.join('-');
 ### converted_value
 
 ```cpp
-public float converted_value(const Vector<dimension> & vector)
+public static float converted_value(const Vector<dimension> & vector)
 ```
 
 
 ### converted_item_value
 
 ```cpp
-public float converted_item_value(const Vector<dimension> & vector, local_index_t item)
+public static float converted_item_value(const Vector<dimension> & vector, local_index_t item)
 ```
 
 
 ### is_genericable
 
 ```cpp
-public bool is_genericable()
+public static bool is_genericable()
 ```
 
 
 ### nb_items
 
 ```cpp
-public local_index_t nb_items()
+public static local_index_t nb_items()
+```
+
+
+
+
+# struct GenericAttributeConversion
+
+
+## Functions
+
+### converted_item_value
+
+```cpp
+public static float converted_item_value(const bool & value, local_index_t )
+```
+
+
+### converted_value
+
+```cpp
+public static float converted_value(const bool & value)
+```
+
+
+### is_genericable
+
+```cpp
+public static bool is_genericable()
+```
+
+
+### nb_items
+
+```cpp
+public static local_index_t nb_items()
+```
+
+
+
+
+# struct GenericAttributeConversion
+
+
+## Functions
+
+### converted_item_value
+
+```cpp
+public static float converted_item_value(const unsigned short & value, local_index_t )
+```
+
+
+### converted_value
+
+```cpp
+public static float converted_value(const unsigned short & value)
+```
+
+
+### is_genericable
+
+```cpp
+public static bool is_genericable()
+```
+
+
+### nb_items
+
+```cpp
+public static local_index_t nb_items()
+```
+
+
+
+
+# struct GenericAttributeConversion
+
+
+## Functions
+
+### converted_item_value
+
+```cpp
+public static float converted_item_value(const Container & value, local_index_t item)
+```
+
+
+### converted_value
+
+```cpp
+public static float converted_value(const Container & value)
+```
+
+
+### is_genericable
+
+```cpp
+public static bool is_genericable()
+```
+
+
+### nb_items
+
+```cpp
+public static local_index_t nb_items()
 ```
 
 
@@ -54,28 +159,238 @@ public local_index_t nb_items()
 ### converted_value
 
 ```cpp
-public float converted_value(const bool & value)
+public static float converted_value(const RGBColor & color)
 ```
 
 
 ### converted_item_value
 
 ```cpp
-public float converted_item_value(const bool & value, local_index_t )
+public static float converted_item_value(const RGBColor & color, local_index_t item)
 ```
 
 
 ### is_genericable
 
 ```cpp
-public bool is_genericable()
+public static bool is_genericable()
 ```
 
 
 ### nb_items
 
 ```cpp
-public local_index_t nb_items()
+public static local_index_t nb_items()
+```
+
+
+
+
+# struct GenericAttributeConversion
+
+
+## Functions
+
+### converted_item_value
+
+```cpp
+public static float converted_item_value(const unsigned int & value, local_index_t )
+```
+
+
+### converted_value
+
+```cpp
+public static float converted_value(const unsigned int & value)
+```
+
+
+### is_genericable
+
+```cpp
+public static bool is_genericable()
+```
+
+
+### nb_items
+
+```cpp
+public static local_index_t nb_items()
+```
+
+
+
+
+# struct GenericAttributeConversion
+
+
+## Functions
+
+### converted_item_value
+
+```cpp
+public static float converted_item_value(const double & value, local_index_t )
+```
+
+
+### converted_value
+
+```cpp
+public static float converted_value(const double & value)
+```
+
+
+### is_genericable
+
+```cpp
+public static bool is_genericable()
+```
+
+
+### nb_items
+
+```cpp
+public static local_index_t nb_items()
+```
+
+
+
+
+# struct GenericAttributeConversion
+
+
+## Functions
+
+### converted_item_value
+
+```cpp
+public static float converted_item_value(const int & value, local_index_t )
+```
+
+
+### converted_value
+
+```cpp
+public static float converted_value(const int & value)
+```
+
+
+### is_genericable
+
+```cpp
+public static bool is_genericable()
+```
+
+
+### nb_items
+
+```cpp
+public static local_index_t nb_items()
+```
+
+
+
+
+# struct GenericAttributeConversion
+
+
+## Functions
+
+### converted_item_value
+
+```cpp
+public static float converted_item_value(const signed char & value, local_index_t )
+```
+
+
+### converted_value
+
+```cpp
+public static float converted_value(const signed char & value)
+```
+
+
+### is_genericable
+
+```cpp
+public static bool is_genericable()
+```
+
+
+### nb_items
+
+```cpp
+public static local_index_t nb_items()
+```
+
+
+
+
+# struct GenericAttributeConversion
+
+
+## Functions
+
+### converted_item_value
+
+```cpp
+public static float converted_item_value(const Container & value, local_index_t item)
+```
+
+
+### converted_value
+
+```cpp
+public static float converted_value(const Container & value)
+```
+
+
+### is_genericable
+
+```cpp
+public static bool is_genericable()
+```
+
+
+### nb_items
+
+```cpp
+public static local_index_t nb_items()
+```
+
+
+
+
+# struct GenericAttributeConversion
+
+
+## Functions
+
+### converted_item_value
+
+```cpp
+public static float converted_item_value(const Container & value, local_index_t item)
+```
+
+
+### converted_value
+
+```cpp
+public static float converted_value(const Container & value)
+```
+
+
+### is_genericable
+
+```cpp
+public static bool is_genericable()
+```
+
+
+### nb_items
+
+```cpp
+public static local_index_t nb_items()
 ```
 
 
@@ -89,343 +404,28 @@ public local_index_t nb_items()
 ### converted_value
 
 ```cpp
-public float converted_value(const unsigned short & value)
+public static float converted_value(const GreyscaleColor & color)
 ```
 
 
 ### converted_item_value
 
 ```cpp
-public float converted_item_value(const unsigned short & value, local_index_t )
+public static float converted_item_value(const GreyscaleColor & color, local_index_t item)
 ```
 
 
 ### is_genericable
 
 ```cpp
-public bool is_genericable()
+public static bool is_genericable()
 ```
 
 
 ### nb_items
 
 ```cpp
-public local_index_t nb_items()
-```
-
-
-
-
-# struct GenericAttributeConversion
-
-
-## Functions
-
-### converted_value
-
-```cpp
-public float converted_value(const Container & value)
-```
-
-
-### converted_item_value
-
-```cpp
-public float converted_item_value(const Container & value, local_index_t item)
-```
-
-
-### is_genericable
-
-```cpp
-public bool is_genericable()
-```
-
-
-### nb_items
-
-```cpp
-public local_index_t nb_items()
-```
-
-
-
-
-# struct GenericAttributeConversion
-
-
-## Functions
-
-### converted_value
-
-```cpp
-public float converted_value(const RGBColor & color)
-```
-
-
-### converted_item_value
-
-```cpp
-public float converted_item_value(const RGBColor & color, local_index_t item)
-```
-
-
-### is_genericable
-
-```cpp
-public bool is_genericable()
-```
-
-
-### nb_items
-
-```cpp
-public local_index_t nb_items()
-```
-
-
-
-
-# struct GenericAttributeConversion
-
-
-## Functions
-
-### converted_value
-
-```cpp
-public float converted_value(const unsigned int & value)
-```
-
-
-### converted_item_value
-
-```cpp
-public float converted_item_value(const unsigned int & value, local_index_t )
-```
-
-
-### is_genericable
-
-```cpp
-public bool is_genericable()
-```
-
-
-### nb_items
-
-```cpp
-public local_index_t nb_items()
-```
-
-
-
-
-# struct GenericAttributeConversion
-
-
-## Functions
-
-### converted_value
-
-```cpp
-public float converted_value(const double & value)
-```
-
-
-### converted_item_value
-
-```cpp
-public float converted_item_value(const double & value, local_index_t )
-```
-
-
-### is_genericable
-
-```cpp
-public bool is_genericable()
-```
-
-
-### nb_items
-
-```cpp
-public local_index_t nb_items()
-```
-
-
-
-
-# struct GenericAttributeConversion
-
-
-## Functions
-
-### converted_value
-
-```cpp
-public float converted_value(const int & value)
-```
-
-
-### converted_item_value
-
-```cpp
-public float converted_item_value(const int & value, local_index_t )
-```
-
-
-### is_genericable
-
-```cpp
-public bool is_genericable()
-```
-
-
-### nb_items
-
-```cpp
-public local_index_t nb_items()
-```
-
-
-
-
-# struct GenericAttributeConversion
-
-
-## Functions
-
-### converted_value
-
-```cpp
-public float converted_value(const signed char & value)
-```
-
-
-### converted_item_value
-
-```cpp
-public float converted_item_value(const signed char & value, local_index_t )
-```
-
-
-### is_genericable
-
-```cpp
-public bool is_genericable()
-```
-
-
-### nb_items
-
-```cpp
-public local_index_t nb_items()
-```
-
-
-
-
-# struct GenericAttributeConversion
-
-
-## Functions
-
-### converted_value
-
-```cpp
-public float converted_value(const Container & value)
-```
-
-
-### converted_item_value
-
-```cpp
-public float converted_item_value(const Container & value, local_index_t item)
-```
-
-
-### is_genericable
-
-```cpp
-public bool is_genericable()
-```
-
-
-### nb_items
-
-```cpp
-public local_index_t nb_items()
-```
-
-
-
-
-# struct GenericAttributeConversion
-
-
-## Functions
-
-### converted_value
-
-```cpp
-public float converted_value(const Container & value)
-```
-
-
-### converted_item_value
-
-```cpp
-public float converted_item_value(const Container & value, local_index_t item)
-```
-
-
-### is_genericable
-
-```cpp
-public bool is_genericable()
-```
-
-
-### nb_items
-
-```cpp
-public local_index_t nb_items()
-```
-
-
-
-
-# struct GenericAttributeConversion
-
-
-## Functions
-
-### converted_value
-
-```cpp
-public float converted_value(const GreyscaleColor & color)
-```
-
-
-### converted_item_value
-
-```cpp
-public float converted_item_value(const GreyscaleColor & color, local_index_t item)
-```
-
-
-### is_genericable
-
-```cpp
-public bool is_genericable()
-```
-
-
-### nb_items
-
-```cpp
-public local_index_t nb_items()
+public static local_index_t nb_items()
 ```
 
 
@@ -443,28 +443,28 @@ public local_index_t nb_items()
 ### converted_value
 
 ```cpp
-public float converted_value(const AttributeType & )
+public static float converted_value(const AttributeType & )
 ```
 
 
 ### converted_item_value
 
 ```cpp
-public float converted_item_value(const AttributeType & , local_index_t )
+public static float converted_item_value(const AttributeType & , local_index_t )
 ```
 
 
 ### is_genericable
 
 ```cpp
-public bool is_genericable()
+public static bool is_genericable()
 ```
 
 
 ### nb_items
 
 ```cpp
-public local_index_t nb_items()
+public static local_index_t nb_items()
 ```
 
 
@@ -478,28 +478,28 @@ public local_index_t nb_items()
 ### converted_value
 
 ```cpp
-public float converted_value(const Point<dimension> & point)
+public static float converted_value(const Point<dimension> & point)
 ```
 
 
 ### converted_item_value
 
 ```cpp
-public float converted_item_value(const Point<dimension> & point, local_index_t item)
+public static float converted_item_value(const Point<dimension> & point, local_index_t item)
 ```
 
 
 ### is_genericable
 
 ```cpp
-public bool is_genericable()
+public static bool is_genericable()
 ```
 
 
 ### nb_items
 
 ```cpp
-public local_index_t nb_items()
+public static local_index_t nb_items()
 ```
 
 
@@ -510,31 +510,31 @@ public local_index_t nb_items()
 
 ## Functions
 
-### converted_value
-
-```cpp
-public float converted_value(const Container & value)
-```
-
-
 ### converted_item_value
 
 ```cpp
-public float converted_item_value(const Container & value, local_index_t item)
+public static float converted_item_value(const Container & value, local_index_t item)
+```
+
+
+### converted_value
+
+```cpp
+public static float converted_value(const Container & value)
 ```
 
 
 ### is_genericable
 
 ```cpp
-public bool is_genericable()
+public static bool is_genericable()
 ```
 
 
 ### nb_items
 
 ```cpp
-public local_index_t nb_items()
+public static local_index_t nb_items()
 ```
 
 
@@ -545,31 +545,31 @@ public local_index_t nb_items()
 
 ## Functions
 
-### converted_value
-
-```cpp
-public float converted_value(const float & value)
-```
-
-
 ### converted_item_value
 
 ```cpp
-public float converted_item_value(const float & value, local_index_t )
+public static float converted_item_value(const float & value, local_index_t )
+```
+
+
+### converted_value
+
+```cpp
+public static float converted_value(const float & value)
 ```
 
 
 ### is_genericable
 
 ```cpp
-public bool is_genericable()
+public static bool is_genericable()
 ```
 
 
 ### nb_items
 
 ```cpp
-public local_index_t nb_items()
+public static local_index_t nb_items()
 ```
 
 
@@ -580,31 +580,31 @@ public local_index_t nb_items()
 
 ## Functions
 
-### converted_value
-
-```cpp
-public float converted_value(const unsigned char & value)
-```
-
-
 ### converted_item_value
 
 ```cpp
-public float converted_item_value(const unsigned char & value, local_index_t )
+public static float converted_item_value(const unsigned char & value, local_index_t )
+```
+
+
+### converted_value
+
+```cpp
+public static float converted_value(const unsigned char & value)
 ```
 
 
 ### is_genericable
 
 ```cpp
-public bool is_genericable()
+public static bool is_genericable()
 ```
 
 
 ### nb_items
 
 ```cpp
-public local_index_t nb_items()
+public static local_index_t nb_items()
 ```
 
 
@@ -615,31 +615,31 @@ public local_index_t nb_items()
 
 ## Functions
 
-### converted_value
-
-```cpp
-public float converted_value(const Container & value)
-```
-
-
 ### converted_item_value
 
 ```cpp
-public float converted_item_value(const Container & value, local_index_t item)
+public static float converted_item_value(const Container & value, local_index_t item)
+```
+
+
+### converted_value
+
+```cpp
+public static float converted_value(const Container & value)
 ```
 
 
 ### is_genericable
 
 ```cpp
-public bool is_genericable()
+public static bool is_genericable()
 ```
 
 
 ### nb_items
 
 ```cpp
-public local_index_t nb_items()
+public static local_index_t nb_items()
 ```
 
 
@@ -650,31 +650,31 @@ public local_index_t nb_items()
 
 ## Functions
 
-### converted_value
-
-```cpp
-public float converted_value(const short & value)
-```
-
-
 ### converted_item_value
 
 ```cpp
-public float converted_item_value(const short & value, local_index_t )
+public static float converted_item_value(const short & value, local_index_t )
+```
+
+
+### converted_value
+
+```cpp
+public static float converted_value(const short & value)
 ```
 
 
 ### is_genericable
 
 ```cpp
-public bool is_genericable()
+public static bool is_genericable()
 ```
 
 
 ### nb_items
 
 ```cpp
-public local_index_t nb_items()
+public static local_index_t nb_items()
 ```
 
 

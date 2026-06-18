@@ -50,7 +50,7 @@ public void ~VertexSet()
 ### create
 
 ```cpp
-public std::unique_ptr<VertexSet> create()
+public static std::unique_ptr<VertexSet> create()
 ```
 
 
@@ -59,7 +59,7 @@ public std::unique_ptr<VertexSet> create()
 ### create
 
 ```cpp
-public std::unique_ptr<VertexSet> create(const MeshImpl & impl)
+public static std::unique_ptr<VertexSet> create(const MeshImpl & impl)
 ```
 
 
@@ -70,7 +70,7 @@ public std::unique_ptr<VertexSet> create(const MeshImpl & impl)
 ### type_name_static
 
 ```cpp
-public NamedType type_name_static()
+public static MeshType type_name_static()
 ```
 
 
@@ -84,7 +84,7 @@ public std::unique_ptr<VertexSet> clone()
 ### native_extension
 
 ```cpp
-public basic_string_view native_extension()
+public std::string_view native_extension()
 ```
 
 ### nb_vertices
@@ -106,13 +106,13 @@ public AttributeManager & vertex_attribute_manager()
 ### impl_name
 
 ```cpp
-public NamedType impl_name()
+public MeshImpl impl_name()
 ```
 
 ### type_name
 
 ```cpp
-public NamedType type_name()
+public MeshType type_name()
 ```
 
 ### VertexSet

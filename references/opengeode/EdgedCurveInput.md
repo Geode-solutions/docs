@@ -25,7 +25,7 @@ Inherits from Input<std::unique_ptr<EdgedCurve<dimension> >, MeshImpl>
 ### EdgedCurveInput
 
 ```cpp
-protected void EdgedCurveInput<dimension>(basic_string_view filename)
+protected void EdgedCurveInput<dimension>(std::string_view filename)
 ```
 
 

@@ -20,11 +20,29 @@ Inherits from TriangulatedSurfaceBuilder<3U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class OpenGeodeTriangulatedSurfaceBuilder
 
 
 ```cpp
 Inherits from TriangulatedSurfaceBuilder<2U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 
@@ -38,6 +56,15 @@ Inherits from TriangulatedSurfaceBuilder<2U>
 
 ```cpp
 Inherits from TriangulatedSurfaceBuilder<dimension>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 

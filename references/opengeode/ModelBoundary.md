@@ -47,56 +47,56 @@ Inherits from Component<dimension>
 ### ModelBoundary
 
 ```cpp
-public void ModelBoundary<>(const ModelBoundary<> & )
+public void ModelBoundary<value-parameter-0-0>(const ModelBoundary<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public ModelBoundary<> & operator=(const ModelBoundary<> & )
+public ModelBoundary<dimension> & operator=(const ModelBoundary<dimension> & )
 ```
 
 
 ### ModelBoundary
 
 ```cpp
-public void ModelBoundary<>(ModelBoundary<> && other)
+public void ModelBoundary<value-parameter-0-0>(ModelBoundary<dimension> && other)
 ```
 
 
 ### ~ModelBoundary
 
 ```cpp
-public void ~ModelBoundary<>()
+public void ~ModelBoundary<value-parameter-0-0>()
 ```
 
 
 ### component_type_static
 
 ```cpp
-public NamedType component_type_static()
+public static ComponentType component_type_static()
 ```
 
 
 ### component_type
 
 ```cpp
-public NamedType component_type()
+public ComponentType component_type()
 ```
 
 
 ### ModelBoundary
 
 ```cpp
-public void ModelBoundary<>(ModelBoundariesKey )
+public void ModelBoundary<value-parameter-0-0>(ModelBoundariesKey )
 ```
 
 
 ### set_model_boundary_name
 
 ```cpp
-public void set_model_boundary_name(basic_string_view name, ModelBoundariesBuilderKey )
+public void set_model_boundary_name(std::string_view name, ModelBoundariesBuilderKey )
 ```
 
 

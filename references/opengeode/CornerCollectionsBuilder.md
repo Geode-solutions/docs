@@ -19,24 +19,10 @@ const name = words.join('-');
 
 ## Functions
 
-### load_corner_collections
+### create_corner_collection
 
 ```cpp
-public void load_corner_collections(basic_string_view directory)
-```
-
-
-### set_corner_collection_name
-
-```cpp
-public void set_corner_collection_name(const uuid & id, basic_string_view name)
-```
-
-
-### set_corner_collection_active
-
-```cpp
-public void set_corner_collection_active(const uuid & id, bool active)
+protected const uuid & create_corner_collection()
 ```
 
 
@@ -47,10 +33,24 @@ protected void CornerCollectionsBuilder<dimension>(CornerCollections<dimension> 
 ```
 
 
-### create_corner_collection
+### load_corner_collections
 
 ```cpp
-protected const uuid & create_corner_collection()
+public void load_corner_collections(std::string_view directory)
+```
+
+
+### set_corner_collection_name
+
+```cpp
+public void set_corner_collection_name(const uuid & id, std::string_view name)
+```
+
+
+### set_corner_collection_active
+
+```cpp
+public void set_corner_collection_active(const uuid & id, bool active)
 ```
 
 

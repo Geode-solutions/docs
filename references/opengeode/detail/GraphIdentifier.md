@@ -23,17 +23,17 @@ public void GraphIdentifier(const GraphIdentifier & )
 ```
 
 
-### operator=
-
-```cpp
-public GraphIdentifier & operator=(const GraphIdentifier & )
-```
-
-
 ### GraphIdentifier
 
 ```cpp
 public void GraphIdentifier(GraphIdentifier && )
+```
+
+
+### operator=
+
+```cpp
+public GraphIdentifier & operator=(const GraphIdentifier & )
 ```
 
 
@@ -82,7 +82,7 @@ public index_t vertex_identifier(index_t vertex_id)
 ### identified_connected_vertices
 
 ```cpp
-public FixedArray identified_connected_vertices()
+public absl::FixedArray<std::vector<index_t>> identified_connected_vertices()
 ```
 
 

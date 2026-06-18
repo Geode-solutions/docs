@@ -40,14 +40,14 @@ public void ~Timer()
 ### raw_duration
 
 ```cpp
-public Duration raw_duration()
+public absl::Duration raw_duration()
 ```
 
 
 ### duration
 
 ```cpp
-public basic_string duration()
+public std::string duration()
 ```
 
 

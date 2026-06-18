@@ -16,10 +16,10 @@ const name = words.join('-');
 
 ## Functions
 
-### ~LoggerClient
+### LoggerClient
 
 ```cpp
-public void ~LoggerClient()
+protected void LoggerClient()
 ```
 
 
@@ -59,10 +59,10 @@ public void error(const std::string & message)
 public void critical(const std::string & message)
 ```
 
-### LoggerClient
+### ~LoggerClient
 
 ```cpp
-protected void LoggerClient()
+public void ~LoggerClient()
 ```
 
 

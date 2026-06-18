@@ -24,33 +24,21 @@ Inherits from TopologyBuilder, CornersBuilder3D, LinesBuilder3D, SurfacesBuilder
 
 
 
+## Members
+
+```cpp
+public static const index_t dim
+
+```
+
+
+
 ## Functions
 
 ### BRepBuilder
 
 ```cpp
-public void BRepBuilder(const BRepBuilder & )
-```
-
-
-### operator=
-
-```cpp
-public BRepBuilder & operator=(const BRepBuilder & )
-```
-
-
-### BRepBuilder
-
-```cpp
 public void BRepBuilder(BRep & brep)
-```
-
-
-### BRepBuilder
-
-```cpp
-public void BRepBuilder(BRepBuilder && other)
 ```
 
 
@@ -72,6 +60,27 @@ public void replace_components_meshes_by_others(BRep && other, const ModelCopyMa
 
 ```cpp
 public ModelCopyMapping copy_components(const BRep & brep)
+```
+
+
+### BRepBuilder
+
+```cpp
+public void BRepBuilder(const BRepBuilder & )
+```
+
+
+### operator=
+
+```cpp
+public BRepBuilder & operator=(const BRepBuilder & )
+```
+
+
+### BRepBuilder
+
+```cpp
+public void BRepBuilder(BRepBuilder && other)
 ```
 
 
@@ -274,14 +283,14 @@ public void add_block_collection(const uuid & block_collection_id)
 ### update_corner_mesh
 
 ```cpp
-public void update_corner_mesh(const Corner3D & corner, unique_ptr mesh)
+public void update_corner_mesh(const Corner3D & corner, std::unique_ptr<PointSet3D> mesh)
 ```
 
 
 ### update_line_mesh
 
 ```cpp
-public void update_line_mesh(const Line3D & line, unique_ptr mesh)
+public void update_line_mesh(const Line3D & line, std::unique_ptr<EdgedCurve3D> mesh)
 ```
 
 
@@ -295,7 +304,7 @@ public void update_surface_mesh(const Surface3D & surface, std::unique_ptr<Surfa
 ### update_block_mesh
 
 ```cpp
-public void update_block_mesh(const Block3D & block, unique_ptr mesh)
+public void update_block_mesh(const Block3D & block, std::unique_ptr<SolidMesh3D> mesh)
 ```
 
 

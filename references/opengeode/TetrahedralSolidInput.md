@@ -25,7 +25,7 @@ Inherits from Input<std::unique_ptr<TetrahedralSolid<dimension> >, MeshImpl>
 ### TetrahedralSolidInput
 
 ```cpp
-protected void TetrahedralSolidInput<dimension>(basic_string_view filename)
+protected void TetrahedralSolidInput<dimension>(std::string_view filename)
 ```
 
 

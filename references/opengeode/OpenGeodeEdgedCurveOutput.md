@@ -25,7 +25,7 @@ Inherits from EdgedCurveOutput<dimension>
 ### OpenGeodeEdgedCurveOutput
 
 ```cpp
-public void OpenGeodeEdgedCurveOutput<dimension>(basic_string_view filename)
+public void OpenGeodeEdgedCurveOutput<dimension>(std::string_view filename)
 ```
 
 
@@ -39,7 +39,7 @@ public bool is_saveable(const EdgedCurve<dimension> & mesh)
 ### write
 
 ```cpp
-public vector write(const EdgedCurve<dimension> & mesh)
+public std::vector<std::string> write(const EdgedCurve<dimension> & mesh)
 ```
 
 

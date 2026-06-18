@@ -66,7 +66,7 @@ public void set_active_only()
 ### BlockRangeBase
 
 ```cpp
-protected void BlockRangeBase(const Blocks<> & blocks)
+protected void BlockRangeBase(const Blocks<dimension> & blocks)
 ```
 
 

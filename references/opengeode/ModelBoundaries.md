@@ -19,32 +19,18 @@ const name = words.join('-');
 
 ## Records
 
-ModelBoundaryRangeBase
-
 ModelBoundaryRange
+
+ModelBoundaryRangeBase
 
 
 
 ## Functions
 
-### ModelBoundaries
-
-```cpp
-public void ModelBoundaries<>(const ModelBoundaries<> & )
-```
-
-
-### operator=
-
-```cpp
-public ModelBoundaries<> & operator=(const ModelBoundaries<> & )
-```
-
-
 ### ~ModelBoundaries
 
 ```cpp
-public void ~ModelBoundaries<>()
+public void ~ModelBoundaries<value-parameter-0-0>()
 ```
 
 
@@ -59,6 +45,34 @@ public index_t nb_model_boundaries()
 
 ```cpp
 public index_t nb_active_model_boundaries()
+```
+
+
+### ModelBoundaries
+
+```cpp
+protected void ModelBoundaries<value-parameter-0-0>()
+```
+
+
+### ModelBoundaries
+
+```cpp
+protected void ModelBoundaries<value-parameter-0-0>(ModelBoundaries<dimension> && other)
+```
+
+
+### ModelBoundaries
+
+```cpp
+public void ModelBoundaries<value-parameter-0-0>(const ModelBoundaries<dimension> & )
+```
+
+
+### operator=
+
+```cpp
+public ModelBoundaries<dimension> & operator=(const ModelBoundaries<dimension> & )
 ```
 
 
@@ -90,52 +104,17 @@ public ModelBoundaryRange active_model_boundaries()
 ```
 
 
-### components
-
-```cpp
-public ModelBoundaryRange components()
-```
-
-
-### has_component
-
-```cpp
-public bool has_component(const uuid & id)
-```
-
-
-### component
-
-```cpp
-public const ModelBoundary<dimension> & component(const uuid & id)
-```
-
-
 ### save_model_boundaries
 
 ```cpp
-public void save_model_boundaries(basic_string_view directory)
-```
-
-
-### ModelBoundaries
-
-```cpp
-protected void ModelBoundaries<>()
-```
-
-
-### ModelBoundaries
-
-```cpp
-protected void ModelBoundaries<>(ModelBoundaries<> && other)
+public void save_model_boundaries(std::string_view directory)
 ```
 
 
 ### operator=
 
 ```cpp
-protected ModelBoundaries<> & operator=(ModelBoundaries<> && other)
+protected ModelBoundaries<dimension> & operator=(ModelBoundaries<dimension> && other)
 ```
 
 
@@ -163,7 +142,7 @@ public void delete_model_boundary(const ModelBoundary<dimension> & boundary, Mod
 ### load_model_boundaries
 
 ```cpp
-public void load_model_boundaries(basic_string_view directory, ModelBoundariesBuilderKey key)
+public void load_model_boundaries(std::string_view directory, ModelBoundariesBuilderKey key)
 ```
 
 
@@ -178,6 +157,27 @@ public ModifiableModelBoundaryRange modifiable_model_boundaries(ModelBoundariesB
 
 ```cpp
 public ModelBoundary<dimension> & modifiable_model_boundary(const uuid & id, ModelBoundariesBuilderKey key)
+```
+
+
+### components
+
+```cpp
+public ModelBoundaryRange components()
+```
+
+
+### has_component
+
+```cpp
+public bool has_component(const uuid & id)
+```
+
+
+### component
+
+```cpp
+public const ModelBoundary<dimension> & component(const uuid & id)
 ```
 
 

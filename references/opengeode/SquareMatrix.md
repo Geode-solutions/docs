@@ -26,7 +26,7 @@ public double determinant()
 ### inverse
 
 ```cpp
-public SquareMatrix inverse()
+public SquareMatrix<3> inverse()
 ```
 
 
@@ -50,7 +50,7 @@ public double determinant()
 ### inverse
 
 ```cpp
-public SquareMatrix inverse()
+public SquareMatrix<2> inverse()
 ```
 
 
@@ -120,7 +120,7 @@ public Vector<dimension> operator*(const Vector<dimension> & vector)
 ### operator*
 
 ```cpp
-public SquareMatrix operator*(const SquareMatrix<dimension> & matrix)
+public SquareMatrix<dimension> operator*(const SquareMatrix<dimension> & matrix)
 ```
 
 
@@ -155,14 +155,14 @@ public double determinant()
 ### transpose
 
 ```cpp
-public SquareMatrix transpose()
+public SquareMatrix<dimension> transpose()
 ```
 
 
 ### inverse
 
 ```cpp
-public SquareMatrix inverse()
+public SquareMatrix<dimension> inverse()
 ```
 
 

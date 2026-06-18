@@ -23,17 +23,17 @@ public void Propagator<Mesh>(const Propagator<Mesh> & )
 ```
 
 
-### operator=
-
-```cpp
-public Propagator<Mesh> & operator=(const Propagator<Mesh> & )
-```
-
-
 ### Propagator
 
 ```cpp
 public void Propagator<Mesh>(Propagator<Mesh> && )
+```
+
+
+### operator=
+
+```cpp
+public Propagator<Mesh> & operator=(const Propagator<Mesh> & )
 ```
 
 
@@ -75,7 +75,7 @@ public index_t identify_elements(index_t nb_max_elements)
 ### identified_components
 
 ```cpp
-public FixedArray identified_components()
+public absl::FixedArray<std::vector<index_t>> identified_components()
 ```
 
 

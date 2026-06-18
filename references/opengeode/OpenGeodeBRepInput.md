@@ -25,14 +25,7 @@ Inherits from BRepInput
 ### OpenGeodeBRepInput
 
 ```cpp
-public void OpenGeodeBRepInput(basic_string_view filename)
-```
-
-
-### extension
-
-```cpp
-public basic_string_view extension()
+public void OpenGeodeBRepInput(std::string_view filename)
 ```
 
 
@@ -40,6 +33,13 @@ public basic_string_view extension()
 
 ```cpp
 public BRep read()
+```
+
+
+### extension
+
+```cpp
+public static std::string_view extension()
 ```
 
 

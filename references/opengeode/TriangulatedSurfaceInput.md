@@ -25,7 +25,7 @@ Inherits from Input<std::unique_ptr<TriangulatedSurface<dimension> >, MeshImpl>
 ### TriangulatedSurfaceInput
 
 ```cpp
-protected void TriangulatedSurfaceInput<dimension>(basic_string_view filename)
+protected void TriangulatedSurfaceInput<dimension>(std::string_view filename)
 ```
 
 

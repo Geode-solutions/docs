@@ -24,6 +24,15 @@ Inherits from HybridSolidBuilder<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### OpenGeodeHybridSolidBuilder
@@ -54,6 +63,15 @@ public void OpenGeodeHybridSolidBuilder<dimension>(OpenGeodeHybridSolidBuilder<d
 
 ```cpp
 Inherits from HybridSolidBuilder<3U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 

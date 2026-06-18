@@ -24,6 +24,15 @@ Inherits from PolygonalSurfaceBuilder<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### OpenGeodePolygonalSurfaceBuilder
@@ -58,11 +67,29 @@ Inherits from PolygonalSurfaceBuilder<3U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class OpenGeodePolygonalSurfaceBuilder
 
 
 ```cpp
 Inherits from PolygonalSurfaceBuilder<2U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 

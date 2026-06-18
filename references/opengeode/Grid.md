@@ -20,6 +20,15 @@ Inherits from CellArray<2U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class Grid
 
 
@@ -29,33 +38,28 @@ Inherits from CellArray<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### Grid
 
 ```cpp
-public void Grid<>(const Grid<> & )
+public void Grid<value-parameter-0-0>(const Grid<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public Grid<> & operator=(const Grid<> & )
-```
-
-
-### ~Grid
-
-```cpp
-public void ~Grid<>()
-```
-
-
-### grid_coordinate_system
-
-```cpp
-public const CoordinateSystem<dimension> & grid_coordinate_system()
+public Grid<dimension> & operator=(const Grid<dimension> & )
 ```
 
 
@@ -69,7 +73,21 @@ public local_index_t nb_cell_vertices()
 ### nb_cell_vertices_static
 
 ```cpp
-public local_index_t nb_cell_vertices_static()
+public static local_index_t nb_cell_vertices_static()
+```
+
+
+### ~Grid
+
+```cpp
+public void ~Grid<value-parameter-0-0>()
+```
+
+
+### grid_coordinate_system
+
+```cpp
+public const CoordinateSystem<dimension> & grid_coordinate_system()
 ```
 
 
@@ -266,21 +284,21 @@ public void copy(const Grid<dimension> & grid, GridKey )
 ### Grid
 
 ```cpp
-protected void Grid<>()
+protected void Grid<value-parameter-0-0>()
 ```
 
 
 ### Grid
 
 ```cpp
-protected void Grid<>(Grid<> && other)
+protected void Grid<value-parameter-0-0>(Grid<dimension> && other)
 ```
 
 
 ### operator=
 
 ```cpp
-protected Grid<> & operator=(Grid<> && other)
+protected Grid<dimension> & operator=(Grid<dimension> && other)
 ```
 
 
@@ -291,6 +309,15 @@ protected Grid<> & operator=(Grid<> && other)
 
 ```cpp
 Inherits from CellArray<3U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 

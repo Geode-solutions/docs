@@ -25,7 +25,7 @@ Inherits from Output<PolygonalSurface<dimension> >
 ### PolygonalSurfaceOutput
 
 ```cpp
-protected void PolygonalSurfaceOutput<dimension>(basic_string_view filename)
+protected void PolygonalSurfaceOutput<dimension>(std::string_view filename)
 ```
 
 

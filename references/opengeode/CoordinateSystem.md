@@ -25,21 +25,21 @@ Inherits from Frame<dimension>
 ### CoordinateSystem
 
 ```cpp
-public void CoordinateSystem<>()
+public void CoordinateSystem<value-parameter-0-0>()
 ```
 
 
 ### CoordinateSystem
 
 ```cpp
-public void CoordinateSystem<>(std::array<Vector<dimension>, dimension> directions, Point<dimension> origin)
+public void CoordinateSystem<value-parameter-0-0>(std::array<Vector<dimension>, dimension> directions, Point<dimension> origin)
 ```
 
 
 ### CoordinateSystem
 
 ```cpp
-public void CoordinateSystem<>(Point<dimension> origin, const std::array<Point<dimension>, dimension> & other_points)
+public void CoordinateSystem<value-parameter-0-0>(Point<dimension> origin, const std::array<Point<dimension>, dimension> & other_points)
 ```
 
 
@@ -81,7 +81,7 @@ public Point<dimension> global_coordinates(const Point<dimension> & coordinates)
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 

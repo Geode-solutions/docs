@@ -62,7 +62,7 @@ public void set_active_only()
 ### LineRangeBase
 
 ```cpp
-protected void LineRangeBase(const Lines<> & lines)
+protected void LineRangeBase(const Lines<dimension> & lines)
 ```
 
 

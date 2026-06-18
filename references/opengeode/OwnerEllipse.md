@@ -34,14 +34,14 @@ Inherits from GenericEllipse<Point<dimension>, Frame<dimension>, dimension>
 ### OwnerEllipse
 
 ```cpp
-public void OwnerEllipse<>(Point<dimension> center, Frame<dimension> axes)
+public void OwnerEllipse<value-parameter-0-0>(Point<dimension> center, Frame<dimension> axes)
 ```
 
 
 ### OwnerEllipse
 
 ```cpp
-public void OwnerEllipse<>(const OwnerEllipse<dimension> & other)
+public void OwnerEllipse<value-parameter-0-0>(const OwnerEllipse<dimension> & other)
 ```
 
 
@@ -55,7 +55,7 @@ public OwnerEllipse<dimension> & operator=(const OwnerEllipse<dimension> & other
 ### OwnerEllipse
 
 ```cpp
-public void OwnerEllipse<>(OwnerEllipse<dimension> && other)
+public void OwnerEllipse<value-parameter-0-0>(OwnerEllipse<dimension> && other)
 ```
 
 

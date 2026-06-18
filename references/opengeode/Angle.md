@@ -19,21 +19,21 @@ const name = words.join('-');
 ### create_from_radians
 
 ```cpp
-public Angle create_from_radians(double radians)
+public static Angle create_from_radians(double radians)
 ```
 
 
 ### create_from_degrees
 
 ```cpp
-public Angle create_from_degrees(double degrees)
+public static Angle create_from_degrees(double degrees)
 ```
 
 
 ### create_from_vectors
 
 ```cpp
-public Angle create_from_vectors(const Vector3D & vector1, const Vector3D & vector2)
+public static Angle create_from_vectors(const Vector3D & vector1, const Vector3D & vector2)
 ```
 
 

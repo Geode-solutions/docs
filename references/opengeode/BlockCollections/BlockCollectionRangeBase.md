@@ -62,7 +62,7 @@ public void set_active_only()
 ### BlockCollectionRangeBase
 
 ```cpp
-protected void BlockCollectionRangeBase(const BlockCollections<> & collections)
+protected void BlockCollectionRangeBase(const BlockCollections<dimension> & collections)
 ```
 
 

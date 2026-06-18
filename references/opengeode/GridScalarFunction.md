@@ -36,7 +36,7 @@ public void ~GridScalarFunction<dimension>()
 ### create
 
 ```cpp
-public GridScalarFunction create(const Grid<dimension> & grid, basic_string_view function_name, double value)
+public static GridScalarFunction<dimension> create(const Grid<dimension> & grid, std::string_view function_name, double value)
 ```
 
 
@@ -45,7 +45,7 @@ public GridScalarFunction create(const Grid<dimension> & grid, basic_string_view
 ### find
 
 ```cpp
-public GridScalarFunction find(const Grid<dimension> & grid, basic_string_view function_name)
+public static GridScalarFunction<dimension> find(const Grid<dimension> & grid, std::string_view function_name)
 ```
 
 

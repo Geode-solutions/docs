@@ -14,13 +14,49 @@ const name = words.join('-');
 # class GenericEllipse
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class GenericEllipse
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class GenericEllipse
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class GenericEllipse
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
 
 
 ## Functions
@@ -84,5 +120,14 @@ public BoundingBox<dimension> bounding_box()
 
 
 # class GenericEllipse
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
 
 

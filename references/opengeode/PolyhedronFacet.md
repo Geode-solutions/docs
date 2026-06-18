@@ -44,13 +44,6 @@ public void PolyhedronFacet()
 ### PolyhedronFacet
 
 ```cpp
-public void PolyhedronFacet(const PolyhedronVertex & vertex)
-```
-
-
-### PolyhedronFacet
-
-```cpp
 public void PolyhedronFacet(index_t polyhedron_id_in, local_index_t facet_id_in)
 ```
 
@@ -79,7 +72,14 @@ public bool operator<(const PolyhedronFacet & other)
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
+```
+
+
+### PolyhedronFacet
+
+```cpp
+public void PolyhedronFacet(const PolyhedronVertex & vertex)
 ```
 
 

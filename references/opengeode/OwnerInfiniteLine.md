@@ -52,21 +52,21 @@ Inherits from GenericLine<Point<dimension>, dimension>
 ### OwnerInfiniteLine
 
 ```cpp
-public void OwnerInfiniteLine<>(const Vector<dimension> & direction, Point<dimension> origin)
+public void OwnerInfiniteLine<value-parameter-0-0>(const Vector<dimension> & direction, Point<dimension> origin)
 ```
 
 
 ### OwnerInfiniteLine
 
 ```cpp
-public void OwnerInfiniteLine<>(const Segment<dimension> & segment)
+public void OwnerInfiniteLine<value-parameter-0-0>(const Segment<dimension> & segment)
 ```
 
 
 ### OwnerInfiniteLine
 
 ```cpp
-public void OwnerInfiniteLine<>(const OwnerInfiniteLine<dimension> & other)
+public void OwnerInfiniteLine<value-parameter-0-0>(const OwnerInfiniteLine<dimension> & other)
 ```
 
 
@@ -80,7 +80,7 @@ public OwnerInfiniteLine<dimension> & operator=(const OwnerInfiniteLine<dimensio
 ### OwnerInfiniteLine
 
 ```cpp
-public void OwnerInfiniteLine<>(OwnerInfiniteLine<dimension> && other)
+public void OwnerInfiniteLine<value-parameter-0-0>(OwnerInfiniteLine<dimension> && other)
 ```
 
 

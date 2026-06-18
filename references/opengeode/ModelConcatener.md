@@ -36,7 +36,7 @@ public void ~ModelConcatener<Model>()
 ### concatenate
 
 ```cpp
-public ModelMapping concatenate(const Model & other_model)
+public ModelCopyMapping concatenate(const Model & other_model)
 ```
 
 

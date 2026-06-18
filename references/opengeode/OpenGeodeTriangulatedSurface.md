@@ -20,6 +20,15 @@ Inherits from TriangulatedSurface<2U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class OpenGeodeTriangulatedSurface
 
 
@@ -29,82 +38,91 @@ Inherits from TriangulatedSurface<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### OpenGeodeTriangulatedSurface
 
 ```cpp
-public void OpenGeodeTriangulatedSurface<>(const OpenGeodeTriangulatedSurface<> & )
+public void OpenGeodeTriangulatedSurface<value-parameter-0-0>(const OpenGeodeTriangulatedSurface<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public OpenGeodeTriangulatedSurface<> & operator=(const OpenGeodeTriangulatedSurface<> & )
-```
-
-
-### OpenGeodeTriangulatedSurface
-
-```cpp
-public void OpenGeodeTriangulatedSurface<>()
-```
-
-
-### OpenGeodeTriangulatedSurface
-
-```cpp
-public void OpenGeodeTriangulatedSurface<>(OpenGeodeTriangulatedSurface<> && other)
-```
-
-
-### operator=
-
-```cpp
-public OpenGeodeTriangulatedSurface<> & operator=(OpenGeodeTriangulatedSurface<> && other)
-```
-
-
-### ~OpenGeodeTriangulatedSurface
-
-```cpp
-public void ~OpenGeodeTriangulatedSurface<>()
+public OpenGeodeTriangulatedSurface<dimension> & operator=(const OpenGeodeTriangulatedSurface<dimension> & )
 ```
 
 
 ### impl_name_static
 
 ```cpp
-public NamedType impl_name_static()
+public static MeshImpl impl_name_static()
 ```
 
 
 ### impl_name
 
 ```cpp
-public NamedType impl_name()
+public MeshImpl impl_name()
 ```
 
 
 ### type_name
 
 ```cpp
-public NamedType type_name()
+public MeshType type_name()
 ```
 
 
 ### native_extension_static
 
 ```cpp
-public basic_string_view native_extension_static()
+public static std::string_view native_extension_static()
 ```
 
 
 ### native_extension
 
 ```cpp
-public basic_string_view native_extension()
+public std::string_view native_extension()
+```
+
+
+### OpenGeodeTriangulatedSurface
+
+```cpp
+public void OpenGeodeTriangulatedSurface<value-parameter-0-0>()
+```
+
+
+### OpenGeodeTriangulatedSurface
+
+```cpp
+public void OpenGeodeTriangulatedSurface<value-parameter-0-0>(OpenGeodeTriangulatedSurface<dimension> && other)
+```
+
+
+### operator=
+
+```cpp
+public OpenGeodeTriangulatedSurface<dimension> & operator=(OpenGeodeTriangulatedSurface<dimension> && other)
+```
+
+
+### ~OpenGeodeTriangulatedSurface
+
+```cpp
+public void ~OpenGeodeTriangulatedSurface<value-parameter-0-0>()
 ```
 
 
@@ -143,6 +161,15 @@ public void add_triangle(const std::array<index_t, 3> & vertices, OGTriangulated
 
 ```cpp
 Inherits from TriangulatedSurface<3U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 

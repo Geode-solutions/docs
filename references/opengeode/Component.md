@@ -75,7 +75,7 @@ public void ~Component<dimension>()
 ### component_type
 
 ```cpp
-public NamedType component_type()
+public ComponentType component_type()
 ```
 
 ### component_id

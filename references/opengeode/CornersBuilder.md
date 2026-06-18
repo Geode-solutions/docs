@@ -16,17 +16,31 @@ const name = words.join('-');
 
 ## Functions
 
+### create_corner
+
+```cpp
+protected const uuid & create_corner()
+```
+
+
+### CornersBuilder
+
+```cpp
+protected void CornersBuilder<dimension>(Corners<dimension> & corners)
+```
+
+
 ### load_corners
 
 ```cpp
-public void load_corners(basic_string_view directory)
+public void load_corners(std::string_view directory)
 ```
 
 
 ### corner_mesh_builder
 
 ```cpp
-public std::unique_ptr<PointSetBuilder<dimension> > corner_mesh_builder(const uuid & id)
+public std::unique_ptr<PointSetBuilder<dimension>> corner_mesh_builder(const uuid & id)
 ```
 
 
@@ -37,7 +51,7 @@ public std::unique_ptr<PointSetBuilder<dimension> > corner_mesh_builder(const uu
 ### set_corner_name
 
 ```cpp
-public void set_corner_name(const uuid & id, basic_string_view name)
+public void set_corner_name(const uuid & id, std::string_view name)
 ```
 
 
@@ -51,21 +65,7 @@ public void set_corner_active(const uuid & id, bool active)
 ### steal_corner_mesh
 
 ```cpp
-public std::unique_ptr<PointSet<dimension> > steal_corner_mesh(const uuid & id)
-```
-
-
-### CornersBuilder
-
-```cpp
-protected void CornersBuilder<dimension>(Corners<dimension> & corners)
-```
-
-
-### create_corner
-
-```cpp
-protected const uuid & create_corner()
+public std::unique_ptr<PointSet<dimension>> steal_corner_mesh(const uuid & id)
 ```
 
 
@@ -100,7 +100,7 @@ protected void delete_corner(const Corner<dimension> & corner)
 ### set_corner_mesh
 
 ```cpp
-protected void set_corner_mesh(const uuid & id, std::unique_ptr<PointSet<dimension> > mesh)
+protected void set_corner_mesh(const uuid & id, std::unique_ptr<PointSet<dimension>> mesh)
 ```
 
 

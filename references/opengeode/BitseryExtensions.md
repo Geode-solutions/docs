@@ -19,21 +19,21 @@ const name = words.join('-');
 ### register_functions
 
 ```cpp
-public void register_functions(function serializer, function deserializer)
+public static void register_functions(RegisterFunction serializer, RegisterFunction deserializer)
 ```
 
 
 ### register_serialize_pcontext
 
 ```cpp
-public void register_serialize_pcontext(PContext & context)
+public static void register_serialize_pcontext(PContext & context)
 ```
 
 
 ### register_deserialize_pcontext
 
 ```cpp
-public void register_deserialize_pcontext(PContext & context)
+public static void register_deserialize_pcontext(PContext & context)
 ```
 
 

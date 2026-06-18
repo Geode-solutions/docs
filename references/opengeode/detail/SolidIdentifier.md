@@ -23,17 +23,17 @@ public void SolidIdentifier(const SolidIdentifier & )
 ```
 
 
-### operator=
-
-```cpp
-public SolidIdentifier & operator=(const SolidIdentifier & )
-```
-
-
 ### SolidIdentifier
 
 ```cpp
 public void SolidIdentifier(SolidIdentifier && )
+```
+
+
+### operator=
+
+```cpp
+public SolidIdentifier & operator=(const SolidIdentifier & )
 ```
 
 
@@ -75,7 +75,7 @@ public index_t polyhedron_identifier(index_t polyhedron)
 ### identified_connected_polyhedra
 
 ```cpp
-public FixedArray identified_connected_polyhedra()
+public absl::FixedArray<std::vector<index_t>> identified_connected_polyhedra()
 ```
 
 

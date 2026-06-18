@@ -25,7 +25,7 @@ Inherits from Output<HybridSolid<dimension> >
 ### HybridSolidOutput
 
 ```cpp
-protected void HybridSolidOutput<dimension>(basic_string_view filename)
+protected void HybridSolidOutput<dimension>(std::string_view filename)
 ```
 
 

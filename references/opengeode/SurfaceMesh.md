@@ -20,6 +20,15 @@ Inherits from VertexSet, CoordinateReferenceSystemManagers<2U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### polygon_area
@@ -44,33 +53,42 @@ Inherits from VertexSet, CoordinateReferenceSystemManagers<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### SurfaceMesh
 
 ```cpp
-public void SurfaceMesh<>(const SurfaceMesh<> & )
+public void SurfaceMesh<value-parameter-0-0>(const SurfaceMesh<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public SurfaceMesh<> & operator=(const SurfaceMesh<> & )
+public SurfaceMesh<dimension> & operator=(const SurfaceMesh<dimension> & )
 ```
 
 
 ### ~SurfaceMesh
 
 ```cpp
-public void ~SurfaceMesh<>()
+public void ~SurfaceMesh<value-parameter-0-0>()
 ```
 
 
 ### create
 
 ```cpp
-public std::unique_ptr<SurfaceMesh<dimension> > create()
+public static std::unique_ptr<SurfaceMesh<dimension>> create()
 ```
 
 
@@ -79,7 +97,7 @@ public std::unique_ptr<SurfaceMesh<dimension> > create()
 ### create
 
 ```cpp
-public std::unique_ptr<SurfaceMesh<dimension> > create(const MeshImpl & impl)
+public static std::unique_ptr<SurfaceMesh<dimension>> create(const MeshImpl & impl)
 ```
 
 
@@ -90,7 +108,7 @@ public std::unique_ptr<SurfaceMesh<dimension> > create(const MeshImpl & impl)
 ### clone
 
 ```cpp
-public std::unique_ptr<SurfaceMesh<dimension> > clone()
+public std::unique_ptr<SurfaceMesh<dimension>> clone()
 ```
 
 
@@ -140,7 +158,7 @@ public index_t polygon_vertex(const PolygonVertex & polygon_vertex)
 ### polygon_vertices
 
 ```cpp
-public InlinedVector polygon_vertices(index_t polygon_id)
+public PolygonVertices polygon_vertices(index_t polygon_id)
 ```
 
 
@@ -186,7 +204,7 @@ public index_t polygon_edge_vertex(const PolygonEdge & polygon_edge, local_index
 ### polygon_edge_vertices
 
 ```cpp
-public array polygon_edge_vertices(const PolygonEdge & polygon_edge)
+public std::array<index_t, 2> polygon_edge_vertices(const PolygonEdge & polygon_edge)
 ```
 
 
@@ -241,7 +259,7 @@ public PolygonEdge previous_polygon_edge(const PolygonEdge & polygon_edge)
 ### polygon_adjacent
 
 ```cpp
-public optional polygon_adjacent(const PolygonEdge & polygon_edge)
+public std::optional<index_t> polygon_adjacent(const PolygonEdge & polygon_edge)
 ```
 
 
@@ -254,7 +272,7 @@ public optional polygon_adjacent(const PolygonEdge & polygon_edge)
 ### polygon_adjacent_edge
 
 ```cpp
-public optional polygon_adjacent_edge(const PolygonEdge & polygon_edge)
+public std::optional<PolygonEdge> polygon_adjacent_edge(const PolygonEdge & polygon_edge)
 ```
 
 
@@ -396,7 +414,7 @@ public double polygon_area(index_t polygon_id)
 ### polygon_normal
 
 ```cpp
-public typename std::enable_if<T == 3, optional<Vector3D> >::type polygon_normal(index_t polygon_id)
+public typename std::enable_if<T == 3, std::optional<Vector3D>>::type polygon_normal(index_t polygon_id)
 ```
 
 
@@ -405,7 +423,7 @@ public typename std::enable_if<T == 3, optional<Vector3D> >::type polygon_normal
 ### polygon_vertex_normal
 
 ```cpp
-public typename std::enable_if<T == 3, optional<Vector3D> >::type polygon_vertex_normal(index_t vertex_id)
+public typename std::enable_if<T == 3, std::optional<Vector3D>>::type polygon_vertex_normal(index_t vertex_id)
 ```
 
 
@@ -458,7 +476,7 @@ public const PolygonsAroundVertex & polygons_around_vertex(const PolygonVertex &
 ### polygon_edge_from_vertices
 
 ```cpp
-public optional polygon_edge_from_vertices(index_t from_vertex_id, index_t to_vertex_id)
+public std::optional<PolygonEdge> polygon_edge_from_vertices(index_t from_vertex_id, index_t to_vertex_id)
 ```
 
 
@@ -480,7 +498,7 @@ public Segment<dimension> segment(const PolygonEdge & polygon_edge)
 ### polygons_from_edge_vertices
 
 ```cpp
-public InlinedVector polygons_from_edge_vertices(Span edge_vertices)
+public PolygonsAroundEdge polygons_from_edge_vertices(absl::Span<const index_t> edge_vertices)
 ```
 
 
@@ -544,7 +562,7 @@ public BoundingBox<dimension> bounding_box()
 ### polygon_around_vertex
 
 ```cpp
-public optional polygon_around_vertex(index_t vertex_id)
+public std::optional<PolygonVertex> polygon_around_vertex(index_t vertex_id)
 ```
 
 
@@ -590,21 +608,21 @@ public void copy_edges(const SurfaceMesh<dimension> & surface_mesh, SurfaceMeshK
 ### SurfaceMesh
 
 ```cpp
-protected void SurfaceMesh<>()
+protected void SurfaceMesh<value-parameter-0-0>()
 ```
 
 
 ### SurfaceMesh
 
 ```cpp
-protected void SurfaceMesh<>(SurfaceMesh<> && other)
+protected void SurfaceMesh<value-parameter-0-0>(SurfaceMesh<dimension> && other)
 ```
 
 
 ### operator=
 
 ```cpp
-protected SurfaceMesh<> & operator=(SurfaceMesh<> && other)
+protected SurfaceMesh<dimension> & operator=(SurfaceMesh<dimension> && other)
 ```
 
 
@@ -615,6 +633,15 @@ protected SurfaceMesh<> & operator=(SurfaceMesh<> && other)
 
 ```cpp
 Inherits from VertexSet, CoordinateReferenceSystemManagers<3U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 

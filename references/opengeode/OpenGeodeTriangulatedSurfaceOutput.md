@@ -25,7 +25,7 @@ Inherits from TriangulatedSurfaceOutput<dimension>
 ### OpenGeodeTriangulatedSurfaceOutput
 
 ```cpp
-public void OpenGeodeTriangulatedSurfaceOutput<dimension>(basic_string_view filename)
+public void OpenGeodeTriangulatedSurfaceOutput<dimension>(std::string_view filename)
 ```
 
 
@@ -39,7 +39,7 @@ public bool is_saveable(const TriangulatedSurface<dimension> & mesh)
 ### write
 
 ```cpp
-public vector write(const TriangulatedSurface<dimension> & mesh)
+public std::vector<std::string> write(const TriangulatedSurface<dimension> & mesh)
 ```
 
 

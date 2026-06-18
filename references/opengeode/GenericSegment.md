@@ -14,19 +14,73 @@ const name = words.join('-');
 # class GenericSegment
 
 
-# class GenericSegment
+## Members
 
+```cpp
+public static const auto dim
 
-# class GenericSegment
+```
 
-
-# class GenericSegment
-
-
-# class GenericSegment
 
 
 # class GenericSegment
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
+# class GenericSegment
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
+# class GenericSegment
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
+# class GenericSegment
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
+# class GenericSegment
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
 
 
 ## Functions
@@ -125,12 +179,21 @@ public bool is_degenerated()
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 
 
 
 # class GenericSegment
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
 
 

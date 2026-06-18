@@ -53,14 +53,14 @@ public void set_direction(local_index_t index, Vector<dimension> direction)
 ### inverse
 
 ```cpp
-public Frame inverse()
+public Frame<dimension> inverse()
 ```
 
 
 ### operator+
 
 ```cpp
-public Frame operator+(const Frame<dimension> & rhs)
+public Frame<dimension> operator+(const Frame<dimension> & rhs)
 ```
 
 
@@ -74,14 +74,14 @@ public Vector<dimension> operator*(const Vector<dimension> & rhs)
 ### rescale
 
 ```cpp
-public Frame rescale(double length)
+public Frame<dimension> rescale(double length)
 ```
 
 
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 

@@ -24,6 +24,15 @@ Inherits from PointSetBuilder<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### OpenGeodePointSetBuilder
@@ -58,6 +67,15 @@ Inherits from PointSetBuilder<2U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class OpenGeodePointSetBuilder
 
 
@@ -67,11 +85,29 @@ Inherits from PointSetBuilder<1U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class OpenGeodePointSetBuilder
 
 
 ```cpp
 Inherits from PointSetBuilder<3U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 

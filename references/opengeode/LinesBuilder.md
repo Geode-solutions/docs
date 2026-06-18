@@ -16,17 +16,31 @@ const name = words.join('-');
 
 ## Functions
 
+### create_line
+
+```cpp
+protected const uuid & create_line()
+```
+
+
+### LinesBuilder
+
+```cpp
+protected void LinesBuilder<dimension>(Lines<dimension> & lines)
+```
+
+
 ### load_lines
 
 ```cpp
-public void load_lines(basic_string_view directory)
+public void load_lines(std::string_view directory)
 ```
 
 
 ### line_mesh_builder
 
 ```cpp
-public std::unique_ptr<EdgedCurveBuilder<dimension> > line_mesh_builder(const uuid & id)
+public std::unique_ptr<EdgedCurveBuilder<dimension>> line_mesh_builder(const uuid & id)
 ```
 
 
@@ -37,7 +51,7 @@ public std::unique_ptr<EdgedCurveBuilder<dimension> > line_mesh_builder(const uu
 ### set_line_name
 
 ```cpp
-public void set_line_name(const uuid & id, basic_string_view name)
+public void set_line_name(const uuid & id, std::string_view name)
 ```
 
 
@@ -51,21 +65,7 @@ public void set_line_active(const uuid & id, bool active)
 ### steal_line_mesh
 
 ```cpp
-public std::unique_ptr<EdgedCurve<dimension> > steal_line_mesh(const uuid & id)
-```
-
-
-### LinesBuilder
-
-```cpp
-protected void LinesBuilder<dimension>(Lines<dimension> & lines)
-```
-
-
-### create_line
-
-```cpp
-protected const uuid & create_line()
+public std::unique_ptr<EdgedCurve<dimension>> steal_line_mesh(const uuid & id)
 ```
 
 
@@ -100,7 +100,7 @@ protected void delete_line(const Line<dimension> & line)
 ### set_line_mesh
 
 ```cpp
-protected void set_line_mesh(const uuid & id, std::unique_ptr<EdgedCurve<dimension> > mesh)
+protected void set_line_mesh(const uuid & id, std::unique_ptr<EdgedCurve<dimension>> mesh)
 ```
 
 

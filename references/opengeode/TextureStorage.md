@@ -28,21 +28,21 @@ const name = words.join('-');
 ### TextureStorage
 
 ```cpp
-public void TextureStorage<>()
+public void TextureStorage<value-parameter-0-0>()
 ```
 
 
 ### TextureStorage
 
 ```cpp
-public void TextureStorage<>(TextureStorage<> && other)
+public void TextureStorage<value-parameter-0-0>(TextureStorage<dimension> && other)
 ```
 
 
 ### ~TextureStorage
 
 ```cpp
-public void ~TextureStorage<>()
+public void ~TextureStorage<value-parameter-0-0>()
 ```
 
 
@@ -56,14 +56,14 @@ public index_t nb_textures(TextureManagerKey )
 ### find_or_create_texture
 
 ```cpp
-public Texture<dimension> & find_or_create_texture(AttributeManager & manager, basic_string_view name, TextureManagerKey )
+public Texture<dimension> & find_or_create_texture(AttributeManager & manager, std::string_view name, TextureManagerKey )
 ```
 
 
 ### find_texture
 
 ```cpp
-public const Texture<dimension> & find_texture(basic_string_view name, TextureManagerKey )
+public const Texture<dimension> & find_texture(std::string_view name, TextureManagerKey )
 ```
 
 
@@ -77,14 +77,14 @@ public absl::FixedArray<std::string_view> texture_names(TextureManagerKey )
 ### texture_exists
 
 ```cpp
-public bool texture_exists(basic_string_view name, TextureManagerKey )
+public bool texture_exists(std::string_view name, TextureManagerKey )
 ```
 
 
 ### delete_texture
 
 ```cpp
-public void delete_texture(basic_string_view name, TextureManagerKey )
+public void delete_texture(std::string_view name, TextureManagerKey )
 ```
 
 

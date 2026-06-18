@@ -29,7 +29,7 @@ Inherits from ReadOnlyAttribute<_Bool>
 ### VariableAttribute
 
 ```cpp
-public void VariableAttribute(bool default_value, AttributeProperties properties, PassKey )
+public void VariableAttribute(bool default_value, AttributeProperties properties, AttributeBase::AttributeKey )
 ```
 
 
@@ -71,14 +71,14 @@ public index_t size()
 ### compute_value
 
 ```cpp
-public void compute_value(index_t from_element, index_t to_element, PassKey )
+public void compute_value(index_t from_element, index_t to_element, AttributeBase::AttributeKey )
 ```
 
 
 ### compute_value
 
 ```cpp
-public void compute_value(const AttributeLinearInterpolation & interpolation, index_t to_element, PassKey )
+public void compute_value(const AttributeLinearInterpolation & interpolation, index_t to_element, AttributeBase::AttributeKey )
 ```
 
 
@@ -106,77 +106,77 @@ protected void serialize(Archive & serializer)
 ### resize
 
 ```cpp
-protected void resize(index_t size, PassKey )
+protected void resize(index_t size, AttributeBase::AttributeKey )
 ```
 
 
 ### reserve
 
 ```cpp
-protected void reserve(index_t capacity, PassKey )
+protected void reserve(index_t capacity, AttributeBase::AttributeKey )
 ```
 
 
 ### delete_elements
 
 ```cpp
-protected void delete_elements(const std::vector<bool> & to_delete, PassKey )
+protected void delete_elements(const std::vector<bool> & to_delete, AttributeBase::AttributeKey )
 ```
 
 
 ### permute_elements
 
 ```cpp
-protected void permute_elements(Span permutation, PassKey )
+protected void permute_elements(absl::Span<const index_t> permutation, AttributeBase::AttributeKey )
 ```
 
 
 ### clone
 
 ```cpp
-protected shared_ptr clone(PassKey )
+protected std::shared_ptr<AttributeBase> clone(AttributeBase::AttributeKey )
 ```
 
 
 ### copy
 
 ```cpp
-protected void copy(const AttributeBase & attribute, index_t nb_elements, PassKey )
+protected void copy(const AttributeBase & attribute, index_t nb_elements, AttributeBase::AttributeKey )
 ```
 
 
 ### extract
 
 ```cpp
-protected shared_ptr extract(Span old2new, index_t nb_elements, PassKey )
+protected std::shared_ptr<AttributeBase> extract(absl::Span<const index_t> old2new, index_t nb_elements, AttributeBase::AttributeKey )
 ```
 
 
 ### extract
 
 ```cpp
-protected shared_ptr extract(const GenericMapping<index_t> & old2new_mapping, index_t nb_elements, PassKey )
+protected std::shared_ptr<AttributeBase> extract(const GenericMapping<index_t> & old2new_mapping, index_t nb_elements, AttributeBase::AttributeKey )
 ```
 
 
 ### import
 
 ```cpp
-protected void import(Span old2new, const std::shared_ptr<AttributeBase> & from, PassKey )
+protected void import(absl::Span<const index_t> old2new, const std::shared_ptr<AttributeBase> & from, AttributeBase::AttributeKey )
 ```
 
 
 ### import
 
 ```cpp
-protected void import(const GenericMapping<index_t> & old2new_mapping, const std::shared_ptr<AttributeBase> & from, PassKey )
+protected void import(const GenericMapping<index_t> & old2new_mapping, const std::shared_ptr<AttributeBase> & from, AttributeBase::AttributeKey )
 ```
 
 
 ### import
 
 ```cpp
-protected void import(Span old2new, const ReadOnlyAttribute<bool> & from)
+protected void import(absl::Span<const index_t> old2new, const ReadOnlyAttribute<bool> & from)
 ```
 
 
@@ -207,7 +207,7 @@ Inherits from ReadOnlyAttribute<T>
 ### VariableAttribute
 
 ```cpp
-public void VariableAttribute<T>(T default_value, AttributeProperties properties, PassKey )
+public void VariableAttribute<T>(T default_value, AttributeProperties properties, AttributeBase::AttributeKey )
 ```
 
 
@@ -249,14 +249,14 @@ public index_t size()
 ### compute_value
 
 ```cpp
-public void compute_value(index_t from_element, index_t to_element, PassKey )
+public void compute_value(index_t from_element, index_t to_element, AttributeBase::AttributeKey )
 ```
 
 
 ### compute_value
 
 ```cpp
-public void compute_value(const AttributeLinearInterpolation & interpolation, index_t to_element, PassKey )
+public void compute_value(const AttributeLinearInterpolation & interpolation, index_t to_element, AttributeBase::AttributeKey )
 ```
 
 
@@ -284,77 +284,77 @@ protected void serialize(Archive & serializer)
 ### resize
 
 ```cpp
-protected void resize(index_t size, PassKey )
+protected void resize(index_t size, AttributeBase::AttributeKey )
 ```
 
 
 ### reserve
 
 ```cpp
-protected void reserve(index_t capacity, PassKey )
+protected void reserve(index_t capacity, AttributeBase::AttributeKey )
 ```
 
 
 ### delete_elements
 
 ```cpp
-protected void delete_elements(const std::vector<bool> & to_delete, PassKey )
+protected void delete_elements(const std::vector<bool> & to_delete, AttributeBase::AttributeKey )
 ```
 
 
 ### permute_elements
 
 ```cpp
-protected void permute_elements(Span permutation, PassKey )
+protected void permute_elements(absl::Span<const index_t> permutation, AttributeBase::AttributeKey )
 ```
 
 
 ### clone
 
 ```cpp
-protected shared_ptr clone(PassKey )
+protected std::shared_ptr<AttributeBase> clone(AttributeBase::AttributeKey )
 ```
 
 
 ### copy
 
 ```cpp
-protected void copy(const AttributeBase & attribute, index_t nb_elements, PassKey )
+protected void copy(const AttributeBase & attribute, index_t nb_elements, AttributeBase::AttributeKey )
 ```
 
 
 ### extract
 
 ```cpp
-protected shared_ptr extract(Span old2new, index_t nb_elements, PassKey )
+protected std::shared_ptr<AttributeBase> extract(absl::Span<const index_t> old2new, index_t nb_elements, AttributeBase::AttributeKey )
 ```
 
 
 ### extract
 
 ```cpp
-protected shared_ptr extract(const GenericMapping<index_t> & old2new_mapping, index_t nb_elements, PassKey )
+protected std::shared_ptr<AttributeBase> extract(const GenericMapping<index_t> & old2new_mapping, index_t nb_elements, AttributeBase::AttributeKey )
 ```
 
 
 ### import
 
 ```cpp
-protected void import(Span old2new, const std::shared_ptr<AttributeBase> & from, PassKey )
+protected void import(absl::Span<const index_t> old2new, const std::shared_ptr<AttributeBase> & from, AttributeBase::AttributeKey )
 ```
 
 
 ### import
 
 ```cpp
-protected void import(const GenericMapping<index_t> & old2new_mapping, const std::shared_ptr<AttributeBase> & from, PassKey )
+protected void import(const GenericMapping<index_t> & old2new_mapping, const std::shared_ptr<AttributeBase> & from, AttributeBase::AttributeKey )
 ```
 
 
 ### import
 
 ```cpp
-protected void import(Span old2new, const ReadOnlyAttribute<T> & from)
+protected void import(absl::Span<const index_t> old2new, const ReadOnlyAttribute<T> & from)
 ```
 
 

@@ -14,6 +14,15 @@ const name = words.join('-');
 # class CellArray
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### CellArray
@@ -23,17 +32,16 @@ public void CellArray<dimension>(const CellArray<dimension> & )
 ```
 
 
+### cell_index
+
+```cpp
+public index_t cell_index(const CellIndices & index)
+```
+
 ### operator=
 
 ```cpp
 public CellArray<dimension> & operator=(const CellArray<dimension> & )
-```
-
-
-### ~CellArray
-
-```cpp
-public void ~CellArray<dimension>()
 ```
 
 
@@ -47,7 +55,14 @@ public local_index_t nb_cell_neighbors()
 ### nb_cell_neighbors_static
 
 ```cpp
-public local_index_t nb_cell_neighbors_static()
+public static local_index_t nb_cell_neighbors_static()
+```
+
+
+### ~CellArray
+
+```cpp
+public void ~CellArray<dimension>()
 ```
 
 
@@ -64,12 +79,6 @@ public index_t nb_cells()
 public index_t nb_cells_in_direction(index_t direction)
 ```
 
-
-### cell_index
-
-```cpp
-public index_t cell_index(const CellIndices & index)
-```
 
 ### cell_indices
 
@@ -145,9 +154,36 @@ protected void copy(const CellArray<dimension> & array)
 # class CellArray
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class CellArray
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class CellArray
+
+
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
 
 

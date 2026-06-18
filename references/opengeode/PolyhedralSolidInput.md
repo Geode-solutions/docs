@@ -25,7 +25,7 @@ Inherits from Input<std::unique_ptr<PolyhedralSolid<dimension> >, MeshImpl>
 ### PolyhedralSolidInput
 
 ```cpp
-protected void PolyhedralSolidInput<dimension>(basic_string_view filename)
+protected void PolyhedralSolidInput<dimension>(std::string_view filename)
 ```
 
 

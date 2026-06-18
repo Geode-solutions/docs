@@ -60,21 +60,21 @@ public void ~RayTracing2D()
 ### closest_edge
 
 ```cpp
-public optional closest_edge()
+public std::optional<EdgeDistance> closest_edge()
 ```
 
 
 ### closest_edges
 
 ```cpp
-public optional closest_edges(index_t nb_closest_wanted)
+public std::optional<absl::FixedArray<EdgeDistance>> closest_edges(index_t nb_closest_wanted)
 ```
 
 
 ### all_intersections
 
 ```cpp
-public vector all_intersections()
+public std::vector<EdgeDistance> all_intersections()
 ```
 
 

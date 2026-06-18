@@ -19,24 +19,10 @@ const name = words.join('-');
 
 ## Functions
 
-### load_block_collections
+### create_block_collection
 
 ```cpp
-public void load_block_collections(basic_string_view directory)
-```
-
-
-### set_block_collection_name
-
-```cpp
-public void set_block_collection_name(const uuid & id, basic_string_view name)
-```
-
-
-### set_block_collection_active
-
-```cpp
-public void set_block_collection_active(const uuid & id, bool active)
+protected const uuid & create_block_collection()
 ```
 
 
@@ -47,10 +33,24 @@ protected void BlockCollectionsBuilder<dimension>(BlockCollections<dimension> & 
 ```
 
 
-### create_block_collection
+### load_block_collections
 
 ```cpp
-protected const uuid & create_block_collection()
+public void load_block_collections(std::string_view directory)
+```
+
+
+### set_block_collection_name
+
+```cpp
+public void set_block_collection_name(const uuid & id, std::string_view name)
+```
+
+
+### set_block_collection_active
+
+```cpp
+public void set_block_collection_active(const uuid & id, bool active)
 ```
 
 

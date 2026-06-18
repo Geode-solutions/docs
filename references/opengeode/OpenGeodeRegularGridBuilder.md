@@ -26,6 +26,15 @@ Inherits from RegularGridBuilder<2>
 
 
 
+## Members
+
+```cpp
+public static const index_t dim
+
+```
+
+
+
 ## Functions
 
 ### OpenGeodeRegularGridBuilder
@@ -60,6 +69,15 @@ public void OpenGeodeRegularGridBuilder(OpenGeodeRegularGridBuilder<2> && )
 
 ```cpp
 Inherits from RegularGridBuilder<3>
+```
+
+
+
+## Members
+
+```cpp
+public static const index_t dim
+
 ```
 
 

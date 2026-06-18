@@ -20,19 +20,28 @@ Inherits from SolidMeshBuilder<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
+
+### create
+
+```cpp
+public static std::unique_ptr<TetrahedralSolidBuilder<dimension>> create(TetrahedralSolid<dimension> & mesh)
+```
+
 
 ### TetrahedralSolidBuilder
 
 ```cpp
 public void TetrahedralSolidBuilder<dimension>(TetrahedralSolidBuilder<dimension> && )
-```
-
-
-### create
-
-```cpp
-public std::unique_ptr<TetrahedralSolidBuilder<dimension> > create(TetrahedralSolid<dimension> & mesh)
 ```
 
 
@@ -94,6 +103,15 @@ protected void TetrahedralSolidBuilder<dimension>(TetrahedralSolid<dimension> & 
 
 ```cpp
 Inherits from SolidMeshBuilder<3U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 

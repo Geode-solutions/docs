@@ -25,7 +25,7 @@ Inherits from HybridSolidInput<dimension>
 ### OpenGeodeHybridSolidInput
 
 ```cpp
-public void OpenGeodeHybridSolidInput<dimension>(basic_string_view filename)
+public void OpenGeodeHybridSolidInput<dimension>(std::string_view filename)
 ```
 
 
@@ -36,10 +36,10 @@ public AdditionalFiles additional_files()
 ```
 
 
-### read
+### is_loadable
 
 ```cpp
-public std::unique_ptr<HybridSolid<dimension> > read(const MeshImpl & impl)
+public Percentage is_loadable()
 ```
 
 
@@ -50,10 +50,10 @@ public index_t object_priority()
 ```
 
 
-### is_loadable
+### read
 
 ```cpp
-public Percentage is_loadable()
+public std::unique_ptr<HybridSolid<dimension>> read(const MeshImpl & impl)
 ```
 
 

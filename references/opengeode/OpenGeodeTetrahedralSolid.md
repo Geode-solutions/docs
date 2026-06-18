@@ -20,82 +20,91 @@ Inherits from TetrahedralSolid<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### OpenGeodeTetrahedralSolid
 
 ```cpp
-public void OpenGeodeTetrahedralSolid<>(const OpenGeodeTetrahedralSolid<> & )
+public void OpenGeodeTetrahedralSolid<value-parameter-0-0>(const OpenGeodeTetrahedralSolid<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public OpenGeodeTetrahedralSolid<> & operator=(const OpenGeodeTetrahedralSolid<> & )
-```
-
-
-### OpenGeodeTetrahedralSolid
-
-```cpp
-public void OpenGeodeTetrahedralSolid<>()
-```
-
-
-### OpenGeodeTetrahedralSolid
-
-```cpp
-public void OpenGeodeTetrahedralSolid<>(OpenGeodeTetrahedralSolid<> && other)
-```
-
-
-### operator=
-
-```cpp
-public OpenGeodeTetrahedralSolid<> & operator=(OpenGeodeTetrahedralSolid<> && other)
-```
-
-
-### ~OpenGeodeTetrahedralSolid
-
-```cpp
-public void ~OpenGeodeTetrahedralSolid<>()
+public OpenGeodeTetrahedralSolid<dimension> & operator=(const OpenGeodeTetrahedralSolid<dimension> & )
 ```
 
 
 ### impl_name_static
 
 ```cpp
-public NamedType impl_name_static()
+public static MeshImpl impl_name_static()
 ```
 
 
 ### impl_name
 
 ```cpp
-public NamedType impl_name()
+public MeshImpl impl_name()
 ```
 
 
 ### type_name
 
 ```cpp
-public NamedType type_name()
+public MeshType type_name()
 ```
 
 
 ### native_extension_static
 
 ```cpp
-public basic_string_view native_extension_static()
+public static std::string_view native_extension_static()
 ```
 
 
 ### native_extension
 
 ```cpp
-public basic_string_view native_extension()
+public std::string_view native_extension()
+```
+
+
+### OpenGeodeTetrahedralSolid
+
+```cpp
+public void OpenGeodeTetrahedralSolid<value-parameter-0-0>()
+```
+
+
+### OpenGeodeTetrahedralSolid
+
+```cpp
+public void OpenGeodeTetrahedralSolid<value-parameter-0-0>(OpenGeodeTetrahedralSolid<dimension> && other)
+```
+
+
+### operator=
+
+```cpp
+public OpenGeodeTetrahedralSolid<dimension> & operator=(OpenGeodeTetrahedralSolid<dimension> && other)
+```
+
+
+### ~OpenGeodeTetrahedralSolid
+
+```cpp
+public void ~OpenGeodeTetrahedralSolid<value-parameter-0-0>()
 ```
 
 
@@ -134,6 +143,15 @@ public void add_tetrahedron(const std::array<index_t, 4> & vertices, OGTetrahedr
 
 ```cpp
 Inherits from TetrahedralSolid<3U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 

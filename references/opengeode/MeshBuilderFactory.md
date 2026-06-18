@@ -25,14 +25,14 @@ Inherits from Factory<MeshImpl, VertexSetBuilder, VertexSet &, MeshBuilderFactor
 ### register_mesh_builder
 
 ```cpp
-public void register_mesh_builder(NamedType key)
+public static void register_mesh_builder(MeshImpl key)
 ```
 
 
 ### create_mesh_builder
 
 ```cpp
-public std::unique_ptr<MeshBuilder> create_mesh_builder(Mesh & mesh)
+public static std::unique_ptr<MeshBuilder> create_mesh_builder(Mesh & mesh)
 ```
 
 

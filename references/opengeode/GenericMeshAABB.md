@@ -25,14 +25,14 @@ Inherits from GenericMeshAABB<SurfaceMesh<dimension> >
 ### GenericMeshAABB
 
 ```cpp
-public void GenericMeshAABB<TriangulatedSurface<> >(const TriangulatedSurface<dimension> & mesh)
+public void GenericMeshAABB<TriangulatedSurface<dimension> >(const TriangulatedSurface<dimension> & mesh)
 ```
 
 
 ### closest_element
 
 ```cpp
-public tuple closest_element(const Point<dimension> & query)
+public std::tuple<index_t, double> closest_element(const Point<dimension> & query)
 ```
 
 
@@ -46,7 +46,7 @@ public tuple closest_element(const Point<dimension> & query)
 ### GenericMeshAABB
 
 ```cpp
-public void GenericMeshAABB<SolidMesh<> >(const SolidMesh<dimension> & mesh)
+public void GenericMeshAABB<SolidMesh<dimension> >(const SolidMesh<dimension> & mesh)
 ```
 
 
@@ -73,14 +73,14 @@ Inherits from GenericMeshAABB<SolidMesh<dimension> >
 ### GenericMeshAABB
 
 ```cpp
-public void GenericMeshAABB<TetrahedralSolid<> >(const TetrahedralSolid<dimension> & mesh)
+public void GenericMeshAABB<TetrahedralSolid<dimension> >(const TetrahedralSolid<dimension> & mesh)
 ```
 
 
 ### closest_element
 
 ```cpp
-public tuple closest_element(const Point<dimension> & query)
+public std::tuple<index_t, double> closest_element(const Point<dimension> & query)
 ```
 
 
@@ -94,14 +94,14 @@ public tuple closest_element(const Point<dimension> & query)
 ### GenericMeshAABB
 
 ```cpp
-public void GenericMeshAABB<EdgedCurve<> >(const EdgedCurve<dimension> & mesh)
+public void GenericMeshAABB<EdgedCurve<dimension> >(const EdgedCurve<dimension> & mesh)
 ```
 
 
 ### closest_element
 
 ```cpp
-public tuple closest_element(const Point<dimension> & query)
+public std::tuple<index_t, double> closest_element(const Point<dimension> & query)
 ```
 
 
@@ -124,7 +124,7 @@ protected const AABBTree<dimension> & elements_aabb()
 ### GenericMeshAABB
 
 ```cpp
-public void GenericMeshAABB<SurfaceMesh<> >(const SurfaceMesh<dimension> & mesh)
+public void GenericMeshAABB<SurfaceMesh<dimension> >(const SurfaceMesh<dimension> & mesh)
 ```
 
 

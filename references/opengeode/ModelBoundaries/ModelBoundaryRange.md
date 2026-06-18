@@ -25,7 +25,7 @@ Inherits from ModelBoundaryRangeBase
 ### ModelBoundaryRange
 
 ```cpp
-public void ModelBoundaryRange(const ModelBoundaries<> & boundaries)
+public void ModelBoundaryRange(const ModelBoundaries<dimension> & boundaries)
 ```
 
 

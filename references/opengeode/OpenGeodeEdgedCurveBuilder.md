@@ -24,6 +24,15 @@ Inherits from EdgedCurveBuilder<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### OpenGeodeEdgedCurveBuilder
@@ -58,6 +67,15 @@ Inherits from EdgedCurveBuilder<3U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class OpenGeodeEdgedCurveBuilder
 
 
@@ -67,11 +85,29 @@ Inherits from EdgedCurveBuilder<1U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class OpenGeodeEdgedCurveBuilder
 
 
 ```cpp
 Inherits from EdgedCurveBuilder<2U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 

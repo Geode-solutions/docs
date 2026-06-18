@@ -22,20 +22,6 @@ Inherits from BRepOutput
 
 ## Functions
 
-### OpenGeodeBRepOutput
-
-```cpp
-public void OpenGeodeBRepOutput(basic_string_view filename)
-```
-
-
-### extension
-
-```cpp
-public basic_string_view extension()
-```
-
-
 ### archive_brep_files
 
 ```cpp
@@ -43,17 +29,31 @@ public void archive_brep_files(const ZipFile & zip_writer)
 ```
 
 
+### OpenGeodeBRepOutput
+
+```cpp
+public void OpenGeodeBRepOutput(std::string_view filename)
+```
+
+
+### extension
+
+```cpp
+public static std::string_view extension()
+```
+
+
 ### save_brep_files
 
 ```cpp
-public void save_brep_files(const BRep & brep, basic_string_view directory)
+public void save_brep_files(const BRep & brep, std::string_view directory)
 ```
 
 
 ### write
 
 ```cpp
-public vector write(const BRep & brep)
+public std::vector<std::string> write(const BRep & brep)
 ```
 
 

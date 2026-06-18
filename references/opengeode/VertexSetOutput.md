@@ -25,7 +25,7 @@ Inherits from Output<VertexSet>
 ### VertexSetOutput
 
 ```cpp
-protected void VertexSetOutput(basic_string_view filename)
+protected void VertexSetOutput(std::string_view filename)
 ```
 
 

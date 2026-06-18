@@ -19,35 +19,35 @@ const name = words.join('-');
 ### SimplicialModelCreator
 
 ```cpp
-public void SimplicialModelCreator<Model>(Model & model, std::vector<Point<dimension> > unique_points)
+public void SimplicialModelCreator<Model>(Model & model, std::vector<Point<dimension>> unique_points)
 ```
 
 
 ### create_corners
 
 ```cpp
-public vector create_corners(Span definitions)
+public std::vector<uuid> create_corners(absl::Span<const CornerDefinition> definitions)
 ```
 
 
 ### create_lines
 
 ```cpp
-public vector create_lines(Span corners, Span definitions)
+public std::vector<uuid> create_lines(absl::Span<const uuid> corners, absl::Span<const LineDefinition> definitions)
 ```
 
 
 ### create_surfaces
 
 ```cpp
-public vector create_surfaces(Span lines, Span definitions)
+public std::vector<uuid> create_surfaces(absl::Span<const uuid> lines, absl::Span<const SurfaceDefinition> definitions)
 ```
 
 
 ### create_surfaces
 
 ```cpp
-public vector create_surfaces(Span corners, Span lines, Span definitions)
+public std::vector<uuid> create_surfaces(absl::Span<const uuid> corners, absl::Span<const uuid> lines, absl::Span<const SurfaceDefinition> definitions)
 ```
 
 

@@ -20,11 +20,29 @@ Inherits from VertexSetBuilder, CoordinateReferenceSystemManagersBuilder<3U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class PointSetBuilder
 
 
 ```cpp
 Inherits from VertexSetBuilder, CoordinateReferenceSystemManagersBuilder<2U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 
@@ -42,19 +60,21 @@ Inherits from VertexSetBuilder, CoordinateReferenceSystemManagersBuilder<dimensi
 
 
 
-## Functions
-
-### PointSetBuilder
+## Members
 
 ```cpp
-public void PointSetBuilder<dimension>(PointSetBuilder<dimension> && )
+public static const auto dim
+
 ```
 
+
+
+## Functions
 
 ### create
 
 ```cpp
-public std::unique_ptr<PointSetBuilder<dimension> > create(PointSet<dimension> & mesh)
+public static std::unique_ptr<PointSetBuilder<dimension>> create(PointSet<dimension> & mesh)
 ```
 
 
@@ -74,6 +94,13 @@ public index_t create_point(Point<dimension> point)
 **point** [in] The point to create
 
 **return** the index of the created point
+
+### PointSetBuilder
+
+```cpp
+public void PointSetBuilder<dimension>(PointSetBuilder<dimension> && )
+```
+
 
 ### copy
 
@@ -96,6 +123,15 @@ protected void PointSetBuilder<dimension>(PointSet<dimension> & mesh)
 
 ```cpp
 Inherits from VertexSetBuilder, CoordinateReferenceSystemManagersBuilder<1U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 

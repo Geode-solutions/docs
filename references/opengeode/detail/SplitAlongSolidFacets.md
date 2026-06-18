@@ -33,14 +33,14 @@ public void ~SplitAlongSolidFacets()
 ### split_solid_along_facets
 
 ```cpp
-public MeshesElementsMapping split_solid_along_facets(Span facets_list)
+public MeshesElementsMapping split_solid_along_facets(absl::Span<const PolyhedronFacet> facets_list)
 ```
 
 
 ### remove_adjacencies_along_facets
 
 ```cpp
-public SolidInfo remove_adjacencies_along_facets(Span facets_list)
+public SolidInfo remove_adjacencies_along_facets(absl::Span<const PolyhedronFacet> facets_list)
 ```
 
 

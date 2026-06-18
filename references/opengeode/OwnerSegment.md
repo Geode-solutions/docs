@@ -52,14 +52,14 @@ Inherits from GenericSegment<Point<dimension>, dimension>
 ### OwnerSegment
 
 ```cpp
-public void OwnerSegment<>(Point<dimension> point0, Point<dimension> point1)
+public void OwnerSegment<value-parameter-0-0>(Point<dimension> point0, Point<dimension> point1)
 ```
 
 
 ### OwnerSegment
 
 ```cpp
-public void OwnerSegment<>(const OwnerSegment<dimension> & other)
+public void OwnerSegment<value-parameter-0-0>(const OwnerSegment<dimension> & other)
 ```
 
 
@@ -73,7 +73,7 @@ public OwnerSegment<dimension> & operator=(const OwnerSegment<dimension> & other
 ### OwnerSegment
 
 ```cpp
-public void OwnerSegment<>(OwnerSegment<dimension> && other)
+public void OwnerSegment<value-parameter-0-0>(OwnerSegment<dimension> && other)
 ```
 
 

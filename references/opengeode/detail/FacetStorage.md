@@ -40,7 +40,7 @@ protected AttributeManager & facet_attribute_manager()
 ### find_facet
 
 ```cpp
-protected optional find_facet(TypedVertexCycle vertices)
+protected std::optional<index_t> find_facet(TypedVertexCycle vertices)
 ```
 
 
@@ -61,28 +61,28 @@ protected index_t remove_facet(TypedVertexCycle vertices)
 ### clean_facets
 
 ```cpp
-protected vector clean_facets()
+protected std::vector<index_t> clean_facets()
 ```
 
 
 ### delete_facets
 
 ```cpp
-protected vector delete_facets(const std::vector<bool> & to_delete)
+protected std::vector<index_t> delete_facets(const std::vector<bool> & to_delete)
 ```
 
 
 ### update_facet_vertex
 
 ```cpp
-protected BijectiveMapping update_facet_vertex(VertexContainer facet_vertices, const index_t facet_vertex_id, const index_t new_vertex_id)
+protected geode::BijectiveMapping<index_t> update_facet_vertex(VertexContainer facet_vertices, const index_t facet_vertex_id, const index_t new_vertex_id)
 ```
 
 
 ### update_facet_vertices
 
 ```cpp
-protected vector update_facet_vertices(Span old2new)
+protected std::vector<index_t> update_facet_vertices(absl::Span<const index_t> old2new)
 ```
 
 
@@ -96,7 +96,7 @@ protected const VertexContainer & get_facet_vertices(index_t facet_id)
 ### attribute_name
 
 ```cpp
-protected basic_string_view attribute_name()
+protected static std::string_view attribute_name()
 ```
 
 

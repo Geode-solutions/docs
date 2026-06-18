@@ -25,7 +25,7 @@ Inherits from GraphOutput
 ### OpenGeodeGraphOutput
 
 ```cpp
-public void OpenGeodeGraphOutput(basic_string_view filename)
+public void OpenGeodeGraphOutput(std::string_view filename)
 ```
 
 
@@ -39,7 +39,7 @@ public bool is_saveable(const Graph & mesh)
 ### write
 
 ```cpp
-public vector write(const Graph & mesh)
+public std::vector<std::string> write(const Graph & mesh)
 ```
 
 

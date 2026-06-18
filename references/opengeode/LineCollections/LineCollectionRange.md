@@ -25,7 +25,7 @@ Inherits from LineCollectionRangeBase
 ### LineCollectionRange
 
 ```cpp
-public void LineCollectionRange(const LineCollections<> & boundaries)
+public void LineCollectionRange(const LineCollections<dimension> & boundaries)
 ```
 
 

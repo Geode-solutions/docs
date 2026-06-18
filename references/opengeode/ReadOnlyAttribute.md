@@ -26,16 +26,10 @@ Inherits from AttributeBase
 
 ## Functions
 
-### value
-
-```cpp
-public const T & value(index_t element)
-```
-
 ### type
 
 ```cpp
-public basic_string_view type()
+public std::string_view type()
 ```
 
 
@@ -73,6 +67,12 @@ public local_index_t nb_items()
 protected void ReadOnlyAttribute<T>(AttributeProperties properties)
 ```
 
+
+### value
+
+```cpp
+public const T & value(index_t element)
+```
 
 
 

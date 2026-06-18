@@ -24,21 +24,30 @@ Inherits from Topology, Corners2D, Lines2D, Surfaces2D, ModelBoundaries2D, Corne
 
 
 
+## Members
+
+```cpp
+public static const index_t dim
+
+```
+
+
+
 ## Records
 
 BoundaryCornerRange
 
 BoundaryLineRange
 
+EmbeddingSurfaceRange
+
 IncidentLineRange
 
 IncidentSurfaceRange
 
-InternalLineRange
-
 InternalCornerRange
 
-EmbeddingSurfaceRange
+InternalLineRange
 
 ItemCornerRange
 
@@ -176,6 +185,20 @@ public EmbeddingSurfaceRange embedding_surfaces(const Line2D & line)
 ```
 
 
+### native_extension_static
+
+```cpp
+public static std::string_view native_extension_static()
+```
+
+
+### native_extension
+
+```cpp
+public std::string_view native_extension()
+```
+
+
 ### model_boundary_items
 
 ```cpp
@@ -278,20 +301,6 @@ public BoundingBox2D bounding_box()
 
 ```cpp
 public BoundingBox2D active_components_bounding_box()
-```
-
-
-### native_extension_static
-
-```cpp
-public basic_string_view native_extension_static()
-```
-
-
-### native_extension
-
-```cpp
-public basic_string_view native_extension()
 ```
 
 

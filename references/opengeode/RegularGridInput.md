@@ -25,7 +25,7 @@ Inherits from Input<std::unique_ptr<RegularGrid<dimension> >, MeshImpl>
 ### RegularGridInput
 
 ```cpp
-protected void RegularGridInput<dimension>(basic_string_view filename)
+protected void RegularGridInput<dimension>(std::string_view filename)
 ```
 
 

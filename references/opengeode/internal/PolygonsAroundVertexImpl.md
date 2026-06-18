@@ -40,7 +40,7 @@ public void PolygonsAroundVertexImpl()
 ### PolygonsAroundVertexImpl
 
 ```cpp
-public void PolygonsAroundVertexImpl(InlinedVector polygons_in, bool vertex_is_on_border_in)
+public void PolygonsAroundVertexImpl(PolygonsAroundVertex polygons_in, bool vertex_is_on_border_in)
 ```
 
 

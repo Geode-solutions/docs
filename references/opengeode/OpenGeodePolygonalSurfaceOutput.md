@@ -25,7 +25,7 @@ Inherits from PolygonalSurfaceOutput<dimension>
 ### OpenGeodePolygonalSurfaceOutput
 
 ```cpp
-public void OpenGeodePolygonalSurfaceOutput<dimension>(basic_string_view filename)
+public void OpenGeodePolygonalSurfaceOutput<dimension>(std::string_view filename)
 ```
 
 
@@ -39,7 +39,7 @@ public bool is_saveable(const PolygonalSurface<dimension> & mesh)
 ### write
 
 ```cpp
-public vector write(const PolygonalSurface<dimension> & mesh)
+public std::vector<std::string> write(const PolygonalSurface<dimension> & mesh)
 ```
 
 
