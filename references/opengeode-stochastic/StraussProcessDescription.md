@@ -11,23 +11,23 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct ObjectId
+# struct StraussProcessDescription
 
 
 ## Members
 
 ```cpp
-public index_t index
+public SpatialDomainConfig<ObjectType::dim> domain
 
 ```
 
 ```cpp
-public bool fixed
+public std::vector<PoissonSetDescription<ObjectType>> sets
 
 ```
 
 ```cpp
-public uuid set_id
+public std::vector<StraussInteractionDescription<ObjectType>> interactions
 
 ```
 
@@ -35,24 +35,17 @@ public uuid set_id
 
 ## Functions
 
-### operator==
+### add_set
 
 ```cpp
-public bool operator==(const ObjectId & other)
+public PoissonSetDescription<ObjectType> & add_set(absl::string_view set_name)
 ```
 
 
-### operator!=
+### add_interaction
 
 ```cpp
-public bool operator!=(const ObjectId & other)
-```
-
-
-### operator<
-
-```cpp
-public bool operator<(const ObjectId & other)
+public StraussInteractionDescription<ObjectType> & add_interaction(absl::string_view interaction_name)
 ```
 
 

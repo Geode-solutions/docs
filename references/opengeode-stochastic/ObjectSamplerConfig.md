@@ -11,23 +11,39 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class IntensityTerm
+# struct ObjectSamplerConfig
 
+# struct ObjectSamplerConfig
+
+
+## Members
 
 ```cpp
-Inherits from SingleObjectTerm<OwnerSegment2D, std::function<double (const OwnerSegment2D &, const SpatialDomain<OwnerSegment2D::dim> &)> >
+public double move_ratio
+
+```
+
+```cpp
+public DistributionDescription length
+
+```
+
+```cpp
+public DistributionDescription azimuth
+
 ```
 
 
 
-## Functions
+# struct ObjectSamplerConfig
 
-### IntensityTerm
+
+## Members
 
 ```cpp
-public void IntensityTerm(std::string_view name, double lambda, std::vector<uuid> targeted_set_ids, double caracteristic_length, const SpatialDomain<OwnerSegment2D::dim> & domain)
-```
+public double move_ratio
 
+```
 
 
 

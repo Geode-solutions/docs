@@ -11,48 +11,63 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct DistributionDescription
+# struct FractureSetDescription
 
 
 ## Members
 
 ```cpp
-public basic_string name
+public basic_string fset_name
 
 ```
 
 ```cpp
-public NamedType distribution_type
+public ObjectSamplerConfig sampler
 
 ```
 
 ```cpp
-public optional min_value
+public double birth_ratio
 
 ```
 
 ```cpp
-public optional max_value
+public double death_ratio
 
 ```
 
 ```cpp
-public optional mean
+public double change_ratio
 
 ```
 
 ```cpp
-public optional standard_deviation
+public double p20
 
 ```
 
 ```cpp
-public optional kappa
+public optional expected_number
 
 ```
 
 ```cpp
-public optional alpha
+public double p21
+
+```
+
+```cpp
+public optional expected_total_length
+
+```
+
+```cpp
+public vector observed_fractures
+
+```
+
+```cpp
+public double minimal_spacing
 
 ```
 
@@ -60,17 +75,24 @@ public optional alpha
 
 ## Functions
 
-### DistributionDescription
+### density_name
 
 ```cpp
-public void DistributionDescription(absl::string_view name_in)
+public std::string density_name()
 ```
 
 
-### DistributionDescription
+### intensity_name
 
 ```cpp
-public void DistributionDescription()
+public std::string intensity_name()
+```
+
+
+### spacing_name
+
+```cpp
+public std::string spacing_name()
 ```
 
 

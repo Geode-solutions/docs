@@ -53,7 +53,7 @@ public EnergyTerm<ObjectType> & operator=(EnergyTerm<ObjectType> && )
 ### EnergyTerm
 
 ```cpp
-public void EnergyTerm<ObjectType>(std::string_view name, double param, std::vector<uuid> && targeted_set_ids, const SpatialDomain<ObjectType::dim> & domain)
+public void EnergyTerm<ObjectType>(std::string_view name, double param, std::vector<uuid> && impacted_set_ids, const SpatialDomain<ObjectType::dim> & domain)
 ```
 
 
@@ -71,10 +71,10 @@ public double parameter()
 ```
 
 
-### targeted_set_ids
+### impacted_set_ids
 
 ```cpp
-public const std::vector<uuid> & targeted_set_ids()
+public const std::vector<uuid> & impacted_set_ids()
 ```
 
 
@@ -112,10 +112,10 @@ public std::string string()
 ```
 
 
-### is_targeted_set
+### is_impacted_set
 
 ```cpp
-protected bool is_targeted_set(const uuid & set_id)
+protected bool is_impacted_set(const uuid & set_id)
 ```
 
 
@@ -126,10 +126,10 @@ protected const SpatialDomain<ObjectType::dim> & domain()
 ```
 
 
-### for_each_targeted_object
+### for_each_object_in_sets
 
 ```cpp
-protected void for_each_targeted_object(const ObjectSets<ObjectType> & state, Func && do_apply)
+protected void for_each_object_in_sets(const ObjectSets<ObjectType> & state, const std::vector<uuid> & set_ids, Func && do_apply)
 ```
 
 

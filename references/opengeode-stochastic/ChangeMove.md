@@ -11,15 +11,35 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct DistributionTypeHasher
+# class ChangeMove
+
+
+```cpp
+Inherits from Move<ObjectType>
+```
+
 
 
 ## Functions
 
-### operator()
+### ChangeMove
 
 ```cpp
-public std::size_t operator()(const DistributionType & distrib)
+public void ChangeMove<ObjectType>(const ObjectSetSampler<ObjectType> & sampler, double probability)
+```
+
+
+### propose_move
+
+```cpp
+public MoveResult<ObjectType> propose_move(const ObjectSet<ObjectType> & set, RandomEngine & engine)
+```
+
+
+### string
+
+```cpp
+public std::string string()
 ```
 
 

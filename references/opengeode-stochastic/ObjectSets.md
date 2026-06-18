@@ -20,6 +20,9 @@ const name = words.join('-');
 # class ObjectSets
 
 
+# class ObjectSets
+
+
 ## Functions
 
 ### get_set
@@ -33,20 +36,6 @@ public const ObjectSet<Type> & get_set(const uuid & set_id)
 
 ```cpp
 public const Type & get_object(const ObjectId & object_id)
-```
-
-
-### get_all_object
-
-```cpp
-public std::vector<ObjectId> get_all_object()
-```
-
-
-### get_objects_in_set
-
-```cpp
-public std::vector<ObjectId> get_objects_in_set(const uuid & set_id)
 ```
 
 
@@ -71,6 +60,20 @@ public void ObjectSets<Type>()
 ```
 
 
+### get_all_object
+
+```cpp
+public std::vector<ObjectId> get_all_object()
+```
+
+
+### ~ObjectSets
+
+```cpp
+public void ~ObjectSets<Type>()
+```
+
+
 ### ObjectSets
 
 ```cpp
@@ -82,6 +85,13 @@ public void ObjectSets<Type>(ObjectSets<Type> && )
 
 ```cpp
 public ObjectSets<Type> & operator=(ObjectSets<Type> && )
+```
+
+
+### get_objects_in_set
+
+```cpp
+public std::vector<ObjectId> get_objects_in_set(const uuid & set_id)
 ```
 
 
@@ -137,14 +147,7 @@ public void remove_free_object(const ObjectId & object_id)
 ### neighbors
 
 ```cpp
-public std::vector<ObjectId> neighbors(const ObjectId & object_id, const std::vector<uuid> & targeted_set_ids, double searching_distance)
-```
-
-
-### neighbors
-
-```cpp
-public std::vector<ObjectId> neighbors(const Type & object, const std::vector<uuid> & targeted_set_ids, double searching_distance)
+public std::vector<ObjectId> neighbors(const Type & object, const std::vector<uuid> & targeted_set_ids, double searching_distance, std::optional<ObjectId> exclude_id)
 ```
 
 
@@ -155,8 +158,26 @@ public std::string string()
 ```
 
 
+### get_set_uuid
+
+```cpp
+public uuid get_set_uuid(std::string_view set_name)
+```
 
 
-# class ObjectSets
+### get_set_uuids
+
+```cpp
+public std::vector<uuid> get_set_uuids(const std::vector<std::string> & set_names)
+```
+
+
+### get_set_uuid_pairs
+
+```cpp
+public std::vector<std::pair<uuid, uuid>> get_set_uuid_pairs(const std::vector<std::pair<std::string, std::string>> & set_name_pairs)
+```
+
+
 
 

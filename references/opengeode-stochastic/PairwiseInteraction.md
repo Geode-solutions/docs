@@ -19,14 +19,35 @@ const name = words.join('-');
 ### PairwiseInteraction
 
 ```cpp
-public void PairwiseInteraction<Type>()
+public void PairwiseInteraction<Type>(const PairwiseInteraction<Type> & )
 ```
 
 
 ### PairwiseInteraction
 
 ```cpp
-public void PairwiseInteraction<Type>(SCOPE scope)
+public void PairwiseInteraction<Type>(PairwiseInteraction<Type> && )
+```
+
+
+### operator=
+
+```cpp
+public PairwiseInteraction<Type> & operator=(const PairwiseInteraction<Type> & )
+```
+
+
+### operator=
+
+```cpp
+public PairwiseInteraction<Type> & operator=(PairwiseInteraction<Type> && )
+```
+
+
+### PairwiseInteraction
+
+```cpp
+public void PairwiseInteraction<Type>()
 ```
 
 
@@ -55,20 +76,6 @@ public double neighborhood_searching_distance()
 ```cpp
 protected double compute(const ObjectRef<Type> & object_a, const ObjectRef<Type> & object_b)
 ```
-
-
-
-## Enums
-
-| enum class SCOPE |
-
---
-
-| all_set |
-| same_set |
-| different_set |
-
-
 
 
 

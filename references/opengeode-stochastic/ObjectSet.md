@@ -40,6 +40,20 @@ Inherits from Identifier
 
 ## Functions
 
+### ObjectSet
+
+```cpp
+public void ObjectSet<Type>(const ObjectSet<Type> & )
+```
+
+
+### operator=
+
+```cpp
+public ObjectSet<Type> & operator=(const ObjectSet<Type> & )
+```
+
+
 ### set_name
 
 ```cpp
@@ -51,6 +65,13 @@ public void set_name(std::string_view name)
 
 ```cpp
 public void ObjectSet<Type>()
+```
+
+
+### ~ObjectSet
+
+```cpp
+public void ~ObjectSet<Type>()
 ```
 
 

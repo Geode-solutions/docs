@@ -26,7 +26,35 @@ public void ObjectNeighborhood<dimension>()
 ### add
 
 ```cpp
-public void add(const BoundingBox<dimension> & box, const ObjectId & id)
+public void add(const BoundingBox<dimension> & box, const ObjectId & obj_id)
+```
+
+
+### ObjectNeighborhood
+
+```cpp
+public void ObjectNeighborhood<dimension>(const ObjectNeighborhood<dimension> & )
+```
+
+
+### ObjectNeighborhood
+
+```cpp
+public void ObjectNeighborhood<dimension>(ObjectNeighborhood<dimension> && )
+```
+
+
+### operator=
+
+```cpp
+public ObjectNeighborhood<dimension> & operator=(const ObjectNeighborhood<dimension> & )
+```
+
+
+### operator=
+
+```cpp
+public ObjectNeighborhood<dimension> & operator=(ObjectNeighborhood<dimension> && )
 ```
 
 
@@ -40,7 +68,7 @@ public void ~ObjectNeighborhood<dimension>()
 ### update
 
 ```cpp
-public void update(const BoundingBox<dimension> & old_box, const BoundingBox<dimension> & new_box, const ObjectId & id)
+public void update(const BoundingBox<dimension> & old_box, const BoundingBox<dimension> & new_box, const ObjectId & obj_id)
 ```
 
 
@@ -54,7 +82,7 @@ public void update(const BoundingBox<dimension> & box, const ObjectId & old_id, 
 ### remove
 
 ```cpp
-public void remove(const BoundingBox<dimension> & box, const ObjectId & id)
+public void remove(const BoundingBox<dimension> & box, const ObjectId & obj_id)
 ```
 
 

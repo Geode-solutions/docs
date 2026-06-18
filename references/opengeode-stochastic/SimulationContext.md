@@ -11,23 +11,33 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct ObjectId
+# struct SimulationContext
 
 
 ## Members
 
 ```cpp
-public index_t index
+public std::unique_ptr<SpatialDomain<ObjectType::dim>> domain
 
 ```
 
 ```cpp
-public bool fixed
+public std::unique_ptr<ObjectSets<ObjectType>> object_sets
 
 ```
 
 ```cpp
-public uuid set_id
+public std::vector<std::unique_ptr<geode::ObjectSetSampler<ObjectType>>> set_samplers
+
+```
+
+```cpp
+public std::unique_ptr<Model<ObjectType>> model
+
+```
+
+```cpp
+public std::unique_ptr<geode::MetropolisHastings<ObjectType>> mh_sampler
 
 ```
 
@@ -35,24 +45,10 @@ public uuid set_id
 
 ## Functions
 
-### operator==
+### string
 
 ```cpp
-public bool operator==(const ObjectId & other)
-```
-
-
-### operator!=
-
-```cpp
-public bool operator!=(const ObjectId & other)
-```
-
-
-### operator<
-
-```cpp
-public bool operator<(const ObjectId & other)
+public std::string string()
 ```
 
 

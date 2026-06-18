@@ -11,15 +11,46 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct DistributionTypeHasher
+# struct MoveResult
+
+
+## Members
+
+```cpp
+public MOVE_TYPE type
+
+```
+
+```cpp
+public std::optional<ObjectType> new_object
+
+```
+
+```cpp
+public optional old_object_id
+
+```
+
+```cpp
+public ProposalProbabilities proposal_probabilities
+
+```
+
 
 
 ## Functions
 
-### operator()
+### type_string
 
 ```cpp
-public std::size_t operator()(const DistributionType & distrib)
+public std::string type_string()
+```
+
+
+### string
+
+```cpp
+public std::string string()
 ```
 
 

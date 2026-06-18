@@ -11,17 +11,45 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct DistributionTypeHasher
+# struct StraussInteractionDescription
 
 
-## Functions
-
-### operator()
+## Members
 
 ```cpp
-public std::size_t operator()(const DistributionType & distrib)
+public basic_string interaction_name
+
 ```
 
+```cpp
+public vector set_names
+
+```
+
+```cpp
+public double gamma
+
+```
+
+```cpp
+public double distance
+
+```
+
+```cpp
+public bool include_intra_set
+
+```
+
+```cpp
+public bool include_inter_set
+
+```
+
+```cpp
+public optional expected_nb_interactions
+
+```
 
 
 

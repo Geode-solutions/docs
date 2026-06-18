@@ -17,6 +17,9 @@ const name = words.join('-');
 # class BallSampler
 
 
+# class BallSampler
+
+
 ## Functions
 
 ### BallSampler
@@ -40,8 +43,5 @@ public Point<dimension> sample_uniform(RandomEngine & engine)
 ```
 
 
-
-
-# class BallSampler
 
 

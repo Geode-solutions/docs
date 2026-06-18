@@ -11,7 +11,7 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class SingleObjectTerm
+# class PairwiseTerm
 
 
 ```cpp
@@ -22,10 +22,10 @@ Inherits from EnergyTerm<ObjectType>
 
 ## Functions
 
-### SingleObjectTerm
+### PairwiseTerm
 
 ```cpp
-public void SingleObjectTerm<ObjectType>(std::string_view name, double lambda, std::vector<uuid> && impacted_set_ids, const SpatialDomain<ObjectType::dim> & domain, std::unique_ptr<SingleObjectFeature<ObjectType>> feature)
+public void PairwiseTerm<ObjectType>(std::string_view name, double gamma, std::vector<uuid> && impacted_set_ids, const SpatialDomain<ObjectType::dim> & domain, absl::flat_hash_map<uuid, std::vector<uuid>> && objectset_adjacency_map, std::unique_ptr<PairwiseInteraction<ObjectType>> interaction)
 ```
 
 
@@ -39,7 +39,7 @@ public double total_log(const ObjectSets<ObjectType> & state)
 ### delta_log_add
 
 ```cpp
-public double delta_log_add(const ObjectSets<ObjectType> & , const ObjectRef<ObjectType> & new_object)
+public double delta_log_add(const ObjectSets<ObjectType> & state, const ObjectRef<ObjectType> & new_object)
 ```
 
 

@@ -11,19 +11,10 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class EuclideanCutoffInteraction
+# class MinimalDistanceCutoff
 
 
-```cpp
-Inherits from PairwiseInteraction<class geode::Point<2> >
-```
-
-
-
-# class EuclideanCutoffInteraction
-
-
- EuclideanCutoffInteraction A pairwise interaction that returns 1 if the Euclidean distance between objects is within a cutoff radius, otherwise 0.
+ MinimalDistanceCutoff A pairwise interaction that returns 1 if the Minimal distance between objects is within a cutoff radius, otherwise 0.
 
 
 
@@ -35,17 +26,10 @@ Inherits from PairwiseInteraction<Type>
 
 ## Functions
 
-### EuclideanCutoffInteraction
+### MinimalDistanceCutoff
 
 ```cpp
-public void EuclideanCutoffInteraction<Type>(double cutoff_distance)
-```
-
-
-### EuclideanCutoffInteraction
-
-```cpp
-public void EuclideanCutoffInteraction<Type>(double cutoff_distance, typename PairwiseInteraction<Type>::SCOPE scope)
+public void MinimalDistanceCutoff<Type>(double cutoff_distance)
 ```
 
 
@@ -65,7 +49,16 @@ protected double compute(const ObjectRef<Type> & object_a, const ObjectRef<Type>
 
 
 
-# class EuclideanCutoffInteraction
+# class MinimalDistanceCutoff
+
+
+```cpp
+Inherits from PairwiseInteraction<class geode::Point<2> >
+```
+
+
+
+# class MinimalDistanceCutoff
 
 
 ```cpp
@@ -74,7 +67,7 @@ Inherits from PairwiseInteraction<class geode::OwnerSegment<2> >
 
 
 
-# class EuclideanCutoffInteraction
+# class MinimalDistanceCutoff
 
 
 ```cpp

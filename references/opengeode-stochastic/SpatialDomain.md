@@ -19,14 +19,49 @@ const name = words.join('-');
 ### SpatialDomain
 
 ```cpp
-public void SpatialDomain<dimension>(const BoundingBox<dimension> & domain, double buffer_size)
+public void SpatialDomain<dimension>(const SpatialDomain<dimension> & )
+```
+
+
+### SpatialDomain
+
+```cpp
+public void SpatialDomain<dimension>(SpatialDomain<dimension> && )
+```
+
+
+### operator=
+
+```cpp
+public SpatialDomain<dimension> & operator=(const SpatialDomain<dimension> & )
+```
+
+
+### operator=
+
+```cpp
+public SpatialDomain<dimension> & operator=(SpatialDomain<dimension> && )
+```
+
+
+### ~SpatialDomain
+
+```cpp
+public void ~SpatialDomain<dimension>()
+```
+
+
+### SpatialDomain
+
+```cpp
+public void SpatialDomain<dimension>(BoundingBox<dimension> domain, double buffer_size)
 ```
 
 
 ### box
 
 ```cpp
-public const BoundingBox<dimension> box()
+public const BoundingBox<dimension> & box()
 ```
 
 
@@ -68,7 +103,14 @@ public double extended_n_volume()
 ### extended_box
 
 ```cpp
-public const BoundingBox<dimension> extended_box()
+public const BoundingBox<dimension> & extended_box()
+```
+
+
+### string
+
+```cpp
+public std::string string()
 ```
 
 

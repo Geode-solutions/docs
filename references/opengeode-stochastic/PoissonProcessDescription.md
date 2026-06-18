@@ -11,15 +11,34 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct DistributionTypeHasher
+# struct PoissonProcessDescription
+
+
+## Members
+
+```cpp
+public basic_string process_name
+
+```
+
+```cpp
+public SpatialDomainConfig<ObjectType::dim> domain
+
+```
+
+```cpp
+public std::vector<PoissonSetDescription<ObjectType>> sets
+
+```
+
 
 
 ## Functions
 
-### operator()
+### add_set
 
 ```cpp
-public std::size_t operator()(const DistributionType & distrib)
+public PoissonSetDescription<ObjectType> & add_set(absl::string_view set_name)
 ```
 
 

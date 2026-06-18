@@ -11,23 +11,48 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct ObjectId
+# struct SimulationPrinterConfigurator
 
 
 ## Members
 
 ```cpp
-public index_t index
+public bool print_statistics
 
 ```
 
 ```cpp
-public bool fixed
+public basic_string statistics_filename
 
 ```
 
 ```cpp
-public uuid set_id
+public bool print_statistics_summary
+
+```
+
+```cpp
+public basic_string statistics_summary_filename
+
+```
+
+```cpp
+public bool print_realisations
+
+```
+
+```cpp
+public basic_string realisations_prefix
+
+```
+
+```cpp
+public index_t realisations_print_frequency
+
+```
+
+```cpp
+public basic_string output_folder
 
 ```
 
@@ -35,24 +60,10 @@ public uuid set_id
 
 ## Functions
 
-### operator==
+### string
 
 ```cpp
-public bool operator==(const ObjectId & other)
-```
-
-
-### operator!=
-
-```cpp
-public bool operator!=(const ObjectId & other)
-```
-
-
-### operator<
-
-```cpp
-public bool operator<(const ObjectId & other)
+public std::string string()
 ```
 
 

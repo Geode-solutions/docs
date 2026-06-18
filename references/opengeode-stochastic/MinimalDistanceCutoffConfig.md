@@ -11,17 +11,15 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct DistributionTypeHasher
+# struct MinimalDistanceCutoffConfig
 
 
-## Functions
-
-### operator()
+## Members
 
 ```cpp
-public std::size_t operator()(const DistributionType & distrib)
-```
+public double threshold
 
+```
 
 
 

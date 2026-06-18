@@ -11,48 +11,35 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct ObjectId
+# class UniformSegmentSetSampler
 
-
-## Members
 
 ```cpp
-public index_t index
-
-```
-
-```cpp
-public bool fixed
-
-```
-
-```cpp
-public uuid set_id
-
+Inherits from ObjectSetSampler<OwnerSegment2D>
 ```
 
 
 
 ## Functions
 
-### operator==
+### UniformSegmentSetSampler
 
 ```cpp
-public bool operator==(const ObjectId & other)
+public void UniformSegmentSetSampler(const SpatialDomain<2> & domain, const ObjectSamplerConfig<OwnerSegment2D> & config)
 ```
 
 
-### operator!=
+### sample
 
 ```cpp
-public bool operator!=(const ObjectId & other)
+public OwnerSegment2D sample(RandomEngine & engine)
 ```
 
 
-### operator<
+### change
 
 ```cpp
-public bool operator<(const ObjectId & other)
+public OwnerSegment2D change(const OwnerSegment2D & obj, RandomEngine & engine)
 ```
 
 

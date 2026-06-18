@@ -11,17 +11,30 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct DistributionTypeHasher
+# struct ObjectSetDefinition
 
 
-## Functions
-
-### operator()
+## Members
 
 ```cpp
-public std::size_t operator()(const DistributionType & distrib)
+public basic_string name
+
 ```
 
+```cpp
+public std::vector<ObjectType> fixed_objects
+
+```
+
+```cpp
+public ObjectSamplerConfig<ObjectType> sampler
+
+```
+
+```cpp
+public ObjectSetDynamicsConfig dynamics
+
+```
 
 
 

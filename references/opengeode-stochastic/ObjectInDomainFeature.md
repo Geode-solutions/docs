@@ -11,15 +11,21 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct DistributionTypeHasher
+# class ObjectInDomainFeature
+
+
+```cpp
+Inherits from SingleObjectFeature<ObjectType>
+```
+
 
 
 ## Functions
 
-### operator()
+### evaluate
 
 ```cpp
-public std::size_t operator()(const DistributionType & distrib)
+public double evaluate(const ObjectType & obj, const SpatialDomain<ObjectType::dim> & domain)
 ```
 
 

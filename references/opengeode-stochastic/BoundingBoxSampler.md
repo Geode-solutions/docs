@@ -14,15 +14,6 @@ const name = words.join('-');
 # class BoundingBoxSampler
 
 
-# class BoundingBoxSampler
-
-
-# class BoundingBoxSampler
-
-
-# class BoundingBoxSampler
-
-
 ## Functions
 
 ### BoundingBoxSampler
@@ -46,5 +37,14 @@ public Point<dimension> sample_uniform(RandomEngine & engine)
 ```
 
 
+
+
+# class BoundingBoxSampler
+
+
+# class BoundingBoxSampler
+
+
+# class BoundingBoxSampler
 
 

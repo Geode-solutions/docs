@@ -11,48 +11,33 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct DistributionDescription
+# struct FractureNetworkDescription
 
 
 ## Members
 
 ```cpp
-public basic_string name
+public basic_string fnet_name
 
 ```
 
 ```cpp
-public NamedType distribution_type
+public SpatialDomainConfig domain
 
 ```
 
 ```cpp
-public optional min_value
+public vector fracture_sets
 
 ```
 
 ```cpp
-public optional max_value
+public double beta_x_node
 
 ```
 
 ```cpp
-public optional mean
-
-```
-
-```cpp
-public optional standard_deviation
-
-```
-
-```cpp
-public optional kappa
-
-```
-
-```cpp
-public optional alpha
+public optional expected_x_node
 
 ```
 
@@ -60,17 +45,24 @@ public optional alpha
 
 ## Functions
 
-### DistributionDescription
+### add_fracture_set
 
 ```cpp
-public void DistributionDescription(absl::string_view name_in)
+public FractureSetDescription & add_fracture_set(absl::string_view fset_name)
 ```
 
 
-### DistributionDescription
+### add_x_node_monitoring
 
 ```cpp
-public void DistributionDescription()
+public void add_x_node_monitoring(double beta)
+```
+
+
+### x_node_interaction_name
+
+```cpp
+public std::string x_node_interaction_name()
 ```
 
 

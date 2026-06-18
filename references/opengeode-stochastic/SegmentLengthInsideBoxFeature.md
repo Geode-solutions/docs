@@ -11,15 +11,28 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct DistributionTypeHasher
+# class SegmentLengthInsideBoxFeature
+
+
+```cpp
+Inherits from SingleObjectFeature<OwnerSegment2D>
+```
+
 
 
 ## Functions
 
-### operator()
+### SegmentLengthInsideBoxFeature
 
 ```cpp
-public std::size_t operator()(const DistributionType & distrib)
+public void SegmentLengthInsideBoxFeature(double characteristic_length)
+```
+
+
+### evaluate
+
+```cpp
+public double evaluate(const OwnerSegment2D & segment, const SpatialDomain<2> & domain)
 ```
 
 
