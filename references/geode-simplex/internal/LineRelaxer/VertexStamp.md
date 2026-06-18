@@ -11,14 +11,31 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct BRepElementsAfterCollapseEdge
+# struct VertexStamp
+
 
 ## Members
 
 ```cpp
-public linked_hash_map block_tetrahedra
+public index_t vertex
 
 ```
+
+```cpp
+public index_t stamp
+
+```
+
+
+
+## Functions
+
+### VertexStamp
+
+```cpp
+public void VertexStamp(index_t vertex_in, index_t stamp_in)
+```
+
 
 
 

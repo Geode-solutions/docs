@@ -14,7 +14,65 @@ const name = words.join('-');
 # class LineRelaxer
 
 
+## Members
+
+```cpp
+public static const auto METRIC_STAMP_NAME
+
+```
+
+```cpp
+public static const auto SMOOTH_STAMP_NAME
+
+```
+
+```cpp
+public static const auto FIXED_POINTS_NAME
+
+```
+
+```cpp
+public static const auto dimension
+
+```
+
+
+
+## Records
+
+VertexStamp
+
+
+
 ## Functions
+
+### LineRelaxer
+
+```cpp
+public void LineRelaxer<Model>(const LineRelaxer<Model> & )
+```
+
+
+### LineRelaxer
+
+```cpp
+public void LineRelaxer<Model>(LineRelaxer<Model> && )
+```
+
+
+### operator=
+
+```cpp
+public LineRelaxer<Model> & operator=(const LineRelaxer<Model> & )
+```
+
+
+### operator=
+
+```cpp
+public LineRelaxer<Model> & operator=(LineRelaxer<Model> && )
+```
+
 
 ### LineRelaxer
 
