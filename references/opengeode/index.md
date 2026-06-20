@@ -415,6 +415,13 @@ void register_geode_mesh_input()
 ```
 
 
+### register_geode_mesh_output
+
+```cpp
+void register_geode_mesh_output()
+```
+
+
 ### filename_with_extension
 
 ```cpp
@@ -433,13 +440,6 @@ void register_attribute_type(PContext & context, std::string_view name)
 
 ```cpp
 void register_geode_mesh()
-```
-
-
-### register_geode_mesh_output
-
-```cpp
-void register_geode_mesh_output()
 ```
 
 
@@ -1157,6 +1157,40 @@ std::vector<std::string> save_triangulated_surface(const TriangulatedSurface<dim
 
 **filename** [in] Path to the file where save the TriangulatedSurface.
 
+### operator""_uc
+
+```cpp
+unsigned char operator""_uc(unsigned long long arg)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const uuid & value)
+```
+
+
+### print_available_extensions
+
+```cpp
+void print_available_extensions(std::string_view type)
+```
+
+
+### save_light_regular_grid
+
+```cpp
+std::vector<std::string> save_light_regular_grid(const LightRegularGrid<dimension> & light_regular_grid, std::string_view filename)
+```
+
+
+ API function for saving a LightRegularGrid. The adequate saver is called depending on the given filename extension.
+
+**light_regular_grid** [in] LightRegularGrid to save.
+
+**filename** [in] Path to the file where save the LightRegularGrid.
+
 ### save_polygonal_surface
 
 ```cpp
@@ -1169,19 +1203,6 @@ std::vector<std::string> save_polygonal_surface(const PolygonalSurface<dimension
 **edged_curve** [in] PolygonalSurface to save.
 
 **filename** [in] Path to the file where save the PolygonalSurface.
-
-### register_basic_serialize_pcontext
-
-```cpp
-void register_basic_serialize_pcontext(PContext & context)
-```
-
-
- Register all the information needed by Bitsery to serialize the objects in the basic library.
-
-**context** [in] The context where to register this information.
-
-**warning** The context can be used only once per archive.
 
 ### multiple_permute
 
@@ -1197,13 +1218,6 @@ void concatenate(Container & container, Container && values)
 ```
 
 
-### operator""_uc
-
-```cpp
-unsigned char operator""_uc(unsigned long long arg)
-```
-
-
 ### triangle_area_sign
 
 ```cpp
@@ -1212,6 +1226,13 @@ Sign triangle_area_sign(const Triangle2D & triangle)
 
 
  Return the sign of a 2D triangle area.
+
+### to_string
+
+```cpp
+std::string to_string(std::string_view view)
+```
+
 
 ### delete_vector_elements
 
@@ -1228,58 +1249,6 @@ index_t delete_vector_elements(const DeleteContainer & to_delete, ValueContainer
 
 **return** The number of deleted elements
 
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const uuid & value)
-```
-
-
-### print_available_extensions
-
-```cpp
-void print_available_extensions(std::string_view type)
-```
-
-
-### polygon_area_sign
-
-```cpp
-Sign polygon_area_sign(const Polygon2D & polygon)
-```
-
-
-### load_vertex_set
-
-```cpp
-std::unique_ptr<VertexSet> load_vertex_set(std::string_view filename)
-```
-
-
- API function for loading an VertexSet. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### point_line_projection
-
-```cpp
-Point<dimension> point_line_projection(const Point<dimension> & point, const InfiniteLine<dimension> & line)
-```
-
-
- Return the projection of a point on a line
-
-**point** [in] the point to project
-
-**line** [in] the line
-
-### to_string
-
-```cpp
-std::string to_string(std::string_view view)
-```
-
-
 ### to_array
 
 ```cpp
@@ -1293,19 +1262,6 @@ std::array<T, sizeof...(Args)> to_array(Args &&... args)
 MeshStatistics compute_curve_statistics(const EdgedCurve<dimension> & mesh)
 ```
 
-
-### save_light_regular_grid
-
-```cpp
-std::vector<std::string> save_light_regular_grid(const LightRegularGrid<dimension> & light_regular_grid, std::string_view filename)
-```
-
-
- API function for saving a LightRegularGrid. The adequate saver is called depending on the given filename extension.
-
-**light_regular_grid** [in] LightRegularGrid to save.
-
-**filename** [in] Path to the file where save the LightRegularGrid.
 
 ### next_keyword_if_it_exists
 
@@ -1325,12 +1281,32 @@ double triangle_signed_area(const Triangle2D & triangle)
 
 **triangle** [in] Triangle to compute area returned area is positive if the triangle vertices are ordered counter-clockwise, negative if clockwise.
 
+### polygon_area_sign
+
+```cpp
+Sign polygon_area_sign(const Polygon2D & polygon)
+```
+
+
 ### create_point_set_coordinate_system
 
 ```cpp
 void create_point_set_coordinate_system(const PointSet<dimension> & mesh, PointSetBuilder<dimension> & builder, std::string_view new_coordinate_system_name, const CoordinateSystem2D & input, const CoordinateSystem2D & output)
 ```
 
+
+### register_basic_serialize_pcontext
+
+```cpp
+void register_basic_serialize_pcontext(PContext & context)
+```
+
+
+ Register all the information needed by Bitsery to serialize the objects in the basic library.
+
+**context** [in] The context where to register this information.
+
+**warning** The context can be used only once per archive.
 
 ### set_brep_active_coordinate_system
 
@@ -1350,6 +1326,17 @@ std::unique_ptr<Graph> load_graph(std::string_view filename)
 
 **filename** [in] Path to the file to load.
 
+### load_vertex_set
+
+```cpp
+std::unique_ptr<VertexSet> load_vertex_set(std::string_view filename)
+```
+
+
+ API function for loading an VertexSet. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
 ### load_regular_grid
 
 ```cpp
@@ -1360,6 +1347,19 @@ std::unique_ptr<RegularGrid<dimension>> load_regular_grid(std::string_view filen
  API function for loading a RegularGrid. The adequate loader is called depending on the filename extension.
 
 **filename** [in] Path to the file to load.
+
+### point_line_projection
+
+```cpp
+Point<dimension> point_line_projection(const Point<dimension> & point, const InfiniteLine<dimension> & line)
+```
+
+
+ Return the projection of a point on a line
+
+**point** [in] the point to project
+
+**line** [in] the line
 
 ### load_edged_curve
 
@@ -1671,20 +1671,6 @@ bool is_polyhedral_solid_saveable(const PolyhedralSolid<dimension> & polyhedral_
 ```
 
 
-### component_mesh_vertex_pairs
-
-```cpp
-ComponentMeshVertexPairs component_mesh_vertex_pairs(absl::Span<const ComponentMeshVertex> unique_vertices0, absl::Span<const ComponentMeshVertex> unique_vertices1)
-```
-
-
-### graph_additional_files
-
-```cpp
-AdditionalFiles graph_additional_files(std::string_view filename)
-```
-
-
 ### is_tetrahedral_solid_saveable
 
 ```cpp
@@ -1696,6 +1682,20 @@ bool is_tetrahedral_solid_saveable(const TetrahedralSolid<dimension> & tetrahedr
 
 ```cpp
 H AbslHashValue(H h, const NamedType<Type, Tag> & value)
+```
+
+
+### component_mesh_vertex_pairs
+
+```cpp
+ComponentMeshVertexPairs component_mesh_vertex_pairs(absl::Span<const ComponentMeshVertex> unique_vertices0, absl::Span<const ComponentMeshVertex> unique_vertices1)
+```
+
+
+### graph_additional_files
+
+```cpp
+AdditionalFiles graph_additional_files(std::string_view filename)
 ```
 
 
@@ -1861,34 +1861,6 @@ AdditionalFiles point_set_additional_files(std::string_view filename)
 ```
 
 
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const MeshElement & value)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const EdgeVertex & value)
-```
-
-
-### is_regular_grid_loadable
-
-```cpp
-Percentage is_regular_grid_loadable(std::string_view filename)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const Point<dimension> & point)
-```
-
-
 ### component_mesh_vertex_pairs
 
 ```cpp
@@ -1924,10 +1896,10 @@ AdditionalFiles triangulated_surface_additional_files(std::string_view filename)
 ```
 
 
-### permute
+### is_regular_grid_loadable
 
 ```cpp
-void permute(Container & data, absl::Span<const index_t> permutation)
+Percentage is_regular_grid_loadable(std::string_view filename)
 ```
 
 
@@ -1979,35 +1951,6 @@ Percentage is_tetrahedral_solid_loadable(std::string_view filename)
 Percentage is_triangulated_surface_loadable(std::string_view filename)
 ```
 
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const PolyhedronVertex & value)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const PolygonVertex & value)
-```
-
-
-### extract_vector_elements
-
-```cpp
-ValueContainer extract_vector_elements(const DeleteContainer & to_keep, const ValueContainer & in_values)
-```
-
-
- Create a new vector containing only some elements from a given vector.
-
-**to_keep** [in] Vector of the same size than in_values. If to_keep[i] is true the i-th element is kept.
-
-**in_values** [in] Vector in which perform deletions.
-
-**return** A vector containing only kept elements of in_values
 
 ### safe_triangle_barycentric_coordinates
 
@@ -2063,13 +2006,6 @@ index_t hybrid_solid_object_priority(std::string_view filename)
 ```
 
 
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const ComponentID & value)
-```
-
-
 ### polygonal_surface_object_priority
 
 ```cpp
@@ -2105,10 +2041,146 @@ std::vector<index_t> old2new_permutation(absl::Span<const index_t> permutation)
 ```
 
 
+### geode_lippincott
+
+```cpp
+int geode_lippincott()
+```
+
+
+ Try to catch several exception types. Always return 1.
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const MeshElement & value)
+```
+
+
+### permute
+
+```cpp
+void permute(Container & data, absl::Span<const index_t> permutation)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const EdgeVertex & value)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const Point<dimension> & point)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const PolyhedronVertex & value)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const PolygonVertex & value)
+```
+
+
+### extract_vector_elements
+
+```cpp
+ValueContainer extract_vector_elements(const DeleteContainer & to_keep, const ValueContainer & in_values)
+```
+
+
+ Create a new vector containing only some elements from a given vector.
+
+**to_keep** [in] Vector of the same size than in_values. If to_keep[i] is true the i-th element is kept.
+
+**in_values** [in] Vector in which perform deletions.
+
+**return** A vector containing only kept elements of in_values
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const ComponentID & value)
+```
+
+
+### component_mesh_vertex_tuple
+
+```cpp
+ComponentMeshVertexGeneric<dimension> component_mesh_vertex_tuple(UniqueVertices... unique_vertices)
+```
+
+
+### line_plane_intersection
+
+```cpp
+IntersectionResult<Point3D> line_plane_intersection(const InfiniteLine3D & line, const Plane & plane)
+```
+
+
+ Compute the intersection between a plane and an infinite line
+
+**return** an optional of the intersection.
+
+### component_mesh_vertex_tuple
+
+```cpp
+ComponentMeshVertexGeneric<dimension> component_mesh_vertex_tuple(UniqueVertices... unique_vertices, const ComponentType & type)
+```
+
+
+### component_mesh_vertex_tuple
+
+```cpp
+ComponentMeshVertexGeneric<dimension> component_mesh_vertex_tuple(UniqueVertices... unique_vertices, const ComponentID & component)
+```
+
+
+### sort_unique
+
+```cpp
+void sort_unique(Container & container)
+```
+
+
+ Modify the container by removing every duplicated values inside
+
+**Container** Type of container.
+
+**container** [in] container in which perform the search.
+
+### line_sphere_intersection
+
+```cpp
+IntersectionResult<absl::InlinedVector<Point<dimension>, 2>> line_sphere_intersection(const InfiniteLine<dimension> & line, const Sphere<dimension> & sphere)
+```
+
+
+ Compute the intersection(s) between a sphere and an infinite line
+
+**return** an optional of the intersection points.
+
 ### are_mesh_elements_included
 
 ```cpp
 bool are_mesh_elements_included(const MeshElementsInclusion<MeshElementType> & inclusion)
+```
+
+
+### sort_unique
+
+```cpp
+void sort_unique(Container & container, Comparison comp)
 ```
 
 
@@ -2134,27 +2206,6 @@ bool are_points_aligned(const Point<dimension> & point0, const Point<dimension> 
 
  Return true if the three points are exactly aligned.
 
-### component_mesh_vertex_tuple
-
-```cpp
-ComponentMeshVertexGeneric<dimension> component_mesh_vertex_tuple(UniqueVertices... unique_vertices)
-```
-
-
-### component_mesh_vertex_tuple
-
-```cpp
-ComponentMeshVertexGeneric<dimension> component_mesh_vertex_tuple(UniqueVertices... unique_vertices, const ComponentType & type)
-```
-
-
-### component_mesh_vertex_tuple
-
-```cpp
-ComponentMeshVertexGeneric<dimension> component_mesh_vertex_tuple(UniqueVertices... unique_vertices, const ComponentID & component)
-```
-
-
 ### point_triangle_distance
 
 ```cpp
@@ -2164,57 +2215,6 @@ std::tuple<double, Point<dimension>> point_triangle_distance(const Point<dimensi
  Compute the smallest distance between a point and a triangle
 
 **return** a tuple containing: - the smallest distance. - the closest point on the triangle.
-
-### line_plane_intersection
-
-```cpp
-IntersectionResult<Point3D> line_plane_intersection(const InfiniteLine3D & line, const Plane & plane)
-```
-
-
- Compute the intersection between a plane and an infinite line
-
-**return** an optional of the intersection.
-
-### line_sphere_intersection
-
-```cpp
-IntersectionResult<absl::InlinedVector<Point<dimension>, 2>> line_sphere_intersection(const InfiniteLine<dimension> & line, const Sphere<dimension> & sphere)
-```
-
-
- Compute the intersection(s) between a sphere and an infinite line
-
-**return** an optional of the intersection points.
-
-### geode_lippincott
-
-```cpp
-int geode_lippincott()
-```
-
-
- Try to catch several exception types. Always return 1.
-
-### sort_unique
-
-```cpp
-void sort_unique(Container & container)
-```
-
-
- Modify the container by removing every duplicated values inside
-
-**Container** Type of container.
-
-**container** [in] container in which perform the search.
-
-### sort_unique
-
-```cpp
-void sort_unique(Container & container, Comparison comp)
-```
-
 
 ### throw_lippincott
 
