@@ -32,6 +32,16 @@ public InspectionIssuesMap blocks_not_linked_to_a_unique_vertex
 ```
 
 ```cpp
+public InspectionIssues blocks_with_not_closed_boundary_surfaces
+
+```
+
+```cpp
+public InspectionIssues model_boundaries_dont_form_a_closed_surface
+
+```
+
+```cpp
 public InspectionIssues unique_vertices_part_of_two_blocks_and_no_boundary_surface
 
 ```
@@ -48,16 +58,6 @@ public InspectionIssues unique_vertices_linked_to_surface_with_wrong_relationshi
 
 ```cpp
 public InspectionIssues unique_vertices_linked_to_a_single_and_invalid_surface
-
-```
-
-```cpp
-public InspectionIssues blocks_with_not_closed_boundary_surfaces
-
-```
-
-```cpp
-public InspectionIssues model_boundaries_dont_form_a_closed_surface
 
 ```
 
