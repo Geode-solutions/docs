@@ -79,6 +79,13 @@ public GenericPlane<PointType> & operator=(GenericPlane<PointType> && other)
 ```
 
 
+### ~GenericPlane
+
+```cpp
+public void ~GenericPlane<PointType>()
+```
+
+
 ### normal
 
 ```cpp
@@ -97,6 +104,13 @@ public const Point3D & origin()
 
 ```cpp
 public double plane_constant()
+```
+
+
+### point_on_plane
+
+```cpp
+public Point3D point_on_plane()
 ```
 
 

@@ -22,6 +22,13 @@ Inherits from GenericPlane<RefPoint3D>
 
 ## Functions
 
+### ~Plane
+
+```cpp
+public void ~Plane()
+```
+
+
 ### Plane
 
 ```cpp

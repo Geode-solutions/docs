@@ -22,6 +22,13 @@ Inherits from GenericPlane<Point3D>
 
 ## Functions
 
+### ~OwnerPlane
+
+```cpp
+public void ~OwnerPlane()
+```
+
+
 ### OwnerPlane
 
 ```cpp
