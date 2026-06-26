@@ -19,6 +19,34 @@ const name = words.join('-');
 ### BRepRayTracing
 
 ```cpp
+public void BRepRayTracing(const BRepRayTracing & )
+```
+
+
+### BRepRayTracing
+
+```cpp
+public void BRepRayTracing(BRepRayTracing && )
+```
+
+
+### operator=
+
+```cpp
+public BRepRayTracing & operator=(const BRepRayTracing & )
+```
+
+
+### operator=
+
+```cpp
+public BRepRayTracing & operator=(BRepRayTracing && )
+```
+
+
+### BRepRayTracing
+
+```cpp
 public void BRepRayTracing(const BRep & brep)
 ```
 
@@ -40,7 +68,7 @@ public BoundarySurfaceIntersections find_intersections_with_boundaries(const Inf
 ### is_point_inside_block
 
 ```cpp
-public bool is_point_inside_block(const Point3D & point, const Block3D & block)
+public RayTracingResult is_point_inside_block(const Point3D & point, const Block3D & block)
 ```
 
 

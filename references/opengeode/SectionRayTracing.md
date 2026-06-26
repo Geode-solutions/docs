@@ -19,6 +19,34 @@ const name = words.join('-');
 ### SectionRayTracing
 
 ```cpp
+public void SectionRayTracing(const SectionRayTracing & )
+```
+
+
+### SectionRayTracing
+
+```cpp
+public void SectionRayTracing(SectionRayTracing && )
+```
+
+
+### operator=
+
+```cpp
+public SectionRayTracing & operator=(const SectionRayTracing & )
+```
+
+
+### operator=
+
+```cpp
+public SectionRayTracing & operator=(SectionRayTracing && )
+```
+
+
+### SectionRayTracing
+
+```cpp
 public void SectionRayTracing(const Section & section)
 ```
 
@@ -33,7 +61,7 @@ public void ~SectionRayTracing()
 ### is_point_inside_surface
 
 ```cpp
-public bool is_point_inside_surface(const Point2D & point, const Surface2D & surface)
+public RayTracingResult is_point_inside_surface(const Point2D & point, const Surface2D & surface)
 ```
 
 

@@ -16,6 +16,13 @@ const name = words.join('-');
 
 ## Functions
 
+### Angle
+
+```cpp
+public void Angle()
+```
+
+
 ### create_from_radians
 
 ```cpp

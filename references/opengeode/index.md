@@ -290,6 +290,7 @@ const name = words.join('-');
 * [RasterImage](RasterImage.md)
 * [RayTracing2D](RayTracing2D.md)
 * [RayTracing3D](RayTracing3D.md)
+* [RayTracingResult](RayTracingResult.md)
 * [Ray](Ray.md)
 * [ReadOnlyAttribute](ReadOnlyAttribute.md)
 * [RegularGridBuilder](RegularGridBuilder.md)
@@ -2232,17 +2233,52 @@ bool are_mesh_elements_included(const MeshElementsInclusion<MeshElementType> & i
 ```
 
 
-### compute_model_unique_vertices
-
-```cpp
-void compute_model_unique_vertices(const Model & model, typename Model::Builder & builder)
-```
-
-
 ### tetrahedron_aspect_ratio
 
 ```cpp
 double tetrahedron_aspect_ratio(const Tetrahedron & tetra)
+```
+
+
+### polyhedron_unique_vertices
+
+```cpp
+PolyhedronVertices polyhedron_unique_vertices(const BRep & model, const Block3D & block, index_t polyhedron_id)
+```
+
+
+### convert_surface_mesh
+
+```cpp
+void convert_surface_mesh(const Section & model, SectionBuilder & builder, const geode::Surface2D & surface, const geode::MeshType & mesh_type)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const PolyhedronFacetVertex & value)
+```
+
+
+### tetrahedron_volume_to_facet_ratio
+
+```cpp
+double tetrahedron_volume_to_facet_ratio(const Tetrahedron & tetra)
+```
+
+
+### convert_surface_meshes_into_triangulated_surfaces
+
+```cpp
+void convert_surface_meshes_into_triangulated_surfaces(BRep & brep)
+```
+
+
+### compute_model_unique_vertices
+
+```cpp
+void compute_model_unique_vertices(const Model & model, typename Model::Builder & builder)
 ```
 
 
@@ -2301,38 +2337,10 @@ double block_volume(const BRep & brep, const Block3D & block)
 ```
 
 
-### polyhedron_unique_vertices
-
-```cpp
-PolyhedronVertices polyhedron_unique_vertices(const BRep & model, const Block3D & block, index_t polyhedron_id)
-```
-
-
-### tetrahedron_volume_to_facet_ratio
-
-```cpp
-double tetrahedron_volume_to_facet_ratio(const Tetrahedron & tetra)
-```
-
-
 ### repair_polygons_orientations
 
 ```cpp
 void repair_polygons_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder, absl::Span<const index_t> polygons_to_reorient)
-```
-
-
-### convert_surface_mesh
-
-```cpp
-void convert_surface_mesh(const Section & model, SectionBuilder & builder, const geode::Surface2D & surface, const geode::MeshType & mesh_type)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const PolyhedronFacetVertex & value)
 ```
 
 
@@ -2389,13 +2397,6 @@ double tetrahedron_collapse_aspect_ratio(const Tetrahedron & tetra)
 
 ```cpp
 std::vector<MeshElement> component_mesh_polyhedra(const BRep & brep, const PolyhedronVertices & polyhedron_unique_vertices)
-```
-
-
-### convert_surface_meshes_into_triangulated_surfaces
-
-```cpp
-void convert_surface_meshes_into_triangulated_surfaces(BRep & brep)
 ```
 
 
@@ -2569,20 +2570,6 @@ H AbslHashValue(H h, const PolyhedronFacetEdge & value)
 
 ```cpp
 POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
-```
-
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
 ```
 
 
@@ -3056,13 +3043,6 @@ double point_line_distance(const Point<dimension> & point, const InfiniteLine<di
 
  Compute the smallest distance between a point and an infinite line
 
-### is_point_inside_closed_surface
-
-```cpp
-bool is_point_inside_closed_surface(const Point3D & point, const SurfaceMesh3D & surface, const AABBTree3D & surface_aabb)
-```
-
-
 ### component_mesh_vertex_triplets
 
 ```cpp
@@ -3197,10 +3177,31 @@ std::array<double, 2> safe_segment_barycentric_coordinates(const Point<dimension
 
 **return** an array containing the parametric coordinates corresponding to the segment vertices.
 
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
+```
+
+
 ### component_mesh_edges
 
 ```cpp
 BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const std::array<index_t, 2> & edge_unique_vertices)
+```
+
+
+### is_point_inside_closed_surface
+
+```cpp
+RayTracingResult is_point_inside_closed_surface(const Point3D & point, const SurfaceMesh3D & surface, const AABBTree3D & surface_aabb)
 ```
 
 
@@ -3215,6 +3216,20 @@ BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Line3D & li
 
 ```cpp
 BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Surface3D & surface, const PolygonEdge & edge)
+```
+
+
+### point_triangle_distance
+
+```cpp
+std::tuple<double, Point3D> point_triangle_distance(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### point_triangle_distance
+
+```cpp
+std::tuple<double, Point2D> point_triangle_distance(const Point2D & point, const Triangle2D & triangle)
 ```
 
 
@@ -3259,20 +3274,6 @@ IntersectionResult<absl::InlinedVector<Point<dimension>, 2>> segment_sphere_inte
  Compute the intersection(s) between a (n-1)-sphere and a segment in n-dimension space.
 
 **return** an optional of the intersection points.
-
-### point_triangle_distance
-
-```cpp
-std::tuple<double, Point3D> point_triangle_distance(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### point_triangle_distance
-
-```cpp
-std::tuple<double, Point2D> point_triangle_distance(const Point2D & point, const Triangle2D & triangle)
-```
-
 
 ### segment_triangle_distance
 
