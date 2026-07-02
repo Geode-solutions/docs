@@ -64,6 +64,13 @@ const name = words.join('-');
 
 ## Functions
 
+### plane_normal_check
+
+```cpp
+bool plane_normal_check(const SurfaceMesh3D & mesh, const PolygonEdge & edge, index_t apex, index_t opposite_apex)
+```
+
+
 ### pre_process_meshing_step
 
 ```cpp

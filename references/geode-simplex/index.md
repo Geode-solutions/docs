@@ -215,20 +215,6 @@ void relax_surfaces(const BRep & brep, BRepGeometricModifier & modifier, const S
 ```
 
 
-### compute_worst_quality
-
-```cpp
-double compute_worst_quality(const SwapTrianglesAfter3D & triangles)
-```
-
-
-### is_lucarne_edge
-
-```cpp
-bool is_lucarne_edge(const geode::BRep & brep, absl::Span<const geode::index_t> edge_unique_vertices)
-```
-
-
 ### nb_minimum_apriori_simplex_elements
 
 ```cpp

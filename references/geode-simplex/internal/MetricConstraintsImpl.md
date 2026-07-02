@@ -47,12 +47,7 @@ protected flat_hash_map user_lines_
 ```
 
 ```cpp
-protected flat_hash_map geometric_lines_
-
-```
-
-```cpp
-protected absl::linked_hash_map<uuid, std::unique_ptr<PointSet<dimension>>> geometric_surfaces_
+protected std::vector<MetricBall> geometric_constraints_
 
 ```
 
