@@ -135,6 +135,13 @@ public void paint_point(const Point<dimension> & point, double metric, Compare c
 ```
 
 
+### paint_ball
+
+```cpp
+public void paint_ball(Point<dimension> center, double radius, double metric, Compare compare)
+```
+
+
 ### paint_segment
 
 ```cpp

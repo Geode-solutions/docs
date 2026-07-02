@@ -21,6 +21,17 @@ public static const auto RADIUS_ATTRIBUTE_NAME
 
 ```
 
+```cpp
+public static const auto ORIGIN_ATTRIBUTE_NAME
+
+```
+
+
+
+## Records
+
+Options
+
 
 
 ## Functions
@@ -56,7 +67,7 @@ public MedialBallExtractor & operator=(MedialBallExtractor && )
 ### MedialBallExtractor
 
 ```cpp
-public void MedialBallExtractor(const BRep & brep, double min_angle)
+public void MedialBallExtractor(const BRep & brep, Options & options)
 ```
 
 
