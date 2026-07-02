@@ -11,56 +11,49 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class InternalCornerRange
+# class EmbeddingLineRange
 
 
 ```cpp
-Inherits from InternalRangeIterator
+Inherits from EmbeddingRangeIterator
 ```
 
 
 
 ## Functions
 
-### InternalCornerRange
+### EmbeddingLineRange
 
 ```cpp
-public void InternalCornerRange(const Section & section, const Line2D & line)
+public void EmbeddingLineRange(const BRep & brep, const Corner3D & corner)
 ```
 
 
-### InternalCornerRange
+### EmbeddingLineRange
 
 ```cpp
-public void InternalCornerRange(const Section & section, const Surface2D & surface)
+public void EmbeddingLineRange(const EmbeddingLineRange & range)
 ```
 
 
-### InternalCornerRange
+### ~EmbeddingLineRange
 
 ```cpp
-public void InternalCornerRange(const InternalCornerRange & range)
-```
-
-
-### ~InternalCornerRange
-
-```cpp
-public void ~InternalCornerRange()
+public void ~EmbeddingLineRange()
 ```
 
 
 ### begin
 
 ```cpp
-public const InternalCornerRange & begin()
+public const EmbeddingLineRange & begin()
 ```
 
 
 ### end
 
 ```cpp
-public const InternalCornerRange & end()
+public const EmbeddingLineRange & end()
 ```
 
 
@@ -74,7 +67,7 @@ public void operator++()
 ### operator*
 
 ```cpp
-public const Corner2D & operator*()
+public const Line3D & operator*()
 ```
 
 

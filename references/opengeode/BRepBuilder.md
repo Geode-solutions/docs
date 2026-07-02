@@ -392,6 +392,13 @@ public void add_surface_block_boundary_relationship(const Surface3D & surface, c
 ```
 
 
+### add_corner_line_internal_relationship
+
+```cpp
+public void add_corner_line_internal_relationship(const Corner3D & corner, const Line3D & line)
+```
+
+
 ### add_corner_surface_internal_relationship
 
 ```cpp

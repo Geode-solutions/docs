@@ -25,6 +25,20 @@ EdgeDistance
 ### RayTracing2D
 
 ```cpp
+public void RayTracing2D(const RayTracing2D & )
+```
+
+
+### operator=
+
+```cpp
+public RayTracing2D & operator=(const RayTracing2D & )
+```
+
+
+### RayTracing2D
+
+```cpp
 public void RayTracing2D(const EdgedCurve2D & mesh, const BoundingBox2D & bbox, const Ray2D & ray)
 ```
 
@@ -39,7 +53,7 @@ public void RayTracing2D(const EdgedCurve2D & mesh, const BoundingBox2D & bbox, 
 ### RayTracing2D
 
 ```cpp
-public void RayTracing2D(const EdgedCurve2D & mesh, const Point2D & origin, const OwnerSegment2D & segment)
+public void RayTracing2D(const EdgedCurve2D & mesh, const Point2D & origin, OwnerSegment2D segment)
 ```
 
 
@@ -47,6 +61,13 @@ public void RayTracing2D(const EdgedCurve2D & mesh, const Point2D & origin, cons
 
 ```cpp
 public void RayTracing2D(RayTracing2D && other)
+```
+
+
+### operator=
+
+```cpp
+public RayTracing2D & operator=(RayTracing2D && other)
 ```
 
 

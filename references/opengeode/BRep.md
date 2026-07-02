@@ -43,6 +43,8 @@ BoundarySurfaceRange
 
 EmbeddingBlockRange
 
+EmbeddingLineRange
+
 EmbeddingSurfaceRange
 
 IncidentBlockRange
@@ -170,6 +172,20 @@ public IncidentBlockRange incidences(const Surface3D & surface)
 ### nb_internal_corners
 
 ```cpp
+public index_t nb_internal_corners(const Line3D & line)
+```
+
+
+### internal_corners
+
+```cpp
+public InternalCornerRange internal_corners(const Line3D & line)
+```
+
+
+### nb_internal_corners
+
+```cpp
 public index_t nb_internal_corners(const Surface3D & surface)
 ```
 
@@ -234,6 +250,20 @@ public index_t nb_internal_surfaces(const Block3D & block)
 
 ```cpp
 public InternalSurfaceRange internal_surfaces(const Block3D & block)
+```
+
+
+### nb_embedding_lines
+
+```cpp
+public index_t nb_embedding_lines(const Corner3D & corner)
+```
+
+
+### embedding_lines
+
+```cpp
+public EmbeddingLineRange embedding_lines(const Corner3D & corner)
 ```
 
 
@@ -374,6 +404,13 @@ public bool is_boundary(const Line3D & line, const Surface3D & surface)
 
 ```cpp
 public bool is_boundary(const Surface3D & surface, const Block3D & block)
+```
+
+
+### is_internal
+
+```cpp
+public bool is_internal(const Corner3D & corner, const Line3D & surface)
 ```
 
 

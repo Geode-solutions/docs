@@ -322,6 +322,13 @@ public void add_line_surface_boundary_relationship(const Line2D & line, const Su
 ```
 
 
+### add_corner_line_internal_relationship
+
+```cpp
+public void add_corner_line_internal_relationship(const Corner2D & corner, const Line2D & line)
+```
+
+
 ### add_corner_surface_internal_relationship
 
 ```cpp

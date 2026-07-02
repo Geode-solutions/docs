@@ -39,6 +39,8 @@ BoundaryCornerRange
 
 BoundaryLineRange
 
+EmbeddingLineRange
+
 EmbeddingSurfaceRange
 
 IncidentLineRange
@@ -58,6 +60,41 @@ ItemSurfaceRange
 
 
 ## Functions
+
+### boundaries
+
+```cpp
+public BoundaryCornerRange boundaries(const Line2D & line)
+```
+
+
+### incidences
+
+```cpp
+public IncidentLineRange incidences(const Corner2D & corner)
+```
+
+
+### incidences
+
+```cpp
+public IncidentSurfaceRange incidences(const Line2D & line)
+```
+
+
+### native_extension_static
+
+```cpp
+public static std::string_view native_extension_static()
+```
+
+
+### native_extension
+
+```cpp
+public std::string_view native_extension()
+```
+
 
 ### Section
 
@@ -104,28 +141,21 @@ public const Component2D & component(const uuid & id)
 ### boundaries
 
 ```cpp
-public BoundaryCornerRange boundaries(const Line2D & line)
-```
-
-
-### boundaries
-
-```cpp
 public BoundaryLineRange boundaries(const Surface2D & surface)
 ```
 
 
-### incidences
+### nb_internal_corners
 
 ```cpp
-public IncidentLineRange incidences(const Corner2D & corner)
+public index_t nb_internal_corners(const Line2D & line)
 ```
 
 
-### incidences
+### internal_corners
 
 ```cpp
-public IncidentSurfaceRange incidences(const Line2D & line)
+public InternalCornerRange internal_corners(const Line2D & line)
 ```
 
 
@@ -157,6 +187,20 @@ public InternalLineRange internal_lines(const Surface2D & surface)
 ```
 
 
+### nb_embedding_lines
+
+```cpp
+public index_t nb_embedding_lines(const Corner2D & corner)
+```
+
+
+### embedding_lines
+
+```cpp
+public EmbeddingLineRange embedding_lines(const Corner2D & corner)
+```
+
+
 ### nb_embedding_surfaces
 
 ```cpp
@@ -182,20 +226,6 @@ public index_t nb_embedding_surfaces(const Line2D & line)
 
 ```cpp
 public EmbeddingSurfaceRange embedding_surfaces(const Line2D & line)
-```
-
-
-### native_extension_static
-
-```cpp
-public static std::string_view native_extension_static()
-```
-
-
-### native_extension
-
-```cpp
-public std::string_view native_extension()
 ```
 
 
@@ -245,6 +275,13 @@ public bool is_boundary(const Corner2D & corner, const Line2D & line)
 
 ```cpp
 public bool is_boundary(const Line2D & line, const Surface2D & surface)
+```
+
+
+### is_internal
+
+```cpp
+public bool is_internal(const Corner2D & corner, const Line2D & line)
 ```
 
 

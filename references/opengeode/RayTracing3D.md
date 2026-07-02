@@ -25,6 +25,20 @@ PolygonDistance
 ### RayTracing3D
 
 ```cpp
+public void RayTracing3D(const RayTracing3D & )
+```
+
+
+### operator=
+
+```cpp
+public RayTracing3D & operator=(const RayTracing3D & )
+```
+
+
+### RayTracing3D
+
+```cpp
 public void RayTracing3D(const SurfaceMesh3D & mesh, const BoundingBox3D & bbox, const Ray3D & ray)
 ```
 
@@ -39,7 +53,7 @@ public void RayTracing3D(const SurfaceMesh3D & mesh, const BoundingBox3D & bbox,
 ### RayTracing3D
 
 ```cpp
-public void RayTracing3D(const SurfaceMesh3D & mesh, const Point3D & origin, const OwnerSegment3D & segment)
+public void RayTracing3D(const SurfaceMesh3D & mesh, const Point3D & origin, OwnerSegment3D segment)
 ```
 
 
@@ -47,6 +61,13 @@ public void RayTracing3D(const SurfaceMesh3D & mesh, const Point3D & origin, con
 
 ```cpp
 public void RayTracing3D(RayTracing3D && other)
+```
+
+
+### operator=
+
+```cpp
+public RayTracing3D & operator=(RayTracing3D && other)
 ```
 
 

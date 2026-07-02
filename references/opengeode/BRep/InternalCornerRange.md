@@ -25,6 +25,13 @@ Inherits from InternalRangeIterator
 ### InternalCornerRange
 
 ```cpp
+public void InternalCornerRange(const BRep & brep, const Line3D & line)
+```
+
+
+### InternalCornerRange
+
+```cpp
 public void InternalCornerRange(const BRep & brep, const Surface3D & surface)
 ```
 
