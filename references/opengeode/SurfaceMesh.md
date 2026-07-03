@@ -414,7 +414,7 @@ public double polygon_area(index_t polygon_id)
 ### polygon_normal
 
 ```cpp
-public typename std::enable_if<T == 3, std::optional<Vector3D>>::type polygon_normal(index_t polygon_id)
+public std::enable_if_t<T == 3, std::optional<Vector3D>> polygon_normal(index_t polygon_id)
 ```
 
 
@@ -423,7 +423,7 @@ public typename std::enable_if<T == 3, std::optional<Vector3D>>::type polygon_no
 ### polygon_vertex_normal
 
 ```cpp
-public typename std::enable_if<T == 3, std::optional<Vector3D>>::type polygon_vertex_normal(index_t vertex_id)
+public std::enable_if_t<T == 3, std::optional<Vector3D>> polygon_vertex_normal(index_t vertex_id)
 ```
 
 

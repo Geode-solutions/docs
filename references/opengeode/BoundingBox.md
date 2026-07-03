@@ -175,7 +175,7 @@ public bool intersects(const Segment<dimension> & segment)
 ### intersects
 
 ```cpp
-public typename std::enable_if<T == 2 || T == 3, bool>::type intersects(const Triangle<T> & triangle)
+public std::enable_if_t<T == 2 || T == 3, bool> intersects(const Triangle<T> & triangle)
 ```
 
  Returns true if the element is crossing, is inside (or is containing the bbox in 2D)
@@ -183,7 +183,7 @@ public typename std::enable_if<T == 2 || T == 3, bool>::type intersects(const Tr
 ### intersects
 
 ```cpp
-public typename std::enable_if<T == 3, bool>::type intersects(const Tetrahedron & tetra)
+public std::enable_if_t<T == 3, bool> intersects(const Tetrahedron & tetra)
 ```
 
 
@@ -222,13 +222,13 @@ public bool epsilon_intersects(const Segment<dimension> & segment)
 ### epsilon_intersects
 
 ```cpp
-public typename std::enable_if<T == 2 || T == 3, bool>::type epsilon_intersects(const Triangle<T> & triangle)
+public std::enable_if_t<T == 2 || T == 3, bool> epsilon_intersects(const Triangle<T> & triangle)
 ```
 
 ### epsilon_intersects
 
 ```cpp
-public typename std::enable_if<T == 3, bool>::type epsilon_intersects(const Tetrahedron & tetra)
+public std::enable_if_t<T == 3, bool> epsilon_intersects(const Tetrahedron & tetra)
 ```
 
 

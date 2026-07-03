@@ -82,21 +82,21 @@ public Point<dimension> barycenter()
 ### normal
 
 ```cpp
-public typename std::enable_if<T == 3, std::optional<Vector3D>>::type normal()
+public std::enable_if_t<T == 3, std::optional<Vector3D>> normal()
 ```
 
 
 ### plane
 
 ```cpp
-public typename std::enable_if<T == 3, std::optional<Plane>>::type plane()
+public std::enable_if_t<T == 3, std::optional<Plane>> plane()
 ```
 
 
 ### owner_plane
 
 ```cpp
-public typename std::enable_if<T == 3, std::optional<OwnerPlane>>::type owner_plane()
+public std::enable_if_t<T == 3, std::optional<OwnerPlane>> owner_plane()
 ```
 
 

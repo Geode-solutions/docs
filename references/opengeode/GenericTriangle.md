@@ -94,35 +94,35 @@ public Point<dimension> barycenter()
 ### normal
 
 ```cpp
-public typename std::enable_if<T == 3, std::optional<Vector3D>>::type normal()
+public std::enable_if_t<T == 3, std::optional<Vector3D>> normal()
 ```
 
 
 ### plane
 
 ```cpp
-public typename std::enable_if<T == 3, std::optional<Plane>>::type plane()
+public std::enable_if_t<T == 3, std::optional<Plane>> plane()
 ```
 
 
 ### owner_plane
 
 ```cpp
-public typename std::enable_if<T == 3, std::optional<OwnerPlane>>::type owner_plane()
+public std::enable_if_t<T == 3, std::optional<OwnerPlane>> owner_plane()
 ```
 
 
 ### pivot
 
 ```cpp
-public typename std::enable_if<T == 3, std::optional<local_index_t>>::type pivot()
+public std::enable_if_t<T == 3, std::optional<local_index_t>> pivot()
 ```
 
 
 ### pivot_and_normal
 
 ```cpp
-public typename std::enable_if<T == 3, std::optional<std::pair<local_index_t, Vector3D>>>::type pivot_and_normal()
+public std::enable_if_t<T == 3, std::optional<std::pair<local_index_t, Vector3D>>> pivot_and_normal()
 ```
 
 

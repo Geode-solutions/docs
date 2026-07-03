@@ -96,7 +96,7 @@ public const Vector<dimension> & direction()
 ### line_constant
 
 ```cpp
-public typename std::enable_if<T == 2, double>::type line_constant()
+public std::enable_if_t<T == 2, double> line_constant()
 ```
 
 
