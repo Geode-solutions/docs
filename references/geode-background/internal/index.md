@@ -149,7 +149,7 @@ ALLOWED_COLLAPSE_VERTEX_VERTEX allowed_collapse_edge_by_mandatory_macro_info(con
 ### epsilon_optimize_background_brep_elements
 
 ```cpp
-std::vector<BlockElement<index_t>> epsilon_optimize_background_brep_elements(BackgroundBRepGeometricConstraintModifier & constraint_modifier, BRepBuilder & brep_builder, absl::Span<const BlockElement<index_t>> tetrahedra)
+void epsilon_optimize_background_brep_elements(BackgroundBRepGeometricConstraintModifier & constraint_modifier, BRepBuilder & brep_builder, absl::Span<const BlockElement<index_t>> tetrahedra)
 ```
 
 
