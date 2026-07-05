@@ -22,6 +22,10 @@ const name = words.join('-');
 
 ## Records
 
+* [CrossSectionGeologyInspectionResult](CrossSectionGeologyInspectionResult.md)
+* [CrossSectionGeologyInspector](CrossSectionGeologyInspector.md)
+* [CrossSectionInspectionResult](CrossSectionInspectionResult.md)
+* [CrossSectionInspector](CrossSectionInspector.md)
 * [OpenGeodeInspectorGeosciencesException](OpenGeodeInspectorGeosciencesException.md)
 * [OpenGeodeInspectorGeosciencesInspectionException](OpenGeodeInspectorGeosciencesInspectionException.md)
 * [OpenGeodeInspectorGeosciencesInspectionLibrary](OpenGeodeInspectorGeosciencesInspectionLibrary.md)
