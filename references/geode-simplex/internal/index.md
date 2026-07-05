@@ -92,17 +92,17 @@ RemeshedSurface3D remesh_surface_using_parameterization(const TriangulatedSurfac
 ```
 
 
-### remesh_surface_using_plane
-
-```cpp
-RemeshedSurface3D remesh_surface_using_plane(const TriangulatedSurface3D & background_mesh, TriangulatedSurfaceBuilder3D & background_builder, TriangulatedSurfaceEpsilonModifier3D & background_modifier, const Metric3D & metric, absl::Span<const index_t> lock_vertices)
-```
-
-
 ### update_unique_vertices
 
 ```cpp
 void update_unique_vertices(Builder & builder, Modifier & modifier, const geode::internal::RemeshedCMV & info)
+```
+
+
+### remesh_surface_using_plane
+
+```cpp
+RemeshedSurface3D remesh_surface_using_plane(const TriangulatedSurface3D & background_mesh, TriangulatedSurfaceBuilder3D & background_builder, TriangulatedSurfaceEpsilonModifier3D & background_modifier, const Metric3D & metric, absl::Span<const index_t> lock_vertices)
 ```
 
 
