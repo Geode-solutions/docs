@@ -11,19 +11,11 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class MedialBallExtractor
+# class BRepMedialBallExtractor
 
-
-## Members
 
 ```cpp
-public static const auto RADIUS_ATTRIBUTE_NAME
-
-```
-
-```cpp
-public static const auto ORIGIN_ATTRIBUTE_NAME
-
+Inherits from ModelMedialBallExtractor
 ```
 
 
@@ -36,45 +28,45 @@ Options
 
 ## Functions
 
-### MedialBallExtractor
+### BRepMedialBallExtractor
 
 ```cpp
-public void MedialBallExtractor(const MedialBallExtractor & )
+public void BRepMedialBallExtractor(const BRepMedialBallExtractor & )
 ```
 
 
-### MedialBallExtractor
+### BRepMedialBallExtractor
 
 ```cpp
-public void MedialBallExtractor(MedialBallExtractor && )
-```
-
-
-### operator=
-
-```cpp
-public MedialBallExtractor & operator=(const MedialBallExtractor & )
+public void BRepMedialBallExtractor(BRepMedialBallExtractor && )
 ```
 
 
 ### operator=
 
 ```cpp
-public MedialBallExtractor & operator=(MedialBallExtractor && )
+public BRepMedialBallExtractor & operator=(const BRepMedialBallExtractor & )
 ```
 
 
-### MedialBallExtractor
+### operator=
 
 ```cpp
-public void MedialBallExtractor(const BRep & brep, Options & options)
+public BRepMedialBallExtractor & operator=(BRepMedialBallExtractor && )
 ```
 
 
-### ~MedialBallExtractor
+### BRepMedialBallExtractor
 
 ```cpp
-public void ~MedialBallExtractor()
+public void BRepMedialBallExtractor(const BRep & brep, Options & options)
+```
+
+
+### ~BRepMedialBallExtractor
+
+```cpp
+public void ~BRepMedialBallExtractor()
 ```
 
 

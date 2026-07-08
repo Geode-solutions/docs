@@ -22,11 +22,6 @@ public Angle min_angle
 ```
 
 ```cpp
-public bool extract_surface_balls
-
-```
-
-```cpp
 public bool extract_line_balls
 
 ```
