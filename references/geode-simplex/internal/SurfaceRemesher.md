@@ -37,6 +37,34 @@ public static const auto dimension
 
 ## Functions
 
+### SurfaceRemesher
+
+```cpp
+public void SurfaceRemesher<Data>(SurfaceRemesher<Data> && )
+```
+
+
+### SurfaceRemesher
+
+```cpp
+public void SurfaceRemesher<Data>(const SurfaceRemesher<Data> & )
+```
+
+
+### operator=
+
+```cpp
+public SurfaceRemesher<Data> & operator=(const SurfaceRemesher<Data> & )
+```
+
+
+### operator=
+
+```cpp
+public SurfaceRemesher<Data> & operator=(SurfaceRemesher<Data> && )
+```
+
+
 ### ~SurfaceRemesher
 
 ```cpp
@@ -128,13 +156,6 @@ protected absl::FixedArray<index_t> transfer_remeshed(const RemeshedSurface<dime
 ```
 
 
-### transfer_remeshed
-
-```cpp
-protected absl::FixedArray<index_t> transfer_remeshed(const RemainingSurface<dimension> & remaining, const RemeshedSurface<dimension> & remeshed, absl::Span<const index_t> remaining_mapping)
-```
-
-
 ### compute_remaining_adjacencies
 
 ```cpp
@@ -145,7 +166,7 @@ protected void compute_remaining_adjacencies()
 ### fill_remaining
 
 ```cpp
-protected std::tuple<std::unique_ptr<TriangulatedSurface<dimension>>, absl::FixedArray<index_t>> fill_remaining(RemainingSurface<dimension> & remaining, absl::Span<const index_t> remaining_mapping)
+protected std::tuple<std::unique_ptr<TriangulatedSurface<dimension>>, absl::FixedArray<index_t>> fill_remaining(RemainingPolygon<dimension> & remaining, absl::Span<const index_t> remaining_mapping)
 ```
 
 

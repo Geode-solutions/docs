@@ -11,37 +11,20 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class FillRemaining
+# struct RemainingPolygon
 
 
-## Functions
-
-### FillRemaining
+## Members
 
 ```cpp
-public void FillRemaining<dimension>(RemainingSurface<dimension> & remaining)
+public vector remeshed_mapping
+
 ```
-
-
-### ~FillRemaining
 
 ```cpp
-public void ~FillRemaining<dimension>()
+public std::vector<Point<dimension>> points
+
 ```
 
-
-### fill
-
-```cpp
-public absl::FixedArray<index_t> fill()
-```
-
-
-
-
-# class FillRemaining
-
-
-# class FillRemaining
 
 

@@ -22,6 +22,34 @@ const name = words.join('-');
 ### RemeshAlgo
 
 ```cpp
+public void RemeshAlgo<dimension>(const RemeshAlgo<dimension> & )
+```
+
+
+### RemeshAlgo
+
+```cpp
+public void RemeshAlgo<dimension>(RemeshAlgo<dimension> && )
+```
+
+
+### operator=
+
+```cpp
+public RemeshAlgo<dimension> & operator=(const RemeshAlgo<dimension> & )
+```
+
+
+### operator=
+
+```cpp
+public RemeshAlgo<dimension> & operator=(RemeshAlgo<dimension> && )
+```
+
+
+### RemeshAlgo
+
+```cpp
 protected void RemeshAlgo<dimension>(const Metric<dimension> & metric, absl::Span<const index_t> lock_vertices)
 ```
 
@@ -51,6 +79,13 @@ protected const TriangulatedSurface<dimension> & remeshed()
 
 ```cpp
 protected TriangulatedSurfaceBuilder<dimension> & remeshed_builder()
+```
+
+
+### remeshed_modifier
+
+```cpp
+protected TriangulatedSurfaceModifier<dimension> & remeshed_modifier()
 ```
 
 

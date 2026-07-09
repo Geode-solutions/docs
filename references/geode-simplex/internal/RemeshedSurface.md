@@ -27,7 +27,7 @@ public vector input_mapping
 ```
 
 ```cpp
-public absl::InlinedVector<RemainingSurface<dimension>, 1> remainings
+public absl::InlinedVector<RemainingPolygon<dimension>, 1> remainings
 
 ```
 

@@ -27,12 +27,10 @@ const name = words.join('-');
 * [BlockSampler](BlockSampler.md)
 * [BlockTetgenMesher](BlockTetgenMesher.md)
 * [Edge](Edge.md)
-* [FillRemaining](FillRemaining.md)
 * [FrontalRemesher2D](FrontalRemesher2D.md)
 * [FrontalRemesher3D](FrontalRemesher3D.md)
 * [FrontalRemesher](FrontalRemesher.md)
 * [JsonIsotropicMetricConstraintsImpl](JsonIsotropicMetricConstraintsImpl.md)
-* [LSCMRemesher](LSCMRemesher.md)
 * [LineConstraint](LineConstraint.md)
 * [LineRelaxer](LineRelaxer.md)
 * [LineRemesherOutput](LineRemesherOutput.md)
@@ -44,7 +42,7 @@ const name = words.join('-');
 * [PropagateAlongSurfaceMacroEdge2D](PropagateAlongSurfaceMacroEdge2D.md)
 * [PropagateAlongSurfaceMacroEdge3D](PropagateAlongSurfaceMacroEdge3D.md)
 * [PropagateAlongSurfaceMacroEdge](PropagateAlongSurfaceMacroEdge.md)
-* [RemainingSurface](RemainingSurface.md)
+* [RemainingPolygon](RemainingPolygon.md)
 * [RemeshAlgo](RemeshAlgo.md)
 * [RemeshedCMV](RemeshedCMV.md)
 * [RemeshedSurface](RemeshedSurface.md)
@@ -85,10 +83,10 @@ RemeshedSurface2D remesh_surface(const TriangulatedSurface2D & background_mesh, 
 ```
 
 
-### remesh_surface_using_parameterization
+### remesh_surface_using_plane
 
 ```cpp
-RemeshedSurface3D remesh_surface_using_parameterization(const TriangulatedSurface3D & mesh, const Metric3D & metric, absl::Span<const index_t> lock_vertices, absl::Span<const index_t> outside_polygons, std::vector<std::vector<index_t>> macro_edges)
+RemeshedSurface3D remesh_surface_using_plane(const TriangulatedSurface3D & background_mesh, TriangulatedSurfaceBuilder3D & background_builder, TriangulatedSurfaceEpsilonModifier3D & background_modifier, const Metric3D & metric, absl::Span<const index_t> lock_vertices)
 ```
 
 
@@ -96,13 +94,6 @@ RemeshedSurface3D remesh_surface_using_parameterization(const TriangulatedSurfac
 
 ```cpp
 void update_unique_vertices(Builder & builder, Modifier & modifier, const geode::internal::RemeshedCMV & info)
-```
-
-
-### remesh_surface_using_plane
-
-```cpp
-RemeshedSurface3D remesh_surface_using_plane(const TriangulatedSurface3D & background_mesh, TriangulatedSurfaceBuilder3D & background_builder, TriangulatedSurfaceEpsilonModifier3D & background_modifier, const Metric3D & metric, absl::Span<const index_t> lock_vertices)
 ```
 
 
@@ -144,7 +135,7 @@ bool has_degenerated_elements(const BRep & brep, const BRepElementsAfterCollapse
 ### AbslHashValue
 
 ```cpp
-H AbslHashValue(H h, const MacroPolygonEdge & m)
+H AbslHashValue(H hash, const MacroPolygonEdge & macro_edge)
 ```
 
 
