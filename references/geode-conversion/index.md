@@ -23,7 +23,9 @@ const name = words.join('-');
 
 ## Records
 
+* [BRepAddSharpResult](BRepAddSharpResult.md)
 * [BRepMappings](BRepMappings.md)
+* [BRepSharpCollections](BRepSharpCollections.md)
 * [BlockRelationships](BlockRelationships.md)
 * [GeodeConversionException](GeodeConversionException.md)
 * [GeodeConversionModelException](GeodeConversionModelException.md)
@@ -33,6 +35,9 @@ const name = words.join('-');
 * [IndexToSectionMeshElementsMapping](IndexToSectionMeshElementsMapping.md)
 * [ModelBuildTopologyParameters](ModelBuildTopologyParameters.md)
 * [ModelBuilderFromUniqueVertices](ModelBuilderFromUniqueVertices.md)
+* [ModelSharpCollections](ModelSharpCollections.md)
+* [SectionAddSharpResult](SectionAddSharpResult.md)
+* [SectionSharpCollections](SectionSharpCollections.md)
 * [uuid](uuid.md)
 
 
@@ -73,36 +78,12 @@ std::vector<uuid> build_blocks(const BRep & brep, BRepBuilder & builder, absl::S
 ```
 
 
-### add_sharp_features
-
-```cpp
-SectionMappings add_sharp_features(Section & model, double max_angle)
-```
-
-
- Update the given Section, with the sharp features (e.g., points where the angle between the edges is higher than the given max_angle) on the lines explicited into corners, eventually splitting input lines.
-
-**model** [in] Section
-
-**max_angle** [in] Angle between the edges under which their common vertex is considered a sharp feature.
-
 ### convert_meshes_into_section
 
 ```cpp
 std::tuple<Section, SectionMappings> convert_meshes_into_section(absl::Span<const std::reference_wrapper<const PointSet2D>> corners, absl::Span<const std::reference_wrapper<const EdgedCurve2D>> curves, absl::Span<const std::reference_wrapper<const SurfaceMesh2D>> surfaces)
 ```
 
-
-### remove_sharp_features
-
-```cpp
-SectionMappings remove_sharp_features(Section & model)
-```
-
-
- Update the given Section removing the sharp features stored in a CornerCollection2D, and if necessary merge input lines.
-
-**model** [in] Section
 
 ### build_blocks
 
@@ -117,6 +98,19 @@ void build_blocks(const BRep & brep, BRepBuilder & builder)
 void add_breps_block_mapping_case_bijective(const BRep & initial_brep, const BRep & output_brep, ModelGenericMapping & brep_mapping)
 ```
 
+
+### add_sharp_features
+
+```cpp
+SectionAddSharpResult add_sharp_features(Section & model, double max_angle)
+```
+
+
+ Update the given Section, with the sharp features (e.g., points where the angle between the edges is higher than the given max_angle) on the lines explicited into corners, eventually splitting input lines.
+
+**model** [in] Section
+
+**max_angle** [in] Angle between the edges under which their common vertex is considered a sharp feature.
 
 ### add_breps_block_mapping_case_surjective
 
@@ -141,19 +135,6 @@ std::tuple<BRep, BRepMappings> convert_meshes_into_brep(absl::Span<const std::re
 **surfaces** [in] Input surfaces
 
 **return** the BRep and the mapping between input corners, curves and surfaces and Corner, Line and Surface uuid. One input surface could contribute to several Surfaces depending on the merging result.
-
-### add_sharp_features
-
-```cpp
-BRepMappings add_sharp_features(BRep & model, double max_angle)
-```
-
-
- Update the given BRep, with the sharp features (e.g., edges where the angle between the normals of the facets is higher than the given max_angle) on the lines and surfaces explicited into corners and lines, eventually splitting input lines and surfaces.
-
-**model** [in] BRep
-
-**max_angle** [in] Dihedral angle between the facets and angle between line edges, under which their common edge/vertex is considered a sharp feature.
 
 ### build_model_component_mapping
 
@@ -184,28 +165,21 @@ void add_breps_block_mapping_case_multivaluate(const BRep & initial_brep, const 
 ```
 
 
+### remove_sharp_features
+
+```cpp
+SectionMappings remove_sharp_features(Section & model, const SectionSharpCollections & sharp_collections)
+```
+
+
+ Update the given Section removing the sharp features stored in a CornerCollection2D, and if necessary merge input lines.
+
+**model** [in] Section
+
 ### build_brep_component_mapping
 
 ```cpp
 ModelGenericMapping build_brep_component_mapping(const BRep & out_brep, const BRepMeshesElementMapping & mesh_element_mappings)
-```
-
-
-### remove_sharp_features
-
-```cpp
-BRepMappings remove_sharp_features(BRep & model)
-```
-
-
- Update the given BRep removing the sharp features stored in a CornerCollection3D and a LineCollection3D, and if necessary merge input lines and surfaces.
-
-**model** [in] Section
-
-### curve_from_surface_borders
-
-```cpp
-std::unique_ptr<EdgedCurve<dimension>> curve_from_surface_borders(const SurfaceMesh<dimension> & surface)
 ```
 
 
@@ -224,6 +198,37 @@ std::tuple<BRep, VertexIndexMapping, IndexToBRepMeshElementsMapping> convert_sol
 
 ```cpp
 std::vector<index_t> surface_facets_from_attribute(SolidMesh3D & solid, std::string_view attribute_name)
+```
+
+
+### add_sharp_features
+
+```cpp
+BRepAddSharpResult add_sharp_features(BRep & model, double max_angle)
+```
+
+
+ Update the given BRep, with the sharp features (e.g., edges where the angle between the normals of the facets is higher than the given max_angle) on the lines and surfaces explicited into corners and lines, eventually splitting input lines and surfaces.
+
+**model** [in] BRep
+
+**max_angle** [in] Dihedral angle between the facets and angle between line edges, under which their common edge/vertex is considered a sharp feature.
+
+### remove_sharp_features
+
+```cpp
+BRepMappings remove_sharp_features(BRep & model, const BRepSharpCollections & sharp_collections)
+```
+
+
+ Update the given BRep removing the sharp features stored in a CornerCollection3D and a LineCollection3D, and if necessary merge input lines and surfaces.
+
+**model** [in] Section
+
+### curve_from_surface_borders
+
+```cpp
+std::unique_ptr<EdgedCurve<dimension>> curve_from_surface_borders(const SurfaceMesh<dimension> & surface)
 ```
 
 
