@@ -293,6 +293,20 @@ bool are_component_mesh_vertices_included(const ComponentMeshVertexInclusionQuer
 ```
 
 
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const BlockElement<ElementId> & element)
+```
+
+
+### colocalise_brep_unique_vertices
+
+```cpp
+void colocalise_brep_unique_vertices(ModifiableBRep model, BRepBuilder & builder)
+```
+
+
 ### allowed_collapse_edge_by_constraints
 
 ```cpp
@@ -304,6 +318,13 @@ ALLOWED_COLLAPSE_VERTEX_VERTEX allowed_collapse_edge_by_constraints(const Modifi
 
 ```cpp
 ALLOWED_COLLAPSE_VERTEX_VERTEX allowed_collapse_edge_by_constraints(const ModifiableTetrahedralSolid & solid, const PolyhedronFacetEdge & edge, const TetrahedralSolidConstraintModifier::Constraints & constraints)
+```
+
+
+### colocalise_section_unique_vertices
+
+```cpp
+void colocalise_section_unique_vertices(ModifiableSection model, SectionBuilder & builder)
 ```
 
 
@@ -329,27 +350,6 @@ std::optional<SolidEdgeTShape> edge_tshape_apex(const TetrahedralSolid3D & mesh,
 
 ```cpp
 Triangle<dimension> dummy_triangle()
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const BlockElement<ElementId> & element)
-```
-
-
-### colocalise_brep_unique_vertices
-
-```cpp
-void colocalise_brep_unique_vertices(ModifiableBRep model, BRepBuilder & builder)
-```
-
-
-### colocalise_section_unique_vertices
-
-```cpp
-void colocalise_section_unique_vertices(ModifiableSection model, SectionBuilder & builder)
 ```
 
 

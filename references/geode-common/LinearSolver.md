@@ -18,8 +18,6 @@ const name = words.join('-');
 
 Coefficient
 
-Impl
-
 
 
 ## Functions
