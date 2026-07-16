@@ -381,10 +381,17 @@ const name = words.join('-');
 
 ## Functions
 
-### filename_with_extension
+### register_geode_builder
 
 ```cpp
-std::filesystem::path filename_with_extension(const std::filesystem::path & path)
+void register_geode_builder()
+```
+
+
+### build_grid_from_bbox_target_length_and_maximum_cell_number
+
+```cpp
+LightRegularGrid<dimension> build_grid_from_bbox_target_length_and_maximum_cell_number(const BoundingBox<dimension> & bbox, double target_cell_length, index_t max_nb_cells)
 ```
 
 
@@ -392,13 +399,6 @@ std::filesystem::path filename_with_extension(const std::filesystem::path & path
 
 ```cpp
 void register_attribute_type(PContext & context, std::string_view name)
-```
-
-
-### register_geode_mesh
-
-```cpp
-void register_geode_mesh()
 ```
 
 
@@ -416,10 +416,31 @@ void register_geode_mesh_output()
 ```
 
 
+### filename_with_extension
+
+```cpp
+std::filesystem::path filename_with_extension(const std::filesystem::path & path)
+```
+
+
 ### string_split
 
 ```cpp
 std::vector<std::string_view> string_split(std::string_view string)
+```
+
+
+### concatenate
+
+```cpp
+void concatenate(Container & container, const Container & values)
+```
+
+
+### register_geode_mesh
+
+```cpp
+void register_geode_mesh()
 ```
 
 
@@ -434,34 +455,6 @@ bool file_exists(std::string_view file_path)
 
 ```cpp
 std::filesystem::path filename_without_extension(const std::filesystem::path & path)
-```
-
-
-### filter_brep_components_with_regards_to_blocks
-
-```cpp
-std::vector<ComponentID> filter_brep_components_with_regards_to_blocks(BRep & brep)
-```
-
-
-### build_grid_from_bbox_target_length_and_maximum_cell_number
-
-```cpp
-LightRegularGrid<dimension> build_grid_from_bbox_target_length_and_maximum_cell_number(const BoundingBox<dimension> & bbox, double target_cell_length, index_t max_nb_cells)
-```
-
-
-### concatenate
-
-```cpp
-void concatenate(Container & container, const Container & values)
-```
-
-
-### register_geode_builder
-
-```cpp
-void register_geode_builder()
 ```
 
 
@@ -483,6 +476,13 @@ double hausdorff_distance(const TriangulatedSurface3D & mesh_A, const Triangulat
 
 ```cpp
 void check_keyword(std::ifstream & file, std::string_view keyword)
+```
+
+
+### filter_brep_components_with_regards_to_blocks
+
+```cpp
+std::vector<ComponentID> filter_brep_components_with_regards_to_blocks(BRep & brep)
 ```
 
 
@@ -2030,13 +2030,6 @@ index_t hybrid_solid_object_priority(std::string_view filename)
 ```
 
 
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const ComponentID & value)
-```
-
-
 ### polyhedral_solid_object_priority
 
 ```cpp
@@ -2048,6 +2041,13 @@ index_t polyhedral_solid_object_priority(std::string_view filename)
 
 ```cpp
 std::vector<index_t> old2new_permutation(absl::Span<const index_t> permutation)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const ComponentID & value)
 ```
 
 
@@ -2243,48 +2243,6 @@ bool are_mesh_elements_included(const MeshElementsInclusion<MeshElementType> & i
 ```
 
 
-### convert_surface_meshes_into_triangulated_surfaces
-
-```cpp
-void convert_surface_meshes_into_triangulated_surfaces(BRep & brep)
-```
-
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
-```
-
-
-### segment_segment_intersection_detection
-
-```cpp
-SegmentSegmentIntersection segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
-```
-
-
-### segment_segment_intersection_detection
-
-```cpp
-SegmentSegmentIntersection segment_segment_intersection_detection(const Segment3D & segment0, const Segment3D & segment1)
-```
-
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### compute_model_unique_vertices
-
-```cpp
-void compute_model_unique_vertices(const Model & model, typename Model::Builder & builder)
-```
-
-
 ### tetrahedron_aspect_ratio
 
 ```cpp
@@ -2299,10 +2257,10 @@ H AbslHashValue(H h, const PolyhedronFacetVertex & value)
 ```
 
 
-### AbslHashValue
+### compute_model_unique_vertices
 
 ```cpp
-H AbslHashValue(H h, const PolyhedronFacetEdge & value)
+void compute_model_unique_vertices(const Model & model, typename Model::Builder & builder)
 ```
 
 
@@ -2641,20 +2599,6 @@ SIDE point_side_to_line(const Point2D & point, const InfiniteLine2D & line)
 
 ```cpp
 std::tuple<AABBTree2D, absl::FixedArray<uuid>> create_surfaces_aabb_tree(const Section & model)
-```
-
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
-```
-
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
 ```
 
 
@@ -3193,6 +3137,62 @@ std::array<double, 2> safe_segment_barycentric_coordinates(const Point<dimension
 
 **return** an array containing the parametric coordinates corresponding to the segment vertices.
 
+### convert_surface_meshes_into_triangulated_surfaces
+
+```cpp
+void convert_surface_meshes_into_triangulated_surfaces(BRep & brep)
+```
+
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const PolyhedronFacetEdge & value)
+```
+
+
+### segment_segment_intersection_detection
+
+```cpp
+SegmentSegmentIntersection segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
+```
+
+
+### segment_segment_intersection_detection
+
+```cpp
+SegmentSegmentIntersection segment_segment_intersection_detection(const Segment3D & segment0, const Segment3D & segment1)
+```
+
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
+```
+
+
 ### segment_plane_intersection_detection
 
 ```cpp
@@ -3239,193 +3239,6 @@ BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Block3D & b
 ```
 
 
-### segment_sphere_intersection
-
-```cpp
-IntersectionResult<absl::InlinedVector<Point<dimension>, 2>> segment_sphere_intersection(const Segment<dimension> & segment, const Sphere<dimension> & sphere)
-```
-
-
- Compute the intersection(s) between a (n-1)-sphere and a segment in n-dimension space.
-
-**return** an optional of the intersection points.
-
-### segment_plane_intersection
-
-```cpp
-IntersectionResult<Point3D> segment_plane_intersection(const Segment3D & segment, const Plane & plane)
-```
-
-
- Compute the intersection between a plane and a segment
-
-**return** an optional of the intersection point.
-
-**warning** if the segment is included in the plane nothing is returned
-
-### segment_triangle_intersection
-
-```cpp
-IntersectionResult<Point3D> segment_triangle_intersection(const Segment3D & segment, const Triangle3D & triangle)
-```
-
-
- Compute the intersection of a segment and a triangle
-
-**return** an optional of the intersection point.
-
-**warning** if the segment is included in the triangle plane nothing is returned
-
-### block_mesh_polyhedra_from_surface_polygon
-
-```cpp
-PolyhedraAroundFacet block_mesh_polyhedra_from_surface_polygon(const BRep & model, const Block3D & block, const Surface3D & surface, index_t polygon_id)
-```
-
-
-### block_vertices_from_surface_polygon
-
-```cpp
-absl::InlinedVector<BlockPolyhedronFacet, 2> block_vertices_from_surface_polygon(const BRep & model, const Block3D & block, const Surface3D & surface, index_t polygon_id)
-```
-
-
-### line_triangle_intersection
-
-```cpp
-IntersectionResult<Point3D> line_triangle_intersection(const InfiniteLine3D & line, const Triangle3D & triangle)
-```
-
-
- Compute the intersection of a line and a triangle
-
-**return** an optional of the intersection point.
-
-**warning** if the segment is included in the triangle plane nothing is returned
-
-### oriented_block_vertices_from_surface_polygon
-
-```cpp
-BlockPolyhedraFacetVertices oriented_block_vertices_from_surface_polygon(const BRep & model, const Block3D & block, const Surface3D & surface, index_t polygon_id)
-```
-
-
-### line_line_intersection
-
-```cpp
-IntersectionResult<Point2D> line_line_intersection(const InfiniteLine2D & line0, const InfiniteLine2D & line1)
-```
-
-
- Compute the intersection between two infinite lines
-
-**return** an optional of the intersection point.
-
-### surface_vertices_from_line_edge
-
-```cpp
-absl::InlinedVector<SurfacePolygonEdge, 2> surface_vertices_from_line_edge(const BRep & model, const Surface3D & surface, const Line3D & line, index_t edge_id)
-```
-
-
-### segment_segment_intersection
-
-```cpp
-IntersectionResult<Point2D> segment_segment_intersection(const Segment2D & segment0, const Segment2D & segment1)
-```
-
-
- Compute the intersection between two segments
-
-**return** an optional of the intersection point.
-
-### oriented_surface_vertices_from_line_edge
-
-```cpp
-SurfacePolygonsEdgeVertices oriented_surface_vertices_from_line_edge(const BRep & model, const Surface3D & surface, const Line3D & line, index_t edge_id)
-```
-
-
-### segment_line_intersection
-
-```cpp
-IntersectionResult<Point2D> segment_line_intersection(const Segment2D & segment, const InfiniteLine2D & line)
-```
-
-
- Compute the intersection between a segment and an infinite line
-
-**return** an optional of the intersection point.
-
-### surface_vertices_from_line_edge
-
-```cpp
-absl::InlinedVector<SurfacePolygonEdge, 2> surface_vertices_from_line_edge(const Section & model, const Surface2D & surface, const Line2D & line, index_t edge_id)
-```
-
-
-### oriented_surface_vertices_from_line_edge
-
-```cpp
-SurfacePolygonsEdgeVertices oriented_surface_vertices_from_line_edge(const Section & model, const Surface2D & surface, const Line2D & line, index_t edge_id)
-```
-
-
-### segment_cylinder_intersection
-
-```cpp
-IntersectionResult<absl::InlinedVector<Point3D, 2>> segment_cylinder_intersection(const Segment3D & segment, const Cylinder & cylinder)
-```
-
-
- Compute the intersection between a segment and a cylinder
-
-**return** an optional of the intersection points.
-
-### line_cylinder_intersection
-
-```cpp
-IntersectionResult<absl::InlinedVector<Point3D, 2>> line_cylinder_intersection(const InfiniteLine3D & line, const Cylinder & cylinder)
-```
-
-
- Compute the intersection between a line and a cylinder
-
-**return** an optional of the intersection points.
-
-### triangle_circle_intersection
-
-```cpp
-IntersectionResult<absl::InlinedVector<Point3D, 2>> triangle_circle_intersection(const Triangle3D & triangle, const Circle & circle)
-```
-
-
- Compute the intersection between a triangle and a circle
-
-**return** an optional of the intersection points.
-
-### plane_circle_intersection
-
-```cpp
-IntersectionResult<absl::InlinedVector<Point3D, 2>> plane_circle_intersection(const Plane & plane, const Circle & circle)
-```
-
-
- Compute the intersection between a plane and a circle
-
-**return** an optional of the intersection points.
-
-### plane_plane_intersection
-
-```cpp
-IntersectionResult<OwnerInfiniteLine3D> plane_plane_intersection(const Plane & plane0, const Plane & plane1)
-```
-
-
- Compute the intersection between two planes
-
-**return** an optional of the intersection line.
-
 ### point_triangle_distance
 
 ```cpp
@@ -3464,6 +3277,17 @@ std::tuple<double, Point3D, Point3D> line_triangle_distance(const InfiniteLine3D
 
 **return** a tuple containing: - the smallest distance. - the closest point on the line. - the closest point on the triangle.
 
+### segment_sphere_intersection
+
+```cpp
+IntersectionResult<absl::InlinedVector<Point<dimension>, 2>> segment_sphere_intersection(const Segment<dimension> & segment, const Sphere<dimension> & sphere)
+```
+
+
+ Compute the intersection(s) between a (n-1)-sphere and a segment in n-dimension space.
+
+**return** an optional of the intersection points.
+
 ### segment_triangle_distance
 
 ```cpp
@@ -3475,6 +3299,19 @@ std::tuple<double, Point3D, Point3D> segment_triangle_distance(const Segment3D &
 
 **return** a tuple containing: - the smallest distance. - the closest point on the segment. - the closest point on the triangle.
 
+### segment_plane_intersection
+
+```cpp
+IntersectionResult<Point3D> segment_plane_intersection(const Segment3D & segment, const Plane & plane)
+```
+
+
+ Compute the intersection between a plane and a segment
+
+**return** an optional of the intersection point.
+
+**warning** if the segment is included in the plane nothing is returned
+
 ### triangle_triangle_distance
 
 ```cpp
@@ -3485,6 +3322,26 @@ std::tuple<double, Point3D, Point3D> triangle_triangle_distance(const Triangle3D
  Compute the smallest distance between two triangles
 
 **return** a tuple containing: - the smallest distance. - the closest point on the first triangle. - the closest point on the second triangle.
+
+### segment_triangle_intersection
+
+```cpp
+IntersectionResult<Point3D> segment_triangle_intersection(const Segment3D & segment, const Triangle3D & triangle)
+```
+
+
+ Compute the intersection of a segment and a triangle
+
+**return** an optional of the intersection point.
+
+**warning** if the segment is included in the triangle plane nothing is returned
+
+### block_mesh_polyhedra_from_surface_polygon
+
+```cpp
+PolyhedraAroundFacet block_mesh_polyhedra_from_surface_polygon(const BRep & model, const Block3D & block, const Surface3D & surface, index_t polygon_id)
+```
+
 
 ### triangle_triangle_distance_between_non_conformal_parts
 
@@ -3499,6 +3356,33 @@ std::optional<std::tuple<double, Point3D, Point3D>> triangle_triangle_distance_b
 
 **return** a tuple containing: - the smallest distance. - the closest point on the first triangle. - the closest point on the second triangle.
 
+### block_vertices_from_surface_polygon
+
+```cpp
+absl::InlinedVector<BlockPolyhedronFacet, 2> block_vertices_from_surface_polygon(const BRep & model, const Block3D & block, const Surface3D & surface, index_t polygon_id)
+```
+
+
+### line_triangle_intersection
+
+```cpp
+IntersectionResult<Point3D> line_triangle_intersection(const InfiniteLine3D & line, const Triangle3D & triangle)
+```
+
+
+ Compute the intersection of a line and a triangle
+
+**return** an optional of the intersection point.
+
+**warning** if the segment is included in the triangle plane nothing is returned
+
+### oriented_block_vertices_from_surface_polygon
+
+```cpp
+BlockPolyhedraFacetVertices oriented_block_vertices_from_surface_polygon(const BRep & model, const Block3D & block, const Surface3D & surface, index_t polygon_id)
+```
+
+
 ### point_tetrahedron_distance
 
 ```cpp
@@ -3509,6 +3393,35 @@ std::tuple<double, Point3D> point_tetrahedron_distance(const Point3D & point, co
  Compute the distance between a point and a tetrahedron
 
 **return** a tuple containing: - the smallest distance. - the nearest point on the tetrahedron.
+
+### line_line_intersection
+
+```cpp
+IntersectionResult<Point2D> line_line_intersection(const InfiniteLine2D & line0, const InfiniteLine2D & line1)
+```
+
+
+ Compute the intersection between two infinite lines
+
+**return** an optional of the intersection point.
+
+### surface_vertices_from_line_edge
+
+```cpp
+absl::InlinedVector<SurfacePolygonEdge, 2> surface_vertices_from_line_edge(const BRep & model, const Surface3D & surface, const Line3D & line, index_t edge_id)
+```
+
+
+### segment_segment_intersection
+
+```cpp
+IntersectionResult<Point2D> segment_segment_intersection(const Segment2D & segment0, const Segment2D & segment1)
+```
+
+
+ Compute the intersection between two segments
+
+**return** an optional of the intersection point.
 
 ### point_plane_distance
 
@@ -3521,6 +3434,31 @@ std::tuple<double, Point3D> point_plane_distance(const Point3D & point, const Pl
 
 **return** a tuple containing: - the smallest distance. - the nearest point on the plane.
 
+### oriented_surface_vertices_from_line_edge
+
+```cpp
+SurfacePolygonsEdgeVertices oriented_surface_vertices_from_line_edge(const BRep & model, const Surface3D & surface, const Line3D & line, index_t edge_id)
+```
+
+
+### segment_line_intersection
+
+```cpp
+IntersectionResult<Point2D> segment_line_intersection(const Segment2D & segment, const InfiniteLine2D & line)
+```
+
+
+ Compute the intersection between a segment and an infinite line
+
+**return** an optional of the intersection point.
+
+### surface_vertices_from_line_edge
+
+```cpp
+absl::InlinedVector<SurfacePolygonEdge, 2> surface_vertices_from_line_edge(const Section & model, const Surface2D & surface, const Line2D & line, index_t edge_id)
+```
+
+
 ### point_plane_signed_distance
 
 ```cpp
@@ -3532,6 +3470,24 @@ std::tuple<double, Point3D> point_plane_signed_distance(const Point3D & point, c
 
 **return** a tuple containing: - the signed distance (sign is given by the plane normal direction). - the nearest point on the plane.
 
+### oriented_surface_vertices_from_line_edge
+
+```cpp
+SurfacePolygonsEdgeVertices oriented_surface_vertices_from_line_edge(const Section & model, const Surface2D & surface, const Line2D & line, index_t edge_id)
+```
+
+
+### segment_cylinder_intersection
+
+```cpp
+IntersectionResult<absl::InlinedVector<Point3D, 2>> segment_cylinder_intersection(const Segment3D & segment, const Cylinder & cylinder)
+```
+
+
+ Compute the intersection between a segment and a cylinder
+
+**return** an optional of the intersection points.
+
 ### point_sphere_distance
 
 ```cpp
@@ -3542,6 +3498,28 @@ std::tuple<double, Point<dimension>> point_sphere_distance(const Point<dimension
  Compute the smallest distance between a point and a sphere
 
 **return** a tuple containing: - the smallest distance. - the closest point on the sphere.
+
+### line_cylinder_intersection
+
+```cpp
+IntersectionResult<absl::InlinedVector<Point3D, 2>> line_cylinder_intersection(const InfiniteLine3D & line, const Cylinder & cylinder)
+```
+
+
+ Compute the intersection between a line and a cylinder
+
+**return** an optional of the intersection points.
+
+### triangle_circle_intersection
+
+```cpp
+IntersectionResult<absl::InlinedVector<Point3D, 2>> triangle_circle_intersection(const Triangle3D & triangle, const Circle & circle)
+```
+
+
+ Compute the intersection between a triangle and a circle
+
+**return** an optional of the intersection points.
 
 ### point_sphere_signed_distance
 
@@ -3556,6 +3534,17 @@ std::tuple<double, Point<dimension>> point_sphere_signed_distance(const Point<di
 
 **details** the sign is positive outside the sphere, negative inside.
 
+### plane_circle_intersection
+
+```cpp
+IntersectionResult<absl::InlinedVector<Point3D, 2>> plane_circle_intersection(const Plane & plane, const Circle & circle)
+```
+
+
+ Compute the intersection between a plane and a circle
+
+**return** an optional of the intersection points.
+
 ### point_ball_distance
 
 ```cpp
@@ -3568,6 +3557,17 @@ std::tuple<double, Point<dimension>> point_ball_distance(const Point<dimension> 
 **return** a tuple containing: - the smallest distance. - the closest point on the ball.
 
 **details** Result is always positive or null. If point is inside the ball, the returned distance is 0.
+
+### plane_plane_intersection
+
+```cpp
+IntersectionResult<OwnerInfiniteLine3D> plane_plane_intersection(const Plane & plane0, const Plane & plane1)
+```
+
+
+ Compute the intersection between two planes
+
+**return** an optional of the intersection line.
 
 ### point_circle_distance
 
