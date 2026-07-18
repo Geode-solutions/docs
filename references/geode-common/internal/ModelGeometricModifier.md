@@ -34,14 +34,42 @@ protected static const auto dimension
 ### ModelGeometricModifier
 
 ```cpp
-public void ModelGeometricModifier<Model>(const Model & model, ModelBuilder & builder)
+public void ModelGeometricModifier<Model, AdvancedModelMeshModifiers>(const ModelGeometricModifier<Model, AdvancedModelMeshModifiers> & )
+```
+
+
+### ModelGeometricModifier
+
+```cpp
+public void ModelGeometricModifier<Model, AdvancedModelMeshModifiers>(ModelGeometricModifier<Model, AdvancedModelMeshModifiers> && )
+```
+
+
+### operator=
+
+```cpp
+public ModelGeometricModifier<Model, AdvancedModelMeshModifiers> & operator=(const ModelGeometricModifier<Model, AdvancedModelMeshModifiers> & )
+```
+
+
+### operator=
+
+```cpp
+public ModelGeometricModifier<Model, AdvancedModelMeshModifiers> & operator=(ModelGeometricModifier<Model, AdvancedModelMeshModifiers> && )
+```
+
+
+### ModelGeometricModifier
+
+```cpp
+public void ModelGeometricModifier<Model, AdvancedModelMeshModifiers>(const Model & model, ModelBuilder & builder, ModelModifier & modifier)
 ```
 
 
 ### ~ModelGeometricModifier
 
 ```cpp
-public void ~ModelGeometricModifier<Model>()
+public void ~ModelGeometricModifier<Model, AdvancedModelMeshModifiers>()
 ```
 
 
@@ -49,6 +77,13 @@ public void ~ModelGeometricModifier<Model>()
 
 ```cpp
 public const Model & model()
+```
+
+
+### advanced_mesh_modifiers
+
+```cpp
+public AdvancedModelMeshModifiers & advanced_mesh_modifiers()
 ```
 
 
