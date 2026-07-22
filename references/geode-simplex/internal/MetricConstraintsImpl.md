@@ -17,78 +17,51 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-protected const Model & model_
+public static const auto dimension
 
 ```
 
 ```cpp
-protected BoundingBox<dimension> bbox_
+public static const auto MIN_ANGLE
 
 ```
 
 ```cpp
-protected double default_metric_
-
-```
-
-```cpp
-protected double gradation_
-
-```
-
-```cpp
-protected flat_hash_map user_corners_
-
-```
-
-```cpp
-protected flat_hash_map user_lines_
-
-```
-
-```cpp
-protected std::vector<MetricBall> geometric_constraints_
-
-```
-
-```cpp
-protected flat_hash_map user_surfaces_
-
-```
-
-```cpp
-protected flat_hash_map user_blocks_
-
-```
-
-```cpp
-protected std::vector<std::pair<std::reference_wrapper<const PointSet<dimension>>, double>> point_sets_
-
-```
-
-```cpp
-protected std::vector<std::pair<std::reference_wrapper<const EdgedCurve<dimension>>, double>> edged_curves_
-
-```
-
-```cpp
-protected std::vector<std::pair<std::reference_wrapper<const TriangulatedSurface<dimension>>, double>> triangulated_surfaces_
-
-```
-
-```cpp
-protected std::unique_ptr<GridMetric<dimension>> metric_
-
-```
-
-```cpp
-protected std::unique_ptr<LightRegularGrid<dimension>> grid_
+public static const auto METRIC_PRESERVATION_FACTOR
 
 ```
 
 
 
 ## Functions
+
+### MetricConstraintsImpl
+
+```cpp
+public void MetricConstraintsImpl<Model>(MetricConstraintsImpl<Model> && )
+```
+
+
+### MetricConstraintsImpl
+
+```cpp
+public void MetricConstraintsImpl<Model>(const MetricConstraintsImpl<Model> & )
+```
+
+
+### operator=
+
+```cpp
+public MetricConstraintsImpl<Model> & operator=(const MetricConstraintsImpl<Model> & )
+```
+
+
+### operator=
+
+```cpp
+public MetricConstraintsImpl<Model> & operator=(MetricConstraintsImpl<Model> && )
+```
+
 
 ### MetricConstraintsImpl
 
@@ -101,6 +74,27 @@ public void MetricConstraintsImpl<Model>(const Model & model)
 
 ```cpp
 public void ~MetricConstraintsImpl<Model>()
+```
+
+
+### model
+
+```cpp
+public const Model & model()
+```
+
+
+### grid
+
+```cpp
+public const LightRegularGrid<dimension> & grid()
+```
+
+
+### user_blocks
+
+```cpp
+public const absl::flat_hash_map<uuid, double> & user_blocks()
 ```
 
 

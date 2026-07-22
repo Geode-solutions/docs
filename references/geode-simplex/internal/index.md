@@ -30,7 +30,6 @@ const name = words.join('-');
 * [FrontalRemesher2D](FrontalRemesher2D.md)
 * [FrontalRemesher3D](FrontalRemesher3D.md)
 * [FrontalRemesher](FrontalRemesher.md)
-* [JsonIsotropicMetricConstraintsImpl](JsonIsotropicMetricConstraintsImpl.md)
 * [LineConstraint](LineConstraint.md)
 * [LineRelaxer](LineRelaxer.md)
 * [LineRemesherOutput](LineRemesherOutput.md)
@@ -111,10 +110,24 @@ H AbslHashValue(H h, const SolidEdge & solid_edge)
 ```
 
 
+### check_metric
+
+```cpp
+void check_metric(double metric)
+```
+
+
 ### lock_vertices
 
 ```cpp
 std::vector<index_t> lock_vertices(absl::Span<const index_t> vertex_mapping)
+```
+
+
+### check_gradation
+
+```cpp
+void check_gradation(double gradation)
 ```
 
 
@@ -192,13 +205,6 @@ void remesh_lines_impl(Data & data)
 
 ```cpp
 typename Data::Tasks sample_lines_impl(Data & data)
-```
-
-
-### treat_inactive_lines
-
-```cpp
-void treat_inactive_lines(Data & data)
 ```
 
 

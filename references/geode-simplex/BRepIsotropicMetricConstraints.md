@@ -19,6 +19,20 @@ const name = words.join('-');
 ### BRepIsotropicMetricConstraints
 
 ```cpp
+public void BRepIsotropicMetricConstraints(const BRepIsotropicMetricConstraints & )
+```
+
+
+### operator=
+
+```cpp
+public BRepIsotropicMetricConstraints & operator=(const BRepIsotropicMetricConstraints & )
+```
+
+
+### BRepIsotropicMetricConstraints
+
+```cpp
 public void BRepIsotropicMetricConstraints(const BRep & brep)
 ```
 
@@ -41,20 +55,6 @@ public BRepIsotropicMetricConstraints & operator=(BRepIsotropicMetricConstraints
 
 ```cpp
 public void ~BRepIsotropicMetricConstraints()
-```
-
-
-### import_constraints
-
-```cpp
-public void import_constraints(std::string_view filename)
-```
-
-
-### export_constraints
-
-```cpp
-public void export_constraints(std::string_view filename)
 ```
 
 

@@ -23,24 +23,24 @@ public void SectionIsotropicMetricConstraints(const Section & brep)
 ```
 
 
+### SectionIsotropicMetricConstraints
+
+```cpp
+public void SectionIsotropicMetricConstraints(const SectionIsotropicMetricConstraints & )
+```
+
+
+### operator=
+
+```cpp
+public SectionIsotropicMetricConstraints & operator=(const SectionIsotropicMetricConstraints & )
+```
+
+
 ### ~SectionIsotropicMetricConstraints
 
 ```cpp
 public void ~SectionIsotropicMetricConstraints()
-```
-
-
-### import_constraints
-
-```cpp
-public void import_constraints(std::string_view filename)
-```
-
-
-### export_constraints
-
-```cpp
-public void export_constraints(std::string_view filename)
 ```
 
 
