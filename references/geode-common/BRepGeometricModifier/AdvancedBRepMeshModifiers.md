@@ -36,6 +36,13 @@ public TetrahedralSolidModifier & block_modifier(const Block3D & block)
 ```
 
 
+### reset_block_modifier
+
+```cpp
+public void reset_block_modifier(const Block3D & block)
+```
+
+
 ### modifiable_solid
 
 ```cpp

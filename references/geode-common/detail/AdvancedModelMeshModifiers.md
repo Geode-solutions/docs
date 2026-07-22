@@ -23,6 +23,12 @@ protected static const auto dimension
 
 
 
+## Records
+
+Entry
+
+
+
 ## Functions
 
 ### AdvancedModelMeshModifiers
@@ -53,10 +59,24 @@ public EdgedCurveModifier<dimension> & line_modifier(const Line<dimension> & lin
 ```
 
 
+### reset_line_modifier
+
+```cpp
+public void reset_line_modifier(const Line<dimension> & line)
+```
+
+
 ### surface_modifier
 
 ```cpp
 public TriangulatedSurfaceModifier<dimension> & surface_modifier(const Surface<dimension> & surface)
+```
+
+
+### reset_surface_modifier
+
+```cpp
+public void reset_surface_modifier(const Surface<dimension> & surface)
 ```
 
 
