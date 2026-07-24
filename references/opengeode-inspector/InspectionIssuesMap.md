@@ -68,7 +68,7 @@ public std::string string()
 ### issues_map
 
 ```cpp
-public const absl::flat_hash_map<uuid, InspectionIssues<IssueType>> & issues_map()
+public const absl::linked_hash_map<uuid, InspectionIssues<IssueType>> & issues_map()
 ```
 
 
