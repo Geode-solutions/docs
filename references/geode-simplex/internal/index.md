@@ -113,7 +113,7 @@ H AbslHashValue(H h, const SolidEdge & solid_edge)
 ### check_metric
 
 ```cpp
-void check_metric(double metric)
+void check_metric(double metric, double cell_length, Data && data)
 ```
 
 

@@ -45,6 +45,7 @@ const name = words.join('-');
 * [GeodeSimplexLineCommonException](GeodeSimplexLineCommonException.md)
 * [GeodeSimplexLineCommonLibrary](GeodeSimplexLineCommonLibrary.md)
 * [GeodeSimplexMetricException](GeodeSimplexMetricException.md)
+* [GeodeSimplexMetricInputException](GeodeSimplexMetricInputException.md)
 * [GeodeSimplexMetricLibrary](GeodeSimplexMetricLibrary.md)
 * [GeodeSimplexSectionException](GeodeSimplexSectionException.md)
 * [GeodeSimplexSectionLibrary](GeodeSimplexSectionLibrary.md)
