@@ -381,17 +381,10 @@ const name = words.join('-');
 
 ## Functions
 
-### register_geode_builder
+### filename_with_extension
 
 ```cpp
-void register_geode_builder()
-```
-
-
-### build_grid_from_bbox_target_length_and_maximum_cell_number
-
-```cpp
-LightRegularGrid<dimension> build_grid_from_bbox_target_length_and_maximum_cell_number(const BoundingBox<dimension> & bbox, double target_cell_length, index_t max_nb_cells)
+std::filesystem::path filename_with_extension(const std::filesystem::path & path)
 ```
 
 
@@ -399,6 +392,20 @@ LightRegularGrid<dimension> build_grid_from_bbox_target_length_and_maximum_cell_
 
 ```cpp
 void register_attribute_type(PContext & context, std::string_view name)
+```
+
+
+### register_geode_builder
+
+```cpp
+void register_geode_builder()
+```
+
+
+### register_geode_mesh
+
+```cpp
+void register_geode_mesh()
 ```
 
 
@@ -416,13 +423,6 @@ void register_geode_mesh_output()
 ```
 
 
-### filename_with_extension
-
-```cpp
-std::filesystem::path filename_with_extension(const std::filesystem::path & path)
-```
-
-
 ### string_split
 
 ```cpp
@@ -434,13 +434,6 @@ std::vector<std::string_view> string_split(std::string_view string)
 
 ```cpp
 void concatenate(Container & container, const Container & values)
-```
-
-
-### register_geode_mesh
-
-```cpp
-void register_geode_mesh()
 ```
 
 
@@ -483,6 +476,13 @@ void check_keyword(std::ifstream & file, std::string_view keyword)
 
 ```cpp
 std::vector<ComponentID> filter_brep_components_with_regards_to_blocks(BRep & brep)
+```
+
+
+### build_grid_from_bbox_target_length_and_maximum_cell_number
+
+```cpp
+LightRegularGrid<dimension> build_grid_from_bbox_target_length_and_maximum_cell_number(const BoundingBox<dimension> & bbox, double target_cell_length, index_t max_nb_cells)
 ```
 
 
@@ -1119,6 +1119,19 @@ std::vector<std::string> save_polyhedral_solid(const PolyhedralSolid<dimension> 
 
 **filename** [in] Path to the file where save the PolyhedralSolid.
 
+### save_regular_grid
+
+```cpp
+std::vector<std::string> save_regular_grid(const RegularGrid<dimension> & regular_grid, std::string_view filename)
+```
+
+
+ API function for saving a RegularGrid. The adequate saver is called depending on the given filename extension.
+
+**regular_grid** [in] RegularGrid to save.
+
+**filename** [in] Path to the file where save the RegularGrid.
+
 ### save_tetrahedral_solid
 
 ```cpp
@@ -1159,19 +1172,6 @@ void concatenate(Container & container, Container && values)
 ```
 
 
-### save_regular_grid
-
-```cpp
-std::vector<std::string> save_regular_grid(const RegularGrid<dimension> & regular_grid, std::string_view filename)
-```
-
-
- API function for saving a RegularGrid. The adequate saver is called depending on the given filename extension.
-
-**regular_grid** [in] RegularGrid to save.
-
-**filename** [in] Path to the file where save the RegularGrid.
-
 ### operator""_uc
 
 ```cpp
@@ -1187,6 +1187,19 @@ Sign triangle_area_sign(const Triangle2D & triangle)
 
 
  Return the sign of a 2D triangle area.
+
+### save_polygonal_surface
+
+```cpp
+std::vector<std::string> save_polygonal_surface(const PolygonalSurface<dimension> & polygonal_surface, std::string_view filename)
+```
+
+
+ API function for saving a PolygonalSurface. The adequate saver is called depending on the given filename extension.        const PolygonalSurface< dimension >& polygonal_surface,
+
+**edged_curve** [in] PolygonalSurface to save.
+
+**filename** [in] Path to the file where save the PolygonalSurface.
 
 ### to_string
 
@@ -1243,19 +1256,6 @@ std::vector<std::string> save_light_regular_grid(const LightRegularGrid<dimensio
 **light_regular_grid** [in] LightRegularGrid to save.
 
 **filename** [in] Path to the file where save the LightRegularGrid.
-
-### save_polygonal_surface
-
-```cpp
-std::vector<std::string> save_polygonal_surface(const PolygonalSurface<dimension> & polygonal_surface, std::string_view filename)
-```
-
-
- API function for saving a PolygonalSurface. The adequate saver is called depending on the given filename extension.        const PolygonalSurface< dimension >& polygonal_surface,
-
-**edged_curve** [in] PolygonalSurface to save.
-
-**filename** [in] Path to the file where save the PolygonalSurface.
 
 ### next_keyword_if_it_exists
 
@@ -1675,6 +1675,13 @@ bool is_polyhedral_solid_saveable(const PolyhedralSolid<dimension> & polyhedral_
 ```
 
 
+### component_mesh_vertex_pairs
+
+```cpp
+ComponentMeshVertexPairs component_mesh_vertex_pairs(absl::Span<const ComponentMeshVertex> unique_vertices0, absl::Span<const ComponentMeshVertex> unique_vertices1)
+```
+
+
 ### graph_additional_files
 
 ```cpp
@@ -1682,10 +1689,10 @@ AdditionalFiles graph_additional_files(std::string_view filename)
 ```
 
 
-### AbslHashValue
+### is_tetrahedral_solid_saveable
 
 ```cpp
-H AbslHashValue(H h, const NamedType<Type, Tag> & value)
+bool is_tetrahedral_solid_saveable(const TetrahedralSolid<dimension> & tetrahedral_solid, std::string_view filename)
 ```
 
 
@@ -1710,27 +1717,6 @@ H AbslHashValue(H h, const MeshElement & value)
 ```
 
 
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const EdgeVertex & value)
-```
-
-
-### component_mesh_vertex_pairs
-
-```cpp
-ComponentMeshVertexPairs component_mesh_vertex_pairs(absl::Span<const ComponentMeshVertex> unique_vertices0, absl::Span<const ComponentMeshVertex> unique_vertices1)
-```
-
-
-### is_tetrahedral_solid_saveable
-
-```cpp
-bool is_tetrahedral_solid_saveable(const TetrahedralSolid<dimension> & tetrahedral_solid, std::string_view filename)
-```
-
-
 ### create_solid_mesh_coordinate_system
 
 ```cpp
@@ -1738,17 +1724,31 @@ void create_solid_mesh_coordinate_system(const SolidMesh<dimension> & mesh, Soli
 ```
 
 
-### light_regular_grid_object_priority
-
-```cpp
-index_t light_regular_grid_object_priority(std::string_view filename)
-```
-
-
 ### vertex_set_additional_files
 
 ```cpp
 AdditionalFiles vertex_set_additional_files(std::string_view filename)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const NamedType<Type, Tag> & value)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const EdgeVertex & value)
+```
+
+
+### light_regular_grid_object_priority
+
+```cpp
+index_t light_regular_grid_object_priority(std::string_view filename)
 ```
 
 
@@ -1977,6 +1977,13 @@ Percentage is_triangulated_surface_loadable(std::string_view filename)
 ```
 
 
+### old2new_permutation
+
+```cpp
+std::vector<index_t> old2new_permutation(absl::Span<const index_t> permutation)
+```
+
+
 ### AbslHashValue
 
 ```cpp
@@ -1988,6 +1995,13 @@ H AbslHashValue(H h, const PolyhedronVertex & value)
 
 ```cpp
 H AbslHashValue(H h, const PolygonVertex & value)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const ComponentID & value)
 ```
 
 
@@ -2016,6 +2030,21 @@ index_t regular_grid_object_priority(std::string_view filename)
 ```
 
 
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point<dimension> & point, const Triangle<dimension> & triangle)
+```
+
+ Return the position of a point in a triangle: inside, outside, on a triangle vertex or an edge.
+
+### component_mesh_vertex_triplets
+
+```cpp
+ComponentMeshVertexTriplets component_mesh_vertex_triplets(absl::Span<const ComponentMeshVertex> unique_vertices0, absl::Span<const ComponentMeshVertex> unique_vertices1, absl::Span<const ComponentMeshVertex> unique_vertices2)
+```
+
+
 ### edged_curve_object_priority
 
 ```cpp
@@ -2030,53 +2059,17 @@ index_t hybrid_solid_object_priority(std::string_view filename)
 ```
 
 
-### polyhedral_solid_object_priority
-
-```cpp
-index_t polyhedral_solid_object_priority(std::string_view filename)
-```
-
-
-### old2new_permutation
-
-```cpp
-std::vector<index_t> old2new_permutation(absl::Span<const index_t> permutation)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const ComponentID & value)
-```
-
-
-### are_mesh_elements_included
-
-```cpp
-bool are_mesh_elements_included(const MeshElementsInclusion<MeshElementType> & inclusion)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const PolygonEdge & value)
-```
-
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point<dimension> & point, const Triangle<dimension> & triangle)
-```
-
- Return the position of a point in a triangle: inside, outside, on a triangle vertex or an edge.
-
 ### polygonal_surface_object_priority
 
 ```cpp
 index_t polygonal_surface_object_priority(std::string_view filename)
+```
+
+
+### polyhedral_solid_object_priority
+
+```cpp
+index_t polyhedral_solid_object_priority(std::string_view filename)
 ```
 
 
@@ -2094,6 +2087,13 @@ index_t triangulated_surface_object_priority(std::string_view filename)
 ```
 
 
+### are_mesh_elements_included
+
+```cpp
+bool are_mesh_elements_included(const MeshElementsInclusion<MeshElementType> & inclusion)
+```
+
+
 ### AbslHashValue
 
 ```cpp
@@ -2101,10 +2101,10 @@ H AbslHashValue(H h, const PolyhedronFacet & value)
 ```
 
 
-### component_mesh_vertex_triplets
+### AbslHashValue
 
 ```cpp
-ComponentMeshVertexTriplets component_mesh_vertex_triplets(absl::Span<const ComponentMeshVertex> unique_vertices0, absl::Span<const ComponentMeshVertex> unique_vertices1, absl::Span<const ComponentMeshVertex> unique_vertices2)
+H AbslHashValue(H h, const PolygonEdge & value)
 ```
 
 
@@ -2138,13 +2138,6 @@ ValueContainer extract_vector_elements(const DeleteContainer & to_keep, const Va
 
 **return** A vector containing only kept elements of in_values
 
-### component_mesh_vertex_tuple
-
-```cpp
-ComponentMeshVertexGeneric<dimension> component_mesh_vertex_tuple(UniqueVertices... unique_vertices)
-```
-
-
 ### point_triangle_distance
 
 ```cpp
@@ -2159,6 +2152,13 @@ std::tuple<double, Point<dimension>> point_triangle_distance(const Point<dimensi
 
 ```cpp
 std::array<T, sizeof...(Args)> to_array(Args &&... args)
+```
+
+
+### component_mesh_vertex_tuple
+
+```cpp
+ComponentMeshVertexGeneric<dimension> component_mesh_vertex_tuple(UniqueVertices... unique_vertices)
 ```
 
 
@@ -3232,27 +3232,6 @@ BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Surface3D &
 ```
 
 
-### component_mesh_edges
-
-```cpp
-BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge)
-```
-
-
-### point_triangle_distance
-
-```cpp
-std::tuple<double, Point3D> point_triangle_distance(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### point_triangle_distance
-
-```cpp
-std::tuple<double, Point2D> point_triangle_distance(const Point2D & point, const Triangle2D & triangle)
-```
-
-
 ### point_triangle_signed_distance
 
 ```cpp
@@ -3265,6 +3244,13 @@ std::tuple<double, Point3D> point_triangle_signed_distance(const Point3D & point
 **return** a tuple containing: - the smallest distance. - the closest point on the triangle.
 
 **details** the sign is given by the triangle normal (positive if in the same plane).
+
+### component_mesh_edges
+
+```cpp
+BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge)
+```
+
 
 ### line_triangle_distance
 
@@ -3568,6 +3554,20 @@ IntersectionResult<OwnerInfiniteLine3D> plane_plane_intersection(const Plane & p
  Compute the intersection between two planes
 
 **return** an optional of the intersection line.
+
+### point_triangle_distance
+
+```cpp
+std::tuple<double, Point3D> point_triangle_distance(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### point_triangle_distance
+
+```cpp
+std::tuple<double, Point2D> point_triangle_distance(const Point2D & point, const Triangle2D & triangle)
+```
+
 
 ### point_circle_distance
 
