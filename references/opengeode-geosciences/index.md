@@ -89,46 +89,6 @@ const name = words.join('-');
 
 ## Functions
 
-### assign_edged_curve_geographic_coordinate_system_info
-
-```cpp
-void assign_edged_curve_geographic_coordinate_system_info(const EdgedCurve<dimension> & mesh, EdgedCurveBuilder<dimension> & builder, std::string_view crs_name, GeographicCoordinateSystemInfo info)
-```
-
-
-### save_structural_model
-
-```cpp
-std::vector<std::string> save_structural_model(const StructuralModel & structural_model, std::string_view filename)
-```
-
-
- API function for saving a StructuralModel. The adequate saver is called depending on the given filename extension.
-
-**structural_model** [in] StructuralModel to save.
-
-**filename** [in] Path to the file where save the StructuralModel.
-
-### save_stratigraphic_model
-
-```cpp
-std::vector<std::string> save_stratigraphic_model(const StratigraphicModel & stratigraphic_model, std::string_view filename)
-```
-
-
- API function for saving a StratigraphicModel. The adequate saver is called depending on the given filename extension.
-
-**stratigraphic_model** [in] StratigraphicModel to save.
-
-**filename** [in] Path to the file where save the StratigraphicModel.
-
-### is_horizons_stack_saveable
-
-```cpp
-bool is_horizons_stack_saveable(const HorizonsStack<dimension> & horizons_stack, std::string_view filename)
-```
-
-
 ### build_structural_model_fault_blocks
 
 ```cpp
@@ -248,6 +208,13 @@ HorizonsStack<dimension> load_horizons_stack(std::string_view filename)
 
 **return** Loaded HorizonsStack.
 
+### assign_edged_curve_geographic_coordinate_system_info
+
+```cpp
+void assign_edged_curve_geographic_coordinate_system_info(const EdgedCurve<dimension> & mesh, EdgedCurveBuilder<dimension> & builder, std::string_view crs_name, GeographicCoordinateSystemInfo info)
+```
+
+
 ### save_cross_section
 
 ```cpp
@@ -261,6 +228,19 @@ std::vector<std::string> save_cross_section(const CrossSection & cross_section, 
 
 **filename** [in] Path to the file where save the CrossSection.
 
+### save_structural_model
+
+```cpp
+std::vector<std::string> save_structural_model(const StructuralModel & structural_model, std::string_view filename)
+```
+
+
+ API function for saving a StructuralModel. The adequate saver is called depending on the given filename extension.
+
+**structural_model** [in] StructuralModel to save.
+
+**filename** [in] Path to the file where save the StructuralModel.
+
 ### save_implicit_cross_section
 
 ```cpp
@@ -273,6 +253,19 @@ std::vector<std::string> save_implicit_cross_section(const ImplicitCrossSection 
 **implicit_model** [in] ImplicitCrossSection to save.
 
 **filename** [in] Path to the file where save the ImplicitCrossSection.
+
+### save_stratigraphic_model
+
+```cpp
+std::vector<std::string> save_stratigraphic_model(const StratigraphicModel & stratigraphic_model, std::string_view filename)
+```
+
+
+ API function for saving a StratigraphicModel. The adequate saver is called depending on the given filename extension.
+
+**stratigraphic_model** [in] StratigraphicModel to save.
+
+**filename** [in] Path to the file where save the StratigraphicModel.
 
 ### save_implicit_structural_model
 
@@ -485,6 +478,13 @@ bool is_implicit_cross_section_saveable(const ImplicitCrossSection & section, st
 
 ```cpp
 Percentage is_horizons_stack_loadable(std::string_view filename)
+```
+
+
+### is_horizons_stack_saveable
+
+```cpp
+bool is_horizons_stack_saveable(const HorizonsStack<dimension> & horizons_stack, std::string_view filename)
 ```
 
 
