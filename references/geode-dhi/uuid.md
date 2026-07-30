@@ -11,13 +11,14 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# namespace geode
+# struct uuid
 
+## Members
 
+```cpp
+public array bytes_
 
-## Records
+```
 
-* [BRepSharpCollections](BRepSharpCollections.md)
-* [uuid](uuid.md)
 
 
