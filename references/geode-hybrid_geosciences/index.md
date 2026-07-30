@@ -37,8 +37,10 @@ const name = words.join('-');
 * [PillarStructuralModelInspectionResult](PillarStructuralModelInspectionResult.md)
 * [PillarStructuralModelOptions](PillarStructuralModelOptions.md)
 * [PointsTooFarFromTopographyBoundaryInspectionResult](PointsTooFarFromTopographyBoundaryInspectionResult.md)
+* [ProjectedComponentsResult](ProjectedComponentsResult.md)
 * [SurfaceActivityInspectionResult](SurfaceActivityInspectionResult.md)
 * [SurfacesCollectionInspectionResult](SurfacesCollectionInspectionResult.md)
+* [TopandBottomSurfaces](TopandBottomSurfaces.md)
 
 
 ## Functions

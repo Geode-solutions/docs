@@ -19,7 +19,7 @@ const name = words.join('-');
 ### PillarStructuralModelBuilder
 
 ```cpp
-public void PillarStructuralModelBuilder(StructuralModel & model, absl::Span<const uuid> top_surfaces, absl::Span<const uuid> bottom_surfaces)
+public void PillarStructuralModelBuilder(StructuralModel & model, TopandBottomSurfaces surfaces)
 ```
 
 
@@ -54,7 +54,7 @@ public PillarStructuralModelBuilderResult build(const PillarStructuralModelOptio
 ### projected_components
 
 ```cpp
-public BRep projected_components()
+public ProjectedComponentsResult projected_components()
 ```
 
 
