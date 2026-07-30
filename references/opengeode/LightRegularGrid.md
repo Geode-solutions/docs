@@ -143,6 +143,13 @@ public BoundingBox<dimension> bounding_box()
 ```
 
 
+### clone
+
+```cpp
+public LightRegularGrid<dimension> clone()
+```
+
+
 
 
 # class LightRegularGrid

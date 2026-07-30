@@ -2243,6 +2243,48 @@ bool are_mesh_elements_included(const MeshElementsInclusion<MeshElementType> & i
 ```
 
 
+### convert_surface_meshes_into_triangulated_surfaces
+
+```cpp
+void convert_surface_meshes_into_triangulated_surfaces(BRep & brep)
+```
+
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
+```
+
+
+### segment_segment_intersection_detection
+
+```cpp
+SegmentSegmentIntersection segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
+```
+
+
+### segment_segment_intersection_detection
+
+```cpp
+SegmentSegmentIntersection segment_segment_intersection_detection(const Segment3D & segment0, const Segment3D & segment1)
+```
+
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### compute_model_unique_vertices
+
+```cpp
+void compute_model_unique_vertices(const Model & model, typename Model::Builder & builder)
+```
+
+
 ### tetrahedron_aspect_ratio
 
 ```cpp
@@ -2257,10 +2299,10 @@ H AbslHashValue(H h, const PolyhedronFacetVertex & value)
 ```
 
 
-### compute_model_unique_vertices
+### AbslHashValue
 
 ```cpp
-void compute_model_unique_vertices(const Model & model, typename Model::Builder & builder)
+H AbslHashValue(H h, const PolyhedronFacetEdge & value)
 ```
 
 
@@ -2599,6 +2641,20 @@ SIDE point_side_to_line(const Point2D & point, const InfiniteLine2D & line)
 
 ```cpp
 std::tuple<AABBTree2D, absl::FixedArray<uuid>> create_surfaces_aabb_tree(const Section & model)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
 ```
 
 
@@ -3137,62 +3193,6 @@ std::array<double, 2> safe_segment_barycentric_coordinates(const Point<dimension
 
 **return** an array containing the parametric coordinates corresponding to the segment vertices.
 
-### convert_surface_meshes_into_triangulated_surfaces
-
-```cpp
-void convert_surface_meshes_into_triangulated_surfaces(BRep & brep)
-```
-
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const PolyhedronFacetEdge & value)
-```
-
-
-### segment_segment_intersection_detection
-
-```cpp
-SegmentSegmentIntersection segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
-```
-
-
-### segment_segment_intersection_detection
-
-```cpp
-SegmentSegmentIntersection segment_segment_intersection_detection(const Segment3D & segment0, const Segment3D & segment1)
-```
-
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
-```
-
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
-```
-
-
 ### segment_plane_intersection_detection
 
 ```cpp
@@ -3232,36 +3232,12 @@ BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Surface3D &
 ```
 
 
-### point_triangle_signed_distance
-
-```cpp
-std::tuple<double, Point3D> point_triangle_signed_distance(const Point3D & point, const Triangle3D & triangle)
-```
-
-
- Compute the signed distance between a point and a triangle
-
-**return** a tuple containing: - the smallest distance. - the closest point on the triangle.
-
-**details** the sign is given by the triangle normal (positive if in the same plane).
-
 ### component_mesh_edges
 
 ```cpp
 BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge)
 ```
 
-
-### line_triangle_distance
-
-```cpp
-std::tuple<double, Point3D, Point3D> line_triangle_distance(const InfiniteLine3D & line, const Triangle3D & triangle)
-```
-
-
- Compute the smallest distance between an infinite line and a triangle
-
-**return** a tuple containing: - the smallest distance. - the closest point on the line. - the closest point on the triangle.
 
 ### segment_sphere_intersection
 
@@ -3273,17 +3249,6 @@ IntersectionResult<absl::InlinedVector<Point<dimension>, 2>> segment_sphere_inte
  Compute the intersection(s) between a (n-1)-sphere and a segment in n-dimension space.
 
 **return** an optional of the intersection points.
-
-### segment_triangle_distance
-
-```cpp
-std::tuple<double, Point3D, Point3D> segment_triangle_distance(const Segment3D & segment, const Triangle3D & triangle)
-```
-
-
- Compute the smallest distance between an segment and a triangle
-
-**return** a tuple containing: - the smallest distance. - the closest point on the segment. - the closest point on the triangle.
 
 ### segment_plane_intersection
 
@@ -3297,17 +3262,6 @@ IntersectionResult<Point3D> segment_plane_intersection(const Segment3D & segment
 **return** an optional of the intersection point.
 
 **warning** if the segment is included in the plane nothing is returned
-
-### triangle_triangle_distance
-
-```cpp
-std::tuple<double, Point3D, Point3D> triangle_triangle_distance(const Triangle3D & triangle0, const Triangle3D & triangle1)
-```
-
-
- Compute the smallest distance between two triangles
-
-**return** a tuple containing: - the smallest distance. - the closest point on the first triangle. - the closest point on the second triangle.
 
 ### segment_triangle_intersection
 
@@ -3328,19 +3282,6 @@ IntersectionResult<Point3D> segment_triangle_intersection(const Segment3D & segm
 PolyhedraAroundFacet block_mesh_polyhedra_from_surface_polygon(const BRep & model, const Block3D & block, const Surface3D & surface, index_t polygon_id)
 ```
 
-
-### triangle_triangle_distance_between_non_conformal_parts
-
-```cpp
-std::optional<std::tuple<double, Point3D, Point3D>> triangle_triangle_distance_between_non_conformal_parts(const Triangle3D & triangle0, const Triangle3D & triangle1)
-```
-
-
- Compute the smallest distance between two triangles
-
-**details** if the two triangles are the same, return nullopt. Only non conformal part of triangles are considered in computation of distance, i.e. if the triangles have a common point, it iterates on opposite segments, if the triangles have a common edge, it computes distance with
-
-**return** a tuple containing: - the smallest distance. - the closest point on the first triangle. - the closest point on the second triangle.
 
 ### block_vertices_from_surface_polygon
 
@@ -3368,17 +3309,6 @@ IntersectionResult<Point3D> line_triangle_intersection(const InfiniteLine3D & li
 BlockPolyhedraFacetVertices oriented_block_vertices_from_surface_polygon(const BRep & model, const Block3D & block, const Surface3D & surface, index_t polygon_id)
 ```
 
-
-### point_tetrahedron_distance
-
-```cpp
-std::tuple<double, Point3D> point_tetrahedron_distance(const Point3D & point, const Tetrahedron & tetra)
-```
-
-
- Compute the distance between a point and a tetrahedron
-
-**return** a tuple containing: - the smallest distance. - the nearest point on the tetrahedron.
 
 ### line_line_intersection
 
@@ -3409,17 +3339,6 @@ IntersectionResult<Point2D> segment_segment_intersection(const Segment2D & segme
 
 **return** an optional of the intersection point.
 
-### point_plane_distance
-
-```cpp
-std::tuple<double, Point3D> point_plane_distance(const Point3D & point, const Plane & plane)
-```
-
-
- Compute the distance between a point and a plane
-
-**return** a tuple containing: - the smallest distance. - the nearest point on the plane.
-
 ### oriented_surface_vertices_from_line_edge
 
 ```cpp
@@ -3445,17 +3364,6 @@ absl::InlinedVector<SurfacePolygonEdge, 2> surface_vertices_from_line_edge(const
 ```
 
 
-### point_plane_signed_distance
-
-```cpp
-std::tuple<double, Point3D> point_plane_signed_distance(const Point3D & point, const Plane & plane)
-```
-
-
- Compute the signed distance between a point and a plane
-
-**return** a tuple containing: - the signed distance (sign is given by the plane normal direction). - the nearest point on the plane.
-
 ### oriented_surface_vertices_from_line_edge
 
 ```cpp
@@ -3473,17 +3381,6 @@ IntersectionResult<absl::InlinedVector<Point3D, 2>> segment_cylinder_intersectio
  Compute the intersection between a segment and a cylinder
 
 **return** an optional of the intersection points.
-
-### point_sphere_distance
-
-```cpp
-std::tuple<double, Point<dimension>> point_sphere_distance(const Point<dimension> & point, const Sphere<dimension> & sphere)
-```
-
-
- Compute the smallest distance between a point and a sphere
-
-**return** a tuple containing: - the smallest distance. - the closest point on the sphere.
 
 ### line_cylinder_intersection
 
@@ -3507,19 +3404,6 @@ IntersectionResult<absl::InlinedVector<Point3D, 2>> triangle_circle_intersection
 
 **return** an optional of the intersection points.
 
-### point_sphere_signed_distance
-
-```cpp
-std::tuple<double, Point<dimension>> point_sphere_signed_distance(const Point<dimension> & point, const Sphere<dimension> & sphere)
-```
-
-
- Compute the smallest signed distance between a point and a sphere
-
-**return** a tuple containing: - the smallest signed distance. - the closest point on the sphere.
-
-**details** the sign is positive outside the sphere, negative inside.
-
 ### plane_circle_intersection
 
 ```cpp
@@ -3530,19 +3414,6 @@ IntersectionResult<absl::InlinedVector<Point3D, 2>> plane_circle_intersection(co
  Compute the intersection between a plane and a circle
 
 **return** an optional of the intersection points.
-
-### point_ball_distance
-
-```cpp
-std::tuple<double, Point<dimension>> point_ball_distance(const Point<dimension> & point, const Ball<dimension> & sphere)
-```
-
-
- Compute the smallest distance between a point and a ball
-
-**return** a tuple containing: - the smallest distance. - the closest point on the ball.
-
-**details** Result is always positive or null. If point is inside the ball, the returned distance is 0.
 
 ### plane_plane_intersection
 
@@ -3568,6 +3439,135 @@ std::tuple<double, Point3D> point_triangle_distance(const Point3D & point, const
 std::tuple<double, Point2D> point_triangle_distance(const Point2D & point, const Triangle2D & triangle)
 ```
 
+
+### point_triangle_signed_distance
+
+```cpp
+std::tuple<double, Point3D> point_triangle_signed_distance(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+ Compute the signed distance between a point and a triangle
+
+**return** a tuple containing: - the smallest distance. - the closest point on the triangle.
+
+**details** the sign is given by the triangle normal (positive if in the same plane).
+
+### line_triangle_distance
+
+```cpp
+std::tuple<double, Point3D, Point3D> line_triangle_distance(const InfiniteLine3D & line, const Triangle3D & triangle)
+```
+
+
+ Compute the smallest distance between an infinite line and a triangle
+
+**return** a tuple containing: - the smallest distance. - the closest point on the line. - the closest point on the triangle.
+
+### segment_triangle_distance
+
+```cpp
+std::tuple<double, Point3D, Point3D> segment_triangle_distance(const Segment3D & segment, const Triangle3D & triangle)
+```
+
+
+ Compute the smallest distance between an segment and a triangle
+
+**return** a tuple containing: - the smallest distance. - the closest point on the segment. - the closest point on the triangle.
+
+### triangle_triangle_distance
+
+```cpp
+std::tuple<double, Point3D, Point3D> triangle_triangle_distance(const Triangle3D & triangle0, const Triangle3D & triangle1)
+```
+
+
+ Compute the smallest distance between two triangles
+
+**return** a tuple containing: - the smallest distance. - the closest point on the first triangle. - the closest point on the second triangle.
+
+### triangle_triangle_distance_between_non_conformal_parts
+
+```cpp
+std::optional<std::tuple<double, Point3D, Point3D>> triangle_triangle_distance_between_non_conformal_parts(const Triangle3D & triangle0, const Triangle3D & triangle1)
+```
+
+
+ Compute the smallest distance between two triangles
+
+**details** if the two triangles are the same, return nullopt. Only non conformal part of triangles are considered in computation of distance, i.e. if the triangles have a common point, it iterates on opposite segments, if the triangles have a common edge, it computes distance with
+
+**return** a tuple containing: - the smallest distance. - the closest point on the first triangle. - the closest point on the second triangle.
+
+### point_tetrahedron_distance
+
+```cpp
+std::tuple<double, Point3D> point_tetrahedron_distance(const Point3D & point, const Tetrahedron & tetra)
+```
+
+
+ Compute the distance between a point and a tetrahedron
+
+**return** a tuple containing: - the smallest distance. - the nearest point on the tetrahedron.
+
+### point_plane_distance
+
+```cpp
+std::tuple<double, Point3D> point_plane_distance(const Point3D & point, const Plane & plane)
+```
+
+
+ Compute the distance between a point and a plane
+
+**return** a tuple containing: - the smallest distance. - the nearest point on the plane.
+
+### point_plane_signed_distance
+
+```cpp
+std::tuple<double, Point3D> point_plane_signed_distance(const Point3D & point, const Plane & plane)
+```
+
+
+ Compute the signed distance between a point and a plane
+
+**return** a tuple containing: - the signed distance (sign is given by the plane normal direction). - the nearest point on the plane.
+
+### point_sphere_distance
+
+```cpp
+std::tuple<double, Point<dimension>> point_sphere_distance(const Point<dimension> & point, const Sphere<dimension> & sphere)
+```
+
+
+ Compute the smallest distance between a point and a sphere
+
+**return** a tuple containing: - the smallest distance. - the closest point on the sphere.
+
+### point_sphere_signed_distance
+
+```cpp
+std::tuple<double, Point<dimension>> point_sphere_signed_distance(const Point<dimension> & point, const Sphere<dimension> & sphere)
+```
+
+
+ Compute the smallest signed distance between a point and a sphere
+
+**return** a tuple containing: - the smallest signed distance. - the closest point on the sphere.
+
+**details** the sign is positive outside the sphere, negative inside.
+
+### point_ball_distance
+
+```cpp
+std::tuple<double, Point<dimension>> point_ball_distance(const Point<dimension> & point, const Ball<dimension> & sphere)
+```
+
+
+ Compute the smallest distance between a point and a ball
+
+**return** a tuple containing: - the smallest distance. - the closest point on the ball.
+
+**details** Result is always positive or null. If point is inside the ball, the returned distance is 0.
 
 ### point_circle_distance
 
