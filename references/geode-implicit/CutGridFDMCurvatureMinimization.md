@@ -85,12 +85,5 @@ public void compute_scalar_function(std::string_view scalar_function_name)
 ```
 
 
-### surrounding_value_nodes
-
-```cpp
-public std::array<index_t, 3> surrounding_value_nodes(const typename Grid<dimension>::VertexIndices & node_indices, local_index_t derivative_axis_id)
-```
-
-
 
 

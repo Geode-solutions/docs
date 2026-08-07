@@ -19,6 +19,7 @@ const name = words.join('-');
 
 * [BRepBlockImpliciter](BRepBlockImpliciter.md)
 * [BlockImplicitInfo](BlockImplicitInfo.md)
+* [ComputationGridOutput](ComputationGridOutput.md)
 * [CrossSectionSequenceImpliciter](CrossSectionSequenceImpliciter.md)
 * [CutGridGradientContributions](CutGridGradientContributions.md)
 * [CutSolidGrid](CutSolidGrid.md)
@@ -36,6 +37,7 @@ const name = words.join('-');
 * [SingleSurfaceImplicitation](SingleSurfaceImplicitation.md)
 * [StructuralModelSequenceImpliciter](StructuralModelSequenceImpliciter.md)
 * [SurfaceImplicitInfo](SurfaceImplicitInfo.md)
+* [VTIComputationGridOutput](VTIComputationGridOutput.md)
 * [VTPCutSurfaceGridOutput](VTPCutSurfaceGridOutput.md)
 * [VolumeBorderIdentificationInfo](VolumeBorderIdentificationInfo.md)
 
@@ -111,6 +113,19 @@ std::vector<std::string> save_cut_surface_grid(const CutSurfaceGrid & cut_surfac
 
 **filename** [in] Path to the file where save the CutSurfaceGrid.
 
+### save_computation_grid
+
+```cpp
+std::vector<std::string> save_computation_grid(const ComputationGrid<dimension> & computation_grid, std::string_view filename)
+```
+
+
+ API function for saving a ComputationGrid. The adequate saver is called depending on the given filename     extension.
+
+**edged_curve** [in] ComputationGrid to save.
+
+**filename** [in] Path to the file where save the ComputationGrid.
+
 ### cut_grid_explicitation_points
 
 ```cpp
@@ -122,6 +137,13 @@ std::pair<std::vector<geode::Point3D>, std::vector<double>> cut_grid_explicitati
 
 ```cpp
 bool is_cut_surface_grid_saveable(const CutSurfaceGrid & cut_surface_grid, std::string_view filename)
+```
+
+
+### is_computation_grid_saveable
+
+```cpp
+bool is_computation_grid_saveable(const ComputationGrid<dimension> & computation_grid, std::string_view filename)
 ```
 
 

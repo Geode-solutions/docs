@@ -94,6 +94,13 @@ public void inactivate_cells_outside_voi(const absl::flat_hash_set<CellIndices> 
 ```
 
 
+### remove_non_manifolds_on_grid_active_borders
+
+```cpp
+public void remove_non_manifolds_on_grid_active_borders(const absl::flat_hash_set<CellIndices> & rasterized_voi, const absl::flat_hash_set<CellIndices> & cells_to_check)
+```
+
+
 ### remove_computation_node
 
 ```cpp
@@ -209,7 +216,7 @@ public index_t nb_border_derivatives()
 ### border_value_nodes_derivatives
 
 ```cpp
-public const absl::linked_hash_map<index_t, std::vector<index_t>> & border_value_nodes_derivatives()
+public const absl::linked_hash_map<index_t, std::vector<local_index_t>> & border_value_nodes_derivatives()
 ```
 
 

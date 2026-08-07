@@ -74,7 +74,7 @@ public void add_computation_boundary(const TriangulatedSurface3D & boundary_surf
 ### add_internal_discontinuity
 
 ```cpp
-public void add_internal_discontinuity(const TriangulatedSurface3D & discontinuity_surface)
+public void add_internal_discontinuity(const BRep & model, const Surface3D & model_discontinuity_surface)
 ```
 
 
