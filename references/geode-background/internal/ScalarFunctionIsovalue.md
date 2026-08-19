@@ -38,7 +38,7 @@ public double isovalue
 ### ScalarFunctionIsovalue
 
 ```cpp
-public void ScalarFunctionIsovalue(const TetrahedralSolid3D & background_solid, std::string_view function_name, double function_isovalue)
+public void ScalarFunctionIsovalue(const TetrahedralSolid3D & background_solid, const uuid & scalar_function_id, double function_isovalue)
 ```
 
 

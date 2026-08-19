@@ -93,6 +93,12 @@ public void set_macro_info_mandatory(const uuid & mesh_id)
 ```
 
 
+### copy
+
+```cpp
+public void copy(const MacroInfo & macro_info)
+```
+
 ### MacroInfoBuilder
 
 ```cpp

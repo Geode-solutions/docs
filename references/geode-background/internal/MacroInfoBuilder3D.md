@@ -113,6 +113,13 @@ public void update_facets(absl::Span<const FacetMapping> mappings)
 ```
 
 
+### copy
+
+```cpp
+public void copy(const MacroInfo3D & macro_info)
+```
+
+
 ### MacroInfoBuilder3D
 
 ```cpp

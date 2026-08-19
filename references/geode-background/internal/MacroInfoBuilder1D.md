@@ -22,6 +22,13 @@ Inherits from MacroInfoBuilder
 
 ## Functions
 
+### MacroInfoBuilder1D
+
+```cpp
+public void MacroInfoBuilder1D(MacroInfoBuilder1D && )
+```
+
+
 ### ~MacroInfoBuilder1D
 
 ```cpp
@@ -36,13 +43,6 @@ public void update_information(const EdgedCurveModifier1D::SplitEdgeInfo & split
 ```
 
 
-### MacroInfoBuilder1D
-
-```cpp
-public void MacroInfoBuilder1D(MacroInfoBuilder1D && )
-```
-
-
 ### update_information
 
 ```cpp
@@ -50,10 +50,17 @@ public void update_information(const EdgedCurveModifier1D::CollapseEdgeInfo & co
 ```
 
 
+### copy
+
+```cpp
+public void copy(const MacroInfo1D & macro_info)
+```
+
+
 ### MacroInfoBuilder1D
 
 ```cpp
-protected void MacroInfoBuilder1D(MacroInfo1D & macro_info)
+protected void MacroInfoBuilder1D(BackgroundLine & background)
 ```
 
 

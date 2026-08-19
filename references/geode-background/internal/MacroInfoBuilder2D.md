@@ -64,6 +64,13 @@ public void update_vertex(const VertexMultiMapping & mapping)
 ```
 
 
+### copy
+
+```cpp
+public void copy(const MacroInfo2D & macro_info)
+```
+
+
 ### MacroInfoBuilder2D
 
 ```cpp

@@ -95,7 +95,7 @@ public BlockElementInsertionInfo insert_surface_triangles(const TriangulatedSurf
 ### insert_scalar_function_isovalues
 
 ```cpp
-public absl::linked_hash_map<uuid, std::vector<MeshPolygon>> insert_scalar_function_isovalues(std::string_view function_name, absl::Span<const double> isovalues)
+public absl::linked_hash_map<uuid, std::vector<MeshPolygon>> insert_scalar_function_isovalues(const uuid & scalar_function_id, absl::Span<const double> isovalues)
 ```
 
 

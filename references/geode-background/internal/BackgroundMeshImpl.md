@@ -19,7 +19,7 @@ const name = words.join('-');
 ### BackgroundMeshImpl
 
 ```cpp
-public void BackgroundMeshImpl<Background>(const Mesh & mesh)
+public void BackgroundMeshImpl<Background>(const Background & background, const Mesh & mesh)
 ```
 
 

@@ -75,7 +75,7 @@ public ElementInsertionInfo insert_surface_triangles(const TriangulatedSurface2D
 ### insert_scalar_function_isovalues
 
 ```cpp
-public void insert_scalar_function_isovalues(absl::string_view function_name, absl::Span<const double> isovalues)
+public void insert_scalar_function_isovalues(const uuid & scalar_function_id, absl::Span<const double> isovalues)
 ```
 
 

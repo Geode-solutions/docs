@@ -88,7 +88,7 @@ public ElementInsertionInfo insert_point_set_points(const PointSet3D & mesh, abs
 ### insert_scalar_function_isovalues
 
 ```cpp
-public void insert_scalar_function_isovalues(std::string_view function_name, absl::Span<const double> isovalues)
+public void insert_scalar_function_isovalues(const uuid & scalar_function_id, absl::Span<const double> isovalues)
 ```
 
 
