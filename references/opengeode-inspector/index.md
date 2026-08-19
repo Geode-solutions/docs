@@ -48,6 +48,7 @@ const name = words.join('-');
 * [BRepSurfacesTopology](BRepSurfacesTopology.md)
 * [BRepTopologyInspectionResult](BRepTopologyInspectionResult.md)
 * [BRepTopologyInspector](BRepTopologyInspector.md)
+* [ComponentID](ComponentID.md)
 * [ComponentMeshVertex](ComponentMeshVertex.md)
 * [ComponentMeshesColocation](ComponentMeshesColocation.md)
 * [EdgedCurveColocation](EdgedCurveColocation.md)
