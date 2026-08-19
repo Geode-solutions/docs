@@ -146,7 +146,7 @@ ModelGenericMapping build_model_component_mapping(const Model & out_model, const
 ### convert_surface_into_section_from_attribute
 
 ```cpp
-std::tuple<Section, ModelMeshesVertexMapping, ModelMeshesElementMapping> convert_surface_into_section_from_attribute(SurfaceMesh2D & surface, std::string_view attribute_name)
+std::tuple<Section, ModelMeshesVertexMapping, ModelMeshesElementMapping> convert_surface_into_section_from_attribute(SurfaceMesh2D & surface, const geode::uuid & attribute_id)
 ```
 
 
@@ -197,7 +197,7 @@ std::tuple<BRep, VertexIndexMapping, IndexToBRepMeshElementsMapping> convert_sol
 ### surface_facets_from_attribute
 
 ```cpp
-std::vector<index_t> surface_facets_from_attribute(SolidMesh3D & solid, std::string_view attribute_name)
+std::vector<index_t> surface_facets_from_attribute(SolidMesh3D & solid, const geode::uuid & attribute_id)
 ```
 
 
