@@ -11,28 +11,20 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class ModelMedialBallExtractor
+# struct SectionMedialBallExtractorResult
 
 
 ## Members
 
 ```cpp
-public static const auto RADIUS_ATTRIBUTE_NAME
+public linked_hash_map surfaces
 
 ```
 
 ```cpp
-public static const auto ORIGIN_ATTRIBUTE_NAME
+public ModelMedialBallExtractorAttributes attributes
 
 ```
-
-
-
-## Records
-
-ModelMedialBallExtractorAttributes
-
-Options
 
 
 

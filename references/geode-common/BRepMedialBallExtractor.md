@@ -22,6 +22,8 @@ Inherits from ModelMedialBallExtractor
 
 ## Records
 
+BRepMedialBallExtractorResult
+
 Options
 
 
@@ -73,14 +75,14 @@ public void ~BRepMedialBallExtractor()
 ### compute_all_blocks
 
 ```cpp
-public absl::linked_hash_map<uuid, std::unique_ptr<PointSet3D>> compute_all_blocks()
+public BRepMedialBallExtractorResult compute_all_blocks()
 ```
 
 
 ### compute_block
 
 ```cpp
-public std::unique_ptr<PointSet3D> compute_block(const uuid & block_id)
+public std::tuple<std::unique_ptr<PointSet3D>, ModelMedialBallExtractorAttributes> compute_block(const uuid & block_id)
 ```
 
 

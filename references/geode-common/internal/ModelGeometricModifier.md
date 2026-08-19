@@ -62,7 +62,7 @@ public ModelGeometricModifier<Model, AdvancedModelMeshModifiers> & operator=(Mod
 ### ModelGeometricModifier
 
 ```cpp
-public void ModelGeometricModifier<Model, AdvancedModelMeshModifiers>(const Model & model, ModelBuilder & builder, ModelModifier & modifier)
+public void ModelGeometricModifier<Model, AdvancedModelMeshModifiers>(const Model & model, ModelBuilder & builder, ModelModifier & modifier, ModelKey & key)
 ```
 
 

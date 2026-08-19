@@ -24,6 +24,8 @@ Inherits from ModelMedialBallExtractor
 
 Options
 
+SectionMedialBallExtractorResult
+
 
 
 ## Functions
@@ -73,14 +75,14 @@ public void ~SectionMedialBallExtractor()
 ### compute_all_surfaces
 
 ```cpp
-public absl::linked_hash_map<uuid, std::unique_ptr<PointSet2D>> compute_all_surfaces()
+public SectionMedialBallExtractorResult compute_all_surfaces()
 ```
 
 
 ### compute_surface
 
 ```cpp
-public std::unique_ptr<PointSet2D> compute_surface(const uuid & surface_id)
+public std::tuple<std::unique_ptr<PointSet2D>, ModelMedialBallExtractorAttributes> compute_surface(const uuid & surface_id)
 ```
 
 

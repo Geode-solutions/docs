@@ -177,6 +177,13 @@ public void paint_mesh(const TriangulatedSurface<dimension> & mesh, double metri
 ```
 
 
+### paint_cell
+
+```cpp
+public void paint_cell(const Index & cell, double metric, Compare compare)
+```
+
+
 ### optimize
 
 ```cpp
