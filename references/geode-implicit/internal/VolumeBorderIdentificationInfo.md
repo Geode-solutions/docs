@@ -17,7 +17,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public const geode::uuid & border_surface_id
+public const uuid & border_surface_id
 
 ```
 

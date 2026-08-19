@@ -61,21 +61,21 @@ public void ~SingleSurfaceFromVertices()
 ### add_data_points
 
 ```cpp
-public void add_data_points(const PointSet3D & data_points, double min_distance, std::string_view weight_attribute_name)
+public void add_data_points(const PointSet3D & data_points, double min_distance, const uuid & weight_attribute_id)
 ```
 
 
 ### add_data_curve
 
 ```cpp
-public void add_data_curve(const EdgedCurve3D & data_curve, double min_distance, std::string_view weight_attribute_name)
+public void add_data_curve(const EdgedCurve3D & data_curve, double min_distance, const uuid & weight_attribute_id)
 ```
 
 
 ### add_outline
 
 ```cpp
-public void add_outline(const EdgedCurve3D & outline, std::string_view weight_attribute_name)
+public void add_outline(const EdgedCurve3D & outline, const uuid & weight_attribute_id)
 ```
 
 

@@ -87,7 +87,7 @@ public void add_boundary_value_condition(double value_to_set)
 ### compute_scalar_function
 
 ```cpp
-public void compute_scalar_function(std::string_view scalar_function_name, double function_value_interval, const ImplicitationParameters & computation_parameters)
+public void compute_scalar_function(std::string_view scalar_function_name, const uuid & function_id, double function_value_interval, const ImplicitationParameters & computation_parameters)
 ```
 
 
@@ -115,7 +115,7 @@ protected ScalarFunctionComputer<dimension> & operator=(ScalarFunctionComputer<d
 ### interpolate_result_on_grid
 
 ```cpp
-protected void interpolate_result_on_grid(const CutGrid<dimension> & other_grid, std::string_view scalar_function_name)
+protected void interpolate_result_on_grid(const CutGrid<dimension> & other_grid, std::string_view scalar_function_name, const uuid & function_id)
 ```
 
 

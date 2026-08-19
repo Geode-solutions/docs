@@ -17,7 +17,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public basic_string scalar_function_name
+public uuid scalar_function_id
 
 ```
 
@@ -27,7 +27,7 @@ public vector undefined_scalar_vertices
 ```
 
 ```cpp
-public basic_string scalar_function_gradient_name
+public uuid scalar_function_gradient_id
 
 ```
 

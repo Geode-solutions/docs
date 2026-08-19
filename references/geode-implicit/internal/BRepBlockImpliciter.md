@@ -61,7 +61,7 @@ public void ~BRepBlockImpliciter()
 ### compute_implicit_function
 
 ```cpp
-public void compute_implicit_function(const ImplicitationParameters & computation_parameters, double function_value_interval)
+public void compute_implicit_function(const ImplicitationParameters & computation_parameters, const uuid & function_id, double function_value_interval)
 ```
 
 
@@ -75,14 +75,14 @@ public std::vector<detail::ImplicitStreamLine3D> implicit_stream_lines()
 ### interpolate_function_on_mesh
 
 ```cpp
-public void interpolate_function_on_mesh(absl::Span<const double> implicit_isovalues)
+public void interpolate_function_on_mesh(const uuid & function_id, absl::Span<const double> implicit_isovalues)
 ```
 
 
 ### create_mesh_with_function_in_block
 
 ```cpp
-public void create_mesh_with_function_in_block(absl::Span<const double> implicit_isovalues)
+public void create_mesh_with_function_in_block(const uuid & function_id, absl::Span<const double> implicit_isovalues)
 ```
 
 

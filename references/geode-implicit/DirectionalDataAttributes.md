@@ -17,12 +17,12 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public basic_string_view vector_attribute_name
+public uuid vector_attribute_id
 
 ```
 
 ```cpp
-public basic_string_view weight_attribute_name
+public uuid weight_attribute_id
 
 ```
 

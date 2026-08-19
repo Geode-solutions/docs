@@ -61,7 +61,7 @@ geode::local_index_t nb_fdm_derivatives(geode::local_index_t dimension)
 ### snap_function_isovalue_to_vertices
 
 ```cpp
-void snap_function_isovalue_to_vertices(const BRep & model, std::string_view function_name, double isovalue, double tolerance)
+void snap_function_isovalue_to_vertices(const BRep & model, const uuid & function_id, double isovalue, double tolerance)
 ```
 
 

@@ -84,7 +84,7 @@ public void paint_connected_blocks()
 ### cell_duplicate_mesh
 
 ```cpp
-public std::unique_ptr<TetrahedralSolid3D> cell_duplicate_mesh(index_t duplicate_id)
+public std::tuple<std::unique_ptr<TetrahedralSolid3D>, uuid> cell_duplicate_mesh(index_t duplicate_id)
 ```
 
 

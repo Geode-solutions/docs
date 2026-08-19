@@ -96,28 +96,28 @@ public void set_stratigraphic_unit_thickness(const StratigraphicUnit2D & strati_
 ### add_horizon_data_points
 
 ```cpp
-public void add_horizon_data_points(const Horizon2D & horizon, const PointSet2D & pointset, std::string_view weight_attribute_name)
+public void add_horizon_data_points(const Horizon2D & horizon, const PointSet2D & pointset, const uuid & weight_attribute_id)
 ```
 
 
 ### add_horizon_data_curve
 
 ```cpp
-public void add_horizon_data_curve(const Horizon2D & horizon, const EdgedCurve2D & data_curve, std::string_view weight_attribute_name)
+public void add_horizon_data_curve(const Horizon2D & horizon, const EdgedCurve2D & data_curve, const uuid & weight_attribute_id)
 ```
 
 
 ### add_horizon_tangential_directional_data
 
 ```cpp
-public void add_horizon_tangential_directional_data(const Horizon2D & horizon, const PointSet2D & tangential_data, const DirectionalDataAttributes & attribute_names)
+public void add_horizon_tangential_directional_data(const Horizon2D & horizon, const PointSet2D & tangential_data, const DirectionalDataAttributes & attribute_ids)
 ```
 
 
 ### add_horizon_normal_directional_data
 
 ```cpp
-public void add_horizon_normal_directional_data(const Horizon2D & horizon, const PointSet2D & normal_data, const DirectionalDataAttributes & attribute_names)
+public void add_horizon_normal_directional_data(const Horizon2D & horizon, const PointSet2D & normal_data, const DirectionalDataAttributes & attribute_ids)
 ```
 
 

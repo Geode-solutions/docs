@@ -40,28 +40,14 @@ std::optional<ImplicitStreamLine<dimension>> compute_cut_grid_streamline(const C
 ### tangential_data_from_curve
 
 ```cpp
-std::unique_ptr<PointSet<dimension>> tangential_data_from_curve(const EdgedCurve<dimension> & data_curve, std::string_view weight_attribute_name)
+std::tuple<std::unique_ptr<PointSet<dimension>>, uuid, uuid> tangential_data_from_curve(const EdgedCurve<dimension> & data_curve, const uuid & weight_attribute_id_in)
 ```
 
 
-### geode_implicit_weight_attribute
+### create_geode_implicit_weight_attribute
 
 ```cpp
-std::shared_ptr<VariableAttribute<double>> geode_implicit_weight_attribute(const Mesh & mesh)
-```
-
-
-### geode_implicit_direction_attribute
-
-```cpp
-std::shared_ptr<VariableAttribute<Vector<Mesh::dim>>> geode_implicit_direction_attribute(const Mesh & mesh)
-```
-
-
-### extrapolate_surface_mesh_scalar_function
-
-```cpp
-void extrapolate_surface_mesh_scalar_function(const SurfaceMesh<dimension> & surface_mesh, std::string_view scalar_function_name, absl::Span<const index_t> undefined_vertices)
+std::shared_ptr<VariableAttribute<double>> create_geode_implicit_weight_attribute(const Mesh & mesh)
 ```
 
 
@@ -72,10 +58,17 @@ std::unique_ptr<HybridSolid3D> convert_computation_grid_to_solid_mesh(const Comp
 ```
 
 
-### extrapolate_solid_mesh_scalar_function
+### normal_data_from_surface
 
 ```cpp
-void extrapolate_solid_mesh_scalar_function(const SolidMesh3D & solid_mesh, std::string_view scalar_function_name, absl::Span<const index_t> undefined_vertices)
+std::tuple<std::unique_ptr<PointSet3D>, uuid, uuid> normal_data_from_surface(const SurfaceMesh3D & data_surface, const uuid & weight_attribute_id_in)
+```
+
+
+### find_geode_implicit_weight_attribute
+
+```cpp
+std::shared_ptr<VariableAttribute<double>> find_geode_implicit_weight_attribute(const Mesh & mesh, const uuid & attribute_id)
 ```
 
 
@@ -86,10 +79,31 @@ std::array<bool, dimension> grid_densification_pattern(const BoundingBox<dimensi
 ```
 
 
-### normal_data_from_surface
+### create_geode_implicit_direction_attribute
 
 ```cpp
-std::unique_ptr<PointSet3D> normal_data_from_surface(const SurfaceMesh3D & data_surface, std::string_view weight_attribute_name)
+std::shared_ptr<VariableAttribute<Vector<Mesh::dim>>> create_geode_implicit_direction_attribute(const Mesh & mesh)
+```
+
+
+### find_geode_implicit_direction_attribute
+
+```cpp
+std::shared_ptr<VariableAttribute<Vector<Mesh::dim>>> find_geode_implicit_direction_attribute(const Mesh & mesh, const uuid & attribute_id)
+```
+
+
+### extrapolate_surface_mesh_scalar_function
+
+```cpp
+void extrapolate_surface_mesh_scalar_function(const SurfaceMesh<dimension> & surface_mesh, const uuid & scalar_function_id, absl::Span<const index_t> undefined_vertices)
+```
+
+
+### extrapolate_solid_mesh_scalar_function
+
+```cpp
+void extrapolate_solid_mesh_scalar_function(const SolidMesh3D & solid_mesh, const uuid & scalar_function_id, absl::Span<const index_t> undefined_vertices)
 ```
 
 

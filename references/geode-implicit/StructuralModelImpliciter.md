@@ -96,35 +96,35 @@ public void set_stratigraphic_unit_thickness(const StratigraphicUnit3D & strati_
 ### add_horizon_data_points
 
 ```cpp
-public void add_horizon_data_points(const Horizon3D & horizon, const PointSet3D & data_points, std::string_view weight_attribute_name)
+public void add_horizon_data_points(const Horizon3D & horizon, const PointSet3D & data_points, const uuid & weight_attribute_id)
 ```
 
 
 ### add_horizon_data_curve
 
 ```cpp
-public void add_horizon_data_curve(const Horizon3D & horizon, const EdgedCurve3D & data_curve, std::string_view weight_attribute_name)
+public void add_horizon_data_curve(const Horizon3D & horizon, const EdgedCurve3D & data_curve, const uuid & weight_attribute_id)
 ```
 
 
 ### add_horizon_data_surface
 
 ```cpp
-public void add_horizon_data_surface(const Horizon3D & horizon, const SurfaceMesh3D & data_surface, std::string_view weight_attribute_name)
+public void add_horizon_data_surface(const Horizon3D & horizon, const SurfaceMesh3D & data_surface, const uuid & weight_attribute_id)
 ```
 
 
 ### add_horizon_tangential_directional_data
 
 ```cpp
-public void add_horizon_tangential_directional_data(const Horizon3D & horizon, const PointSet3D & tangential_data, const DirectionalDataAttributes & attribute_names)
+public void add_horizon_tangential_directional_data(const Horizon3D & horizon, const PointSet3D & tangential_data, const DirectionalDataAttributes & attribute_ids)
 ```
 
 
 ### add_horizon_normal_directional_data
 
 ```cpp
-public void add_horizon_normal_directional_data(const Horizon3D & horizon, const PointSet3D & normal_data, const DirectionalDataAttributes & attribute_names)
+public void add_horizon_normal_directional_data(const Horizon3D & horizon, const PointSet3D & normal_data, const DirectionalDataAttributes & attribute_ids)
 ```
 
 

@@ -75,21 +75,21 @@ public void ~SingleSurfaceImplicitation()
 ### add_data_points
 
 ```cpp
-public void add_data_points(const PointSet3D & data_points, double min_distance, std::string_view weight_attribute_name)
+public void add_data_points(const PointSet3D & data_points, double min_distance, const uuid & weight_attribute_id)
 ```
 
 
 ### add_data_curve
 
 ```cpp
-public void add_data_curve(const EdgedCurve3D & data_curve, double min_distance, std::string_view weight_attribute_name)
+public void add_data_curve(const EdgedCurve3D & data_curve, double min_distance, const uuid & weight_attribute_id)
 ```
 
 
 ### add_data_surface
 
 ```cpp
-public void add_data_surface(const SurfaceMesh3D & data_surface, double min_distance, std::string_view weight_attribute_name)
+public void add_data_surface(const SurfaceMesh3D & data_surface, double min_distance, const uuid & weight_attribute_id)
 ```
 
 
@@ -125,6 +125,13 @@ public void compute_surface_function(const BoundingBox3D & computation_bbox, dou
 
 ```cpp
 public const ComputationGrid3D & resulting_grid()
+```
+
+
+### scalar_function_id
+
+```cpp
+public const uuid & scalar_function_id()
 ```
 
 

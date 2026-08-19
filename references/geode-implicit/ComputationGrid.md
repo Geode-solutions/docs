@@ -167,7 +167,7 @@ public const VertexIndices & grid_vertex_indices_from_computation_node(index_t c
 ### set_node_values_attribute_name
 
 ```cpp
-public void set_node_values_attribute_name(std::string_view name)
+public void set_node_values_attribute_name(std::string_view name, const uuid & scalar_function_id)
 ```
 
 
@@ -175,6 +175,13 @@ public void set_node_values_attribute_name(std::string_view name)
 
 ```cpp
 public std::string_view node_values_attribute_name()
+```
+
+
+### node_values_attribute_id
+
+```cpp
+public const uuid & node_values_attribute_id()
 ```
 
 

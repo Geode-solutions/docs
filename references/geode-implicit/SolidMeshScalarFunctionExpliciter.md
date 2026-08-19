@@ -19,7 +19,7 @@ const name = words.join('-');
 ### SolidMeshScalarFunctionExpliciter
 
 ```cpp
-public void SolidMeshScalarFunctionExpliciter(std::unique_ptr<TetrahedralSolid3D> && solid, std::string_view scalar_function_name)
+public void SolidMeshScalarFunctionExpliciter(std::unique_ptr<TetrahedralSolid3D> && solid, const uuid & scalar_function_id)
 ```
 
 

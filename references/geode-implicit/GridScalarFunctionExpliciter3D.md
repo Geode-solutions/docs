@@ -19,7 +19,7 @@ const name = words.join('-');
 ### GridScalarFunctionExpliciter3D
 
 ```cpp
-public void GridScalarFunctionExpliciter3D(const Grid3D & grid, std::string_view scalar_function_name)
+public void GridScalarFunctionExpliciter3D(const Grid3D & grid, const uuid & scalar_function_id)
 ```
 
 
