@@ -105,7 +105,7 @@ void build_pyramid_layer(HybridSolid3D & solid)
 ### compute_elements_with_attribute
 
 ```cpp
-FrameFieldParameterization::ExtractedElements compute_elements_with_attribute(BRep & brep, const ConstantMetric3D & metric, std::string_view attribute_name)
+FrameFieldParameterization::ExtractedElements compute_elements_with_attribute(BRep & brep, const ConstantMetric3D & metric, const uuid & attribute_id)
 ```
 
 
