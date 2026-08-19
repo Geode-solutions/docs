@@ -39,7 +39,7 @@ public void add_element(geode::BRep & brep, GmshId2Uuids & id_map)
 ### create_gmsh_polyhedron
 
 ```cpp
-public geode::index_t create_gmsh_polyhedron(geode::BRepBuilder & builder, const geode::uuid & block_uuid, const std::vector<geode::index_t> & v_ids)
+public geode::index_t create_gmsh_polyhedron(geode::BRepBuilder & builder, const Block3D & block, const std::vector<geode::index_t> & v_ids)
 ```
 
 

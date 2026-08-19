@@ -32,7 +32,7 @@ public void GMSHPyramid(geode::index_t physical_entity_id, geode::index_t elemen
 ### create_gmsh_polyhedron
 
 ```cpp
-public geode::index_t create_gmsh_polyhedron(geode::BRepBuilder & builder, const geode::uuid & block_uuid, const std::vector<geode::index_t> & v_ids)
+public geode::index_t create_gmsh_polyhedron(geode::BRepBuilder & builder, const Block3D & block, const std::vector<geode::index_t> & v_ids)
 ```
 
 
