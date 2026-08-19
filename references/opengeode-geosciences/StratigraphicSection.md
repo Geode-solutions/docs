@@ -64,6 +64,13 @@ public void StratigraphicSection()
 ### StratigraphicSection
 
 ```cpp
+public void StratigraphicSection(BITSERY )
+```
+
+
+### StratigraphicSection
+
+```cpp
 public void StratigraphicSection(StratigraphicSection && stratigraphic_section)
 ```
 
@@ -175,6 +182,13 @@ public absl::InlinedVector<std::unique_ptr<EdgedCurve2D>, 2> stratigraphic_line(
 
 ```cpp
 public BoundingBox2D stratigraphic_bounding_box()
+```
+
+
+### stratigraphic_location_attribute_id
+
+```cpp
+public const uuid & stratigraphic_location_attribute_id()
 ```
 
 

@@ -40,10 +40,24 @@ public ModelCopyMapping copy(const ImplicitStructuralModel & implicit_model)
 ```
 
 
+### import_old_implicit_attribute_values_from_attribute_name
+
+```cpp
+public void import_old_implicit_attribute_values_from_attribute_name(std::string_view old_implicit_attribute_name)
+```
+
+
 ### copy_implicit_information
 
 ```cpp
 public void copy_implicit_information(ModelCopyMapping & mapping, const ImplicitStructuralModel & other_model)
+```
+
+
+### copy_implicit_attribute_values
+
+```cpp
+public void copy_implicit_attribute_values(ModelCopyMapping & mapping, const ImplicitStructuralModel & other_model)
 ```
 
 

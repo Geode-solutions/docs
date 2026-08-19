@@ -85,6 +85,13 @@ public std::string_view native_extension()
 ### CrossSection
 
 ```cpp
+public void CrossSection(BITSERY )
+```
+
+
+### CrossSection
+
+```cpp
 public void CrossSection(Section && section)
 ```
 

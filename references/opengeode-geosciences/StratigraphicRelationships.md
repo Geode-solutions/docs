@@ -27,6 +27,13 @@ public void StratigraphicRelationships()
 ```
 
 
+### StratigraphicRelationships
+
+```cpp
+public void StratigraphicRelationships(BITSERY )
+```
+
+
 ### ~StratigraphicRelationships
 
 ```cpp

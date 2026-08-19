@@ -36,6 +36,13 @@ public void GeographicCoordinateSystem<dimension>(AttributeManager & manager, Ge
 ```
 
 
+### GeographicCoordinateSystem
+
+```cpp
+public void GeographicCoordinateSystem<dimension>(AttributeManager & manager, const uuid & uuid, GeographicCoordinateSystemInfo info)
+```
+
+
 ### ~GeographicCoordinateSystem
 
 ```cpp

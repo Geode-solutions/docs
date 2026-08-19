@@ -64,6 +64,13 @@ public void StratigraphicModel()
 ### StratigraphicModel
 
 ```cpp
+public void StratigraphicModel(BITSERY )
+```
+
+
+### StratigraphicModel
+
+```cpp
 public void StratigraphicModel(StratigraphicModel && implicit_model)
 ```
 
@@ -175,6 +182,13 @@ public absl::InlinedVector<std::unique_ptr<TriangulatedSurface3D>, 2> stratigrap
 
 ```cpp
 public BoundingBox3D stratigraphic_bounding_box()
+```
+
+
+### stratigraphic_location_attribute_id
+
+```cpp
+public const uuid & stratigraphic_location_attribute_id()
 ```
 
 

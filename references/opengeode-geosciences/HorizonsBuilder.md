@@ -46,14 +46,14 @@ public void load_horizons(std::string_view directory)
 ### set_horizon_contact_type
 
 ```cpp
-public void set_horizon_contact_type(const uuid & horizon_id, CONTACT_TYPE contact_type)
+public void set_horizon_contact_type(const Horizon<dimension> & horizon, CONTACT_TYPE contact_type)
 ```
 
 
 ### set_horizon_name
 
 ```cpp
-public void set_horizon_name(const uuid & id, std::string_view name)
+public void set_horizon_name(const Horizon<dimension> & horizon, std::string_view name)
 ```
 
 

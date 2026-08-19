@@ -40,10 +40,31 @@ public ModelCopyMapping copy(const ImplicitCrossSection & implicit_model)
 ```
 
 
+### import_old_implicit_attribute_values_from_attribute_name
+
+```cpp
+public void import_old_implicit_attribute_values_from_attribute_name(std::string_view old_implicit_attribute_name)
+```
+
+
+### import_old_implicit_attribute_values_from_attribute_id
+
+```cpp
+public void import_old_implicit_attribute_values_from_attribute_id(const uuid & old_implicit_attribute_id)
+```
+
+
 ### copy_implicit_information
 
 ```cpp
 public void copy_implicit_information(ModelCopyMapping & mapping, const ImplicitCrossSection & other_model)
+```
+
+
+### copy_implicit_attribute_values
+
+```cpp
+public void copy_implicit_attribute_values(ModelCopyMapping & mapping, const ImplicitCrossSection & other_model)
 ```
 
 

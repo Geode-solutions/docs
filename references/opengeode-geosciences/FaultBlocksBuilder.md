@@ -46,7 +46,7 @@ public void load_fault_blocks(std::string_view directory)
 ### set_fault_block_name
 
 ```cpp
-public void set_fault_block_name(const uuid & id, std::string_view name)
+public void set_fault_block_name(const FaultBlock<dimension> & fault_block, std::string_view name)
 ```
 
 

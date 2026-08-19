@@ -20,7 +20,7 @@ const name = words.join('-');
 ### copy_faults
 
 ```cpp
-void copy_faults(const ModelFrom & from, BuilderTo & builder_to, Mapping & mapping)
+void copy_faults(const ModelFrom & from, const ModelTo & model_to, typename ModelTo::Builder & builder_to, Mapping & mapping)
 ```
 
 
@@ -97,7 +97,7 @@ void load_structural_model_files(StructuralModel & structural_model, std::string
 ### copy_horizons
 
 ```cpp
-void copy_horizons(const ModelFrom & from, BuilderTo & builder_to, Mapping & mapping)
+void copy_horizons(const ModelFrom & from, const ModelTo & model_to, typename ModelTo::Builder & builder_to, Mapping & mapping)
 ```
 
 
@@ -118,7 +118,7 @@ void load_implicit_structural_model_files(ImplicitStructuralModel & model, std::
 ### copy_fault_blocks
 
 ```cpp
-void copy_fault_blocks(const ModelFrom & from, BuilderTo & builder_to, Mapping & mapping)
+void copy_fault_blocks(const ModelFrom & from, const ModelTo & model_to, typename ModelTo::Builder & builder_to, Mapping & mapping)
 ```
 
 
@@ -129,13 +129,6 @@ void rescale_implicit_value_to_bbox_scale(StratigraphicModel & model)
 ```
 
 
-### copy_stratigraphic_units
-
-```cpp
-void copy_stratigraphic_units(const ModelFrom & from, BuilderTo & builder_to, Mapping & mapping)
-```
-
-
 ### save_stratigraphic_surfaces
 
 ```cpp
@@ -143,10 +136,10 @@ void save_stratigraphic_surfaces(const StratigraphicSection & section, std::stri
 ```
 
 
-### copy_collection_item_relationships
+### copy_stratigraphic_units
 
 ```cpp
-void copy_collection_item_relationships(const ModelFrom & from, const CollectionRangeFrom & collection_range_from, const Mapping & collection_mapping, const Mapping & item_mapping, BuilderTo & builder_to)
+void copy_stratigraphic_units(const ModelFrom & from, const ModelTo & model_to, typename ModelTo::Builder & builder_to, Mapping & mapping)
 ```
 
 
@@ -157,17 +150,24 @@ void save_stratigraphic_blocks(const StratigraphicModel & model, std::string_vie
 ```
 
 
+### copy_collection_item_relationships
+
+```cpp
+void copy_collection_item_relationships(const ModelFrom & from, const CollectionRangeFrom & collection_range_from, const Mapping & collection_mapping, const Mapping & item_mapping, BuilderTo & builder_to)
+```
+
+
 ### implicit_section_from_cross_section_scalar_field
 
 ```cpp
-ImplicitCrossSection implicit_section_from_cross_section_scalar_field(CrossSection && section, std::string_view scalar_attribute_name)
+ImplicitCrossSection implicit_section_from_cross_section_scalar_field(CrossSection && section, const uuid & scalar_attribute_id)
 ```
 
 
 ### implicit_model_from_structural_model_scalar_field
 
 ```cpp
-ImplicitStructuralModel implicit_model_from_structural_model_scalar_field(StructuralModel && model, std::string_view scalar_attribute_name)
+ImplicitStructuralModel implicit_model_from_structural_model_scalar_field(StructuralModel && model, const uuid & scalar_attribute_id)
 ```
 
 

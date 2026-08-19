@@ -46,14 +46,14 @@ public void load_faults(std::string_view directory)
 ### set_fault_type
 
 ```cpp
-public void set_fault_type(const uuid & fault_id, typename Fault<dimension>::FAULT_TYPE type)
+public void set_fault_type(const Fault<dimension> & fault, typename Fault<dimension>::FAULT_TYPE type)
 ```
 
 
 ### set_fault_name
 
 ```cpp
-public void set_fault_name(const uuid & id, std::string_view name)
+public void set_fault_name(const Fault<dimension> & fault, std::string_view name)
 ```
 
 

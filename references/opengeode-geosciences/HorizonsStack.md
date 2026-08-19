@@ -78,6 +78,13 @@ public void HorizonsStack<value-parameter-0-0>()
 ### HorizonsStack
 
 ```cpp
+public void HorizonsStack<value-parameter-0-0>(BITSERY )
+```
+
+
+### HorizonsStack
+
+```cpp
 public void HorizonsStack<value-parameter-0-0>(HorizonsStack<dimension> && horizons_stack)
 ```
 
@@ -138,17 +145,17 @@ public StratigraphicUnitOrderedRange bottom_to_top_units()
 ```
 
 
-### top_to_bottom_horizons
-
-```cpp
-public HorizonOrderedRange top_to_bottom_horizons()
-```
-
-
 ### native_extension_static
 
 ```cpp
 public static std::string_view native_extension_static()
+```
+
+
+### top_to_bottom_horizons
+
+```cpp
+public HorizonOrderedRange top_to_bottom_horizons()
 ```
 
 

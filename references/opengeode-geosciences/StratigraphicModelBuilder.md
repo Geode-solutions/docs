@@ -68,5 +68,19 @@ public void set_stratigraphic_coordinates(const Block3D & block, index_t vertex_
 ```
 
 
+### import_old_stratigraphic_attribute_values_from_attribute_name
+
+```cpp
+public void import_old_stratigraphic_attribute_values_from_attribute_name(std::string_view attribute_name)
+```
+
+
+### copy_stratigraphic_attribute_values
+
+```cpp
+public void copy_stratigraphic_attribute_values(ModelCopyMapping & mapping, const StratigraphicModel & other_model)
+```
+
+
 
 

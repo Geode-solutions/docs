@@ -85,6 +85,13 @@ public std::string_view native_extension()
 ### StructuralModel
 
 ```cpp
+public void StructuralModel(BITSERY )
+```
+
+
+### StructuralModel
+
+```cpp
 public void StructuralModel(BRep && brep)
 ```
 

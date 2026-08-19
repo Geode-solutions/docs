@@ -59,6 +59,13 @@ public void ImplicitCrossSection()
 ### ImplicitCrossSection
 
 ```cpp
+public void ImplicitCrossSection(BITSERY )
+```
+
+
+### ImplicitCrossSection
+
+```cpp
 public void ImplicitCrossSection(ImplicitCrossSection && implicit_model)
 ```
 
@@ -106,6 +113,15 @@ public double implicit_value(const Surface2D & surface, index_t vertex_id)
 
 
  Return the implicit value of the given vertex of the given surface.
+
+### implicit_attribute_id
+
+```cpp
+public const uuid & implicit_attribute_id()
+```
+
+
+ Return the implicit function attribute id.
 
 ### implicit_value
 

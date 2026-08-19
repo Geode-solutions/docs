@@ -59,6 +59,13 @@ public void ImplicitStructuralModel()
 ### ImplicitStructuralModel
 
 ```cpp
+public void ImplicitStructuralModel(BITSERY )
+```
+
+
+### ImplicitStructuralModel
+
+```cpp
 public void ImplicitStructuralModel(ImplicitStructuralModel && implicit_model)
 ```
 
@@ -95,6 +102,13 @@ public ImplicitStructuralModel clone()
 
 ```cpp
 public const Component3D & component(const uuid & id)
+```
+
+
+### implicit_attribute_id
+
+```cpp
+public const uuid & implicit_attribute_id()
 ```
 
 

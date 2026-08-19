@@ -56,13 +56,6 @@ public void Fault<dimension>(Fault<dimension> && other)
 ```
 
 
-### component_type_static
-
-```cpp
-public static ComponentType component_type_static()
-```
-
-
 ### ~Fault
 
 ```cpp
@@ -70,10 +63,10 @@ public void ~Fault<dimension>()
 ```
 
 
-### component_type
+### component_type_static
 
 ```cpp
-public ComponentType component_type()
+public static ComponentType component_type_static()
 ```
 
 
@@ -81,6 +74,13 @@ public ComponentType component_type()
 
 ```cpp
 public bool has_type()
+```
+
+
+### component_type
+
+```cpp
+public ComponentType component_type()
 ```
 
 
@@ -98,17 +98,17 @@ public void Fault<dimension>(FaultsKey )
 ```
 
 
-### Fault
-
-```cpp
-public void Fault<dimension>(FAULT_TYPE type, FaultsKey )
-```
-
-
 ### set_type
 
 ```cpp
 public void set_type(FAULT_TYPE type, FaultsBuilderKey )
+```
+
+
+### Fault
+
+```cpp
+public void Fault<dimension>(FAULT_TYPE type, FaultsKey )
 ```
 
 
