@@ -47,6 +47,18 @@ public float generic_item_value(index_t element, local_index_t item)
 ```
 
 
+### value
+
+```cpp
+public const T & value(index_t element)
+```
+
+### has_value
+
+```cpp
+public bool has_value(index_t element)
+```
+
 ### is_genericable
 
 ```cpp
@@ -64,15 +76,9 @@ public local_index_t nb_items()
 ### ReadOnlyAttribute
 
 ```cpp
-protected void ReadOnlyAttribute<T>(AttributeProperties properties)
+protected void ReadOnlyAttribute<T>(std::string_view name, AttributeProperties properties)
 ```
 
-
-### value
-
-```cpp
-public const T & value(index_t element)
-```
 
 
 

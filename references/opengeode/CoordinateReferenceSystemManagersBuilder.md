@@ -23,17 +23,17 @@ public CoordinateReferenceSystemManagerBuilder1D coordinate_reference_system_man
 ```
 
 
-### coordinate_reference_system_manager_builder2D
-
-```cpp
-public CoordinateReferenceSystemManagerBuilder2D coordinate_reference_system_manager_builder2D()
-```
-
-
 ### CoordinateReferenceSystemManagersBuilder
 
 ```cpp
 public void CoordinateReferenceSystemManagersBuilder<dimension>(CoordinateReferenceSystemManagers<dimension> & crs_managers)
+```
+
+
+### coordinate_reference_system_manager_builder2D
+
+```cpp
+public CoordinateReferenceSystemManagerBuilder2D coordinate_reference_system_manager_builder2D()
 ```
 
 

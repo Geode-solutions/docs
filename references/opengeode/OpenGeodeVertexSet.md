@@ -22,6 +22,20 @@ Inherits from VertexSet
 
 ## Functions
 
+### OpenGeodeVertexSet
+
+```cpp
+public void OpenGeodeVertexSet()
+```
+
+
+### OpenGeodeVertexSet
+
+```cpp
+public void OpenGeodeVertexSet(BITSERY )
+```
+
+
 ### impl_name_static
 
 ```cpp

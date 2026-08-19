@@ -53,6 +53,13 @@ public static const auto dim
 
 ## Functions
 
+### PolyhedralSolid
+
+```cpp
+public void PolyhedralSolid<dimension>(BITSERY )
+```
+
+
 ### create
 
 ```cpp

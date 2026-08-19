@@ -45,11 +45,11 @@ public static GridScalarFunction<dimension> create(const Grid<dimension> & grid,
 ### find
 
 ```cpp
-public static GridScalarFunction<dimension> find(const Grid<dimension> & grid, std::string_view function_name)
+public static GridScalarFunction<dimension> find(const Grid<dimension> & grid, const uuid & function_id)
 ```
 
 
- Finds an object function that already exists in the given Grid, from its given name. Throws an exception if no attribute with the same name exists.
+ Finds an object function that already exists in the given Grid, from its given id. Throws an exception if no attribute with the same name exists.
 
 ### set_value
 

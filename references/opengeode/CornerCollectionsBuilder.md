@@ -43,14 +43,14 @@ public void load_corner_collections(std::string_view directory)
 ### set_corner_collection_name
 
 ```cpp
-public void set_corner_collection_name(const uuid & id, std::string_view name)
+public void set_corner_collection_name(const CornerCollection<dimension> & corner_collection, std::string_view name)
 ```
 
 
 ### set_corner_collection_active
 
 ```cpp
-public void set_corner_collection_active(const uuid & id, bool active)
+public void set_corner_collection_active(const CornerCollection<dimension> & corner_collection, bool active)
 ```
 
 

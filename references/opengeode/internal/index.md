@@ -132,17 +132,17 @@ double shape_function_value(const typename Grid<dimension>::CellIndices & cell_i
 ```
 
 
-### register_mesh_components
-
-```cpp
-void register_mesh_components(const Model & model, typename Model::Builder & builder)
-```
-
-
 ### copy_points
 
 ```cpp
 void copy_points(const MeshFrom & from, Builder & builder)
+```
+
+
+### register_mesh_components
+
+```cpp
+void register_mesh_components(const Model & model, typename Model::Builder & builder)
 ```
 
 
@@ -167,13 +167,6 @@ POSITION point_triangle_position(const SIDE s0, const SIDE s1, const SIDE s2, bo
 ```
 
 
-### register_collection_components
-
-```cpp
-void register_collection_components(const Model & model, typename Model::Builder & builder)
-```
-
-
 ### point_tetrahedron_position
 
 ```cpp
@@ -181,17 +174,24 @@ POSITION point_tetrahedron_position(const std::array<GEO::SIGN, 4> & signs)
 ```
 
 
+### register_collection_components
+
+```cpp
+void register_collection_components(const Model & model, typename Model::Builder & builder)
+```
+
+
 ### compute_surface_scalar_function_gradient
 
 ```cpp
-std::tuple<std::string, std::vector<index_t>> compute_surface_scalar_function_gradient(const SurfaceMesh<dimension> & mesh, std::string_view scalar_function_name, absl::Span<const index_t> no_value_vertices)
+std::tuple<uuid, std::vector<index_t>> compute_surface_scalar_function_gradient(const SurfaceMesh<dimension> & mesh, const uuid & scalar_function_id, absl::Span<const index_t> no_value_vertices)
 ```
 
 
 ### compute_solid_scalar_function_gradient
 
 ```cpp
-std::tuple<std::string, std::vector<index_t>> compute_solid_scalar_function_gradient(const SolidMesh3D & mesh, std::string_view scalar_function_name, absl::Span<const index_t> no_value_vertices)
+std::tuple<uuid, std::vector<index_t>> compute_solid_scalar_function_gradient(const SolidMesh3D & mesh, const uuid & scalar_function_id, absl::Span<const index_t> no_value_vertices)
 ```
 
 

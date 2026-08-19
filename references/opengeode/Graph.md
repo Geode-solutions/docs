@@ -26,6 +26,13 @@ Inherits from VertexSet
 
 ## Functions
 
+### Graph
+
+```cpp
+public void Graph(BITSERY )
+```
+
+
 ### ~Graph
 
 ```cpp

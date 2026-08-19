@@ -61,45 +61,17 @@ ItemSurfaceRange
 
 ## Functions
 
-### boundaries
+### Section
 
 ```cpp
-public BoundaryCornerRange boundaries(const Line2D & line)
-```
-
-
-### incidences
-
-```cpp
-public IncidentLineRange incidences(const Corner2D & corner)
-```
-
-
-### incidences
-
-```cpp
-public IncidentSurfaceRange incidences(const Line2D & line)
-```
-
-
-### native_extension_static
-
-```cpp
-public static std::string_view native_extension_static()
-```
-
-
-### native_extension
-
-```cpp
-public std::string_view native_extension()
+public void Section()
 ```
 
 
 ### Section
 
 ```cpp
-public void Section()
+public void Section(BITSERY )
 ```
 
 
@@ -141,7 +113,28 @@ public const Component2D & component(const uuid & id)
 ### boundaries
 
 ```cpp
+public BoundaryCornerRange boundaries(const Line2D & line)
+```
+
+
+### boundaries
+
+```cpp
 public BoundaryLineRange boundaries(const Surface2D & surface)
+```
+
+
+### incidences
+
+```cpp
+public IncidentLineRange incidences(const Corner2D & corner)
+```
+
+
+### incidences
+
+```cpp
+public IncidentSurfaceRange incidences(const Line2D & line)
 ```
 
 
@@ -215,17 +208,31 @@ public EmbeddingSurfaceRange embedding_surfaces(const Corner2D & corner)
 ```
 
 
-### nb_embedding_surfaces
-
-```cpp
-public index_t nb_embedding_surfaces(const Line2D & line)
-```
-
-
 ### embedding_surfaces
 
 ```cpp
 public EmbeddingSurfaceRange embedding_surfaces(const Line2D & line)
+```
+
+
+### native_extension_static
+
+```cpp
+public static std::string_view native_extension_static()
+```
+
+
+### native_extension
+
+```cpp
+public std::string_view native_extension()
+```
+
+
+### nb_embedding_surfaces
+
+```cpp
+public index_t nb_embedding_surfaces(const Line2D & line)
 ```
 
 

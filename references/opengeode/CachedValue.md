@@ -58,6 +58,13 @@ public const ReturnType & operator()(CachedFunction<Args...> computer, Args &&..
 ```
 
 
+### operator==
+
+```cpp
+public bool operator==(const CachedValue<ReturnType> & other)
+```
+
+
 ### operator!=
 
 ```cpp

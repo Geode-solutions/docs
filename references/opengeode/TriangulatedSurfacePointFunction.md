@@ -45,7 +45,7 @@ public void ~TriangulatedSurfacePointFunction<dimension, point_dimension>()
 ### create
 
 ```cpp
-public static TriangulatedSurfacePointFunction<dimension, point_dimension> create(const TriangulatedSurface<dimension> & solid, std::string_view function_name, Point<point_dimension> value)
+public static TriangulatedSurfacePointFunction<dimension, point_dimension> create(const TriangulatedSurface<dimension> & solid, std::string_view function_name, const uuid & function_id, Point<point_dimension> value)
 ```
 
 
@@ -54,11 +54,11 @@ public static TriangulatedSurfacePointFunction<dimension, point_dimension> creat
 ### find
 
 ```cpp
-public static TriangulatedSurfacePointFunction<dimension, point_dimension> find(const TriangulatedSurface<dimension> & solid, std::string_view function_name)
+public static TriangulatedSurfacePointFunction<dimension, point_dimension> find(const TriangulatedSurface<dimension> & solid, const uuid & function_id)
 ```
 
 
- Finds an object function that already exists in the given TriangulatedSurface, from its given name. Throws an exception if no attribute with the same name exists.
+ Finds an object function that already exists in the given TriangulatedSurface, from its given id. Throws an exception if no attribute with the same id exists.
 
 ### set_value
 
@@ -78,6 +78,13 @@ public const Point<point_dimension> & value(index_t vertex_index)
 
 ```cpp
 public Point<point_dimension> value(const Point<dimension> & point, index_t tetrahedron_id)
+```
+
+
+### attribute_function_id
+
+```cpp
+public uuid attribute_function_id()
 ```
 
 

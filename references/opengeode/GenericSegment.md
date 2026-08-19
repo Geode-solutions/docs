@@ -127,13 +127,6 @@ public Vector<dimension> direction()
 ```
 
 
-### normalized_direction
-
-```cpp
-public Vector<dimension> normalized_direction()
-```
-
-
 ### barycenter
 
 ```cpp

@@ -41,10 +41,10 @@ public void debug(const std::string & message)
 public void info(const std::string & message)
 ```
 
-### warn
+### warning
 
 ```cpp
-public void warn(const std::string & message)
+public void warning(const std::string & message)
 ```
 
 ### error

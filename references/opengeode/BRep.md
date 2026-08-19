@@ -71,10 +71,17 @@ ItemSurfaceRange
 
 ## Functions
 
+### component
+
+```cpp
+public const Component3D & component(const uuid & component_id)
+```
+
+
 ### boundaries
 
 ```cpp
-public BoundaryCornerRange boundaries(const Line3D & line)
+public BoundaryLineRange boundaries(const Surface3D & surface)
 ```
 
 
@@ -82,13 +89,6 @@ public BoundaryCornerRange boundaries(const Line3D & line)
 
 ```cpp
 public BoundarySurfaceRange boundaries(const Block3D & block)
-```
-
-
-### incidences
-
-```cpp
-public IncidentLineRange incidences(const Corner3D & corner)
 ```
 
 
@@ -110,6 +110,13 @@ public std::string_view native_extension()
 
 ```cpp
 public void BRep()
+```
+
+
+### BRep
+
+```cpp
+public void BRep(BITSERY )
 ```
 
 
@@ -141,17 +148,17 @@ public BRep clone()
 ```
 
 
-### component
-
-```cpp
-public const Component3D & component(const uuid & component_id)
-```
-
-
 ### boundaries
 
 ```cpp
-public BoundaryLineRange boundaries(const Surface3D & surface)
+public BoundaryCornerRange boundaries(const Line3D & line)
+```
+
+
+### incidences
+
+```cpp
+public IncidentLineRange incidences(const Corner3D & corner)
 ```
 
 

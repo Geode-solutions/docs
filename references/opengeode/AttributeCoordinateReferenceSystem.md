@@ -48,7 +48,7 @@ public CRSType type_name()
 ### AttributeCoordinateReferenceSystem
 
 ```cpp
-public void AttributeCoordinateReferenceSystem<dimension>(AttributeManager & manager)
+public void AttributeCoordinateReferenceSystem<dimension>(AttributeManager & manager, const uuid & uuid)
 ```
 
 
@@ -91,6 +91,13 @@ public std::string_view attribute_name()
 
 ```cpp
 public index_t nb_points()
+```
+
+
+### attribute_id
+
+```cpp
+public uuid attribute_id()
 ```
 
 

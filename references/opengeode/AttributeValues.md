@@ -11,18 +11,18 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct PolygonsAroundVertexImpl
+# struct AttributeValues
 
 
 ## Members
 
 ```cpp
-public InlinedVector polygons
+public AttributeType default_value
 
 ```
 
 ```cpp
-public bool vertex_is_on_border
+public AttributeType no_value
 
 ```
 
@@ -30,31 +30,10 @@ public bool vertex_is_on_border
 
 ## Functions
 
-### PolygonsAroundVertexImpl
+### AttributeValues
 
 ```cpp
-public void PolygonsAroundVertexImpl()
-```
-
-
-### PolygonsAroundVertexImpl
-
-```cpp
-public void PolygonsAroundVertexImpl(PolygonsAroundVertex polygons_in, bool vertex_is_on_border_in)
-```
-
-
-### operator!=
-
-```cpp
-public bool operator!=(const PolygonsAroundVertexImpl & other)
-```
-
-
-### operator==
-
-```cpp
-public bool operator==(const PolygonsAroundVertexImpl & other)
+public void AttributeValues<AttributeType>()
 ```
 
 

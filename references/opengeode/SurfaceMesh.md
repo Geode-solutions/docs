@@ -78,6 +78,13 @@ public SurfaceMesh<dimension> & operator=(const SurfaceMesh<dimension> & )
 ```
 
 
+### SurfaceMesh
+
+```cpp
+public void SurfaceMesh<value-parameter-0-0>(BITSERY )
+```
+
+
 ### ~SurfaceMesh
 
 ```cpp

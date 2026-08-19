@@ -94,7 +94,7 @@ public MeshType type_name()
 ### OpenGeodePointSet
 
 ```cpp
-public void OpenGeodePointSet<value-parameter-0-0>(OpenGeodePointSet<dimension> && other)
+public void OpenGeodePointSet<value-parameter-0-0>(BITSERY )
 ```
 
 
@@ -105,17 +105,17 @@ public static std::string_view native_extension_static()
 ```
 
 
+### OpenGeodePointSet
+
+```cpp
+public void OpenGeodePointSet<value-parameter-0-0>(OpenGeodePointSet<dimension> && other)
+```
+
+
 ### operator=
 
 ```cpp
 public OpenGeodePointSet<dimension> & operator=(OpenGeodePointSet<dimension> && other)
-```
-
-
-### ~OpenGeodePointSet
-
-```cpp
-public void ~OpenGeodePointSet<value-parameter-0-0>()
 ```
 
 
@@ -126,10 +126,10 @@ public std::string_view native_extension()
 ```
 
 
-### set_vertex
+### ~OpenGeodePointSet
 
 ```cpp
-public void set_vertex(index_t vertex_id, Point<dimension> point, OGPointSetKey )
+public void ~OpenGeodePointSet<value-parameter-0-0>()
 ```
 
 

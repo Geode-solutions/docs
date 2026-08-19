@@ -29,6 +29,13 @@ public void FacetEdgesImpl<dimension>()
 ```
 
 
+### FacetEdgesImpl
+
+```cpp
+public void FacetEdgesImpl<dimension>(BITSERY bitsery)
+```
+
+
 ### find_edge
 
 ```cpp

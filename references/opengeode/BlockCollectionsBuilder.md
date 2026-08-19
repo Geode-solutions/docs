@@ -43,14 +43,14 @@ public void load_block_collections(std::string_view directory)
 ### set_block_collection_name
 
 ```cpp
-public void set_block_collection_name(const uuid & id, std::string_view name)
+public void set_block_collection_name(const BlockCollection<dimension> & block_collection, std::string_view name)
 ```
 
 
 ### set_block_collection_active
 
 ```cpp
-public void set_block_collection_active(const uuid & id, bool active)
+public void set_block_collection_active(const BlockCollection<dimension> & block_collection, bool active)
 ```
 
 

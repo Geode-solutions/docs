@@ -40,32 +40,32 @@ public void load_corners(std::string_view directory)
 ### corner_mesh_builder
 
 ```cpp
-public std::unique_ptr<PointSetBuilder<dimension>> corner_mesh_builder(const uuid & id)
+public std::unique_ptr<PointSetBuilder<dimension>> corner_mesh_builder(const Corner<dimension> & corner)
 ```
 
 
  Get a pointer to the builder of a Corner mesh
 
-**id** [in] Unique index of the Corner
+**corner** [in] Corner in the model
 
 ### set_corner_name
 
 ```cpp
-public void set_corner_name(const uuid & id, std::string_view name)
+public void set_corner_name(const Corner<dimension> & corner, std::string_view name)
 ```
 
 
 ### set_corner_active
 
 ```cpp
-public void set_corner_active(const uuid & id, bool active)
+public void set_corner_active(const Corner<dimension> & corner, bool active)
 ```
 
 
 ### steal_corner_mesh
 
 ```cpp
-public std::unique_ptr<PointSet<dimension>> steal_corner_mesh(const uuid & id)
+public std::unique_ptr<PointSet<dimension>> steal_corner_mesh(const Corner<dimension> & corner)
 ```
 
 

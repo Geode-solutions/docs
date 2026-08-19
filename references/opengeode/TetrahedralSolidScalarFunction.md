@@ -33,7 +33,7 @@ public void ~TetrahedralSolidScalarFunction<dimension>()
 ### create
 
 ```cpp
-public static TetrahedralSolidScalarFunction<dimension> create(const TetrahedralSolid<dimension> & solid, std::string_view function_name, double value)
+public static TetrahedralSolidScalarFunction<dimension> create(const TetrahedralSolid<dimension> & solid, std::string_view function_name, const uuid & function_id, double value)
 ```
 
 
@@ -42,11 +42,11 @@ public static TetrahedralSolidScalarFunction<dimension> create(const Tetrahedral
 ### find
 
 ```cpp
-public static TetrahedralSolidScalarFunction<dimension> find(const TetrahedralSolid<dimension> & solid, std::string_view function_name)
+public static TetrahedralSolidScalarFunction<dimension> find(const TetrahedralSolid<dimension> & solid, const uuid & function_id)
 ```
 
 
- Finds an object function that already exists in the given TetrahedralSolid, from its given name. Throws an exception if no attribute with the same name exists.
+ Finds an object function that already exists in the given TetrahedralSolid, from its given id. Throws an exception if no attribute with the same id exists.
 
 ### set_value
 
@@ -66,6 +66,13 @@ public double value(index_t vertex_index)
 
 ```cpp
 public double value(const Point<dimension> & point, index_t tetrahedron_id)
+```
+
+
+### attribute_function_id
+
+```cpp
+public uuid attribute_function_id()
 ```
 
 

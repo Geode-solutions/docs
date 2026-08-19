@@ -26,6 +26,13 @@ public bool is_opposite(index_t facet_id, const VertexContainer & vertices)
 ### FacetStorage
 
 ```cpp
+protected void FacetStorage<VertexContainer>(BITSERY )
+```
+
+
+### FacetStorage
+
+```cpp
 protected void FacetStorage<VertexContainer>()
 ```
 
@@ -90,13 +97,6 @@ protected std::vector<index_t> update_facet_vertices(absl::Span<const index_t> o
 
 ```cpp
 protected const VertexContainer & get_facet_vertices(index_t facet_id)
-```
-
-
-### attribute_name
-
-```cpp
-protected static std::string_view attribute_name()
 ```
 
 

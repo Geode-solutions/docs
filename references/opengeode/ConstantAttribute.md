@@ -29,7 +29,7 @@ Inherits from ReadOnlyAttribute<T>
 ### ConstantAttribute
 
 ```cpp
-public void ConstantAttribute<T>(T value, AttributeProperties properties, AttributeBase::AttributeKey )
+public void ConstantAttribute<T>(AttributeValues<T> values, std::string_view name, AttributeProperties properties, AttributeBase::AttributeKey )
 ```
 
 
@@ -37,6 +37,13 @@ public void ConstantAttribute<T>(T value, AttributeProperties properties, Attrib
 
 ```cpp
 public const T & value(index_t )
+```
+
+
+### has_value
+
+```cpp
+public bool has_value(index_t )
 ```
 
 
@@ -135,13 +142,6 @@ public std::shared_ptr<AttributeBase> extract(absl::Span<const index_t> , index_
 
 ```cpp
 public std::shared_ptr<AttributeBase> extract(const GenericMapping<index_t> & , index_t , AttributeBase::AttributeKey )
-```
-
-
-### import
-
-```cpp
-public void import(absl::Span<const index_t> , const std::shared_ptr<AttributeBase> & from, AttributeBase::AttributeKey )
 ```
 
 

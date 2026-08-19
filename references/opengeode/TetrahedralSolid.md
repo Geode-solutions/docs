@@ -70,6 +70,13 @@ protected TetrahedralSolid<dimension> & operator=(TetrahedralSolid<dimension> &&
 ```
 
 
+### TetrahedralSolid
+
+```cpp
+public void TetrahedralSolid<value-parameter-0-0>(BITSERY )
+```
+
+
 ### create
 
 ```cpp

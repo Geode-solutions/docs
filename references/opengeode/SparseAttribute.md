@@ -29,7 +29,7 @@ Inherits from ReadOnlyAttribute<T>
 ### SparseAttribute
 
 ```cpp
-public void SparseAttribute<T>(T default_value, AttributeProperties properties, AttributeBase::AttributeKey )
+public void SparseAttribute<T>(AttributeValues<T> default_values, std::string_view name, AttributeProperties properties, AttributeBase::AttributeKey )
 ```
 
 
@@ -40,6 +40,13 @@ public const T & value(index_t element)
 ```
 
 
+### has_value
+
+```cpp
+public bool has_value(index_t element)
+```
+
+
 ### set_value
 
 ```cpp
@@ -47,10 +54,10 @@ public void set_value(index_t element, T value)
 ```
 
 
-### default_value
+### default_values
 
 ```cpp
-public const T & default_value()
+public const AttributeValues<T> & default_values()
 ```
 
 

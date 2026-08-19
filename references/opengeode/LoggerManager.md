@@ -51,10 +51,10 @@ public static void info(const std::string & message)
 ```
 
 
-### warn
+### warning
 
 ```cpp
-public static void warn(const std::string & message)
+public static void warning(const std::string & message)
 ```
 
 

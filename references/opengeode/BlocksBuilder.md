@@ -29,13 +29,13 @@ protected const uuid & create_block()
 ### block_mesh_builder
 
 ```cpp
-public std::unique_ptr<typename Mesh::Builder> block_mesh_builder(const uuid & id)
+public std::unique_ptr<typename Mesh::Builder> block_mesh_builder(const Block<dimension> & block)
 ```
 
 
  Get a pointer to the builder of a Block mesh
 
-**id** [in] Unique index of the Block
+**Block** [in] Block component to get the builder of
 
 ### load_blocks
 
@@ -54,21 +54,21 @@ protected void BlocksBuilder<dimension>(Blocks<dimension> & blocks)
 ### set_block_name
 
 ```cpp
-public void set_block_name(const uuid & id, std::string_view name)
+public void set_block_name(const Block<dimension> & block, std::string_view name)
 ```
 
 
 ### set_block_active
 
 ```cpp
-public void set_block_active(const uuid & id, bool active)
+public void set_block_active(const Block<dimension> & block, bool active)
 ```
 
 
 ### steal_block_mesh
 
 ```cpp
-public std::unique_ptr<SolidMesh<dimension>> steal_block_mesh(const uuid & id)
+public std::unique_ptr<SolidMesh<dimension>> steal_block_mesh(const Block<dimension> & block)
 ```
 
 

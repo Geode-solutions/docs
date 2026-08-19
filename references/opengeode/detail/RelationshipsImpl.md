@@ -39,6 +39,13 @@ protected shared_ptr ids_
 
 ## Functions
 
+### RelationshipsImpl
+
+```cpp
+public void RelationshipsImpl(BITSERY )
+```
+
+
 ### nb_components_with_relations
 
 ```cpp

@@ -83,6 +83,13 @@ public static std::string_view native_extension_static()
 ### OpenGeodeEdgedCurve
 
 ```cpp
+public void OpenGeodeEdgedCurve<value-parameter-0-0>(BITSERY )
+```
+
+
+### OpenGeodeEdgedCurve
+
+```cpp
 public void OpenGeodeEdgedCurve<value-parameter-0-0>(OpenGeodeEdgedCurve<dimension> && other)
 ```
 
@@ -105,13 +112,6 @@ public OpenGeodeEdgedCurve<dimension> & operator=(OpenGeodeEdgedCurve<dimension>
 
 ```cpp
 public void ~OpenGeodeEdgedCurve<value-parameter-0-0>()
-```
-
-
-### set_vertex
-
-```cpp
-public void set_vertex(index_t vertex_id, Point<dimension> point, OGEdgedCurveKey )
 ```
 
 

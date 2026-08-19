@@ -29,7 +29,7 @@ Inherits from ReadOnlyAttribute<_Bool>
 ### VariableAttribute
 
 ```cpp
-public void VariableAttribute(bool default_value, AttributeProperties properties, AttributeBase::AttributeKey )
+public void VariableAttribute(AttributeValues<bool> default_value, std::string_view name, AttributeProperties properties, AttributeBase::AttributeKey )
 ```
 
 
@@ -40,6 +40,13 @@ public const bool & value(index_t element)
 ```
 
 
+### has_value
+
+```cpp
+public bool has_value(index_t element)
+```
+
+
 ### set_value
 
 ```cpp
@@ -47,10 +54,10 @@ public void set_value(index_t element, bool value)
 ```
 
 
-### default_value
+### default_values
 
 ```cpp
-public bool default_value()
+public AttributeValues<bool> default_values()
 ```
 
 
@@ -85,7 +92,14 @@ public void compute_value(const AttributeLinearInterpolation & interpolation, in
 ### VariableAttribute
 
 ```cpp
-protected void VariableAttribute(bool default_value, AttributeProperties properties)
+protected void VariableAttribute(AttributeValues<bool> default_values, std::string_view name, AttributeProperties properties)
+```
+
+
+### VariableAttribute
+
+```cpp
+protected void VariableAttribute(std::string_view name)
 ```
 
 
@@ -162,21 +176,7 @@ protected std::shared_ptr<AttributeBase> extract(const GenericMapping<index_t> &
 ### import
 
 ```cpp
-protected void import(absl::Span<const index_t> old2new, const std::shared_ptr<AttributeBase> & from, AttributeBase::AttributeKey )
-```
-
-
-### import
-
-```cpp
 protected void import(const GenericMapping<index_t> & old2new_mapping, const std::shared_ptr<AttributeBase> & from, AttributeBase::AttributeKey )
-```
-
-
-### import
-
-```cpp
-protected void import(absl::Span<const index_t> old2new, const ReadOnlyAttribute<bool> & from)
 ```
 
 
@@ -207,7 +207,7 @@ Inherits from ReadOnlyAttribute<T>
 ### VariableAttribute
 
 ```cpp
-public void VariableAttribute<T>(T default_value, AttributeProperties properties, AttributeBase::AttributeKey )
+public void VariableAttribute<T>(AttributeValues<T> default_values, std::string_view name, AttributeProperties properties, AttributeBase::AttributeKey )
 ```
 
 
@@ -218,6 +218,13 @@ public const T & value(index_t element)
 ```
 
 
+### has_value
+
+```cpp
+public bool has_value(index_t element)
+```
+
+
 ### set_value
 
 ```cpp
@@ -225,10 +232,10 @@ public void set_value(index_t element, T value)
 ```
 
 
-### default_value
+### default_values
 
 ```cpp
-public const T & default_value()
+public const AttributeValues<T> & default_values()
 ```
 
 
@@ -263,7 +270,14 @@ public void compute_value(const AttributeLinearInterpolation & interpolation, in
 ### VariableAttribute
 
 ```cpp
-protected void VariableAttribute<T>(T default_value, AttributeProperties properties)
+protected void VariableAttribute<T>(AttributeValues<T> default_values, std::string_view name, AttributeProperties properties)
+```
+
+
+### VariableAttribute
+
+```cpp
+protected void VariableAttribute<T>(std::string_view name)
 ```
 
 
@@ -340,21 +354,7 @@ protected std::shared_ptr<AttributeBase> extract(const GenericMapping<index_t> &
 ### import
 
 ```cpp
-protected void import(absl::Span<const index_t> old2new, const std::shared_ptr<AttributeBase> & from, AttributeBase::AttributeKey )
-```
-
-
-### import
-
-```cpp
 protected void import(const GenericMapping<index_t> & old2new_mapping, const std::shared_ptr<AttributeBase> & from, AttributeBase::AttributeKey )
-```
-
-
-### import
-
-```cpp
-protected void import(absl::Span<const index_t> old2new, const ReadOnlyAttribute<T> & from)
 ```
 
 

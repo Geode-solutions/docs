@@ -90,6 +90,13 @@ public void OpenGeodeRegularGrid()
 ### OpenGeodeRegularGrid
 
 ```cpp
+public void OpenGeodeRegularGrid(BITSERY )
+```
+
+
+### OpenGeodeRegularGrid
+
+```cpp
 public void OpenGeodeRegularGrid(OpenGeodeRegularGrid<2> && other)
 ```
 
@@ -199,6 +206,13 @@ public std::string_view native_extension()
 
 ```cpp
 public void OpenGeodeRegularGrid()
+```
+
+
+### OpenGeodeRegularGrid
+
+```cpp
+public void OpenGeodeRegularGrid(BITSERY )
 ```
 
 

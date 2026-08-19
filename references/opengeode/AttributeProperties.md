@@ -46,20 +46,6 @@ public void AttributeProperties()
 ```
 
 
-### AttributeProperties
-
-```cpp
-public void AttributeProperties(bool is_assignable, bool is_interpolable)
-```
-
-
-### AttributeProperties
-
-```cpp
-public void AttributeProperties(bool is_assignable, bool is_interpolable, bool is_transferable)
-```
-
-
 ### serialize
 
 ```cpp

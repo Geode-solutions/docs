@@ -51,6 +51,13 @@ public bool operator!=(const PolyhedraAroundVertexImpl & other)
 ```
 
 
+### operator==
+
+```cpp
+public bool operator==(const PolyhedraAroundVertexImpl & other)
+```
+
+
 ### serialize
 
 ```cpp

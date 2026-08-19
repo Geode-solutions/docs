@@ -40,14 +40,14 @@ public void load_model_boundaries(std::string_view directory)
 ### set_model_boundary_name
 
 ```cpp
-public void set_model_boundary_name(const uuid & id, std::string_view name)
+public void set_model_boundary_name(const ModelBoundary<dimension> & id, std::string_view name)
 ```
 
 
 ### set_model_boundary_active
 
 ```cpp
-public void set_model_boundary_active(const uuid & id, bool active)
+public void set_model_boundary_active(const ModelBoundary<dimension> & id, bool active)
 ```
 
 

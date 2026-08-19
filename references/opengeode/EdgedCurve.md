@@ -67,6 +67,13 @@ public static const auto dim
 
 ## Functions
 
+### EdgedCurve
+
+```cpp
+public void EdgedCurve<value-parameter-0-0>(BITSERY )
+```
+
+
 ### ~EdgedCurve
 
 ```cpp

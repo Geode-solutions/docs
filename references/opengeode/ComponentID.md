@@ -11,10 +11,24 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class ComponentID
+# struct ComponentID
 
 
  Identify a component by its type and a unique index
+
+
+
+## Members
+
+```cpp
+public NamedType type
+
+```
+
+```cpp
+public uuid id
+
+```
 
 
 
@@ -30,35 +44,7 @@ public void ComponentID()
 ### ComponentID
 
 ```cpp
-public void ComponentID(ComponentType component_type, uuid id)
-```
-
-
-### id
-
-```cpp
-public const uuid & id()
-```
-
-
-### id
-
-```cpp
-public uuid && id()
-```
-
-
-### type
-
-```cpp
-public const ComponentType & type()
-```
-
-
-### type
-
-```cpp
-public ComponentType && type()
+public void ComponentID(ComponentType component_type, uuid input_id)
 ```
 
 

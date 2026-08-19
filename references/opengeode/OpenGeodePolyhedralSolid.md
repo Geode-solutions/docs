@@ -108,6 +108,13 @@ public void OpenGeodePolyhedralSolid<value-parameter-0-0>()
 ### OpenGeodePolyhedralSolid
 
 ```cpp
+public void OpenGeodePolyhedralSolid<value-parameter-0-0>(BITSERY )
+```
+
+
+### OpenGeodePolyhedralSolid
+
+```cpp
 public void OpenGeodePolyhedralSolid<value-parameter-0-0>(OpenGeodePolyhedralSolid<dimension> && other)
 ```
 
@@ -123,13 +130,6 @@ public OpenGeodePolyhedralSolid<dimension> & operator=(OpenGeodePolyhedralSolid<
 
 ```cpp
 public void ~OpenGeodePolyhedralSolid<value-parameter-0-0>()
-```
-
-
-### set_vertex
-
-```cpp
-public void set_vertex(index_t vertex_id, Point<dimension> point, OGPolyhedralSolidKey )
 ```
 
 

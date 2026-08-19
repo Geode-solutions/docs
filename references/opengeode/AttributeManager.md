@@ -37,7 +37,7 @@ public AttributeManager & operator=(const AttributeManager & )
 ### find_generic_attribute
 
 ```cpp
-public std::shared_ptr<AttributeBase> find_generic_attribute(std::string_view name)
+public std::shared_ptr<AttributeBase> find_generic_attribute(const geode::uuid & attribute_id)
 ```
 
 
@@ -47,10 +47,10 @@ public std::shared_ptr<AttributeBase> find_generic_attribute(std::string_view na
 
 **return** nullptr if no attribute matches the given name.
 
-### find_attribute
+### find_read_only_attribute
 
 ```cpp
-public std::shared_ptr<ReadOnlyAttribute<T>> find_attribute(std::string_view name)
+public std::shared_ptr<ReadOnlyAttribute<T>> find_read_only_attribute(const geode::uuid & attribute_id)
 ```
 
 
@@ -62,31 +62,24 @@ public std::shared_ptr<ReadOnlyAttribute<T>> find_attribute(std::string_view nam
 
 **exception**if no Attribute found
 
-### find_or_create_attribute
+### find_attribute
 
 ```cpp
-public std::shared_ptr<Attribute<T>> find_or_create_attribute(std::string_view name, T default_value, AttributeProperties properties)
+public std::shared_ptr<Attribute<T>> find_attribute(const geode::uuid & attribute_id)
 ```
 
 
- Recover or create the attribute from the manager and the attribute name. If the recovered Attribute is not a of the same type than the attribute, it replaces it by the Attribute corresponding to the attribute.
-
-**name** [in] The associated attribute name to look for
-
-**default_value** [in] The default value to use when new attribute element are created
-
-**properties** [in] The AttributeProperties to set the attribute flags for future modifications
-
-**Attribute** The attribute type to look for, such as ConstantAttribute
-
-**T** The type of the Attribute element
-
-**exception**if the Attribute replacement failed
-
-### find_or_create_attribute
+### create_attribute
 
 ```cpp
-public std::shared_ptr<Attribute<T>> find_or_create_attribute(std::string_view name, T default_value)
+public void create_attribute(std::string_view attribute_name, const geode::uuid & attribute_id, AttributeValues<T> default_values, AttributeProperties properties)
+```
+
+
+### create_attribute
+
+```cpp
+public geode::uuid create_attribute(std::string_view attribute_name, AttributeValues<T> default_values, AttributeProperties properties)
 ```
 
 
@@ -197,59 +190,52 @@ public bool has_interpolable_attributes()
 ```
 
 
-### attribute_names
+### attribute_ids
 
 ```cpp
-public absl::FixedArray<std::string_view> attribute_names()
+public absl::FixedArray<geode::uuid> attribute_ids()
 ```
 
 
- Get all the associated attribute names
+ Get all the associated attribute ids
 
 ### attribute_exists
 
 ```cpp
-public bool attribute_exists(std::string_view name)
+public bool attribute_exists(const geode::uuid & )
 ```
 
 
- Return true if an attribute matching the given name.
+ Return true if an attribute matching the given id.
 
-**name** [in] The attribute name to use
+**id** [in] The attribute id to use
 
 ### delete_attribute
 
 ```cpp
-public void delete_attribute(std::string_view name)
+public void delete_attribute(const geode::uuid & )
 ```
 
 
- Delete the attribute matching the given name. Do nothing if the name does not exist.
+ Delete the attribute matching the given id. Do nothing if the id does not exist.
 
-**name** [in] The attribute name to delete
+**id** [in] The attribute id to delete
 
 ### attribute_type
 
 ```cpp
-public std::string_view attribute_type(std::string_view name)
+public std::string_view attribute_type(const geode::uuid & )
 ```
 
 
- Get the typeid name of the attribute type
+ Get the typeid id of the attribute type
 
-**name** [in] The attribute name to use
-
-### rename_attribute
-
-```cpp
-public void rename_attribute(std::string_view old_name, std::string_view new_name)
-```
-
+**id** [in] The attribute id to use
 
 ### set_attribute_properties
 
 ```cpp
-public void set_attribute_properties(std::string_view attribute_name, const AttributeProperties & new_properties)
+public void set_attribute_properties(geode::uuid attribute_id, const AttributeProperties & new_properties)
 ```
 
 
@@ -310,24 +296,17 @@ public index_t nb_elements()
 
  Get the number of elements in each attribute
 
+### attribute_ids_matching_name
+
+```cpp
+public std::optional<std::vector<uuid>> attribute_ids_matching_name(std::string_view name)
+```
+
+
 ### copy
 
 ```cpp
 public void copy(const AttributeManager & attribute_manager)
-```
-
-
-### import
-
-```cpp
-public void import(const AttributeManager & attribute_manager, absl::Span<const index_t> old2new)
-```
-
-
-### import
-
-```cpp
-public void import(const AttributeManager & attribute_manager, absl::Span<const index_t> old2new, std::string_view attribute_name)
 ```
 
 
@@ -341,7 +320,7 @@ public void import(const AttributeManager & attribute_manager, const GenericMapp
 ### import
 
 ```cpp
-public void import(const AttributeManager & attribute_manager, const GenericMapping<index_t> & old2new_mapping, std::string_view attribute_name)
+public void import(const AttributeManager & attribute_manager, const GenericMapping<index_t> & old2new_mapping, const uuid & attribute_id)
 ```
 
 

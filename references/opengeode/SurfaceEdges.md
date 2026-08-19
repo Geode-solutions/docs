@@ -77,17 +77,17 @@ public void SurfaceEdges<value-parameter-0-0>(const SurfaceMesh<dimension> & sur
 ```
 
 
-### ~SurfaceEdges
-
-```cpp
-public void ~SurfaceEdges<value-parameter-0-0>()
-```
-
-
 ### find_or_create_edge
 
 ```cpp
 public index_t find_or_create_edge(std::array<index_t, 2> edge_vertices, SurfaceEdgesKey )
+```
+
+
+### ~SurfaceEdges
+
+```cpp
+public void ~SurfaceEdges<value-parameter-0-0>()
 ```
 
 

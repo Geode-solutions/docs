@@ -71,6 +71,13 @@ public static const auto dim
 
 ## Functions
 
+### TriangulatedSurface
+
+```cpp
+public void TriangulatedSurface<value-parameter-0-0>(BITSERY )
+```
+
+
 ### create
 
 ```cpp
@@ -119,17 +126,17 @@ protected void TriangulatedSurface<value-parameter-0-0>(TriangulatedSurface<dime
 ```
 
 
-### triangle
-
-```cpp
-public Triangle<dimension> triangle(index_t triangle_id)
-```
-
-
 ### operator=
 
 ```cpp
 protected TriangulatedSurface<dimension> & operator=(TriangulatedSurface<dimension> && other)
+```
+
+
+### triangle
+
+```cpp
+public Triangle<dimension> triangle(index_t triangle_id)
 ```
 
 

@@ -49,6 +49,15 @@ public index_t create_unique_vertices(index_t nb)
 
 **return** Index of the first created unique vertex
 
+### register_mesh_component
+
+```cpp
+public void register_mesh_component(const MeshComponent & component)
+```
+
+
+ Add a component in the VertexIdentifier
+
 ### set_unique_vertex
 
 ```cpp
@@ -62,14 +71,12 @@ public void set_unique_vertex(ComponentMeshVertex component_vertex_id, index_t u
 
 **unique_vertex_id** [in] Unique vertex index.
 
-### register_mesh_component
+### load_mesh_component
 
 ```cpp
-public void register_mesh_component(const MeshComponent & component)
+public void load_mesh_component(const MeshComponent & component)
 ```
 
-
- Add a component in the VertexIdentifier
 
 ### unset_unique_vertex
 
@@ -84,15 +91,6 @@ public void unset_unique_vertex(const ComponentMeshVertex & component_vertex_id,
 
 **unique_vertex_id** [in] Unique vertex index.
 
-### unregister_mesh_component
-
-```cpp
-public void unregister_mesh_component(const MeshComponent & component)
-```
-
-
- Remove a component from the VertexIdentifier and delete corresponding information (i.e. the attribute on component mesh).
-
 ### update_unique_vertices
 
 ```cpp
@@ -105,6 +103,15 @@ public void update_unique_vertices(const ComponentID & component_id, absl::Span<
 **component_id** [in] Component unique index used to filter returned vertices.
 
 **old2new** [in] Mapping between mesh component old vertex indices to new ones. Deleted vertices new index is NO_ID.
+
+### unregister_mesh_component
+
+```cpp
+public void unregister_mesh_component(const MeshComponent & component)
+```
+
+
+ Remove a component from the VertexIdentifier and delete corresponding information (i.e. the attribute on component mesh).
 
 ### load_unique_vertices
 

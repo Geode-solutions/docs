@@ -40,32 +40,32 @@ public void load_lines(std::string_view directory)
 ### line_mesh_builder
 
 ```cpp
-public std::unique_ptr<EdgedCurveBuilder<dimension>> line_mesh_builder(const uuid & id)
+public std::unique_ptr<EdgedCurveBuilder<dimension>> line_mesh_builder(const Line<dimension> & line)
 ```
 
 
  Get a pointer to the builder of a Line mesh
 
-**id** [in] Unique index of the Line
+**line** [in] Line component to get the builder of
 
 ### set_line_name
 
 ```cpp
-public void set_line_name(const uuid & id, std::string_view name)
+public void set_line_name(const Line<dimension> & line, std::string_view name)
 ```
 
 
 ### set_line_active
 
 ```cpp
-public void set_line_active(const uuid & id, bool active)
+public void set_line_active(const Line<dimension> & line, bool active)
 ```
 
 
 ### steal_line_mesh
 
 ```cpp
-public std::unique_ptr<EdgedCurve<dimension>> steal_line_mesh(const uuid & id)
+public std::unique_ptr<EdgedCurve<dimension>> steal_line_mesh(const Line<dimension> & line)
 ```
 
 

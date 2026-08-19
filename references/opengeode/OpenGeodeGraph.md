@@ -46,14 +46,14 @@ public void OpenGeodeGraph()
 ### OpenGeodeGraph
 
 ```cpp
-public void OpenGeodeGraph(OpenGeodeGraph && other)
+public void OpenGeodeGraph(BITSERY )
 ```
 
 
-### operator=
+### OpenGeodeGraph
 
 ```cpp
-public OpenGeodeGraph & operator=(OpenGeodeGraph && other)
+public void OpenGeodeGraph(OpenGeodeGraph && other)
 ```
 
 
@@ -61,6 +61,13 @@ public OpenGeodeGraph & operator=(OpenGeodeGraph && other)
 
 ```cpp
 public MeshType type_name()
+```
+
+
+### operator=
+
+```cpp
+public OpenGeodeGraph & operator=(OpenGeodeGraph && other)
 ```
 
 

@@ -108,6 +108,13 @@ public void OpenGeodeTriangulatedSurface<value-parameter-0-0>()
 ### OpenGeodeTriangulatedSurface
 
 ```cpp
+public void OpenGeodeTriangulatedSurface<value-parameter-0-0>(BITSERY bitsery)
+```
+
+
+### OpenGeodeTriangulatedSurface
+
+```cpp
 public void OpenGeodeTriangulatedSurface<value-parameter-0-0>(OpenGeodeTriangulatedSurface<dimension> && other)
 ```
 
@@ -123,13 +130,6 @@ public OpenGeodeTriangulatedSurface<dimension> & operator=(OpenGeodeTriangulated
 
 ```cpp
 public void ~OpenGeodeTriangulatedSurface<value-parameter-0-0>()
-```
-
-
-### set_vertex
-
-```cpp
-public void set_vertex(index_t vertex_id, Point<dimension> point, OGTriangulatedSurfaceKey )
 ```
 
 

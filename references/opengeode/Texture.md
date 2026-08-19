@@ -79,6 +79,13 @@ public void set_texture_coordinates(const PolygonVertex & vertex, const Point2D 
 ```
 
 
+### texture_id
+
+```cpp
+public uuid texture_id()
+```
+
+
 
 
 # class Texture
@@ -151,6 +158,13 @@ public void set_texture_coordinates(const PolyhedronVertex & vertex, const Point
 ```
 
 
+### texture_id
+
+```cpp
+public uuid texture_id()
+```
+
+
 
 
 # class Texture
@@ -218,6 +232,13 @@ public const Point1D & texture_coordinates(const EdgeVertex & vertex)
 
 ```cpp
 public void set_texture_coordinates(const EdgeVertex & vertex, const Point1D & coordinates)
+```
+
+
+### texture_id
+
+```cpp
+public uuid texture_id()
 ```
 
 

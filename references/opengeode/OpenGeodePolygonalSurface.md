@@ -126,6 +126,13 @@ public void OpenGeodePolygonalSurface<value-parameter-0-0>()
 ### OpenGeodePolygonalSurface
 
 ```cpp
+public void OpenGeodePolygonalSurface<value-parameter-0-0>(BITSERY )
+```
+
+
+### OpenGeodePolygonalSurface
+
+```cpp
 public void OpenGeodePolygonalSurface<value-parameter-0-0>(OpenGeodePolygonalSurface<dimension> && other)
 ```
 
@@ -141,13 +148,6 @@ public OpenGeodePolygonalSurface<dimension> & operator=(OpenGeodePolygonalSurfac
 
 ```cpp
 public void ~OpenGeodePolygonalSurface<value-parameter-0-0>()
-```
-
-
-### set_vertex
-
-```cpp
-public void set_vertex(index_t vertex_id, Point<dimension> point, OGPolygonalSurfaceKey )
 ```
 
 

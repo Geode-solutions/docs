@@ -49,6 +49,13 @@ public SolidMesh<dimension> & operator=(const SolidMesh<dimension> & )
 ```
 
 
+### SolidMesh
+
+```cpp
+public void SolidMesh<dimension>(BITSERY )
+```
+
+
 ### ~SolidMesh
 
 ```cpp

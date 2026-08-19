@@ -27,6 +27,13 @@ public void VertexIdentifier()
 ```
 
 
+### VertexIdentifier
+
+```cpp
+public void VertexIdentifier(BITSERY )
+```
+
+
 ### ~VertexIdentifier
 
 ```cpp
@@ -103,6 +110,15 @@ public void save_unique_vertices(std::string_view directory)
 
 ```cpp
 public void register_mesh_component(const MeshComponent & component, BuilderKey )
+```
+
+
+ Add a component in the VertexIdentifier
+
+### load_mesh_component
+
+```cpp
+public void load_mesh_component(const MeshComponent & component, BuilderKey )
 ```
 
 

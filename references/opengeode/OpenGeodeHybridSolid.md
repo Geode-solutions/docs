@@ -90,6 +90,13 @@ public void OpenGeodeHybridSolid<value-parameter-0-0>()
 ### OpenGeodeHybridSolid
 
 ```cpp
+public void OpenGeodeHybridSolid<value-parameter-0-0>(BITSERY )
+```
+
+
+### OpenGeodeHybridSolid
+
+```cpp
 public void OpenGeodeHybridSolid<value-parameter-0-0>(OpenGeodeHybridSolid<dimension> && other)
 ```
 
@@ -105,13 +112,6 @@ public OpenGeodeHybridSolid<dimension> & operator=(OpenGeodeHybridSolid<dimensio
 
 ```cpp
 public void ~OpenGeodeHybridSolid<value-parameter-0-0>()
-```
-
-
-### set_vertex
-
-```cpp
-public void set_vertex(index_t vertex_id, Point<dimension> point, OGHybridSolidKey )
 ```
 
 

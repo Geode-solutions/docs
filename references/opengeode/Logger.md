@@ -14,7 +14,7 @@ const name = words.join('-');
 # class Logger
 
 
- Custom OpenGeode logger. Can be used with several levels:    Logger::info( "My information is ", 42 );    Logger::warn( "My warning is ", 42, " or more" );
+ Custom OpenGeode logger. Can be used with several levels:    Logger::info( "My information is ", 42 );    Logger::warning( "My warning is ", 42, " or more" );
 
 
 
@@ -48,10 +48,10 @@ public static void info(const Args &... args)
 ```
 
 
-### warn
+### warning
 
 ```cpp
-public static void warn(const Args &... args)
+public static void warning(const Args &... args)
 ```
 
 
@@ -94,8 +94,8 @@ public static void set_level(LEVEL level)
 | trace |
 | debug |
 | info |
-| warn |
-| err |
+| warning |
+| error |
 | critical |
 | off |
 

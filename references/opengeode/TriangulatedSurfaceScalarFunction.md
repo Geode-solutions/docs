@@ -39,7 +39,7 @@ public void ~TriangulatedSurfaceScalarFunction<dimension>()
 ### create
 
 ```cpp
-public static TriangulatedSurfaceScalarFunction<dimension> create(const TriangulatedSurface<dimension> & solid, std::string_view function_name, double value)
+public static TriangulatedSurfaceScalarFunction<dimension> create(const TriangulatedSurface<dimension> & solid, std::string_view function_name, const uuid & function_id, double value)
 ```
 
 
@@ -48,7 +48,7 @@ public static TriangulatedSurfaceScalarFunction<dimension> create(const Triangul
 ### find
 
 ```cpp
-public static TriangulatedSurfaceScalarFunction<dimension> find(const TriangulatedSurface<dimension> & solid, std::string_view function_name)
+public static TriangulatedSurfaceScalarFunction<dimension> find(const TriangulatedSurface<dimension> & solid, const uuid & function_id)
 ```
 
 
@@ -72,6 +72,13 @@ public double value(index_t vertex_index)
 
 ```cpp
 public double value(const Point<dimension> & point, index_t tetrahedron_id)
+```
+
+
+### attribute_function_id
+
+```cpp
+public const uuid & attribute_function_id()
 ```
 
 

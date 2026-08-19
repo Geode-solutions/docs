@@ -29,6 +29,27 @@ public static const auto POINTS_NAME
 
 ## Functions
 
+### PointsImpl
+
+```cpp
+public void PointsImpl<dimension>()
+```
+
+
+### PointsImpl
+
+```cpp
+public void PointsImpl<dimension>(AttributeManager & manager, std::string_view attribute_name)
+```
+
+
+### PointsImpl
+
+```cpp
+public void PointsImpl<dimension>(AttributeManager & manager, const uuid & attribute_id)
+```
+
+
 ### get_point
 
 ```cpp
@@ -57,38 +78,10 @@ public std::string_view attribute_name()
 ```
 
 
-### initialize_crs
+### attribute_id
 
 ```cpp
-public void initialize_crs(Mesh & mesh)
-```
-
-
-### PointsImpl
-
-```cpp
-protected void PointsImpl<dimension>()
-```
-
-
-### PointsImpl
-
-```cpp
-protected void PointsImpl<dimension>(Mesh & mesh)
-```
-
-
-### PointsImpl
-
-```cpp
-protected void PointsImpl<dimension>(AttributeManager & manager)
-```
-
-
-### PointsImpl
-
-```cpp
-protected void PointsImpl<dimension>(AttributeManager & manager, std::string_view attribute_name)
+public const uuid & attribute_id()
 ```
 
 

@@ -31,6 +31,13 @@ public static const index_t dim
 
 ## Functions
 
+### RegularGrid
+
+```cpp
+public void RegularGrid(BITSERY )
+```
+
+
 ### create
 
 ```cpp
@@ -142,6 +149,13 @@ public static const index_t dim
 
 
 ## Functions
+
+### RegularGrid
+
+```cpp
+public void RegularGrid(BITSERY )
+```
+
 
 ### create
 

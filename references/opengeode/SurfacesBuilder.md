@@ -32,13 +32,13 @@ protected const uuid & create_surface()
 ### surface_mesh_builder
 
 ```cpp
-public std::unique_ptr<typename Mesh::Builder> surface_mesh_builder(const uuid & id)
+public std::unique_ptr<typename Mesh::Builder> surface_mesh_builder(const Surface<dimension> & surface)
 ```
 
 
  Get a pointer to the builder of a Surface mesh
 
-**id** [in] Unique index of the Surface
+**surface** [in] Surface component to get the builder of
 
 ### load_surfaces
 
@@ -57,21 +57,21 @@ protected void SurfacesBuilder<value-parameter-0-0>(Surfaces<dimension> & surfac
 ### set_surface_name
 
 ```cpp
-public void set_surface_name(const uuid & id, std::string_view name)
+public void set_surface_name(const Surface<dimension> & surface, std::string_view name)
 ```
 
 
 ### set_surface_active
 
 ```cpp
-public void set_surface_active(const uuid & id, bool active)
+public void set_surface_active(const Surface<dimension> & surface, bool active)
 ```
 
 
 ### steal_surface_mesh
 
 ```cpp
-public std::unique_ptr<SurfaceMesh<dimension>> steal_surface_mesh(const uuid & id)
+public std::unique_ptr<SurfaceMesh<dimension>> steal_surface_mesh(const Surface<dimension> & surface)
 ```
 
 

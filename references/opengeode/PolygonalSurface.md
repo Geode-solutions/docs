@@ -71,6 +71,13 @@ public static const auto dim
 
 ## Functions
 
+### PolygonalSurface
+
+```cpp
+public void PolygonalSurface<value-parameter-0-0>(BITSERY )
+```
+
+
 ### create
 
 ```cpp

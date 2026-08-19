@@ -90,6 +90,13 @@ public void OpenGeodeTetrahedralSolid<value-parameter-0-0>()
 ### OpenGeodeTetrahedralSolid
 
 ```cpp
+public void OpenGeodeTetrahedralSolid<value-parameter-0-0>(BITSERY )
+```
+
+
+### OpenGeodeTetrahedralSolid
+
+```cpp
 public void OpenGeodeTetrahedralSolid<value-parameter-0-0>(OpenGeodeTetrahedralSolid<dimension> && other)
 ```
 
@@ -105,13 +112,6 @@ public OpenGeodeTetrahedralSolid<dimension> & operator=(OpenGeodeTetrahedralSoli
 
 ```cpp
 public void ~OpenGeodeTetrahedralSolid<value-parameter-0-0>()
-```
-
-
-### set_vertex
-
-```cpp
-public void set_vertex(index_t vertex_id, Point<dimension> point, OGTetrahedralSolidKey )
 ```
 
 

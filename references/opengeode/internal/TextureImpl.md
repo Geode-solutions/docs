@@ -23,6 +23,13 @@ public const RasterImage<dimension> & image()
 ```
 
 
+### texture_id
+
+```cpp
+public const uuid & texture_id()
+```
+
+
 ### set_image
 
 ```cpp

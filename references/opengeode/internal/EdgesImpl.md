@@ -14,6 +14,15 @@ const name = words.join('-');
 # class EdgesImpl
 
 
+## Members
+
+```cpp
+public static const auto EDGES_NAME
+
+```
+
+
+
 ## Functions
 
 ### EdgesImpl
@@ -34,6 +43,13 @@ public index_t get_edge_vertex(const EdgeVertex & edge_vertex)
 
 ```cpp
 public void set_edge_vertex(const EdgeVertex & edge_vertex, const index_t vertex_id)
+```
+
+
+### edges_attribute_id
+
+```cpp
+public const uuid & edges_attribute_id()
 ```
 
 

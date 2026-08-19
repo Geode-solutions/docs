@@ -31,6 +31,13 @@ public static const auto dim
 
 ## Functions
 
+### HybridSolid
+
+```cpp
+public void HybridSolid<value-parameter-0-0>(BITSERY )
+```
+
+
 ### create
 
 ```cpp

@@ -26,17 +26,17 @@ public void register_coordinate_reference_system(std::string_view name, std::sha
 ```
 
 
-### delete_coordinate_reference_system
-
-```cpp
-public void delete_coordinate_reference_system(std::string_view name)
-```
-
-
 ### CoordinateReferenceSystemManagerBuilder
 
 ```cpp
 public void CoordinateReferenceSystemManagerBuilder<dimension>(CoordinateReferenceSystemManager<dimension> & crs_manager)
+```
+
+
+### delete_coordinate_reference_system
+
+```cpp
+public void delete_coordinate_reference_system(std::string_view name)
 ```
 
 

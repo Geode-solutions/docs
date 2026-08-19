@@ -29,6 +29,13 @@ Inherits from ComponentRegistry, Relationships, VertexIdentifier
 ### Topology
 
 ```cpp
+public void Topology(BITSERY bitsery)
+```
+
+
+### Topology
+
+```cpp
 protected void Topology()
 ```
 

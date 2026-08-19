@@ -18,6 +18,12 @@ const name = words.join('-');
 
 
 
+```cpp
+Inherits from Identifier
+```
+
+
+
 ## Functions
 
 ### AttributeBase
@@ -51,6 +57,12 @@ public bool is_genericable()
 public local_index_t nb_items()
 ```
 
+### has_value
+
+```cpp
+public bool has_value(index_t element)
+```
+
 ### clone
 
 ```cpp
@@ -73,12 +85,6 @@ public std::shared_ptr<AttributeBase> extract(absl::Span<const index_t> old2new,
 
 ```cpp
 public std::shared_ptr<AttributeBase> extract(const GenericMapping<index_t> & old2new_mapping, index_t nb_elements, AttributeKey )
-```
-
-### import
-
-```cpp
-public void import(absl::Span<const index_t> old2new, const std::shared_ptr<AttributeBase> & from, AttributeBase::AttributeKey )
 ```
 
 ### import
@@ -109,13 +115,6 @@ public void compute_value(const AttributeLinearInterpolation & interpolation, in
 
 ```cpp
 public AttributeBase & operator=(const AttributeBase & )
-```
-
-
-### name
-
-```cpp
-public std::string_view name()
 ```
 
 
@@ -151,13 +150,6 @@ public void set_properties(AttributeProperties new_properties)
 ```
 
 
-### set_name
-
-```cpp
-public void set_name(std::string_view name, AttributeKey )
-```
-
-
 ### type
 
 ```cpp
@@ -174,7 +166,7 @@ public void ~AttributeBase()
 ### AttributeBase
 
 ```cpp
-protected void AttributeBase(AttributeProperties properties)
+protected void AttributeBase(std::string_view name, AttributeProperties properties)
 ```
 
 

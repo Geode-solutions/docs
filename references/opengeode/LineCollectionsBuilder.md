@@ -43,14 +43,14 @@ public void load_line_collections(std::string_view directory)
 ### set_line_collection_name
 
 ```cpp
-public void set_line_collection_name(const uuid & id, std::string_view name)
+public void set_line_collection_name(const LineCollection<dimension> & line_collection, std::string_view name)
 ```
 
 
 ### set_line_collection_active
 
 ```cpp
-public void set_line_collection_active(const uuid & id, bool active)
+public void set_line_collection_active(const LineCollection<dimension> & line_collection, bool active)
 ```
 
 
