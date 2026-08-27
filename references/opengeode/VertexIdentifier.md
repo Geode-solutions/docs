@@ -106,6 +106,13 @@ public void save_unique_vertices(std::string_view directory)
 
 **directory** [in] Folder in which create the file.
 
+### unique_vertex_attribute_id
+
+```cpp
+public const uuid & unique_vertex_attribute_id()
+```
+
+
 ### register_mesh_component
 
 ```cpp

@@ -2237,6 +2237,13 @@ bool are_mesh_elements_included(const MeshElementsInclusion<MeshElementType> & i
 ```
 
 
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const PolyhedronFacetVertex & value)
+```
+
+
 ### compute_model_unique_vertices
 
 ```cpp
@@ -2248,20 +2255,6 @@ void compute_model_unique_vertices(const Model & model, typename Model::Builder 
 
 ```cpp
 double tetrahedron_aspect_ratio(const Tetrahedron & tetra)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const PolyhedronFacetVertex & value)
-```
-
-
-### convert_surface_meshes_into_triangulated_surfaces
-
-```cpp
-void convert_surface_meshes_into_triangulated_surfaces(BRep & brep)
 ```
 
 
@@ -2631,41 +2624,6 @@ absl::FixedArray<std::pair<CRSType, std::string>> section_active_coordinate_refe
 ```
 
 
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const PolyhedronFacetEdge & value)
-```
-
-
-### segment_segment_intersection_detection
-
-```cpp
-SegmentSegmentIntersection segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
-```
-
-
-### segment_segment_intersection_detection
-
-```cpp
-SegmentSegmentIntersection segment_segment_intersection_detection(const Segment3D & segment0, const Segment3D & segment1)
-```
-
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
-```
-
-
 ### convert_grid_into_densified_tetrahedral_solid
 
 ```cpp
@@ -3009,118 +2967,6 @@ ModelMeshesAABBTree2D create_line_meshes_aabb_trees(const Section & model)
 ```
 
 
-### create_surface_meshes_aabb_trees
-
-```cpp
-ModelMeshesAABBTree2D create_surface_meshes_aabb_trees(const Section & model)
-```
-
-
-### component_mesh_vertex_triplets
-
-```cpp
-ComponentMeshVertexTriplets component_mesh_vertex_triplets(absl::Span<const ComponentMeshVertex> unique_vertices0, absl::Span<const ComponentMeshVertex> unique_vertices1, absl::Span<const ComponentMeshVertex> unique_vertices2, const ComponentType & type)
-```
-
-
-### surface_radial_sort
-
-```cpp
-SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
-```
-
-
-### point_tetrahedron_position
-
-```cpp
-POSITION point_tetrahedron_position(const Point3D & point, const Tetrahedron & tetra)
-```
-
-
- Return the position of a point in a tetrahedron: inside, outside, on a tetra vertex, an edge or a facet.
-
-### segment_barycentric_coordinates
-
-```cpp
-std::array<double, 2> segment_barycentric_coordinates(const Point<dimension> & point, const Segment<dimension> & segment)
-```
-
-
- Compute barycentric coordinates of a point with regards to a segment.
-
-**return** an array containing the parametric coordinates corresponding to the segment vertices.
-
-**exception**if the segment is degenerated
-
-### component_mesh_vertex_triplets
-
-```cpp
-ComponentMeshVertexTriplets component_mesh_vertex_triplets(absl::Span<const ComponentMeshVertex> unique_vertices0, absl::Span<const ComponentMeshVertex> unique_vertices1, absl::Span<const ComponentMeshVertex> unique_vertices2, const ComponentID & component)
-```
-
-
-### safe_segment_barycentric_coordinates
-
-```cpp
-std::array<double, 2> safe_segment_barycentric_coordinates(const Point<dimension> & point, const Segment<dimension> & segment)
-```
-
-
- Compute barycentric coordinates of a point with regards to a segment. If segment is degenerated, computation fallbacks onto its vertices.
-
-**return** an array containing the parametric coordinates corresponding to the segment vertices.
-
-### segment_sphere_intersection
-
-```cpp
-IntersectionResult<absl::InlinedVector<Point<dimension>, 2>> segment_sphere_intersection(const Segment<dimension> & segment, const Sphere<dimension> & sphere)
-```
-
-
- Compute the intersection(s) between a (n-1)-sphere and a segment in n-dimension space.
-
-**return** an optional of the intersection points.
-
-### segment_plane_intersection
-
-```cpp
-IntersectionResult<Point3D> segment_plane_intersection(const Segment3D & segment, const Plane & plane)
-```
-
-
- Compute the intersection between a plane and a segment
-
-**return** an optional of the intersection point.
-
-**warning** if the segment is included in the plane nothing is returned
-
-### segment_triangle_intersection
-
-```cpp
-IntersectionResult<Point3D> segment_triangle_intersection(const Segment3D & segment, const Triangle3D & triangle)
-```
-
-
- Compute the intersection of a segment and a triangle
-
-**return** an optional of the intersection point.
-
-**warning** if the segment is included in the triangle plane nothing is returned
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
-```
-
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
-```
-
-
 ### line_triangle_intersection_detection
 
 ```cpp
@@ -3146,6 +2992,13 @@ BRepComponentMeshPolygons component_mesh_polygons(const BRep & brep, const Polyg
 ```
 
 
+### create_surface_meshes_aabb_trees
+
+```cpp
+ModelMeshesAABBTree2D create_surface_meshes_aabb_trees(const Section & model)
+```
+
+
 ### component_mesh_edges
 
 ```cpp
@@ -3162,10 +3015,24 @@ double point_line_distance(const Point<dimension> & point, const InfiniteLine<di
 
  Compute the smallest distance between a point and an infinite line
 
+### component_mesh_vertex_triplets
+
+```cpp
+ComponentMeshVertexTriplets component_mesh_vertex_triplets(absl::Span<const ComponentMeshVertex> unique_vertices0, absl::Span<const ComponentMeshVertex> unique_vertices1, absl::Span<const ComponentMeshVertex> unique_vertices2, const ComponentType & type)
+```
+
+
 ### component_mesh_polygons
 
 ```cpp
 BRepComponentMeshPolygons component_mesh_polygons(const BRep & brep, const Surface3D & surface, index_t polygon_id)
+```
+
+
+### surface_radial_sort
+
+```cpp
+SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
 ```
 
 
@@ -3182,6 +3049,28 @@ std::unique_ptr<PolygonalSurface2D> convert_polygonal_surface3d_into_2d(const Po
 SectionComponentMeshEdges component_mesh_edges(const Section & section, const Line2D & line, index_t edge)
 ```
 
+
+### point_tetrahedron_position
+
+```cpp
+POSITION point_tetrahedron_position(const Point3D & point, const Tetrahedron & tetra)
+```
+
+
+ Return the position of a point in a tetrahedron: inside, outside, on a tetra vertex, an edge or a facet.
+
+### segment_barycentric_coordinates
+
+```cpp
+std::array<double, 2> segment_barycentric_coordinates(const Point<dimension> & point, const Segment<dimension> & segment)
+```
+
+
+ Compute barycentric coordinates of a point with regards to a segment.
+
+**return** an array containing the parametric coordinates corresponding to the segment vertices.
+
+**exception**if the segment is degenerated
 
 ### component_mesh_polygons
 
@@ -3215,6 +3104,13 @@ std::unique_ptr<TriangulatedSurface3D> convert_triangulated_surface2d_into_3d(co
 ```
 
 
+### component_mesh_vertex_triplets
+
+```cpp
+ComponentMeshVertexTriplets component_mesh_vertex_triplets(absl::Span<const ComponentMeshVertex> unique_vertices0, absl::Span<const ComponentMeshVertex> unique_vertices1, absl::Span<const ComponentMeshVertex> unique_vertices2, const ComponentID & component)
+```
+
+
 ### point_line_signed_distance
 
 ```cpp
@@ -3228,6 +3124,110 @@ double point_line_signed_distance(const Point2D & point, const InfiniteLine2D & 
 
 ```cpp
 std::unique_ptr<TriangulatedSurface2D> convert_triangulated_surface3d_into_2d(const TriangulatedSurface3D & surface3d, local_index_t axis_to_remove)
+```
+
+
+### safe_segment_barycentric_coordinates
+
+```cpp
+std::array<double, 2> safe_segment_barycentric_coordinates(const Point<dimension> & point, const Segment<dimension> & segment)
+```
+
+
+ Compute barycentric coordinates of a point with regards to a segment. If segment is degenerated, computation fallbacks onto its vertices.
+
+**return** an array containing the parametric coordinates corresponding to the segment vertices.
+
+### convert_surface_meshes_into_triangulated_surfaces
+
+```cpp
+void convert_surface_meshes_into_triangulated_surfaces(BRep & brep)
+```
+
+
+### segment_sphere_intersection
+
+```cpp
+IntersectionResult<absl::InlinedVector<Point<dimension>, 2>> segment_sphere_intersection(const Segment<dimension> & segment, const Sphere<dimension> & sphere)
+```
+
+
+ Compute the intersection(s) between a (n-1)-sphere and a segment in n-dimension space.
+
+**return** an optional of the intersection points.
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const PolyhedronFacetEdge & value)
+```
+
+
+### segment_segment_intersection_detection
+
+```cpp
+SegmentSegmentIntersection segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
+```
+
+
+### segment_plane_intersection
+
+```cpp
+IntersectionResult<Point3D> segment_plane_intersection(const Segment3D & segment, const Plane & plane)
+```
+
+
+ Compute the intersection between a plane and a segment
+
+**return** an optional of the intersection point.
+
+**warning** if the segment is included in the plane nothing is returned
+
+### segment_segment_intersection_detection
+
+```cpp
+SegmentSegmentIntersection segment_segment_intersection_detection(const Segment3D & segment0, const Segment3D & segment1)
+```
+
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### segment_triangle_intersection
+
+```cpp
+IntersectionResult<Point3D> segment_triangle_intersection(const Segment3D & segment, const Triangle3D & triangle)
+```
+
+
+ Compute the intersection of a segment and a triangle
+
+**return** an optional of the intersection point.
+
+**warning** if the segment is included in the triangle plane nothing is returned
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
 ```
 
 
@@ -3410,6 +3410,17 @@ IntersectionResult<Point2D> segment_segment_intersection(const Segment2D & segme
 
 **return** an optional of the intersection point.
 
+### point_plane_distance
+
+```cpp
+std::tuple<double, Point3D> point_plane_distance(const Point3D & point, const Plane & plane)
+```
+
+
+ Compute the distance between a point and a plane
+
+**return** a tuple containing: - the smallest distance. - the nearest point on the plane.
+
 ### oriented_surface_vertices_from_line_edge
 
 ```cpp
@@ -3435,6 +3446,17 @@ absl::InlinedVector<SurfacePolygonEdge, 2> surface_vertices_from_line_edge(const
 ```
 
 
+### point_plane_signed_distance
+
+```cpp
+std::tuple<double, Point3D> point_plane_signed_distance(const Point3D & point, const Plane & plane)
+```
+
+
+ Compute the signed distance between a point and a plane
+
+**return** a tuple containing: - the signed distance (sign is given by the plane normal direction). - the nearest point on the plane.
+
 ### oriented_surface_vertices_from_line_edge
 
 ```cpp
@@ -3452,6 +3474,17 @@ IntersectionResult<absl::InlinedVector<Point3D, 2>> segment_cylinder_intersectio
  Compute the intersection between a segment and a cylinder
 
 **return** an optional of the intersection points.
+
+### point_sphere_distance
+
+```cpp
+std::tuple<double, Point<dimension>> point_sphere_distance(const Point<dimension> & point, const Sphere<dimension> & sphere)
+```
+
+
+ Compute the smallest distance between a point and a sphere
+
+**return** a tuple containing: - the smallest distance. - the closest point on the sphere.
 
 ### line_cylinder_intersection
 
@@ -3510,39 +3543,6 @@ std::tuple<double, Point3D> point_triangle_distance(const Point3D & point, const
 std::tuple<double, Point2D> point_triangle_distance(const Point2D & point, const Triangle2D & triangle)
 ```
 
-
-### point_plane_distance
-
-```cpp
-std::tuple<double, Point3D> point_plane_distance(const Point3D & point, const Plane & plane)
-```
-
-
- Compute the distance between a point and a plane
-
-**return** a tuple containing: - the smallest distance. - the nearest point on the plane.
-
-### point_plane_signed_distance
-
-```cpp
-std::tuple<double, Point3D> point_plane_signed_distance(const Point3D & point, const Plane & plane)
-```
-
-
- Compute the signed distance between a point and a plane
-
-**return** a tuple containing: - the signed distance (sign is given by the plane normal direction). - the nearest point on the plane.
-
-### point_sphere_distance
-
-```cpp
-std::tuple<double, Point<dimension>> point_sphere_distance(const Point<dimension> & point, const Sphere<dimension> & sphere)
-```
-
-
- Compute the smallest distance between a point and a sphere
-
-**return** a tuple containing: - the smallest distance. - the closest point on the sphere.
 
 ### point_sphere_signed_distance
 
