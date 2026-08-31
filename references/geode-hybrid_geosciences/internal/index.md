@@ -24,6 +24,7 @@ const name = words.join('-');
 * [PillarBuilder](PillarBuilder.md)
 * [Pillar](Pillar.md)
 * [PropagateAlongPlane](PropagateAlongPlane.md)
+* [UnnecessaryComponentsRemover](UnnecessaryComponentsRemover.md)
 
 
 ## Functions
