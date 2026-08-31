@@ -18,6 +18,7 @@ const name = words.join('-');
 ## Records
 
 * [BlockMeshFusion](BlockMeshFusion.md)
+* [ComponentsRemover](ComponentsRemover.md)
 * [ConstraintCycles](ConstraintCycles.md)
 * [CutAlongPathImpl](CutAlongPathImpl.md)
 * [ElementsModifier](ElementsModifier.md)

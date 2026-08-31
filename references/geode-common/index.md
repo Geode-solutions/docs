@@ -163,6 +163,7 @@ const name = words.join('-');
 * [PolyhedronFacetEdge](PolyhedronFacetEdge.md)
 * [PolyhedronFacet](PolyhedronFacet.md)
 * [PreviousPaths](PreviousPaths.md)
+* [RemoveComponentsOptions](RemoveComponentsOptions.md)
 * [SectionCollapseEdgeValidity](SectionCollapseEdgeValidity.md)
 * [SectionElementsAfterCollapseEdge](SectionElementsAfterCollapseEdge.md)
 * [SectionElementsAfterSwapEdge](SectionElementsAfterSwapEdge.md)
