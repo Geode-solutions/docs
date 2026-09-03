@@ -101,10 +101,31 @@ public void remove_non_manifolds_on_grid_active_borders(const absl::flat_hash_se
 ```
 
 
+### recompute_larger_wavelength_derivatives
+
+```cpp
+public void recompute_larger_wavelength_derivatives(const std::array<bool, dimension> & large_scale_on_axis)
+```
+
+
 ### remove_computation_node
 
 ```cpp
 public void remove_computation_node(const VertexIndices & node_indices)
+```
+
+
+### set_node_values_attribute_name
+
+```cpp
+public void set_node_values_attribute_name(std::string_view name)
+```
+
+
+### set_node_value
+
+```cpp
+public void set_node_value(index_t value_node_id, double value)
 ```
 
 
@@ -164,20 +185,6 @@ public const VertexIndices & grid_vertex_indices_from_computation_node(index_t c
 ```
 
 
-### set_node_values_attribute_name
-
-```cpp
-public void set_node_values_attribute_name(std::string_view name, const uuid & scalar_function_id)
-```
-
-
-### node_values_attribute_name
-
-```cpp
-public std::string_view node_values_attribute_name()
-```
-
-
 ### node_values_attribute_id
 
 ```cpp
@@ -189,13 +196,6 @@ public const uuid & node_values_attribute_id()
 
 ```cpp
 public index_t nb_value_nodes()
-```
-
-
-### set_node_value
-
-```cpp
-public void set_node_value(index_t value_node_id, double value)
 ```
 
 
@@ -227,10 +227,17 @@ public const absl::linked_hash_map<index_t, std::vector<local_index_t>> & border
 ```
 
 
-### node_values_are_set
+### nb_large_scale_derivatives
 
 ```cpp
-public bool node_values_are_set()
+public index_t nb_large_scale_derivatives()
+```
+
+
+### value_nodes_larger_scales_derivatives
+
+```cpp
+public const absl::linked_hash_map<index_t, std::vector<local_index_t>> & value_nodes_larger_scales_derivatives()
 ```
 
 

@@ -61,7 +61,7 @@ public void ~SectionSurfaceImpliciter()
 ### compute_implicit_function
 
 ```cpp
-public void compute_implicit_function(const ImplicitationParameters & computation_parameters, const uuid & function_id, double function_value_interval)
+public void compute_implicit_function(const ImplicitationParameters & computation_parameters, double function_value_interval)
 ```
 
 

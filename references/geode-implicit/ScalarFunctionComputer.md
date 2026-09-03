@@ -35,18 +35,6 @@ public static const index_t MAX_NB_GRID_CELLS
 
 
 
-# class ScalarFunctionComputer
-
-
-## Members
-
-```cpp
-public static const index_t MAX_NB_GRID_CELLS
-
-```
-
-
-
 ## Functions
 
 ### ScalarFunctionComputer
@@ -87,7 +75,7 @@ public void add_boundary_value_condition(double value_to_set)
 ### compute_scalar_function
 
 ```cpp
-public void compute_scalar_function(std::string_view scalar_function_name, const uuid & function_id, double function_value_interval, const ImplicitationParameters & computation_parameters)
+public void compute_scalar_function(double function_value_interval, const ImplicitationParameters & computation_parameters)
 ```
 
 
@@ -115,7 +103,7 @@ protected ScalarFunctionComputer<dimension> & operator=(ScalarFunctionComputer<d
 ### interpolate_result_on_grid
 
 ```cpp
-protected void interpolate_result_on_grid(const CutGrid<dimension> & other_grid, std::string_view scalar_function_name, const uuid & function_id)
+protected void interpolate_result_on_grid(const CutGrid<dimension> & other_grid)
 ```
 
 
@@ -139,6 +127,18 @@ protected const DataConstraintsManager<dimension> & data_constraints()
 protected bool rasterization_deactivates_too_many_cells(const CutGrid<dimension> & grid, const absl::flat_hash_set<typename CutGrid<dimension>::CellIndices> & rasterized_cells)
 ```
 
+
+
+
+# class ScalarFunctionComputer
+
+
+## Members
+
+```cpp
+public static const index_t MAX_NB_GRID_CELLS
+
+```
 
 
 

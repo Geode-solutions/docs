@@ -22,7 +22,7 @@ public const uuid & border_surface_id
 ```
 
 ```cpp
-public geode::index_t border_surface_facet
+public index_t border_surface_facet
 
 ```
 

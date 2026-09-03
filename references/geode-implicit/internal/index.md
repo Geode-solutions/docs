@@ -157,14 +157,14 @@ std::vector<SegmentInGrid<dimension>> segments_in_grid(const Point<dimension> & 
 ### edge_points_on_isovalue_from_grid
 
 ```cpp
-std::vector<geode::Point3D> edge_points_on_isovalue_from_grid(const Point3D & edge_p0, const Point3D & edge_p1, const ComputationGrid3D & computation_grid, double function_isovalue)
+std::vector<Point3D> edge_points_on_isovalue_from_grid(const Point3D & edge_p0, const Point3D & edge_p1, const ComputationGrid3D & computation_grid, double function_isovalue)
 ```
 
 
 ### edge_points_on_isovalue_from_grid
 
 ```cpp
-std::vector<geode::Point3D> edge_points_on_isovalue_from_grid(const Point3D & edge_p0, const Point3D & edge_p1, const CutSolidGrid & cut_grid, double function_isovalue, std::optional<VolumeBorderIdentificationInfo> border_info)
+std::vector<Point3D> edge_points_on_isovalue_from_grid(const Point3D & edge_p0, const Point3D & edge_p1, const CutSolidGrid & cut_grid, double function_isovalue, std::optional<VolumeBorderIdentificationInfo> border_info)
 ```
 
 

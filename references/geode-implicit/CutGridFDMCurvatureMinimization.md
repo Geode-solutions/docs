@@ -64,10 +64,10 @@ public void ~CutGridFDMCurvatureMinimization<dimension>()
 ```
 
 
-### use_scalar_function_preconditioning
+### use_current_value_preconditioning
 
 ```cpp
-public void use_scalar_function_preconditioning(const uuid & function_id)
+public void use_current_value_preconditioning()
 ```
 
 
@@ -81,7 +81,7 @@ public void add_boundary_value_condition(double value_to_set)
 ### compute_scalar_function
 
 ```cpp
-public void compute_scalar_function(std::string_view scalar_function_name, const uuid & scalar_function_id)
+public void compute_scalar_function()
 ```
 
 

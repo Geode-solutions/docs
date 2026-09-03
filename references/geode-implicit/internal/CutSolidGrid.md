@@ -134,17 +134,17 @@ public absl::InlinedVector<index_t, 1> cell_duplicate_index(const CellIndices & 
 ```
 
 
-### grid_vertex_indices_from_ghost_node
+### grid_vertex_indices_from_value_node
 
 ```cpp
-public VertexIndices grid_vertex_indices_from_ghost_node(index_t ghost_node_id)
+public const VertexIndices & grid_vertex_indices_from_value_node(index_t value_node_id)
 ```
 
 
-### ghost_node_cell_duplicate_id
+### value_node_cell_duplicate_id
 
 ```cpp
-public std::optional<index_t> ghost_node_cell_duplicate_id(index_t ghost_node_id, const CellIndices & cell_indices)
+public std::optional<index_t> value_node_cell_duplicate_id(index_t value_node_id, const CellIndices & cell_indices)
 ```
 
 

@@ -58,10 +58,10 @@ public FDMCurvatureMinimizationImpl<dimension> & operator=(FDMCurvatureMinimizat
 ```
 
 
-### use_scalar_function_preconditioning
+### use_current_value_preconditioning
 
 ```cpp
-public void use_scalar_function_preconditioning(const uuid & function_id)
+public void use_current_value_preconditioning()
 ```
 
 
@@ -79,7 +79,7 @@ public void add_boundary_value_condition(double value_to_set)
 ### compute_scalar_function
 
 ```cpp
-public void compute_scalar_function(std::string_view scalar_function_name, const uuid & scalar_function_id)
+public void compute_scalar_function()
 ```
 
 
@@ -160,10 +160,10 @@ protected void add_matrix_coefficient(index_t row_id, index_t column_id, double 
 ```
 
 
-### nb_computation_nodes
+### add_surrounding_nodes_contribution
 
 ```cpp
-protected index_t nb_computation_nodes()
+protected void add_surrounding_nodes_contribution(index_t row, index_t value_node_id, local_index_t derivative_axis_id, local_index_t nb_steps)
 ```
 
 

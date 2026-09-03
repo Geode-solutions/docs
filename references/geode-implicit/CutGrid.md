@@ -77,18 +77,6 @@ public index_t cell_duplicate_index(const CellIndices & index, local_index_t cel
 public absl::InlinedVector<index_t, 1> cell_duplicate_index(const CellIndices & index, const Point<dimension> & position)
 ```
 
-### grid_vertex_indices_from_ghost_node
-
-```cpp
-public VertexIndices grid_vertex_indices_from_ghost_node(index_t ghost_node_id)
-```
-
-### ghost_node_cell_duplicate_id
-
-```cpp
-public std::optional<index_t> ghost_node_cell_duplicate_id(index_t ghost_node_id, const CellIndices & cell_indices)
-```
-
 ### operator=
 
 ```cpp
@@ -137,6 +125,12 @@ public double get_node_value(index_t value_node_id)
 public std::optional<index_t> value_node_in_cut_grid(const CellIndices & cell_indices, local_index_t cell_node_id, index_t cell_duplicate_index)
 ```
 
+### value_node_cell_duplicate_id
+
+```cpp
+public std::optional<index_t> value_node_cell_duplicate_id(index_t value_node_id, const CellIndices & cell_indices)
+```
+
 ### isovalue_goes_through_cell_duplicate
 
 ```cpp
@@ -151,6 +145,13 @@ public bool isovalue_goes_through_cell(const CellIndices & cell_id, double isova
 ```
 
 
+### surrounding_value_node_id
+
+```cpp
+public std::optional<index_t> surrounding_value_node_id(index_t value_node_id, const std::array<int, dimension> & axis_direction, local_index_t surrounding_node, local_index_t nb_steps)
+```
+
+
 ### compute_ghost_nodes_derivatives
 
 ```cpp
@@ -162,13 +163,6 @@ public void compute_ghost_nodes_derivatives()
 
 ```cpp
 public const absl::linked_hash_map<index_t, std::vector<index_t>> & ghost_nodes_derivatives()
-```
-
-
-### value_node_surrounding_ghost_node_id
-
-```cpp
-public std::optional<index_t> value_node_surrounding_ghost_node_id(index_t ghost_node_id, const std::array<int, dimension> & search_direction, local_index_t surrounding_node)
 ```
 
 

@@ -128,12 +128,5 @@ public const ComputationGrid3D & resulting_grid()
 ```
 
 
-### scalar_function_id
-
-```cpp
-public const uuid & scalar_function_id()
-```
-
-
 
 

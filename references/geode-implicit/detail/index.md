@@ -30,38 +30,24 @@ std::unique_ptr<TriangulatedSurface2D> convert_computation_grid_to_surface_mesh(
 ```
 
 
-### compute_cut_grid_streamline
-
-```cpp
-std::optional<ImplicitStreamLine<dimension>> compute_cut_grid_streamline(const CutGrid<dimension> & grid, const Point<dimension> & starting_position, absl::flat_hash_set<typename CutGrid<dimension>::CellIndices> & visited_cells)
-```
-
-
 ### tangential_data_from_curve
 
 ```cpp
-std::tuple<std::unique_ptr<PointSet<dimension>>, uuid, uuid> tangential_data_from_curve(const EdgedCurve<dimension> & data_curve, const uuid & weight_attribute_id_in)
+std::unique_ptr<PointSet<dimension>> tangential_data_from_curve(const EdgedCurve<dimension> & data_curve, const uuid & weight_attribute_id_in, const uuid & weight_attribute_id_out, const uuid & direction_attribute_id_out)
 ```
 
 
 ### create_geode_implicit_weight_attribute
 
 ```cpp
-std::shared_ptr<VariableAttribute<double>> create_geode_implicit_weight_attribute(const Mesh & mesh)
-```
-
-
-### convert_computation_grid_to_solid_mesh
-
-```cpp
-std::unique_ptr<HybridSolid3D> convert_computation_grid_to_solid_mesh(const ComputationGrid<3> & grid)
+std::shared_ptr<VariableAttribute<double>> create_geode_implicit_weight_attribute(const Mesh & mesh, const uuid & weight_attribute_id)
 ```
 
 
 ### normal_data_from_surface
 
 ```cpp
-std::tuple<std::unique_ptr<PointSet3D>, uuid, uuid> normal_data_from_surface(const SurfaceMesh3D & data_surface, const uuid & weight_attribute_id_in)
+std::unique_ptr<PointSet3D> normal_data_from_surface(const SurfaceMesh3D & data_surface, const uuid & weight_attribute_id_in, const uuid & weight_attribute_id_out, const uuid & direction_attribute_id_out)
 ```
 
 
@@ -72,17 +58,17 @@ std::shared_ptr<VariableAttribute<double>> find_geode_implicit_weight_attribute(
 ```
 
 
-### grid_densification_pattern
+### convert_computation_grid_to_solid_mesh
 
 ```cpp
-std::array<bool, dimension> grid_densification_pattern(const BoundingBox<dimension> & box, const std::array<index_t, dimension> & current_cells_number)
+std::unique_ptr<HybridSolid3D> convert_computation_grid_to_solid_mesh(const ComputationGrid<3> & grid)
 ```
 
 
 ### create_geode_implicit_direction_attribute
 
 ```cpp
-std::shared_ptr<VariableAttribute<Vector<Mesh::dim>>> create_geode_implicit_direction_attribute(const Mesh & mesh)
+std::shared_ptr<VariableAttribute<Vector<Mesh::dim>>> create_geode_implicit_direction_attribute(const Mesh & mesh, const uuid & direction_attribute_id)
 ```
 
 
@@ -100,6 +86,13 @@ void extrapolate_surface_mesh_scalar_function(const SurfaceMesh<dimension> & sur
 ```
 
 
+### compute_cut_grid_streamline
+
+```cpp
+std::optional<ImplicitStreamLine<dimension>> compute_cut_grid_streamline(const CutGrid<dimension> & grid, const Point<dimension> & starting_position, absl::flat_hash_set<typename CutGrid<dimension>::CellIndices> & visited_cells)
+```
+
+
 ### extrapolate_solid_mesh_scalar_function
 
 ```cpp
@@ -107,10 +100,24 @@ void extrapolate_solid_mesh_scalar_function(const SolidMesh3D & solid_mesh, cons
 ```
 
 
+### grid_densification_pattern
+
+```cpp
+std::array<bool, dimension> grid_densification_pattern(const ComputationGrid<dimension> & grid)
+```
+
+
 ### split_block_mesh_from_isovalues_on_grid
 
 ```cpp
 void split_block_mesh_from_isovalues_on_grid(BRep & model, const Block3D & block, const TetrahedralSolid3D & block_mesh, VariableAttribute<double> & block_function_attribute, const ComputationGrid3D & grid, absl::Span<const double> values_to_densify_around)
+```
+
+
+### densification_pattern
+
+```cpp
+std::array<bool, dimension> densification_pattern(const BoundingBox<dimension> & box, const std::array<index_t, dimension> & current_cells_number)
 ```
 
 
