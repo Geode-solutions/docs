@@ -371,13 +371,6 @@ void copy_line_components(const ModelFrom & from, const ModelTo & model_to, type
 ```
 
 
-### build_model_boundaries
-
-```cpp
-void build_model_boundaries(const BRep & model, BRepBuilder & builder)
-```
-
-
 ### coords_divide_equal
 
 ```cpp
@@ -431,13 +424,6 @@ H AbslHashValue(H h, const VertexCycle<Container> & m)
 
 ```cpp
 ModelCopyMapping section_clone_mapping(const Section & model)
-```
-
-
-### brep_clone_mapping
-
-```cpp
-ModelCopyMapping brep_clone_mapping(const BRep & model)
 ```
 
 
@@ -504,24 +490,31 @@ void transfer_brep_meshes(const BRep & brep, BRepBuilder & brep_builder, BRep &&
 ```
 
 
-### merge_mappings
-
-```cpp
-SectionMappings merge_mappings(const SectionMappings & mappings1, const SectionMappings & mappings2)
-```
-
-
-### copy_surface_collection_components
-
-```cpp
-void copy_surface_collection_components(const ModelFrom & from, const ModelTo & model_to, typename ModelTo::Builder & builder_to, Mapping & mapping)
-```
-
-
 ### transfer_brep_collections
 
 ```cpp
 void transfer_brep_collections(const BRep & old_brep, const BRep & new_brep, BRepBuilder & new_brep_builder, const ModelGenericMapping & component_mapping)
+```
+
+
+### brep_clone_mapping
+
+```cpp
+ModelCopyMapping brep_clone_mapping(const BRep & model)
+```
+
+
+### build_model_boundaries
+
+```cpp
+void build_model_boundaries(const BRep & model, BRepBuilder & builder)
+```
+
+
+### merge_mappings
+
+```cpp
+SectionMappings merge_mappings(const SectionMappings & mappings1, const SectionMappings & mappings2)
 ```
 
 
@@ -641,6 +634,13 @@ ModelComponentMeshEdges::SurfaceEdges surface_component_mesh_edges(const Model &
 
 ```cpp
 std::vector<PolygonEdge> surface_component_mesh_edges(const Model & model, const std::array<index_t, 2> & edge_unique_vertices, const geode::Surface<Model::dim> & surface)
+```
+
+
+### copy_surface_collection_components
+
+```cpp
+void copy_surface_collection_components(const ModelFrom & from, const ModelTo & model_to, typename ModelTo::Builder & builder_to, Mapping & mapping)
 ```
 
 

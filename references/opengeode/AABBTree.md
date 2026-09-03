@@ -138,6 +138,13 @@ public std::tuple<index_t, double> closest_element_box(const Point<dimension> & 
 
 **note** if several elements box match the distance computation, then one of them will be randomly returned.
 
+### compute_point_element_box_distances
+
+```cpp
+public void compute_point_element_box_distances(const Point<dimension> & query, const EvalDistance & action)
+```
+
+
 ### compute_bbox_element_bbox_intersections
 
 ```cpp

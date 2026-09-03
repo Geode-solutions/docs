@@ -25,6 +25,7 @@ const name = words.join('-');
 * [GridImpl](GridImpl.md)
 * [MeshComponentsRegistrator](MeshComponentsRegistrator.md)
 * [ModelComponentGetter](ModelComponentGetter.md)
+* [PivotNormalResult](PivotNormalResult.md)
 * [PointsImpl](PointsImpl.md)
 * [PolygonsAroundVertexImpl](PolygonsAroundVertexImpl.md)
 * [PolyhedraAroundVertexImpl](PolyhedraAroundVertexImpl.md)

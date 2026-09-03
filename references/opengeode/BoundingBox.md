@@ -239,7 +239,12 @@ public double signed_distance(const Point<dimension> & point)
 ```
 
 
- Returns the distance between the point and the box. If the point is inside the box, the distance is negative.
+### squared_signed_distance
+
+```cpp
+public double squared_signed_distance(const Point<dimension> & point)
+```
+
 
 ### min
 
