@@ -25,18 +25,9 @@ const name = words.join('-');
 * [GeodeViewablesConversionException](GeodeViewablesConversionException.md)
 * [GeodeViewablesConversionLibrary](GeodeViewablesConversionLibrary.md)
 * [GeodeViewablesException](GeodeViewablesException.md)
-* [GeodeViewablesQEMProxyException](GeodeViewablesQEMProxyException.md)
-* [GeodeViewablesQEMProxyLibrary](GeodeViewablesQEMProxyLibrary.md)
 
 
 ## Functions
-
-### simplify
-
-```cpp
-bool simplify(geode::TriangulatedSurface3D & mesh)
-```
-
 
 ### save_viewable_brep
 
