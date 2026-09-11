@@ -31,6 +31,17 @@ public static const auto METRIC_PRESERVATION_FACTOR
 
 ```
 
+```cpp
+public static const auto DEVIATION_RATIO_THRESHOLD
+
+```
+
+
+
+## Records
+
+SurfaceVertexCache
+
 
 
 ## Functions
@@ -215,6 +226,20 @@ public const Metric<dimension> & build_metric()
 ```cpp
 public std::unique_ptr<GridMetric<dimension>> generate_grid_metric()
 ```
+
+
+
+
+## Enums
+
+| enum class DeviationCheck |
+
+--
+
+| none |
+| surface |
+| line |
+
 
 
 

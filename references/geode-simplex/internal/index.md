@@ -110,13 +110,6 @@ H AbslHashValue(H h, const SolidEdge & solid_edge)
 ```
 
 
-### check_metric
-
-```cpp
-void check_metric(double metric, double cell_length, Data && data)
-```
-
-
 ### lock_vertices
 
 ```cpp
@@ -124,10 +117,10 @@ std::vector<index_t> lock_vertices(absl::Span<const index_t> vertex_mapping)
 ```
 
 
-### check_gradation
+### check_metric
 
 ```cpp
-void check_gradation(double gradation)
+void check_metric(double metric, double cell_length, Data && data)
 ```
 
 
@@ -135,6 +128,13 @@ void check_gradation(double gradation)
 
 ```cpp
 H AbslHashValue(H h, const SolidVertex & solid_vertex)
+```
+
+
+### check_gradation
+
+```cpp
+void check_gradation(double gradation)
 ```
 
 
