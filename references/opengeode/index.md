@@ -2244,10 +2244,87 @@ double tetrahedron_aspect_ratio(const Tetrahedron & tetra)
 ```
 
 
+### polyhedron_unique_vertices
+
+```cpp
+PolyhedronVertices polyhedron_unique_vertices(const BRep & model, const Block3D & block, index_t polyhedron_id)
+```
+
+
+### tetrahedron_volume_to_facet_ratio
+
+```cpp
+double tetrahedron_volume_to_facet_ratio(const Tetrahedron & tetra)
+```
+
+
 ### AbslHashValue
 
 ```cpp
 H AbslHashValue(H h, const PolyhedronFacetVertex & value)
+```
+
+
+### convert_surface_mesh
+
+```cpp
+void convert_surface_mesh(const Section & model, SectionBuilder & builder, const geode::Surface2D & surface, const geode::MeshType & mesh_type)
+```
+
+
+### brep_coordinate_reference_systems
+
+```cpp
+absl::FixedArray<std::pair<CRSType, std::string>> brep_coordinate_reference_systems(const BRep & brep)
+```
+
+
+### component_mesh_polyhedra
+
+```cpp
+std::vector<MeshElement> component_mesh_polyhedra(const BRep & brep, const PolyhedronVertices & polyhedron_unique_vertices)
+```
+
+
+### create_surfaces_aabb_tree
+
+```cpp
+std::tuple<AABBTree3D, absl::FixedArray<uuid>> create_surfaces_aabb_tree(const BRep & model)
+```
+
+
+### section_coordinate_reference_systems
+
+```cpp
+absl::FixedArray<std::pair<CRSType, std::string>> section_coordinate_reference_systems(const Section & section)
+```
+
+
+### convert_surface_mesh
+
+```cpp
+void convert_surface_mesh(const BRep & model, BRepBuilder & builder, const geode::Surface3D & surface, const geode::MeshType & mesh_type)
+```
+
+
+### component_mesh_vertex_generic
+
+```cpp
+ComponentMeshVertexGeneric<dimension> component_mesh_vertex_generic(absl::Span<const absl::Span<const ComponentMeshVertex>> unique_vertices)
+```
+
+
+### create_blocks_aabb_tree
+
+```cpp
+std::tuple<AABBTree3D, absl::FixedArray<uuid>> create_blocks_aabb_tree(const BRep & model)
+```
+
+
+### convert_surface_meshes_into_triangulated_surfaces
+
+```cpp
+void convert_surface_meshes_into_triangulated_surfaces(BRep & brep)
 ```
 
 
@@ -2313,20 +2390,6 @@ double block_volume(const BRep & brep, const Block3D & block)
 ```
 
 
-### polyhedron_unique_vertices
-
-```cpp
-PolyhedronVertices polyhedron_unique_vertices(const BRep & model, const Block3D & block, index_t polyhedron_id)
-```
-
-
-### tetrahedron_volume_to_facet_ratio
-
-```cpp
-double tetrahedron_volume_to_facet_ratio(const Tetrahedron & tetra)
-```
-
-
 ### repair_polygons_orientations
 
 ```cpp
@@ -2338,13 +2401,6 @@ void repair_polygons_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMe
 
 ```cpp
 std::tuple<BRep, ModelCopyMapping> convert_section_into_brep(const Section & section, local_index_t axis_to_add, double axis_coordinate)
-```
-
-
-### convert_surface_mesh
-
-```cpp
-void convert_surface_mesh(const Section & model, SectionBuilder & builder, const geode::Surface2D & surface, const geode::MeshType & mesh_type)
 ```
 
 
@@ -2376,31 +2432,10 @@ std::vector<typename Grid<dimension>::CellIndices> rasterize_segment(const Grid<
 ```
 
 
-### brep_coordinate_reference_systems
-
-```cpp
-absl::FixedArray<std::pair<CRSType, std::string>> brep_coordinate_reference_systems(const BRep & brep)
-```
-
-
 ### tetrahedron_collapse_aspect_ratio
 
 ```cpp
 double tetrahedron_collapse_aspect_ratio(const Tetrahedron & tetra)
-```
-
-
-### component_mesh_polyhedra
-
-```cpp
-std::vector<MeshElement> component_mesh_polyhedra(const BRep & brep, const PolyhedronVertices & polyhedron_unique_vertices)
-```
-
-
-### create_surfaces_aabb_tree
-
-```cpp
-std::tuple<AABBTree3D, absl::FixedArray<uuid>> create_surfaces_aabb_tree(const BRep & model)
 ```
 
 
@@ -2438,20 +2473,6 @@ void register_mesh_deserialize_pcontext(PContext & context)
 
 **warning** The context can be used only once per archive.
 
-### section_coordinate_reference_systems
-
-```cpp
-absl::FixedArray<std::pair<CRSType, std::string>> section_coordinate_reference_systems(const Section & section)
-```
-
-
-### convert_surface_mesh
-
-```cpp
-void convert_surface_mesh(const BRep & model, BRepBuilder & builder, const geode::Surface3D & surface, const geode::MeshType & mesh_type)
-```
-
-
 ### triangle_angle_based_quality
 
 ```cpp
@@ -2473,20 +2494,6 @@ std::vector<typename Grid<dimension>::CellIndices> conservative_rasterize_segmen
 ```
 
 
-### component_mesh_vertex_generic
-
-```cpp
-ComponentMeshVertexGeneric<dimension> component_mesh_vertex_generic(absl::Span<const absl::Span<const ComponentMeshVertex>> unique_vertices)
-```
-
-
-### convert_surface_meshes_into_triangulated_surfaces
-
-```cpp
-void convert_surface_meshes_into_triangulated_surfaces(BRep & brep)
-```
-
-
 ### point_side_to_segment
 
 ```cpp
@@ -2495,13 +2502,6 @@ SIDE point_side_to_segment(const Point2D & point, const Segment2D & segment)
 
 
  Return the point side to a segment.
-
-### create_blocks_aabb_tree
-
-```cpp
-std::tuple<AABBTree3D, absl::FixedArray<uuid>> create_blocks_aabb_tree(const BRep & model)
-```
-
 
 ### polygon_unique_vertices
 
@@ -2737,6 +2737,27 @@ H AbslHashValue(H h, const PolyhedronFacetEdge & value)
 ```
 
 
+### segment_segment_intersection_detection
+
+```cpp
+SegmentSegmentIntersection segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
+```
+
+
+### segment_segment_intersection_detection
+
+```cpp
+SegmentSegmentIntersection segment_segment_intersection_detection(const Segment3D & segment0, const Segment3D & segment1)
+```
+
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
+```
+
+
 ### point_side_to_plane
 
 ```cpp
@@ -2781,20 +2802,6 @@ void convert_block_meshes_into_tetrahedral_solids(const BRep & brep, BRepBuilder
 ```
 
 
-### segment_segment_intersection_detection
-
-```cpp
-SegmentSegmentIntersection segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
-```
-
-
-### segment_segment_intersection_detection
-
-```cpp
-SegmentSegmentIntersection segment_segment_intersection_detection(const Segment3D & segment0, const Segment3D & segment1)
-```
-
-
 ### point_segment_distance
 
 ```cpp
@@ -2826,13 +2833,6 @@ void triangulate_surface_meshes(const BRep & brep, BRepBuilder & builder)
 
 ```cpp
 void triangulate_surface_meshes(const Section & section, SectionBuilder & builder)
-```
-
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
 ```
 
 
@@ -3212,17 +3212,17 @@ BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const std::array<
 ```
 
 
-### is_point_inside_closed_surface
-
-```cpp
-RayTracingResult is_point_inside_closed_surface(const Point3D & point, const SurfaceMesh3D & surface, const AABBTree3D & surface_aabb)
-```
-
-
 ### component_mesh_edges
 
 ```cpp
 BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Line3D & line, index_t edge)
+```
+
+
+### is_point_inside_closed_surface
+
+```cpp
+RayTracingResult is_point_inside_closed_surface(const Point3D & point, const SurfaceMesh3D & surface, const AABBTree3D & surface_aabb)
 ```
 
 

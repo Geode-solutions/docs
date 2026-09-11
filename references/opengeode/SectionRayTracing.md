@@ -58,6 +58,13 @@ public void ~SectionRayTracing()
 ```
 
 
+### prepare
+
+```cpp
+public void prepare(const Surface2D & surface)
+```
+
+
 ### is_point_inside_surface
 
 ```cpp

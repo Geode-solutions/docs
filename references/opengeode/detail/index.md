@@ -630,27 +630,6 @@ std::vector<index_t> line_component_mesh_edges(const Model & model, const std::a
 ```
 
 
-### surface_component_mesh_edges
-
-```cpp
-ModelComponentMeshEdges::SurfaceEdges surface_component_mesh_edges(const Model & model, const std::array<index_t, 2> & edge_unique_vertices)
-```
-
-
-### surface_component_mesh_edges
-
-```cpp
-std::vector<PolygonEdge> surface_component_mesh_edges(const Model & model, const std::array<index_t, 2> & edge_unique_vertices, const geode::Surface<Model::dim> & surface)
-```
-
-
-### block_component_mesh_edges
-
-```cpp
-BRepComponentMeshEdges::BlockEdges block_component_mesh_edges(const BRep & brep, const std::array<index_t, 2> & edge_unique_vertices)
-```
-
-
 ### copy_block_collection_components
 
 ```cpp
@@ -658,10 +637,10 @@ void copy_block_collection_components(const ModelFrom & from, const ModelTo & mo
 ```
 
 
-### block_component_mesh_edges
+### surface_component_mesh_edges
 
 ```cpp
-std::vector<PolyhedronFacetEdge> block_component_mesh_edges(const BRep & brep, const std::array<index_t, 2> & edge_unique_vertices, const Block3D & block)
+ModelComponentMeshEdges::SurfaceEdges surface_component_mesh_edges(const Model & model, const std::array<index_t, 2> & edge_unique_vertices)
 ```
 
 
@@ -669,6 +648,13 @@ std::vector<PolyhedronFacetEdge> block_component_mesh_edges(const BRep & brep, c
 
 ```cpp
 absl::FixedArray<std::pair<uuid, std::unique_ptr<Mesh>>> clone_meshes(Range && range, index_t nb_components)
+```
+
+
+### surface_component_mesh_edges
+
+```cpp
+std::vector<PolygonEdge> surface_component_mesh_edges(const Model & model, const std::array<index_t, 2> & edge_unique_vertices, const geode::Surface<Model::dim> & surface)
 ```
 
 
@@ -693,6 +679,13 @@ void copy_surface_geometry(const ModelFrom & from, const ModelTo & model_to, typ
 ```
 
 
+### block_component_mesh_edges
+
+```cpp
+BRepComponentMeshEdges::BlockEdges block_component_mesh_edges(const BRep & brep, const std::array<index_t, 2> & edge_unique_vertices)
+```
+
+
 ### copy_block_geometry
 
 ```cpp
@@ -704,6 +697,13 @@ void copy_block_geometry(const ModelFrom & from, const ModelTo & model_to, typen
 
 ```cpp
 void copy_vertex_identifier_components(const Model & from, BuilderTo & builder_to, index_t first_new_unique_vertex_id, const ModelCopyMapping & mapping)
+```
+
+
+### block_component_mesh_edges
+
+```cpp
+std::vector<PolyhedronFacetEdge> block_component_mesh_edges(const BRep & brep, const std::array<index_t, 2> & edge_unique_vertices, const Block3D & block)
 ```
 
 

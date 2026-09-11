@@ -58,6 +58,13 @@ public void ~BRepRayTracing()
 ```
 
 
+### prepare
+
+```cpp
+public void prepare(const Block3D & block)
+```
+
+
 ### find_intersections_with_boundaries
 
 ```cpp
