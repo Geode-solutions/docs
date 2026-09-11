@@ -142,6 +142,13 @@ public const PointSet<dimension> & data_points()
 ```
 
 
+### data_points_weight_id
+
+```cpp
+public const uuid & data_points_weight_id()
+```
+
+
 
 
 # class DataPointsManager

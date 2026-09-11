@@ -11,50 +11,50 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class BRepBlockImpliciter
+# class ModelBlockImpliciter
 
 
 ## Functions
 
-### BRepBlockImpliciter
+### ModelBlockImpliciter
 
 ```cpp
-public void BRepBlockImpliciter(const BRepBlockImpliciter & )
+public void ModelBlockImpliciter(const ModelBlockImpliciter & )
 ```
 
 
 ### operator=
 
 ```cpp
-public BRepBlockImpliciter & operator=(const BRepBlockImpliciter & )
+public ModelBlockImpliciter & operator=(const ModelBlockImpliciter & )
 ```
 
 
-### BRepBlockImpliciter
+### ModelBlockImpliciter
 
 ```cpp
-public void BRepBlockImpliciter(BRep & model, const Block3D & block, const ImplicitDataManager3D & data_manager)
+public void ModelBlockImpliciter(ImplicitStructuralModel & model, const Block3D & block, const ImplicitDataManager3D & data_manager)
 ```
 
 
-### BRepBlockImpliciter
+### ModelBlockImpliciter
 
 ```cpp
-public void BRepBlockImpliciter(BRepBlockImpliciter && block_modeler)
+public void ModelBlockImpliciter(ModelBlockImpliciter && block_modeler)
 ```
 
 
 ### operator=
 
 ```cpp
-public BRepBlockImpliciter & operator=(BRepBlockImpliciter && other)
+public ModelBlockImpliciter & operator=(ModelBlockImpliciter && other)
 ```
 
 
-### ~BRepBlockImpliciter
+### ~ModelBlockImpliciter
 
 ```cpp
-public void ~BRepBlockImpliciter()
+public void ~ModelBlockImpliciter()
 ```
 
 
@@ -75,14 +75,14 @@ public std::vector<detail::ImplicitStreamLine3D> implicit_stream_lines()
 ### interpolate_function_on_mesh
 
 ```cpp
-public void interpolate_function_on_mesh(const uuid & function_id, absl::Span<const double> implicit_isovalues)
+public void interpolate_function_on_mesh(absl::Span<const uuid> horizon_ids)
 ```
 
 
 ### create_mesh_with_function_in_block
 
 ```cpp
-public void create_mesh_with_function_in_block(const uuid & function_id, absl::Span<const double> implicit_isovalues)
+public void create_mesh_with_function_in_block(absl::Span<const uuid> horizon_ids)
 ```
 
 

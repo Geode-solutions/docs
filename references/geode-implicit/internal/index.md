@@ -17,7 +17,6 @@ const name = words.join('-');
 
 ## Records
 
-* [BRepBlockImpliciter](BRepBlockImpliciter.md)
 * [BlockImplicitInfo](BlockImplicitInfo.md)
 * [ComputationGridOutput](ComputationGridOutput.md)
 * [CrossSectionSequenceImpliciter](CrossSectionSequenceImpliciter.md)
@@ -30,6 +29,7 @@ const name = words.join('-');
 * [FDMCurvatureMinimizationImpl](FDMCurvatureMinimizationImpl.md)
 * [ImplicitDataManager](ImplicitDataManager.md)
 * [ImplicitSVGInput](ImplicitSVGInput.md)
+* [ModelBlockImpliciter](ModelBlockImpliciter.md)
 * [ScalarFunctionComputer2D](ScalarFunctionComputer2D.md)
 * [ScalarFunctionComputer3D](ScalarFunctionComputer3D.md)
 * [SectionSurfaceImpliciter](SectionSurfaceImpliciter.md)
