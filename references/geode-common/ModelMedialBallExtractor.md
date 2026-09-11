@@ -22,7 +22,12 @@ public static const auto RADIUS_ATTRIBUTE_NAME
 ```
 
 ```cpp
-public static const auto ORIGIN_ATTRIBUTE_NAME
+public static const auto ANGLE_ATTRIBUTE_NAME
+
+```
+
+```cpp
+public static const auto SEED_ATTRIBUTE_NAME
 
 ```
 

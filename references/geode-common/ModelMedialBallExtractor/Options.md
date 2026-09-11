@@ -17,11 +17,6 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public Angle min_angle
-
-```
-
-```cpp
 public bool extract_line_balls
 
 ```
@@ -38,7 +33,7 @@ public bool extract_corner_balls
 ### Options
 
 ```cpp
-public void Options(double angle)
+public void Options()
 ```
 
 

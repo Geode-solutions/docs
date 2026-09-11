@@ -24,6 +24,8 @@ Inherits from ModelMedialBallExtractor
 
 BRepMedialBallExtractorResult
 
+MedialBallsResult
+
 Options
 
 
@@ -82,7 +84,7 @@ public BRepMedialBallExtractorResult compute_all_blocks()
 ### compute_block
 
 ```cpp
-public std::tuple<std::unique_ptr<PointSet3D>, ModelMedialBallExtractorAttributes> compute_block(const uuid & block_id)
+public std::tuple<MedialBallsResult, ModelMedialBallExtractorAttributes> compute_block(const uuid & block_id)
 ```
 
 

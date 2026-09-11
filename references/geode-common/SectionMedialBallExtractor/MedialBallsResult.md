@@ -11,25 +11,31 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct ModelMedialBallExtractorAttributes
+# struct MedialBallsResult
 
 
 ## Members
 
 ```cpp
-public uuid radius_attribute_id
+public unique_ptr line_balls
 
 ```
 
 ```cpp
-public uuid angle_attribute_id
+public unique_ptr corner_balls
 
 ```
+
+
+
+## Functions
+
+### MedialBallsResult
 
 ```cpp
-public uuid seed_attribute_id
-
+public void MedialBallsResult(const ModelMedialBallExtractorAttributes & attributes)
 ```
+
 
 
 

@@ -22,6 +22,8 @@ Inherits from ModelMedialBallExtractor
 
 ## Records
 
+MedialBallsResult
+
 Options
 
 SectionMedialBallExtractorResult
@@ -82,7 +84,7 @@ public SectionMedialBallExtractorResult compute_all_surfaces()
 ### compute_surface
 
 ```cpp
-public std::tuple<std::unique_ptr<PointSet2D>, ModelMedialBallExtractorAttributes> compute_surface(const uuid & surface_id)
+public std::tuple<MedialBallsResult, ModelMedialBallExtractorAttributes> compute_surface(const uuid & surface_id)
 ```
 
 

@@ -34,7 +34,7 @@ public bool extract_surface_balls
 ### Options
 
 ```cpp
-public void Options(double angle)
+public void Options()
 ```
 
 

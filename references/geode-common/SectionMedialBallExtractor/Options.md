@@ -25,7 +25,7 @@ Inherits from Options
 ### Options
 
 ```cpp
-public void Options(double angle)
+public void Options()
 ```
 
 
