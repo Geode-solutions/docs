@@ -371,13 +371,6 @@ void copy_line_components(const ModelFrom & from, const ModelTo & model_to, type
 ```
 
 
-### build_model_boundaries
-
-```cpp
-void build_model_boundaries(const BRep & model, BRepBuilder & builder)
-```
-
-
 ### coords_divide_equal
 
 ```cpp
@@ -431,13 +424,6 @@ H AbslHashValue(H h, const VertexCycle<Container> & m)
 
 ```cpp
 ModelCopyMapping section_clone_mapping(const Section & model)
-```
-
-
-### brep_clone_mapping
-
-```cpp
-ModelCopyMapping brep_clone_mapping(const BRep & model)
 ```
 
 
@@ -504,6 +490,20 @@ void transfer_brep_meshes(const BRep & brep, BRepBuilder & brep_builder, BRep &&
 ```
 
 
+### brep_clone_mapping
+
+```cpp
+ModelCopyMapping brep_clone_mapping(const BRep & model)
+```
+
+
+### build_model_boundaries
+
+```cpp
+void build_model_boundaries(const BRep & model, BRepBuilder & builder)
+```
+
+
 ### merge_mappings
 
 ```cpp
@@ -518,24 +518,10 @@ void copy_surface_collection_components(const ModelFrom & from, const ModelTo & 
 ```
 
 
-### transfer_brep_collections
-
-```cpp
-void transfer_brep_collections(const BRep & old_brep, const BRep & new_brep, BRepBuilder & new_brep_builder, const ModelGenericMapping & component_mapping)
-```
-
-
 ### transfer_section_meshes
 
 ```cpp
 void transfer_section_meshes(const Section & section, SectionBuilder & section_builder, Section && other, const ModelCopyMapping & component_mapping)
-```
-
-
-### transfer_brep_collections
-
-```cpp
-void transfer_brep_collections(const BRep & old_brep, const BRep & new_brep, BRepBuilder & new_brep_builder, const ModelUnchangedComponentMapping & unchanged_components)
 ```
 
 
@@ -553,13 +539,6 @@ void transfer_brep_metadata(const BRep & old_brep, const BRep & new_brep, BRepBu
 ```
 
 
-### transfer_section_collections
-
-```cpp
-void transfer_section_collections(const Section & old_section, const Section & new_section, SectionBuilder & new_brep_builder, const ModelGenericMapping & component_mapping)
-```
-
-
 ### transfer_section_metadata
 
 ```cpp
@@ -571,13 +550,6 @@ void transfer_section_metadata(const Section & old_section, const Section & new_
 
 ```cpp
 void save_tetrahedron(const Tetrahedron & tetrahedron, std::string_view suffix)
-```
-
-
-### transfer_section_collections
-
-```cpp
-void transfer_section_collections(const Section & old_section, const Section & new_section, SectionBuilder & new_brep_builder, const ModelUnchangedComponentMapping & unchanged_components)
 ```
 
 
@@ -602,20 +574,6 @@ void transfer_curves_metadata(absl::Span<const std::reference_wrapper<const Edge
 ```
 
 
-### transfer_surfaces_metadata
-
-```cpp
-void transfer_surfaces_metadata(absl::Span<const std::reference_wrapper<const SurfaceMesh<Model::dim>>> surfaces, const Model & model, typename Model::Builder & model_builder, const ModelGenericMapping & component_mapping)
-```
-
-
-### transfer_solids_metadata
-
-```cpp
-void transfer_solids_metadata(absl::Span<const std::reference_wrapper<const SolidMesh3D>> solids, const BRep & model, BRepBuilder & model_builder, const ModelGenericMapping & component_mapping)
-```
-
-
 ### line_component_mesh_edges
 
 ```cpp
@@ -634,6 +592,48 @@ std::vector<index_t> line_component_mesh_edges(const Model & model, const std::a
 
 ```cpp
 void copy_block_collection_components(const ModelFrom & from, const ModelTo & model_to, typename ModelTo::Builder & builder_to, Mapping & mapping)
+```
+
+
+### transfer_brep_collections
+
+```cpp
+void transfer_brep_collections(const BRep & old_brep, const BRep & new_brep, BRepBuilder & new_brep_builder, const ModelGenericMapping & component_mapping)
+```
+
+
+### transfer_brep_collections
+
+```cpp
+void transfer_brep_collections(const BRep & old_brep, const BRep & new_brep, BRepBuilder & new_brep_builder, const ModelUnchangedComponentMapping & unchanged_components)
+```
+
+
+### transfer_section_collections
+
+```cpp
+void transfer_section_collections(const Section & old_section, const Section & new_section, SectionBuilder & new_brep_builder, const ModelGenericMapping & component_mapping)
+```
+
+
+### transfer_section_collections
+
+```cpp
+void transfer_section_collections(const Section & old_section, const Section & new_section, SectionBuilder & new_brep_builder, const ModelUnchangedComponentMapping & unchanged_components)
+```
+
+
+### transfer_surfaces_metadata
+
+```cpp
+void transfer_surfaces_metadata(absl::Span<const std::reference_wrapper<const SurfaceMesh<Model::dim>>> surfaces, const Model & model, typename Model::Builder & model_builder, const ModelGenericMapping & component_mapping)
+```
+
+
+### transfer_solids_metadata
+
+```cpp
+void transfer_solids_metadata(absl::Span<const std::reference_wrapper<const SolidMesh3D>> solids, const BRep & model, BRepBuilder & model_builder, const ModelGenericMapping & component_mapping)
 ```
 
 

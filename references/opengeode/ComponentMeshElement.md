@@ -62,6 +62,13 @@ public bool operator==(const ComponentMeshElement & other)
 ```
 
 
+### operator!=
+
+```cpp
+public bool operator!=(const ComponentMeshElement & other)
+```
+
+
 ### serialize
 
 ```cpp
