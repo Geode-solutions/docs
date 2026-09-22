@@ -38,6 +38,7 @@ const name = words.join('-');
 * [PillarStructuralModelOptions](PillarStructuralModelOptions.md)
 * [PointsTooFarFromTopographyBoundaryInspectionResult](PointsTooFarFromTopographyBoundaryInspectionResult.md)
 * [ProjectedComponentsResult](ProjectedComponentsResult.md)
+* [ProjectedLine](ProjectedLine.md)
 * [RemoveComponentsOptions](RemoveComponentsOptions.md)
 * [SurfaceActivityInspectionResult](SurfaceActivityInspectionResult.md)
 * [SurfacesCollectionInspectionResult](SurfacesCollectionInspectionResult.md)
