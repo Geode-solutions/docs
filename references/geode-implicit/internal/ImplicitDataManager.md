@@ -131,5 +131,12 @@ public std::optional<double> min_distance_between_data_points(const uuid & first
 ```
 
 
+### points_associated_to_data
+
+```cpp
+public std::vector<index_t> points_associated_to_data(const uuid & data_id)
+```
+
+
 
 

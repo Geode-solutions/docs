@@ -115,7 +115,7 @@ public void set_node_value(index_t value_node_id, double value)
 ### get_node_value
 
 ```cpp
-public double get_node_value(index_t value_node_id)
+public std::optional<double> get_node_value(index_t value_node_id)
 ```
 
 
