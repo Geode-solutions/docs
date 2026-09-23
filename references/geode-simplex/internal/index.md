@@ -75,6 +75,27 @@ void pre_process_meshing_step(const BRep & brep, BRepGeometricModifier & modifie
 ```
 
 
+### correct_block_facet_constraint
+
+```cpp
+void correct_block_facet_constraint(const BRep & output, BRepBuilder & builder)
+```
+
+
+### has_degenerated_elements
+
+```cpp
+bool has_degenerated_elements(const BRep & brep, const BRepElementsAfterCollapseEdge & elements)
+```
+
+
+### has_degenerated_elements
+
+```cpp
+bool has_degenerated_elements(const Section & section, const SectionElementsAfterCollapseEdge & elements)
+```
+
+
 ### remesh_surface
 
 ```cpp
@@ -138,24 +159,10 @@ void check_gradation(double gradation)
 ```
 
 
-### has_degenerated_elements
-
-```cpp
-bool has_degenerated_elements(const BRep & brep, const BRepElementsAfterCollapseEdge & elements)
-```
-
-
 ### AbslHashValue
 
 ```cpp
 H AbslHashValue(H hash, const MacroPolygonEdge & macro_edge)
-```
-
-
-### has_degenerated_elements
-
-```cpp
-bool has_degenerated_elements(const Section & section, const SectionElementsAfterCollapseEdge & elements)
 ```
 
 
