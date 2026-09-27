@@ -11,27 +11,23 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct RemoveComponentsOptions
+# struct PropagateAlongPlaneResult
+
 
 ## Members
 
 ```cpp
-public bool process_corners
+public uuid surface_id
 
 ```
 
 ```cpp
-public bool process_lines
+public SurfacePath last_path
 
 ```
 
 ```cpp
-public bool process_surfaces
-
-```
-
-```cpp
-public bool process_blocks
+public bool dot_positive
 
 ```
 

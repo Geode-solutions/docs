@@ -39,21 +39,12 @@ const name = words.join('-');
 * [PointsTooFarFromTopographyBoundaryInspectionResult](PointsTooFarFromTopographyBoundaryInspectionResult.md)
 * [ProjectedComponentsResult](ProjectedComponentsResult.md)
 * [ProjectedLine](ProjectedLine.md)
-* [RemoveComponentsOptions](RemoveComponentsOptions.md)
 * [SurfaceActivityInspectionResult](SurfaceActivityInspectionResult.md)
 * [SurfacesCollectionInspectionResult](SurfacesCollectionInspectionResult.md)
 * [TopandBottomSurfaces](TopandBottomSurfaces.md)
-* [uuid](uuid.md)
 
 
 ## Functions
-
-### remove_unnecessary_components
-
-```cpp
-void remove_unnecessary_components(geode::BRep & model, const RemoveComponentsOptions & options, absl::Span<const uuid> top_surfaces, absl::Span<const uuid> bottom_surfaces)
-```
-
 
 ### repair_pillar_model_input
 

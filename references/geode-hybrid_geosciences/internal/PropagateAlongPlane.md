@@ -14,9 +14,7 @@ const name = words.join('-');
 # class PropagateAlongPlane
 
 
-```cpp
-Inherits from SurfacePathFinder<3>
-```
+ Walks along a plane on the model boundary surfaces. The walk crosses border edges into the adjacent model boundary surface, unless the border edge is shared with a horizon, a fault, a top or a bottom surface: then the walk stops on this edge.
 
 
 
@@ -25,50 +23,16 @@ Inherits from SurfacePathFinder<3>
 ### PropagateAlongPlane
 
 ```cpp
-public void PropagateAlongPlane(const StructuralModel & model, const TriangulatedSurface3D & surface, const OwnerPlane & plane, absl::Span<const uuid> top_surfaces, absl::Span<const uuid> bottom_surfaces, bool dot_positive)
+public void PropagateAlongPlane(const StructuralModel & model, const uuid & surface_id, const OwnerPlane & plane, absl::Span<const uuid> top_surfaces, absl::Span<const uuid> bottom_surfaces, bool dot_positive)
 ```
 
 
 ### along_plane
 
 ```cpp
-public std::optional<std::vector<SurfacePath>> along_plane(const SurfacePath & first_path)
+public std::optional<PropagateAlongPlaneResult> along_plane(const SurfacePath & first_path)
 ```
 
-
-### stop_propagation
-
-```cpp
-protected bool stop_propagation(const SurfacePath & path)
-```
-
-
-### next_intersection
-
-```cpp
-protected std::optional<SurfacePath> next_intersection(const SurfacePath & path, bool is_first_path)
-```
-
-
-### next_vertex_intersection
-
-```cpp
-protected std::optional<SurfacePath> next_vertex_intersection(const index_t vertex)
-```
-
-
-### next_edge_intersection
-
-```cpp
-protected std::optional<SurfacePath> next_edge_intersection(const PolygonEdge & adjacent_edge)
-```
-
-
-### oriented_edge_segment
-
-```cpp
-protected Segment<3> oriented_edge_segment(const OrientedPolygonEdge & edge)
-```
 
 
 
