@@ -20,6 +20,7 @@ const name = words.join('-');
 * [BRepComputer](BRepComputer.md)
 * [BRepConformityComputer](BRepConformityComputer.md)
 * [BRepModelerMappingsBuilder](BRepModelerMappingsBuilder.md)
+* [BRepStitching](BRepStitching.md)
 * [ExtractedEdgedCurveInfoBuilder](ExtractedEdgedCurveInfoBuilder.md)
 * [ExtractedEdgedCurveInfo](ExtractedEdgedCurveInfo.md)
 * [ExtractedMeshInfoBuilder](ExtractedMeshInfoBuilder.md)
@@ -32,6 +33,7 @@ const name = words.join('-');
 * [ModelerMappingsBuilder](ModelerMappingsBuilder.md)
 * [ModelerMetric](ModelerMetric.md)
 * [SolidElementsIndices](SolidElementsIndices.md)
+* [StitchingMappings](StitchingMappings.md)
 
 
 ## Functions
@@ -74,14 +76,21 @@ double smallest_acceptable_or_median_distance(const BoundingBox<dimension> & bbo
 ### perform_surface_stitching
 
 ```cpp
-GenericMapping<index_t> perform_surface_stitching(const TriangulatedSurface3D & surface, TriangulatedSurfaceModifier3D & modifier, absl::Span<const Point3D> points, GenericMapping<index_t> & old2new)
+StitchingMappings perform_surface_stitching(const TriangulatedSurface3D & surface, TriangulatedSurfaceModifier3D & modifier, absl::Span<const Point3D> points, double threshold)
+```
+
+
+### perform_triangle_stitching
+
+```cpp
+StitchingMappings perform_triangle_stitching(const TriangulatedSurface3D & surface, TriangulatedSurfaceModifier3D & modifier, index_t triangle_id, absl::Span<const Point3D> points, double threshold)
 ```
 
 
 ### perform_curve_stitching
 
 ```cpp
-GenericMapping<index_t> perform_curve_stitching(const EdgedCurve3D & curve, EdgedCurveModifier3D & modifier, absl::Span<const Point3D> points, GenericMapping<index_t> & old2new)
+StitchingMappings perform_curve_stitching(const EdgedCurve3D & curve, EdgedCurveModifier3D & modifier, absl::Span<const Point3D> points, double threshold)
 ```
 
 
@@ -89,6 +98,13 @@ GenericMapping<index_t> perform_curve_stitching(const EdgedCurve3D & curve, Edge
 
 ```cpp
 std::unique_ptr<TetrahedralSolid3D> build_solid(const BoundingBox3D & bbox, const IsotropicMetric3D & metric)
+```
+
+
+### perform_edge_stitching
+
+```cpp
+StitchingMappings perform_edge_stitching(const EdgedCurve3D & curve, EdgedCurveModifier3D & modifier, index_t edge_id, absl::Span<const Point3D> points, double threshold)
 ```
 
 
