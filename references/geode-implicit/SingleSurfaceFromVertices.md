@@ -33,7 +33,7 @@ public SingleSurfaceFromVertices & operator=(const SingleSurfaceFromVertices & )
 ### SingleSurfaceFromVertices
 
 ```cpp
-public void SingleSurfaceFromVertices()
+public void SingleSurfaceFromVertices(const BoundingBox3D & bounding_box)
 ```
 
 
@@ -61,14 +61,21 @@ public void ~SingleSurfaceFromVertices()
 ### add_data_points
 
 ```cpp
-public void add_data_points(const PointSet3D & data_points, double min_distance, const uuid & weight_attribute_id)
+public void add_data_points(const PointSet3D & data_points, const uuid & weight_attribute_id)
 ```
 
 
 ### add_data_curve
 
 ```cpp
-public void add_data_curve(const EdgedCurve3D & data_curve, double min_distance, const uuid & weight_attribute_id)
+public void add_data_curve(const EdgedCurve3D & data_curve, const uuid & weight_attribute_id)
+```
+
+
+### add_data_surface
+
+```cpp
+public void add_data_surface(const SurfaceMesh3D & data_surface, const uuid & weight_attribute_id)
 ```
 
 
@@ -89,7 +96,7 @@ public std::unique_ptr<TriangulatedSurface3D> build(const ImplicitationParameter
 ### build
 
 ```cpp
-public std::unique_ptr<TriangulatedSurface3D> build(double expected_mesh_size)
+public std::unique_ptr<TriangulatedSurface3D> build(const ImplicitationParameters & computation_parameters, double expected_mesh_size)
 ```
 
 

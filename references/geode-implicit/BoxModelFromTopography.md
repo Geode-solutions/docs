@@ -65,21 +65,21 @@ public void ~BoxModelFromTopography()
 ### add_topography
 
 ```cpp
-public void add_topography(const PointSet3D & data_points, double min_distance, const uuid & weight_attribute_id)
+public void add_topography(const PointSet3D & data_points, const uuid & weight_attribute_id)
 ```
 
 
 ### add_topography
 
 ```cpp
-public void add_topography(const SurfaceMesh3D & data_surface, double min_distance, const uuid & weight_attribute_id)
+public void add_topography(const SurfaceMesh3D & data_surface, const uuid & weight_attribute_id)
 ```
 
 
 ### build
 
 ```cpp
-public BRep build(const ImplicitationParameters & computation_parameters)
+public StructuralModel build(const ImplicitationParameters & computation_parameters)
 ```
 
 
