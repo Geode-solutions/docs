@@ -75,13 +75,6 @@ void pre_process_meshing_step(const BRep & brep, BRepGeometricModifier & modifie
 ```
 
 
-### correct_block_facet_constraint
-
-```cpp
-void correct_block_facet_constraint(const BRep & output, BRepBuilder & builder)
-```
-
-
 ### has_degenerated_elements
 
 ```cpp
@@ -95,6 +88,15 @@ bool has_degenerated_elements(const BRep & brep, const BRepElementsAfterCollapse
 bool has_degenerated_elements(const Section & section, const SectionElementsAfterCollapseEdge & elements)
 ```
 
+
+### correct_block_facet_constraint
+
+```cpp
+void correct_block_facet_constraint(const BRep & output, BRepBuilder & builder, BRepGeometricModifier & modifier)
+```
+
+
+ Make block border vertices match the surface meshes, by collapsing the mismatching block vertices or splitting the surfaces (and the blocks on the other side). The modifier is not cleaned at the end.
 
 ### remesh_surface
 
