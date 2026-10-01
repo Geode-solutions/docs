@@ -44,13 +44,6 @@ public void load_blocks(std::string_view directory)
 ```
 
 
-### BlocksBuilder
-
-```cpp
-protected void BlocksBuilder<dimension>(Blocks<dimension> & blocks)
-```
-
-
 ### set_block_name
 
 ```cpp
@@ -58,10 +51,24 @@ public void set_block_name(const Block<dimension> & block, std::string_view name
 ```
 
 
+### create_blocks_attribute
+
+```cpp
+public void create_blocks_attribute(std::string_view attribute_name, const uuid & attribute_id, AttributeValues<T> default_values, AttributeProperties properties)
+```
+
+
 ### set_block_active
 
 ```cpp
 public void set_block_active(const Block<dimension> & block, bool active)
+```
+
+
+### BlocksBuilder
+
+```cpp
+protected void BlocksBuilder<dimension>(Blocks<dimension> & blocks)
 ```
 
 

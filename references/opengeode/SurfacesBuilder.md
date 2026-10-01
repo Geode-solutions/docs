@@ -47,13 +47,6 @@ public void load_surfaces(std::string_view directory)
 ```
 
 
-### SurfacesBuilder
-
-```cpp
-protected void SurfacesBuilder<value-parameter-0-0>(Surfaces<dimension> & surfaces)
-```
-
-
 ### set_surface_name
 
 ```cpp
@@ -61,10 +54,24 @@ public void set_surface_name(const Surface<dimension> & surface, std::string_vie
 ```
 
 
+### create_surfaces_attribute
+
+```cpp
+public void create_surfaces_attribute(std::string_view attribute_name, const uuid & attribute_id, AttributeValues<T> default_values, AttributeProperties properties)
+```
+
+
 ### set_surface_active
 
 ```cpp
 public void set_surface_active(const Surface<dimension> & surface, bool active)
+```
+
+
+### SurfacesBuilder
+
+```cpp
+protected void SurfacesBuilder<value-parameter-0-0>(Surfaces<dimension> & surfaces)
 ```
 
 

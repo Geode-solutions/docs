@@ -221,6 +221,19 @@ public void delete_attribute(const geode::uuid & )
 
 **id** [in] The attribute id to delete
 
+### copy_attribute
+
+```cpp
+public void copy_attribute(const geode::uuid & attribute_id, const geode::uuid & new_attribute_id)
+```
+
+
+ Create a new attribute with the given id by copying the values of an existing attribute of this manager.
+
+**attribute_id** [in] The id of the attribute to copy.
+
+**new_attribute_id** [in] The id to give to the new attribute.
+
 ### attribute_type
 
 ```cpp

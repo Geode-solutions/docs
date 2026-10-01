@@ -261,6 +261,8 @@ const name = words.join('-');
 * [PImpl](PImpl.md)
 * [PassKey](PassKey.md)
 * [Percentage](Percentage.md)
+* [PhysicalPropertiesBuilder](PhysicalPropertiesBuilder.md)
+* [PhysicalProperties](PhysicalProperties.md)
 * [Plane](Plane.md)
 * [PointSetBuilder](PointSetBuilder.md)
 * [PointSetInput](PointSetInput.md)
@@ -382,27 +384,6 @@ const name = words.join('-');
 
 ## Functions
 
-### register_geode_mesh_input
-
-```cpp
-void register_geode_mesh_input()
-```
-
-
-### filename_with_extension
-
-```cpp
-std::filesystem::path filename_with_extension(const std::filesystem::path & path)
-```
-
-
-### register_attribute_type
-
-```cpp
-void register_attribute_type(PContext & context, std::string_view name)
-```
-
-
 ### register_geode_builder
 
 ```cpp
@@ -417,6 +398,13 @@ void register_geode_mesh()
 ```
 
 
+### register_geode_mesh_input
+
+```cpp
+void register_geode_mesh_input()
+```
+
+
 ### register_geode_mesh_output
 
 ```cpp
@@ -424,17 +412,17 @@ void register_geode_mesh_output()
 ```
 
 
+### filename_with_extension
+
+```cpp
+std::filesystem::path filename_with_extension(const std::filesystem::path & path)
+```
+
+
 ### string_split
 
 ```cpp
 std::vector<std::string_view> string_split(std::string_view string)
-```
-
-
-### concatenate
-
-```cpp
-void concatenate(Container & container, const Container & values)
 ```
 
 
@@ -564,6 +552,20 @@ Vector2D perpendicular(const Vector2D & v)
 
 
  Return a 2D vector perpendicular to the given one
+
+### register_attribute_type
+
+```cpp
+void register_attribute_type(PContext & context, std::string_view name)
+```
+
+
+### concatenate
+
+```cpp
+void concatenate(Container & container, const Container & values)
+```
+
 
 ### line_starts_with
 
@@ -1113,6 +1115,19 @@ std::vector<std::string> save_polyhedral_solid(const PolyhedralSolid<dimension> 
 
 **filename** [in] Path to the file where save the PolyhedralSolid.
 
+### save_regular_grid
+
+```cpp
+std::vector<std::string> save_regular_grid(const RegularGrid<dimension> & regular_grid, std::string_view filename)
+```
+
+
+ API function for saving a RegularGrid. The adequate saver is called depending on the given filename extension.
+
+**regular_grid** [in] RegularGrid to save.
+
+**filename** [in] Path to the file where save the RegularGrid.
+
 ### save_tetrahedral_solid
 
 ```cpp
@@ -1138,6 +1153,35 @@ std::vector<std::string> save_triangulated_surface(const TriangulatedSurface<dim
 **triangulated_surface** [in] TriangulatedSurface to save.
 
 **filename** [in] Path to the file where save the TriangulatedSurface.
+
+### triangle_area_sign
+
+```cpp
+SIGN triangle_area_sign(const Triangle2D & triangle)
+```
+
+
+ Return the sign of a 2D triangle area.
+
+### compute_curve_statistics
+
+```cpp
+MeshStatistics compute_curve_statistics(const EdgedCurve<dimension> & mesh)
+```
+
+
+### save_light_regular_grid
+
+```cpp
+std::vector<std::string> save_light_regular_grid(const LightRegularGrid<dimension> & light_regular_grid, std::string_view filename)
+```
+
+
+ API function for saving a LightRegularGrid. The adequate saver is called depending on the given filename extension.
+
+**light_regular_grid** [in] LightRegularGrid to save.
+
+**filename** [in] Path to the file where save the LightRegularGrid.
 
 ### save_polygonal_surface
 
@@ -1166,39 +1210,10 @@ void concatenate(Container & container, Container && values)
 ```
 
 
-### save_regular_grid
-
-```cpp
-std::vector<std::string> save_regular_grid(const RegularGrid<dimension> & regular_grid, std::string_view filename)
-```
-
-
- API function for saving a RegularGrid. The adequate saver is called depending on the given filename extension.
-
-**regular_grid** [in] RegularGrid to save.
-
-**filename** [in] Path to the file where save the RegularGrid.
-
 ### operator""_uc
 
 ```cpp
 unsigned char operator""_uc(unsigned long long arg)
-```
-
-
-### triangle_area_sign
-
-```cpp
-SIGN triangle_area_sign(const Triangle2D & triangle)
-```
-
-
- Return the sign of a 2D triangle area.
-
-### to_string
-
-```cpp
-std::string to_string(std::string_view view)
 ```
 
 
@@ -1231,30 +1246,24 @@ void print_available_extensions(std::string_view type)
 ```
 
 
-### compute_curve_statistics
+### polygon_area_sign
 
 ```cpp
-MeshStatistics compute_curve_statistics(const EdgedCurve<dimension> & mesh)
+SIGN polygon_area_sign(const Polygon2D & polygon)
 ```
 
 
-### save_light_regular_grid
+### AbslHashValue
 
 ```cpp
-std::vector<std::string> save_light_regular_grid(const LightRegularGrid<dimension> & light_regular_grid, std::string_view filename)
+H AbslHashValue(H h, const NamedType<Type, Tag> & value)
 ```
 
 
- API function for saving a LightRegularGrid. The adequate saver is called depending on the given filename extension.
-
-**light_regular_grid** [in] LightRegularGrid to save.
-
-**filename** [in] Path to the file where save the LightRegularGrid.
-
-### next_keyword_if_it_exists
+### AbslHashValue
 
 ```cpp
-std::optional<std::string> next_keyword_if_it_exists(std::ifstream & file, std::string_view word)
+H AbslHashValue(H h, const ComponentMeshVertex & value)
 ```
 
 
@@ -1269,17 +1278,45 @@ double triangle_signed_area(const Triangle2D & triangle)
 
 **triangle** [in] Triangle to compute area returned area is positive if the triangle vertices are ordered counter-clockwise, negative if clockwise.
 
-### polygon_area_sign
+### AbslHashValue
 
 ```cpp
-SIGN polygon_area_sign(const Polygon2D & polygon)
+H AbslHashValue(H h, const ComponentID & value)
 ```
 
 
-### to_array
+### AbslHashValue
 
 ```cpp
-std::array<T, sizeof...(Args)> to_array(Args &&... args)
+H AbslHashValue(H h, const MeshElement & value)
+```
+
+
+### permute
+
+```cpp
+void permute(Container & data, absl::Span<const index_t> permutation)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const EdgeVertex & value)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const Point<dimension> & point)
+```
+
+
+### next_keyword_if_it_exists
+
+```cpp
+std::optional<std::string> next_keyword_if_it_exists(std::ifstream & file, std::string_view word)
 ```
 
 
@@ -1299,6 +1336,20 @@ SegmentSegmentIntersection segment_segment_intersection_detection(const Segment<
  Detect if there is an intersection between two segments
 
 **return** the position of the intersection on the two segments. Returns outside-outside if there is no intersection or parallel-pallel if all points are colinear
+
+### to_string
+
+```cpp
+std::string to_string(std::string_view view)
+```
+
+
+### to_array
+
+```cpp
+std::array<T, sizeof...(Args)> to_array(Args &&... args)
+```
+
 
 ### set_brep_active_coordinate_system
 
@@ -1489,84 +1540,6 @@ bool is_brep_saveable(const BRep & brep, std::string_view filename)
 
 ```cpp
 bool is_section_saveable(const Section & section, std::string_view filename)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const NamedType<Type, Tag> & value)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const ComponentMeshVertex & value)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const ComponentID & value)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const MeshElement & value)
-```
-
-
-### permute
-
-```cpp
-void permute(Container & data, absl::Span<const index_t> permutation)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const EdgeVertex & value)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const Point<dimension> & point)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const PolyhedronVertex & value)
-```
-
-
-### extract_vector_elements
-
-```cpp
-ValueContainer extract_vector_elements(const DeleteContainer & to_keep, const ValueContainer & in_values)
-```
-
-
- Create a new vector containing only some elements from a given vector.
-
-**to_keep** [in] Vector of the same size than in_values. If to_keep[i] is true the i-th element is kept.
-
-**in_values** [in] Vector in which perform deletions.
-
-**return** A vector containing only kept elements of in_values
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const PolygonVertex & value)
 ```
 
 
@@ -2021,6 +1994,35 @@ Percentage is_triangulated_surface_loadable(std::string_view filename)
 ```
 
 
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const PolyhedronVertex & value)
+```
+
+
+### extract_vector_elements
+
+```cpp
+ValueContainer extract_vector_elements(const DeleteContainer & to_keep, const ValueContainer & in_values)
+```
+
+
+ Create a new vector containing only some elements from a given vector.
+
+**to_keep** [in] Vector of the same size than in_values. If to_keep[i] is true the i-th element is kept.
+
+**in_values** [in] Vector in which perform deletions.
+
+**return** A vector containing only kept elements of in_values
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const PolygonVertex & value)
+```
+
+
 ### safe_triangle_barycentric_coordinates
 
 ```cpp
@@ -2096,37 +2098,12 @@ index_t tetrahedral_solid_object_priority(std::string_view filename)
 ```
 
 
-### triangulated_surface_object_priority
-
-```cpp
-index_t triangulated_surface_object_priority(std::string_view filename)
-```
-
-
 ### old2new_permutation
 
 ```cpp
 std::vector<index_t> old2new_permutation(absl::Span<const index_t> permutation)
 ```
 
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point<dimension> & point0, const Point<dimension> & point1, const Point<dimension> & point2)
-```
-
- Return true if the three points are exactly aligned.
-
-### point_triangle_distance
-
-```cpp
-std::tuple<double, Point<dimension>> point_triangle_distance(const Point<dimension> & point, const Triangle<dimension> & triangle)
-```
-
- Compute the smallest distance between a point and a triangle
-
-**return** a tuple containing: - the smallest distance. - the closest point on the triangle.
 
 ### line_plane_intersection
 
@@ -2166,6 +2143,13 @@ ComponentMeshVertexGeneric<dimension> component_mesh_vertex_tuple(UniqueVertices
 ```
 
 
+### triangulated_surface_object_priority
+
+```cpp
+index_t triangulated_surface_object_priority(std::string_view filename)
+```
+
+
 ### component_mesh_vertex_tuple
 
 ```cpp
@@ -2200,6 +2184,14 @@ bool are_mesh_elements_included(const MeshElementsInclusion<MeshElementType> & i
 ```
 
 
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point<dimension> & point0, const Point<dimension> & point1, const Point<dimension> & point2)
+```
+
+ Return true if the three points are exactly aligned.
+
 ### sort_unique
 
 ```cpp
@@ -2221,6 +2213,16 @@ H AbslHashValue(H h, const PolygonEdge & value)
 ```
 
 
+### point_triangle_distance
+
+```cpp
+std::tuple<double, Point<dimension>> point_triangle_distance(const Point<dimension> & point, const Triangle<dimension> & triangle)
+```
+
+ Compute the smallest distance between a point and a triangle
+
+**return** a tuple containing: - the smallest distance. - the closest point on the triangle.
+
 ### throw_lippincott
 
 ```cpp
@@ -2237,6 +2239,13 @@ bool are_mesh_elements_included(const MeshElementsInclusion<MeshElementType> & i
 ```
 
 
+### tetrahedron_aspect_ratio
+
+```cpp
+double tetrahedron_aspect_ratio(const Tetrahedron & tetra)
+```
+
+
 ### AbslHashValue
 
 ```cpp
@@ -2248,13 +2257,6 @@ H AbslHashValue(H h, const PolyhedronFacetVertex & value)
 
 ```cpp
 void compute_model_unique_vertices(const Model & model, typename Model::Builder & builder)
-```
-
-
-### tetrahedron_aspect_ratio
-
-```cpp
-double tetrahedron_aspect_ratio(const Tetrahedron & tetra)
 ```
 
 
@@ -3145,92 +3147,6 @@ void convert_surface_meshes_into_triangulated_surfaces(BRep & brep)
 ```
 
 
-### segment_sphere_intersection
-
-```cpp
-IntersectionResult<absl::InlinedVector<Point<dimension>, 2>> segment_sphere_intersection(const Segment<dimension> & segment, const Sphere<dimension> & sphere)
-```
-
-
- Compute the intersection(s) between a (n-1)-sphere and a segment in n-dimension space.
-
-**return** an optional of the intersection points.
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const PolyhedronFacetEdge & value)
-```
-
-
-### segment_plane_intersection
-
-```cpp
-IntersectionResult<Point3D> segment_plane_intersection(const Segment3D & segment, const Plane & plane)
-```
-
-
- Compute the intersection between a plane and a segment
-
-**return** an optional of the intersection point.
-
-**warning** if the segment is included in the plane nothing is returned
-
-### segment_segment_intersection_detection
-
-```cpp
-SegmentSegmentIntersection segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
-```
-
-
-### segment_segment_intersection_detection
-
-```cpp
-SegmentSegmentIntersection segment_segment_intersection_detection(const Segment3D & segment0, const Segment3D & segment1)
-```
-
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### segment_triangle_intersection
-
-```cpp
-IntersectionResult<Point3D> segment_triangle_intersection(const Segment3D & segment, const Triangle3D & triangle)
-```
-
-
- Compute the intersection of a segment and a triangle
-
-**return** an optional of the intersection point.
-
-**warning** if the segment is included in the triangle plane nothing is returned
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
-```
-
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
-```
-
-
 ### segment_plane_intersection_detection
 
 ```cpp
@@ -3270,6 +3186,87 @@ BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Surface3D &
 ```
 
 
+### component_mesh_edges
+
+```cpp
+BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge)
+```
+
+
+### segment_sphere_intersection
+
+```cpp
+IntersectionResult<absl::InlinedVector<Point<dimension>, 2>> segment_sphere_intersection(const Segment<dimension> & segment, const Sphere<dimension> & sphere)
+```
+
+
+ Compute the intersection(s) between a (n-1)-sphere and a segment in n-dimension space.
+
+**return** an optional of the intersection points.
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const PolyhedronFacetEdge & value)
+```
+
+
+### segment_segment_intersection_detection
+
+```cpp
+SegmentSegmentIntersection segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
+```
+
+
+### segment_segment_intersection_detection
+
+```cpp
+SegmentSegmentIntersection segment_segment_intersection_detection(const Segment3D & segment0, const Segment3D & segment1)
+```
+
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
+```
+
+
+### point_triangle_distance
+
+```cpp
+std::tuple<double, Point3D> point_triangle_distance(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### point_triangle_distance
+
+```cpp
+std::tuple<double, Point2D> point_triangle_distance(const Point2D & point, const Triangle2D & triangle)
+```
+
+
 ### point_triangle_signed_distance
 
 ```cpp
@@ -3282,13 +3279,6 @@ std::tuple<double, Point3D> point_triangle_signed_distance(const Point3D & point
 **return** a tuple containing: - the smallest distance. - the closest point on the triangle.
 
 **details** the sign is given by the triangle normal (positive if in the same plane).
-
-### component_mesh_edges
-
-```cpp
-BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge)
-```
-
 
 ### line_triangle_distance
 
@@ -3312,6 +3302,19 @@ std::tuple<double, Point3D, Point3D> segment_triangle_distance(const Segment3D &
 
 **return** a tuple containing: - the smallest distance. - the closest point on the segment. - the closest point on the triangle.
 
+### segment_plane_intersection
+
+```cpp
+IntersectionResult<Point3D> segment_plane_intersection(const Segment3D & segment, const Plane & plane)
+```
+
+
+ Compute the intersection between a plane and a segment
+
+**return** an optional of the intersection point.
+
+**warning** if the segment is included in the plane nothing is returned
+
 ### triangle_triangle_distance
 
 ```cpp
@@ -3322,6 +3325,19 @@ std::tuple<double, Point3D, Point3D> triangle_triangle_distance(const Triangle3D
  Compute the smallest distance between two triangles
 
 **return** a tuple containing: - the smallest distance. - the closest point on the first triangle. - the closest point on the second triangle.
+
+### segment_triangle_intersection
+
+```cpp
+IntersectionResult<Point3D> segment_triangle_intersection(const Segment3D & segment, const Triangle3D & triangle)
+```
+
+
+ Compute the intersection of a segment and a triangle
+
+**return** an optional of the intersection point.
+
+**warning** if the segment is included in the triangle plane nothing is returned
 
 ### block_mesh_polyhedra_from_surface_polygon
 
@@ -3508,42 +3524,6 @@ IntersectionResult<absl::InlinedVector<Point3D, 2>> triangle_circle_intersection
 
 **return** an optional of the intersection points.
 
-### plane_circle_intersection
-
-```cpp
-IntersectionResult<absl::InlinedVector<Point3D, 2>> plane_circle_intersection(const Plane & plane, const Circle & circle)
-```
-
-
- Compute the intersection between a plane and a circle
-
-**return** an optional of the intersection points.
-
-### plane_plane_intersection
-
-```cpp
-IntersectionResult<OwnerInfiniteLine3D> plane_plane_intersection(const Plane & plane0, const Plane & plane1)
-```
-
-
- Compute the intersection between two planes
-
-**return** an optional of the intersection line.
-
-### point_triangle_distance
-
-```cpp
-std::tuple<double, Point3D> point_triangle_distance(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### point_triangle_distance
-
-```cpp
-std::tuple<double, Point2D> point_triangle_distance(const Point2D & point, const Triangle2D & triangle)
-```
-
-
 ### point_sphere_signed_distance
 
 ```cpp
@@ -3557,6 +3537,17 @@ std::tuple<double, Point<dimension>> point_sphere_signed_distance(const Point<di
 
 **details** the sign is positive outside the sphere, negative inside.
 
+### plane_circle_intersection
+
+```cpp
+IntersectionResult<absl::InlinedVector<Point3D, 2>> plane_circle_intersection(const Plane & plane, const Circle & circle)
+```
+
+
+ Compute the intersection between a plane and a circle
+
+**return** an optional of the intersection points.
+
 ### point_ball_distance
 
 ```cpp
@@ -3569,6 +3560,17 @@ std::tuple<double, Point<dimension>> point_ball_distance(const Point<dimension> 
 **return** a tuple containing: - the smallest distance. - the closest point on the ball.
 
 **details** Result is always positive or null. If point is inside the ball, the returned distance is 0.
+
+### plane_plane_intersection
+
+```cpp
+IntersectionResult<OwnerInfiniteLine3D> plane_plane_intersection(const Plane & plane0, const Plane & plane1)
+```
+
+
+ Compute the intersection between two planes
+
+**return** an optional of the intersection line.
 
 ### point_circle_distance
 
@@ -3699,6 +3701,15 @@ std::tuple<double, Point<dimension>> point_ellipse_distance(const Point<dimensio
 | facet2 |
 | facet3 |
 | parallel |
+
+
+
+| enum class PHYSICAL_PROPERTY_NAME |
+
+--
+
+| porosity |
+| permeability |
 
 
 

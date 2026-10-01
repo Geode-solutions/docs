@@ -23,10 +23,10 @@ protected const uuid & create_corner()
 ```
 
 
-### CornersBuilder
+### create_corners_attribute
 
 ```cpp
-protected void CornersBuilder<dimension>(Corners<dimension> & corners)
+public void create_corners_attribute(std::string_view attribute_name, const uuid & attribute_id, AttributeValues<T> default_values, AttributeProperties properties)
 ```
 
 
@@ -47,6 +47,13 @@ public std::unique_ptr<PointSetBuilder<dimension>> corner_mesh_builder(const Cor
  Get a pointer to the builder of a Corner mesh
 
 **corner** [in] Corner in the model
+
+### CornersBuilder
+
+```cpp
+protected void CornersBuilder<dimension>(Corners<dimension> & corners)
+```
+
 
 ### set_corner_name
 

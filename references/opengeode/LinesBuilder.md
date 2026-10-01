@@ -23,10 +23,10 @@ protected const uuid & create_line()
 ```
 
 
-### LinesBuilder
+### create_lines_attribute
 
 ```cpp
-protected void LinesBuilder<dimension>(Lines<dimension> & lines)
+public void create_lines_attribute(std::string_view attribute_name, const uuid & attribute_id, AttributeValues<T> default_values, AttributeProperties properties)
 ```
 
 
@@ -47,6 +47,13 @@ public std::unique_ptr<EdgedCurveBuilder<dimension>> line_mesh_builder(const Lin
  Get a pointer to the builder of a Line mesh
 
 **line** [in] Line component to get the builder of
+
+### LinesBuilder
+
+```cpp
+protected void LinesBuilder<dimension>(Lines<dimension> & lines)
+```
+
 
 ### set_line_name
 

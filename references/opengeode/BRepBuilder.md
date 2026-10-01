@@ -14,12 +14,12 @@ const name = words.join('-');
 # class BRepBuilder
 
 
- Class managing modification of a BRep**extends** **extends** **extends** **extends** **extends** **extends** **extends** **extends** **extends** 
+ Class managing modification of a BRep**extends** **extends** **extends** **extends** **extends** **extends** **extends** **extends** **extends** **extends** 
 
 
 
 ```cpp
-Inherits from TopologyBuilder, CornersBuilder3D, LinesBuilder3D, SurfacesBuilder3D, BlocksBuilder3D, ModelBoundariesBuilder3D, CornerCollectionsBuilder3D, LineCollectionsBuilder3D, SurfaceCollectionsBuilder3D, BlockCollectionsBuilder3D, IdentifierBuilder
+Inherits from TopologyBuilder, CornersBuilder3D, LinesBuilder3D, SurfacesBuilder3D, BlocksBuilder3D, ModelBoundariesBuilder3D, CornerCollectionsBuilder3D, LineCollectionsBuilder3D, SurfaceCollectionsBuilder3D, BlockCollectionsBuilder3D, PhysicalPropertiesBuilder, IdentifierBuilder
 ```
 
 

@@ -14,12 +14,12 @@ const name = words.join('-');
 # class BRep
 
 
- A BRep (for Boundary Representation) is a 3D model composed of Corners, Lines, Surfaces and Blocks. This class provides classes for range-based iteration on Component boundaries and incidences.**extends** **extends** **extends** **extends** **extends** **extends** **extends** **extends** **extends** 
+ A BRep (for Boundary Representation) is a 3D model composed of Corners, Lines, Surfaces and Blocks. This class provides classes for range-based iteration on Component boundaries and incidences.**extends** **extends** **extends** **extends** **extends** **extends** **extends** **extends** **extends** **extends** 
 
 
 
 ```cpp
-Inherits from Topology, Corners3D, Lines3D, Surfaces3D, Blocks3D, ModelBoundaries3D, CornerCollections3D, LineCollections3D, SurfaceCollections3D, BlockCollections3D, Identifier
+Inherits from Topology, Corners3D, Lines3D, Surfaces3D, Blocks3D, ModelBoundaries3D, CornerCollections3D, LineCollections3D, SurfaceCollections3D, BlockCollections3D, PhysicalProperties, Identifier
 ```
 
 
