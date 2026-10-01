@@ -29,6 +29,8 @@ const name = words.join('-');
 * [VTIRasterImageOutput](VTIRasterImageOutput.md)
 * [VTIRegularGridInput](VTIRegularGridInput.md)
 * [VTIRegularGridOutput](VTIRegularGridOutput.md)
+* [VTKAttributeTypeList](VTKAttributeTypeList.md)
+* [VTKAttributeValue](VTKAttributeValue.md)
 * [VTKInputImpl](VTKInputImpl.md)
 * [VTKMeshInputImpl](VTKMeshInputImpl.md)
 * [VTKMeshOutputImpl](VTKMeshOutputImpl.md)
@@ -61,7 +63,14 @@ const name = words.join('-');
 ### write_point
 
 ```cpp
-void write_point(std::string & string, const Point<dimension> & point)
+void write_point(std::vector<double> & coordinates, const Point<dimension> & point)
+```
+
+
+### vtk_data_type
+
+```cpp
+const char * vtk_data_type()
 ```
 
 

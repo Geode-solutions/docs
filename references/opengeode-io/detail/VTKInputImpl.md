@@ -85,24 +85,10 @@ protected index_t read_attribute(const pugi::xml_node & piece, std::string_view 
 ```
 
 
-### read_integer_data_array
+### read_data_array
 
 ```cpp
-protected std::vector<T> read_integer_data_array(const pugi::xml_node & data)
-```
-
-
-### read_uint8_data_array
-
-```cpp
-protected std::vector<T> read_uint8_data_array(const pugi::xml_node & data)
-```
-
-
-### read_float_data_array
-
-```cpp
-protected std::vector<T> read_float_data_array(const pugi::xml_node & data)
+protected std::vector<T> read_data_array(const pugi::xml_node & data)
 ```
 
 
@@ -113,10 +99,31 @@ protected std::vector<Out> cast_to(absl::Span<const In> values)
 ```
 
 
+### missing_value
+
+```cpp
+protected static T missing_value()
+```
+
+
 ### build_attribute
 
 ```cpp
 protected void build_attribute(AttributeManager & manager, std::string_view name, absl::Span<const T> values, index_t nb_components, index_t offset)
+```
+
+
+### is_integer_type
+
+```cpp
+protected bool is_integer_type(std::string_view type)
+```
+
+
+### build_integer_attribute
+
+```cpp
+protected void build_integer_attribute(AttributeManager & manager, std::string_view name, absl::Span<const int64_t> values, index_t nb_components, index_t offset)
 ```
 
 
@@ -138,13 +145,6 @@ protected void read_data(const pugi::xml_node & point_data, index_t offset, Attr
 
 ```cpp
 protected std::string_view read_appended_data(const pugi::xml_node & data)
-```
-
-
-### decode
-
-```cpp
-protected std::vector<T> decode(std::string_view input)
 ```
 
 

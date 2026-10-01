@@ -65,10 +65,10 @@ protected void write_attributes(pugi::xml_node & attribute_node, const Attribute
 ```
 
 
-### write_attribute_header
+### write_data_array
 
 ```cpp
-protected pugi::xml_node write_attribute_header(pugi::xml_node & attribute_node, std::string_view name, local_index_t nb_components)
+protected pugi::xml_node write_data_array(pugi::xml_node & parent, std::string_view name, absl::Span<const T> values, local_index_t nb_components)
 ```
 
 
