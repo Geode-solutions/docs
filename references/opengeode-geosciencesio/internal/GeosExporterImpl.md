@@ -85,28 +85,7 @@ public void write_files()
 ### add_well_perforations
 
 ```cpp
-public void add_well_perforations(const PointSet3D & perforations)
-```
-
-
-### add_cell_property1d
-
-```cpp
-public void add_cell_property1d(std::string_view property_name)
-```
-
-
-### add_cell_property2d
-
-```cpp
-public void add_cell_property2d(std::string_view property_name)
-```
-
-
-### add_cell_property3d
-
-```cpp
-public void add_cell_property3d(std::string_view property_name)
+public void add_well_perforations(const PointSet3D & perforations, std::string_view name)
 ```
 
 
@@ -158,10 +137,10 @@ protected bool check_property_name(std::string_view property_name)
 ```
 
 
-### transfer_cell_properties
+### transfer_physical_properties
 
 ```cpp
-protected void transfer_cell_properties()
+protected void transfer_physical_properties()
 ```
 
 

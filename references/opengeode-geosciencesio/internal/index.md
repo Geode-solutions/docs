@@ -79,6 +79,13 @@ std::optional<PolygonEdge> get_one_border_edge(const SurfaceMesh3D & mesh)
 ```
 
 
+### transfer_block_attribute
+
+```cpp
+std::string transfer_block_attribute(const Model & model, SolidMesh3D & solid, const ModelToMeshMappings & model2solid, const PhysicalProperties::Info & property_info)
+```
+
+
 ### read_header
 
 ```cpp
