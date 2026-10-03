@@ -11,52 +11,24 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct AttributeProperties
+# struct AttributeTimeStep
 
 
- Struct holding Attribute flags used by the AttributeManager for updating/computing attribute values
+ One step of a time series: the attribute holding the values at the given time.
 
 
 
 ## Members
 
 ```cpp
-public bool assignable
+public double time
 
 ```
 
 ```cpp
-public bool interpolable
+public uuid attribute_id
 
 ```
-
-```cpp
-public bool transferable
-
-```
-
-```cpp
-public optional time
-
-```
-
-
-
-## Functions
-
-### AttributeProperties
-
-```cpp
-public void AttributeProperties()
-```
-
-
-### serialize
-
-```cpp
-public void serialize(Archive & serializer)
-```
-
 
 
 

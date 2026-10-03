@@ -83,6 +83,21 @@ public geode::uuid create_attribute(std::string_view attribute_name, AttributeVa
 ```
 
 
+### create_time_step_attribute
+
+```cpp
+public geode::uuid create_time_step_attribute(std::string_view attribute_name, double time, AttributeValues<T> default_values, AttributeProperties properties)
+```
+
+
+ Create one step of a time series. A time series is the set of attributes sharing a name and having a time in their AttributeProperties.
+
+**attribute_name** [in] The name of the series.
+
+**time** [in] The time of this step, stored in properties.time.
+
+**exception**if time is not finite, if an attribute with this name has no time, a different type or the same time.
+
 ### AttributeManager
 
 ```cpp
@@ -110,6 +125,24 @@ public AttributeManager & operator=(AttributeManager && other)
 public void ~AttributeManager()
 ```
 
+
+### time_steps
+
+```cpp
+public std::vector<AttributeTimeStep> time_steps(std::string_view attribute_name)
+```
+
+
+ Get the steps of the time series with the given name, sorted by time. Empty if no attribute with this name has a time.
+
+### time_series_names
+
+```cpp
+public std::vector<std::string> time_series_names()
+```
+
+
+ Get the distinct names of the attributes having a time.
 
 ### resize
 
@@ -251,6 +284,10 @@ public std::string_view attribute_type(const geode::uuid & )
 public void set_attribute_properties(geode::uuid attribute_id, const AttributeProperties & new_properties)
 ```
 
+
+ Replace all the properties of the attribute.
+
+**warning** The time is replaced too: passing properties with an empty time removes the attribute from its time series.
 
 ### clear
 
