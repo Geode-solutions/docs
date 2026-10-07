@@ -31,5 +31,7 @@ const name = words.join('-');
 * [OpenGeodeIOMeshLibrary](OpenGeodeIOMeshLibrary.md)
 * [OpenGeodeIOModelException](OpenGeodeIOModelException.md)
 * [OpenGeodeIOModelLibrary](OpenGeodeIOModelLibrary.md)
+* [OpenGeodeIOTimeSeriesException](OpenGeodeIOTimeSeriesException.md)
+* [OpenGeodeIOTimeSeriesLibrary](OpenGeodeIOTimeSeriesLibrary.md)
 
 
