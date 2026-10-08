@@ -41,11 +41,11 @@ public std::shared_ptr<AttributeBase> find_generic_attribute(const geode::uuid &
 ```
 
 
- Recover the non-typed/generic Attribute from the attribute name. This can be used when attribute type is not known in a context.
+ Recover the non-typed/generic Attribute from the attribute id. This can be used when attribute type is not known in a context.
 
-**name** [in] The associated attribute name to look for.
+**attribute_id** [in] The associated attribute id to look for.
 
-**return** nullptr if no attribute matches the given name.
+**return** nullptr if no attribute matches the given id.
 
 ### find_read_only_attribute
 
