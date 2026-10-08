@@ -163,7 +163,7 @@ protected void add_matrix_coefficient(index_t row_id, index_t column_id, double 
 ### add_surrounding_nodes_contribution
 
 ```cpp
-protected void add_surrounding_nodes_contribution(index_t row, index_t value_node_id, local_index_t derivative_axis_id, local_index_t nb_steps)
+protected bool add_surrounding_nodes_contribution(index_t row, index_t value_node_id, local_index_t derivative_axis_id, local_index_t nb_steps)
 ```
 
 
