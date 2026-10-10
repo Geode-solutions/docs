@@ -30,6 +30,5 @@ const name = words.join('-');
 * [OpenGeodeGeosciencesIOModelException](OpenGeodeGeosciencesIOModelException.md)
 * [OpenGeodeGeosciencesIOModelLibrary](OpenGeodeGeosciencesIOModelLibrary.md)
 * [StructuralModelGeosExporter](StructuralModelGeosExporter.md)
-* [uuid](uuid.md)
 
 

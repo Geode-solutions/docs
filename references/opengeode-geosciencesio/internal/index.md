@@ -26,6 +26,7 @@ const name = words.join('-');
 * [GeosExporterImpl](GeosExporterImpl.md)
 * [HeaderData](HeaderData.md)
 * [HorizonStackSKUAInput](HorizonStackSKUAInput.md)
+* [JSONGridInput](JSONGridInput.md)
 * [LSOInput](LSOInput.md)
 * [LSOOutput](LSOOutput.md)
 * [MLInput](MLInput.md)

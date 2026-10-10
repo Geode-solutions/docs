@@ -110,6 +110,13 @@ protected index_t initialize_solid_region_attribute()
 ```
 
 
+### initialize_surface_cells
+
+```cpp
+protected void initialize_surface_cells(index_t first_surface_region_id)
+```
+
+
 ### create_region_attribute_map
 
 ```cpp
@@ -130,6 +137,13 @@ protected void write_mesh_files(pugi::xml_node & root)
 ```
 
 
+### write_boundary_conditions
+
+```cpp
+protected void write_boundary_conditions(pugi::xml_node & root)
+```
+
+
 ### check_property_name
 
 ```cpp
@@ -141,6 +155,20 @@ protected bool check_property_name(std::string_view property_name)
 
 ```cpp
 protected void transfer_physical_properties()
+```
+
+
+### transfer_boundary_conditions
+
+```cpp
+protected void transfer_boundary_conditions()
+```
+
+
+### transfer_boundary_condition
+
+```cpp
+protected void transfer_boundary_condition(const uuid & attribute_id, std::string_view field_name, std::string_view name_prefix, std::optional<local_index_t> component)
 ```
 
 
