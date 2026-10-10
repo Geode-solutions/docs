@@ -266,10 +266,10 @@ std::optional<PolygonVertex> edge_tshape_apex(const TriangulatedSurface<dimensio
 ```
 
 
-### dummy_triangle
+### cut_along_path
 
 ```cpp
-Triangle<dimension> dummy_triangle()
+SurfaceCutPathInfo3D cut_along_path(BRepGeometricModifier & modifier, const Surface3D & surface, absl::Span<const GeometricSurfacePath3D> path_splits)
 ```
 
 
@@ -277,6 +277,13 @@ Triangle<dimension> dummy_triangle()
 
 ```cpp
 ALLOWED_COLLAPSE_VERTEX_VERTEX allowed_collapse_edge_by_constraints(const ModifiableTriangulatedSurface<dimension> & surface, const PolygonEdge & edge, const typename TriangulatedSurfaceConstraintModifier<dimension>::Constraints & constraints)
+```
+
+
+### compute_constant_metric_from_maximal_edge_length
+
+```cpp
+ConstantMetric3D compute_constant_metric_from_maximal_edge_length(const SolidMesh3D & mesh)
 ```
 
 
@@ -291,20 +298,6 @@ bool are_component_mesh_vertices_included(const ComponentMeshVertexInclusionQuer
 
 ```cpp
 H AbslHashValue(H h, const BlockElement<ElementId> & element)
-```
-
-
-### cut_along_path
-
-```cpp
-SurfaceCutPathInfo3D cut_along_path(BRepGeometricModifier & modifier, const Surface3D & surface, absl::Span<const GeometricSurfacePath3D> path_splits)
-```
-
-
-### compute_constant_metric_from_maximal_edge_length
-
-```cpp
-ConstantMetric3D compute_constant_metric_from_maximal_edge_length(const SolidMesh3D & mesh)
 ```
 
 
@@ -351,6 +344,13 @@ OwnerPlane mean_plane_around_points(const PointSet3D & mesh)
 
 ```cpp
 std::optional<SolidEdgeTShape> edge_tshape_apex(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge)
+```
+
+
+### dummy_triangle
+
+```cpp
+Triangle<dimension> dummy_triangle()
 ```
 
 
