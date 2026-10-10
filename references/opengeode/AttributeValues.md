@@ -22,7 +22,7 @@ public AttributeType default_value
 ```
 
 ```cpp
-public AttributeType no_value
+public std::optional<AttributeType> no_value
 
 ```
 
