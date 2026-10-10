@@ -26,9 +26,13 @@ public void BRepTimeAttributesTransfer(BRep & brep, absl::Span<const std::string
 ### write_step
 
 ```cpp
-public void write_step(double time, const SolidMesh3D & mesh, const SolidToBlocksMappings & mappings)
+public void write_step(double time, absl::Span<const std::unique_ptr<SolidMesh3D>> meshes, absl::Span<const SolidToBlocksMappings> mappings)
 ```
 
+
+ Write the attributes of all the datasets of a time step (e.g. one per GEOS region and per MPI rank) as time step attributes of the Block meshes. Attributes sharing a name across the datasets are merged into a single time step attribute per Block.
+
+**warning** The attributes of the given meshes are modified: those sharing a name are given the same id.
 
 
 

@@ -45,15 +45,18 @@ const name = words.join('-');
 * [VTPSurfaceOutputImpl](VTPSurfaceOutputImpl.md)
 * [VTPTriangulatedOutput](VTPTriangulatedOutput.md)
 * [VTUHybridInput](VTUHybridInput.md)
+* [VTUHybridOutputImpl](VTUHybridOutputImpl.md)
 * [VTUHybridOutput](VTUHybridOutput.md)
 * [VTUInputImpl](VTUInputImpl.md)
 * [VTUOutputImpl](VTUOutputImpl.md)
 * [VTUPolygonalInput](VTUPolygonalInput.md)
 * [VTUPolyhedralInput](VTUPolyhedralInput.md)
+* [VTUPolyhedralOutputImpl](VTUPolyhedralOutputImpl.md)
 * [VTUPolyhedralOutput](VTUPolyhedralOutput.md)
 * [VTUSolidInput](VTUSolidInput.md)
 * [VTUSurfaceInput](VTUSurfaceInput.md)
 * [VTUTetrahedralInput](VTUTetrahedralInput.md)
+* [VTUTetrahedralOutputImpl](VTUTetrahedralOutputImpl.md)
 * [VTUTetrahedralOutput](VTUTetrahedralOutput.md)
 * [VTUTriangulatedInput](VTUTriangulatedInput.md)
 
@@ -64,6 +67,13 @@ const name = words.join('-');
 
 ```cpp
 void write_point(std::vector<double> & coordinates, const Point<dimension> & point)
+```
+
+
+### vtk_polygon_type
+
+```cpp
+index_t vtk_polygon_type(index_t nb_vertices)
 ```
 
 

@@ -11,35 +11,21 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class VTUPolyhedralOutput
+# class VTUTetrahedralOutputImpl
 
 
 ```cpp
-Inherits from PolyhedralSolidOutput<3>
+Inherits from VTUOutputImpl<TetrahedralSolid>
 ```
 
 
 
 ## Functions
 
-### write
+### VTUTetrahedralOutputImpl
 
 ```cpp
-public std::vector<std::string> write(const PolyhedralSolid3D & solid)
-```
-
-
-### VTUPolyhedralOutput
-
-```cpp
-public void VTUPolyhedralOutput(std::string_view filename)
-```
-
-
-### extension
-
-```cpp
-public static std::string_view extension()
+public void VTUTetrahedralOutputImpl(std::string_view filename, const TetrahedralSolid3D & solid)
 ```
 
 

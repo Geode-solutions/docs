@@ -29,5 +29,26 @@ protected void VTUOutputImpl<Mesh>(std::string_view filename, const Mesh<3> & so
 ```
 
 
+### nb_additional_polygons
+
+```cpp
+protected index_t nb_additional_polygons()
+```
+
+
+### additional_polygon_vertices
+
+```cpp
+protected absl::Span<const index_t> additional_polygon_vertices(index_t )
+```
+
+
+### cell_attribute_manager
+
+```cpp
+protected const AttributeManager & cell_attribute_manager()
+```
+
+
 
 

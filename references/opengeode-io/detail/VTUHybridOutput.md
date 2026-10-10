@@ -22,6 +22,13 @@ Inherits from HybridSolidOutput<3>
 
 ## Functions
 
+### write
+
+```cpp
+public std::vector<std::string> write(const HybridSolid3D & solid)
+```
+
+
 ### VTUHybridOutput
 
 ```cpp
@@ -33,13 +40,6 @@ public void VTUHybridOutput(std::string_view filename)
 
 ```cpp
 public static std::string_view extension()
-```
-
-
-### write
-
-```cpp
-public std::vector<std::string> write(const HybridSolid3D & solid)
 ```
 
 
