@@ -24,6 +24,21 @@ public double move_ratio
 ```
 
 ```cpp
+public double translation_ratio
+
+```
+
+```cpp
+public double rotation_ratio
+
+```
+
+```cpp
+public double stretch_ratio
+
+```
+
+```cpp
 public DistributionDescription length
 
 ```

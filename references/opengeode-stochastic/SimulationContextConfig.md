@@ -22,7 +22,7 @@ public SpatialDomainConfig<ObjectType::dim> domain
 ```
 
 ```cpp
-public std::vector<ObjectSetDefinition<ObjectType>> sets
+public std::deque<ObjectSetDefinition<ObjectType>> sets
 
 ```
 

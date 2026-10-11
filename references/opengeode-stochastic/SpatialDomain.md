@@ -100,6 +100,13 @@ public double extended_n_volume()
 ```
 
 
+### buffer_size
+
+```cpp
+public double buffer_size()
+```
+
+
 ### extended_box
 
 ```cpp

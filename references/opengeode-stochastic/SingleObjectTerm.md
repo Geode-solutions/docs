@@ -36,6 +36,8 @@ public double total_log(const ObjectSets<ObjectType> & state)
 ```
 
 
+ Energy of the whole configuration: all the objects of the extended domain contribute (consistent with the delta_log_* functions).
+
 ### delta_log_add
 
 ```cpp

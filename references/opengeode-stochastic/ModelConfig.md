@@ -23,3 +23,23 @@ public vector terms
 
 
 
+## Functions
+
+### unique_term_name
+
+```cpp
+public std::string unique_term_name(std::string_view base_name)
+```
+
+
+ Returns base_name if no term uses it yet, otherwise base_name suffixed by the first free index (base_name_2, base_name_3...).
+
+### has_term
+
+```cpp
+public bool has_term(std::string_view name)
+```
+
+
+
+

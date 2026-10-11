@@ -40,6 +40,15 @@ public double neighborhood_searching_distance()
 ```
 
 
+### location
+
+```cpp
+public Point<Type::dim> location(const ObjectRef<Type> & object_a, const ObjectRef<Type> & object_b)
+```
+
+
+ Middle of the closest points (intersection point for crossing segments)
+
 ### compute
 
 ```cpp

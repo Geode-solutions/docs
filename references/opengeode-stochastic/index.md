@@ -33,8 +33,7 @@ const name = words.join('-');
 * [EnergyTermCollection](EnergyTermCollection.md)
 * [EnergyTerm](EnergyTerm.md)
 * [EuclideanDistanceCutoffConfig](EuclideanDistanceCutoffConfig.md)
-* [FractureNetworkDescription](FractureNetworkDescription.md)
-* [FractureSetDescription](FractureSetDescription.md)
+* [FractureProcessBuilder](FractureProcessBuilder.md)
 * [Gaussian](Gaussian.md)
 * [GibbsEnergy](GibbsEnergy.md)
 * [MetropolisHastings](MetropolisHastings.md)
@@ -62,8 +61,7 @@ const name = words.join('-');
 * [PairwiseTermConfig](PairwiseTermConfig.md)
 * [PairwiseTerm](PairwiseTerm.md)
 * [PointUniformSampler](PointUniformSampler.md)
-* [PoissonProcessDescription](PoissonProcessDescription.md)
-* [PoissonSetDescription](PoissonSetDescription.md)
+* [PoissonProcessBuilder](PoissonProcessBuilder.md)
 * [ProposalKernel](ProposalKernel.md)
 * [ProposalProbabilities](ProposalProbabilities.md)
 * [Proposal](Proposal.md)
@@ -85,8 +83,7 @@ const name = words.join('-');
 * [SpatialDomain](SpatialDomain.md)
 * [StatisticsTracker](StatisticsTracker.md)
 * [StepResult](StepResult.md)
-* [StraussInteractionDescription](StraussInteractionDescription.md)
-* [StraussProcessDescription](StraussProcessDescription.md)
+* [StraussProcessBuilder](StraussProcessBuilder.md)
 * [TargetStatisticConfig](TargetStatisticConfig.md)
 * [TargetStatistics](TargetStatistics.md)
 * [TruncatedGaussian](TruncatedGaussian.md)
@@ -102,13 +99,6 @@ const name = words.join('-');
 
 ## Functions
 
-### build_poisson_process
-
-```cpp
-SimulationContext<ObjectType> build_poisson_process(const PoissonProcessDescription<ObjectType> & description)
-```
-
-
 ### add_birth_death_change_moves
 
 ```cpp
@@ -120,55 +110,6 @@ void add_birth_death_change_moves(const geode::ObjectSetSampler<ObjectType> & sa
 
 ```cpp
 std::pair<std::vector<uuid>, absl::flat_hash_map<uuid, std::vector<uuid>>> pairwise_builder_initialize_interactions_helper(const std::vector<std::pair<uuid, uuid>> & interacting_sets)
-```
-
-
-### build_poisson_targeted_stat
-
-```cpp
-std::vector<geode::TargetStatisticConfig> build_poisson_targeted_stat(const PoissonProcessDescription<ObjectType> & description)
-```
-
-
-### build_energy_term_impl
-
-```cpp
-std::unique_ptr<EnergyTerm<ObjectType>> build_energy_term_impl(const SingleObjectTermConfig & cfg, const ObjectSets<ObjectType> & object_sets, const SpatialDomain<ObjectType::dim> & domain)
-```
-
-
-### build_energy_term_impl
-
-```cpp
-std::unique_ptr<EnergyTerm<ObjectType>> build_energy_term_impl(const PairwiseTermConfig & cfg, const ObjectSets<ObjectType> & object_sets, const SpatialDomain<ObjectType::dim> & domain)
-```
-
-
-### build_energy_term_impl
-
-```cpp
-std::unique_ptr<EnergyTerm<ObjectType>> build_energy_term_impl(const NewEnergyTypeConfig & , const ObjectSets<ObjectType> & , const SpatialDomain<ObjectType::dim> & )
-```
-
-
-### build_energy_term_impl
-
-```cpp
-std::unique_ptr<EnergyTerm<ObjectType>> build_energy_term_impl(const std::monostate & , const ObjectSets<ObjectType> & , const SpatialDomain<ObjectType::dim> & )
-```
-
-
-### build_energy_term
-
-```cpp
-std::unique_ptr<EnergyTerm<ObjectType>> build_energy_term(const EnergyTermConfig & cfg, const ObjectSets<ObjectType> & object_sets, const SpatialDomain<ObjectType::dim> & domain)
-```
-
-
-### build_model
-
-```cpp
-std::unique_ptr<Model<ObjectType>> build_model(const ModelConfig & config, const ObjectSets<ObjectType> & object_sets, const SpatialDomain<ObjectType::dim> & domain)
 ```
 
 
@@ -255,13 +196,6 @@ std::unique_ptr<SingleObjectFeature<ObjectType>> build_single_object_feature_imp
 ```
 
 
-### build_fractures_simulation_context
-
-```cpp
-FractureSimulationContext build_fractures_simulation_context(const FractureNetworkDescription & description)
-```
-
-
 ### build_pairwise_interaction
 
 ```cpp
@@ -290,13 +224,6 @@ std::unique_ptr<ProposalKernel<ObjectType>> create_birth_death_change_kernel(con
 ```
 
 
-### build_strauss_process
-
-```cpp
-SimulationContext<ObjectType> build_strauss_process(const StraussProcessDescription<ObjectType> & description)
-```
-
-
 ### build_single_object_feature
 
 ```cpp
@@ -304,10 +231,26 @@ std::unique_ptr<SingleObjectFeature<ObjectType>> build_single_object_feature(con
 ```
 
 
-### build_objectset_sampler
+### check_model_integrability
 
 ```cpp
-std::unique_ptr<ObjectSetSampler<OwnerSegment2D>> build_objectset_sampler(const SpatialDomain<2> & domain, const ObjectSamplerConfig<OwnerSegment2D> & config)
+void check_model_integrability(const ModelConfig & config)
+```
+
+
+ Throws if the model is not well defined (not integrable): an attractive pairwise term (gamma > 1) requires each of its object sets to have an intra-set hard-core (gamma = 0) at a strictly positive distance.
+
+### build_energy_term_impl
+
+```cpp
+std::unique_ptr<EnergyTerm<ObjectType>> build_energy_term_impl(const SingleObjectTermConfig & cfg, const ObjectSets<ObjectType> & object_sets, const SpatialDomain<ObjectType::dim> & domain)
+```
+
+
+### build_energy_term_impl
+
+```cpp
+std::unique_ptr<EnergyTerm<ObjectType>> build_energy_term_impl(const PairwiseTermConfig & cfg, const ObjectSets<ObjectType> & object_sets, const SpatialDomain<ObjectType::dim> & domain)
 ```
 
 
@@ -325,6 +268,13 @@ std::unique_ptr<ObjectSetSampler<Point2D>> build_objectset_sampler(const Spatial
 ```
 
 
+### build_energy_term_impl
+
+```cpp
+std::unique_ptr<EnergyTerm<ObjectType>> build_energy_term_impl(const NewEnergyTypeConfig & , const ObjectSets<ObjectType> & , const SpatialDomain<ObjectType::dim> & )
+```
+
+
 ### build_objectset_sampler
 
 ```cpp
@@ -332,24 +282,17 @@ std::unique_ptr<ObjectSetSampler<Point3D>> build_objectset_sampler(const Spatial
 ```
 
 
-### build_strauss_targeted_stat
+### build_energy_term_impl
 
 ```cpp
-std::vector<geode::TargetStatisticConfig> build_strauss_targeted_stat(const StraussProcessDescription<ObjectType> & description)
+std::unique_ptr<EnergyTerm<ObjectType>> build_energy_term_impl(const std::monostate & , const ObjectSets<ObjectType> & , const SpatialDomain<ObjectType::dim> & )
 ```
 
 
-### build_fractures_targeted_stat
+### build_energy_term
 
 ```cpp
-std::vector<geode::TargetStatisticConfig> build_fractures_targeted_stat(const FractureNetworkDescription & description)
-```
-
-
-### build_fractures_simulation_runner
-
-```cpp
-FractureSimulationRunner build_fractures_simulation_runner(const FractureNetworkDescription & description)
+std::unique_ptr<EnergyTerm<ObjectType>> build_energy_term(const EnergyTermConfig & cfg, const ObjectSets<ObjectType> & object_sets, const SpatialDomain<ObjectType::dim> & domain)
 ```
 
 
@@ -357,6 +300,20 @@ FractureSimulationRunner build_fractures_simulation_runner(const FractureNetwork
 
 ```cpp
 std::unique_ptr<SpatialDomain<dimension>> build_spatial_domain(const SpatialDomainConfig<dimension> & config)
+```
+
+
+### build_model
+
+```cpp
+std::unique_ptr<Model<ObjectType>> build_model(const ModelConfig & config, const ObjectSets<ObjectType> & object_sets, const SpatialDomain<ObjectType::dim> & domain)
+```
+
+
+### build_objectset_sampler
+
+```cpp
+std::unique_ptr<ObjectSetSampler<OwnerSegment2D>> build_objectset_sampler(const SpatialDomain<2> & domain, const ObjectSamplerConfig<OwnerSegment2D> & config)
 ```
 
 

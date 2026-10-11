@@ -36,6 +36,8 @@ public double total_log(const ObjectSets<ObjectType> & state)
 ```
 
 
+ Energy of the whole configuration: all the pairs of the extended domain interact (consistent with the delta_log_* functions).
+
 ### delta_log_add
 
 ```cpp
@@ -63,6 +65,8 @@ public double delta_log_change(const ObjectSets<ObjectType> & state, const Objec
 public double statistic(const ObjectSets<ObjectType> & state)
 ```
 
+
+ Interactions observed in the domain: pairs of the extended domain whose interaction location (e.g. the intersection point of two segments) is inside the domain, wherever the objects are anchored.
 
 
 

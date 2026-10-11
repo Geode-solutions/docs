@@ -30,6 +30,13 @@ public void add(const BoundingBox<dimension> & box, const ObjectId & obj_id)
 ```
 
 
+### update
+
+```cpp
+public void update(const BoundingBox<dimension> & old_box, const BoundingBox<dimension> & new_box, const ObjectId & obj_id)
+```
+
+
 ### ObjectNeighborhood
 
 ```cpp
@@ -62,13 +69,6 @@ public ObjectNeighborhood<dimension> & operator=(ObjectNeighborhood<dimension> &
 
 ```cpp
 public void ~ObjectNeighborhood<dimension>()
-```
-
-
-### update
-
-```cpp
-public void update(const BoundingBox<dimension> & old_box, const BoundingBox<dimension> & new_box, const ObjectId & obj_id)
 ```
 
 

@@ -32,7 +32,14 @@ public void SegmentLengthInsideBoxFeature(double characteristic_length)
 ### evaluate
 
 ```cpp
-public double evaluate(const OwnerSegment2D & segment, const SpatialDomain<2> & domain)
+public double evaluate(const OwnerSegment2D & segment)
+```
+
+
+### evaluate_inside_domain
+
+```cpp
+public double evaluate_inside_domain(const OwnerSegment2D & segment, const SpatialDomain<2> & domain)
 ```
 
 

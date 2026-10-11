@@ -67,6 +67,15 @@ public double neighborhood_searching_distance()
 ```
 
 
+### location
+
+```cpp
+public Point<Type::dim> location(const ObjectRef<Type> & object_a, const ObjectRef<Type> & object_b)
+```
+
+
+ Middle of the object centers
+
 ### compute
 
 ```cpp

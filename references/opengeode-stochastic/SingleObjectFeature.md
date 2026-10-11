@@ -54,7 +54,13 @@ public void SingleObjectFeature<ObjectType>()
 ### evaluate
 
 ```cpp
-public double evaluate(const ObjectType & obj, const SpatialDomain<ObjectType::dim> & domain)
+public double evaluate(const ObjectType & obj)
+```
+
+### evaluate_inside_domain
+
+```cpp
+public double evaluate_inside_domain(const ObjectType & obj, const SpatialDomain<ObjectType::dim> & domain)
 ```
 
 ### ~SingleObjectFeature

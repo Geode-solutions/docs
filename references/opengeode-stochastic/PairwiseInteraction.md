@@ -71,6 +71,14 @@ public double evaluate(const ObjectRef<Type> & object_a, const ObjectRef<Type> &
 public double neighborhood_searching_distance()
 ```
 
+### location
+
+```cpp
+public Point<Type::dim> location(const ObjectRef<Type> & object_a, const ObjectRef<Type> & object_b)
+```
+
+ Location of the interaction between two objects: the interaction is observed in a domain if its location is inside (statistics).
+
 ### compute
 
 ```cpp
