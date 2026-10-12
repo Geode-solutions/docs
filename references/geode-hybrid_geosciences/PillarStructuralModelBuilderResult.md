@@ -27,7 +27,7 @@ public BijectiveMapping unique_vertices_pillar_mapping
 ```
 
 ```cpp
-public BRepMappings conversion_mappings
+public ModelMappings conversion_mappings
 
 ```
 
