@@ -399,6 +399,13 @@ void copy_block_components(const ModelFrom & from, const ModelTo & model_to, typ
 ```
 
 
+### merge_mappings
+
+```cpp
+ModelGenericMapping merge_mappings(const ModelGenericMapping & mappings1, const ModelCopyMapping & mappings2)
+```
+
+
 ### register_all_components
 
 ```cpp
@@ -431,13 +438,6 @@ void copy_model_boundary_components(const ModelFrom & from, const ModelTo & mode
 
 ```cpp
 void copy_corner_collection_components(const ModelFrom & from, const ModelTo & model_to, typename ModelTo::Builder & builder_to, Mapping & mapping)
-```
-
-
-### merge_mappings
-
-```cpp
-ModelGenericMapping merge_mappings(const ModelGenericMapping & mappings1, const ModelCopyMapping & mappings2)
 ```
 
 
@@ -500,7 +500,7 @@ void build_model_boundaries(const BRep & model, BRepBuilder & builder)
 ### merge_mappings
 
 ```cpp
-SectionMappings merge_mappings(const SectionMappings & mappings1, const SectionMappings & mappings2)
+ModelMappings merge_mappings(const ModelMappings & mappings1, const ModelMappings & mappings2)
 ```
 
 
@@ -515,13 +515,6 @@ void transfer_section_meshes(const Section & section, SectionBuilder & section_b
 
 ```cpp
 void transfer_brep_collections(const BRep & old_brep, const BRep & new_brep, BRepBuilder & new_brep_builder, const ModelUnchangedComponentMapping & unchanged_components)
-```
-
-
-### merge_mappings
-
-```cpp
-BRepMappings merge_mappings(const BRepMappings & mappings1, const BRepMappings & mappings2)
 ```
 
 

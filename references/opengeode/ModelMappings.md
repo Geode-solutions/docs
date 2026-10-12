@@ -11,7 +11,7 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct ModelComponentMappings
+# struct ModelMappings
 
 
 ## Members
@@ -33,6 +33,16 @@ public ModelMapping removed_components
 
 ```cpp
 public ModelMapping unchanged_components
+
+```
+
+```cpp
+public ModelMapping mesh_element_mapping
+
+```
+
+```cpp
+public ModelMapping mesh_vertices_mapping
 
 ```
 

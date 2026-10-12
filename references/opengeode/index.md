@@ -42,9 +42,6 @@ const name = words.join('-');
 * [BRepComponentMeshEdges](BRepComponentMeshEdges.md)
 * [BRepComponentMeshPolygons](BRepComponentMeshPolygons.md)
 * [BRepInput](BRepInput.md)
-* [BRepMappings](BRepMappings.md)
-* [BRepMeshesElementMapping](BRepMeshesElementMapping.md)
-* [BRepMeshesVertexMapping](BRepMeshesVertexMapping.md)
 * [BRepOutput](BRepOutput.md)
 * [BRepRayTracing](BRepRayTracing.md)
 * [BRepTimeSeriesInput](BRepTimeSeriesInput.md)
@@ -177,14 +174,12 @@ const name = words.join('-');
 * [ModelBoundariesBuilder](ModelBoundariesBuilder.md)
 * [ModelBoundaries](ModelBoundaries.md)
 * [ModelBoundary](ModelBoundary.md)
-* [ModelComponentMappings](ModelComponentMappings.md)
 * [ModelComponentMeshEdges](ModelComponentMeshEdges.md)
 * [ModelComponentMeshPolygons](ModelComponentMeshPolygons.md)
 * [ModelConcatener](ModelConcatener.md)
 * [ModelMapping](ModelMapping.md)
+* [ModelMappings](ModelMappings.md)
 * [ModelMeshesAABBTree](ModelMeshesAABBTree.md)
-* [ModelMeshesElementMapping](ModelMeshesElementMapping.md)
-* [ModelMeshesVertexMapping](ModelMeshesVertexMapping.md)
 * [ModelToMeshMappings](ModelToMeshMappings.md)
 * [MultipleValueStorage](MultipleValueStorage.md)
 * [NNSearch](NNSearch.md)
@@ -310,9 +305,6 @@ const name = words.join('-');
 * [SectionComponentMeshPolygons](SectionComponentMeshPolygons.md)
 * [SectionExtruderOptions](SectionExtruderOptions.md)
 * [SectionInput](SectionInput.md)
-* [SectionMappings](SectionMappings.md)
-* [SectionMeshesElementMapping](SectionMeshesElementMapping.md)
-* [SectionMeshesVertexMapping](SectionMeshesVertexMapping.md)
 * [SectionOutput](SectionOutput.md)
 * [SectionRayTracing](SectionRayTracing.md)
 * [Section](Section.md)
@@ -368,9 +360,6 @@ const name = words.join('-');
 * [TriangulatedSurfacePointFunction](TriangulatedSurfacePointFunction.md)
 * [TriangulatedSurfaceScalarFunction](TriangulatedSurfaceScalarFunction.md)
 * [TriangulatedSurface](TriangulatedSurface.md)
-* [TypedModelMappings](TypedModelMappings.md)
-* [TypedModelMeshesElementMapping](TypedModelMeshesElementMapping.md)
-* [TypedModelMeshesVertexMapping](TypedModelMeshesVertexMapping.md)
 * [UnzipFile](UnzipFile.md)
 * [VariableAttribute](VariableAttribute.md)
 * [Vector](Vector.md)
@@ -2274,31 +2263,10 @@ void sort_unique(Container & container)
 
 **container** [in] container in which perform the search.
 
-### sort_unique
-
-```cpp
-void sort_unique(Container & container, Comparison comp)
-```
-
-
 ### tetrahedron_aspect_ratio
 
 ```cpp
 double tetrahedron_aspect_ratio(const Tetrahedron & tetra)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const PolyhedronFacetVertex & value)
-```
-
-
-### convert_surface_meshes_into_triangulated_surfaces
-
-```cpp
-void convert_surface_meshes_into_triangulated_surfaces(BRep & brep)
 ```
 
 
@@ -2323,20 +2291,6 @@ uuid compute_surface_scalar_function_gradient(const SurfaceMesh<dimension> & mes
 ```
 
 
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const PolyhedronFacetEdge & value)
-```
-
-
 ### block_volume
 
 ```cpp
@@ -2351,10 +2305,24 @@ PolyhedronVertices polyhedron_unique_vertices(const BRep & model, const Block3D 
 ```
 
 
+### sort_unique
+
+```cpp
+void sort_unique(Container & container, Comparison comp)
+```
+
+
 ### tetrahedron_volume_to_facet_ratio
 
 ```cpp
 double tetrahedron_volume_to_facet_ratio(const Tetrahedron & tetra)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const PolyhedronFacetVertex & value)
 ```
 
 
@@ -2487,6 +2455,13 @@ std::tuple<AABBTree2D, absl::FixedArray<uuid>> create_surfaces_aabb_tree(const S
 ### convert_surface_meshes_into_triangulated_surfaces
 
 ```cpp
+void convert_surface_meshes_into_triangulated_surfaces(BRep & brep)
+```
+
+
+### convert_surface_meshes_into_triangulated_surfaces
+
+```cpp
 void convert_surface_meshes_into_triangulated_surfaces(const Section & section, SectionBuilder & builder)
 ```
 
@@ -2516,6 +2491,20 @@ void set_section_active_coordinate_system(const Section & model, SectionBuilder 
 
 ```cpp
 ComponentMeshVertexGeneric<dimension> component_mesh_vertex_generic(absl::Span<const absl::Span<const ComponentMeshVertex>> unique_vertices, const ComponentID & component)
+```
+
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const PolyhedronFacetEdge & value)
 ```
 
 
@@ -2786,6 +2775,20 @@ SIDE point_side_to_segment(const Point2D & point, const Segment2D & segment)
 
  Return the point side to a segment.
 
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
+```
+
+
 ### polygon_unique_vertices
 
 ```cpp
@@ -2992,20 +2995,6 @@ SegmentSegmentIntersection colinear_segment_segment_intersection_detection(const
  Detect the configuration between two 2D colinear segments
 
 **return** the position of the intersection on the two segments. Returns parallel-pallel if there is segment overlap
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
-```
-
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
-```
-
 
 ### convert_grid_into_densified_triangulated_surface
 
@@ -3301,6 +3290,74 @@ BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Surface3D &
 ```
 
 
+### component_mesh_edges
+
+```cpp
+BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge)
+```
+
+
+### segment_triangle_intersection
+
+```cpp
+IntersectionResult<Point3D> segment_triangle_intersection(const Segment3D & segment, const Triangle3D & triangle)
+```
+
+
+ Compute the intersection of a segment and a triangle
+
+**return** an optional of the intersection point.
+
+**warning** if the segment is included in the triangle plane nothing is returned
+
+### block_mesh_polyhedra_from_surface_polygon
+
+```cpp
+PolyhedraAroundFacet block_mesh_polyhedra_from_surface_polygon(const BRep & model, const Block3D & block, const Surface3D & surface, index_t polygon_id)
+```
+
+
+### block_vertices_from_surface_polygon
+
+```cpp
+absl::InlinedVector<BlockPolyhedronFacet, 2> block_vertices_from_surface_polygon(const BRep & model, const Block3D & block, const Surface3D & surface, index_t polygon_id)
+```
+
+
+### line_triangle_intersection
+
+```cpp
+IntersectionResult<Point3D> line_triangle_intersection(const InfiniteLine3D & line, const Triangle3D & triangle)
+```
+
+
+ Compute the intersection of a line and a triangle
+
+**return** an optional of the intersection point.
+
+**warning** if the segment is included in the triangle plane nothing is returned
+
+### oriented_block_vertices_from_surface_polygon
+
+```cpp
+BlockPolyhedraFacetVertices oriented_block_vertices_from_surface_polygon(const BRep & model, const Block3D & block, const Surface3D & surface, index_t polygon_id)
+```
+
+
+### point_triangle_distance
+
+```cpp
+std::tuple<double, Point3D> point_triangle_distance(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### point_triangle_distance
+
+```cpp
+std::tuple<double, Point2D> point_triangle_distance(const Point2D & point, const Triangle2D & triangle)
+```
+
+
 ### point_triangle_signed_distance
 
 ```cpp
@@ -3313,13 +3370,6 @@ std::tuple<double, Point3D> point_triangle_signed_distance(const Point3D & point
 **return** a tuple containing: - the smallest distance. - the closest point on the triangle.
 
 **details** the sign is given by the triangle normal (positive if in the same plane).
-
-### component_mesh_edges
-
-```cpp
-BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge)
-```
-
 
 ### line_triangle_distance
 
@@ -3354,26 +3404,6 @@ std::tuple<double, Point3D, Point3D> triangle_triangle_distance(const Triangle3D
 
 **return** a tuple containing: - the smallest distance. - the closest point on the first triangle. - the closest point on the second triangle.
 
-### segment_triangle_intersection
-
-```cpp
-IntersectionResult<Point3D> segment_triangle_intersection(const Segment3D & segment, const Triangle3D & triangle)
-```
-
-
- Compute the intersection of a segment and a triangle
-
-**return** an optional of the intersection point.
-
-**warning** if the segment is included in the triangle plane nothing is returned
-
-### block_mesh_polyhedra_from_surface_polygon
-
-```cpp
-PolyhedraAroundFacet block_mesh_polyhedra_from_surface_polygon(const BRep & model, const Block3D & block, const Surface3D & surface, index_t polygon_id)
-```
-
-
 ### triangle_triangle_distance_between_non_conformal_parts
 
 ```cpp
@@ -3386,33 +3416,6 @@ std::optional<std::tuple<double, Point3D, Point3D>> triangle_triangle_distance_b
 **details** if the two triangles are the same, return nullopt. Only non conformal part of triangles are considered in computation of distance, i.e. if the triangles have a common point, it iterates on opposite segments, if the triangles have a common edge, it computes distance with
 
 **return** a tuple containing: - the smallest distance. - the closest point on the first triangle. - the closest point on the second triangle.
-
-### block_vertices_from_surface_polygon
-
-```cpp
-absl::InlinedVector<BlockPolyhedronFacet, 2> block_vertices_from_surface_polygon(const BRep & model, const Block3D & block, const Surface3D & surface, index_t polygon_id)
-```
-
-
-### line_triangle_intersection
-
-```cpp
-IntersectionResult<Point3D> line_triangle_intersection(const InfiniteLine3D & line, const Triangle3D & triangle)
-```
-
-
- Compute the intersection of a line and a triangle
-
-**return** an optional of the intersection point.
-
-**warning** if the segment is included in the triangle plane nothing is returned
-
-### oriented_block_vertices_from_surface_polygon
-
-```cpp
-BlockPolyhedraFacetVertices oriented_block_vertices_from_surface_polygon(const BRep & model, const Block3D & block, const Surface3D & surface, index_t polygon_id)
-```
-
 
 ### point_tetrahedron_distance
 
@@ -3576,31 +3579,6 @@ IntersectionResult<absl::InlinedVector<Point3D, 2>> plane_circle_intersection(co
 
 **return** an optional of the intersection points.
 
-### plane_plane_intersection
-
-```cpp
-IntersectionResult<OwnerInfiniteLine3D> plane_plane_intersection(const Plane & plane0, const Plane & plane1)
-```
-
-
- Compute the intersection between two planes
-
-**return** an optional of the intersection line.
-
-### point_triangle_distance
-
-```cpp
-std::tuple<double, Point3D> point_triangle_distance(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### point_triangle_distance
-
-```cpp
-std::tuple<double, Point2D> point_triangle_distance(const Point2D & point, const Triangle2D & triangle)
-```
-
-
 ### point_ball_distance
 
 ```cpp
@@ -3613,6 +3591,17 @@ std::tuple<double, Point<dimension>> point_ball_distance(const Point<dimension> 
 **return** a tuple containing: - the smallest distance. - the closest point on the ball.
 
 **details** Result is always positive or null. If point is inside the ball, the returned distance is 0.
+
+### plane_plane_intersection
+
+```cpp
+IntersectionResult<OwnerInfiniteLine3D> plane_plane_intersection(const Plane & plane0, const Plane & plane1)
+```
+
+
+ Compute the intersection between two planes
+
+**return** an optional of the intersection line.
 
 ### point_circle_distance
 
