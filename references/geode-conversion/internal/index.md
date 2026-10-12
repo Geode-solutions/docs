@@ -56,7 +56,7 @@ std::vector<uuid> remove_obsolete_model_boundaries(const BRep & model, BRepBuild
 ### identify_surfaces
 
 ```cpp
-void identify_surfaces(const Model & model, typename Model::Builder & builder, const typename detail::CornersLinesBuilder<Model> & wireframe, typename TypedModelMappings<Model>::type & mappings, absl::Span<const uuid> old_surface_ids, bool merge_components_if_no_boundaries)
+void identify_surfaces(const Model & model, typename Model::Builder & builder, const typename detail::CornersLinesBuilder<Model> & wireframe, ModelMappings & mappings, absl::Span<const uuid> old_surface_ids, bool merge_components_if_no_boundaries)
 ```
 
 
@@ -76,7 +76,7 @@ std::optional<uuid> build_new_model_boundary(const Model & model, typename Model
 ### identify_blocks
 
 ```cpp
-void identify_blocks(const BRep & model, BRepBuilder & builder, BRepMappings & mappings)
+void identify_blocks(const BRep & model, BRepBuilder & builder, ModelMappings & mappings)
 ```
 
 

@@ -22,7 +22,7 @@ public SectionSharpCollections sharp_collections
 ```
 
 ```cpp
-public SectionMappings mappings
+public ModelMappings mappings
 
 ```
 

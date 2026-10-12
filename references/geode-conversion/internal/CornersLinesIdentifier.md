@@ -85,14 +85,14 @@ protected typename Model::Builder & model_builder()
 ### mappings
 
 ```cpp
-protected typename geode::TypedModelMappings<Model>::type & mappings()
+protected geode::ModelMappings & mappings()
 ```
 
 
 ### steal_mappings
 
 ```cpp
-protected typename geode::TypedModelMappings<Model>::type && steal_mappings()
+protected geode::ModelMappings && steal_mappings()
 ```
 
 

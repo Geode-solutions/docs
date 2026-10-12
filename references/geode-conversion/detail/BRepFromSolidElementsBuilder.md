@@ -52,7 +52,7 @@ public std::pair<VertexIndexMapping, IndexToModelMeshElementsMapping> build_brep
 ### build_brep_with_block_mesh
 
 ```cpp
-public std::pair<VertexIndexMapping, IndexToBRepMeshElementsMapping> build_brep_with_block_mesh()
+public std::pair<VertexIndexMapping, IndexToModelMeshElementsMapping> build_brep_with_block_mesh()
 ```
 
 

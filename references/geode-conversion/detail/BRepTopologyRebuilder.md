@@ -65,7 +65,7 @@ public void remove_conformity_on_model_surface(const Surface3D & surface)
 ### rebuild
 
 ```cpp
-public std::tuple<BRep, BRepMappings> rebuild()
+public std::tuple<BRep, ModelMappings> rebuild()
 ```
 
 

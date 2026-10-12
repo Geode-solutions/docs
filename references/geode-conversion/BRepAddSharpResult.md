@@ -22,7 +22,7 @@ public BRepSharpCollections sharp_collections
 ```
 
 ```cpp
-public BRepMappings mappings
+public ModelMappings mappings
 
 ```
 

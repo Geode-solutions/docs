@@ -42,7 +42,7 @@ public void ~ModelBuilderFromMeshes<Model>()
 ### build_model
 
 ```cpp
-public TypedModelMappings build_model()
+public ModelMappings build_model()
 ```
 
 

@@ -24,17 +24,14 @@ const name = words.join('-');
 ## Records
 
 * [BRepAddSharpResult](BRepAddSharpResult.md)
-* [BRepMappings](BRepMappings.md)
 * [BRepSharpCollections](BRepSharpCollections.md)
 * [BlockRelationships](BlockRelationships.md)
 * [GeodeConversionException](GeodeConversionException.md)
 * [GeodeConversionModelException](GeodeConversionModelException.md)
 * [GeodeConversionModelLibrary](GeodeConversionModelLibrary.md)
-* [IndexToBRepMeshElementsMapping](IndexToBRepMeshElementsMapping.md)
-* [IndexToModelMeshElementsMapping](IndexToModelMeshElementsMapping.md)
-* [IndexToSectionMeshElementsMapping](IndexToSectionMeshElementsMapping.md)
 * [ModelBuildTopologyParameters](ModelBuildTopologyParameters.md)
 * [ModelBuilderFromUniqueVertices](ModelBuilderFromUniqueVertices.md)
+* [ModelMappings](ModelMappings.md)
 * [ModelSharpCollections](ModelSharpCollections.md)
 * [SectionAddSharpResult](SectionAddSharpResult.md)
 * [SectionSharpCollections](SectionSharpCollections.md)
@@ -46,14 +43,21 @@ const name = words.join('-');
 ### add_brep_segmentation
 
 ```cpp
-BRepMappings add_brep_segmentation(BRep & brep)
+ModelMappings add_brep_segmentation(BRep & brep)
 ```
 
 
 ### remove_brep_segmentation
 
 ```cpp
-BRepMappings remove_brep_segmentation(BRep & brep)
+ModelMappings remove_brep_segmentation(BRep & brep)
+```
+
+
+### build_model_component_mapping
+
+```cpp
+ModelGenericMapping build_model_component_mapping(const Model & out_model, const ModelMeshesElementMapping & mesh_element_mappings)
 ```
 
 
@@ -81,7 +85,7 @@ std::vector<uuid> build_blocks(const BRep & brep, BRepBuilder & builder, absl::S
 ### convert_meshes_into_section
 
 ```cpp
-std::tuple<Section, SectionMappings> convert_meshes_into_section(absl::Span<const std::reference_wrapper<const PointSet2D>> corners, absl::Span<const std::reference_wrapper<const EdgedCurve2D>> curves, absl::Span<const std::reference_wrapper<const SurfaceMesh2D>> surfaces)
+std::tuple<Section, ModelMappings> convert_meshes_into_section(absl::Span<const std::reference_wrapper<const PointSet2D>> corners, absl::Span<const std::reference_wrapper<const EdgedCurve2D>> curves, absl::Span<const std::reference_wrapper<const SurfaceMesh2D>> surfaces)
 ```
 
 
@@ -122,7 +126,7 @@ void add_breps_block_mapping_case_surjective(const BRep & initial_brep, const BR
 ### convert_meshes_into_brep
 
 ```cpp
-std::tuple<BRep, BRepMappings> convert_meshes_into_brep(absl::Span<const std::reference_wrapper<const PointSet3D>> corners, absl::Span<const std::reference_wrapper<const EdgedCurve3D>> curves, absl::Span<const std::reference_wrapper<const SurfaceMesh3D>> surfaces)
+std::tuple<BRep, ModelMappings> convert_meshes_into_brep(absl::Span<const std::reference_wrapper<const PointSet3D>> corners, absl::Span<const std::reference_wrapper<const EdgedCurve3D>> curves, absl::Span<const std::reference_wrapper<const SurfaceMesh3D>> surfaces)
 ```
 
 
@@ -135,13 +139,6 @@ std::tuple<BRep, BRepMappings> convert_meshes_into_brep(absl::Span<const std::re
 **surfaces** [in] Input surfaces
 
 **return** the BRep and the mapping between input corners, curves and surfaces and Corner, Line and Surface uuid. One input surface could contribute to several Surfaces depending on the merging result.
-
-### build_model_component_mapping
-
-```cpp
-ModelGenericMapping build_model_component_mapping(const Model & out_model, const ModelMeshesElementMapping & mesh_element_mappings)
-```
-
 
 ### convert_surface_into_section_from_attribute
 
@@ -168,7 +165,7 @@ void add_breps_block_mapping_case_multivaluate(const BRep & initial_brep, const 
 ### remove_sharp_features
 
 ```cpp
-SectionMappings remove_sharp_features(Section & model, const SectionSharpCollections & sharp_collections)
+ModelMappings remove_sharp_features(Section & model, const SectionSharpCollections & sharp_collections)
 ```
 
 
@@ -176,21 +173,14 @@ SectionMappings remove_sharp_features(Section & model, const SectionSharpCollect
 
 **model** [in] Section
 
-### build_brep_component_mapping
-
-```cpp
-ModelGenericMapping build_brep_component_mapping(const BRep & out_brep, const BRepMeshesElementMapping & mesh_element_mappings)
-```
-
-
 ### convert_solid_elements_into_brep
 
 ```cpp
-std::tuple<BRep, VertexIndexMapping, IndexToBRepMeshElementsMapping> convert_solid_elements_into_brep(SolidMesh3D & solid, absl::Span<const index_t> corner_vertices, absl::Span<const index_t> line_edges, absl::Span<const index_t> surface_facets)
+std::tuple<BRep, VertexIndexMapping, IndexToModelMeshElementsMapping> convert_solid_elements_into_brep(SolidMesh3D & solid, absl::Span<const index_t> corner_vertices, absl::Span<const index_t> line_edges, absl::Span<const index_t> surface_facets)
 ```
 
 
- Convert a SolidMesh3D into a BRep without meshed Blocks. This function uses the given solid points, edges and facets to define BRep corners, lines and surfaces. Returns VertexIndexMappings mapping the indices of the vertices in the given solid to the corresponding unique vertices in the output model, and IndexToBRepMeshElementsMapping mapping the indices of the given corner, line and surface elements to their elements in the output model. The attributes on the vertices and polyhedra of the given solid will be transfered to the corresponding blocks in the output model.
+ Convert a SolidMesh3D into a BRep without meshed Blocks. This function uses the given solid points, edges and facets to define BRep corners, lines and surfaces. Returns VertexIndexMappings mapping the indices of the vertices in the given solid to the corresponding unique vertices in the output model, and IndexToModelMeshElementsMapping mapping the indices of the given corner, line and surface elements to their elements in the output model. The attributes on the vertices and polyhedra of the given solid will be transfered to the corresponding blocks in the output model.
 
 **solid** [in] Input solid
 
@@ -217,7 +207,7 @@ BRepAddSharpResult add_sharp_features(BRep & model, double max_angle)
 ### remove_sharp_features
 
 ```cpp
-BRepMappings remove_sharp_features(BRep & model, const BRepSharpCollections & sharp_collections)
+ModelMappings remove_sharp_features(BRep & model, const BRepSharpCollections & sharp_collections)
 ```
 
 

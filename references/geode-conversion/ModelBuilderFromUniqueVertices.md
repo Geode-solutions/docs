@@ -42,7 +42,7 @@ public void ~ModelBuilderFromUniqueVertices<Model>()
 ### update_model
 
 ```cpp
-public TypedModelMappings update_model()
+public ModelMappings update_model()
 ```
 
 
