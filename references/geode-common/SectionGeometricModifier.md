@@ -18,12 +18,6 @@ const name = words.join('-');
 
 AdvancedSectionMeshModifiers
 
-CleanElementsMappings
-
-CleanMappings
-
-CleanVerticesMappings
-
 SectionCollapsePolygonEdgeInfo
 
 SectionSplitPolygonEdgeInfo

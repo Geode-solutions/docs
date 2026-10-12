@@ -11,38 +11,18 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct CleanElementsMappings
+# struct ModelCleanMappings
 
 
 ## Members
 
 ```cpp
-public linked_hash_map lines
+public ModelCleanVerticesMappings vertices
 
 ```
 
 ```cpp
-public linked_hash_map surfaces
-
-```
-
-```cpp
-public linked_hash_map blocks
-
-```
-
-```cpp
-public linked_hash_map surface_edges
-
-```
-
-```cpp
-public linked_hash_map block_edges
-
-```
-
-```cpp
-public linked_hash_map block_facets
+public ModelCleanElementsMappings elements
 
 ```
 

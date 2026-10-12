@@ -32,12 +32,6 @@ BRepSwapEdgeInfo
 
 BRepSwapFacetInfo
 
-CleanElementsMappings
-
-CleanMappings
-
-CleanVerticesMappings
-
 
 
 ## Functions

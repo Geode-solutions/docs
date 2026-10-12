@@ -11,18 +11,13 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct CleanVerticesMappings
+# struct ModelCleanVerticesMappings
 
 
 ## Members
 
 ```cpp
-public linked_hash_map lines
-
-```
-
-```cpp
-public linked_hash_map surfaces
+public ModelMapping components
 
 ```
 
