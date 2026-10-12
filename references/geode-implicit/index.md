@@ -23,7 +23,6 @@ const name = words.join('-');
 
 ## Records
 
-* [BRepMappings](BRepMappings.md)
 * [BoxModelFromTopography](BoxModelFromTopography.md)
 * [ClosedSurfacesFromCurves](ClosedSurfacesFromCurves.md)
 * [ComputationGrid](ComputationGrid.md)
@@ -56,6 +55,7 @@ const name = words.join('-');
 * [ImplicitStructuralModelHorizonExpliciter](ImplicitStructuralModelHorizonExpliciter.md)
 * [ImplicitationParameters](ImplicitationParameters.md)
 * [ModelComponentToSectionComponentMapping](ModelComponentToSectionComponentMapping.md)
+* [ModelMappings](ModelMappings.md)
 * [ScalarFunctionComputer](ScalarFunctionComputer.md)
 * [SingleSurfaceFromVertices](SingleSurfaceFromVertices.md)
 * [SolidMeshScalarFunctionExpliciter](SolidMeshScalarFunctionExpliciter.md)

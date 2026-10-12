@@ -47,7 +47,7 @@ public void explicit_all_horizons()
 ### build
 
 ```cpp
-public BRepMappings build()
+public ModelMappings build()
 ```
 
 

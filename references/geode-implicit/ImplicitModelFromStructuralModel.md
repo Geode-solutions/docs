@@ -82,7 +82,7 @@ public void set_stratigraphic_unit_scalar_function(const StratigraphicUnit3D & s
 ### build
 
 ```cpp
-public std::tuple<ImplicitStructuralModel, BRepMappings> build()
+public std::tuple<ImplicitStructuralModel, ModelMappings> build()
 ```
 
 
