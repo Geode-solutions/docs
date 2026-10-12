@@ -11,17 +11,37 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct BRepMappings
+# struct ModelMappings
 
 ## Members
 
 ```cpp
-public BRepMeshesElementMapping mesh_element_mapping
+public ModelMapping component_mapping
 
 ```
 
 ```cpp
-public BRepMeshesVertexMapping mesh_vertices_mapping
+public ModelMapping added_components
+
+```
+
+```cpp
+public ModelMapping removed_components
+
+```
+
+```cpp
+public ModelMapping unchanged_components
+
+```
+
+```cpp
+public ModelMapping mesh_element_mapping
+
+```
+
+```cpp
+public ModelMapping mesh_vertices_mapping
 
 ```
 

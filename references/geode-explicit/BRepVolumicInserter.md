@@ -68,7 +68,7 @@ public void add_scalar_isovalues(const uuid & scalar_function_id, absl::Span<con
 ### build
 
 ```cpp
-public BRepMappings build()
+public ModelMappings build()
 ```
 
 

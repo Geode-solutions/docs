@@ -25,7 +25,7 @@ Inherits from GeodeExplicitBRepException
 ### BRepExplicitModelerRemainingException
 
 ```cpp
-public void BRepExplicitModelerRemainingException(BRep && brep, BRepMappings && mappings, const ElementGraph & remaining_elements)
+public void BRepExplicitModelerRemainingException(BRep && brep, ModelMappings && mappings, const ElementGraph & remaining_elements)
 ```
 
 
@@ -46,7 +46,7 @@ public const BRep & brep()
 ### mappings
 
 ```cpp
-public const BRepMappings & mappings()
+public const ModelMappings & mappings()
 ```
 
 
@@ -60,7 +60,7 @@ public const MeshElements & remaining_elements()
 ### release_brep_and_mappings
 
 ```cpp
-public std::tuple<BRep, BRepMappings> release_brep_and_mappings()
+public std::tuple<BRep, ModelMappings> release_brep_and_mappings()
 ```
 
 

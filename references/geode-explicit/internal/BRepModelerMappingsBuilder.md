@@ -33,7 +33,7 @@ public void ~BRepModelerMappingsBuilder()
 ### build_mappings_from_background
 
 ```cpp
-public BRepMappings build_mappings_from_background(const SolidElementsIndices & model_elements, const VertexIndexMapping & vertex_index_mappings, const IndexToModelMeshElementsMapping & index_to_meshes_mappings)
+public ModelMappings build_mappings_from_background(const SolidElementsIndices & model_elements, const VertexIndexMapping & vertex_index_mappings, const IndexToModelMeshElementsMapping & index_to_meshes_mappings)
 ```
 
 

@@ -84,7 +84,7 @@ public void paint_volume(const uuid & volume_uuid, absl::Span<const uuid> boundi
 ### build
 
 ```cpp
-public std::tuple<BRep, BRepMappings> build()
+public std::tuple<BRep, ModelMappings> build()
 ```
 
 
@@ -93,7 +93,7 @@ public std::tuple<BRep, BRepMappings> build()
 ### build_painted_volumes
 
 ```cpp
-public std::tuple<BRep, BRepMappings> build_painted_volumes()
+public std::tuple<BRep, ModelMappings> build_painted_volumes()
 ```
 
 

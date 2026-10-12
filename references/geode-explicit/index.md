@@ -24,7 +24,6 @@ const name = words.join('-');
 
 * [BRepExplicitModelerRemainingException](BRepExplicitModelerRemainingException.md)
 * [BRepExplicitModeler](BRepExplicitModeler.md)
-* [BRepMappings](BRepMappings.md)
 * [BRepSolidModeler](BRepSolidModeler.md)
 * [BRepVolumicInserter](BRepVolumicInserter.md)
 * [ElementGraph](ElementGraph.md)
@@ -39,6 +38,7 @@ const name = words.join('-');
 * [GeodeExplicitWorkflowsLibrary](GeodeExplicitWorkflowsLibrary.md)
 * [MeshElements](MeshElements.md)
 * [Meshes](Meshes.md)
+* [ModelMappings](ModelMappings.md)
 * [SectionExplicitModeler](SectionExplicitModeler.md)
 * [uuid](uuid.md)
 
