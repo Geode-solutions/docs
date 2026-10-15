@@ -35,18 +35,6 @@ public static const index_t MAX_NB_GRID_CELLS
 
 
 
-# class ScalarFunctionComputer
-
-
-## Members
-
-```cpp
-public static const index_t MAX_NB_GRID_CELLS
-
-```
-
-
-
 ## Functions
 
 ### ScalarFunctionComputer
@@ -139,6 +127,18 @@ protected const DataConstraintsManager<dimension> & data_constraints()
 protected bool rasterization_deactivates_too_many_cells(const CutGrid<dimension> & grid, const absl::flat_hash_set<typename CutGrid<dimension>::CellIndices> & rasterized_cells)
 ```
 
+
+
+
+# class ScalarFunctionComputer
+
+
+## Members
+
+```cpp
+public static const index_t MAX_NB_GRID_CELLS
+
+```
 
 
 
