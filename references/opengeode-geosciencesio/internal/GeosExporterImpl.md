@@ -144,6 +144,13 @@ protected void write_boundary_conditions(pugi::xml_node & root)
 ```
 
 
+### write_boundary_functions
+
+```cpp
+protected void write_boundary_functions(pugi::xml_node & root)
+```
+
+
 ### check_property_name
 
 ```cpp
@@ -189,6 +196,13 @@ protected std::string write_solid_file()
 
 ```cpp
 protected void write_well_perforation_file()
+```
+
+
+### write_boundary_table_files
+
+```cpp
+protected void write_boundary_table_files()
 ```
 
 
