@@ -699,13 +699,6 @@ EdgedCurveSplitEdgeValidity split_edge_validity(const EdgedCurve<dimension> & me
 ```
 
 
-### does_split_edge_improve_metric
-
-```cpp
-bool does_split_edge_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacetEdge & edge, const Point3D & split_point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
-```
-
-
 ### cut_along_path
 
 ```cpp
@@ -741,10 +734,10 @@ SurfaceCutPathInfo<2> cut_along_path(const TriangulatedSurface2D & surface, Tria
 ```
 
 
-### does_split_facet_improve_metric
+### does_split_edge_improve_metric
 
 ```cpp
-bool does_split_facet_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacet & facet, const Point3D & apex_point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+bool does_split_edge_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacetEdge & edge, const Point3D & split_point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
 ```
 
 
@@ -769,17 +762,17 @@ bool does_swap_edge_improve_metric(const BRep & brep, const Block3D & block, con
 ```
 
 
-### does_move_point_improve_metric
-
-```cpp
-bool does_move_point_improve_metric(const TetrahedralSolid3D & solid, const index_t point_to_relocate_local_id, const Point3D & new_point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
-```
-
-
 ### is_split_edge_valid
 
 ```cpp
 bool is_split_edge_valid(const Section & section, const Line2D & line, index_t edge, const Point2D & point)
+```
+
+
+### does_split_facet_improve_metric
+
+```cpp
+bool does_split_facet_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacet & facet, const Point3D & apex_point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
 ```
 
 
@@ -804,13 +797,6 @@ bool does_swap_facet_improve_metric(const BRep & brep, const Block3D & block, co
 ```
 
 
-### does_collapse_edge_improve_metric
-
-```cpp
-bool does_collapse_edge_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacetEdge & edge, const local_index_t apex, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
-```
-
-
 ### minimal_triangle_internal_distance
 
 ```cpp
@@ -828,6 +814,13 @@ SectionSplitEdgeValidity split_edge_validity(const Section & section, const Surf
 
 ```cpp
 void optimize_triangulated_surface_elements(TriangulatedSurfaceConstraintModifier<dimension> & constraint_modifier, const TriangulatedSurfaceInternalDistanceImprovementSimulator<dimension> & improvement_simulator, index_t first_element)
+```
+
+
+### does_move_point_improve_metric
+
+```cpp
+bool does_move_point_improve_metric(const TetrahedralSolid3D & solid, const index_t point_to_relocate_local_id, const Point3D & new_point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
 ```
 
 
@@ -854,7 +847,7 @@ SectionSplitEdgeValidity split_edge_validity(const Section & section, const Line
 ### does_collapse_edge_improve_metric
 
 ```cpp
-bool does_collapse_edge_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacetEdge & edge, const Point3D & collapse_point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+bool does_collapse_edge_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacetEdge & edge, const local_index_t apex, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
 ```
 
 
@@ -879,17 +872,17 @@ bool is_swap_edge_valid(const Section & section, const Surface2D & surface, cons
 ```
 
 
-### does_swap_edge_improve_metric
-
-```cpp
-bool does_swap_edge_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacetEdge & edge, index_t apex, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
-```
-
-
 ### fast_tetrahedron_internal_distances
 
 ```cpp
 InternalDistances fast_tetrahedron_internal_distances(const Tetrahedron & tetra, const InternalDistance::Options & options)
+```
+
+
+### does_collapse_edge_improve_metric
+
+```cpp
+bool does_collapse_edge_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacetEdge & edge, const Point3D & collapse_point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
 ```
 
 
@@ -913,17 +906,17 @@ InternalDistances fast_triangle_internal_distances(const Triangle<dimension> & t
 ```
 
 
-### does_swap_facet_improve_metric
-
-```cpp
-bool does_swap_facet_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacet & facet, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
-```
-
-
 ### is_move_point_valid
 
 ```cpp
 bool is_move_point_valid(const Section & section, index_t unique_vertex, const Point2D & point)
+```
+
+
+### does_swap_edge_improve_metric
+
+```cpp
+bool does_swap_edge_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacetEdge & edge, index_t apex, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
 ```
 
 
@@ -954,17 +947,17 @@ std::vector<BlockElement<index_t>> optimize_brep_elements(BRepGeometricConstrain
 SectionMovePointValidity move_point_validity(const Section & section, index_t unique_vertex, const Point2D & point)
 ```
 
-### does_split_collapse_edge_improve_metric
-
-```cpp
-bool does_split_collapse_edge_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacetEdge & edge, index_t apex, const Point3D & point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
-```
-
-
 ### has_internal_distance_below_epsilon
 
 ```cpp
 bool has_internal_distance_below_epsilon(const Triangle<dimension> & triangle)
+```
+
+
+### does_swap_facet_improve_metric
+
+```cpp
+bool does_swap_facet_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacet & facet, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
 ```
 
 
@@ -1013,10 +1006,10 @@ bool is_split_triangle_valid(const TriangulatedSurface<dimension> & mesh, index_
 
 **return** true if split will keep mesh valid.
 
-### does_split_collapse_facet_improve_metric
+### does_split_collapse_edge_improve_metric
 
 ```cpp
-bool does_split_collapse_facet_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacet & facet, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+bool does_split_collapse_edge_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacetEdge & edge, index_t apex, const Point3D & point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
 ```
 
 
@@ -1082,7 +1075,7 @@ std::optional<index_t> compute_number_of_negative_tetrahedra(absl::Span<const Mo
 ### does_split_collapse_facet_improve_metric
 
 ```cpp
-bool does_split_collapse_facet_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacet & facet, const Point3D & point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+bool does_split_collapse_facet_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacet & facet, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
 ```
 
 
@@ -1100,17 +1093,17 @@ std::optional<index_t> compute_number_of_negative_triangles(absl::Span<const Tri
 ```
 
 
-### does_split_split_collapse_edge_improve_metric
-
-```cpp
-bool does_split_split_collapse_edge_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
-```
-
-
 ### compute_number_of_negative_triangles
 
 ```cpp
 std::optional<index_t> compute_number_of_negative_triangles(absl::Span<const ModifiedTriangle<dimension>> triangles)
+```
+
+
+### does_split_collapse_facet_improve_metric
+
+```cpp
+bool does_split_collapse_facet_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacet & facet, const Point3D & point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
 ```
 
 
@@ -1154,6 +1147,13 @@ bool is_split_facet_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacet
 **point** [in] Coordinates of the split point.
 
 **return** true if split will keep mesh valid.
+
+### does_split_split_collapse_edge_improve_metric
+
+```cpp
+bool does_split_split_collapse_edge_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+```
+
 
 ### edge_from_internal_distance
 

@@ -97,11 +97,31 @@ protected void TetrahedralSolidImprovementSimulator3D(const TetrahedralSolid3D &
 ```
 
 
+### TetrahedralSolidImprovementSimulator3D
+
+```cpp
+protected void TetrahedralSolidImprovementSimulator3D(const TetrahedralSolid3D & solid, METRIC_CACHE metric_cache)
+```
+
+
 ### solid
 
 ```cpp
 protected const TetrahedralSolid3D & solid()
 ```
+
+
+
+
+## Enums
+
+| enum class METRIC_CACHE |
+
+--
+
+| dense |
+| sparse |
+
 
 
 

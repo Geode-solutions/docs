@@ -36,6 +36,13 @@ public void TetrahedralSolidOptimizerImprovementSimulator(const TetrahedralSolid
 ```
 
 
+### TetrahedralSolidOptimizerImprovementSimulator
+
+```cpp
+public void TetrahedralSolidOptimizerImprovementSimulator(const TetrahedralSolid3D & solid, METRIC_CACHE metric_cache)
+```
+
+
 ### metric
 
 ```cpp

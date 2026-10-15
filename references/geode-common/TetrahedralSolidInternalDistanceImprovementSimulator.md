@@ -43,6 +43,13 @@ protected void TetrahedralSolidInternalDistanceImprovementSimulator(const Tetrah
 ```
 
 
+### TetrahedralSolidInternalDistanceImprovementSimulator
+
+```cpp
+protected void TetrahedralSolidInternalDistanceImprovementSimulator(const TetrahedralSolid3D & solid, METRIC_CACHE metric_cache)
+```
+
+
 ### internal_distances
 
 ```cpp
