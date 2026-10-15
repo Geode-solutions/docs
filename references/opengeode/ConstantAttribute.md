@@ -148,7 +148,7 @@ public std::shared_ptr<AttributeBase> extract(const GenericMapping<index_t> & , 
 ### import
 
 ```cpp
-public void import(const GenericMapping<index_t> & , const std::shared_ptr<AttributeBase> & from, AttributeBase::AttributeKey )
+public void import(const GenericMapping<index_t> & old2new_mapping, const std::shared_ptr<AttributeBase> & from, AttributeBase::AttributeKey )
 ```
 
 

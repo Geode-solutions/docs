@@ -154,6 +154,34 @@ public void add_triangle(const std::array<index_t, 3> & vertices, OGTriangulated
 ```
 
 
+### add_triangles
+
+```cpp
+public void add_triangles(index_t nb, OGTriangulatedSurfaceKey )
+```
+
+
+### remove_polygons
+
+```cpp
+public void remove_polygons(const std::vector<bool> & to_delete, OGTriangulatedSurfaceKey )
+```
+
+
+### permute_polygons
+
+```cpp
+public void permute_polygons(absl::Span<const index_t> permutation, OGTriangulatedSurfaceKey )
+```
+
+
+### copy_polygons
+
+```cpp
+public void copy_polygons(const OpenGeodeTriangulatedSurface<dimension> & surface_mesh, OGTriangulatedSurfaceKey )
+```
+
+
 
 
 # class OpenGeodeTriangulatedSurface

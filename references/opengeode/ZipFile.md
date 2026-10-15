@@ -33,7 +33,7 @@ public void ~ZipFile()
 ### archive_files
 
 ```cpp
-public void archive_files(absl::Span<const std::string_view> & files)
+public void archive_files(absl::Span<const std::string_view> files)
 ```
 
 
@@ -50,6 +50,17 @@ public void archive_file(std::string_view file)
 public std::string directory()
 ```
 
+
+### finalize
+
+```cpp
+public void finalize()
+```
+
+
+ Write the archive to its final location. Called by the destructor if not done before, unless an exception is being thrown, in which case the archive is discarded and any existing file is left untouched.
+
+**exception**if the archive cannot be written.
 
 
 

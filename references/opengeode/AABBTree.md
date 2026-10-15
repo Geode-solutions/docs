@@ -41,6 +41,13 @@ public void AABBTree<dimension>()
 ### AABBTree
 
 ```cpp
+public void AABBTree<dimension>(absl::Span<const BoundingBox<dimension>> bboxes)
+```
+
+
+### AABBTree
+
+```cpp
 public void AABBTree<dimension>(const AABBTree<dimension> & )
 ```
 
@@ -49,13 +56,6 @@ public void AABBTree<dimension>(const AABBTree<dimension> & )
 
 ```cpp
 public AABBTree<dimension> & operator=(const AABBTree<dimension> & )
-```
-
-
-### AABBTree
-
-```cpp
-public void AABBTree<dimension>(absl::Span<const BoundingBox<dimension>> bboxes)
 ```
 
 
@@ -171,28 +171,28 @@ public void compute_bbox_element_bbox_intersections(const BoundingBox<dimension>
 ### compute_self_element_bbox_intersections
 
 ```cpp
-public void compute_self_element_bbox_intersections(EvalIntersection & action)
+public std::vector<std::pair<index_t, index_t>> compute_self_element_bbox_intersections(const EvalIntersection & action)
 ```
 
 
 
 
-**brief** Computes the self intersections of the element boxes.
+**brief** Computes the self intersections of the element boxes, in parallel.
 
 **action** [in] The functor to run when two boxes intersect
 
-**EvalIntersection** this functor should have an operator() defined like this: bool operator()( index_t cur_element_box1, index_t cur_element_box2 );
+**EvalIntersection** this functor should have an operator() defined like this: bool operator()( index_t cur_element_box1, index_t cur_element_box2 ) const;
 
-**note** cur_element_box1 and cur_element_box2 are the element box indices that intersect.
+**note** cur_element_box1 and cur_element_box2 are the element box indices that intersect. Each pair is evaluated once.
 
-**note** the operator defines what to do when two boxes of the tree ( **p**  and **p**  ) intersect each other (for example: test real intersection between each element in boxes and store the result.)
+**note** the operator is called concurrently from several threads, it must be thread-safe. It tests the two elements (for example: real intersection between the elements in the boxes) and returns true if the pair should be kept.
 
-**note** The returned boolean indicates if the search should stop or continue. Return true to stop the search, false to continue.
+**return** The kept pairs. Their order is deterministic: it does not depend on the number of threads.
 
 ### compute_other_element_bbox_intersections
 
 ```cpp
-public void compute_other_element_bbox_intersections(const AABBTree<dimension> & other_tree, EvalIntersection & action)
+public std::vector<std::pair<index_t, index_t>> compute_other_element_bbox_intersections(const AABBTree<dimension> & other_tree, const EvalIntersection & action)
 ```
 
 
@@ -202,11 +202,13 @@ public void compute_other_element_bbox_intersections(const AABBTree<dimension> &
 
 **action** [in] The functor to run when two boxes intersect
 
-**EvalIntersection** this functor should have an operator() defined like this: bool operator()( index_t cur_element_box1, index_t cur_element_box2 );
+**EvalIntersection** this functor should have an operator() defined like this: bool operator()( index_t cur_element_box1, index_t cur_element_box2 ) const;
 
 **note** cur_element_box1 and cur_element_box2 are the element box indices that intersect in the current tree and in the other tree.
 
-**note** The returned boolean indicates if the search should stop or continue. Return true to stop the search, false to continue.
+**note** the operator is called concurrently from several threads, it must be thread-safe. It tests the two elements and returns true if the pair should be kept.
+
+**return** The kept pairs. Their order is deterministic: it does not depend on the number of threads.
 
 ### compute_ray_element_bbox_intersections
 

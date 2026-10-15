@@ -14,21 +14,12 @@ const name = words.join('-');
 # class EdgesImpl
 
 
-## Members
-
-```cpp
-public static const auto EDGES_NAME
-
-```
-
-
-
 ## Functions
 
 ### EdgesImpl
 
 ```cpp
-public void EdgesImpl(Graph & graph)
+public void EdgesImpl()
 ```
 
 
@@ -46,17 +37,45 @@ public void set_edge_vertex(const EdgeVertex & edge_vertex, const index_t vertex
 ```
 
 
-### edges_attribute_id
+### add_edge
 
 ```cpp
-public const uuid & edges_attribute_id()
+public void add_edge()
 ```
 
 
-### EdgesImpl
+### add_edges
 
 ```cpp
-protected void EdgesImpl()
+public void add_edges(const index_t nb)
+```
+
+
+### remove_edges
+
+```cpp
+public void remove_edges(const std::vector<bool> & to_delete)
+```
+
+
+### permute_edges
+
+```cpp
+public void permute_edges(absl::Span<const index_t> permutation)
+```
+
+
+### copy_edges
+
+```cpp
+public void copy_edges(const EdgesImpl & impl)
+```
+
+
+### remove_legacy_attributes
+
+```cpp
+public void remove_legacy_attributes(AttributeManager & manager)
 ```
 
 

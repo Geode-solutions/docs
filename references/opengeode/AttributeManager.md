@@ -267,6 +267,8 @@ public void copy_attribute(const geode::uuid & attribute_id, const geode::uuid &
 
 **new_attribute_id** [in] The id to give to the new attribute.
 
+**exception**if the attribute is a time series step.
+
 ### attribute_type
 
 ```cpp
@@ -335,7 +337,7 @@ public void permute_elements(absl::Span<const index_t> permutation)
 
  nb_elements().
 
- Each value correponds to the destination index.
+ permutation[new_index] is the old index of the element moved to new_index.
 
 ### nb_elements
 

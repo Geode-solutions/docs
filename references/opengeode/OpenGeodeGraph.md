@@ -29,17 +29,17 @@ public static MeshImpl impl_name_static()
 ```
 
 
-### impl_name
-
-```cpp
-public MeshImpl impl_name()
-```
-
-
 ### OpenGeodeGraph
 
 ```cpp
 public void OpenGeodeGraph()
+```
+
+
+### impl_name
+
+```cpp
+public MeshImpl impl_name()
 ```
 
 
@@ -57,17 +57,17 @@ public void OpenGeodeGraph(OpenGeodeGraph && other)
 ```
 
 
-### type_name
-
-```cpp
-public MeshType type_name()
-```
-
-
 ### operator=
 
 ```cpp
 public OpenGeodeGraph & operator=(OpenGeodeGraph && other)
+```
+
+
+### type_name
+
+```cpp
+public MeshType type_name()
 ```
 
 
@@ -96,6 +96,41 @@ public std::string_view native_extension()
 
 ```cpp
 public void set_edge_vertex(const EdgeVertex & edge_vertex, index_t vertex_id, OGGraphKey )
+```
+
+
+### add_edge
+
+```cpp
+public void add_edge(OGGraphKey )
+```
+
+
+### add_edges
+
+```cpp
+public void add_edges(index_t nb, OGGraphKey )
+```
+
+
+### remove_edges
+
+```cpp
+public void remove_edges(const std::vector<bool> & to_delete, OGGraphKey )
+```
+
+
+### permute_edges
+
+```cpp
+public void permute_edges(absl::Span<const index_t> permutation, OGGraphKey )
+```
+
+
+### copy_edges
+
+```cpp
+public void copy_edges(const OpenGeodeGraph & graph, OGGraphKey )
 ```
 
 

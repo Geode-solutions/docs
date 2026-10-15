@@ -117,14 +117,7 @@ public auto erase(const Type & element)
 ### at
 
 ```cpp
-public auto at(index_t index)
-```
-
-
-### at
-
-```cpp
-public auto at(index_t index)
+public const Type & at(index_t index)
 ```
 
 

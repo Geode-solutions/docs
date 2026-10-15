@@ -57,7 +57,7 @@ public void set_value(index_t element, bool value)
 ### default_values
 
 ```cpp
-public AttributeValues<bool> default_values()
+public const AttributeValues<bool> & default_values()
 ```
 
 
@@ -285,6 +285,13 @@ protected void VariableAttribute<T>(std::string_view name)
 
 ```cpp
 protected void VariableAttribute<T>()
+```
+
+
+### serialize_values
+
+```cpp
+protected static void serialize_values(Archive & archive, std::vector<T> & values)
 ```
 
 

@@ -17,22 +17,22 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public GenericMapping corner_vertices_mapping
+public BijectiveMapping corner_vertices_mapping
 
 ```
 
 ```cpp
-public GenericMapping line_edges_mapping
+public BijectiveMapping line_edges_mapping
 
 ```
 
 ```cpp
-public GenericMapping surface_polygons_mapping
+public BijectiveMapping surface_polygons_mapping
 
 ```
 
 ```cpp
-public GenericMapping solid_polyhedra_mapping
+public BijectiveMapping solid_polyhedra_mapping
 
 ```
 

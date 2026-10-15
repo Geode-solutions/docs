@@ -73,17 +73,17 @@ public void OpenGeodeEdgedCurve<value-parameter-0-0>()
 ```
 
 
-### native_extension_static
-
-```cpp
-public static std::string_view native_extension_static()
-```
-
-
 ### OpenGeodeEdgedCurve
 
 ```cpp
 public void OpenGeodeEdgedCurve<value-parameter-0-0>(BITSERY )
+```
+
+
+### native_extension_static
+
+```cpp
+public static std::string_view native_extension_static()
 ```
 
 
@@ -119,6 +119,41 @@ public void ~OpenGeodeEdgedCurve<value-parameter-0-0>()
 
 ```cpp
 public void set_edge_vertex(const EdgeVertex & edge_vertex, index_t vertex_id, OGEdgedCurveKey )
+```
+
+
+### add_edge
+
+```cpp
+public void add_edge(OGEdgedCurveKey )
+```
+
+
+### add_edges
+
+```cpp
+public void add_edges(index_t nb, OGEdgedCurveKey )
+```
+
+
+### remove_edges
+
+```cpp
+public void remove_edges(const std::vector<bool> & to_delete, OGEdgedCurveKey )
+```
+
+
+### permute_edges
+
+```cpp
+public void permute_edges(absl::Span<const index_t> permutation, OGEdgedCurveKey )
+```
+
+
+### copy_edges
+
+```cpp
+public void copy_edges(const OpenGeodeEdgedCurve<dimension> & edged_curve, OGEdgedCurveKey )
 ```
 
 

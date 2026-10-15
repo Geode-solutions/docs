@@ -83,6 +83,15 @@ public static void set_level(LEVEL level)
 ```
 
 
+### is_enabled
+
+```cpp
+public static bool is_enabled(LEVEL level)
+```
+
+
+ Return true if a message of the given level would be logged.
+
 
 
 ## Enums

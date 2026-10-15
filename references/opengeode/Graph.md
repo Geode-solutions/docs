@@ -167,6 +167,27 @@ public void disassociate_edge_vertex_to_vertex(const EdgeVertex & edge_vertex, G
 ```
 
 
+### resize_vertex_storage
+
+```cpp
+public void resize_vertex_storage(index_t nb_vertices, GraphKey )
+```
+
+
+### delete_vertex_storage
+
+```cpp
+public void delete_vertex_storage(const std::vector<bool> & to_delete, GraphKey )
+```
+
+
+### permute_vertex_storage
+
+```cpp
+public void permute_vertex_storage(absl::Span<const index_t> permutation, GraphKey )
+```
+
+
 ### Graph
 
 ```cpp

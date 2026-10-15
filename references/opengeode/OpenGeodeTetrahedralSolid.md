@@ -136,6 +136,34 @@ public void add_tetrahedron(const std::array<index_t, 4> & vertices, OGTetrahedr
 ```
 
 
+### add_tetrahedra
+
+```cpp
+public void add_tetrahedra(index_t nb, OGTetrahedralSolidKey )
+```
+
+
+### remove_polyhedra
+
+```cpp
+public void remove_polyhedra(const std::vector<bool> & to_delete, OGTetrahedralSolidKey )
+```
+
+
+### permute_polyhedra
+
+```cpp
+public void permute_polyhedra(absl::Span<const index_t> permutation, OGTetrahedralSolidKey )
+```
+
+
+### copy_polyhedra
+
+```cpp
+public void copy_polyhedra(const OpenGeodeTetrahedralSolid<dimension> & solid_mesh, OGTetrahedralSolidKey )
+```
+
+
 
 
 # class OpenGeodeTetrahedralSolid

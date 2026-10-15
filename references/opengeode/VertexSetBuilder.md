@@ -142,5 +142,14 @@ protected void copy(const VertexSet & vertex_set)
 protected void do_create_vertex()
 ```
 
+### resize_vertices
+
+```cpp
+protected void resize_vertices(index_t nb_vertices)
+```
+
+
+ Resize the vertex AttributeManager and the data model storage indexed by vertices. Use it instead of resizing the vertex AttributeManager directly.
+
 
 

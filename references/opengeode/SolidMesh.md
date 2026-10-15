@@ -685,6 +685,27 @@ public void reset_polyhedra_around_vertex(index_t vertex_id, SolidMeshKey )
 ```
 
 
+### resize_vertex_storage
+
+```cpp
+public void resize_vertex_storage(index_t nb_vertices, SolidMeshKey )
+```
+
+
+### delete_vertex_storage
+
+```cpp
+public void delete_vertex_storage(const std::vector<bool> & to_delete, SolidMeshKey )
+```
+
+
+### permute_vertex_storage
+
+```cpp
+public void permute_vertex_storage(absl::Span<const index_t> permutation, SolidMeshKey )
+```
+
+
 ### edges
 
 ```cpp

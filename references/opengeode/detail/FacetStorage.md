@@ -100,13 +100,6 @@ protected const VertexContainer & get_facet_vertices(index_t facet_id)
 ```
 
 
-### update_attribute
-
-```cpp
-protected void update_attribute()
-```
-
-
 ### get_counter
 
 ```cpp

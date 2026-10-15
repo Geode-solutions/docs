@@ -60,21 +60,21 @@ public BijectiveMapping<T1, T2> & operator=(BijectiveMapping<T1, T2> && )
 ### map
 
 ```cpp
-public void map(const T1 & in, const T2 & out)
+public void map(T1 in, T2 out)
 ```
 
 
 ### erase_in
 
 ```cpp
-public void erase_in(const T1 & in)
+public void erase_in(T1 in)
 ```
 
 
 ### erase_out
 
 ```cpp
-public void erase_out(const T2 & out)
+public void erase_out(T2 out)
 ```
 
 
