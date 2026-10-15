@@ -243,6 +243,13 @@ void shift_optimize_background_surface_elements(BackgroundSurfaceConstraintModif
 ```
 
 
+### detect_coplanar_multilayers
+
+```cpp
+std::optional<std::tuple<MultilayerTetrahedra, OwnerPlane>> detect_coplanar_multilayers(const TetrahedralSolid3D & solid, index_t tetrahedron_id)
+```
+
+
 ### is_swap_edge_allowed_by_mandatory_macro_info
 
 ```cpp
@@ -291,31 +298,10 @@ ALLOWED_COLLAPSE_FACET_VERTEX allowed_collapse_facet_vertex_by_macro_info(const 
 bool is_edge_removal_allowed(const BackgroundSurface & surface, const PolygonEdge & edge, const std::optional<PolygonVertex> & tshape_apex)
 ```
 
-### is_edge_removal_allowed_by_macro_info
-
-```cpp
-bool is_edge_removal_allowed_by_macro_info(const BackgroundSurface & surface, const PolygonEdge & edge, const std::optional<PolygonVertex> & tshape_apex)
-```
-
-
-### detect_coplanar_multilayers
-
-```cpp
-std::optional<std::tuple<MultilayerTetrahedra, OwnerPlane>> detect_coplanar_multilayers(const TetrahedralSolid3D & solid, index_t tetrahedron_id)
-```
-
-
 ### decimate_background_surface
 
 ```cpp
 void decimate_background_surface(BackgroundSurfaceConstraintModifier & constraint_modifier, const TriangulatedSurfaceDecimatorOperator2D & decimator_operator)
-```
-
-
-### epsilon_optimize_background_solid_elements
-
-```cpp
-std::vector<index_t> epsilon_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, TetrahedralSolidBuilder3D & builder, absl::Span<const index_t> tetrahedra)
 ```
 
 
@@ -333,10 +319,24 @@ void shift_optimize_background_solid_elements(BackgroundSolidConstraintModifier 
 ```
 
 
+### is_edge_removal_allowed_by_macro_info
+
+```cpp
+bool is_edge_removal_allowed_by_macro_info(const BackgroundSurface & surface, const PolygonEdge & edge, const std::optional<PolygonVertex> & tshape_apex)
+```
+
+
 ### is_edge_removal_allowed_by_mandatory_macro_info
 
 ```cpp
 bool is_edge_removal_allowed_by_mandatory_macro_info(const BackgroundSurface & surface, const PolygonEdge & edge, const std::optional<PolygonVertex> & tshape_apex)
+```
+
+
+### epsilon_optimize_background_solid_elements
+
+```cpp
+std::vector<index_t> epsilon_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, TetrahedralSolidBuilder3D & builder, absl::Span<const index_t> tetrahedra)
 ```
 
 
@@ -372,6 +372,13 @@ ALLOWED_COLLAPSE_EDGE_VERTEX allowed_split_collapse_edge_by_macro_info(const Bac
 
 ```cpp
 std::vector<BlockElement<index_t>> optimize_background_brep_elements(BackgroundBRepGeometricConstraintModifier & constraint_modifier, const BRepInternalDistanceImprovementSimulator & improvement_simulator, absl::Span<const BlockElement<index_t>> tetrahedra)
+```
+
+
+### epsilon_optimize_background_solid_elements
+
+```cpp
+std::vector<index_t> epsilon_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, TetrahedralSolidBuilder3D & builder, absl::Span<const index_t> tetrahedra, TetrahedralSolidImprovementSimulator3D::METRIC_CACHE metric_cache)
 ```
 
 

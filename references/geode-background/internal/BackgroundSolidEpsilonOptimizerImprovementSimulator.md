@@ -36,6 +36,13 @@ public void BackgroundSolidEpsilonOptimizerImprovementSimulator(const Tetrahedra
 ```
 
 
+### BackgroundSolidEpsilonOptimizerImprovementSimulator
+
+```cpp
+public void BackgroundSolidEpsilonOptimizerImprovementSimulator(const TetrahedralSolid3D & solid, METRIC_CACHE metric_cache)
+```
+
+
 ### metric
 
 ```cpp

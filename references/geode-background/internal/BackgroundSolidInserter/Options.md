@@ -26,6 +26,11 @@ public reference_wrapper metric
 
 ```
 
+```cpp
+public METRIC_CACHE metric_cache
+
+```
+
 
 
 ## Functions
