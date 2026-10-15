@@ -101,17 +101,17 @@ void copy_horizons(const ModelFrom & from, const ModelTo & model_to, typename Mo
 ```
 
 
+### rescale_implicit_value_to_bbox_scale
+
+```cpp
+void rescale_implicit_value_to_bbox_scale(StratigraphicModel & model)
+```
+
+
 ### load_implicit_cross_section_files
 
 ```cpp
 void load_implicit_cross_section_files(ImplicitCrossSection & section, std::string_view directory)
-```
-
-
-### load_implicit_structural_model_files
-
-```cpp
-void load_implicit_structural_model_files(ImplicitStructuralModel & model, std::string_view directory)
 ```
 
 
@@ -122,17 +122,17 @@ void copy_fault_blocks(const ModelFrom & from, const ModelTo & model_to, typenam
 ```
 
 
-### rescale_implicit_value_to_bbox_scale
-
-```cpp
-void rescale_implicit_value_to_bbox_scale(StratigraphicModel & model)
-```
-
-
 ### save_stratigraphic_surfaces
 
 ```cpp
 void save_stratigraphic_surfaces(const StratigraphicSection & section, std::string_view prefix)
+```
+
+
+### load_implicit_structural_model_files
+
+```cpp
+void load_implicit_structural_model_files(ImplicitStructuralModel & model, std::string_view directory)
 ```
 
 
