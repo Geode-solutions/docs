@@ -29,6 +29,13 @@ public void StructuralModelExplicitModeler(const StructuralModelExplicitModeler 
 ```
 
 
+### StructuralModelExplicitModeler
+
+```cpp
+public void StructuralModelExplicitModeler(StructuralModelExplicitModeler && )
+```
+
+
 ### operator=
 
 ```cpp
@@ -36,10 +43,17 @@ public StructuralModelExplicitModeler & operator=(const StructuralModelExplicitM
 ```
 
 
+### operator=
+
+```cpp
+public StructuralModelExplicitModeler & operator=(StructuralModelExplicitModeler && )
+```
+
+
 ### StructuralModelExplicitModeler
 
 ```cpp
-public void StructuralModelExplicitModeler(StructuralModel & model, const BRepExplicitModeler::Parameters & parameters)
+public void StructuralModelExplicitModeler(StructuralModel & model, BRepExplicitModelerParameters parameters)
 ```
 
 
