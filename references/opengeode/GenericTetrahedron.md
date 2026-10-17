@@ -117,6 +117,8 @@ public bool is_degenerated()
 ```
 
 
+ A tetrahedron is degenerated if all its vertices lie in a slab (thick plane) of thickness GLOBAL_EPSILON.
+
 ### string
 
 ```cpp

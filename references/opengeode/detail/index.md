@@ -43,10 +43,24 @@ const name = words.join('-');
 
 ## Functions
 
-### create_mesh
+### initialize_crs
 
 ```cpp
-std::unique_ptr<Mesh> create_mesh(absl::Span<const std::reference_wrapper<const Mesh>> meshes)
+void initialize_crs(Mesh & mesh)
+```
+
+
+### register_inlinedvector
+
+```cpp
+void register_inlinedvector(PContext & context, std::string_view type)
+```
+
+
+### merge_mappings
+
+```cpp
+ModelGenericMapping merge_mappings(const ModelGenericMapping & mappings1, const ModelCopyMapping & mappings2)
 ```
 
 
@@ -78,31 +92,10 @@ Coords<dimension> coords_multiply(const Coords<dimension> & input, double multip
 ```
 
 
-### initialize_crs
-
-```cpp
-void initialize_crs(Mesh & mesh)
-```
-
-
-### register_inlinedvector
-
-```cpp
-void register_inlinedvector(PContext & context, std::string_view type)
-```
-
-
 ### range_bound
 
 ```cpp
 Type range_bound(T value)
-```
-
-
-### add_loaded_mesh_component
-
-```cpp
-void add_loaded_mesh_component(ModelBuilder & builder, const MeshComponent & component)
 ```
 
 
@@ -120,10 +113,45 @@ std::unique_ptr<typename Factory::BaseClass> geode_object_output_writer(std::str
 ```
 
 
-### coords_divide
+### polygons_intersection_detection
 
 ```cpp
-Coords<dimension> coords_divide(const Coords<dimension> & input, double divider)
+bool polygons_intersection_detection(const Mesh & mesh, const PolygonVertices & polygon, const PolygonVertices & other_polygon)
+```
+
+
+### create_mesh
+
+```cpp
+std::unique_ptr<Mesh> create_mesh(absl::Span<const std::reference_wrapper<const Mesh>> meshes)
+```
+
+
+### add_loaded_mesh_component
+
+```cpp
+void add_loaded_mesh_component(ModelBuilder & builder, const MeshComponent & component)
+```
+
+
+### merge_mappings
+
+```cpp
+ModelGenericMapping merge_mappings(const ModelGenericMapping & mappings1, const ModelGenericMapping & mappings2)
+```
+
+
+### section_clone_mapping
+
+```cpp
+ModelCopyMapping section_clone_mapping(const Section & model)
+```
+
+
+### build_model_boundaries
+
+```cpp
+void build_model_boundaries(const Section & model, SectionBuilder & builder)
 ```
 
 
@@ -131,6 +159,13 @@ Coords<dimension> coords_divide(const Coords<dimension> & input, double divider)
 
 ```cpp
 GenericMapping<index_t> repair_non_manifold_vertices(const Model & model, typename Model::Builder & builder, const Surface<Model::dim> & surface)
+```
+
+
+### copy_to_generic_mappings
+
+```cpp
+ModelGenericMapping copy_to_generic_mappings(const ModelCopyMapping & mappings2)
 ```
 
 
@@ -148,10 +183,31 @@ GenericMapping<index_t> repair_non_manifold_vertices(const SurfaceMesh<dimension
 ```
 
 
+### transfer_brep_meshes
+
+```cpp
+void transfer_brep_meshes(const BRep & brep, BRepBuilder & brep_builder, BRep && other, const ModelCopyMapping & component_mapping)
+```
+
+
+### transfer_brep_collections
+
+```cpp
+void transfer_brep_collections(const BRep & old_brep, const BRep & new_brep, BRepBuilder & new_brep_builder, const ModelGenericMapping & component_mapping)
+```
+
+
 ### solid_polyhedron_is_a_hexaedron
 
 ```cpp
 bool solid_polyhedron_is_a_hexaedron(const SolidMesh3D & solid, index_t polyhedron_id)
+```
+
+
+### brep_clone_mapping
+
+```cpp
+ModelCopyMapping brep_clone_mapping(const BRep & model)
 ```
 
 
@@ -162,17 +218,17 @@ GenericMapping<index_t> repair_non_manifold_vertices(const BRep & model, BRepBui
 ```
 
 
-### save_segment
-
-```cpp
-void save_segment(const Segment<dimension> & segment, std::string_view suffix)
-```
-
-
 ### position_to_index
 
 ```cpp
 local_index_t position_to_index(POSITION position)
+```
+
+
+### coords_divide
+
+```cpp
+Coords<dimension> coords_divide(const Coords<dimension> & input, double divider)
 ```
 
 
@@ -239,10 +295,10 @@ bool solid_polyhedron_is_a_pyramid(const SolidMesh3D & solid, index_t polyhedron
 ```
 
 
-### position_to_string
+### save_segment
 
 ```cpp
-std::string position_to_string(POSITION position)
+void save_segment(const Segment<dimension> & segment, std::string_view suffix)
 ```
 
 
@@ -257,6 +313,13 @@ Coords<dimension> coords_add(const Coords<dimension> & input, const Coords<dimen
 
 ```cpp
 void save_triangle(const Triangle<dimension> & triangle, std::string_view suffix)
+```
+
+
+### position_to_string
+
+```cpp
+std::string position_to_string(POSITION position)
 ```
 
 
@@ -316,34 +379,6 @@ Coords<dimension> coords_substract(const Coords<dimension> & input, const Coords
 ```
 
 
-### build_model_boundaries
-
-```cpp
-void build_model_boundaries(const Section & model, SectionBuilder & builder)
-```
-
-
-### save_triangles
-
-```cpp
-void save_triangles(const TriangulatedSurface<dimension> & surface, absl::Span<const index_t> indices, std::string_view suffix)
-```
-
-
-### coords_multiply_equal
-
-```cpp
-void coords_multiply_equal(Coords<dimension> & input, double multiplier)
-```
-
-
-### build_model_boundaries
-
-```cpp
-void build_model_boundaries(const BRep & model, BRepBuilder & builder)
-```
-
-
 ### solid_polyhedron_is_a_prism
 
 ```cpp
@@ -372,6 +407,13 @@ const Component<Model::dim> & model_component(Model & model, const uuid & compon
 ```
 
 
+### coords_multiply_equal
+
+```cpp
+void coords_multiply_equal(Coords<dimension> & input, double multiplier)
+```
+
+
 ### copy_line_components
 
 ```cpp
@@ -379,10 +421,10 @@ void copy_line_components(const ModelFrom & from, const ModelTo & model_to, type
 ```
 
 
-### save_tetrahedron
+### build_model_boundaries
 
 ```cpp
-void save_tetrahedron(const Tetrahedron & tetrahedron, std::string_view suffix)
+void build_model_boundaries(const BRep & model, BRepBuilder & builder)
 ```
 
 
@@ -397,13 +439,6 @@ void coords_divide_equal(Coords<dimension> & input, double divider)
 
 ```cpp
 void coords_add_equal(Coords<dimension> & input, const Coords<dimension> & other)
-```
-
-
-### save_tetrahedra
-
-```cpp
-void save_tetrahedra(const TetrahedralSolid3D & solid, absl::Span<const index_t> indices, std::string_view suffix)
 ```
 
 
@@ -428,13 +463,6 @@ void copy_block_components(const ModelFrom & from, const ModelTo & model_to, typ
 ```
 
 
-### merge_mappings
-
-```cpp
-ModelGenericMapping merge_mappings(const ModelGenericMapping & mappings1, const ModelCopyMapping & mappings2)
-```
-
-
 ### register_all_components
 
 ```cpp
@@ -445,14 +473,7 @@ void register_all_components(Model & model)
 ### merge_mappings
 
 ```cpp
-ModelGenericMapping merge_mappings(const ModelGenericMapping & mappings1, const ModelGenericMapping & mappings2)
-```
-
-
-### copy_to_generic_mappings
-
-```cpp
-ModelGenericMapping copy_to_generic_mappings(const ModelCopyMapping & mappings2)
+ModelMappings merge_mappings(const ModelMappings & mappings1, const ModelMappings & mappings2)
 ```
 
 
@@ -470,94 +491,10 @@ H AbslHashValue(H h, const OrientedVertexCycle<Container> & m)
 ```
 
 
-### polygons_intersection_detection
-
-```cpp
-bool polygons_intersection_detection(const Mesh & mesh, const PolygonVertices & polygon, const PolygonVertices & other_polygon)
-```
-
-
-### section_clone_mapping
-
-```cpp
-ModelCopyMapping section_clone_mapping(const Section & model)
-```
-
-
 ### copy_model_boundary_components
 
 ```cpp
 void copy_model_boundary_components(const ModelFrom & from, const ModelTo & model_to, typename ModelTo::Builder & builder_to, Mapping & mapping)
-```
-
-
-### copy_corner_collection_components
-
-```cpp
-void copy_corner_collection_components(const ModelFrom & from, const ModelTo & model_to, typename ModelTo::Builder & builder_to, Mapping & mapping)
-```
-
-
-### copy_line_collection_components
-
-```cpp
-void copy_line_collection_components(const ModelFrom & from, const ModelTo & model_to, typename ModelTo::Builder & builder_to, Mapping & mapping)
-```
-
-
-### transfer_brep_meshes
-
-```cpp
-void transfer_brep_meshes(const BRep & brep, BRepBuilder & brep_builder, BRep && other, const ModelCopyMapping & component_mapping)
-```
-
-
-### brep_clone_mapping
-
-```cpp
-ModelCopyMapping brep_clone_mapping(const BRep & model)
-```
-
-
-### merge_mappings
-
-```cpp
-ModelMappings merge_mappings(const ModelMappings & mappings1, const ModelMappings & mappings2)
-```
-
-
-### transfer_section_metadata
-
-```cpp
-void transfer_section_metadata(const Section & old_section, const Section & new_section, SectionBuilder & new_section_builder, const ModelGenericMapping & component_mapping)
-```
-
-
-### transfer_pointsets_metadata
-
-```cpp
-void transfer_pointsets_metadata(absl::Span<const std::reference_wrapper<const PointSet<Model::dim>>> pointsets, const Model & model, typename Model::Builder & builder, const ModelGenericMapping & component_mapping)
-```
-
-
-### transfer_curves_metadata
-
-```cpp
-void transfer_curves_metadata(absl::Span<const std::reference_wrapper<const EdgedCurve<Model::dim>>> curves, const Model & model, typename Model::Builder & model_builder, const ModelGenericMapping & component_mapping)
-```
-
-
-### line_component_mesh_edges
-
-```cpp
-ModelComponentMeshEdges::LineEdges line_component_mesh_edges(const Model & model, const std::array<index_t, 2> & edge_unique_vertices)
-```
-
-
-### copy_surface_collection_components
-
-```cpp
-void copy_surface_collection_components(const ModelFrom & from, const ModelTo & model_to, typename ModelTo::Builder & builder_to, Mapping & mapping)
 ```
 
 
@@ -575,10 +512,66 @@ void transfer_brep_metadata(const BRep & old_brep, const BRep & new_brep, BRepBu
 ```
 
 
-### line_component_mesh_edges
+### save_triangles
 
 ```cpp
-std::vector<index_t> line_component_mesh_edges(const Model & model, const std::array<index_t, 2> & edge_unique_vertices, const geode::Line<Model::dim> & line)
+void save_triangles(const TriangulatedSurface<dimension> & surface, absl::Span<const index_t> indices, std::string_view suffix)
+```
+
+
+### transfer_section_metadata
+
+```cpp
+void transfer_section_metadata(const Section & old_section, const Section & new_section, SectionBuilder & new_section_builder, const ModelGenericMapping & component_mapping)
+```
+
+
+### save_tetrahedron
+
+```cpp
+void save_tetrahedron(const Tetrahedron & tetrahedron, std::string_view suffix)
+```
+
+
+### save_tetrahedra
+
+```cpp
+void save_tetrahedra(const TetrahedralSolid3D & solid, absl::Span<const index_t> indices, std::string_view suffix)
+```
+
+
+### copy_corner_collection_components
+
+```cpp
+void copy_corner_collection_components(const ModelFrom & from, const ModelTo & model_to, typename ModelTo::Builder & builder_to, Mapping & mapping)
+```
+
+
+### transfer_pointsets_metadata
+
+```cpp
+void transfer_pointsets_metadata(absl::Span<const std::reference_wrapper<const PointSet<Model::dim>>> pointsets, const Model & model, typename Model::Builder & builder, const ModelGenericMapping & component_mapping)
+```
+
+
+### copy_line_collection_components
+
+```cpp
+void copy_line_collection_components(const ModelFrom & from, const ModelTo & model_to, typename ModelTo::Builder & builder_to, Mapping & mapping)
+```
+
+
+### transfer_curves_metadata
+
+```cpp
+void transfer_curves_metadata(absl::Span<const std::reference_wrapper<const EdgedCurve<Model::dim>>> curves, const Model & model, typename Model::Builder & model_builder, const ModelGenericMapping & component_mapping)
+```
+
+
+### copy_surface_collection_components
+
+```cpp
+void copy_surface_collection_components(const ModelFrom & from, const ModelTo & model_to, typename ModelTo::Builder & builder_to, Mapping & mapping)
 ```
 
 
@@ -589,10 +582,52 @@ void copy_block_collection_components(const ModelFrom & from, const ModelTo & mo
 ```
 
 
+### transfer_surfaces_metadata
+
+```cpp
+void transfer_surfaces_metadata(absl::Span<const std::reference_wrapper<const SurfaceMesh<Model::dim>>> surfaces, const Model & model, typename Model::Builder & model_builder, const ModelGenericMapping & component_mapping)
+```
+
+
+### transfer_solids_metadata
+
+```cpp
+void transfer_solids_metadata(absl::Span<const std::reference_wrapper<const SolidMesh3D>> solids, const BRep & model, BRepBuilder & model_builder, const ModelGenericMapping & component_mapping)
+```
+
+
+### line_component_mesh_edges
+
+```cpp
+ModelComponentMeshEdges::LineEdges line_component_mesh_edges(const Model & model, const std::array<index_t, 2> & edge_unique_vertices)
+```
+
+
+### line_component_mesh_edges
+
+```cpp
+std::vector<index_t> line_component_mesh_edges(const Model & model, const std::array<index_t, 2> & edge_unique_vertices, const geode::Line<Model::dim> & line)
+```
+
+
+### surface_component_mesh_edges
+
+```cpp
+ModelComponentMeshEdges::SurfaceEdges surface_component_mesh_edges(const Model & model, const std::array<index_t, 2> & edge_unique_vertices)
+```
+
+
 ### clone_meshes
 
 ```cpp
 absl::FixedArray<std::pair<uuid, std::unique_ptr<Mesh>>> clone_meshes(Range && range, index_t nb_components)
+```
+
+
+### surface_component_mesh_edges
+
+```cpp
+std::vector<PolygonEdge> surface_component_mesh_edges(const Model & model, const std::array<index_t, 2> & edge_unique_vertices, const geode::Surface<Model::dim> & surface)
 ```
 
 
@@ -617,6 +652,13 @@ void copy_surface_geometry(const ModelFrom & from, const ModelTo & model_to, typ
 ```
 
 
+### block_component_mesh_edges
+
+```cpp
+BRepComponentMeshEdges::BlockEdges block_component_mesh_edges(const BRep & brep, const std::array<index_t, 2> & edge_unique_vertices)
+```
+
+
 ### copy_block_geometry
 
 ```cpp
@@ -628,13 +670,6 @@ void copy_block_geometry(const ModelFrom & from, const ModelTo & model_to, typen
 
 ```cpp
 void copy_vertex_identifier_components(const Model & from, BuilderTo & builder_to, index_t first_new_unique_vertex_id, const ModelCopyMapping & mapping)
-```
-
-
-### transfer_brep_collections
-
-```cpp
-void transfer_brep_collections(const BRep & old_brep, const BRep & new_brep, BRepBuilder & new_brep_builder, const ModelGenericMapping & component_mapping)
 ```
 
 
@@ -656,41 +691,6 @@ void transfer_section_collections(const Section & old_section, const Section & n
 
 ```cpp
 void transfer_section_collections(const Section & old_section, const Section & new_section, SectionBuilder & new_brep_builder, const ModelUnchangedComponentMapping & unchanged_components)
-```
-
-
-### transfer_surfaces_metadata
-
-```cpp
-void transfer_surfaces_metadata(absl::Span<const std::reference_wrapper<const SurfaceMesh<Model::dim>>> surfaces, const Model & model, typename Model::Builder & model_builder, const ModelGenericMapping & component_mapping)
-```
-
-
-### transfer_solids_metadata
-
-```cpp
-void transfer_solids_metadata(absl::Span<const std::reference_wrapper<const SolidMesh3D>> solids, const BRep & model, BRepBuilder & model_builder, const ModelGenericMapping & component_mapping)
-```
-
-
-### surface_component_mesh_edges
-
-```cpp
-ModelComponentMeshEdges::SurfaceEdges surface_component_mesh_edges(const Model & model, const std::array<index_t, 2> & edge_unique_vertices)
-```
-
-
-### surface_component_mesh_edges
-
-```cpp
-std::vector<PolygonEdge> surface_component_mesh_edges(const Model & model, const std::array<index_t, 2> & edge_unique_vertices, const geode::Surface<Model::dim> & surface)
-```
-
-
-### block_component_mesh_edges
-
-```cpp
-BRepComponentMeshEdges::BlockEdges block_component_mesh_edges(const BRep & brep, const std::array<index_t, 2> & edge_unique_vertices)
 ```
 
 

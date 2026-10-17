@@ -14,6 +14,12 @@ const name = words.join('-');
 # class GenericTriangle
 
 
+```cpp
+Inherits from internal::TrianglePivotCache<3U>
+```
+
+
+
 ## Members
 
 ```cpp
@@ -26,6 +32,12 @@ public static const auto dim
 # class GenericTriangle
 
 
+```cpp
+Inherits from internal::TrianglePivotCache<3U>
+```
+
+
+
 ## Members
 
 ```cpp
@@ -36,6 +48,12 @@ public static const auto dim
 
 
 # class GenericTriangle
+
+
+```cpp
+Inherits from internal::TrianglePivotCache<dimension>
+```
+
 
 
 ## Members
@@ -175,6 +193,8 @@ public bool is_degenerated()
 ```
 
 
+ A triangle is degenerated if all its vertices lie in a strip (thick line) of thickness GLOBAL_EPSILON, i.e. if its minimum height is below GLOBAL_EPSILON.
+
 ### string
 
 ```cpp
@@ -187,6 +207,12 @@ public std::string string()
 # class GenericTriangle
 
 
+```cpp
+Inherits from internal::TrianglePivotCache<2U>
+```
+
+
+
 ## Members
 
 ```cpp
@@ -197,6 +223,12 @@ public static const auto dim
 
 
 # class GenericTriangle
+
+
+```cpp
+Inherits from internal::TrianglePivotCache<2U>
+```
+
 
 
 ## Members

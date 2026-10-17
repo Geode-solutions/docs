@@ -44,6 +44,15 @@ protected AttributeManager & facet_attribute_manager()
 ```
 
 
+### reserve
+
+```cpp
+protected void reserve(index_t capacity)
+```
+
+
+ Reserve memory for the given total number of facets
+
 ### find_facet
 
 ```cpp
@@ -92,6 +101,8 @@ protected geode::BijectiveMapping<index_t> update_facet_vertex(VertexContainer f
 protected std::vector<index_t> update_facet_vertices(absl::Span<const index_t> old2new)
 ```
 
+
+ Update facet vertices with the given vertex mapping. Facets using a vertex mapped to NO_ID are deleted. Facets becoming identical are merged into the one with the smallest index: their counters are summed up and the other facets are deleted. In the returned mapping, a merged facet is mapped to the new index of the facet it was merged into.
 
 ### get_facet_vertices
 

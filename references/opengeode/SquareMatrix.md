@@ -59,6 +59,24 @@ public SquareMatrix<2> inverse()
 # class SquareMatrix
 
 
+## Functions
+
+### determinant
+
+```cpp
+public double determinant()
+```
+
+
+### inverse
+
+```cpp
+public SquareMatrix<1> inverse()
+```
+
+
+
+
 # class SquareMatrix
 
 

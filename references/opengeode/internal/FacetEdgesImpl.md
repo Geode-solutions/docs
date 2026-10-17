@@ -92,6 +92,13 @@ public std::vector<index_t> remove_isolated_edges()
 ```
 
 
+### reserve_edges
+
+```cpp
+public void reserve_edges(index_t capacity)
+```
+
+
 ### is_edge_isolated
 
 ```cpp

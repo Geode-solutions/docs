@@ -154,6 +154,15 @@ public std::vector<index_t> remove_isolated_facets(SolidFacetsKey )
 ```
 
 
+### reserve_facets
+
+```cpp
+public void reserve_facets(index_t nb, SolidFacetsKey )
+```
+
+
+ Reserve memory for nb additional facets
+
 ### overwrite_facets
 
 ```cpp

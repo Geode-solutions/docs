@@ -65,6 +65,13 @@ public static const auto dim
 
 ## Functions
 
+### string
+
+```cpp
+public std::string string()
+```
+
+
 ### Point
 
 ```cpp
@@ -72,12 +79,17 @@ public void Point<value-parameter-0-0>()
 ```
 
 
- Description of a point in the given dimension with double coordinates
-
 ### Point
 
 ```cpp
 public void Point<value-parameter-0-0>(std::array<double, dimension> values)
+```
+
+
+### project_point
+
+```cpp
+public Point<dimension - 1> project_point(local_index_t axis_to_remove)
 ```
 
 
@@ -183,20 +195,6 @@ public void operator-=(const Point<dimension> & other)
 
 ```cpp
 public bool inexact_equal(const Point<dimension> & other)
-```
-
-
-### string
-
-```cpp
-public std::string string()
-```
-
-
-### project_point
-
-```cpp
-public Point<dimension - 1> project_point(local_index_t axis_to_remove)
 ```
 
 

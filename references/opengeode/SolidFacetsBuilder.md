@@ -45,6 +45,15 @@ public std::vector<index_t> delete_isolated_facets()
 
 **return** the mapping between old facet indices to new ones. Deleted facets new index is NO_ID
 
+### reserve_facets
+
+```cpp
+public void reserve_facets(index_t nb)
+```
+
+
+ Reserve memory for nb additional facets
+
 ### find_or_create_facet
 
 ```cpp

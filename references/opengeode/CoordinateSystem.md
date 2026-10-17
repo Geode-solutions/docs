@@ -64,6 +64,13 @@ public void set_directions(std::array<Vector<dimension>, dimension> directions)
 ```
 
 
+### set_direction
+
+```cpp
+public void set_direction(local_index_t index, Vector<dimension> direction)
+```
+
+
 ### coordinates
 
 ```cpp

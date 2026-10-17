@@ -374,33 +374,10 @@ const name = words.join('-');
 
 ## Functions
 
-### filename_without_extension
+### register_geode_builder
 
 ```cpp
-std::filesystem::path filename_without_extension(const std::filesystem::path & path)
-```
-
-
-### perpendicular
-
-```cpp
-Vector2D perpendicular(const Vector2D & v)
-```
-
-
- Return a 2D vector perpendicular to the given one
-
-### concatenate
-
-```cpp
-void concatenate(Container & container, const Container & values)
-```
-
-
-### register_geode_mesh_output
-
-```cpp
-void register_geode_mesh_output()
+void register_geode_builder()
 ```
 
 
@@ -418,10 +395,10 @@ void register_attribute_type(PContext & context, std::string_view name)
 ```
 
 
-### register_geode_builder
+### concatenate
 
 ```cpp
-void register_geode_builder()
+void concatenate(Container & container, const Container & values)
 ```
 
 
@@ -439,6 +416,13 @@ void register_geode_mesh_input()
 ```
 
 
+### register_geode_mesh_output
+
+```cpp
+void register_geode_mesh_output()
+```
+
+
 ### string_split
 
 ```cpp
@@ -450,6 +434,13 @@ std::vector<std::string_view> string_split(std::string_view string)
 
 ```cpp
 bool file_exists(std::string_view file_path)
+```
+
+
+### filename_without_extension
+
+```cpp
+std::filesystem::path filename_without_extension(const std::filesystem::path & path)
 ```
 
 
@@ -557,6 +548,15 @@ index_t string_to_index(std::string_view string)
 ```
 
 
+### perpendicular
+
+```cpp
+Vector2D perpendicular(const Vector2D & v)
+```
+
+
+ Return a 2D vector perpendicular to the given one
+
 ### line_starts_with
 
 ```cpp
@@ -606,17 +606,6 @@ int string_to_int(std::string_view string)
 ```
 
 
-### is_point_inside_polygon
-
-```cpp
-bool is_point_inside_polygon(const Point2D & point, const Polygon2D & polygon)
-```
-
-
- Find if point is inside a polygon.
-
-**point** [in] The point to rotate.
-
 ### convert_point_set2d_into_3d
 
 ```cpp
@@ -637,6 +626,17 @@ void create_brep_coordinate_system(const BRep & model, BRepBuilder & builder, st
 std::string goto_keyword(std::ifstream & file, std::string_view word)
 ```
 
+
+### is_point_inside_polygon
+
+```cpp
+bool is_point_inside_polygon(const Point2D & point, const Polygon2D & polygon)
+```
+
+
+ Find if point is inside a polygon. Points on the polygon boundary are considered inside.
+
+**point** [in] The point to test.
 
 ### create_aabb_tree
 
@@ -1119,19 +1119,6 @@ std::vector<std::string> save_polyhedral_solid(const PolyhedralSolid<dimension> 
 
 **filename** [in] Path to the file where save the PolyhedralSolid.
 
-### save_regular_grid
-
-```cpp
-std::vector<std::string> save_regular_grid(const RegularGrid<dimension> & regular_grid, std::string_view filename)
-```
-
-
- API function for saving a RegularGrid. The adequate saver is called depending on the given filename extension.
-
-**regular_grid** [in] RegularGrid to save.
-
-**filename** [in] Path to the file where save the RegularGrid.
-
 ### save_tetrahedral_solid
 
 ```cpp
@@ -1171,6 +1158,19 @@ void multiple_permute(Container & data, absl::Span<const index_t> permutation)
 void concatenate(Container & container, Container && values)
 ```
 
+
+### save_regular_grid
+
+```cpp
+std::vector<std::string> save_regular_grid(const RegularGrid<dimension> & regular_grid, std::string_view filename)
+```
+
+
+ API function for saving a RegularGrid. The adequate saver is called depending on the given filename extension.
+
+**regular_grid** [in] RegularGrid to save.
+
+**filename** [in] Path to the file where save the RegularGrid.
 
 ### operator""_uc
 
@@ -1224,6 +1224,27 @@ index_t delete_vector_elements(const DeleteContainer & to_delete, ValueContainer
 
 **return** The number of deleted elements
 
+### to_array
+
+```cpp
+std::array<T, sizeof...(Args)> to_array(Args &&... args)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const NamedType<Type, Tag> & value)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const ComponentMeshVertex & value)
+```
+
+
 ### compute_curve_statistics
 
 ```cpp
@@ -1270,6 +1291,48 @@ std::vector<std::string> save_polygonal_surface(const PolygonalSurface<dimension
 
 **filename** [in] Path to the file where save the PolygonalSurface.
 
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const ComponentID & value)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const MeshElement & value)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const EdgeVertex & value)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const PolyhedronVertex & value)
+```
+
+
+### permute
+
+```cpp
+void permute(Container & data, absl::Span<const index_t> permutation)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const PolygonVertex & value)
+```
+
+
 ### next_keyword_if_it_exists
 
 ```cpp
@@ -1287,13 +1350,6 @@ double triangle_signed_area(const Triangle2D & triangle)
  Compute the signed area of a triangle
 
 **triangle** [in] Triangle to compute area returned area is positive if the triangle vertices are ordered counter-clockwise, negative if clockwise.
-
-### polygon_area_sign
-
-```cpp
-SIGN polygon_area_sign(const Polygon2D & polygon)
-```
-
 
 ### create_point_set_coordinate_system
 
@@ -1398,14 +1454,14 @@ std::unique_ptr<PointSet<dimension>> load_point_set(std::string_view filename)
 
 **filename** [in] Path to the file to load.
 
-### triangle_area_sign
+### polygon_area_sign
 
 ```cpp
-SIGN triangle_area_sign(const Triangle3D & triangle, local_index_t axis)
+SIGN polygon_area_sign(const Polygon2D & polygon)
 ```
 
 
- Return the sign of a 3D triangle area aligned on X- Y- or Z-axis.
+ Return the sign of a 2D polygon area. The polygon is expected to be simple. For a self-intersecting polygon, the returned sign is the orientation around its lexicographically smallest vertex.
 
 ### load_polygonal_surface
 
@@ -1504,13 +1560,6 @@ bool is_section_saveable(const Section & section, std::string_view filename)
 ```
 
 
-### to_array
-
-```cpp
-std::array<T, sizeof...(Args)> to_array(Args &&... args)
-```
-
-
 ### create_surface_mesh_coordinate_system
 
 ```cpp
@@ -1606,6 +1655,15 @@ bool is_point_set_saveable(const PointSet<dimension> & point_set, std::string_vi
 ```
 
 
+### triangle_area_sign
+
+```cpp
+SIGN triangle_area_sign(const Triangle3D & triangle, local_index_t axis)
+```
+
+
+ Return the sign of a 3D triangle area aligned on X- Y- or Z-axis.
+
 ### is_raster_image_loadable
 
 ```cpp
@@ -1682,66 +1740,17 @@ bool is_polyhedral_solid_saveable(const PolyhedralSolid<dimension> & polyhedral_
 ```
 
 
-### graph_additional_files
-
-```cpp
-AdditionalFiles graph_additional_files(std::string_view filename)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const NamedType<Type, Tag> & value)
-```
-
-
-### raster_image_object_priority
-
-```cpp
-index_t raster_image_object_priority(std::string_view filename)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const ComponentMeshVertex & value)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const ComponentID & value)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const MeshElement & value)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const EdgeVertex & value)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const Point<dimension> & point)
-```
-
-
 ### component_mesh_vertex_pairs
 
 ```cpp
 ComponentMeshVertexPairs component_mesh_vertex_pairs(absl::Span<const ComponentMeshVertex> unique_vertices0, absl::Span<const ComponentMeshVertex> unique_vertices1)
+```
+
+
+### graph_additional_files
+
+```cpp
+AdditionalFiles graph_additional_files(std::string_view filename)
 ```
 
 
@@ -1756,6 +1765,13 @@ bool is_tetrahedral_solid_saveable(const TetrahedralSolid<dimension> & tetrahedr
 
 ```cpp
 void create_solid_mesh_coordinate_system(const SolidMesh<dimension> & mesh, SolidMeshBuilder<dimension> & builder, std::string_view new_coordinate_system_name, const CoordinateSystem2D & input, const CoordinateSystem2D & output)
+```
+
+
+### raster_image_object_priority
+
+```cpp
+index_t raster_image_object_priority(std::string_view filename)
 ```
 
 
@@ -1788,19 +1804,6 @@ double tetrahedron_signed_volume(const Tetrahedron & tetra)
 
 
  Compute the signed volume of a tetrahedron
-
-### triangle_barycentric_coordinates
-
-```cpp
-std::array<double, 3> triangle_barycentric_coordinates(const Point<dimension> & point, const Triangle<dimension> & triangle)
-```
-
-
- Compute barycentric coordinates of a point with regards to a triangle.
-
-**return** an array containing the parametric coordinates corresponding to the triangle vertices.
-
-**exception**if the triangle is degenerated
 
 ### is_light_regular_grid_saveable
 
@@ -1883,15 +1886,6 @@ AdditionalFiles regular_grid_additional_files(std::string_view filename)
 index_t vertex_set_object_priority(std::string_view filename)
 ```
 
-
-### tetrahedron_volume
-
-```cpp
-double tetrahedron_volume(const Tetrahedron & tetra)
-```
-
-
- Compute the (positive) volume of a tetrahedron
 
 ### point_plane_projection
 
@@ -2018,27 +2012,6 @@ Percentage is_triangulated_surface_loadable(std::string_view filename)
 ```
 
 
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const PolyhedronVertex & value)
-```
-
-
-### permute
-
-```cpp
-void permute(Container & data, absl::Span<const index_t> permutation)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const PolygonVertex & value)
-```
-
-
 ### mapping_after_deletion
 
 ```cpp
@@ -2051,17 +2024,6 @@ std::vector<index_t> mapping_after_deletion(const DeleteContainer & to_delete)
 **to_delete** [in] If to_delete[i] is true the i-th element is deleted, else the element is kept.
 
 **return** The old2new mapping: new index of each element, NO_ID if deleted
-
-### safe_triangle_barycentric_coordinates
-
-```cpp
-std::array<double, 3> safe_triangle_barycentric_coordinates(const Point<dimension> & point, const Triangle<dimension> & triangle)
-```
-
-
- Compute barycentric coordinates of a point with regards to a triangle. If triangle is degenerated, computation fallbacks onto its longest segment.
-
-**return** an array containing the parametric coordinates corresponding to the triangle vertices.
 
 ### point_set_object_priority
 
@@ -2127,6 +2089,21 @@ index_t tetrahedral_solid_object_priority(std::string_view filename)
 ```
 
 
+### triangulated_surface_object_priority
+
+```cpp
+index_t triangulated_surface_object_priority(std::string_view filename)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point<dimension> & point0, const Point<dimension> & point1, const Point<dimension> & point2)
+```
+
+ Return true if the three points are exactly aligned.
+
 ### old2new_permutation
 
 ```cpp
@@ -2141,23 +2118,15 @@ ComponentMeshVertexGeneric<dimension> component_mesh_vertex_tuple(UniqueVertices
 ```
 
 
-### triangulated_surface_object_priority
+### point_triangle_distance
 
 ```cpp
-index_t triangulated_surface_object_priority(std::string_view filename)
+std::tuple<double, Point<dimension>> point_triangle_distance(const Point<dimension> & point, const Triangle<dimension> & triangle)
 ```
 
+ Compute the smallest distance between a point and a triangle
 
-### line_plane_intersection
-
-```cpp
-IntersectionResult<Point3D> line_plane_intersection(const InfiniteLine3D & line, const Plane & plane)
-```
-
-
- Compute the intersection between a plane and an infinite line
-
-**return** an optional of the intersection.
+**return** a tuple containing: - the smallest distance. - the closest point on the triangle.
 
 ### geode_lippincott
 
@@ -2197,17 +2166,6 @@ ValueContainer extract_vector_elements(const DeleteContainer & to_keep, const Va
 
 **return** A vector containing only kept elements of in_values
 
-### line_sphere_intersection
-
-```cpp
-IntersectionResult<absl::InlinedVector<Point<dimension>, 2>> line_sphere_intersection(const InfiniteLine<dimension> & line, const Sphere<dimension> & sphere)
-```
-
-
- Compute the intersection(s) between a sphere and an infinite line
-
-**return** an optional of the intersection points.
-
 ### are_mesh_elements_included
 
 ```cpp
@@ -2236,24 +2194,6 @@ bool are_mesh_elements_included(const MeshElementsInclusion<MeshElementType> & i
 ```
 
 
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point<dimension> & point0, const Point<dimension> & point1, const Point<dimension> & point2)
-```
-
- Return true if the three points are exactly aligned.
-
-### point_triangle_distance
-
-```cpp
-std::tuple<double, Point<dimension>> point_triangle_distance(const Point<dimension> & point, const Triangle<dimension> & triangle)
-```
-
- Compute the smallest distance between a point and a triangle
-
-**return** a tuple containing: - the smallest distance. - the closest point on the triangle.
-
 ### throw_lippincott
 
 ```cpp
@@ -2276,12 +2216,83 @@ void sort_unique(Container & container)
 
 **container** [in] container in which perform the search.
 
+### compute_model_unique_vertices
+
+```cpp
+void compute_model_unique_vertices(const Model & model, typename Model::Builder & builder)
+```
+
+
 ### tetrahedron_aspect_ratio
 
 ```cpp
 double tetrahedron_aspect_ratio(const Tetrahedron & tetra)
 ```
 
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const Point<dimension> & point)
+```
+
+
+### sort_unique
+
+```cpp
+void sort_unique(Container & container, Comparison comp)
+```
+
+
+ Sort the container with the given comparison, then remove the duplicated values using operator==.
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const PolyhedronFacetVertex & value)
+```
+
+
+### convert_surface_meshes_into_triangulated_surfaces
+
+```cpp
+void convert_surface_meshes_into_triangulated_surfaces(BRep & brep)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const PolyhedronFacetEdge & value)
+```
+
+
+### repair_polygon_orientations
+
+```cpp
+void repair_polygon_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder)
+```
+
+
+### convert_brep_into_section
+
+```cpp
+std::tuple<Section, ModelCopyMapping> convert_brep_into_section(const BRep & brep, local_index_t axis_to_remove)
+```
+
+
+### register_mesh_serialize_pcontext
+
+```cpp
+void register_mesh_serialize_pcontext(PContext & context)
+```
+
+
+ Register all the information needed by Bitsery to serialize the objects in the mesh library.
+
+**context** [in] The context where to register this information.
+
+**warning** The context can be used only once per archive.
 
 ### lexicographic_mapping
 
@@ -2318,6 +2329,20 @@ double tetrahedron_volume_to_facet_ratio(const Tetrahedron & tetra)
 ```
 
 
+### repair_polygons_orientations
+
+```cpp
+void repair_polygons_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder, absl::Span<const index_t> polygons_to_reorient)
+```
+
+
+### convert_section_into_brep
+
+```cpp
+std::tuple<BRep, ModelCopyMapping> convert_section_into_brep(const Section & section, local_index_t axis_to_add, double axis_coordinate)
+```
+
+
 ### convert_surface_mesh
 
 ```cpp
@@ -2332,10 +2357,24 @@ std::vector<index_t> morton_mapping(absl::Span<const Point<dimension>> points)
 ```
 
 
+### block_bounding_box
+
+```cpp
+BoundingBox3D block_bounding_box(const BRep & brep, const Block3D & block)
+```
+
+
 ### compute_solid_scalar_function_gradient
 
 ```cpp
 uuid compute_solid_scalar_function_gradient(const SolidMesh3D & mesh, const uuid & scalar_function_id)
+```
+
+
+### rasterize_segment
+
+```cpp
+std::vector<typename Grid<dimension>::CellIndices> rasterize_segment(const Grid<dimension> & grid, const Segment<dimension> & segment)
 ```
 
 
@@ -2360,379 +2399,6 @@ std::vector<MeshElement> component_mesh_polyhedra(const BRep & brep, const Polyh
 ```
 
 
-### hilbert_mapping
-
-```cpp
-std::vector<index_t> hilbert_mapping(absl::Span<const Point<dimension>> points)
-```
-
-
-### section_coordinate_reference_systems
-
-```cpp
-absl::FixedArray<std::pair<CRSType, std::string>> section_coordinate_reference_systems(const Section & section)
-```
-
-
-### component_mesh_vertex_generic
-
-```cpp
-ComponentMeshVertexGeneric<dimension> component_mesh_vertex_generic(absl::Span<const absl::Span<const ComponentMeshVertex>> unique_vertices)
-```
-
-
-### create_blocks_aabb_tree
-
-```cpp
-std::tuple<AABBTree3D, absl::FixedArray<uuid>> create_blocks_aabb_tree(const BRep & model)
-```
-
-
-### brep_active_coordinate_reference_systems
-
-```cpp
-absl::FixedArray<std::pair<CRSType, std::string>> brep_active_coordinate_reference_systems(const BRep & brep)
-```
-
-
-### create_lines_aabb_tree
-
-```cpp
-std::tuple<AABBTree2D, absl::FixedArray<uuid>> create_lines_aabb_tree(const Section & model)
-```
-
-
-### sort_unique
-
-```cpp
-void sort_unique(Container & container, Comparison comp)
-```
-
-
- Sort the container with the given comparison, then remove the duplicated values using operator==.
-
-### convert_surface_mesh
-
-```cpp
-void convert_surface_mesh(const BRep & model, BRepBuilder & builder, const geode::Surface3D & surface, const geode::MeshType & mesh_type)
-```
-
-
-### convert_surface_meshes_into_triangulated_surfaces
-
-```cpp
-void convert_surface_meshes_into_triangulated_surfaces(const BRep & brep, BRepBuilder & builder)
-```
-
-
-### component_mesh_vertex_generic
-
-```cpp
-ComponentMeshVertexGeneric<dimension> component_mesh_vertex_generic(absl::Span<const absl::Span<const ComponentMeshVertex>> unique_vertices, const ComponentType & type)
-```
-
-
-### create_surfaces_aabb_tree
-
-```cpp
-std::tuple<AABBTree2D, absl::FixedArray<uuid>> create_surfaces_aabb_tree(const Section & model)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const PolyhedronFacetVertex & value)
-```
-
-
-### convert_surface_meshes_into_triangulated_surfaces
-
-```cpp
-void convert_surface_meshes_into_triangulated_surfaces(BRep & brep)
-```
-
-
-### convert_surface_meshes_into_triangulated_surfaces
-
-```cpp
-void convert_surface_meshes_into_triangulated_surfaces(const Section & section, SectionBuilder & builder)
-```
-
-
-### section_active_coordinate_reference_systems
-
-```cpp
-absl::FixedArray<std::pair<CRSType, std::string>> section_active_coordinate_reference_systems(const Section & section)
-```
-
-
-### convert_block_mesh
-
-```cpp
-void convert_block_mesh(const BRep & model, BRepBuilder & builder, const Block3D & block, const MeshType & new_mesh_type)
-```
-
-
-### set_section_active_coordinate_system
-
-```cpp
-void set_section_active_coordinate_system(const Section & model, SectionBuilder & builder, std::string_view coordinate_system_name)
-```
-
-
-### component_mesh_vertex_generic
-
-```cpp
-ComponentMeshVertexGeneric<dimension> component_mesh_vertex_generic(absl::Span<const absl::Span<const ComponentMeshVertex>> unique_vertices, const ComponentID & component)
-```
-
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const PolyhedronFacetEdge & value)
-```
-
-
-### convert_block_meshes_into_tetrahedral_solids
-
-```cpp
-void convert_block_meshes_into_tetrahedral_solids(const BRep & brep, BRepBuilder & builder)
-```
-
-
-### triangulate_surface_meshes
-
-```cpp
-void triangulate_surface_meshes(const BRep & brep, BRepBuilder & builder)
-```
-
-
-### triangulate_surface_meshes
-
-```cpp
-void triangulate_surface_meshes(const Section & section, SectionBuilder & builder)
-```
-
-
-### create_line_meshes_aabb_trees
-
-```cpp
-ModelMeshesAABBTree3D create_line_meshes_aabb_trees(const BRep & model)
-```
-
-
-### create_surface_meshes_aabb_trees
-
-```cpp
-ModelMeshesAABBTree3D create_surface_meshes_aabb_trees(const BRep & model)
-```
-
-
-### create_block_meshes_aabb_trees
-
-```cpp
-ModelMeshesAABBTree3D create_block_meshes_aabb_trees(const BRep & model)
-```
-
-
-### create_line_meshes_aabb_trees
-
-```cpp
-ModelMeshesAABBTree2D create_line_meshes_aabb_trees(const Section & model)
-```
-
-
-### create_surface_meshes_aabb_trees
-
-```cpp
-ModelMeshesAABBTree2D create_surface_meshes_aabb_trees(const Section & model)
-```
-
-
-### component_mesh_vertex_triplets
-
-```cpp
-ComponentMeshVertexTriplets component_mesh_vertex_triplets(absl::Span<const ComponentMeshVertex> unique_vertices0, absl::Span<const ComponentMeshVertex> unique_vertices1, absl::Span<const ComponentMeshVertex> unique_vertices2, const ComponentType & type)
-```
-
-
-### surface_radial_sort
-
-```cpp
-SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
-```
-
-
-### point_tetrahedron_position
-
-```cpp
-POSITION point_tetrahedron_position(const Point3D & point, const Tetrahedron & tetra)
-```
-
-
- Return the position of a point in a tetrahedron: inside, outside, on a tetra vertex, an edge or a facet.
-
-### segment_barycentric_coordinates
-
-```cpp
-std::array<double, 2> segment_barycentric_coordinates(const Point<dimension> & point, const Segment<dimension> & segment)
-```
-
-
- Compute barycentric coordinates of a point with regards to a segment.
-
-**return** an array containing the parametric coordinates corresponding to the segment vertices.
-
-**exception**if the segment is degenerated
-
-### component_mesh_vertex_triplets
-
-```cpp
-ComponentMeshVertexTriplets component_mesh_vertex_triplets(absl::Span<const ComponentMeshVertex> unique_vertices0, absl::Span<const ComponentMeshVertex> unique_vertices1, absl::Span<const ComponentMeshVertex> unique_vertices2, const ComponentID & component)
-```
-
-
-### safe_segment_barycentric_coordinates
-
-```cpp
-std::array<double, 2> safe_segment_barycentric_coordinates(const Point<dimension> & point, const Segment<dimension> & segment)
-```
-
-
- Compute barycentric coordinates of a point with regards to a segment. If segment is degenerated, computation fallbacks onto its vertices.
-
-**return** an array containing the parametric coordinates corresponding to the segment vertices.
-
-### segment_sphere_intersection
-
-```cpp
-IntersectionResult<absl::InlinedVector<Point<dimension>, 2>> segment_sphere_intersection(const Segment<dimension> & segment, const Sphere<dimension> & sphere)
-```
-
-
- Compute the intersection(s) between a (n-1)-sphere and a segment in n-dimension space.
-
-**return** an optional of the intersection points.
-
-### segment_plane_intersection
-
-```cpp
-IntersectionResult<Point3D> segment_plane_intersection(const Segment3D & segment, const Plane & plane)
-```
-
-
- Compute the intersection between a plane and a segment
-
-**return** an optional of the intersection point.
-
-**warning** if the segment is included in the plane nothing is returned
-
-### segment_segment_intersection_detection
-
-```cpp
-SegmentSegmentIntersection segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
-```
-
-
-### segment_segment_intersection_detection
-
-```cpp
-SegmentSegmentIntersection segment_segment_intersection_detection(const Segment3D & segment0, const Segment3D & segment1)
-```
-
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### compute_model_unique_vertices
-
-```cpp
-void compute_model_unique_vertices(const Model & model, typename Model::Builder & builder)
-```
-
-
-### convert_brep_into_section
-
-```cpp
-std::tuple<Section, ModelCopyMapping> convert_brep_into_section(const BRep & brep, local_index_t axis_to_remove)
-```
-
-
-### register_mesh_serialize_pcontext
-
-```cpp
-void register_mesh_serialize_pcontext(PContext & context)
-```
-
-
- Register all the information needed by Bitsery to serialize the objects in the mesh library.
-
-**context** [in] The context where to register this information.
-
-**warning** The context can be used only once per archive.
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
-```
-
-
-### repair_polygon_orientations
-
-```cpp
-void repair_polygon_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder)
-```
-
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
-```
-
-
-### repair_polygons_orientations
-
-```cpp
-void repair_polygons_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder, absl::Span<const index_t> polygons_to_reorient)
-```
-
-
-### convert_section_into_brep
-
-```cpp
-std::tuple<BRep, ModelCopyMapping> convert_section_into_brep(const Section & section, local_index_t axis_to_add, double axis_coordinate)
-```
-
-
-### block_bounding_box
-
-```cpp
-BoundingBox3D block_bounding_box(const BRep & brep, const Block3D & block)
-```
-
-
-### rasterize_segment
-
-```cpp
-std::vector<typename Grid<dimension>::CellIndices> rasterize_segment(const Grid<dimension> & grid, const Segment<dimension> & segment)
-```
-
-
 ### convert_solid_mesh_into_tetrahedral_solid
 
 ```cpp
@@ -2744,6 +2410,13 @@ std::optional<std::unique_ptr<TetrahedralSolid3D>> convert_solid_mesh_into_tetra
 
 ```cpp
 double surface_area(const Surface<dimension> & surface)
+```
+
+
+### hilbert_mapping
+
+```cpp
+std::vector<index_t> hilbert_mapping(absl::Span<const Point<dimension>> points)
 ```
 
 
@@ -2759,6 +2432,20 @@ void register_mesh_deserialize_pcontext(PContext & context)
 **context** [in] The context where to register this information.
 
 **warning** The context can be used only once per archive.
+
+### section_coordinate_reference_systems
+
+```cpp
+absl::FixedArray<std::pair<CRSType, std::string>> section_coordinate_reference_systems(const Section & section)
+```
+
+
+### convert_surface_mesh
+
+```cpp
+void convert_surface_mesh(const BRep & model, BRepBuilder & builder, const geode::Surface3D & surface, const geode::MeshType & mesh_type)
+```
+
 
 ### triangle_angle_based_quality
 
@@ -2781,6 +2468,13 @@ std::vector<typename Grid<dimension>::CellIndices> conservative_rasterize_segmen
 ```
 
 
+### component_mesh_vertex_generic
+
+```cpp
+ComponentMeshVertexGeneric<dimension> component_mesh_vertex_generic(absl::Span<const absl::Span<const ComponentMeshVertex>> unique_vertices)
+```
+
+
 ### point_side_to_segment
 
 ```cpp
@@ -2789,6 +2483,13 @@ SIDE point_side_to_segment(const Point2D & point, const Segment2D & segment)
 
 
  Return the point side to a segment.
+
+### create_blocks_aabb_tree
+
+```cpp
+std::tuple<AABBTree3D, absl::FixedArray<uuid>> create_blocks_aabb_tree(const BRep & model)
+```
+
 
 ### polygon_unique_vertices
 
@@ -2811,10 +2512,31 @@ std::unique_ptr<TetrahedralSolid3D> convert_grid_into_tetrahedral_solid(const Gr
 ```
 
 
+### brep_active_coordinate_reference_systems
+
+```cpp
+absl::FixedArray<std::pair<CRSType, std::string>> brep_active_coordinate_reference_systems(const BRep & brep)
+```
+
+
+### create_lines_aabb_tree
+
+```cpp
+std::tuple<AABBTree2D, absl::FixedArray<uuid>> create_lines_aabb_tree(const Section & model)
+```
+
+
 ### polygon_unique_vertices
 
 ```cpp
 PolygonVertices polygon_unique_vertices(const BRep & model, const Surface3D & surface, index_t polygon_id)
+```
+
+
+### convert_surface_meshes_into_triangulated_surfaces
+
+```cpp
+void convert_surface_meshes_into_triangulated_surfaces(const BRep & brep, BRepBuilder & builder)
 ```
 
 
@@ -2853,6 +2575,13 @@ BRep extrude_section_to_brep(const Section & section, const SectionExtruderOptio
 ```
 
 
+### component_mesh_vertex_generic
+
+```cpp
+ComponentMeshVertexGeneric<dimension> component_mesh_vertex_generic(absl::Span<const absl::Span<const ComponentMeshVertex>> unique_vertices, const ComponentType & type)
+```
+
+
 ### point_side_to_line
 
 ```cpp
@@ -2862,10 +2591,31 @@ SIDE point_side_to_line(const Point2D & point, const InfiniteLine2D & line)
 
  Return the point side to a line.
 
+### create_surfaces_aabb_tree
+
+```cpp
+std::tuple<AABBTree2D, absl::FixedArray<uuid>> create_surfaces_aabb_tree(const Section & model)
+```
+
+
 ### polygon_unique_vertices
 
 ```cpp
 PolygonVertices polygon_unique_vertices(const BRep & model, const Block3D & block, const PolyhedronFacet & facet)
+```
+
+
+### convert_surface_meshes_into_triangulated_surfaces
+
+```cpp
+void convert_surface_meshes_into_triangulated_surfaces(const Section & section, SectionBuilder & builder)
+```
+
+
+### section_active_coordinate_reference_systems
+
+```cpp
+absl::FixedArray<std::pair<CRSType, std::string>> section_active_coordinate_reference_systems(const Section & section)
 ```
 
 
@@ -2875,15 +2625,6 @@ PolygonVertices polygon_unique_vertices(const BRep & model, const Block3D & bloc
 std::unique_ptr<TetrahedralSolid3D> convert_grid_into_densified_tetrahedral_solid(const Grid3D & grid, absl::Span<const geode::index_t> cells_to_densify)
 ```
 
-
-### point_point_distance
-
-```cpp
-double point_point_distance(const Point<dimension> & point0, const Point<dimension> & point1)
-```
-
-
- Compute the Euclidean distance between a two points
 
 ### rasterize_tetrahedron
 
@@ -2919,6 +2660,15 @@ std::shared_ptr<VariableAttribute<double>> euclidean_distance_transform(const Gr
 
 **return** the created attribute
 
+### point_point_distance
+
+```cpp
+double point_point_distance(const Point<dimension> & point0, const Point<dimension> & point1)
+```
+
+
+ Compute the Euclidean distance between a two points
+
 ### convert_grid_into_triangulated_surface
 
 ```cpp
@@ -2933,10 +2683,31 @@ std::array<index_t, 2> edge_unique_vertices(const BRep & brep, const Line3D & li
 ```
 
 
+### convert_block_mesh
+
+```cpp
+void convert_block_mesh(const BRep & model, BRepBuilder & builder, const Block3D & block, const MeshType & new_mesh_type)
+```
+
+
 ### convert_solid_mesh_into_hybrid_solid
 
 ```cpp
 std::optional<std::unique_ptr<HybridSolid3D>> convert_solid_mesh_into_hybrid_solid(const SolidMesh3D & solid)
+```
+
+
+### set_section_active_coordinate_system
+
+```cpp
+void set_section_active_coordinate_system(const Section & model, SectionBuilder & builder, std::string_view coordinate_system_name)
+```
+
+
+### component_mesh_vertex_generic
+
+```cpp
+ComponentMeshVertexGeneric<dimension> component_mesh_vertex_generic(absl::Span<const absl::Span<const ComponentMeshVertex>> unique_vertices, const ComponentID & component)
 ```
 
 
@@ -2977,14 +2748,12 @@ std::array<index_t, 2> edge_unique_vertices(const BRep & brep, const Surface3D &
 ```
 
 
-### point_segment_distance
+### convert_block_meshes_into_tetrahedral_solids
 
 ```cpp
-double point_segment_distance(const Point<dimension> & point, const Segment<dimension> & segment)
+void convert_block_meshes_into_tetrahedral_solids(const BRep & brep, BRepBuilder & builder)
 ```
 
-
- Compute the smallest distance between a point and a segment
 
 ### colinear_segment_segment_intersection_detection
 
@@ -3004,10 +2773,26 @@ std::unique_ptr<TriangulatedSurface2D> convert_grid_into_densified_triangulated_
 ```
 
 
+### point_segment_distance
+
+```cpp
+double point_segment_distance(const Point<dimension> & point, const Segment<dimension> & segment)
+```
+
+
+ Compute the smallest distance between a point and a segment
+
 ### convert_section_into_surface
 
 ```cpp
 std::tuple<std::unique_ptr<SurfaceMesh2D>, ModelToMeshMappings> convert_section_into_surface(const Section & section)
+```
+
+
+### triangulate_surface_meshes
+
+```cpp
+void triangulate_surface_meshes(const BRep & brep, BRepBuilder & builder)
 ```
 
 
@@ -3034,6 +2819,13 @@ void triangulate_surface_mesh(SurfaceMesh<dimension> & surface)
 ```
 
 
+### triangulate_surface_meshes
+
+```cpp
+void triangulate_surface_meshes(const Section & section, SectionBuilder & builder)
+```
+
+
 ### component_mesh_polygons
 
 ```cpp
@@ -3047,6 +2839,19 @@ SectionComponentMeshPolygons component_mesh_polygons(const Section & section, co
 std::tuple<std::unique_ptr<EdgedCurve3D>, ModelToMeshMappings> convert_brep_into_curve(const BRep & brep)
 ```
 
+
+### triangle_barycentric_coordinates
+
+```cpp
+std::array<double, 3> triangle_barycentric_coordinates(const Point<dimension> & point, const Triangle<dimension> & triangle)
+```
+
+
+ Compute barycentric coordinates of a point with regards to a triangle.
+
+**return** an array containing the parametric coordinates corresponding to the triangle vertices.
+
+**exception**if the triangle is degenerated
 
 ### triangulate_surface_mesh
 
@@ -3066,6 +2871,13 @@ std::tuple<std::unique_ptr<SurfaceMesh3D>, ModelToMeshMappings> convert_brep_int
 
 ```cpp
 SectionComponentMeshPolygons component_mesh_polygons(const Section & section, const Surface2D & surface, index_t polygon_id)
+```
+
+
+### create_line_meshes_aabb_trees
+
+```cpp
+ModelMeshesAABBTree3D create_line_meshes_aabb_trees(const BRep & model)
 ```
 
 
@@ -3089,6 +2901,22 @@ POSITION point_segment_position(const Point<dimension> & point, const Segment<di
 
  Return the position of a point on a segment: inside, outside or on segment vertex.
 
+### convert_surface_mesh2d_into_3d
+
+```cpp
+std::unique_ptr<SurfaceMesh3D> convert_surface_mesh2d_into_3d(const SurfaceMesh2D & surface2d, local_index_t axis_to_add, double axis_coordinate)
+```
+
+
+### tetrahedron_volume
+
+```cpp
+double tetrahedron_volume(const Tetrahedron & tetra)
+```
+
+
+ Compute the (positive) volume of a tetrahedron
+
 ### segment_segment_distance
 
 ```cpp
@@ -3100,17 +2928,17 @@ std::tuple<double, Point<dimension>, Point<dimension>> segment_segment_distance(
 
 **return** a tuple containing: - the smallest distance. - the closest point on the first segment. - the closest point on the second segment.
 
-### convert_surface_mesh2d_into_3d
-
-```cpp
-std::unique_ptr<SurfaceMesh3D> convert_surface_mesh2d_into_3d(const SurfaceMesh2D & surface2d, local_index_t axis_to_add, double axis_coordinate)
-```
-
-
 ### is_zip_file
 
 ```cpp
 bool is_zip_file(std::string_view file)
+```
+
+
+### create_surface_meshes_aabb_trees
+
+```cpp
+ModelMeshesAABBTree3D create_surface_meshes_aabb_trees(const BRep & model)
 ```
 
 
@@ -3121,10 +2949,10 @@ std::tuple<std::unique_ptr<SolidMesh3D>, ModelToMeshMappings> convert_brep_into_
 ```
 
 
-### segment_line_distance
+### create_block_meshes_aabb_trees
 
 ```cpp
-std::tuple<double, Point<dimension>, Point<dimension>> segment_line_distance(const Segment<dimension> & segment, const InfiniteLine<dimension> & line)
+ModelMeshesAABBTree3D create_block_meshes_aabb_trees(const BRep & model)
 ```
 
 
@@ -3135,10 +2963,35 @@ std::unique_ptr<SurfaceMesh2D> convert_surface_mesh3d_into_2d(const SurfaceMesh3
 ```
 
 
+### segment_line_distance
+
+```cpp
+std::tuple<double, Point<dimension>, Point<dimension>> segment_line_distance(const Segment<dimension> & segment, const InfiniteLine<dimension> & line)
+```
+
+
 ### create_model_from_bounding_box
 
 ```cpp
 BRep create_model_from_bounding_box(const BoundingBox3D & box)
+```
+
+
+### safe_triangle_barycentric_coordinates
+
+```cpp
+std::array<double, 3> safe_triangle_barycentric_coordinates(const Point<dimension> & point, const Triangle<dimension> & triangle)
+```
+
+
+ Compute barycentric coordinates of a point with regards to a triangle. If triangle is degenerated, computation fallbacks onto its longest segment.
+
+**return** an array containing the parametric coordinates corresponding to the triangle vertices.
+
+### create_line_meshes_aabb_trees
+
+```cpp
+ModelMeshesAABBTree2D create_line_meshes_aabb_trees(const Section & model)
 ```
 
 
@@ -3167,10 +3020,24 @@ BRepComponentMeshPolygons component_mesh_polygons(const BRep & brep, const Polyg
 ```
 
 
+### create_surface_meshes_aabb_trees
+
+```cpp
+ModelMeshesAABBTree2D create_surface_meshes_aabb_trees(const Section & model)
+```
+
+
 ### component_mesh_edges
 
 ```cpp
 SectionComponentMeshEdges component_mesh_edges(const Section & section, const std::array<index_t, 2> & edge_unique_vertices)
+```
+
+
+### component_mesh_vertex_triplets
+
+```cpp
+ComponentMeshVertexTriplets component_mesh_vertex_triplets(absl::Span<const ComponentMeshVertex> unique_vertices0, absl::Span<const ComponentMeshVertex> unique_vertices1, absl::Span<const ComponentMeshVertex> unique_vertices2, const ComponentType & type)
 ```
 
 
@@ -3190,6 +3057,13 @@ BRepComponentMeshPolygons component_mesh_polygons(const BRep & brep, const Surfa
 ```
 
 
+### surface_radial_sort
+
+```cpp
+SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
+```
+
+
 ### convert_polygonal_surface3d_into_2d
 
 ```cpp
@@ -3203,6 +3077,28 @@ std::unique_ptr<PolygonalSurface2D> convert_polygonal_surface3d_into_2d(const Po
 SectionComponentMeshEdges component_mesh_edges(const Section & section, const Line2D & line, index_t edge)
 ```
 
+
+### point_tetrahedron_position
+
+```cpp
+POSITION point_tetrahedron_position(const Point3D & point, const Tetrahedron & tetra)
+```
+
+
+ Return the position of a point in a tetrahedron: inside, outside, on a tetra vertex, an edge or a facet.
+
+### segment_barycentric_coordinates
+
+```cpp
+std::array<double, 2> segment_barycentric_coordinates(const Point<dimension> & point, const Segment<dimension> & segment)
+```
+
+
+ Compute barycentric coordinates of a point with regards to a segment.
+
+**return** an array containing the parametric coordinates corresponding to the segment vertices.
+
+**exception**if the segment is degenerated
 
 ### component_mesh_polygons
 
@@ -3236,6 +3132,13 @@ std::unique_ptr<TriangulatedSurface3D> convert_triangulated_surface2d_into_3d(co
 ```
 
 
+### component_mesh_vertex_triplets
+
+```cpp
+ComponentMeshVertexTriplets component_mesh_vertex_triplets(absl::Span<const ComponentMeshVertex> unique_vertices0, absl::Span<const ComponentMeshVertex> unique_vertices1, absl::Span<const ComponentMeshVertex> unique_vertices2, const ComponentID & component)
+```
+
+
 ### point_line_signed_distance
 
 ```cpp
@@ -3249,6 +3152,59 @@ double point_line_signed_distance(const Point2D & point, const InfiniteLine2D & 
 
 ```cpp
 std::unique_ptr<TriangulatedSurface2D> convert_triangulated_surface3d_into_2d(const TriangulatedSurface3D & surface3d, local_index_t axis_to_remove)
+```
+
+
+### safe_segment_barycentric_coordinates
+
+```cpp
+std::array<double, 2> safe_segment_barycentric_coordinates(const Point<dimension> & point, const Segment<dimension> & segment)
+```
+
+
+ Compute barycentric coordinates of a point with regards to a segment. If segment is degenerated, computation fallbacks onto its vertices.
+
+**return** an array containing the parametric coordinates corresponding to the segment vertices.
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
+```
+
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### segment_segment_intersection_detection
+
+```cpp
+SegmentSegmentIntersection segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
+```
+
+
+### segment_segment_intersection_detection
+
+```cpp
+SegmentSegmentIntersection segment_segment_intersection_detection(const Segment3D & segment0, const Segment3D & segment1)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
 ```
 
 
@@ -3322,6 +3278,28 @@ std::tuple<double, Point3D, Point3D> line_triangle_distance(const InfiniteLine3D
 
 **return** a tuple containing: - the smallest distance. - the closest point on the line. - the closest point on the triangle.
 
+### line_plane_intersection
+
+```cpp
+IntersectionResult<Point3D> line_plane_intersection(const InfiniteLine3D & line, const Plane & plane)
+```
+
+
+ Compute the intersection between a plane and an infinite line
+
+**return** an optional of the intersection.
+
+### line_sphere_intersection
+
+```cpp
+IntersectionResult<absl::InlinedVector<Point<dimension>, 2>> line_sphere_intersection(const InfiniteLine<dimension> & line, const Sphere<dimension> & sphere)
+```
+
+
+ Compute the intersection(s) between a sphere and an infinite line
+
+**return** an optional of the intersection points.
+
 ### segment_triangle_distance
 
 ```cpp
@@ -3333,6 +3311,51 @@ std::tuple<double, Point3D, Point3D> segment_triangle_distance(const Segment3D &
 
 **return** a tuple containing: - the smallest distance. - the closest point on the segment. - the closest point on the triangle.
 
+### segment_sphere_intersection
+
+```cpp
+IntersectionResult<absl::InlinedVector<Point<dimension>, 2>> segment_sphere_intersection(const Segment<dimension> & segment, const Sphere<dimension> & sphere)
+```
+
+
+ Compute the intersection(s) between a (n-1)-sphere and a segment in n-dimension space.
+
+**return** an optional of the intersection points.
+
+### segment_plane_intersection
+
+```cpp
+IntersectionResult<Point3D> segment_plane_intersection(const Segment3D & segment, const Plane & plane)
+```
+
+
+ Compute the intersection between a plane and a segment
+
+**return** an optional of the intersection point.
+
+**warning** if the segment is included in the plane nothing is returned
+
+### block_mesh_polyhedra_from_surface_polygon
+
+```cpp
+PolyhedraAroundFacet block_mesh_polyhedra_from_surface_polygon(const BRep & model, const Block3D & block, const Surface3D & surface, index_t polygon_id)
+```
+
+
+### point_triangle_distance
+
+```cpp
+std::tuple<double, Point3D> point_triangle_distance(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### point_triangle_distance
+
+```cpp
+std::tuple<double, Point2D> point_triangle_distance(const Point2D & point, const Triangle2D & triangle)
+```
+
+
 ### triangle_triangle_distance
 
 ```cpp
@@ -3343,26 +3366,6 @@ std::tuple<double, Point3D, Point3D> triangle_triangle_distance(const Triangle3D
  Compute the smallest distance between two triangles
 
 **return** a tuple containing: - the smallest distance. - the closest point on the first triangle. - the closest point on the second triangle.
-
-### segment_triangle_intersection
-
-```cpp
-IntersectionResult<Point3D> segment_triangle_intersection(const Segment3D & segment, const Triangle3D & triangle)
-```
-
-
- Compute the intersection of a segment and a triangle
-
-**return** an optional of the intersection point.
-
-**warning** if the segment is included in the triangle plane nothing is returned
-
-### block_mesh_polyhedra_from_surface_polygon
-
-```cpp
-PolyhedraAroundFacet block_mesh_polyhedra_from_surface_polygon(const BRep & model, const Block3D & block, const Surface3D & surface, index_t polygon_id)
-```
-
 
 ### triangle_triangle_distance_between_non_conformal_parts
 
@@ -3384,18 +3387,18 @@ absl::InlinedVector<BlockPolyhedronFacet, 2> block_vertices_from_surface_polygon
 ```
 
 
-### line_triangle_intersection
+### segment_triangle_intersection
 
 ```cpp
-IntersectionResult<Point3D> line_triangle_intersection(const InfiniteLine3D & line, const Triangle3D & triangle)
+IntersectionResult<Point3D> segment_triangle_intersection(const Segment3D & segment, const Triangle3D & triangle)
 ```
 
 
- Compute the intersection of a line and a triangle
+ Compute the intersection of a segment and a triangle
 
 **return** an optional of the intersection point.
 
-**warning** if the segment is included in the triangle plane nothing is returned
+**details** parallel when the segment direction deviates from the triangle plane by less than GLOBAL_EPSILON over the triangle extent (whatever their distance), or when the segment lies within GLOBAL_EPSILON of the triangle plane near the triangle and of the triangle. A segment shorter than GLOBAL_EPSILON is considered as a point.
 
 ### oriented_block_vertices_from_surface_polygon
 
@@ -3415,17 +3418,6 @@ std::tuple<double, Point3D> point_tetrahedron_distance(const Point3D & point, co
 
 **return** a tuple containing: - the smallest distance. - the nearest point on the tetrahedron.
 
-### line_line_intersection
-
-```cpp
-IntersectionResult<Point2D> line_line_intersection(const InfiniteLine2D & line0, const InfiniteLine2D & line1)
-```
-
-
- Compute the intersection between two infinite lines
-
-**return** an optional of the intersection point.
-
 ### surface_vertices_from_line_edge
 
 ```cpp
@@ -3433,16 +3425,25 @@ absl::InlinedVector<SurfacePolygonEdge, 2> surface_vertices_from_line_edge(const
 ```
 
 
-### segment_segment_intersection
+### line_triangle_intersection
 
 ```cpp
-IntersectionResult<Point2D> segment_segment_intersection(const Segment2D & segment0, const Segment2D & segment1)
+IntersectionResult<Point3D> line_triangle_intersection(const InfiniteLine3D & line, const Triangle3D & triangle)
 ```
 
 
- Compute the intersection between two segments
+ Compute the intersection of a line and a triangle
 
 **return** an optional of the intersection point.
+
+**details** parallel when the line direction deviates from the triangle plane by less than GLOBAL_EPSILON over the triangle extent (whatever their distance), or when the line lies within GLOBAL_EPSILON of the triangle plane near the triangle and of the triangle.
+
+### oriented_surface_vertices_from_line_edge
+
+```cpp
+SurfacePolygonsEdgeVertices oriented_surface_vertices_from_line_edge(const BRep & model, const Surface3D & surface, const Line3D & line, index_t edge_id)
+```
+
 
 ### point_plane_distance
 
@@ -3455,21 +3456,14 @@ std::tuple<double, Point3D> point_plane_distance(const Point3D & point, const Pl
 
 **return** a tuple containing: - the smallest distance. - the nearest point on the plane.
 
-### oriented_surface_vertices_from_line_edge
+### line_line_intersection
 
 ```cpp
-SurfacePolygonsEdgeVertices oriented_surface_vertices_from_line_edge(const BRep & model, const Surface3D & surface, const Line3D & line, index_t edge_id)
+IntersectionResult<Point2D> line_line_intersection(const InfiniteLine2D & line0, const InfiniteLine2D & line1)
 ```
 
 
-### segment_line_intersection
-
-```cpp
-IntersectionResult<Point2D> segment_line_intersection(const Segment2D & segment, const InfiniteLine2D & line)
-```
-
-
- Compute the intersection between a segment and an infinite line
+ Compute the intersection between two infinite lines
 
 **return** an optional of the intersection point.
 
@@ -3498,30 +3492,18 @@ SurfacePolygonsEdgeVertices oriented_surface_vertices_from_line_edge(const Secti
 ```
 
 
-### segment_cylinder_intersection
+### segment_segment_intersection
 
 ```cpp
-IntersectionResult<absl::InlinedVector<Point3D, 2>> segment_cylinder_intersection(const Segment3D & segment, const Cylinder & cylinder)
+IntersectionResult<Point2D> segment_segment_intersection(const Segment2D & segment0, const Segment2D & segment1)
 ```
 
 
- Compute the intersection between a segment and a cylinder
+ Compute the intersection between two segments
 
-**return** an optional of the intersection points.
+**return** an optional of the intersection point.
 
-### point_triangle_distance
-
-```cpp
-std::tuple<double, Point3D> point_triangle_distance(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### point_triangle_distance
-
-```cpp
-std::tuple<double, Point2D> point_triangle_distance(const Point2D & point, const Triangle2D & triangle)
-```
-
+**details** parallel when the segment0 direction deviates from segment1 by less than GLOBAL_EPSILON over the segment1 extent (whatever their distance), or when the segments overlap within GLOBAL_EPSILON. A segment shorter than GLOBAL_EPSILON is considered as a point.
 
 ### point_sphere_distance
 
@@ -3533,6 +3515,56 @@ std::tuple<double, Point<dimension>> point_sphere_distance(const Point<dimension
  Compute the smallest distance between a point and a sphere
 
 **return** a tuple containing: - the smallest distance. - the closest point on the sphere.
+
+### segment_line_intersection
+
+```cpp
+IntersectionResult<Point2D> segment_line_intersection(const Segment2D & segment, const InfiniteLine2D & line)
+```
+
+
+ Compute the intersection between a segment and an infinite line
+
+**return** an optional of the intersection point.
+
+**details** parallel when the segment deviates from the line direction by less than GLOBAL_EPSILON over the segment extent (whatever their distance), or when the segment lies within GLOBAL_EPSILON of the line.
+
+### point_sphere_signed_distance
+
+```cpp
+std::tuple<double, Point<dimension>> point_sphere_signed_distance(const Point<dimension> & point, const Sphere<dimension> & sphere)
+```
+
+
+ Compute the smallest signed distance between a point and a sphere
+
+**return** a tuple containing: - the smallest signed distance. - the closest point on the sphere.
+
+**details** the sign is positive outside the sphere, negative inside.
+
+### segment_cylinder_intersection
+
+```cpp
+IntersectionResult<absl::InlinedVector<Point3D, 2>> segment_cylinder_intersection(const Segment3D & segment, const Cylinder & cylinder)
+```
+
+
+ Compute the intersection between a segment and a cylinder
+
+**return** an optional of the intersection points.
+
+### point_ball_distance
+
+```cpp
+std::tuple<double, Point<dimension>> point_ball_distance(const Point<dimension> & point, const Ball<dimension> & sphere)
+```
+
+
+ Compute the smallest distance between a point and a ball
+
+**return** a tuple containing: - the smallest distance. - the closest point on the ball.
+
+**details** Result is always positive or null. If point is inside the ball, the returned distance is 0.
 
 ### line_cylinder_intersection
 
@@ -3556,18 +3588,16 @@ IntersectionResult<absl::InlinedVector<Point3D, 2>> triangle_circle_intersection
 
 **return** an optional of the intersection points.
 
-### point_sphere_signed_distance
+### point_circle_distance
 
 ```cpp
-std::tuple<double, Point<dimension>> point_sphere_signed_distance(const Point<dimension> & point, const Sphere<dimension> & sphere)
+std::tuple<double, Point3D> point_circle_distance(const Point3D & point, const Circle & circle)
 ```
 
 
- Compute the smallest signed distance between a point and a sphere
+ Compute the smallest distance between a point and a circle
 
-**return** a tuple containing: - the smallest signed distance. - the closest point on the sphere.
-
-**details** the sign is positive outside the sphere, negative inside.
+**return** a tuple containing: - the smallest distance. - the closest point on the circle.
 
 ### plane_circle_intersection
 
@@ -3580,51 +3610,7 @@ IntersectionResult<absl::InlinedVector<Point3D, 2>> plane_circle_intersection(co
 
 **return** an optional of the intersection points.
 
-### point_ball_distance
-
-```cpp
-std::tuple<double, Point<dimension>> point_ball_distance(const Point<dimension> & point, const Ball<dimension> & sphere)
-```
-
-
- Compute the smallest distance between a point and a ball
-
-**return** a tuple containing: - the smallest distance. - the closest point on the ball.
-
-**details** Result is always positive or null. If point is inside the ball, the returned distance is 0.
-
-### plane_plane_intersection
-
-```cpp
-IntersectionResult<OwnerInfiniteLine3D> plane_plane_intersection(const Plane & plane0, const Plane & plane1)
-```
-
-
- Compute the intersection between two planes
-
-**return** an optional of the intersection line.
-
-### point_circle_distance
-
-```cpp
-std::tuple<double, Point3D> point_circle_distance(const Point3D & point, const Circle & circle)
-```
-
-
- Compute the smallest distance between a point and a circle
-
-**return** a tuple containing: - the smallest distance. - the closest point on the circle.
-
-### segment_ellipse_intersection
-
-```cpp
-IntersectionResult<absl::InlinedVector<Point<dimension>, 2>> segment_ellipse_intersection(const Segment<dimension> & segment, const Ellipse<dimension> & ellipse)
-```
-
-
- Compute the intersection between a segment and an ellipse
-
-**return** an optional of the intersection points.
+**details** parallel when the circle lies within GLOBAL_EPSILON of the plane, none when it is parallel to the plane over its extent and farther than GLOBAL_EPSILON.
 
 ### point_circle_signed_distance
 
@@ -3637,18 +3623,20 @@ std::tuple<double, Point3D> point_circle_signed_distance(const Point3D & point, 
 
 **return** a tuple containing: - the smallest signed distance. - the closest point on the circle.
 
-**details** the sign is positive outside the circle, negative inside.
+**details** the sign is given by the side of the circle plane: positive in the direction of the plane normal, negative otherwise.
 
-### line_ellipse_intersection
+### plane_plane_intersection
 
 ```cpp
-IntersectionResult<absl::InlinedVector<Point<dimension>, 2>> line_ellipse_intersection(const InfiniteLine<dimension> & line, const Ellipse<dimension> & ellipse)
+IntersectionResult<OwnerInfiniteLine3D> plane_plane_intersection(const Plane & plane0, const Plane & plane1)
 ```
 
 
- Compute the intersection between a line and an ellipse
+ Compute the intersection between two planes
 
-**return** an optional of the intersection points.
+**return** an optional of the intersection line.
+
+**details** the planes are parallel when the sine of their angle is below GLOBAL_EPSILON: parallel when the plane0 origin is within GLOBAL_EPSILON of plane1, none otherwise.
 
 ### point_disk_distance
 
@@ -3662,6 +3650,41 @@ std::tuple<double, Point3D> point_disk_distance(const Point3D & point, const Dis
 **return** a tuple containing: - the smallest distance. - the closest point on the disk.
 
 **details** Result is always positive or null. If point is inside the disk, the returned distance is 0.
+
+### segment_ellipse_intersection
+
+```cpp
+IntersectionResult<absl::InlinedVector<Point<dimension>, 2>> segment_ellipse_intersection(const Segment<dimension> & segment, const Ellipse<dimension> & ellipse)
+```
+
+
+ Compute the intersection between a segment and an ellipse
+
+**return** an optional of the intersection points.
+
+### point_cylinder_distance
+
+```cpp
+std::tuple<double, Point3D> point_cylinder_distance(const Point3D & point, const Cylinder & cylinder)
+```
+
+
+ Compute the smallest distance between a point and a cylinder surface, i.e. its wall and its two end disks
+
+**return** a tuple containing: - the smallest distance. - the closest point on the cylinder surface.
+
+**details** Result is always positive or null, even if the point is inside the cylinder.
+
+### line_ellipse_intersection
+
+```cpp
+IntersectionResult<absl::InlinedVector<Point<dimension>, 2>> line_ellipse_intersection(const InfiniteLine<dimension> & line, const Ellipse<dimension> & ellipse)
+```
+
+
+ Compute the intersection between a line and an ellipse
+
+**return** an optional of the intersection points.
 
 ### Bisector
 
@@ -3680,7 +3703,7 @@ std::tuple<double, std::array<double, dimension>> SqrDistanceSpecial(const std::
 ### SquaredDistance
 
 ```cpp
-std::tuple<double, Point<dimension>> SquaredDistance(const Ellipse<dimension> & ellipse, const std::array<double, dimension> & query_point_coordinates)
+std::tuple<double, std::array<double, dimension>> SquaredDistance(const std::array<double, dimension> & extents, const std::array<double, dimension> & query_point_coordinates)
 ```
 
 
@@ -3768,6 +3791,8 @@ std::tuple<double, Point<dimension>> point_ellipse_distance(const Point<dimensio
 | incorrect |
 
 
+
+ Objects closer than GLOBAL_EPSILON are considered intersecting. - none: the objects are farther than GLOBAL_EPSILON. - intersect: the result points are within GLOBAL_EPSILON of both objects. - parallel: no point is returned. Depending on the function, the   objects have parallel directions (up to GLOBAL_EPSILON over their   extent), whatever their distance, or overlap in a common support   (line or plane). Check the distance between the objects when needed. - incorrect: the computed points are not within GLOBAL_EPSILON of both   objects.
 
 
 

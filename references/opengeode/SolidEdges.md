@@ -43,6 +43,13 @@ public SolidEdges<dimension> & operator=(const SolidEdges<dimension> & )
 ```
 
 
+### find_or_create_edge
+
+```cpp
+public index_t find_or_create_edge(std::array<index_t, 2> edge_vertices, SolidEdgesKey )
+```
+
+
 ### SolidEdges
 
 ```cpp
@@ -61,13 +68,6 @@ public void SolidEdges<value-parameter-0-0>(const SolidMesh<dimension> & solid)
 
 ```cpp
 public void ~SolidEdges<value-parameter-0-0>()
-```
-
-
-### find_or_create_edge
-
-```cpp
-public index_t find_or_create_edge(std::array<index_t, 2> edge_vertices, SolidEdgesKey )
 ```
 
 
@@ -157,6 +157,15 @@ public std::vector<index_t> delete_edges(const std::vector<bool> & to_delete, So
 public std::vector<index_t> remove_isolated_edges(SolidEdgesKey )
 ```
 
+
+### reserve_edges
+
+```cpp
+public void reserve_edges(index_t nb, SolidEdgesKey )
+```
+
+
+ Reserve memory for nb additional edges
 
 ### overwrite_edges
 

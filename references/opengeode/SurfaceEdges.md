@@ -63,6 +63,13 @@ public SurfaceEdges<dimension> & operator=(const SurfaceEdges<dimension> & )
 ```
 
 
+### find_or_create_edge
+
+```cpp
+public index_t find_or_create_edge(std::array<index_t, 2> edge_vertices, SurfaceEdgesKey )
+```
+
+
 ### SurfaceEdges
 
 ```cpp
@@ -74,13 +81,6 @@ public void SurfaceEdges<value-parameter-0-0>()
 
 ```cpp
 public void SurfaceEdges<value-parameter-0-0>(const SurfaceMesh<dimension> & surface)
-```
-
-
-### find_or_create_edge
-
-```cpp
-public index_t find_or_create_edge(std::array<index_t, 2> edge_vertices, SurfaceEdgesKey )
 ```
 
 
@@ -177,6 +177,15 @@ public std::vector<index_t> delete_edges(const std::vector<bool> & to_delete, Su
 public std::vector<index_t> remove_isolated_edges(SurfaceEdgesKey )
 ```
 
+
+### reserve_edges
+
+```cpp
+public void reserve_edges(index_t nb, SurfaceEdgesKey )
+```
+
+
+ Reserve memory for nb additional edges
 
 ### overwrite_edges
 

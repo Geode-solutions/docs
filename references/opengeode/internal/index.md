@@ -31,21 +31,22 @@ const name = words.join('-');
 * [PolyhedraAroundVertexImpl](PolyhedraAroundVertexImpl.md)
 * [SimplicialModelCreator](SimplicialModelCreator.md)
 * [TextureImpl](TextureImpl.md)
+* [TrianglePivotCache](TrianglePivotCache.md)
 
 
 ## Functions
-
-### point_segment_position
-
-```cpp
-POSITION point_segment_position(const SIDE & s0, const SIDE & s1)
-```
-
 
 ### segment_intersection_detection
 
 ```cpp
 POSITION segment_intersection_detection(const SIDE & s0, const SIDE & s1)
+```
+
+
+### point_segment_position
+
+```cpp
+POSITION point_segment_position(const SIDE & s0, const SIDE & s1)
 ```
 
 
@@ -147,6 +148,15 @@ void register_mesh_components(const Model & model, typename Model::Builder & bui
 ```
 
 
+### estimate_nb_facets
+
+```cpp
+index_t estimate_nb_facets(const SolidMesh<dimension> & solid)
+```
+
+
+ Estimate the number of facets of a solid: each inner facet is shared by 2 polyhedra, with a margin for border facets
+
 ### gradient_shape_function_value
 
 ```cpp
@@ -182,10 +192,24 @@ void register_collection_components(const Model & model, typename Model::Builder
 ```
 
 
+### point_tetrahedron_facet_sign
+
+```cpp
+GEO::SIGN point_tetrahedron_facet_sign(const Point3D & point, const Tetrahedron & tetra, local_index_t facet)
+```
+
+
 ### compute_surface_scalar_function_gradient
 
 ```cpp
 std::tuple<uuid, std::vector<index_t>> compute_surface_scalar_function_gradient(const SurfaceMesh<dimension> & mesh, const uuid & scalar_function_id, absl::Span<const index_t> no_value_vertices)
+```
+
+
+### tetrahedron_orientation
+
+```cpp
+GEO::SIGN tetrahedron_orientation(const Tetrahedron & tetra)
 ```
 
 
@@ -200,6 +224,13 @@ std::tuple<uuid, std::vector<index_t>> compute_solid_scalar_function_gradient(co
 
 ```cpp
 void copy_attributes(const AttributeManager & manager_in, AttributeManager & manager_out)
+```
+
+
+### point_tetrahedron_facet_inner_sign
+
+```cpp
+GEO::SIGN point_tetrahedron_facet_inner_sign(const Point3D & point, const Tetrahedron & tetra, local_index_t facet, GEO::SIGN orientation)
 ```
 
 

@@ -38,6 +38,15 @@ public std::vector<index_t> delete_isolated_edges()
 
 **return** the mapping between old edge indices to new ones. Deleted edges new index is NO_ID
 
+### reserve_edges
+
+```cpp
+public void reserve_edges(index_t nb)
+```
+
+
+ Reserve memory for nb additional edges
+
 ### SurfaceEdgesBuilder
 
 ```cpp
