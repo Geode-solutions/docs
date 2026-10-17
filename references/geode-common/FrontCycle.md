@@ -99,6 +99,22 @@ public void insert_after(index_t vertex, index_t new_vertex)
 ```
 
 
+### insert_before
+
+```cpp
+public void insert_before(index_t vertex, const std::vector<index_t> & new_vertices)
+```
+
+
+ Insert the given vertices, in order, just before/after the first occurrence of vertex
+
+### insert_after
+
+```cpp
+public void insert_after(index_t vertex, const std::vector<index_t> & new_vertices)
+```
+
+
 ### remove_vertex
 
 ```cpp
