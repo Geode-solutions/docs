@@ -102,6 +102,15 @@ public index_t nb_sets()
 ```
 
 
+### set_names
+
+```cpp
+public std::vector<std::string> set_names()
+```
+
+
+ Set names, in the order of their creation.
+
 ### nb_objects_in_set
 
 ```cpp

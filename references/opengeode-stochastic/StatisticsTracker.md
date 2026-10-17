@@ -37,6 +37,15 @@ public void add_realization(const std::vector<double> & values)
 ```
 
 
+### term_names
+
+```cpp
+public std::vector<std::string> term_names()
+```
+
+
+ Names of the tracked statistics, in the order of means() and variances().
+
 ### mean
 
 ```cpp
