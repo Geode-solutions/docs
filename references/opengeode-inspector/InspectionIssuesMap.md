@@ -51,6 +51,17 @@ public index_t nb_issues()
 ```
 
 
+ Total number of issues, summed over every component of the map
+
+### nb_components_with_issues
+
+```cpp
+public index_t nb_components_with_issues()
+```
+
+
+ Number of components having at least one issue
+
 ### add_issues_to_map
 
 ```cpp

@@ -62,6 +62,13 @@ InspectionIssues<index_t> model_component_vertices_not_associated_to_unique_vert
 ```
 
 
+### add_unique_vertex_issue
+
+```cpp
+void add_unique_vertex_issue(InspectionIssues<index_t> & issues, index_t unique_vertex_id, const Check & check)
+```
+
+
 ### vertex_cmvs_by_component
 
 ```cpp

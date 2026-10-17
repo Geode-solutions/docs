@@ -65,6 +65,13 @@ public std::string string()
 ```
 
 
+### append_string
+
+```cpp
+public void append_string(std::string & message)
+```
+
+
 ### issues
 
 ```cpp
