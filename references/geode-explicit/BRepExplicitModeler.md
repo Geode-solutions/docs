@@ -18,8 +18,6 @@ const name = words.join('-');
 
 FailedElements
 
-Parameters
-
 
 
 ## Functions
@@ -31,6 +29,13 @@ public void BRepExplicitModeler(const BRepExplicitModeler & )
 ```
 
 
+### BRepExplicitModeler
+
+```cpp
+public void BRepExplicitModeler(BRepExplicitModeler && )
+```
+
+
 ### operator=
 
 ```cpp
@@ -38,10 +43,17 @@ public BRepExplicitModeler & operator=(const BRepExplicitModeler & )
 ```
 
 
+### operator=
+
+```cpp
+public BRepExplicitModeler & operator=(BRepExplicitModeler && )
+```
+
+
 ### BRepExplicitModeler
 
 ```cpp
-public void BRepExplicitModeler(BRep & brep, const Parameters & parameters)
+public void BRepExplicitModeler(BRep & brep, BRepExplicitModelerParameters parameters)
 ```
 
 

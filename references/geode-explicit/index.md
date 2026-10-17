@@ -22,6 +22,7 @@ const name = words.join('-');
 
 ## Records
 
+* [BRepExplicitModelerParameters](BRepExplicitModelerParameters.md)
 * [BRepExplicitModelerRemainingException](BRepExplicitModelerRemainingException.md)
 * [BRepExplicitModeler](BRepExplicitModeler.md)
 * [BRepSolidModeler](BRepSolidModeler.md)
@@ -39,6 +40,7 @@ const name = words.join('-');
 * [MeshElements](MeshElements.md)
 * [Meshes](Meshes.md)
 * [ModelMappings](ModelMappings.md)
+* [ModifiableObject](ModifiableObject.md)
 * [SectionExplicitModeler](SectionExplicitModeler.md)
 * [uuid](uuid.md)
 
@@ -79,6 +81,24 @@ void inspect_generated_brep_without_block_topology(const BRep & brep)
 void add_mesh_elements(MeshElements & to_elements, const MeshElements & from_elements)
 ```
 
+
+### keep_component
+
+```cpp
+void keep_component(BRepExplicitModelerParameters & parameters, const ComponentID & component_id)
+```
+
+
+ Add the component to the components to keep. Every other Corner, Line and Surface not kept is removed.
+
+### keep_only_surfaces
+
+```cpp
+void keep_only_surfaces(BRepExplicitModelerParameters & parameters, const BRep & brep)
+```
+
+
+ Keep only the Surfaces of the BRep: its Corners and Lines are removed and recomputed by the modeler from the Surfaces. Use keep_component to also keep some Corners or Lines.
 
 
 

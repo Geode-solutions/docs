@@ -11,10 +11,15 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct Parameters
+# struct BRepExplicitModelerParameters
 
 
 ## Members
+
+```cpp
+public optional components_to_keep
+
+```
 
 ```cpp
 public bool connectivity_parallelization

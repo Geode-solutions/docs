@@ -47,7 +47,7 @@ public BRepConformityComputer & operator=(BRepConformityComputer && )
 ### BRepConformityComputer
 
 ```cpp
-public void BRepConformityComputer(const BRep & brep, BRepBuilder & builder, BRepExplicitModeler::Parameters parameters)
+public void BRepConformityComputer(const BRep & brep, BRepBuilder & builder, BRepExplicitModelerParameters parameters)
 ```
 
 

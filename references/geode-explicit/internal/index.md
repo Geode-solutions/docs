@@ -19,6 +19,7 @@ const name = words.join('-');
 
 * [BRepComputer](BRepComputer.md)
 * [BRepConformityComputer](BRepConformityComputer.md)
+* [BRepMicroTopologicalClean](BRepMicroTopologicalClean.md)
 * [BRepModelerMappingsBuilder](BRepModelerMappingsBuilder.md)
 * [BRepStitching](BRepStitching.md)
 * [ExtractedEdgedCurveInfoBuilder](ExtractedEdgedCurveInfoBuilder.md)
@@ -42,6 +43,13 @@ const name = words.join('-');
 
 ```cpp
 ExtractedMeshes extract_macro_info(const BackgroundSolid & background_solid, const MeshElements & to_extract)
+```
+
+
+### colocalise_and_clean_unique_vertices
+
+```cpp
+void colocalise_and_clean_unique_vertices(ModifiableBRep model, BRepBuilder & builder)
 ```
 
 
@@ -80,6 +88,20 @@ StitchingMappings perform_surface_stitching(const TriangulatedSurface3D & surfac
 ```
 
 
+### perform_surface_stitching
+
+```cpp
+StitchingMappings perform_surface_stitching(const TriangulatedSurface3D & surface, TriangulatedSurfaceModifier3D & modifier, absl::Span<const Point3D> points, double threshold, SurfaceStitchingFilter filter)
+```
+
+
+### build_solid
+
+```cpp
+std::unique_ptr<TetrahedralSolid3D> build_solid(const BoundingBox3D & bbox, const IsotropicMetric3D & metric)
+```
+
+
 ### perform_triangle_stitching
 
 ```cpp
@@ -91,13 +113,6 @@ StitchingMappings perform_triangle_stitching(const TriangulatedSurface3D & surfa
 
 ```cpp
 StitchingMappings perform_curve_stitching(const EdgedCurve3D & curve, EdgedCurveModifier3D & modifier, absl::Span<const Point3D> points, double threshold)
-```
-
-
-### build_solid
-
-```cpp
-std::unique_ptr<TetrahedralSolid3D> build_solid(const BoundingBox3D & bbox, const IsotropicMetric3D & metric)
 ```
 
 

@@ -72,6 +72,13 @@ public void process_points(absl::Span<const Point3D> points)
 ```
 
 
+### process_point_contacts
+
+```cpp
+public void process_point_contacts()
+```
+
+
 ### process_free_borders
 
 ```cpp
