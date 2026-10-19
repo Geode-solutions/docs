@@ -374,10 +374,10 @@ const name = words.join('-');
 
 ## Functions
 
-### register_geode_builder
+### register_geode_mesh_output
 
 ```cpp
-void register_geode_builder()
+void register_geode_mesh_output()
 ```
 
 
@@ -402,6 +402,13 @@ void concatenate(Container & container, const Container & values)
 ```
 
 
+### register_geode_builder
+
+```cpp
+void register_geode_builder()
+```
+
+
 ### register_geode_mesh
 
 ```cpp
@@ -413,13 +420,6 @@ void register_geode_mesh()
 
 ```cpp
 void register_geode_mesh_input()
-```
-
-
-### register_geode_mesh_output
-
-```cpp
-void register_geode_mesh_output()
 ```
 
 
@@ -1033,20 +1033,6 @@ std::unique_ptr<TriangulatedSurface<dimension>> load_triangulated_surface(const 
 
 **filename** [in] Path to the file to load.
 
-### create_section_coordinate_system
-
-```cpp
-void create_section_coordinate_system(const Section & model, SectionBuilder & builder, std::string_view new_coordinate_system_name, const CoordinateSystem2D & input, const CoordinateSystem2D & output)
-```
-
-
-### goto_keyword_if_it_exists
-
-```cpp
-std::optional<std::string> goto_keyword_if_it_exists(std::ifstream & file, std::string_view word)
-```
-
-
 ### save_raster_image
 
 ```cpp
@@ -1119,32 +1105,6 @@ std::vector<std::string> save_polyhedral_solid(const PolyhedralSolid<dimension> 
 
 **filename** [in] Path to the file where save the PolyhedralSolid.
 
-### save_tetrahedral_solid
-
-```cpp
-std::vector<std::string> save_tetrahedral_solid(const TetrahedralSolid<dimension> & tetrahedral_solid, std::string_view filename)
-```
-
-
- API function for saving a TetrahedralSolid. The adequate saver is called depending on the given filename extension.
-
-**tetrahedral_solid** [in] TetrahedralSolid to save.
-
-**filename** [in] Path to the file where save the TetrahedralSolid.
-
-### save_triangulated_surface
-
-```cpp
-std::vector<std::string> save_triangulated_surface(const TriangulatedSurface<dimension> & triangulated_surface, std::string_view filename)
-```
-
-
- API function for saving a TriangulatedSurface. The adequate saver is called depending on the given filename extension.
-
-**triangulated_surface** [in] TriangulatedSurface to save.
-
-**filename** [in] Path to the file where save the TriangulatedSurface.
-
 ### multiple_permute
 
 ```cpp
@@ -1172,12 +1132,31 @@ std::vector<std::string> save_regular_grid(const RegularGrid<dimension> & regula
 
 **filename** [in] Path to the file where save the RegularGrid.
 
-### operator""_uc
+### save_tetrahedral_solid
 
 ```cpp
-unsigned char operator""_uc(unsigned long long arg)
+std::vector<std::string> save_tetrahedral_solid(const TetrahedralSolid<dimension> & tetrahedral_solid, std::string_view filename)
 ```
 
+
+ API function for saving a TetrahedralSolid. The adequate saver is called depending on the given filename extension.
+
+**tetrahedral_solid** [in] TetrahedralSolid to save.
+
+**filename** [in] Path to the file where save the TetrahedralSolid.
+
+### save_triangulated_surface
+
+```cpp
+std::vector<std::string> save_triangulated_surface(const TriangulatedSurface<dimension> & triangulated_surface, std::string_view filename)
+```
+
+
+ API function for saving a TriangulatedSurface. The adequate saver is called depending on the given filename extension.
+
+**triangulated_surface** [in] TriangulatedSurface to save.
+
+**filename** [in] Path to the file where save the TriangulatedSurface.
 
 ### triangle_area_sign
 
@@ -1188,10 +1167,23 @@ SIGN triangle_area_sign(const Triangle2D & triangle)
 
  Return the sign of a 2D triangle area.
 
-### to_string
+### save_polygonal_surface
 
 ```cpp
-std::string to_string(std::string_view view)
+std::vector<std::string> save_polygonal_surface(const PolygonalSurface<dimension> & polygonal_surface, std::string_view filename)
+```
+
+
+ API function for saving a PolygonalSurface. The adequate saver is called depending on the given filename extension.        const PolygonalSurface< dimension >& polygonal_surface,
+
+**edged_curve** [in] PolygonalSurface to save.
+
+**filename** [in] Path to the file where save the PolygonalSurface.
+
+### operator""_uc
+
+```cpp
+unsigned char operator""_uc(unsigned long long arg)
 ```
 
 
@@ -1224,24 +1216,17 @@ index_t delete_vector_elements(const DeleteContainer & to_delete, ValueContainer
 
 **return** The number of deleted elements
 
-### to_array
+### create_section_coordinate_system
 
 ```cpp
-std::array<T, sizeof...(Args)> to_array(Args &&... args)
+void create_section_coordinate_system(const Section & model, SectionBuilder & builder, std::string_view new_coordinate_system_name, const CoordinateSystem2D & input, const CoordinateSystem2D & output)
 ```
 
 
-### AbslHashValue
+### goto_keyword_if_it_exists
 
 ```cpp
-H AbslHashValue(H h, const NamedType<Type, Tag> & value)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const ComponentMeshVertex & value)
+std::optional<std::string> goto_keyword_if_it_exists(std::ifstream & file, std::string_view word)
 ```
 
 
@@ -1278,61 +1263,6 @@ std::vector<std::string> save_light_regular_grid(const LightRegularGrid<dimensio
 
 **filename** [in] Path to the file where save the LightRegularGrid.
 
-### save_polygonal_surface
-
-```cpp
-std::vector<std::string> save_polygonal_surface(const PolygonalSurface<dimension> & polygonal_surface, std::string_view filename)
-```
-
-
- API function for saving a PolygonalSurface. The adequate saver is called depending on the given filename extension.        const PolygonalSurface< dimension >& polygonal_surface,
-
-**edged_curve** [in] PolygonalSurface to save.
-
-**filename** [in] Path to the file where save the PolygonalSurface.
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const ComponentID & value)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const MeshElement & value)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const EdgeVertex & value)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const PolyhedronVertex & value)
-```
-
-
-### permute
-
-```cpp
-void permute(Container & data, absl::Span<const index_t> permutation)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const PolygonVertex & value)
-```
-
-
 ### next_keyword_if_it_exists
 
 ```cpp
@@ -1368,23 +1298,19 @@ SegmentSegmentIntersection segment_segment_intersection_detection(const Segment<
 
 **return** the position of the intersection on the two segments. Returns outside-outside if there is no intersection or parallel-pallel if all points are colinear
 
+### to_string
+
+```cpp
+std::string to_string(std::string_view view)
+```
+
+
 ### set_brep_active_coordinate_system
 
 ```cpp
 void set_brep_active_coordinate_system(const BRep & model, BRepBuilder & builder, std::string_view coordinate_system_name)
 ```
 
-
-### load_graph
-
-```cpp
-std::unique_ptr<Graph> load_graph(std::string_view filename)
-```
-
-
- API function for loading an Graph. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
 
 ### load_vertex_set
 
@@ -1394,17 +1320,6 @@ std::unique_ptr<VertexSet> load_vertex_set(std::string_view filename)
 
 
  API function for loading an VertexSet. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### load_regular_grid
-
-```cpp
-std::unique_ptr<RegularGrid<dimension>> load_regular_grid(std::string_view filename)
-```
-
-
- API function for loading a RegularGrid. The adequate loader is called depending on the filename extension.
 
 **filename** [in] Path to the file to load.
 
@@ -1420,6 +1335,35 @@ Point<dimension> point_line_projection(const Point<dimension> & point, const Inf
 **point** [in] the point to project
 
 **line** [in] the line
+
+### to_array
+
+```cpp
+std::array<T, sizeof...(Args)> to_array(Args &&... args)
+```
+
+
+### load_graph
+
+```cpp
+std::unique_ptr<Graph> load_graph(std::string_view filename)
+```
+
+
+ API function for loading an Graph. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### load_regular_grid
+
+```cpp
+std::unique_ptr<RegularGrid<dimension>> load_regular_grid(std::string_view filename)
+```
+
+
+ API function for loading a RegularGrid. The adequate loader is called depending on the filename extension.
+
+**filename** [in] Path to the file to load.
 
 ### load_edged_curve
 
@@ -1761,13 +1705,6 @@ bool is_tetrahedral_solid_saveable(const TetrahedralSolid<dimension> & tetrahedr
 ```
 
 
-### create_solid_mesh_coordinate_system
-
-```cpp
-void create_solid_mesh_coordinate_system(const SolidMesh<dimension> & mesh, SolidMeshBuilder<dimension> & builder, std::string_view new_coordinate_system_name, const CoordinateSystem2D & input, const CoordinateSystem2D & output)
-```
-
-
 ### raster_image_object_priority
 
 ```cpp
@@ -1775,17 +1712,58 @@ index_t raster_image_object_priority(std::string_view filename)
 ```
 
 
-### light_regular_grid_object_priority
-
-```cpp
-index_t light_regular_grid_object_priority(std::string_view filename)
-```
-
-
 ### vertex_set_additional_files
 
 ```cpp
 AdditionalFiles vertex_set_additional_files(std::string_view filename)
+```
+
+
+### register_basic_deserialize_pcontext
+
+```cpp
+void register_basic_deserialize_pcontext(PContext & context)
+```
+
+
+ Register all the information needed by Bitsery to deserialize the objects in the basic library.
+
+**context** [in] The context where to register this information.
+
+**warning** The context can be used only once per archive.
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const NamedType<Type, Tag> & value)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const ComponentMeshVertex & value)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const ComponentID & value)
+```
+
+
+### create_solid_mesh_coordinate_system
+
+```cpp
+void create_solid_mesh_coordinate_system(const SolidMesh<dimension> & mesh, SolidMeshBuilder<dimension> & builder, std::string_view new_coordinate_system_name, const CoordinateSystem2D & input, const CoordinateSystem2D & output)
+```
+
+
+### light_regular_grid_object_priority
+
+```cpp
+index_t light_regular_grid_object_priority(std::string_view filename)
 ```
 
 
@@ -1811,19 +1789,6 @@ double tetrahedron_signed_volume(const Tetrahedron & tetra)
 bool is_light_regular_grid_saveable(const LightRegularGrid<dimension> & light_regular_grid, std::string_view filename)
 ```
 
-
-### register_basic_deserialize_pcontext
-
-```cpp
-void register_basic_deserialize_pcontext(PContext & context)
-```
-
-
- Register all the information needed by Bitsery to deserialize the objects in the basic library.
-
-**context** [in] The context where to register this information.
-
-**warning** The context can be used only once per archive.
 
 ### is_graph_loadable
 
@@ -1956,6 +1921,20 @@ AdditionalFiles triangulated_surface_additional_files(std::string_view filename)
 ```
 
 
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const MeshElement & value)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const EdgeVertex & value)
+```
+
+
 ### is_regular_grid_loadable
 
 ```cpp
@@ -2011,19 +1990,6 @@ Percentage is_tetrahedral_solid_loadable(std::string_view filename)
 Percentage is_triangulated_surface_loadable(std::string_view filename)
 ```
 
-
-### mapping_after_deletion
-
-```cpp
-std::vector<index_t> mapping_after_deletion(const DeleteContainer & to_delete)
-```
-
-
- Compute the mapping between old and new indices after deletion.
-
-**to_delete** [in] If to_delete[i] is true the i-th element is deleted, else the element is kept.
-
-**return** The old2new mapping: new index of each element, NO_ID if deleted
 
 ### point_set_object_priority
 
@@ -2111,31 +2077,46 @@ std::vector<index_t> old2new_permutation(absl::Span<const index_t> permutation)
 ```
 
 
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const PolyhedronVertex & value)
+```
+
+
+### permute
+
+```cpp
+void permute(Container & data, absl::Span<const index_t> permutation)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const PolygonVertex & value)
+```
+
+
+### mapping_after_deletion
+
+```cpp
+std::vector<index_t> mapping_after_deletion(const DeleteContainer & to_delete)
+```
+
+
+ Compute the mapping between old and new indices after deletion.
+
+**to_delete** [in] If to_delete[i] is true the i-th element is deleted, else the element is kept.
+
+**return** The old2new mapping: new index of each element, NO_ID if deleted
+
 ### component_mesh_vertex_tuple
 
 ```cpp
 ComponentMeshVertexGeneric<dimension> component_mesh_vertex_tuple(UniqueVertices... unique_vertices)
 ```
 
-
-### point_triangle_distance
-
-```cpp
-std::tuple<double, Point<dimension>> point_triangle_distance(const Point<dimension> & point, const Triangle<dimension> & triangle)
-```
-
- Compute the smallest distance between a point and a triangle
-
-**return** a tuple containing: - the smallest distance. - the closest point on the triangle.
-
-### geode_lippincott
-
-```cpp
-int geode_lippincott()
-```
-
-
- Try to catch several exception types. Always return 1.
 
 ### component_mesh_vertex_tuple
 
@@ -2194,6 +2175,25 @@ bool are_mesh_elements_included(const MeshElementsInclusion<MeshElementType> & i
 ```
 
 
+### point_triangle_distance
+
+```cpp
+std::tuple<double, Point<dimension>> point_triangle_distance(const Point<dimension> & point, const Triangle<dimension> & triangle)
+```
+
+ Compute the smallest distance between a point and a triangle
+
+**return** a tuple containing: - the smallest distance. - the closest point on the triangle.
+
+### geode_lippincott
+
+```cpp
+int geode_lippincott()
+```
+
+
+ Try to catch several exception types. Always return 1.
+
 ### throw_lippincott
 
 ```cpp
@@ -2215,13 +2215,6 @@ void sort_unique(Container & container)
 **Container** Type of container.
 
 **container** [in] container in which perform the search.
-
-### compute_model_unique_vertices
-
-```cpp
-void compute_model_unique_vertices(const Model & model, typename Model::Builder & builder)
-```
-
 
 ### tetrahedron_aspect_ratio
 
@@ -2264,6 +2257,13 @@ void convert_surface_meshes_into_triangulated_surfaces(BRep & brep)
 
 ```cpp
 H AbslHashValue(H h, const PolyhedronFacetEdge & value)
+```
+
+
+### compute_model_unique_vertices
+
+```cpp
+void compute_model_unique_vertices(const Model & model, typename Model::Builder & builder)
 ```
 
 
@@ -3267,6 +3267,20 @@ BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Block3D & b
 ```
 
 
+### point_triangle_distance
+
+```cpp
+std::tuple<double, Point3D> point_triangle_distance(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### point_triangle_distance
+
+```cpp
+std::tuple<double, Point2D> point_triangle_distance(const Point2D & point, const Triangle2D & triangle)
+```
+
+
 ### line_triangle_distance
 
 ```cpp
@@ -3322,6 +3336,17 @@ IntersectionResult<absl::InlinedVector<Point<dimension>, 2>> segment_sphere_inte
 
 **return** an optional of the intersection points.
 
+### triangle_triangle_distance
+
+```cpp
+std::tuple<double, Point3D, Point3D> triangle_triangle_distance(const Triangle3D & triangle0, const Triangle3D & triangle1)
+```
+
+
+ Compute the smallest distance between two triangles
+
+**return** a tuple containing: - the smallest distance. - the closest point on the first triangle. - the closest point on the second triangle.
+
 ### segment_plane_intersection
 
 ```cpp
@@ -3341,31 +3366,6 @@ IntersectionResult<Point3D> segment_plane_intersection(const Segment3D & segment
 PolyhedraAroundFacet block_mesh_polyhedra_from_surface_polygon(const BRep & model, const Block3D & block, const Surface3D & surface, index_t polygon_id)
 ```
 
-
-### point_triangle_distance
-
-```cpp
-std::tuple<double, Point3D> point_triangle_distance(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### point_triangle_distance
-
-```cpp
-std::tuple<double, Point2D> point_triangle_distance(const Point2D & point, const Triangle2D & triangle)
-```
-
-
-### triangle_triangle_distance
-
-```cpp
-std::tuple<double, Point3D, Point3D> triangle_triangle_distance(const Triangle3D & triangle0, const Triangle3D & triangle1)
-```
-
-
- Compute the smallest distance between two triangles
-
-**return** a tuple containing: - the smallest distance. - the closest point on the first triangle. - the closest point on the second triangle.
 
 ### triangle_triangle_distance_between_non_conformal_parts
 
