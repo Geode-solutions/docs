@@ -14,15 +14,6 @@ const name = words.join('-');
 # class ConstraintCycles
 
 
-## Members
-
-```cpp
-protected std::vector<Cycle> cycles_
-
-```
-
-
-
 ## Functions
 
 ### contains

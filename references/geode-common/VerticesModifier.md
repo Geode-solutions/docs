@@ -86,5 +86,12 @@ protected index_t vertices_clean_stamp()
 ```
 
 
+### vertices_updated_stamp
+
+```cpp
+protected index_t vertices_updated_stamp()
+```
+
+
 
 
