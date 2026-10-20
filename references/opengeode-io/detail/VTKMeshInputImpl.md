@@ -36,6 +36,20 @@ protected MeshBuilder & builder()
 ```
 
 
+### are_cell_vertices_valid
+
+```cpp
+protected bool are_cell_vertices_valid(absl::Span<const index_t> vertices)
+```
+
+
+### warn_invalid_cells
+
+```cpp
+protected void warn_invalid_cells(index_t nb_invalid_cells)
+```
+
+
 ### get_cell_vertices
 
 ```cpp
