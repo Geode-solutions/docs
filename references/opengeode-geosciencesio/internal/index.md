@@ -33,6 +33,12 @@ const name = words.join('-');
 * [MLOutputBRep](MLOutputBRep.md)
 * [MLOutputImpl](MLOutputImpl.md)
 * [MLOutputStructuralModel](MLOutputStructuralModel.md)
+* [OMFEdgedCurveInput](OMFEdgedCurveInput.md)
+* [OMFFile](OMFFile.md)
+* [OMFLightRegularGridInput](OMFLightRegularGridInput.md)
+* [OMFPointSetInput](OMFPointSetInput.md)
+* [OMFPolygonalSurfaceInput](OMFPolygonalSurfaceInput.md)
+* [OMFTriangulatedSurfaceInput](OMFTriangulatedSurfaceInput.md)
 * [PLInput](PLInput.md)
 * [PLOutput](PLOutput.md)
 * [PolyTIFFInput](PolyTIFFInput.md)
@@ -184,6 +190,15 @@ std::optional<ECurveData> read_ecurve(std::ifstream & file)
 std::optional<VSetData> read_vs_points(std::ifstream & file)
 ```
 
+
+### set_omf_element_attribute
+
+```cpp
+void set_omf_element_attribute(AttributeManager & manager, index_t element_id, index_t begin, index_t end)
+```
+
+
+ Set the mesh name and, when several OMF elements are merged into the same mesh, the omf_element attribute giving the element index
 
 
 

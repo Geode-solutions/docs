@@ -35,11 +35,25 @@ public static const char SPACE
 
 ## Functions
 
-### unclassified_tsurfs
+### write_collection_tfaces
 
 ```cpp
-protected std::vector<uuid> unclassified_tsurfs()
+protected void write_collection_tfaces(const OwnedSurfaces & surfaces, std::string_view type, std::string_view name)
 ```
+
+
+### write_geological_tsurfs
+
+```cpp
+protected void write_geological_tsurfs()
+```
+
+### ~MLOutputImpl
+
+```cpp
+public void ~MLOutputImpl<Model>()
+```
+
 
 ### write_file
 
@@ -76,10 +90,40 @@ protected std::ofstream & file()
 ```
 
 
-### write_geological_tsurfs
+### assign_surfaces_to_tsurfs
 
 ```cpp
-protected void write_geological_tsurfs()
+protected void assign_surfaces_to_tsurfs()
+```
+
+
+ In a .ml file, each TFACE belongs to a single TSURF. A Surface shared by several collections (e.g. a topographic Horizon that is also a ModelBoundary) is assigned to the first one, in the export order: ModelBoundaries, then geological collections. A collection without any Surface of its own is not exported.
+
+### assign_geological_surfaces
+
+```cpp
+protected void assign_geological_surfaces()
+```
+
+
+### assign_surfaces
+
+```cpp
+protected void assign_surfaces(const Collection & collection, const ItemRange & items)
+```
+
+
+### owned_surfaces
+
+```cpp
+protected const OwnedSurfaces & owned_surfaces(const uuid & collection_id)
+```
+
+
+### unclassified_tsurfs
+
+```cpp
+protected std::vector<uuid> unclassified_tsurfs()
 ```
 
 ### write_geological_tfaces
@@ -99,13 +143,6 @@ protected void write_geological_regions()
 ```cpp
 protected void write_geological_model_surfaces()
 ```
-
-### ~MLOutputImpl
-
-```cpp
-public void ~MLOutputImpl<Model>()
-```
-
 
 ### write_key_triangle
 
@@ -170,17 +207,10 @@ protected void add_corners_and_line_starts(const Surface3D & surface, const inde
 ```
 
 
-### find_boundary_corners_and_line_starts
-
-```cpp
-protected void find_boundary_corners_and_line_starts(const ModelBoundary3D & surface_collection, std::vector<std::array<index_t, 2>> & line_starts)
-```
-
-
 ### find_corners_and_line_starts
 
 ```cpp
-protected void find_corners_and_line_starts(const ItemRange & item_range, std::vector<std::array<index_t, 2>> & line_starts)
+protected void find_corners_and_line_starts(const OwnedSurfaces & surfaces, std::vector<std::array<index_t, 2>> & line_starts)
 ```
 
 
@@ -205,6 +235,13 @@ protected void write_line_starts(index_t current_offset, absl::Span<const std::a
 ```
 
 
+### write_collection_surface
+
+```cpp
+protected void write_collection_surface(const OwnedSurfaces & surfaces, std::string_view type, std::string_view name)
+```
+
+
 ### write_model_surfaces
 
 ```cpp
@@ -218,6 +255,15 @@ protected void write_model_surfaces()
 protected std::string component_name(const Component & component)
 ```
 
+
+### tsurf_name
+
+```cpp
+protected const std::string & tsurf_name(const Component & component)
+```
+
+
+ TSURFs are matched by name in a .ml file: the name of a collection (or of an unclassified Surface) is made unique by appending a suffix if another TSURF already uses it.
 
 
 
