@@ -47,17 +47,17 @@ public static std::unique_ptr<Mesh> create_mesh(const MeshImpl & key)
 ```
 
 
-### type
-
-```cpp
-public static const MeshType & type(const MeshImpl & key)
-```
-
-
 ### create_default_mesh
 
 ```cpp
 public static std::unique_ptr<Mesh> create_default_mesh(const MeshType & type)
+```
+
+
+### type
+
+```cpp
+public static const MeshType & type(const MeshImpl & key)
 ```
 
 

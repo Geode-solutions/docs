@@ -23,12 +23,6 @@ public void EuclideanDistanceTransform<dimension>(const Grid<dimension> & grid, 
 ```
 
 
-### compute_squared_distance_map
-
-```cpp
-public void compute_squared_distance_map()
-```
-
 ### distance_map
 
 ```cpp
@@ -40,6 +34,13 @@ public std::shared_ptr<VariableAttribute<double>> distance_map()
 
 ```cpp
 public void squared_root_filter()
+```
+
+
+### compute_squared_distance_map
+
+```cpp
+public void compute_squared_distance_map()
 ```
 
 

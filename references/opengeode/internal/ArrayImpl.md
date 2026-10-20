@@ -30,5 +30,26 @@ public CellIndices cell_indices(const CellArray<dimension> & array, index_t inde
 ```
 
 
+### vertex_strides
+
+```cpp
+protected static const std::array<index_t, dimension> & vertex_strides(const CellArray<dimension> & array)
+```
+
+
+### flat_index
+
+```cpp
+protected static index_t flat_index(const std::array<index_t, dimension> & strides, const CellIndices & index)
+```
+
+
+### multi_index
+
+```cpp
+protected static CellIndices multi_index(const std::array<index_t, dimension> & strides, index_t index)
+```
+
+
 
 

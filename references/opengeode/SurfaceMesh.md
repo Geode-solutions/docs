@@ -467,6 +467,8 @@ public const PolygonsAroundVertex & polygons_around_vertex(index_t vertex_id)
 
 **pre** This function needs that polygon adjacencies are computed
 
+**warning** The returned reference points into an internal cache. It is invalidated by any modification of the mesh (e.g. vertex creation may reallocate the cache, builder operations reset it) and its content may be recomputed by a later query on the same vertex. Copy the result if it must outlive such operations.
+
 ### polygons_around_vertex
 
 ```cpp
@@ -479,6 +481,8 @@ public const PolygonsAroundVertex & polygons_around_vertex(const PolygonVertex &
 **polygon_vertex** [in] Local index of vertex in polygon.
 
 **pre** This function needs that polygon adjacencies are computed
+
+**warning** The returned reference points into an internal cache. It is invalidated by any modification of the mesh (e.g. vertex creation may reallocate the cache, builder operations reset it) and its content may be recomputed by a later query on the same vertex. Copy the result if it must outlive such operations.
 
 ### polygon_edge_from_vertices
 

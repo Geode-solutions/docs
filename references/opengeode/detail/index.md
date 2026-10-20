@@ -407,6 +407,15 @@ const Component<Model::dim> & model_component(Model & model, const uuid & compon
 ```
 
 
+### initialize_legacy_crs
+
+```cpp
+void initialize_legacy_crs(Mesh & mesh)
+```
+
+
+ Initialize the CRS of a mesh loaded from a legacy file, where the vertex coordinates are stored in the vertex attribute named PointsImpl::POINTS_NAME.
+
 ### coords_multiply_equal
 
 ```cpp

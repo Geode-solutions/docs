@@ -68,7 +68,7 @@ public std::string_view active_coordinate_reference_system_name()
 ### coordinate_reference_system_names
 
 ```cpp
-public absl::FixedArray<std::string_view> coordinate_reference_system_names()
+public absl::FixedArray<std::string> coordinate_reference_system_names()
 ```
 
 

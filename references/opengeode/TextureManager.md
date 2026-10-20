@@ -70,7 +70,7 @@ public const Texture<dimension> & find_texture(std::string_view name)
 ### texture_names
 
 ```cpp
-public absl::FixedArray<std::string_view> texture_names()
+public absl::FixedArray<std::string> texture_names()
 ```
 
 

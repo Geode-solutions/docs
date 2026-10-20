@@ -79,5 +79,12 @@ public void remove_legacy_attributes(AttributeManager & manager)
 ```
 
 
+### check_edges_number
+
+```cpp
+public void check_edges_number(index_t nb_edges)
+```
+
+
 
 
