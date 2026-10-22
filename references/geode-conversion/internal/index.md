@@ -114,6 +114,13 @@ std::vector<std::vector<uuid>> find_duplicated_components(const Model & model, c
 ```
 
 
+### merge_component_names
+
+```cpp
+std::optional<std::string> merge_component_names(absl::Span<const std::string_view> names)
+```
+
+
 ### transfer_corner_metadata
 
 ```cpp
