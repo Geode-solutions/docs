@@ -22,13 +22,6 @@ Inherits from PolygonalSurfaceInput<3>
 
 ## Functions
 
-### read
-
-```cpp
-public std::unique_ptr<PolygonalSurface3D> read(const MeshImpl & impl)
-```
-
-
 ### OBJInput
 
 ```cpp
@@ -43,17 +36,24 @@ public static std::string_view extension()
 ```
 
 
-### additional_files
-
-```cpp
-public AdditionalFiles additional_files()
-```
-
-
 ### object_priority
 
 ```cpp
 public index_t object_priority()
+```
+
+
+### read
+
+```cpp
+public std::unique_ptr<PolygonalSurface3D> read(const MeshImpl & impl)
+```
+
+
+### additional_files
+
+```cpp
+public AdditionalFiles additional_files()
 ```
 
 

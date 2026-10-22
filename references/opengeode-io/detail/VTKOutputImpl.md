@@ -72,5 +72,12 @@ protected pugi::xml_node write_data_array(pugi::xml_node & parent, std::string_v
 ```
 
 
+### write_data_array
+
+```cpp
+protected pugi::xml_node write_data_array(pugi::xml_node & parent, std::string_view name, std::vector<T> && values, local_index_t nb_components)
+```
+
+
 
 

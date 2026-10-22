@@ -86,5 +86,16 @@ public std::unique_ptr<PointSet3D> create_point_set()
 ```
 
 
+ Create the point set from the CSV file.
+
+**exception**if the file cannot be opened.
+
+### create_point_set
+
+```cpp
+public std::unique_ptr<PointSet3D> create_point_set(const MeshImpl & impl)
+```
+
+
 
 

@@ -29,5 +29,12 @@ public void VTPSurfaceOutputImpl<Mesh, dimension>(std::string_view filename, con
 ```
 
 
+### written_files
+
+```cpp
+public std::vector<std::string> written_files()
+```
+
+
 
 

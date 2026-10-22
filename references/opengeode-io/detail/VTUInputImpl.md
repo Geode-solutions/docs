@@ -29,10 +29,17 @@ protected void VTUInputImpl<Mesh>(std::string_view filename, const geode::MeshIm
 ```
 
 
+### read_cell_types
+
+```cpp
+protected std::vector<uint8_t> read_cell_types(const pugi::xml_node & piece, index_t nb_cells)
+```
+
+
 ### read_cells
 
 ```cpp
-protected std::tuple<absl::FixedArray<std::vector<index_t>>, std::vector<uint8_t>> read_cells(const pugi::xml_node & piece, index_t nb_cells)
+protected std::tuple<VTKCells, std::vector<uint8_t>> read_cells(const pugi::xml_node & piece, index_t nb_cells)
 ```
 
 

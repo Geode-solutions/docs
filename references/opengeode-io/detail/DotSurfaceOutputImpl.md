@@ -23,6 +23,27 @@ public void DotSurfaceOutputImpl<Mesh>(std::string_view filename, const Mesh & s
 ```
 
 
+### ~DotSurfaceOutputImpl
+
+```cpp
+public void ~DotSurfaceOutputImpl<Mesh>()
+```
+
+
+### DotSurfaceOutputImpl
+
+```cpp
+public void DotSurfaceOutputImpl<Mesh>(const DotSurfaceOutputImpl<Mesh> & )
+```
+
+
+### operator=
+
+```cpp
+public DotSurfaceOutputImpl<Mesh> & operator=(const DotSurfaceOutputImpl<Mesh> & )
+```
+
+
 ### write_file
 
 ```cpp

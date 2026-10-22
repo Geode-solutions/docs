@@ -64,6 +64,13 @@ protected void read_common_data()
 ```
 
 
+### start_piece
+
+```cpp
+protected void start_piece()
+```
+
+
 ### mesh
 
 ```cpp
@@ -109,7 +116,7 @@ protected static T missing_value()
 ### build_attribute
 
 ```cpp
-protected void build_attribute(AttributeManager & manager, std::string_view name, absl::Span<const T> values, index_t nb_components, index_t offset)
+protected void build_attribute(AttributeManager & manager, std::string_view name, absl::Span<const T> values, index_t nb_components, const DataMapping & mapping)
 ```
 
 
@@ -123,21 +130,21 @@ protected bool is_integer_type(std::string_view type)
 ### build_integer_attribute
 
 ```cpp
-protected void build_integer_attribute(AttributeManager & manager, std::string_view name, absl::Span<const int64_t> values, index_t nb_components, index_t offset)
+protected void build_integer_attribute(AttributeManager & manager, std::string_view name, absl::Span<const int64_t> values, index_t nb_components, const DataMapping & mapping)
 ```
 
 
 ### read_attribute_data
 
 ```cpp
-protected void read_attribute_data(const pugi::xml_node & data, index_t offset, AttributeManager & attribute_manager)
+protected void read_attribute_data(const pugi::xml_node & data, const DataMapping & mapping, AttributeManager & attribute_manager)
 ```
 
 
 ### read_data
 
 ```cpp
-protected void read_data(const pugi::xml_node & point_data, index_t offset, AttributeManager & attribute_manager)
+protected void read_data(const pugi::xml_node & point_data, const DataMapping & mapping, AttributeManager & attribute_manager)
 ```
 
 
@@ -145,6 +152,13 @@ protected void read_data(const pugi::xml_node & point_data, index_t offset, Attr
 
 ```cpp
 protected std::string_view read_appended_data(const pugi::xml_node & data)
+```
+
+
+### is_appended_offset_valid
+
+```cpp
+protected bool is_appended_offset_valid(const pugi::xml_node & data)
 ```
 
 

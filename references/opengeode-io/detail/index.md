@@ -17,6 +17,7 @@ const name = words.join('-');
 
 ## Records
 
+* [DataMapping](DataMapping.md)
 * [DotPolygonalOutput](DotPolygonalOutput.md)
 * [DotSurfaceOutputImpl](DotSurfaceOutputImpl.md)
 * [DotTriangulatedOutput](DotTriangulatedOutput.md)
@@ -31,6 +32,7 @@ const name = words.join('-');
 * [VTIRegularGridOutput](VTIRegularGridOutput.md)
 * [VTKAttributeTypeList](VTKAttributeTypeList.md)
 * [VTKAttributeValue](VTKAttributeValue.md)
+* [VTKCells](VTKCells.md)
 * [VTKInputImpl](VTKInputImpl.md)
 * [VTKMeshInputImpl](VTKMeshInputImpl.md)
 * [VTKMeshOutputImpl](VTKMeshOutputImpl.md)
@@ -63,6 +65,12 @@ const name = words.join('-');
 
 ## Functions
 
+### vtk_attribute_arrays
+
+```cpp
+VTKAttributeTypeList<std::array<Value, indices + 1>...> vtk_attribute_arrays(std::index_sequence<indices...> )
+```
+
 ### write_point
 
 ```cpp
@@ -74,6 +82,13 @@ void write_point(std::vector<double> & coordinates, const Point<dimension> & poi
 
 ```cpp
 index_t vtk_polygon_type(index_t nb_vertices)
+```
+
+
+### vtk_double_string
+
+```cpp
+std::string vtk_double_string(double value)
 ```
 
 

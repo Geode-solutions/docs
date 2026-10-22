@@ -43,6 +43,13 @@ protected void enable_hexahedron()
 ```
 
 
+### enable_polyhedron
+
+```cpp
+protected void enable_polyhedron()
+```
+
+
 ### enable_prism
 
 ```cpp

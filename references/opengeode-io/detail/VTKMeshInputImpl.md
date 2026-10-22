@@ -50,10 +50,24 @@ protected void warn_invalid_cells(index_t nb_invalid_cells)
 ```
 
 
+### warn_wrong_size_cells
+
+```cpp
+protected void warn_wrong_size_cells(index_t nb_wrong_size_cells)
+```
+
+
 ### get_cell_vertices
 
 ```cpp
-protected absl::FixedArray<std::vector<index_t>> get_cell_vertices(absl::Span<const int64_t> connectivity, absl::Span<const int64_t> offsets)
+protected VTKCells get_cell_vertices(absl::Span<const int64_t> connectivity, std::vector<int64_t> offsets)
+```
+
+
+### piece_vertex
+
+```cpp
+protected index_t piece_vertex(int64_t vertex)
 ```
 
 
