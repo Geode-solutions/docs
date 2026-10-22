@@ -14,15 +14,6 @@ const name = words.join('-');
 # class Fault
 
 
-```cpp
-Inherits from Component<2U>
-```
-
-
-
-# class Fault
-
-
  Geological component describing a Fault. This component is described by a fault type.
 
 
@@ -143,6 +134,15 @@ public void set_fault_name(std::string_view name, FaultsBuilderKey )
 
 ```cpp
 Inherits from Component<3U>
+```
+
+
+
+# class Fault
+
+
+```cpp
+Inherits from Component<2U>
 ```
 
 

@@ -15,6 +15,15 @@ const name = words.join('-');
 
 
 ```cpp
+Inherits from AttributeCoordinateReferenceSystem<2U>
+```
+
+
+
+# class GeographicCoordinateSystem
+
+
+```cpp
 Inherits from AttributeCoordinateReferenceSystem<dimension>
 ```
 
@@ -91,15 +100,6 @@ public void import_coordinates(const GeographicCoordinateSystem<dimension> & crs
 
 ```cpp
 Inherits from AttributeCoordinateReferenceSystem<3U>
-```
-
-
-
-# class GeographicCoordinateSystem
-
-
-```cpp
-Inherits from AttributeCoordinateReferenceSystem<2U>
 ```
 
 
