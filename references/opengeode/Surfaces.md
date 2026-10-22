@@ -41,6 +41,27 @@ public Surfaces<dimension> & operator=(const Surfaces<dimension> & )
 ```
 
 
+### components
+
+```cpp
+public SurfaceRange components()
+```
+
+
+### has_component
+
+```cpp
+public bool has_component(const uuid & id)
+```
+
+
+### component
+
+```cpp
+public const Surface<dimension> & component(const uuid & id)
+```
+
+
 ### ~Surfaces
 
 ```cpp
@@ -115,27 +136,6 @@ protected void Surfaces<value-parameter-0-0>(Surfaces<dimension> && other)
 
 ```cpp
 protected Surfaces<dimension> & operator=(Surfaces<dimension> && other)
-```
-
-
-### components
-
-```cpp
-public SurfaceRange components()
-```
-
-
-### has_component
-
-```cpp
-public bool has_component(const uuid & id)
-```
-
-
-### component
-
-```cpp
-public const Surface<dimension> & component(const uuid & id)
 ```
 
 

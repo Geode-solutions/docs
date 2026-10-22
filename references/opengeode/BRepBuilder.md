@@ -336,6 +336,42 @@ public void remove_block(const Block3D & block)
 ```
 
 
+### remove_corners
+
+```cpp
+public void remove_corners(absl::Span<const uuid> corner_ids)
+```
+
+
+ Remove several corners at once (faster than removing them one by one)
+
+### remove_lines
+
+```cpp
+public void remove_lines(absl::Span<const uuid> line_ids)
+```
+
+
+ Remove several lines at once (faster than removing them one by one)
+
+### remove_surfaces
+
+```cpp
+public void remove_surfaces(absl::Span<const uuid> surface_ids)
+```
+
+
+ Remove several surfaces at once (faster than removing them one by one)
+
+### remove_blocks
+
+```cpp
+public void remove_blocks(absl::Span<const uuid> block_ids)
+```
+
+
+ Remove several blocks at once (faster than removing them one by one)
+
 ### remove_model_boundary
 
 ```cpp

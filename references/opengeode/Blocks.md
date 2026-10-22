@@ -82,6 +82,27 @@ public const Block<dimension> & block(const uuid & id)
 
  Access to an unmodifiable Block by its unique index
 
+### components
+
+```cpp
+public BlockRange components()
+```
+
+
+### has_component
+
+```cpp
+public bool has_component(const uuid & id)
+```
+
+
+### component
+
+```cpp
+public const Block<dimension> & component(const uuid & id)
+```
+
+
 ### blocks
 
 ```cpp
@@ -123,27 +144,6 @@ protected void Blocks<value-parameter-0-0>(Blocks<dimension> && other)
 
 ```cpp
 protected Blocks<dimension> & operator=(Blocks<dimension> && other)
-```
-
-
-### components
-
-```cpp
-public BlockRange components()
-```
-
-
-### has_component
-
-```cpp
-public bool has_component(const uuid & id)
-```
-
-
-### component
-
-```cpp
-public const Block<dimension> & component(const uuid & id)
 ```
 
 

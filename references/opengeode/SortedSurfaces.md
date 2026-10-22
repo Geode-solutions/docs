@@ -46,12 +46,16 @@ public index_t opposite(index_t position)
 ```
 
 
+ Returns the position of the opposite side of the surface at the given position, NO_ID if there is no surface.
+
 ### next
 
 ```cpp
 public index_t next(index_t position)
 ```
 
+
+ Returns the position of the next sided surface around the line, NO_ID if there is no surface.
 
 
 

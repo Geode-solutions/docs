@@ -51,6 +51,34 @@ public std::vector<uuid> create_surfaces(absl::Span<const uuid> corners, absl::S
 ```
 
 
+### check_index
+
+```cpp
+protected void check_index(index_t index, std::size_t size, std::string_view element)
+```
+
+
+### find_corner
+
+```cpp
+protected uuid find_corner(const absl::flat_hash_set<uuid> & corners, index_t vertex)
+```
+
+
+### check_unique_point
+
+```cpp
+protected void check_unique_point(index_t vertex)
+```
+
+
+### check_simplices
+
+```cpp
+protected void check_simplices(absl::Span<const index_t> vertices, absl::Span<const index_t> simplices, index_t nb_simplex_vertices, std::string_view simplex_name)
+```
+
+
 ### create_point
 
 ```cpp

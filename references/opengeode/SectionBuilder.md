@@ -56,13 +56,6 @@ public void replace_components_meshes_by_others(Section && other, const ModelCop
 ```
 
 
-### copy_components
-
-```cpp
-public ModelCopyMapping copy_components(const Section & section)
-```
-
-
 ### SectionBuilder
 
 ```cpp
@@ -74,6 +67,13 @@ public void SectionBuilder(const SectionBuilder & )
 
 ```cpp
 public SectionBuilder & operator=(const SectionBuilder & )
+```
+
+
+### copy_components
+
+```cpp
+public ModelCopyMapping copy_components(const Section & section)
 ```
 
 
@@ -279,6 +279,33 @@ public void remove_line(const Line2D & line)
 public void remove_surface(const Surface2D & surface)
 ```
 
+
+### remove_corners
+
+```cpp
+public void remove_corners(absl::Span<const uuid> corner_ids)
+```
+
+
+ Remove several corners at once (faster than removing them one by one)
+
+### remove_lines
+
+```cpp
+public void remove_lines(absl::Span<const uuid> line_ids)
+```
+
+
+ Remove several lines at once (faster than removing them one by one)
+
+### remove_surfaces
+
+```cpp
+public void remove_surfaces(absl::Span<const uuid> surface_ids)
+```
+
+
+ Remove several surfaces at once (faster than removing them one by one)
 
 ### remove_model_boundary
 

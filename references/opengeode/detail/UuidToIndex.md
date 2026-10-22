@@ -51,6 +51,20 @@ public void set_new_mapping(const uuid & id, const index_t index)
 ```
 
 
+### clear
+
+```cpp
+public void clear()
+```
+
+
+### reserve
+
+```cpp
+public void reserve(index_t capacity)
+```
+
+
 ### update
 
 ```cpp

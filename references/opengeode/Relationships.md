@@ -245,6 +245,17 @@ public void remove_component(const uuid & component_id, RelationshipsBuilderKey 
 
 **component_id** [in] Unique index of the component to remove
 
+### remove_components
+
+```cpp
+public void remove_components(absl::Span<const uuid> component_ids, RelationshipsBuilderKey )
+```
+
+
+ Remove several components from the set of components registered by the Relationships and all their associated relationships
+
+**component_ids** [in] Unique indices of the components to remove
+
 ### add_boundary_relation
 
 ```cpp

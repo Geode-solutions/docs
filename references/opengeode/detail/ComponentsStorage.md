@@ -82,9 +82,13 @@ public void delete_component(const uuid & component_id)
 ### load_components
 
 ```cpp
-public void load_components(std::string_view filename)
+public void load_components(std::string_view filename, bool required)
 ```
 
+
+ Load the components stored in the given file.
+
+**required** [in] If false, a missing file is expected (e.g. for files written before this component type existed) and silently ignored. Otherwise a warning is emitted.
 
 ### file_mapping
 

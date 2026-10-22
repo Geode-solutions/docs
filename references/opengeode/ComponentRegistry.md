@@ -65,6 +65,13 @@ public void remove_mesh_component(const ComponentType & type, const uuid & id, R
 ```
 
 
+### remove_mesh_components
+
+```cpp
+public void remove_mesh_components(const ComponentType & type, absl::Span<const uuid> ids, RegistryBuilder key)
+```
+
+
 ### remove_collection_component
 
 ```cpp

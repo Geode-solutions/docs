@@ -26,13 +26,6 @@ Inherits from VertexSetBuilder
 
 ## Functions
 
-### GraphBuilder
-
-```cpp
-public void GraphBuilder(GraphBuilder && )
-```
-
-
 ### create
 
 ```cpp
@@ -43,6 +36,13 @@ public static std::unique_ptr<GraphBuilder> create(Graph & mesh)
  Create the builder associated with a Graph.
 
 **mesh** [in] The Graph to build/modify
+
+### GraphBuilder
+
+```cpp
+public void GraphBuilder(GraphBuilder && )
+```
+
 
 ### create_edge
 

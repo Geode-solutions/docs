@@ -133,5 +133,14 @@ public std::vector<index_t> delete_isolated_vertices()
 
  Delete all unique vertices not associated with any component
 
+### repair_component_vertices
+
+```cpp
+public void repair_component_vertices()
+```
+
+
+ Remove component vertices referencing an unregistered component or an invalid vertex, and restore missing links from component vertices to their unique vertex. Used after loading a model.
+
 
 

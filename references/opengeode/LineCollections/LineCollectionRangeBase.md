@@ -17,15 +17,9 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-protected geode::PImpl<Impl> impl_
+protected detail::ComponentRangeIterator<LineCollection<dimension>> impl_
 
 ```
-
-
-
-## Records
-
-Impl
 
 
 

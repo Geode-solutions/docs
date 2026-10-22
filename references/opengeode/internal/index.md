@@ -19,6 +19,7 @@ const name = words.join('-');
 
 * [ArrayImpl](ArrayImpl.md)
 * [CollectionComponentsRegistrator](CollectionComponentsRegistrator.md)
+* [ComponentsExistenceChecker](ComponentsExistenceChecker.md)
 * [ComponentsTypesChecker](ComponentsTypesChecker.md)
 * [EdgesImpl](EdgesImpl.md)
 * [FacetEdgesImpl](FacetEdgesImpl.md)
@@ -53,10 +54,10 @@ POSITION point_segment_position(const SIDE & s0, const SIDE & s1)
 ```
 
 
-### next_filtered_internal_iterator
+### get_model_component
 
 ```cpp
-void next_filtered_internal_iterator(Iterator & iterator)
+const Component<Model::dim> & get_model_component(const Model & model, const uuid & component_id)
 ```
 
 
@@ -67,13 +68,6 @@ bool is_component_supported(const ComponentType & component_type)
 ```
 
 
-### get_model_component
-
-```cpp
-const Component<Model::dim> & get_model_component(const Model & model, const uuid & component_id)
-```
-
-
 ### copy_points3d_into_2d
 
 ```cpp
@@ -81,10 +75,10 @@ void copy_points3d_into_2d(const MeshFrom & from, Builder & builder, local_index
 ```
 
 
-### next_filtered_embedding_iterator
+### next_filtered_internal_iterator
 
 ```cpp
-void next_filtered_embedding_iterator(Iterator & iterator)
+void next_filtered_internal_iterator(Iterator & iterator)
 ```
 
 
@@ -92,6 +86,13 @@ void next_filtered_embedding_iterator(Iterator & iterator)
 
 ```cpp
 POSITION point_segment_position(const SIDE & s0, const SIDE & s1, bool points_aligned)
+```
+
+
+### next_filtered_embedding_iterator
+
+```cpp
+void next_filtered_embedding_iterator(Iterator & iterator)
 ```
 
 
@@ -116,13 +117,6 @@ void copy_points2d_into_3d(const MeshFrom & from, Builder & builder, local_index
 ```
 
 
-### meshes_bounding_box
-
-```cpp
-std::optional<BoundingBox<dimension>> meshes_bounding_box(MeshComponentRange range)
-```
-
-
 ### point_triangle_position
 
 ```cpp
@@ -137,17 +131,26 @@ double shape_function_value(const typename Grid<dimension>::CellIndices & cell_i
 ```
 
 
+### has_mixin_component
+
+```cpp
+bool has_mixin_component(const Model & model, const uuid & component_id)
+```
+
+
+### has_at_least_n_boundaries
+
+```cpp
+bool has_at_least_n_boundaries(const Model & model, const uuid & component_id, index_t nb_boundaries)
+```
+
+
+ Return true if the component has at least the given number of boundaries. Stop iterating as soon as this number is reached.
+
 ### copy_points
 
 ```cpp
 void copy_points(const MeshFrom & from, Builder & builder)
-```
-
-
-### register_mesh_components
-
-```cpp
-void register_mesh_components(const Model & model, typename Model::Builder & builder)
 ```
 
 
@@ -174,6 +177,15 @@ void copy_meta_info(const MeshFrom & from, Builder & builder)
 ```
 
 
+### meshes_bounding_box
+
+```cpp
+std::optional<BoundingBox<dimension>> meshes_bounding_box(MeshComponentRange range)
+```
+
+
+ Return the bounding box of the non-empty meshes of the given components (computed in parallel), std::nullopt if all meshes are empty.
+
 ### point_triangle_position
 
 ```cpp
@@ -185,6 +197,13 @@ POSITION point_triangle_position(const SIDE s0, const SIDE s1, const SIDE s2, bo
 
 ```cpp
 POSITION point_tetrahedron_position(const std::array<GEO::SIGN, 4> & signs)
+```
+
+
+### register_mesh_components
+
+```cpp
+void register_mesh_components(const Model & model, typename Model::Builder & builder)
 ```
 
 

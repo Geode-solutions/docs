@@ -60,19 +60,14 @@ public index_t nb_relations(const uuid & component_id)
 ```
 
 
-### begin_edge
+### edges_around_component
 
 ```cpp
-public Iterator begin_edge(const uuid & component_id)
+public absl::Span<const EdgeVertex> edges_around_component(const uuid & component_id)
 ```
 
 
-### end_edge
-
-```cpp
-public Iterator end_edge(const uuid & component_id)
-```
-
+ Return the graph edges around the given component (empty if the component has no relation)
 
 ### graph_component_id
 
@@ -94,6 +89,15 @@ public const ComponentID & graph_component_id(const EdgeVertex & graph_edge_vert
 public void remove_component(const uuid & component_id)
 ```
 
+
+### remove_components
+
+```cpp
+public void remove_components(absl::Span<const uuid> component_ids)
+```
+
+
+ Remove several components and all their relations at once
 
 ### add_relation_edge
 
@@ -172,12 +176,23 @@ protected const Graph & graph()
 ```
 
 
-### delete_isolated_vertices
+### repair_after_load
 
 ```cpp
-protected void delete_isolated_vertices()
+protected void repair_after_load()
 ```
 
+
+ Rebuild the uuid to graph vertex map from the ids stored on the graph vertices, after loading a file. Vertices without a valid or with a duplicated id are removed with their relations, as well as isolated vertices.
+
+### do_add_relation_edge
+
+```cpp
+protected index_t do_add_relation_edge(const ComponentID & from, const ComponentID & to)
+```
+
+
+ Create a relation edge without checking if it already exists
 
 
 

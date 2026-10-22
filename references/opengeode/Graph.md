@@ -153,6 +153,17 @@ public void set_edges_around_vertex(index_t vertex_id, EdgesAroundVertex edges, 
 ```
 
 
+### update_edges_around_vertices
+
+```cpp
+public void update_edges_around_vertices(absl::Span<const index_t> old2new, GraphKey )
+```
+
+
+ Update in place the edges around every vertex after an edge deletion or permutation.
+
+**old2new** [in] Mapping between old edge indices to new ones. Deleted edges new index is NO_ID.
+
 ### associate_edge_vertex_to_vertex
 
 ```cpp

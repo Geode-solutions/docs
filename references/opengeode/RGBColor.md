@@ -16,6 +16,13 @@ const name = words.join('-');
 
 ## Functions
 
+### string
+
+```cpp
+public std::string string()
+```
+
+
 ### RGBColor
 
 ```cpp
@@ -97,13 +104,6 @@ public RGBColor operator+(const RGBColor & other)
 
 ```cpp
 public void operator+=(const RGBColor & other)
-```
-
-
-### string
-
-```cpp
-public std::string string()
 ```
 
 
