@@ -162,6 +162,24 @@ public void set_color(index_t index, RGBColor color)
 ```
 
 
+### colors
+
+```cpp
+public absl::Span<const RGBColor> colors()
+```
+
+
+ All the cell colors, stored contiguously in cell index order
+
+### modifiable_colors
+
+```cpp
+public absl::Span<RGBColor> modifiable_colors()
+```
+
+
+ All the cell colors, stored contiguously in cell index order, for bulk modifications
+
 ### clone
 
 ```cpp

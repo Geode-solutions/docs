@@ -535,6 +535,20 @@ Vector2D perpendicular(const Vector2D & v)
 
  Return a 2D vector perpendicular to the given one
 
+### register_attribute_type
+
+```cpp
+void register_attribute_type(PContext & context, std::string_view name)
+```
+
+
+### concatenate
+
+```cpp
+void concatenate(Container & container, const Container & values)
+```
+
+
 ### line_starts_with
 
 ```cpp
@@ -736,6 +750,19 @@ void register_geometry_deserialize_pcontext(PContext & context)
 
 **warning** The context can be used only once per archive.
 
+### register_image_deserialize_pcontext
+
+```cpp
+void register_image_deserialize_pcontext(PContext & context)
+```
+
+
+ Register all the information needed by Bitsery to deserialize the objects in the image library.
+
+**context** [in] The context where to register this information.
+
+**warning** The context can be used only once per archive.
+
 ### load_raster_image
 
 ```cpp
@@ -747,13 +774,6 @@ RasterImage<dimension> load_raster_image(std::string_view filename)
 
 **filename** [in] Path to the file to load.
 
-### register_attribute_type
-
-```cpp
-void register_attribute_type(PContext & context, std::string_view name)
-```
-
-
 ### load_graph
 
 ```cpp
@@ -762,6 +782,19 @@ std::unique_ptr<Graph> load_graph(const MeshImpl & impl, std::string_view filena
 
 
  API function for loading an Graph. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_vertex_set
+
+```cpp
+std::unique_ptr<VertexSet> load_vertex_set(const MeshImpl & impl, std::string_view filename)
+```
+
+
+ API function for loading an VertexSet. The adequate loader is called depending on the filename extension.
 
 **impl** [in] Data structure implementation.
 
@@ -793,6 +826,26 @@ Section load_section(std::string_view filename)
 
 **return** Loaded Section.
 
+### tetrahedron_barycentric_coordinates
+
+```cpp
+std::array<double, 4> tetrahedron_barycentric_coordinates(const Point3D & point, const Tetrahedron & tetrahedron)
+```
+
+
+ Compute the barycentric coordinates of a point with regards to a tetrahedron.
+
+**return** an array containing the parametric coordinates corresponding to the tetrahedron vertices.
+
+**exception**if the tetrahedron is degenerated
+
+### string_to_double
+
+```cpp
+double string_to_double(std::string_view string)
+```
+
+
 ### point_segment_projection
 
 ```cpp
@@ -806,10 +859,10 @@ Point<dimension> point_segment_projection(const Point<dimension> & point, const 
 
 **segment** [in] the segment
 
-### concatenate
+### create_aabb_tree
 
 ```cpp
-void concatenate(Container & container, const Container & values)
+AABBTree<dimension> create_aabb_tree(const EdgedCurve<dimension> & mesh)
 ```
 
 
@@ -982,94 +1035,6 @@ std::vector<std::string> save_raster_image(const RasterImage<dimension> & raster
 
 **filename** [in] Path to the file where save the RasterImage.
 
-### multiple_permute
-
-```cpp
-void multiple_permute(Container & data, absl::Span<const index_t> permutation)
-```
-
-
-### concatenate
-
-```cpp
-void concatenate(Container & container, Container && values)
-```
-
-
-### register_image_deserialize_pcontext
-
-```cpp
-void register_image_deserialize_pcontext(PContext & context)
-```
-
-
- Register all the information needed by Bitsery to deserialize the objects in the image library.
-
-**context** [in] The context where to register this information.
-
-**warning** The context can be used only once per archive.
-
-### load_vertex_set
-
-```cpp
-std::unique_ptr<VertexSet> load_vertex_set(const MeshImpl & impl, std::string_view filename)
-```
-
-
- API function for loading an VertexSet. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### tetrahedron_barycentric_coordinates
-
-```cpp
-std::array<double, 4> tetrahedron_barycentric_coordinates(const Point3D & point, const Tetrahedron & tetrahedron)
-```
-
-
- Compute the barycentric coordinates of a point with regards to a tetrahedron.
-
-**return** an array containing the parametric coordinates corresponding to the tetrahedron vertices.
-
-**exception**if the tetrahedron is degenerated
-
-### string_to_double
-
-```cpp
-double string_to_double(std::string_view string)
-```
-
-
-### create_aabb_tree
-
-```cpp
-AABBTree<dimension> create_aabb_tree(const EdgedCurve<dimension> & mesh)
-```
-
-
-### create_section_coordinate_system
-
-```cpp
-void create_section_coordinate_system(const Section & model, SectionBuilder & builder, std::string_view new_coordinate_system_name, const CoordinateSystem2D & input, const CoordinateSystem2D & output)
-```
-
-
-### goto_keyword_if_it_exists
-
-```cpp
-std::optional<std::string> goto_keyword_if_it_exists(std::ifstream & file, std::string_view word)
-```
-
-
-### create_aabb_tree
-
-```cpp
-AABBTree<dimension> create_aabb_tree(const SurfaceMesh<dimension> & mesh)
-```
-
-
 ### save_edged_curve
 
 ```cpp
@@ -1122,19 +1087,6 @@ std::vector<std::string> save_polyhedral_solid(const PolyhedralSolid<dimension> 
 
 **filename** [in] Path to the file where save the PolyhedralSolid.
 
-### save_regular_grid
-
-```cpp
-std::vector<std::string> save_regular_grid(const RegularGrid<dimension> & regular_grid, std::string_view filename)
-```
-
-
- API function for saving a RegularGrid. The adequate saver is called depending on the given filename extension.
-
-**regular_grid** [in] RegularGrid to save.
-
-**filename** [in] Path to the file where save the RegularGrid.
-
 ### save_tetrahedral_solid
 
 ```cpp
@@ -1160,6 +1112,53 @@ std::vector<std::string> save_triangulated_surface(const TriangulatedSurface<dim
 **triangulated_surface** [in] TriangulatedSurface to save.
 
 **filename** [in] Path to the file where save the TriangulatedSurface.
+
+### save_polygonal_surface
+
+```cpp
+std::vector<std::string> save_polygonal_surface(const PolygonalSurface<dimension> & polygonal_surface, std::string_view filename)
+```
+
+
+ API function for saving a PolygonalSurface. The adequate saver is called depending on the given filename extension.        const PolygonalSurface< dimension >& polygonal_surface,
+
+**edged_curve** [in] PolygonalSurface to save.
+
+**filename** [in] Path to the file where save the PolygonalSurface.
+
+### multiple_permute
+
+```cpp
+void multiple_permute(Container & data, absl::Span<const index_t> permutation)
+```
+
+
+### concatenate
+
+```cpp
+void concatenate(Container & container, Container && values)
+```
+
+
+### create_aabb_tree
+
+```cpp
+AABBTree<dimension> create_aabb_tree(const SurfaceMesh<dimension> & mesh)
+```
+
+
+### save_regular_grid
+
+```cpp
+std::vector<std::string> save_regular_grid(const RegularGrid<dimension> & regular_grid, std::string_view filename)
+```
+
+
+ API function for saving a RegularGrid. The adequate saver is called depending on the given filename extension.
+
+**regular_grid** [in] RegularGrid to save.
+
+**filename** [in] Path to the file where save the RegularGrid.
 
 ### operator""_uc
 
@@ -1198,6 +1197,42 @@ void print_available_extensions(std::string_view type)
 ```
 
 
+### delete_vector_elements
+
+```cpp
+index_t delete_vector_elements(const DeleteContainer & to_delete, ValueContainer & values)
+```
+
+
+ Delete some elements from a given vector.
+
+**to_delete** [in] Vector of the same size than values. If to_delete[i] is true the i-th element is deleted, else the element is kept.
+
+**values** [in] Vector in which perform deletions.
+
+**return** The number of deleted elements
+
+### to_array
+
+```cpp
+std::array<T, sizeof...(Args)> to_array(Args &&... args)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const NamedType<Type, Tag> & value)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const ComponentMeshVertex & value)
+```
+
+
 ### compute_curve_statistics
 
 ```cpp
@@ -1231,18 +1266,40 @@ std::vector<std::string> save_light_regular_grid(const LightRegularGrid<dimensio
 
 **filename** [in] Path to the file where save the LightRegularGrid.
 
-### save_polygonal_surface
+### AbslHashValue
 
 ```cpp
-std::vector<std::string> save_polygonal_surface(const PolygonalSurface<dimension> & polygonal_surface, std::string_view filename)
+H AbslHashValue(H h, const ComponentID & value)
 ```
 
 
- API function for saving a PolygonalSurface. The adequate saver is called depending on the given filename extension.        const PolygonalSurface< dimension >& polygonal_surface,
+### AbslHashValue
 
-**edged_curve** [in] PolygonalSurface to save.
+```cpp
+H AbslHashValue(H h, const MeshElement & value)
+```
 
-**filename** [in] Path to the file where save the PolygonalSurface.
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const EdgeVertex & value)
+```
+
+
+### create_section_coordinate_system
+
+```cpp
+void create_section_coordinate_system(const Section & model, SectionBuilder & builder, std::string_view new_coordinate_system_name, const CoordinateSystem2D & input, const CoordinateSystem2D & output)
+```
+
+
+### goto_keyword_if_it_exists
+
+```cpp
+std::optional<std::string> goto_keyword_if_it_exists(std::ifstream & file, std::string_view word)
+```
+
 
 ### next_keyword_if_it_exists
 
@@ -1331,42 +1388,6 @@ Point<dimension> point_line_projection(const Point<dimension> & point, const Inf
 **point** [in] the point to project
 
 **line** [in] the line
-
-### delete_vector_elements
-
-```cpp
-index_t delete_vector_elements(const DeleteContainer & to_delete, ValueContainer & values)
-```
-
-
- Delete some elements from a given vector.
-
-**to_delete** [in] Vector of the same size than values. If to_delete[i] is true the i-th element is deleted, else the element is kept.
-
-**values** [in] Vector in which perform deletions.
-
-**return** The number of deleted elements
-
-### to_array
-
-```cpp
-std::array<T, sizeof...(Args)> to_array(Args &&... args)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const NamedType<Type, Tag> & value)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const ComponentMeshVertex & value)
-```
-
 
 ### load_edged_curve
 
@@ -1496,6 +1517,58 @@ bool is_section_saveable(const Section & section, std::string_view filename)
 ```
 
 
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const PolyhedronVertex & value)
+```
+
+
+### permute
+
+```cpp
+void permute(Container & data, absl::Span<const index_t> permutation)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const PolygonVertex & value)
+```
+
+
+### mapping_after_deletion
+
+```cpp
+std::vector<index_t> mapping_after_deletion(const DeleteContainer & to_delete)
+```
+
+
+ Compute the mapping between old and new indices after deletion.
+
+**to_delete** [in] If to_delete[i] is true the i-th element is deleted, else the element is kept.
+
+**return** The old2new mapping: new index of each element, NO_ID if deleted
+
+### safe_tetrahedron_barycentric_coordinates
+
+```cpp
+std::array<double, 4> safe_tetrahedron_barycentric_coordinates(const Point3D & point, const Tetrahedron & tetrahedron)
+```
+
+
+ Compute the barycentric coordinates of a point with regards to a tetrahedron. If tetrahedron is degenerated, computation fallbacks onto its largest facet.
+
+**return** an array containing the parametric coordinates corresponding to the tetrahedron vertices.
+
+### create_surface_mesh_coordinate_system
+
+```cpp
+void create_surface_mesh_coordinate_system(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder, std::string_view new_coordinate_system_name, const CoordinateSystem2D & input, const CoordinateSystem2D & output)
+```
+
+
 ### raster_image_additional_files
 
 ```cpp
@@ -1523,12 +1596,52 @@ void register_basic_serialize_pcontext(PContext & context)
 
 **warning** The context can be used only once per archive.
 
+### register_model_serialize_pcontext
+
+```cpp
+void register_model_serialize_pcontext(PContext & context)
+```
+
+
+ Register all the information needed by Bitsery to serialize the objects in the model library.
+
+**context** [in] The context where to register this information.
+
+**warning** The context can be used only once per archive.
+
+### is_brep_loadable
+
+```cpp
+Percentage is_brep_loadable(std::string_view filename)
+```
+
+
+### is_section_loadable
+
+```cpp
+Percentage is_section_loadable(std::string_view filename)
+```
+
+
 ### is_raster_image_saveable
 
 ```cpp
 bool is_raster_image_saveable(const RasterImage<dimension> & raster, std::string_view filename)
 ```
 
+
+### triangle_signed_area
+
+```cpp
+double triangle_signed_area(const Triangle3D & triangle, const Vector3D & direction)
+```
+
+
+ Compute the signed area of a 3D triangle
+
+**triangle** [in] Triangle to compute area
+
+**direction** [in] Direction used to determined the sign of returned area: positive if the triangle normal is in the same direction than direction, negative if the triangle normal is in the opposition direction.
 
 ### is_edged_curve_saveable
 
@@ -1544,6 +1657,15 @@ bool is_point_set_saveable(const PointSet<dimension> & point_set, std::string_vi
 ```
 
 
+### triangle_area_sign
+
+```cpp
+SIGN triangle_area_sign(const Triangle3D & triangle, local_index_t axis)
+```
+
+
+ Return the sign of a 3D triangle area aligned on X- Y- or Z-axis.
+
 ### is_raster_image_loadable
 
 ```cpp
@@ -1555,6 +1677,20 @@ Percentage is_raster_image_loadable(std::string_view filename)
 
 ```cpp
 Percentage is_light_regular_grid_loadable(std::string_view filename)
+```
+
+
+### brep_object_priority
+
+```cpp
+index_t brep_object_priority(std::string_view filename)
+```
+
+
+### section_object_priority
+
+```cpp
+index_t section_object_priority(std::string_view filename)
 ```
 
 
@@ -1603,129 +1739,6 @@ bool is_polygonal_surface_saveable(const PolygonalSurface<dimension> & polygonal
 
 ```cpp
 bool is_polyhedral_solid_saveable(const PolyhedralSolid<dimension> & polyhedral_solid, std::string_view filename)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const ComponentID & value)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const MeshElement & value)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const EdgeVertex & value)
-```
-
-
-### is_brep_loadable
-
-```cpp
-Percentage is_brep_loadable(std::string_view filename)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const PolygonVertex & value)
-```
-
-
-### safe_tetrahedron_barycentric_coordinates
-
-```cpp
-std::array<double, 4> safe_tetrahedron_barycentric_coordinates(const Point3D & point, const Tetrahedron & tetrahedron)
-```
-
-
- Compute the barycentric coordinates of a point with regards to a tetrahedron. If tetrahedron is degenerated, computation fallbacks onto its largest facet.
-
-**return** an array containing the parametric coordinates corresponding to the tetrahedron vertices.
-
-### create_surface_mesh_coordinate_system
-
-```cpp
-void create_surface_mesh_coordinate_system(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder, std::string_view new_coordinate_system_name, const CoordinateSystem2D & input, const CoordinateSystem2D & output)
-```
-
-
-### register_model_serialize_pcontext
-
-```cpp
-void register_model_serialize_pcontext(PContext & context)
-```
-
-
- Register all the information needed by Bitsery to serialize the objects in the model library.
-
-**context** [in] The context where to register this information.
-
-**warning** The context can be used only once per archive.
-
-### is_section_loadable
-
-```cpp
-Percentage is_section_loadable(std::string_view filename)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const PolyhedronVertex & value)
-```
-
-
-### permute
-
-```cpp
-void permute(Container & data, absl::Span<const index_t> permutation)
-```
-
-
-### triangle_signed_area
-
-```cpp
-double triangle_signed_area(const Triangle3D & triangle, const Vector3D & direction)
-```
-
-
- Compute the signed area of a 3D triangle
-
-**triangle** [in] Triangle to compute area
-
-**direction** [in] Direction used to determined the sign of returned area: positive if the triangle normal is in the same direction than direction, negative if the triangle normal is in the opposition direction.
-
-### triangle_area_sign
-
-```cpp
-SIGN triangle_area_sign(const Triangle3D & triangle, local_index_t axis)
-```
-
-
- Return the sign of a 3D triangle area aligned on X- Y- or Z-axis.
-
-### brep_object_priority
-
-```cpp
-index_t brep_object_priority(std::string_view filename)
-```
-
-
-### section_object_priority
-
-```cpp
-index_t section_object_priority(std::string_view filename)
 ```
 
 
@@ -2001,19 +2014,6 @@ Percentage is_triangulated_surface_loadable(std::string_view filename)
 ```
 
 
-### mapping_after_deletion
-
-```cpp
-std::vector<index_t> mapping_after_deletion(const DeleteContainer & to_delete)
-```
-
-
- Compute the mapping between old and new indices after deletion.
-
-**to_delete** [in] If to_delete[i] is true the i-th element is deleted, else the element is kept.
-
-**return** The old2new mapping: new index of each element, NO_ID if deleted
-
 ### component_mesh_vertex_tuple
 
 ```cpp
@@ -2046,6 +2046,13 @@ index_t edged_curve_object_priority(std::string_view filename)
 
 ```cpp
 index_t hybrid_solid_object_priority(std::string_view filename)
+```
+
+
+### component_mesh_vertex_tuple
+
+```cpp
+ComponentMeshVertexGeneric<dimension> component_mesh_vertex_tuple(UniqueVertices... unique_vertices, const ComponentType & type)
 ```
 
 
@@ -2092,22 +2099,6 @@ std::vector<index_t> old2new_permutation(absl::Span<const index_t> permutation)
 ```
 
 
-### geode_lippincott
-
-```cpp
-int geode_lippincott()
-```
-
-
- Try to catch several exception types. Always return 1.
-
-### component_mesh_vertex_tuple
-
-```cpp
-ComponentMeshVertexGeneric<dimension> component_mesh_vertex_tuple(UniqueVertices... unique_vertices, const ComponentType & type)
-```
-
-
 ### component_mesh_vertex_tuple
 
 ```cpp
@@ -2151,13 +2142,6 @@ H AbslHashValue(H h, const PolygonEdge & value)
 ```
 
 
-### are_mesh_elements_included
-
-```cpp
-bool are_mesh_elements_included(const MeshElementsInclusion<MeshElementType> & inclusion, const SkipMeshElement & skip)
-```
-
-
 ### point_triangle_position
 
 ```cpp
@@ -2173,6 +2157,13 @@ ComponentMeshVertexTriplets component_mesh_vertex_triplets(absl::Span<const Comp
 ```
 
 
+### are_mesh_elements_included
+
+```cpp
+bool are_mesh_elements_included(const MeshElementsInclusion<MeshElementType> & inclusion, const SkipMeshElement & skip)
+```
+
+
 ### point_triangle_distance
 
 ```cpp
@@ -2182,6 +2173,15 @@ std::tuple<double, Point<dimension>> point_triangle_distance(const Point<dimensi
  Compute the smallest distance between a point and a triangle
 
 **return** a tuple containing: - the smallest distance. - the closest point on the triangle.
+
+### geode_lippincott
+
+```cpp
+int geode_lippincott()
+```
+
+
+ Try to catch several exception types. Always return 1.
 
 ### throw_lippincott
 
@@ -2219,34 +2219,6 @@ double tetrahedron_aspect_ratio(const Tetrahedron & tetra)
 ```
 
 
-### block_volume
-
-```cpp
-double block_volume(const BRep & brep, const Block3D & block)
-```
-
-
-### convert_surface_mesh
-
-```cpp
-void convert_surface_mesh(const Section & model, SectionBuilder & builder, const geode::Surface2D & surface, const geode::MeshType & mesh_type)
-```
-
-
-### create_lines_aabb_tree
-
-```cpp
-std::tuple<AABBTree3D, absl::FixedArray<uuid>> create_lines_aabb_tree(const BRep & model)
-```
-
-
-### component_mesh_polyhedra
-
-```cpp
-std::vector<MeshElement> component_mesh_polyhedra(const BRep & brep, const PolyhedronVertices & polyhedron_unique_vertices)
-```
-
-
 ### AbslHashValue
 
 ```cpp
@@ -2270,6 +2242,19 @@ H AbslHashValue(H h, const PolyhedronFacetVertex & value)
 ```
 
 
+### register_mesh_serialize_pcontext
+
+```cpp
+void register_mesh_serialize_pcontext(PContext & context)
+```
+
+
+ Register all the information needed by Bitsery to serialize the objects in the mesh library.
+
+**context** [in] The context where to register this information.
+
+**warning** The context can be used only once per archive.
+
 ### tetrahedron_volume_to_edge_ratio
 
 ```cpp
@@ -2277,250 +2262,10 @@ double tetrahedron_volume_to_edge_ratio(const Tetrahedron & tetra)
 ```
 
 
-### tetrahedron_volume_to_facet_ratio
-
-```cpp
-double tetrahedron_volume_to_facet_ratio(const Tetrahedron & tetra)
-```
-
-
-### brep_coordinate_reference_systems
-
-```cpp
-absl::FixedArray<std::pair<CRSType, std::string>> brep_coordinate_reference_systems(const BRep & brep)
-```
-
-
-### tetrahedron_collapse_aspect_ratio
-
-```cpp
-double tetrahedron_collapse_aspect_ratio(const Tetrahedron & tetra)
-```
-
-
-### create_surfaces_aabb_tree
-
-```cpp
-std::tuple<AABBTree3D, absl::FixedArray<uuid>> create_surfaces_aabb_tree(const BRep & model)
-```
-
-
-### section_coordinate_reference_systems
-
-```cpp
-absl::FixedArray<std::pair<CRSType, std::string>> section_coordinate_reference_systems(const Section & section)
-```
-
-
-### convert_surface_mesh
-
-```cpp
-void convert_surface_mesh(const BRep & model, BRepBuilder & builder, const geode::Surface3D & surface, const geode::MeshType & mesh_type)
-```
-
-
-### triangle_angle_based_quality
-
-```cpp
-double triangle_angle_based_quality(const Triangle<dimension> & triangle)
-```
-
-
-### compute_surface_scalar_function_gradient
-
-```cpp
-uuid compute_surface_scalar_function_gradient(const SurfaceMesh<dimension> & mesh, const uuid & scalar_function_id)
-```
-
-
- Compute the gradient of a scalar vertex attribute and store it in a new vertex attribute named "<scalar attribute name>_gradient", whose id is returned. Vertices where the gradient cannot be computed (no scalar value on the vertex or on one of its neighbors, or no usable neighbor) are set to the attribute no_value, a vector of NaN: has_value() is false for them.
-
-### component_mesh_vertex_generic
-
-```cpp
-ComponentMeshVertexGeneric<dimension> component_mesh_vertex_generic(absl::Span<const absl::Span<const ComponentMeshVertex>> unique_vertices)
-```
-
-
-### create_blocks_aabb_tree
-
-```cpp
-std::tuple<AABBTree3D, absl::FixedArray<uuid>> create_blocks_aabb_tree(const BRep & model)
-```
-
-
-### compute_solid_scalar_function_gradient
-
-```cpp
-uuid compute_solid_scalar_function_gradient(const SolidMesh3D & mesh, const uuid & scalar_function_id)
-```
-
-
-### brep_active_coordinate_reference_systems
-
-```cpp
-absl::FixedArray<std::pair<CRSType, std::string>> brep_active_coordinate_reference_systems(const BRep & brep)
-```
-
-
-### create_lines_aabb_tree
-
-```cpp
-std::tuple<AABBTree2D, absl::FixedArray<uuid>> create_lines_aabb_tree(const Section & model)
-```
-
-
-### convert_surface_meshes_into_triangulated_surfaces
-
-```cpp
-void convert_surface_meshes_into_triangulated_surfaces(BRep & brep)
-```
-
-
-### convert_surface_meshes_into_triangulated_surfaces
-
-```cpp
-void convert_surface_meshes_into_triangulated_surfaces(const BRep & brep, BRepBuilder & builder)
-```
-
-
-### component_mesh_vertex_generic
-
-```cpp
-ComponentMeshVertexGeneric<dimension> component_mesh_vertex_generic(absl::Span<const absl::Span<const ComponentMeshVertex>> unique_vertices, const ComponentType & type)
-```
-
-
-### create_surfaces_aabb_tree
-
-```cpp
-std::tuple<AABBTree2D, absl::FixedArray<uuid>> create_surfaces_aabb_tree(const Section & model)
-```
-
-
-### section_active_coordinate_reference_systems
-
-```cpp
-absl::FixedArray<std::pair<CRSType, std::string>> section_active_coordinate_reference_systems(const Section & section)
-```
-
-
-### set_section_active_coordinate_system
-
-```cpp
-void set_section_active_coordinate_system(const Section & model, SectionBuilder & builder, std::string_view coordinate_system_name)
-```
-
-
 ### AbslHashValue
 
 ```cpp
 H AbslHashValue(H h, const PolyhedronFacetEdge & value)
-```
-
-
-### convert_surface_meshes_into_triangulated_surfaces
-
-```cpp
-void convert_surface_meshes_into_triangulated_surfaces(const Section & section, SectionBuilder & builder)
-```
-
-
-### convert_block_mesh
-
-```cpp
-void convert_block_mesh(const BRep & model, BRepBuilder & builder, const Block3D & block, const MeshType & new_mesh_type)
-```
-
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
-```
-
-
-### euclidean_distance_transform
-
-```cpp
-std::shared_ptr<VariableAttribute<double>> euclidean_distance_transform(const Grid<dimension> & grid, absl::Span<const typename Grid<dimension>::CellIndices> grid_cell_ids, std::string_view distance_map_name)
-```
-
-
- API function for creating and computing the euclidean distance map from rasterized objects. It computes the exact euclidean distance map.
-
-
-
-**grid** [in] Regular grid on which the euclidean distance map is computed.
-
-**grid_cell_ids** [in] Rasterization of every objects from which the distance will be computed.
-
-**distance_map_name** [in] Name of the attribute to store the map on the 
-
-```cpp
-*grid.*
-```
-
-**exception**if the attribute named 
-
-**distance_map_name** cannot be accessed.
-
-**return** the created attribute. Its no_value is std::numeric_limits< double >::max(): when 
-
-**grid_cell_ids** is empty, every cell keeps this value and has_value() is false.
-
-### component_mesh_vertex_generic
-
-```cpp
-ComponentMeshVertexGeneric<dimension> component_mesh_vertex_generic(absl::Span<const absl::Span<const ComponentMeshVertex>> unique_vertices, const ComponentID & component)
-```
-
-
-### convert_block_meshes_into_tetrahedral_solids
-
-```cpp
-void convert_block_meshes_into_tetrahedral_solids(const BRep & brep, BRepBuilder & builder)
-```
-
-
-### triangulate_surface_meshes
-
-```cpp
-void triangulate_surface_meshes(const BRep & brep, BRepBuilder & builder)
-```
-
-
-### triangulate_surface_meshes
-
-```cpp
-void triangulate_surface_meshes(const Section & section, SectionBuilder & builder)
-```
-
-
-### triangle_barycentric_coordinates
-
-```cpp
-std::array<double, 3> triangle_barycentric_coordinates(const Point<dimension> & point, const Triangle<dimension> & triangle)
-```
-
-
- Compute barycentric coordinates of a point with regards to a triangle.
-
-**return** an array containing the parametric coordinates corresponding to the triangle vertices.
-
-**exception**if the triangle is degenerated
-
-### create_line_meshes_aabb_trees
-
-```cpp
-ModelMeshesAABBTree3D create_line_meshes_aabb_trees(const BRep & model)
-```
-
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
 ```
 
 
@@ -2538,23 +2283,31 @@ std::tuple<Section, ModelCopyMapping> convert_brep_into_section(const BRep & bre
 ```
 
 
-### register_mesh_serialize_pcontext
-
-```cpp
-void register_mesh_serialize_pcontext(PContext & context)
-```
-
-
- Register all the information needed by Bitsery to serialize the objects in the mesh library.
-
-**context** [in] The context where to register this information.
-
-**warning** The context can be used only once per archive.
-
 ### lexicographic_mapping
 
 ```cpp
 std::vector<index_t> lexicographic_mapping(absl::Span<const Point<dimension>> points)
+```
+
+
+### block_volume
+
+```cpp
+double block_volume(const BRep & brep, const Block3D & block)
+```
+
+
+### tetrahedron_volume_to_facet_ratio
+
+```cpp
+double tetrahedron_volume_to_facet_ratio(const Tetrahedron & tetra)
+```
+
+
+### convert_surface_meshes_into_triangulated_surfaces
+
+```cpp
+void convert_surface_meshes_into_triangulated_surfaces(BRep & brep)
 ```
 
 
@@ -2572,10 +2325,24 @@ std::tuple<BRep, ModelCopyMapping> convert_section_into_brep(const Section & sec
 ```
 
 
+### convert_surface_mesh
+
+```cpp
+void convert_surface_mesh(const Section & model, SectionBuilder & builder, const geode::Surface2D & surface, const geode::MeshType & mesh_type)
+```
+
+
 ### morton_mapping
 
 ```cpp
 std::vector<index_t> morton_mapping(absl::Span<const Point<dimension>> points)
+```
+
+
+### create_lines_aabb_tree
+
+```cpp
+std::tuple<AABBTree3D, absl::FixedArray<uuid>> create_lines_aabb_tree(const BRep & model)
 ```
 
 
@@ -2590,6 +2357,34 @@ BoundingBox3D block_bounding_box(const BRep & brep, const Block3D & block)
 
 ```cpp
 std::vector<typename Grid<dimension>::CellIndices> rasterize_segment(const Grid<dimension> & grid, const Segment<dimension> & segment)
+```
+
+
+### brep_coordinate_reference_systems
+
+```cpp
+absl::FixedArray<std::pair<CRSType, std::string>> brep_coordinate_reference_systems(const BRep & brep)
+```
+
+
+### tetrahedron_collapse_aspect_ratio
+
+```cpp
+double tetrahedron_collapse_aspect_ratio(const Tetrahedron & tetra)
+```
+
+
+### component_mesh_polyhedra
+
+```cpp
+std::vector<MeshElement> component_mesh_polyhedra(const BRep & brep, const PolyhedronVertices & polyhedron_unique_vertices)
+```
+
+
+### create_surfaces_aabb_tree
+
+```cpp
+std::tuple<AABBTree3D, absl::FixedArray<uuid>> create_surfaces_aabb_tree(const BRep & model)
 ```
 
 
@@ -2627,6 +2422,36 @@ void register_mesh_deserialize_pcontext(PContext & context)
 
 **warning** The context can be used only once per archive.
 
+### section_coordinate_reference_systems
+
+```cpp
+absl::FixedArray<std::pair<CRSType, std::string>> section_coordinate_reference_systems(const Section & section)
+```
+
+
+### convert_surface_mesh
+
+```cpp
+void convert_surface_mesh(const BRep & model, BRepBuilder & builder, const geode::Surface3D & surface, const geode::MeshType & mesh_type)
+```
+
+
+### triangle_angle_based_quality
+
+```cpp
+double triangle_angle_based_quality(const Triangle<dimension> & triangle)
+```
+
+
+### compute_surface_scalar_function_gradient
+
+```cpp
+uuid compute_surface_scalar_function_gradient(const SurfaceMesh<dimension> & mesh, const uuid & scalar_function_id)
+```
+
+
+ Compute the gradient of a scalar vertex attribute and store it in a new vertex attribute named "<scalar attribute name>_gradient", whose id is returned. Vertices where the gradient cannot be computed (no scalar value on the vertex or on one of its neighbors, or no usable neighbor) are set to the attribute no_value, a vector of NaN: has_value() is false for them.
+
 ### convert_surface_mesh_into_polygonal_surface
 
 ```cpp
@@ -2641,6 +2466,13 @@ std::vector<typename Grid<dimension>::CellIndices> conservative_rasterize_segmen
 ```
 
 
+### component_mesh_vertex_generic
+
+```cpp
+ComponentMeshVertexGeneric<dimension> component_mesh_vertex_generic(absl::Span<const absl::Span<const ComponentMeshVertex>> unique_vertices)
+```
+
+
 ### point_side_to_segment
 
 ```cpp
@@ -2649,6 +2481,13 @@ SIDE point_side_to_segment(const Point2D & point, const Segment2D & segment)
 
 
  Return the point side to a segment.
+
+### create_blocks_aabb_tree
+
+```cpp
+std::tuple<AABBTree3D, absl::FixedArray<uuid>> create_blocks_aabb_tree(const BRep & model)
+```
+
 
 ### polygon_unique_vertices
 
@@ -2671,10 +2510,38 @@ std::unique_ptr<TetrahedralSolid3D> convert_grid_into_tetrahedral_solid(const Gr
 ```
 
 
+### compute_solid_scalar_function_gradient
+
+```cpp
+uuid compute_solid_scalar_function_gradient(const SolidMesh3D & mesh, const uuid & scalar_function_id)
+```
+
+
+### brep_active_coordinate_reference_systems
+
+```cpp
+absl::FixedArray<std::pair<CRSType, std::string>> brep_active_coordinate_reference_systems(const BRep & brep)
+```
+
+
+### create_lines_aabb_tree
+
+```cpp
+std::tuple<AABBTree2D, absl::FixedArray<uuid>> create_lines_aabb_tree(const Section & model)
+```
+
+
 ### polygon_unique_vertices
 
 ```cpp
 PolygonVertices polygon_unique_vertices(const BRep & model, const Surface3D & surface, index_t polygon_id)
+```
+
+
+### convert_surface_meshes_into_triangulated_surfaces
+
+```cpp
+void convert_surface_meshes_into_triangulated_surfaces(const BRep & brep, BRepBuilder & builder)
 ```
 
 
@@ -2713,6 +2580,13 @@ BRep extrude_section_to_brep(const Section & section, const SectionExtruderOptio
 ```
 
 
+### component_mesh_vertex_generic
+
+```cpp
+ComponentMeshVertexGeneric<dimension> component_mesh_vertex_generic(absl::Span<const absl::Span<const ComponentMeshVertex>> unique_vertices, const ComponentType & type)
+```
+
+
 ### point_side_to_line
 
 ```cpp
@@ -2722,10 +2596,31 @@ SIDE point_side_to_line(const Point2D & point, const InfiniteLine2D & line)
 
  Return the point side to a line.
 
+### create_surfaces_aabb_tree
+
+```cpp
+std::tuple<AABBTree2D, absl::FixedArray<uuid>> create_surfaces_aabb_tree(const Section & model)
+```
+
+
 ### polygon_unique_vertices
 
 ```cpp
 PolygonVertices polygon_unique_vertices(const BRep & model, const Block3D & block, const PolyhedronFacet & facet)
+```
+
+
+### convert_surface_meshes_into_triangulated_surfaces
+
+```cpp
+void convert_surface_meshes_into_triangulated_surfaces(const Section & section, SectionBuilder & builder)
+```
+
+
+### section_active_coordinate_reference_systems
+
+```cpp
+absl::FixedArray<std::pair<CRSType, std::string>> section_active_coordinate_reference_systems(const Section & section)
 ```
 
 
@@ -2766,10 +2661,60 @@ std::array<index_t, 2> edge_unique_vertices(const BRep & brep, const Line3D & li
 ```
 
 
+### convert_block_mesh
+
+```cpp
+void convert_block_mesh(const BRep & model, BRepBuilder & builder, const Block3D & block, const MeshType & new_mesh_type)
+```
+
+
+### euclidean_distance_transform
+
+```cpp
+std::shared_ptr<VariableAttribute<double>> euclidean_distance_transform(const Grid<dimension> & grid, absl::Span<const typename Grid<dimension>::CellIndices> grid_cell_ids, std::string_view distance_map_name)
+```
+
+
+ API function for creating and computing the euclidean distance map from rasterized objects. It computes the exact euclidean distance map.
+
+
+
+**grid** [in] Regular grid on which the euclidean distance map is computed.
+
+**grid_cell_ids** [in] Rasterization of every objects from which the distance will be computed.
+
+**distance_map_name** [in] Name of the attribute to store the map on the 
+
+```cpp
+*grid.*
+```
+
+**exception**if the attribute named 
+
+**distance_map_name** cannot be accessed.
+
+**return** the created attribute. Its no_value is std::numeric_limits< double >::max(): when 
+
+**grid_cell_ids** is empty, every cell keeps this value and has_value() is false.
+
 ### convert_solid_mesh_into_hybrid_solid
 
 ```cpp
 std::optional<std::unique_ptr<HybridSolid3D>> convert_solid_mesh_into_hybrid_solid(const SolidMesh3D & solid)
+```
+
+
+### set_section_active_coordinate_system
+
+```cpp
+void set_section_active_coordinate_system(const Section & model, SectionBuilder & builder, std::string_view coordinate_system_name)
+```
+
+
+### component_mesh_vertex_generic
+
+```cpp
+ComponentMeshVertexGeneric<dimension> component_mesh_vertex_generic(absl::Span<const absl::Span<const ComponentMeshVertex>> unique_vertices, const ComponentID & component)
 ```
 
 
@@ -2803,6 +2748,13 @@ std::array<index_t, 2> edge_unique_vertices(const BRep & brep, const Surface3D &
 ```
 
 
+### convert_block_meshes_into_tetrahedral_solids
+
+```cpp
+void convert_block_meshes_into_tetrahedral_solids(const BRep & brep, BRepBuilder & builder)
+```
+
+
 ### colinear_segment_segment_intersection_detection
 
 ```cpp
@@ -2829,6 +2781,13 @@ double point_segment_distance(const Point<dimension> & point, const Segment<dime
 
 
  Compute the smallest distance between a point and a segment
+
+### triangulate_surface_meshes
+
+```cpp
+void triangulate_surface_meshes(const BRep & brep, BRepBuilder & builder)
+```
+
 
 ### point_side_to_triangle
 
@@ -2860,12 +2819,32 @@ void triangulate_surface_mesh(SurfaceMesh<dimension> & surface)
 ```
 
 
+### triangulate_surface_meshes
+
+```cpp
+void triangulate_surface_meshes(const Section & section, SectionBuilder & builder)
+```
+
+
 ### component_mesh_polygons
 
 ```cpp
 SectionComponentMeshPolygons component_mesh_polygons(const Section & section, const PolygonVertices & polygon_unique_vertices)
 ```
 
+
+### triangle_barycentric_coordinates
+
+```cpp
+std::array<double, 3> triangle_barycentric_coordinates(const Point<dimension> & point, const Triangle<dimension> & triangle)
+```
+
+
+ Compute barycentric coordinates of a point with regards to a triangle.
+
+**return** an array containing the parametric coordinates corresponding to the triangle vertices.
+
+**exception**if the triangle is degenerated
 
 ### convert_section_into_surface
 
@@ -2885,6 +2864,13 @@ void triangulate_surface_mesh(const SurfaceMesh<dimension> & surface, SurfaceMes
 
 ```cpp
 SectionComponentMeshPolygons component_mesh_polygons(const Section & section, const Surface2D & surface, index_t polygon_id)
+```
+
+
+### create_line_meshes_aabb_trees
+
+```cpp
+ModelMeshesAABBTree3D create_line_meshes_aabb_trees(const BRep & model)
 ```
 
 
@@ -3009,95 +2995,6 @@ ModelMeshesAABBTree2D create_line_meshes_aabb_trees(const Section & model)
 ```
 
 
-### create_surface_meshes_aabb_trees
-
-```cpp
-ModelMeshesAABBTree2D create_surface_meshes_aabb_trees(const Section & model)
-```
-
-
-### component_mesh_vertex_triplets
-
-```cpp
-ComponentMeshVertexTriplets component_mesh_vertex_triplets(absl::Span<const ComponentMeshVertex> unique_vertices0, absl::Span<const ComponentMeshVertex> unique_vertices1, absl::Span<const ComponentMeshVertex> unique_vertices2, const ComponentType & type)
-```
-
-
-### point_tetrahedron_position
-
-```cpp
-POSITION point_tetrahedron_position(const Point3D & point, const Tetrahedron & tetra)
-```
-
-
- Return the position of a point in a tetrahedron: inside, outside, on a tetra vertex, an edge or a facet.
-
-### segment_barycentric_coordinates
-
-```cpp
-std::array<double, 2> segment_barycentric_coordinates(const Point<dimension> & point, const Segment<dimension> & segment)
-```
-
-
- Compute barycentric coordinates of a point with regards to a segment.
-
-**return** an array containing the parametric coordinates corresponding to the segment vertices.
-
-**exception**if the segment is degenerated
-
-### component_mesh_vertex_triplets
-
-```cpp
-ComponentMeshVertexTriplets component_mesh_vertex_triplets(absl::Span<const ComponentMeshVertex> unique_vertices0, absl::Span<const ComponentMeshVertex> unique_vertices1, absl::Span<const ComponentMeshVertex> unique_vertices2, const ComponentID & component)
-```
-
-
-### surface_radial_sort
-
-```cpp
-SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
-```
-
-
-### safe_segment_barycentric_coordinates
-
-```cpp
-std::array<double, 2> safe_segment_barycentric_coordinates(const Point<dimension> & point, const Segment<dimension> & segment)
-```
-
-
- Compute barycentric coordinates of a point with regards to a segment. If segment is degenerated, computation fallbacks onto its vertices.
-
-**return** an array containing the parametric coordinates corresponding to the segment vertices.
-
-### segment_segment_intersection_detection
-
-```cpp
-SegmentSegmentIntersection segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
-```
-
-
-### segment_segment_intersection_detection
-
-```cpp
-SegmentSegmentIntersection segment_segment_intersection_detection(const Segment3D & segment0, const Segment3D & segment1)
-```
-
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
-```
-
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
-```
-
-
 ### convert_brep_into_solid
 
 ```cpp
@@ -3130,10 +3027,24 @@ BRepComponentMeshPolygons component_mesh_polygons(const BRep & brep, const Polyg
 ```
 
 
+### create_surface_meshes_aabb_trees
+
+```cpp
+ModelMeshesAABBTree2D create_surface_meshes_aabb_trees(const Section & model)
+```
+
+
 ### component_mesh_edges
 
 ```cpp
 SectionComponentMeshEdges component_mesh_edges(const Section & section, const std::array<index_t, 2> & edge_unique_vertices)
+```
+
+
+### component_mesh_vertex_triplets
+
+```cpp
+ComponentMeshVertexTriplets component_mesh_vertex_triplets(absl::Span<const ComponentMeshVertex> unique_vertices0, absl::Span<const ComponentMeshVertex> unique_vertices1, absl::Span<const ComponentMeshVertex> unique_vertices2, const ComponentType & type)
 ```
 
 
@@ -3167,6 +3078,28 @@ SectionComponentMeshEdges component_mesh_edges(const Section & section, const Li
 ```
 
 
+### point_tetrahedron_position
+
+```cpp
+POSITION point_tetrahedron_position(const Point3D & point, const Tetrahedron & tetra)
+```
+
+
+ Return the position of a point in a tetrahedron: inside, outside, on a tetra vertex, an edge or a facet.
+
+### segment_barycentric_coordinates
+
+```cpp
+std::array<double, 2> segment_barycentric_coordinates(const Point<dimension> & point, const Segment<dimension> & segment)
+```
+
+
+ Compute barycentric coordinates of a point with regards to a segment.
+
+**return** an array containing the parametric coordinates corresponding to the segment vertices.
+
+**exception**if the segment is degenerated
+
 ### component_mesh_polygons
 
 ```cpp
@@ -3199,6 +3132,13 @@ std::unique_ptr<TriangulatedSurface3D> convert_triangulated_surface2d_into_3d(co
 ```
 
 
+### component_mesh_vertex_triplets
+
+```cpp
+ComponentMeshVertexTriplets component_mesh_vertex_triplets(absl::Span<const ComponentMeshVertex> unique_vertices0, absl::Span<const ComponentMeshVertex> unique_vertices1, absl::Span<const ComponentMeshVertex> unique_vertices2, const ComponentID & component)
+```
+
+
 ### point_line_signed_distance
 
 ```cpp
@@ -3208,10 +3148,70 @@ double point_line_signed_distance(const Point2D & point, const InfiniteLine2D & 
 
  Compute the smallest signed distance between a point and an infinite line in 2D
 
+### surface_radial_sort
+
+```cpp
+SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
+```
+
+
 ### convert_triangulated_surface3d_into_2d
 
 ```cpp
 std::unique_ptr<TriangulatedSurface2D> convert_triangulated_surface3d_into_2d(const TriangulatedSurface3D & surface3d, local_index_t axis_to_remove)
+```
+
+
+### safe_segment_barycentric_coordinates
+
+```cpp
+std::array<double, 2> safe_segment_barycentric_coordinates(const Point<dimension> & point, const Segment<dimension> & segment)
+```
+
+
+ Compute barycentric coordinates of a point with regards to a segment. If segment is degenerated, computation fallbacks onto its vertices.
+
+**return** an array containing the parametric coordinates corresponding to the segment vertices.
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
+```
+
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### segment_segment_intersection_detection
+
+```cpp
+SegmentSegmentIntersection segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
+```
+
+
+### segment_segment_intersection_detection
+
+```cpp
+SegmentSegmentIntersection segment_segment_intersection_detection(const Segment3D & segment0, const Segment3D & segment1)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
 ```
 
 
@@ -3498,6 +3498,20 @@ IntersectionResult<Point2D> segment_segment_intersection(const Segment2D & segme
 
 **details** parallel when the segment0 direction deviates from segment1 by less than GLOBAL_EPSILON over the segment1 extent (whatever their distance), or when the segments overlap within GLOBAL_EPSILON. A segment shorter than GLOBAL_EPSILON is considered as a point.
 
+### point_triangle_distance
+
+```cpp
+std::tuple<double, Point3D> point_triangle_distance(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### point_triangle_distance
+
+```cpp
+std::tuple<double, Point2D> point_triangle_distance(const Point2D & point, const Triangle2D & triangle)
+```
+
+
 ### point_sphere_distance
 
 ```cpp
@@ -3569,20 +3583,6 @@ IntersectionResult<absl::InlinedVector<Point3D, 2>> line_cylinder_intersection(c
  Compute the intersection between a line and a cylinder
 
 **return** an optional of the intersection points.
-
-### point_triangle_distance
-
-```cpp
-std::tuple<double, Point3D> point_triangle_distance(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### point_triangle_distance
-
-```cpp
-std::tuple<double, Point2D> point_triangle_distance(const Point2D & point, const Triangle2D & triangle)
-```
-
 
 ### triangle_circle_intersection
 
