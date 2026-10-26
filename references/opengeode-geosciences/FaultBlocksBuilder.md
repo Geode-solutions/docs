@@ -17,9 +17,6 @@ const name = words.join('-');
 # class FaultBlocksBuilder
 
 
-# class FaultBlocksBuilder
-
-
 ## Functions
 
 ### create_fault_block
@@ -50,6 +47,13 @@ public void set_fault_block_name(const FaultBlock<dimension> & fault_block, std:
 ```
 
 
+### set_fault_block_active
+
+```cpp
+public void set_fault_block_active(const FaultBlock<dimension> & fault_block, bool active)
+```
+
+
 ### create_fault_block
 
 ```cpp
@@ -64,5 +68,8 @@ protected void delete_fault_block(const FaultBlock<dimension> & fault_block)
 ```
 
 
+
+
+# class FaultBlocksBuilder
 
 

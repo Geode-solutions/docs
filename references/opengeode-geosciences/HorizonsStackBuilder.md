@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from StratigraphicRelationshipsBuilder, HorizonsBuilder<3U>, StratigraphicUnitsBuilder<3U>, IdentifierBuilder
+Inherits from StratigraphicRelationshipsBuilder, HorizonsBuilder<2U>, StratigraphicUnitsBuilder<2U>, IdentifierBuilder
 ```
 
 
@@ -24,7 +24,7 @@ Inherits from StratigraphicRelationshipsBuilder, HorizonsBuilder<3U>, Stratigrap
 
 
 ```cpp
-Inherits from StratigraphicRelationshipsBuilder, HorizonsBuilder<2U>, StratigraphicUnitsBuilder<2U>, IdentifierBuilder
+Inherits from StratigraphicRelationshipsBuilder, HorizonsBuilder<3U>, StratigraphicUnitsBuilder<3U>, IdentifierBuilder
 ```
 
 

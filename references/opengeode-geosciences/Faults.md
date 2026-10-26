@@ -17,6 +17,9 @@ const name = words.join('-');
 # class Faults
 
 
+# class Faults
+
+
 ## Records
 
 FaultRange
@@ -195,8 +198,5 @@ public Fault<dimension> & modifiable_fault(const uuid & id, FaultsBuilderKey key
 ```
 
 
-
-
-# class Faults
 
 

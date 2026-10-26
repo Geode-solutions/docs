@@ -31,6 +31,15 @@ void add_horizons_clone_mapping(const Model & model, BijectiveMapping<uuid> & ho
 ```
 
 
+### skip_other_type_items
+
+```cpp
+void skip_other_type_items(Relationships::ItemRangeIterator & iterator, const ComponentType & item_type)
+```
+
+
+ Advance the iterator until it points to an item of the given type (or reaches the end). Used by geological item ranges to ignore items which do not have the expected component type.
+
 ### add_stratigraphic_units_clone_mapping
 
 ```cpp
@@ -45,20 +54,6 @@ void add_geology_clone_mapping(ModelCopyMapping & mapping, const Model & model)
 ```
 
 
-### transfer_geological_information
-
-```cpp
-ModelCopyMapping transfer_geological_information(const Model & initial_model, const Model & modified_model, typename Model::Builder & model_builder, const ModelGenericMapping & components_mappings)
-```
-
-
-### add_geological_components_mappings
-
-```cpp
-void add_geological_components_mappings(const ModelCopyMapping & geological_mappings, ModelGenericMapping & component_mappings)
-```
-
-
 ### rescale_implicit_value
 
 ```cpp
@@ -70,6 +65,13 @@ void rescale_implicit_value(ImplicitCrossSection & section, double scaling_facto
 
 ```cpp
 void rescale_implicit_value_to_bbox_scale(StratigraphicSection & section)
+```
+
+
+### transfer_geological_information
+
+```cpp
+ModelCopyMapping transfer_geological_information(const Model & initial_model, const Model & modified_model, typename Model::Builder & model_builder, const ModelGenericMapping & components_mappings)
 ```
 
 
@@ -101,6 +103,13 @@ void copy_horizons(const ModelFrom & from, const ModelTo & model_to, typename Mo
 ```
 
 
+### copy_fault_blocks
+
+```cpp
+void copy_fault_blocks(const ModelFrom & from, const ModelTo & model_to, typename ModelTo::Builder & builder_to, Mapping & mapping)
+```
+
+
 ### rescale_implicit_value_to_bbox_scale
 
 ```cpp
@@ -108,17 +117,31 @@ void rescale_implicit_value_to_bbox_scale(StratigraphicModel & model)
 ```
 
 
+### copy_stratigraphic_units
+
+```cpp
+void copy_stratigraphic_units(const ModelFrom & from, const ModelTo & model_to, typename ModelTo::Builder & builder_to, Mapping & mapping)
+```
+
+
+### copy_collection_item_relationships
+
+```cpp
+void copy_collection_item_relationships(const ModelFrom & from, const CollectionRangeFrom & collection_range_from, const Mapping & collection_mapping, const Mapping & item_mapping, BuilderTo & builder_to)
+```
+
+
+### add_geological_components_mappings
+
+```cpp
+void add_geological_components_mappings(const ModelCopyMapping & geological_mappings, ModelGenericMapping & component_mappings)
+```
+
+
 ### load_implicit_cross_section_files
 
 ```cpp
 void load_implicit_cross_section_files(ImplicitCrossSection & section, std::string_view directory)
-```
-
-
-### copy_fault_blocks
-
-```cpp
-void copy_fault_blocks(const ModelFrom & from, const ModelTo & model_to, typename ModelTo::Builder & builder_to, Mapping & mapping)
 ```
 
 
@@ -136,24 +159,10 @@ void load_implicit_structural_model_files(ImplicitStructuralModel & model, std::
 ```
 
 
-### copy_stratigraphic_units
-
-```cpp
-void copy_stratigraphic_units(const ModelFrom & from, const ModelTo & model_to, typename ModelTo::Builder & builder_to, Mapping & mapping)
-```
-
-
 ### save_stratigraphic_blocks
 
 ```cpp
 void save_stratigraphic_blocks(const StratigraphicModel & model, std::string_view prefix)
-```
-
-
-### copy_collection_item_relationships
-
-```cpp
-void copy_collection_item_relationships(const ModelFrom & from, const CollectionRangeFrom & collection_range_from, const Mapping & collection_mapping, const Mapping & item_mapping, BuilderTo & builder_to)
 ```
 
 

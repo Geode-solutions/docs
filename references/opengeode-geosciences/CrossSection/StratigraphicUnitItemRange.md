@@ -57,6 +57,13 @@ public const StratigraphicUnitItemRange & end()
 ```
 
 
+### operator++
+
+```cpp
+public void operator++()
+```
+
+
 ### operator*
 
 ```cpp

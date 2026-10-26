@@ -44,6 +44,13 @@ public void set_stratigraphic_unit_name(const StratigraphicUnit<dimension> & str
 ```
 
 
+### set_stratigraphic_unit_active
+
+```cpp
+public void set_stratigraphic_unit_active(const StratigraphicUnit<dimension> & stratigraphic_unit, bool active)
+```
+
+
 ### create_stratigraphic_unit
 
 ```cpp

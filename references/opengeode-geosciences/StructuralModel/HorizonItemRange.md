@@ -57,6 +57,13 @@ public const HorizonItemRange & end()
 ```
 
 
+### operator++
+
+```cpp
+public void operator++()
+```
+
+
 ### operator*
 
 ```cpp

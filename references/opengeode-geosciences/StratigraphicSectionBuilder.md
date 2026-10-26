@@ -82,5 +82,12 @@ public void import_old_stratigraphic_attribute_values_from_attribute_id(const uu
 ```
 
 
+### copy_stratigraphic_attribute_values
+
+```cpp
+public void copy_stratigraphic_attribute_values(ModelCopyMapping & mapping, const StratigraphicSection & other_section)
+```
+
+
 
 

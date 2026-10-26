@@ -17,9 +17,6 @@ const name = words.join('-');
 # class FaultsBuilder
 
 
-# class FaultsBuilder
-
-
 ## Functions
 
 ### create_fault
@@ -57,6 +54,13 @@ public void set_fault_name(const Fault<dimension> & fault, std::string_view name
 ```
 
 
+### set_fault_active
+
+```cpp
+public void set_fault_active(const Fault<dimension> & fault, bool active)
+```
+
+
 ### create_fault
 
 ```cpp
@@ -85,5 +89,8 @@ protected void delete_fault(const Fault<dimension> & fault)
 ```
 
 
+
+
+# class FaultsBuilder
 
 

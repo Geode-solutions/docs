@@ -57,6 +57,13 @@ public void set_horizon_name(const Horizon<dimension> & horizon, std::string_vie
 ```
 
 
+### set_horizon_active
+
+```cpp
+public void set_horizon_active(const Horizon<dimension> & horizon, bool active)
+```
+
+
 ### create_horizon
 
 ```cpp

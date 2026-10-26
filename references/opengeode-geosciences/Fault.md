@@ -14,6 +14,15 @@ const name = words.join('-');
 # class Fault
 
 
+```cpp
+Inherits from Component<2U>
+```
+
+
+
+# class Fault
+
+
  Geological component describing a Fault. This component is described by a fault type.
 
 
@@ -40,31 +49,10 @@ public Fault<dimension> & operator=(const Fault<dimension> & )
 ```
 
 
-### Fault
-
-```cpp
-public void Fault<dimension>(Fault<dimension> && other)
-```
-
-
-### ~Fault
-
-```cpp
-public void ~Fault<dimension>()
-```
-
-
 ### component_type_static
 
 ```cpp
 public static ComponentType component_type_static()
-```
-
-
-### has_type
-
-```cpp
-public bool has_type()
 ```
 
 
@@ -75,10 +63,10 @@ public ComponentType component_type()
 ```
 
 
-### type
+### Fault
 
 ```cpp
-public FAULT_TYPE type()
+public void Fault<dimension>(Fault<dimension> && other)
 ```
 
 
@@ -89,10 +77,10 @@ public void Fault<dimension>(FaultsKey )
 ```
 
 
-### set_type
+### ~Fault
 
 ```cpp
-public void set_type(FAULT_TYPE type, FaultsBuilderKey )
+public void ~Fault<dimension>()
 ```
 
 
@@ -103,10 +91,38 @@ public void Fault<dimension>(FAULT_TYPE type, FaultsKey )
 ```
 
 
+### has_type
+
+```cpp
+public bool has_type()
+```
+
+
 ### set_fault_name
 
 ```cpp
 public void set_fault_name(std::string_view name, FaultsBuilderKey )
+```
+
+
+### type
+
+```cpp
+public FAULT_TYPE type()
+```
+
+
+### set_fault_active
+
+```cpp
+public void set_fault_active(bool active, FaultsBuilderKey )
+```
+
+
+### set_type
+
+```cpp
+public void set_type(FAULT_TYPE type, FaultsBuilderKey )
 ```
 
 
@@ -134,15 +150,6 @@ public void set_fault_name(std::string_view name, FaultsBuilderKey )
 
 ```cpp
 Inherits from Component<3U>
-```
-
-
-
-# class Fault
-
-
-```cpp
-Inherits from Component<2U>
 ```
 
 

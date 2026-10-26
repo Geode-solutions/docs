@@ -17,9 +17,6 @@ const name = words.join('-');
 # class StratigraphicUnits
 
 
-# class StratigraphicUnits
-
-
 ## Records
 
 StratigraphicUnitRange
@@ -184,5 +181,8 @@ public const StratigraphicUnit<dimension> & component(const uuid & id)
 ```
 
 
+
+
+# class StratigraphicUnits
 
 

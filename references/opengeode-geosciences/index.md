@@ -18,20 +18,30 @@ const name = words.join('-');
 ## Namespaces
 
 * [detail](detail/index.md)
+* [internal](internal/index.md)
 
 
 ## Records
 
+* [BrooksCoreyCapillaryPressure](BrooksCoreyCapillaryPressure.md)
+* [BrooksCoreyRelativePermeability](BrooksCoreyRelativePermeability.md)
+* [CapillaryPressure](CapillaryPressure.md)
+* [Co2BrineFluid](Co2BrineFluid.md)
 * [CrossSectionBuilder](CrossSectionBuilder.md)
 * [CrossSectionInput](CrossSectionInput.md)
 * [CrossSectionOutput](CrossSectionOutput.md)
 * [CrossSection](CrossSection.md)
+* [DeadOilFluid](DeadOilFluid.md)
 * [FaultBlock](FaultBlock.md)
 * [FaultBlocksBuilder](FaultBlocksBuilder.md)
 * [FaultBlocks](FaultBlocks.md)
 * [Fault](Fault.md)
 * [FaultsBuilder](FaultsBuilder.md)
 * [Faults](Faults.md)
+* [FlowModel](FlowModel.md)
+* [FluidComponent](FluidComponent.md)
+* [FluidModel](FluidModel.md)
+* [FluidThermalProperties](FluidThermalProperties.md)
 * [GeographicCoordinateSystemInfo](GeographicCoordinateSystemInfo.md)
 * [GeographicCoordinateSystem](GeographicCoordinateSystem.md)
 * [Horizon](Horizon.md)
@@ -41,6 +51,7 @@ const name = words.join('-');
 * [HorizonsStackOutput](HorizonsStackOutput.md)
 * [HorizonsStack](HorizonsStack.md)
 * [Horizons](Horizons.md)
+* [HydrocarbonPvtTable](HydrocarbonPvtTable.md)
 * [ImplicitCrossSectionBuilder](ImplicitCrossSectionBuilder.md)
 * [ImplicitCrossSectionInput](ImplicitCrossSectionInput.md)
 * [ImplicitCrossSectionOutput](ImplicitCrossSectionOutput.md)
@@ -49,7 +60,10 @@ const name = words.join('-');
 * [ImplicitStructuralModelInput](ImplicitStructuralModelInput.md)
 * [ImplicitStructuralModelOutput](ImplicitStructuralModelOutput.md)
 * [ImplicitStructuralModel](ImplicitStructuralModel.md)
+* [InitialCondition](InitialCondition.md)
+* [Material](Material.md)
 * [MeshElement](MeshElement.md)
+* [MultiphaseFlow](MultiphaseFlow.md)
 * [OpenGeodeCrossSectionInput](OpenGeodeCrossSectionInput.md)
 * [OpenGeodeCrossSectionOutput](OpenGeodeCrossSectionOutput.md)
 * [OpenGeodeGeosciencesException](OpenGeodeGeosciencesException.md)
@@ -57,14 +71,31 @@ const name = words.join('-');
 * [OpenGeodeGeosciencesExplicitLibrary](OpenGeodeGeosciencesExplicitLibrary.md)
 * [OpenGeodeGeosciencesImplicitException](OpenGeodeGeosciencesImplicitException.md)
 * [OpenGeodeGeosciencesImplicitLibrary](OpenGeodeGeosciencesImplicitLibrary.md)
+* [OpenGeodeGeosciencesSimulationException](OpenGeodeGeosciencesSimulationException.md)
+* [OpenGeodeGeosciencesSimulationLibrary](OpenGeodeGeosciencesSimulationLibrary.md)
 * [OpenGeodeHorizonsStackInput](OpenGeodeHorizonsStackInput.md)
 * [OpenGeodeHorizonsStackOutput](OpenGeodeHorizonsStackOutput.md)
 * [OpenGeodeImplicitCrossSectionInput](OpenGeodeImplicitCrossSectionInput.md)
 * [OpenGeodeImplicitCrossSectionOutput](OpenGeodeImplicitCrossSectionOutput.md)
 * [OpenGeodeImplicitStructuralModelInput](OpenGeodeImplicitStructuralModelInput.md)
 * [OpenGeodeImplicitStructuralModelOutput](OpenGeodeImplicitStructuralModelOutput.md)
+* [OpenGeodePhysicalProblemInput](OpenGeodePhysicalProblemInput.md)
+* [OpenGeodePhysicalProblemOutput](OpenGeodePhysicalProblemOutput.md)
 * [OpenGeodeStructuralModelInput](OpenGeodeStructuralModelInput.md)
 * [OpenGeodeStructuralModelOutput](OpenGeodeStructuralModelOutput.md)
+* [OutputSettings](OutputSettings.md)
+* [PhysicalProblemBuilder](PhysicalProblemBuilder.md)
+* [PhysicalProblemInput](PhysicalProblemInput.md)
+* [PhysicalProblemOutput](PhysicalProblemOutput.md)
+* [PhysicalProblem](PhysicalProblem.md)
+* [RelativePermeability](RelativePermeability.md)
+* [RockThermalProperties](RockThermalProperties.md)
+* [SaturationTable](SaturationTable.md)
+* [Schedule](Schedule.md)
+* [SinglePhaseFlow](SinglePhaseFlow.md)
+* [SinglePhaseFluid](SinglePhaseFluid.md)
+* [SolverOptions](SolverOptions.md)
+* [SourceTerm](SourceTerm.md)
 * [StratigraphicModelBuilder](StratigraphicModelBuilder.md)
 * [StratigraphicModelInput](StratigraphicModelInput.md)
 * [StratigraphicModelOutput](StratigraphicModelOutput.md)
@@ -84,17 +115,60 @@ const name = words.join('-');
 * [StructuralModelInput](StructuralModelInput.md)
 * [StructuralModelOutput](StructuralModelOutput.md)
 * [StructuralModel](StructuralModel.md)
+* [TableCapillaryPressure](TableCapillaryPressure.md)
+* [TableRelativePermeability](TableRelativePermeability.md)
+* [ThermalParameters](ThermalParameters.md)
+* [TwoPhaseCapillaryPressureTable](TwoPhaseCapillaryPressureTable.md)
+* [TwoPhaseRelativePermeabilityTable](TwoPhaseRelativePermeabilityTable.md)
+* [UniformInitialCondition](UniformInitialCondition.md)
+* [ValidityRange](ValidityRange.md)
+* [WaterPvt](WaterPvt.md)
 * [uuid](uuid.md)
 
 
 ## Functions
 
-### build_structural_model_fault_blocks
+### load_stratigraphic_section
 
 ```cpp
-void build_structural_model_fault_blocks(StructuralModel & structural_model)
+StratigraphicSection load_stratigraphic_section(std::string_view filename)
 ```
 
+
+ API function for loading a StratigraphicSection. The adequate loader is called depending on the filename extension.
+
+**filename** [in] Path to the file to load.
+
+### load_physical_problem
+
+```cpp
+PhysicalProblem load_physical_problem(std::string_view filename)
+```
+
+
+ API function for loading a PhysicalProblem. The adequate loader is called depending on the filename extension.
+
+**filename** [in] Path to the file to load.
+
+### load_cross_section
+
+```cpp
+CrossSection load_cross_section(std::string_view filename)
+```
+
+
+ API function for loading a CrossSection. The adequate loader is called depending on the filename extension.
+
+**filename** [in] Path to the file to load.
+
+### register_simulation_leaf
+
+```cpp
+void register_simulation_leaf(PContext & context)
+```
+
+
+ Register a leaf class so that it can be saved through a pointer to its base. The leaf type name is written in files: it must never change. Libraries defining their own leaf classes call this from a function given to BitseryExtensions::register_functions. Such leaf classes are saved and loaded like the built-in ones, but validate_physical_problem does not check their content, and simulator writers reject the leaf classes they do not support.
 
 ### register_explicit_serialize_pcontext
 
@@ -108,6 +182,15 @@ void register_explicit_serialize_pcontext(PContext & context)
 **context** [in] The context where to register this information.
 
 **warning** The context can be used only once per archive.
+
+### build_structural_model_fault_blocks
+
+```cpp
+void build_structural_model_fault_blocks(StructuralModel & structural_model)
+```
+
+
+ Group the Blocks of the StructuralModel into new FaultBlocks: Blocks sharing a Surface which is not a Fault are in the same FaultBlock. If the model has no Fault, all the Blocks are put in a single FaultBlock. Existing FaultBlocks are kept: a full new set is created next to them, so callers can compare both sets (e.g. to detect splits and merges).
 
 ### complete_stratigraphic_unit_block_relationships
 
@@ -149,16 +232,14 @@ StratigraphicModel load_stratigraphic_model(std::string_view filename)
 
 **filename** [in] Path to the file to load.
 
-### load_stratigraphic_section
+### validate_physical_problem
 
 ```cpp
-StratigraphicSection load_stratigraphic_section(std::string_view filename)
+std::vector<std::string> validate_physical_problem(const PhysicalProblem & problem)
 ```
 
 
- API function for loading a StratigraphicSection. The adequate loader is called depending on the filename extension.
-
-**filename** [in] Path to the file to load.
+ Check the problem consistency, independently of any simulator and model. Returns one message per issue, empty if the problem is valid. Only the content of the leaf classes defined in this library is checked: leaf classes registered by other libraries are accepted as is.
 
 ### register_explicit_deserialize_pcontext
 
@@ -172,17 +253,6 @@ void register_explicit_deserialize_pcontext(PContext & context)
 **context** [in] The context where to register this information.
 
 **warning** The context can be used only once per archive.
-
-### load_cross_section
-
-```cpp
-CrossSection load_cross_section(std::string_view filename)
-```
-
-
- API function for loading a CrossSection. The adequate loader is called depending on the filename extension.
-
-**filename** [in] Path to the file to load.
 
 ### load_structural_model
 
@@ -208,10 +278,30 @@ HorizonsStack<dimension> load_horizons_stack(std::string_view filename)
 
 **return** Loaded HorizonsStack.
 
+### save_physical_problem
+
+```cpp
+std::vector<std::string> save_physical_problem(const PhysicalProblem & problem, std::string_view filename)
+```
+
+
+ API function for saving a PhysicalProblem. The adequate saver is called depending on the given filename extension.
+
+**problem** [in] PhysicalProblem to save.
+
+**filename** [in] Path to the file where save the PhysicalProblem.
+
 ### assign_edged_curve_geographic_coordinate_system_info
 
 ```cpp
 void assign_edged_curve_geographic_coordinate_system_info(const EdgedCurve<dimension> & mesh, EdgedCurveBuilder<dimension> & builder, std::string_view crs_name, GeographicCoordinateSystemInfo info)
+```
+
+
+### phase_name
+
+```cpp
+std::string_view phase_name(PHASE phase)
 ```
 
 
@@ -293,6 +383,13 @@ std::vector<std::string> save_stratigraphic_section(const StratigraphicSection &
 
 **filename** [in] Path to the file where save the StratigraphicSection.
 
+### register_simulation_serialize_pcontext
+
+```cpp
+void register_simulation_serialize_pcontext(PContext & context)
+```
+
+
 ### save_horizons_stack
 
 ```cpp
@@ -306,12 +403,28 @@ std::vector<std::string> save_horizons_stack(const HorizonsStack<dimension> & ho
 
 **filename** [in] Path to the file where save the brep.
 
+### register_simulation_deserialize_pcontext
+
+```cpp
+void register_simulation_deserialize_pcontext(PContext & context)
+```
+
+
 ### assign_point_set_geographic_coordinate_system_info
 
 ```cpp
 void assign_point_set_geographic_coordinate_system_info(const PointSet<dimension> & mesh, PointSetBuilder<dimension> & builder, std::string_view crs_name, GeographicCoordinateSystemInfo info)
 ```
 
+
+### validate_physical_problem_regions
+
+```cpp
+std::vector<std::string> validate_physical_problem_regions(const PhysicalProblem & problem, const BRep & model)
+```
+
+
+ Check that every region referenced by the problem is a Block or a collection of Blocks of the model (BlockCollection, StratigraphicUnit...), that no Block is covered by two materials or two initial conditions, and that the recorded model id, if any, matches. Returns one message per issue, empty if valid.
 
 ### implicit_cross_section_additional_files
 
@@ -352,6 +465,13 @@ AdditionalFiles cross_section_additional_files(std::string_view filename)
 
 ```cpp
 AdditionalFiles structural_model_additional_files(std::string_view filename)
+```
+
+
+### physical_problem_additional_files
+
+```cpp
+AdditionalFiles physical_problem_additional_files(std::string_view filename)
 ```
 
 
@@ -404,6 +524,20 @@ AdditionalFiles horizons_stack_additional_files(std::string_view filename)
 ```
 
 
+### is_physical_problem_loadable
+
+```cpp
+Percentage is_physical_problem_loadable(std::string_view filename)
+```
+
+
+### is_physical_problem_saveable
+
+```cpp
+bool is_physical_problem_saveable(const PhysicalProblem & problem, std::string_view filename)
+```
+
+
 ### assign_solid_mesh_geographic_coordinate_system_info
 
 ```cpp
@@ -450,6 +584,13 @@ index_t cross_section_object_priority(std::string_view filename)
 
 ```cpp
 index_t structural_model_object_priority(std::string_view filename)
+```
+
+
+### physical_problem_object_priority
+
+```cpp
+index_t physical_problem_object_priority(std::string_view filename)
 ```
 
 
@@ -577,6 +718,47 @@ void convert_brep_coordinate_reference_system(const BRep & brep, BRepBuilder & b
 ```cpp
 void convert_section_coordinate_reference_system(const Section & section, SectionBuilder & builder, std::string_view crs_name, const GeographicCoordinateSystemInfo & info)
 ```
+
+
+### phase_component
+
+```cpp
+std::optional<index_t> phase_component(const FluidModel & fluid, PHASE phase)
+```
+
+
+ Component carried by a phase. It is defined when the fluid has one component per phase, in the phase order (e.g. dead oil or CO2-brine). Simulator writers use it to translate phase-based data, such as boundary fluid fractions, into component indices.
+
+
+
+## Enums
+
+| enum class PHASE |
+
+--
+
+| oil |
+| gas |
+| water |
+
+
+
+| enum class COMPOSITION_BASIS |
+
+--
+
+| mole |
+| mass |
+
+
+
+| enum class CO2_BRINE_CORRELATION |
+
+--
+
+| phillips |
+| ezrokhi |
+
 
 
 

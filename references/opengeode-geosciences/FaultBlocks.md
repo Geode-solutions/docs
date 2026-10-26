@@ -14,6 +14,12 @@ const name = words.join('-');
 # class FaultBlocks
 
 
+# class FaultBlocks
+
+
+# class FaultBlocks
+
+
 ## Records
 
 FaultBlockRange
@@ -178,11 +184,5 @@ public const FaultBlock<dimension> & component(const uuid & id)
 ```
 
 
-
-
-# class FaultBlocks
-
-
-# class FaultBlocks
 
 

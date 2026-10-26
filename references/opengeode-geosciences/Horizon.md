@@ -84,6 +84,13 @@ public void set_horizon_name(std::string_view name, HorizonsBuilderKey )
 ```
 
 
+### set_horizon_active
+
+```cpp
+public void set_horizon_active(bool active, HorizonsBuilderKey )
+```
+
+
 ### Horizon
 
 ```cpp

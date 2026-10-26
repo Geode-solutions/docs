@@ -82,6 +82,13 @@ public void set_stratigraphic_unit_name(std::string_view name, StratigraphicUnit
 ```
 
 
+### set_stratigraphic_unit_active
+
+```cpp
+public void set_stratigraphic_unit_active(bool active, StratigraphicUnitsBuilderKey )
+```
+
+
 
 
 # class StratigraphicUnit

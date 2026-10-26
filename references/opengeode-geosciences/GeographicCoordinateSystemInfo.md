@@ -42,6 +42,13 @@ public void GeographicCoordinateSystemInfo(std::string authority_in, std::string
 ```
 
 
+### authority_code
+
+```cpp
+public std::string authority_code()
+```
+
+
 ### GeographicCoordinateSystemInfo
 
 ```cpp
@@ -53,13 +60,6 @@ public void GeographicCoordinateSystemInfo()
 
 ```cpp
 public void ~GeographicCoordinateSystemInfo()
-```
-
-
-### authority_code
-
-```cpp
-public std::string authority_code()
 ```
 
 

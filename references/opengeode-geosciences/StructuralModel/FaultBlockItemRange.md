@@ -57,6 +57,13 @@ public const FaultBlockItemRange & end()
 ```
 
 
+### operator++
+
+```cpp
+public void operator++()
+```
+
+
 ### operator*
 
 ```cpp

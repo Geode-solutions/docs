@@ -14,15 +14,6 @@ const name = words.join('-');
 # class FaultBlock
 
 
-```cpp
-Inherits from Component<2U>
-```
-
-
-
-# class FaultBlock
-
-
  Geological component describing a Fault Block.
 
 
@@ -91,6 +82,13 @@ public void set_fault_block_name(std::string_view name, FaultBlocksBuilderKey )
 ```
 
 
+### set_fault_block_active
+
+```cpp
+public void set_fault_block_active(bool active, FaultBlocksBuilderKey )
+```
+
+
 
 
 # class FaultBlock
@@ -98,6 +96,15 @@ public void set_fault_block_name(std::string_view name, FaultBlocksBuilderKey )
 
 ```cpp
 Inherits from Component<3U>
+```
+
+
+
+# class FaultBlock
+
+
+```cpp
+Inherits from Component<2U>
 ```
 
 

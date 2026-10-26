@@ -152,17 +152,17 @@ public static std::string_view native_extension_static()
 ```
 
 
-### top_to_bottom_horizons
-
-```cpp
-public HorizonOrderedRange top_to_bottom_horizons()
-```
-
-
 ### native_extension
 
 ```cpp
 public std::string_view native_extension()
+```
+
+
+### top_to_bottom_horizons
+
+```cpp
+public HorizonOrderedRange top_to_bottom_horizons()
 ```
 
 
