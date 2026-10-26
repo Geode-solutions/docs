@@ -21,6 +21,7 @@ const name = words.join('-');
 * [DotPolygonalOutput](DotPolygonalOutput.md)
 * [DotSurfaceOutputImpl](DotSurfaceOutputImpl.md)
 * [DotTriangulatedOutput](DotTriangulatedOutput.md)
+* [GDALErrorScope](GDALErrorScope.md)
 * [GDALFile](GDALFile.md)
 * [VTIGridInputImpl](VTIGridInputImpl.md)
 * [VTIGridOutputImpl](VTIGridOutputImpl.md)
@@ -91,6 +92,15 @@ index_t vtk_polygon_type(index_t nb_vertices)
 std::string vtk_double_string(double value)
 ```
 
+
+### write_component_mesh
+
+```cpp
+void write_component_mesh(const Mesh & mesh, std::string_view filename)
+```
+
+
+ Writes a component mesh with its output factory: the save_* functions would log one message per component.
 
 ### vtk_data_type
 

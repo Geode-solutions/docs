@@ -22,7 +22,7 @@ public NamedType type
 ```
 
 ```cpp
-public geode::index_t id
+public index_t id
 
 ```
 
@@ -40,7 +40,7 @@ public void GmshElementID()
 ### GmshElementID
 
 ```cpp
-public void GmshElementID(geode::ComponentType gmsh_type, geode::index_t gmsh_id)
+public void GmshElementID(ComponentType gmsh_type, index_t gmsh_id)
 ```
 
 

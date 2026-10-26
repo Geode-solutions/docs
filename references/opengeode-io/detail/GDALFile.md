@@ -26,9 +26,13 @@ public AdditionalFiles additional_files()
 ### GDALFile
 
 ```cpp
-public void GDALFile(std::string_view filename)
+public void GDALFile(std::string_view filename, absl::Span<const char *const> allowed_drivers)
 ```
 
+
+
+
+**allowed_drivers** [in] Names of the GDAL drivers which can open the file, all the drivers if empty
 
 ### ~GDALFile
 

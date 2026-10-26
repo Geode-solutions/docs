@@ -36,17 +36,10 @@ public RasterImage2D read_file()
 ```
 
 
-### read_reversed_y_axis_file
-
-```cpp
-public RasterImage2D read_reversed_y_axis_file()
-```
-
-
 ### is_loadable
 
 ```cpp
-public Percentage is_loadable()
+public static Percentage is_loadable(std::string_view filename)
 ```
 
 

@@ -26,19 +26,7 @@ const name = words.join('-');
 * [DXFInput](DXFInput.md)
 * [GEXFOutput](GEXFOutput.md)
 * [GIDOutput](GIDOutput.md)
-* [GMSHEdge](GMSHEdge.md)
-* [GMSHElement](GMSHElement.md)
-* [GMSHHexahedron](GMSHHexahedron.md)
-* [GMSHPoint](GMSHPoint.md)
-* [GMSHPrism](GMSHPrism.md)
-* [GMSHPyramid](GMSHPyramid.md)
-* [GMSHQuadrangle](GMSHQuadrangle.md)
-* [GMSHSolidPolyhedron](GMSHSolidPolyhedron.md)
-* [GMSHSurfacePolygon](GMSHSurfacePolygon.md)
-* [GMSHTetrahedron](GMSHTetrahedron.md)
-* [GMSHTriangle](GMSHTriangle.md)
 * [GmshElementID](GmshElementID.md)
-* [GmshId2Uuids](GmshId2Uuids.md)
 * [ImageInputImpl](ImageInputImpl.md)
 * [JPGInput](JPGInput.md)
 * [MSHInput](MSHInput.md)
@@ -63,12 +51,39 @@ const name = words.join('-');
 
 ## Functions
 
-### initialize_gmsh_factory
+### append_double
 
 ```cpp
-void initialize_gmsh_factory()
+void append_double(std::string & buffer, double value)
 ```
 
+
+ Appends the shortest text representation of a double that reads back to the same value.
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const GmshElementID & gmsh_id)
+```
+
+
+### append_point
+
+```cpp
+void append_point(std::string & buffer, const Point<dimension> & point)
+```
+
+
+ Appends the point coordinates separated by spaces.
+
+### point_string
+
+```cpp
+const std::string & point_string(std::string & buffer, const Point<dimension> & point)
+```
+
+
+ Returns the point coordinates separated by spaces, reusing the given buffer to avoid allocations.
 
 
 

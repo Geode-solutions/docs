@@ -43,17 +43,17 @@ public void JPGInput(std::string_view filename)
 ```
 
 
-### extension
-
-```cpp
-public static std::string_view extension()
-```
-
-
 ### is_loadable
 
 ```cpp
 public Percentage is_loadable()
+```
+
+
+### extension
+
+```cpp
+public static std::string_view extension()
 ```
 
 

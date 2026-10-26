@@ -37,6 +37,20 @@ protected void ~VTKOutputImpl<Mesh>()
 ```
 
 
+### target_file
+
+```cpp
+protected static std::string target_file(std::string_view filename)
+```
+
+
+### temporary_file
+
+```cpp
+protected static std::string temporary_file(const std::string & target)
+```
+
+
 ### mesh
 
 ```cpp
@@ -76,6 +90,13 @@ protected pugi::xml_node write_data_array(pugi::xml_node & parent, std::string_v
 
 ```cpp
 protected pugi::xml_node write_data_array(pugi::xml_node & parent, std::string_view name, std::vector<T> && values, local_index_t nb_components)
+```
+
+
+### write_external_data_array
+
+```cpp
+protected pugi::xml_node write_external_data_array(pugi::xml_node & parent, std::string_view name, absl::Span<const T> values, local_index_t nb_components)
 ```
 
 
