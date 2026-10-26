@@ -29,6 +29,7 @@ const name = words.join('-');
 * [OpenGeodeGeosciencesIOMeshLibrary](OpenGeodeGeosciencesIOMeshLibrary.md)
 * [OpenGeodeGeosciencesIOModelException](OpenGeodeGeosciencesIOModelException.md)
 * [OpenGeodeGeosciencesIOModelLibrary](OpenGeodeGeosciencesIOModelLibrary.md)
+* [SourceTerm](SourceTerm.md)
 * [StructuralModelGeosExporter](StructuralModelGeosExporter.md)
 
 

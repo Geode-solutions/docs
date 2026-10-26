@@ -17,7 +17,20 @@ const name = words.join('-');
 # class GeosExporterImpl
 
 
+## Records
+
+RegionDefinitions
+
+
+
 ## Functions
+
+### GeosExporterImpl
+
+```cpp
+public void GeosExporterImpl<Model>(const GeosExporterImpl<Model> & )
+```
+
 
 ### GeosExporterImpl
 
@@ -26,12 +39,11 @@ public void GeosExporterImpl<Model>(GeosExporterImpl<Model> && )
 ```
 
 
-### GeosExporterImpl
+### create_region_definitions
 
 ```cpp
-public void GeosExporterImpl<Model>(const GeosExporterImpl<Model> & )
+protected RegionDefinitions create_region_definitions(const Model & model)
 ```
-
 
 ### operator=
 
@@ -54,17 +66,17 @@ public void GeosExporterImpl<Model>()
 ```
 
 
-### ~GeosExporterImpl
-
-```cpp
-public void ~GeosExporterImpl<Model>()
-```
-
-
 ### GeosExporterImpl
 
 ```cpp
 public void GeosExporterImpl<Model>(std::string_view files_directory, const Model & model)
+```
+
+
+### ~GeosExporterImpl
+
+```cpp
+public void ~GeosExporterImpl<Model>()
 ```
 
 
@@ -89,6 +101,15 @@ public void add_well_perforations(const PointSet3D & perforations, std::string_v
 ```
 
 
+### set_physical_problem
+
+```cpp
+public void set_physical_problem(const PhysicalProblem & problem)
+```
+
+
+ Writes a full simulation deck instead of the mesh and boundary conditions only. The problem must outlive the export.
+
 ### files_directory
 
 ```cpp
@@ -103,10 +124,24 @@ protected std::string_view prefix()
 ```
 
 
+### convert_model
+
+```cpp
+protected void convert_model()
+```
+
+
 ### initialize_solid_region_attribute
 
 ```cpp
 protected index_t initialize_solid_region_attribute()
+```
+
+
+### add_block_collection_regions
+
+```cpp
+protected void add_block_collection_regions()
 ```
 
 
@@ -116,12 +151,6 @@ protected index_t initialize_solid_region_attribute()
 protected void initialize_surface_cells(index_t first_surface_region_id)
 ```
 
-
-### create_region_attribute_map
-
-```cpp
-protected absl::flat_hash_map<uuid, index_t> create_region_attribute_map(const Model & model)
-```
 
 ### write_well_perforations_boxes
 
@@ -189,6 +218,48 @@ protected void delete_mapping_attributes()
 
 ```cpp
 protected std::string write_solid_file()
+```
+
+
+### duplicate_imported_fields
+
+```cpp
+protected void duplicate_imported_fields(AttributeManager & cell_attributes)
+```
+
+
+### validate_problem
+
+```cpp
+protected void validate_problem()
+```
+
+
+### prepare_simulation
+
+```cpp
+protected void prepare_simulation()
+```
+
+
+### add_isothermal_boundary_temperature
+
+```cpp
+protected void add_isothermal_boundary_temperature(double temperature)
+```
+
+
+### build_deck_context
+
+```cpp
+protected GeosDeckContext build_deck_context()
+```
+
+
+### write_simulation_sections
+
+```cpp
+protected void write_simulation_sections(pugi::xml_node & problem_node)
 ```
 
 

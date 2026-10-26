@@ -72,6 +72,15 @@ public void add_well_perforations(const PointSet3D & well_perforations, std::str
 ```
 
 
+### set_physical_problem
+
+```cpp
+public void set_physical_problem(const PhysicalProblem & problem)
+```
+
+
+ Writes a full simulation deck (solvers, fluid, rock, initial conditions, events) described by the problem. Without it, only the mesh, wells and boundary conditions are written. The problem must outlive run().
+
 ### run
 
 ```cpp

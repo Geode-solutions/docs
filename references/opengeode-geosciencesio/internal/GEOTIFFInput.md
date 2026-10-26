@@ -36,17 +36,17 @@ public static std::vector<std::string> extensions()
 ```
 
 
-### read
-
-```cpp
-public LightRegularGrid<2> read()
-```
-
-
 ### object_priority
 
 ```cpp
 public index_t object_priority()
+```
+
+
+### read
+
+```cpp
+public LightRegularGrid<2> read()
 ```
 
 
