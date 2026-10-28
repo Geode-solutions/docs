@@ -14,9 +14,6 @@ const name = words.join('-');
 # class RemeshAlgo
 
 
-# class RemeshAlgo
-
-
 ## Functions
 
 ### RemeshAlgo
@@ -124,6 +121,9 @@ protected const Metric<dimension> & metric()
 ```
 
 
+
+
+# class RemeshAlgo
 
 
 # class RemeshAlgo

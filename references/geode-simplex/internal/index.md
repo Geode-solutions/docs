@@ -75,29 +75,6 @@ void pre_process_meshing_step(const BRep & brep, BRepGeometricModifier & modifie
 ```
 
 
-### has_degenerated_elements
-
-```cpp
-bool has_degenerated_elements(const BRep & brep, const BRepElementsAfterCollapseEdge & elements)
-```
-
-
-### has_degenerated_elements
-
-```cpp
-bool has_degenerated_elements(const Section & section, const SectionElementsAfterCollapseEdge & elements)
-```
-
-
-### correct_block_facet_constraint
-
-```cpp
-void correct_block_facet_constraint(const BRep & output, BRepBuilder & builder, BRepGeometricModifier & modifier)
-```
-
-
- Make block border vertices match the surface meshes, by collapsing the mismatching block vertices or splitting the surfaces (and the blocks on the other side). The modifier is not cleaned at the end.
-
 ### remesh_surface
 
 ```cpp
@@ -165,6 +142,43 @@ void check_gradation(double gradation)
 
 ```cpp
 H AbslHashValue(H hash, const MacroPolygonEdge & macro_edge)
+```
+
+
+### has_degenerated_elements
+
+```cpp
+bool has_degenerated_elements(const BRep & brep, const BRepElementsAfterCollapseEdge & elements)
+```
+
+
+### correct_block_facet_constraint
+
+```cpp
+void correct_block_facet_constraint(const BRep & output, BRepBuilder & builder, BRepGeometricModifier & modifier)
+```
+
+
+ Make block border vertices match the surface meshes, by collapsing the mismatching block vertices or splitting the surfaces (and the blocks on the other side). The modifier is not cleaned at the end.
+
+### has_degenerated_elements
+
+```cpp
+bool has_degenerated_elements(const Section & section, const SectionElementsAfterCollapseEdge & elements)
+```
+
+
+### has_degenerated_triangles_after_move_point
+
+```cpp
+bool has_degenerated_triangles_after_move_point(const BRep & brep, index_t unique_vertex, const Point3D & point)
+```
+
+
+### has_degenerated_triangles_after_move_point
+
+```cpp
+bool has_degenerated_triangles_after_move_point(const Section & section, index_t unique_vertex, const Point2D & point)
 ```
 
 
