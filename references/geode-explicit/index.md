@@ -75,6 +75,13 @@ void inspect_generated_brep_without_block_topology(const BRep & brep)
 ```
 
 
+### inspect_generated_brep_with_free_lines
+
+```cpp
+void inspect_generated_brep_with_free_lines(const BRep & brep)
+```
+
+
 ### add_mesh_elements
 
 ```cpp
