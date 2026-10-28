@@ -60,10 +60,10 @@ std::vector<uuid> invalid_lines(const Model & model, const ModelComponentMeshEdg
 ```
 
 
-### invalid_surfaces
+### is_collapse_merging_border_edges
 
 ```cpp
-std::vector<uuid> invalid_surfaces(const Model & model, const ModelComponentMeshEdges & edges)
+bool is_collapse_merging_border_edges(const SurfaceMesh<dimension> & mesh, absl::Span<const PolygonEdge> collapsed_edges)
 ```
 
 
@@ -78,6 +78,13 @@ RingVertices unordered_one_ring_vertices(const TetrahedralSolid3D & mesh, const 
 
 ```cpp
 std::tuple<absl::FixedArray<index_t>, bool> one_ring_vertices(const TetrahedralSolid3D & mesh, const std::array<index_t, 2> & edge_vertices, const PolyhedraAroundEdge & polyhedra)
+```
+
+
+### invalid_surfaces
+
+```cpp
+std::vector<uuid> invalid_surfaces(const Model & model, const ModelComponentMeshEdges & edges)
 ```
 
 
