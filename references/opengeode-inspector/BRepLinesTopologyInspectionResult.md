@@ -22,6 +22,16 @@ public InspectionIssues lines_not_meshed
 ```
 
 ```cpp
+public InspectionIssues lines_not_embedded_nor_incident
+
+```
+
+```cpp
+public InspectionIssues lines_multiply_embedded
+
+```
+
+```cpp
 public InspectionIssues unique_vertices_linked_to_line_with_wrong_relationship_to_surface
 
 ```

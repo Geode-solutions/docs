@@ -22,6 +22,11 @@ public InspectionIssues surfaces_not_meshed
 ```
 
 ```cpp
+public InspectionIssues surfaces_multiply_embedded
+
+```
+
+```cpp
 public InspectionIssuesMap surfaces_not_linked_to_a_unique_vertex
 
 ```
