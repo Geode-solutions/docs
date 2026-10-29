@@ -59,17 +59,10 @@ void register_inlinedvector(PContext & context, std::string_view type)
 ```
 
 
-### add_mesh_component
+### merge_mappings
 
 ```cpp
-void add_mesh_component(ModelBuilder & builder, const MeshComponent & component)
-```
-
-
-### geode_object_output_writer
-
-```cpp
-std::unique_ptr<typename Factory::BaseClass> geode_object_output_writer(std::string_view & filename)
+ModelGenericMapping merge_mappings(const ModelGenericMapping & mappings1, const ModelCopyMapping & mappings2)
 ```
 
 
@@ -110,31 +103,10 @@ local_index_t color_channel(double value)
 
  Convert an interpolated color channel to its stored value: rounded to the nearest integer and clamped to the channel range.
 
-### range_bound
+### add_mesh_component
 
 ```cpp
-Type range_bound(T value)
-```
-
-
-### merge_mappings
-
-```cpp
-ModelGenericMapping merge_mappings(const ModelGenericMapping & mappings1, const ModelCopyMapping & mappings2)
-```
-
-
-### create_mesh
-
-```cpp
-std::unique_ptr<Mesh> create_mesh(absl::Span<const std::reference_wrapper<const Mesh>> meshes)
-```
-
-
-### geode_object_input_reader
-
-```cpp
-std::unique_ptr<typename Factory::BaseClass> geode_object_input_reader(std::string_view & filename)
+void add_mesh_component(ModelBuilder & builder, const MeshComponent & component)
 ```
 
 
@@ -142,6 +114,13 @@ std::unique_ptr<typename Factory::BaseClass> geode_object_input_reader(std::stri
 
 ```cpp
 bool polygons_intersection_detection(const Mesh & mesh, const PolygonVertices & polygon, const PolygonVertices & other_polygon)
+```
+
+
+### create_mesh
+
+```cpp
+std::unique_ptr<Mesh> create_mesh(absl::Span<const std::reference_wrapper<const Mesh>> meshes)
 ```
 
 
@@ -208,6 +187,27 @@ bool solid_polyhedron_is_a_hexaedron(const SolidMesh3D & solid, index_t polyhedr
 ```
 
 
+### range_bound
+
+```cpp
+Type range_bound(T value)
+```
+
+
+### geode_object_input_reader
+
+```cpp
+std::unique_ptr<typename Factory::BaseClass> geode_object_input_reader(std::string_view & filename)
+```
+
+
+### geode_object_output_writer
+
+```cpp
+std::unique_ptr<typename Factory::BaseClass> geode_object_output_writer(std::string_view & filename)
+```
+
+
 ### brep_clone_mapping
 
 ```cpp
@@ -240,6 +240,13 @@ Coords<dimension> coords_divide(const Coords<dimension> & input, double divider)
 
 ```cpp
 void add_loaded_mesh_component(ModelBuilder & builder, const MeshComponent & component)
+```
+
+
+### save_segment
+
+```cpp
+void save_segment(const Segment<dimension> & segment, std::string_view suffix)
 ```
 
 
@@ -294,24 +301,17 @@ typename Factory::BaseClass::InputData geode_object_input_impl(std::string_view 
 ```
 
 
-### solid_polyhedron_is_a_pyramid
-
-```cpp
-bool solid_polyhedron_is_a_pyramid(const SolidMesh3D & solid, index_t polyhedron_id)
-```
-
-
-### save_segment
-
-```cpp
-void save_segment(const Segment<dimension> & segment, std::string_view suffix)
-```
-
-
 ### geode_object_output_impl
 
 ```cpp
 std::vector<std::string> geode_object_output_impl(std::string_view type, const Object & object, std::string_view filename)
+```
+
+
+### solid_polyhedron_is_a_pyramid
+
+```cpp
+bool solid_polyhedron_is_a_pyramid(const SolidMesh3D & solid, index_t polyhedron_id)
 ```
 
 
@@ -582,20 +582,6 @@ void save_triangles(const TriangulatedSurface<dimension> & surface, absl::Span<c
 ```
 
 
-### copy_line_collection_components
-
-```cpp
-void copy_line_collection_components(const ModelFrom & from, const ModelTo & model_to, typename ModelTo::Builder & builder_to, Mapping & mapping)
-```
-
-
-### transfer_section_collections
-
-```cpp
-void transfer_section_collections(const Section & old_section, const Section & new_section, SectionBuilder & new_brep_builder, const ModelGenericMapping & component_mapping)
-```
-
-
 ### transfer_section_metadata
 
 ```cpp
@@ -610,17 +596,31 @@ void save_tetrahedron(const Tetrahedron & tetrahedron, std::string_view suffix)
 ```
 
 
-### transfer_section_collections
-
-```cpp
-void transfer_section_collections(const Section & old_section, const Section & new_section, SectionBuilder & new_brep_builder, const ModelUnchangedComponentMapping & unchanged_components)
-```
-
-
 ### save_tetrahedra
 
 ```cpp
 void save_tetrahedra(const TetrahedralSolid3D & solid, absl::Span<const index_t> indices, std::string_view suffix)
+```
+
+
+### copy_line_collection_components
+
+```cpp
+void copy_line_collection_components(const ModelFrom & from, const ModelTo & model_to, typename ModelTo::Builder & builder_to, Mapping & mapping)
+```
+
+
+### transfer_section_collections
+
+```cpp
+void transfer_section_collections(const Section & old_section, const Section & new_section, SectionBuilder & new_brep_builder, const ModelGenericMapping & component_mapping)
+```
+
+
+### transfer_section_collections
+
+```cpp
+void transfer_section_collections(const Section & old_section, const Section & new_section, SectionBuilder & new_brep_builder, const ModelUnchangedComponentMapping & unchanged_components)
 ```
 
 
