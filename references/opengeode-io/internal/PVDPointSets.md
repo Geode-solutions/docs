@@ -11,18 +11,23 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct SolidToBlocksMappings
+# struct PVDPointSets
 
 
 ## Members
 
 ```cpp
-public flat_hash_map polyhedra
+public unique_ptr unique_vertices
 
 ```
 
 ```cpp
-public flat_hash_map vertices
+public unique_ptr cell_barycenters
+
+```
+
+```cpp
+public vector mappings
 
 ```
 

@@ -11,24 +11,20 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class BRepBlocksMatcher
+# struct PVDDatasetMappings
 
 
-## Functions
-
-### BRepBlocksMatcher
+## Members
 
 ```cpp
-public void BRepBlocksMatcher(const BRep & brep)
+public GenericMapping vertices
+
 ```
-
-
-### mappings
 
 ```cpp
-public SolidToBlocksMappings mappings(const SolidMesh3D & solid)
-```
+public GenericMapping polyhedra
 
+```
 
 
 

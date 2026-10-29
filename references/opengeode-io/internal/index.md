@@ -20,8 +20,6 @@ const name = words.join('-');
 * [AssimpMeshInput](AssimpMeshInput.md)
 * [AssimpMeshOutput](AssimpMeshOutput.md)
 * [BMPInput](BMPInput.md)
-* [BRepBlocksMatcher](BRepBlocksMatcher.md)
-* [BRepTimeAttributesTransfer](BRepTimeAttributesTransfer.md)
 * [CSVInput](CSVInput.md)
 * [DXFInput](DXFInput.md)
 * [GEXFOutput](GEXFOutput.md)
@@ -37,14 +35,16 @@ const name = words.join('-');
 * [PLYInput](PLYInput.md)
 * [PLYOutput](PLYOutput.md)
 * [PNGInput](PNGInput.md)
+* [PVDAttributesTransfer](PVDAttributesTransfer.md)
 * [PVDBRepTimeSeriesInput](PVDBRepTimeSeriesInput.md)
+* [PVDDatasetMappings](PVDDatasetMappings.md)
+* [PVDPointSets](PVDPointSets.md)
 * [SMESHCurveInput](SMESHCurveInput.md)
 * [SMESHInputImpl](SMESHInputImpl.md)
 * [SMESHTriangulatedInput](SMESHTriangulatedInput.md)
 * [STLInput](STLInput.md)
 * [STLOutput](STLOutput.md)
 * [SVGInput](SVGInput.md)
-* [SolidToBlocksMappings](SolidToBlocksMappings.md)
 * [TIFFInput](TIFFInput.md)
 * [TriangleOutput](TriangleOutput.md)
 
@@ -84,6 +84,15 @@ const std::string & point_string(std::string & buffer, const Point<dimension> & 
 
 
  Returns the point coordinates separated by spaces, reusing the given buffer to avoid allocations.
+
+### create_pvd_point_sets
+
+```cpp
+PVDPointSets create_pvd_point_sets(absl::Span<const std::unique_ptr<SolidMesh3D>> meshes)
+```
+
+
+ Create the .pvd point sets from the datasets of a time step (e.g. one per GEOS region and per MPI rank): the dataset vertices, colocated ones merged, and the dataset polyhedron barycenters, with the mappings of each dataset to them.
 
 
 
