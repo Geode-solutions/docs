@@ -26,6 +26,11 @@ protected static const double ENLARGED_DATA_WEIGHT_RATIO
 
 ```
 
+```cpp
+protected static const double MINIMIZATION_TO_DIRECTION_FACTOR
+
+```
+
 
 
 ## Functions
@@ -191,6 +196,11 @@ protected static const double ENLARGED_DATA_WEIGHT_RATIO
 
 ```
 
+```cpp
+protected static const double MINIMIZATION_TO_DIRECTION_FACTOR
+
+```
+
 
 
 # class FDMCurvatureMinimizationImpl
@@ -205,6 +215,11 @@ protected static const double ENLARGED_CELL_PART_RATIO
 
 ```cpp
 protected static const double ENLARGED_DATA_WEIGHT_RATIO
+
+```
+
+```cpp
+protected static const double MINIMIZATION_TO_DIRECTION_FACTOR
 
 ```
 
