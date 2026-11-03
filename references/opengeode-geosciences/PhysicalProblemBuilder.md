@@ -84,6 +84,22 @@ public void set_thermal(const ThermalParameters & thermal)
 
  Solves the energy equation. Problems are isothermal by default.
 
+### set_solid_mechanics
+
+```cpp
+public void set_solid_mechanics(const SolidMechanics & mechanics)
+```
+
+
+ Solves quasi-static solid mechanics
+
+### remove_solid_mechanics
+
+```cpp
+public void remove_solid_mechanics()
+```
+
+
 ### add_material
 
 ```cpp

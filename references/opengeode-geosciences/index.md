@@ -94,6 +94,7 @@ const name = words.join('-');
 * [Schedule](Schedule.md)
 * [SinglePhaseFlow](SinglePhaseFlow.md)
 * [SinglePhaseFluid](SinglePhaseFluid.md)
+* [SolidMechanics](SolidMechanics.md)
 * [SolverOptions](SolverOptions.md)
 * [SourceTerm](SourceTerm.md)
 * [StratigraphicModelBuilder](StratigraphicModelBuilder.md)
@@ -127,48 +128,6 @@ const name = words.join('-');
 
 
 ## Functions
-
-### load_stratigraphic_section
-
-```cpp
-StratigraphicSection load_stratigraphic_section(std::string_view filename)
-```
-
-
- API function for loading a StratigraphicSection. The adequate loader is called depending on the filename extension.
-
-**filename** [in] Path to the file to load.
-
-### load_physical_problem
-
-```cpp
-PhysicalProblem load_physical_problem(std::string_view filename)
-```
-
-
- API function for loading a PhysicalProblem. The adequate loader is called depending on the filename extension.
-
-**filename** [in] Path to the file to load.
-
-### load_cross_section
-
-```cpp
-CrossSection load_cross_section(std::string_view filename)
-```
-
-
- API function for loading a CrossSection. The adequate loader is called depending on the filename extension.
-
-**filename** [in] Path to the file to load.
-
-### register_simulation_leaf
-
-```cpp
-void register_simulation_leaf(PContext & context)
-```
-
-
- Register a leaf class so that it can be saved through a pointer to its base. The leaf type name is written in files: it must never change. Libraries defining their own leaf classes call this from a function given to BitseryExtensions::register_functions. Such leaf classes are saved and loaded like the built-in ones, but validate_physical_problem does not check their content, and simulator writers reject the leaf classes they do not support.
 
 ### register_explicit_serialize_pcontext
 
@@ -232,6 +191,17 @@ StratigraphicModel load_stratigraphic_model(std::string_view filename)
 
 **filename** [in] Path to the file to load.
 
+### load_stratigraphic_section
+
+```cpp
+StratigraphicSection load_stratigraphic_section(std::string_view filename)
+```
+
+
+ API function for loading a StratigraphicSection. The adequate loader is called depending on the filename extension.
+
+**filename** [in] Path to the file to load.
+
 ### validate_physical_problem
 
 ```cpp
@@ -240,6 +210,17 @@ std::vector<std::string> validate_physical_problem(const PhysicalProblem & probl
 
 
  Check the problem consistency, independently of any simulator and model. Returns one message per issue, empty if the problem is valid. Only the content of the leaf classes defined in this library is checked: leaf classes registered by other libraries are accepted as is.
+
+### load_physical_problem
+
+```cpp
+PhysicalProblem load_physical_problem(std::string_view filename)
+```
+
+
+ API function for loading a PhysicalProblem. The adequate loader is called depending on the filename extension.
+
+**filename** [in] Path to the file to load.
 
 ### register_explicit_deserialize_pcontext
 
@@ -253,6 +234,17 @@ void register_explicit_deserialize_pcontext(PContext & context)
 **context** [in] The context where to register this information.
 
 **warning** The context can be used only once per archive.
+
+### load_cross_section
+
+```cpp
+CrossSection load_cross_section(std::string_view filename)
+```
+
+
+ API function for loading a CrossSection. The adequate loader is called depending on the filename extension.
+
+**filename** [in] Path to the file to load.
 
 ### load_structural_model
 
@@ -382,6 +374,15 @@ std::vector<std::string> save_stratigraphic_section(const StratigraphicSection &
 **stratigraphic_section** [in] StratigraphicSection to save.
 
 **filename** [in] Path to the file where save the StratigraphicSection.
+
+### register_simulation_leaf
+
+```cpp
+void register_simulation_leaf(PContext & context)
+```
+
+
+ Register a leaf class so that it can be saved through a pointer to its base. The leaf type name is written in files: it must never change. Libraries defining their own leaf classes call this from a function given to BitseryExtensions::register_functions. Such leaf classes are saved and loaded like the built-in ones, but validate_physical_problem does not check their content, and simulator writers reject the leaf classes they do not support.
 
 ### register_simulation_serialize_pcontext
 
@@ -650,6 +651,15 @@ bool is_implicit_structural_model_saveable(const ImplicitStructuralModel & impli
 ```
 
 
+### validate_physical_problem_properties
+
+```cpp
+std::vector<std::string> validate_physical_problem_properties(const PhysicalProblem & problem, const BRep & model)
+```
+
+
+ Check the model physical properties read by the problem. For solid mechanics: positive elastic moduli and non-negative density on every Block (density only needed with gravity), finite initial stresses, displacements uniform on each Surface and imposed along each axis, finite tractions, and no flow boundary condition. For flow problems: no mechanical boundary condition. Returns one message per issue, empty if valid.
+
 ### assign_surface_mesh_geographic_coordinate_system_info
 
 ```cpp
@@ -677,6 +687,15 @@ void assign_brep_geographic_coordinate_system_info(const BRep & brep, BRepBuilde
 void assign_section_geographic_coordinate_system_info(const Section & section, SectionBuilder & builder, std::string_view crs_name, const GeographicCoordinateSystemInfo & info)
 ```
 
+
+### physical_problem_warnings
+
+```cpp
+std::vector<std::string> physical_problem_warnings(const PhysicalProblem & problem, const BRep & model)
+```
+
+
+ Look for data that is valid but probably wrong. Unlike issues, warnings do not prevent a simulation. For solid mechanics, the in-situ mean stress is a compression: an initial_stress whose mean is a tension in most cells suggests the opposite sign convention than the one declared by the problem. Materials of a solid mechanics problem are ignored. Returns one message per warning.
 
 ### convert_edged_curve_coordinate_reference_system
 
@@ -733,6 +752,14 @@ std::optional<index_t> phase_component(const FluidModel & fluid, PHASE phase)
 
 ## Enums
 
+| enum class SOLID_MECHANICS_LAW |
+
+--
+
+| linear_elastic_isotropic |
+
+
+
 | enum class PHASE |
 
 --
@@ -751,6 +778,17 @@ std::optional<index_t> phase_component(const FluidModel & fluid, PHASE phase)
 | mass |
 
 
+
+| enum class STRESS_SIGN_CONVENTION |
+
+--
+
+| compression_positive |
+| tension_positive |
+
+
+
+ Sign of the stresses and normal tractions stored in the model (initial_stress, initial_shear_stress, boundary_normal_traction) and of the computed stresses.
 
 | enum class CO2_BRINE_CORRELATION |
 

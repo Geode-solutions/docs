@@ -14,7 +14,7 @@ const name = words.join('-');
 # class PhysicalProblem
 
 
- Simulator-independent description of a flow simulation on a model: fluid, flow process, rock materials, initial state, well source terms, time schedule, outputs and simulator-specific options. Model regions are referenced by component uuid. Spatially varying data (porosity, permeability, boundary conditions) stay in the model PhysicalProperties.
+ Simulator-independent description of a flow or solid mechanics simulation on a model: fluid, flow process, rock materials, initial state, well source terms, time schedule, outputs and simulator-specific options. Model regions are referenced by component uuid. Spatially varying data (porosity, permeability, elastic moduli, density, initial stress, boundary conditions) stay in the model PhysicalProperties.
 
 
 
@@ -128,6 +128,13 @@ public const std::optional<ThermalParameters> & thermal()
 ```
 
 
+### solid_mechanics
+
+```cpp
+public const std::optional<SolidMechanics> & solid_mechanics()
+```
+
+
 ### materials
 
 ```cpp
@@ -204,6 +211,20 @@ public void set_flow(std::shared_ptr<FlowModel> flow, PhysicalProblemBuilderKey 
 
 ```cpp
 public void set_thermal(const ThermalParameters & thermal, PhysicalProblemBuilderKey )
+```
+
+
+### set_solid_mechanics
+
+```cpp
+public void set_solid_mechanics(const SolidMechanics & mechanics, PhysicalProblemBuilderKey )
+```
+
+
+### remove_solid_mechanics
+
+```cpp
+public void remove_solid_mechanics(PhysicalProblemBuilderKey )
 ```
 
 
