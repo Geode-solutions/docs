@@ -31,22 +31,14 @@ public static const char SPACE
 
 ```
 
+```cpp
+public static const auto UNCLASSIFIED_TYPE
+
+```
+
 
 
 ## Functions
-
-### write_collection_tfaces
-
-```cpp
-protected void write_collection_tfaces(const OwnedSurfaces & surfaces, std::string_view type, std::string_view name)
-```
-
-
-### write_geological_tsurfs
-
-```cpp
-protected void write_geological_tsurfs()
-```
 
 ### ~MLOutputImpl
 
@@ -68,6 +60,15 @@ public void write_file()
 protected void MLOutputImpl<Model>(std::string_view filename, const Model & model)
 ```
 
+
+### warn_unexported_components
+
+```cpp
+protected void warn_unexported_components()
+```
+
+
+ Only Surface border Lines and their Corners can be described in a .ml file
 
 ### component_id
 
@@ -120,29 +121,12 @@ protected const OwnedSurfaces & owned_surfaces(const uuid & collection_id)
 ```
 
 
-### unclassified_tsurfs
+### write_point
 
 ```cpp
-protected std::vector<uuid> unclassified_tsurfs()
+protected void write_point(const Point3D & point)
 ```
 
-### write_geological_tfaces
-
-```cpp
-protected void write_geological_tfaces()
-```
-
-### write_geological_regions
-
-```cpp
-protected void write_geological_regions()
-```
-
-### write_geological_model_surfaces
-
-```cpp
-protected void write_geological_model_surfaces()
-```
 
 ### write_key_triangle
 
@@ -151,10 +135,26 @@ protected void write_key_triangle(const Component & component)
 ```
 
 
+### unclassified_tsurfs
+
+```cpp
+protected std::vector<uuid> unclassified_tsurfs()
+```
+
+
+ Surfaces not owned by any exported collection: each one is exported as its own TSURF
+
 ### write_tsurfs
 
 ```cpp
 protected void write_tsurfs()
+```
+
+
+### write_collection_tfaces
+
+```cpp
+protected void write_collection_tfaces(const OwnedSurfaces & surfaces, std::string_view type, std::string_view name)
 ```
 
 
@@ -264,6 +264,30 @@ protected const std::string & tsurf_name(const Component & component)
 
 
  TSURFs are matched by name in a .ml file: the name of a collection (or of an unclassified Surface) is made unique by appending a suffix if another TSURF already uses it.
+
+### write_geological_tsurfs
+
+```cpp
+protected void write_geological_tsurfs()
+```
+
+### write_geological_tfaces
+
+```cpp
+protected void write_geological_tfaces()
+```
+
+### write_geological_regions
+
+```cpp
+protected void write_geological_regions()
+```
+
+### write_geological_model_surfaces
+
+```cpp
+protected void write_geological_model_surfaces()
+```
 
 
 

@@ -71,6 +71,26 @@ public bool has_boundary_temperature
 ```
 
 ```cpp
+public optional bulk_modulus
+
+```
+
+```cpp
+public optional shear_modulus
+
+```
+
+```cpp
+public optional density
+
+```
+
+```cpp
+public optional initial_stress
+
+```
+
+```cpp
 public vector well_names
 
 ```

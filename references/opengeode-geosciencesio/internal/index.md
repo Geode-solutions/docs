@@ -18,12 +18,14 @@ const name = words.join('-');
 ## Records
 
 * [BRepFemOutput](BRepFemOutput.md)
+* [BlockAttributeTypes](BlockAttributeTypes.md)
 * [CRSData](CRSData.md)
 * [DEMInput](DEMInput.md)
 * [ECurveData](ECurveData.md)
 * [GEOTIFFInput](GEOTIFFInput.md)
 * [GRDECLInput](GRDECLInput.md)
 * [GeosCellArray](GeosCellArray.md)
+* [GeosCellProperty](GeosCellProperty.md)
 * [GeosDeckContext](GeosDeckContext.md)
 * [GeosExporterImpl](GeosExporterImpl.md)
 * [GeosImportedField](GeosImportedField.md)
@@ -32,6 +34,7 @@ const name = words.join('-');
 * [GeosRegion](GeosRegion.md)
 * [GeosSimulationWriter](GeosSimulationWriter.md)
 * [GeosTableFunction](GeosTableFunction.md)
+* [GocadVertexProperties](GocadVertexProperties.md)
 * [HeaderData](HeaderData.md)
 * [HorizonStackSKUAInput](HorizonStackSKUAInput.md)
 * [JSONGridInput](JSONGridInput.md)
@@ -73,20 +76,6 @@ const name = words.join('-');
 
 ## Functions
 
-### clone_with_model_boundaries
-
-```cpp
-Model clone_with_model_boundaries(const Model & model)
-```
-
-
-### read_header
-
-```cpp
-HeaderData read_header(std::ifstream & file)
-```
-
-
 ### geos_real
 
 ```cpp
@@ -94,7 +83,14 @@ std::string geos_real(double value)
 ```
 
 
- Real value written with 15 significant digits
+ Real value written with the fewest significant digits (at least 15) that read back to the same value
+
+### read_header
+
+```cpp
+HeaderData read_header(std::ifstream & file)
+```
+
 
 ### geos_array
 
@@ -105,10 +101,17 @@ std::string geos_array(absl::Span<const double> values)
 
  GEOS array of reals: "{ a, b, c }"
 
-### determine_surface_to_regions_sides
+### clone_with_model_boundaries
 
 ```cpp
-RegionSurfaceSide determine_surface_to_regions_sides(const BRep & brep)
+Model clone_with_model_boundaries(const Model & model)
+```
+
+
+### read_name
+
+```cpp
+std::string read_name(absl::Span<const std::string_view> tokens)
 ```
 
 
@@ -128,17 +131,17 @@ std::string geos_names(absl::Span<const std::string> names)
 
  GEOS array of names: "{ a, b, c }"
 
-### set_attribute
-
-```cpp
-void set_attribute(pugi::xml_node & node, std::string_view attribute, std::string_view value)
-```
-
-
 ### check_brep_polygons
 
 ```cpp
 bool check_brep_polygons(const BRep & brep)
+```
+
+
+### determine_surface_to_regions_sides
+
+```cpp
+RegionSurfaceSide determine_surface_to_regions_sides(const BRep & brep)
 ```
 
 
@@ -151,6 +154,13 @@ const absl::flat_hash_map<std::string, std::string> & geos_solver_option_roles()
 
  XPath of the generated nodes that "geos" solver options can modify
 
+### set_attribute
+
+```cpp
+void set_attribute(pugi::xml_node & node, std::string_view attribute, std::string_view value)
+```
+
+
 ### set_real_attribute
 
 ```cpp
@@ -162,64 +172,6 @@ void set_real_attribute(pugi::xml_node & node, std::string_view attribute, doubl
 
 ```cpp
 void add_comment(pugi::xml_node & node, std::string_view comment)
-```
-
-
-### get_one_border_edge
-
-```cpp
-std::optional<PolygonEdge> get_one_border_edge(const SurfaceMesh3D & mesh)
-```
-
-
-### read_CRS
-
-```cpp
-CRSData read_CRS(std::ifstream & file)
-```
-
-
-### write_CRS
-
-```cpp
-void write_CRS(std::ofstream & file, const CRSData & data)
-```
-
-
-### read_prop_header
-
-```cpp
-PropHeaderData read_prop_header(std::ifstream & file, std::string_view prefix)
-```
-
-
-### read_properties
-
-```cpp
-void read_properties(const PropHeaderData & properties_header, std::vector<std::vector<double>> & attribute_values, absl::Span<const std::string_view> tokens, geode::index_t line_properties_position)
-```
-
-
-### assign_geos_regions
-
-```cpp
-GeosRegionAssignment assign_geos_regions(const GeosDeckContext & context, absl::Span<const absl::Span<const uuid>> item_regions, std::string_view item_kind)
-```
-
-
- Assigns items to regions: items with regions first, then the default item (no region) to the remaining regions.
-
-### transfer_block_attribute
-
-```cpp
-std::string transfer_block_attribute(const Model & model, SolidMesh3D & solid, const ModelToMeshMappings & model2solid, const PhysicalProperties::Info & property_info)
-```
-
-
-### read_name
-
-```cpp
-std::string read_name(absl::Span<const std::string_view> tokens)
 ```
 
 
@@ -250,6 +202,15 @@ std::string geos_source_term_name(const SourceTerm & source_term)
 
  Name of the GEOS SourceFlux of a source term
 
+### read_elevation_raster
+
+```cpp
+void read_elevation_raster(std::string_view filename, absl::Span<const char *const> allowed_drivers, PolygonalSurface3D & surface)
+```
+
+
+ Fill a surface from the first band of a georeferenced raster: one vertex per pixel center with the pixel value as elevation (no data pixels are skipped) and one quad between four neighboring pixels.
+
 ### assign_geos_materials
 
 ```cpp
@@ -277,13 +238,6 @@ std::vector<std::string> validate_geos_problem(const PhysicalProblem & problem, 
 
  GEOS-specific checks of a problem that need no model data, only the names of the well perforations given to the exporter (simulator independent checks are done by validate_physical_problem). Returns one message per issue, empty if valid.
 
-### create_attributes
-
-```cpp
-void create_attributes(const PropHeaderData & attributes_header, absl::Span<const std::vector<double>> attributes_values, geode::AttributeManager & attribute_manager, geode::index_t nb_vertices, absl::Span<const geode::index_t> inverse_vertex_mapping)
-```
-
-
 ### validate_geos_deck
 
 ```cpp
@@ -292,6 +246,94 @@ std::vector<std::string> validate_geos_deck(const PhysicalProblem & problem, con
 
 
  GEOS-specific checks of a problem against the model data of the deck (region assignments are checked by assign_geos_materials and assign_geos_initial_conditions). Returns one message per issue, empty if valid.
+
+### assign_geos_regions
+
+```cpp
+GeosRegionAssignment assign_geos_regions(const GeosDeckContext & context, absl::Span<const absl::Span<const uuid>> item_regions, std::string_view item_kind)
+```
+
+
+ Assigns items to regions: items with regions first, then the default item (no region) to the remaining regions.
+
+### geos_stress_factor
+
+```cpp
+double geos_stress_factor(const PhysicalProblem & problem)
+```
+
+
+### transfer_stress_components
+
+```cpp
+void transfer_stress_components(const Model & model, const ModelToMeshMappings & model2solid, const PhysicalProperties::Info & property_info, std::string_view name, local_index_t first_component, double factor, VariableAttribute<StressTensor> & tensor)
+```
+
+
+### copy_typed_block_attribute
+
+```cpp
+bool copy_typed_block_attribute(const Model & model, absl::Span<const index_t> block_polyhedra_offsets, std::string_view attribute_type, std::string_view attribute_name, const uuid & attribute_id, AttributeManager & solid_manager)
+```
+
+
+### copy_block_attribute
+
+```cpp
+bool copy_block_attribute(const Model & model, absl::Span<const index_t> block_polyhedra_offsets, std::string_view attribute_type, std::string_view attribute_name, const uuid & attribute_id, AttributeManager & solid_manager, BlockAttributeTypes<Types...> )
+```
+
+
+### unique_attribute_name
+
+```cpp
+std::string unique_attribute_name(const AttributeManager & manager, std::string_view attribute_name, std::string_view geos_name)
+```
+
+
+### transfer_block_attribute
+
+```cpp
+std::optional<std::string> transfer_block_attribute(const Model & model, SolidMesh3D & solid, absl::Span<const index_t> block_polyhedra_offsets, const PhysicalProperties::Info & property_info, std::string_view geos_name)
+```
+
+
+### read_CRS
+
+```cpp
+CRSData read_CRS(std::ifstream & file)
+```
+
+
+### write_CRS
+
+```cpp
+void write_CRS(std::ofstream & file, const CRSData & data)
+```
+
+
+### read_prop_header
+
+```cpp
+PropHeaderData read_prop_header(std::ifstream & file, std::string_view prefix)
+```
+
+
+### read_properties
+
+```cpp
+bool read_properties(const PropHeaderData & properties_header, std::vector<std::vector<double>> & attribute_values, absl::Span<const std::string_view> tokens, geode::index_t line_properties_position)
+```
+
+
+ Reads the property values of a vertex line. Missing values are set to NO_DATA_VALUES and false is returned.
+
+### create_attributes
+
+```cpp
+void create_attributes(const PropHeaderData & attributes_header, absl::Span<const std::vector<double>> attributes_values, geode::AttributeManager & attribute_manager, geode::index_t nb_vertices, absl::Span<const geode::index_t> inverse_vertex_mapping, geode::index_t vertex_offset)
+```
+
 
 ### write_prop_header
 
@@ -321,13 +363,6 @@ std::optional<ECurveData> read_ecurve(std::ifstream & file)
 ```
 
 
-### read_vs_points
-
-```cpp
-std::optional<VSetData> read_vs_points(std::ifstream & file)
-```
-
-
 ### set_omf_element_attribute
 
 ```cpp
@@ -336,6 +371,13 @@ void set_omf_element_attribute(AttributeManager & manager, index_t element_id, i
 
 
  Set the mesh name and, when several OMF elements are merged into the same mesh, the omf_element attribute giving the element index
+
+### read_vs_points
+
+```cpp
+std::optional<VSetData> read_vs_points(std::ifstream & file)
+```
+
 
 
 

@@ -32,12 +32,22 @@ public CRSData crs
 ```
 
 ```cpp
+public PropHeaderData vertices_properties_header
+
+```
+
+```cpp
 public vector points
 
 ```
 
 ```cpp
 public vector edges
+
+```
+
+```cpp
+public vector vertices_attribute_values
 
 ```
 

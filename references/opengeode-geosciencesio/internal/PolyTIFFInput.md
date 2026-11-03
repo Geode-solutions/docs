@@ -29,20 +29,6 @@ public void PolyTIFFInput(std::string_view filename)
 ```
 
 
-### extensions
-
-```cpp
-public static std::vector<std::string> extensions()
-```
-
-
-### object_priority
-
-```cpp
-public index_t object_priority()
-```
-
-
 ### read
 
 ```cpp
@@ -50,10 +36,24 @@ public std::unique_ptr<PolygonalSurface3D> read(const MeshImpl & impl)
 ```
 
 
+### extensions
+
+```cpp
+public static std::vector<std::string> extensions()
+```
+
+
 ### additional_files
 
 ```cpp
 public AdditionalFiles additional_files()
+```
+
+
+### object_priority
+
+```cpp
+public index_t object_priority()
 ```
 
 

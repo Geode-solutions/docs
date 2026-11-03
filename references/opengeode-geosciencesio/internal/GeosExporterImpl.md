@@ -131,6 +131,20 @@ protected void convert_model()
 ```
 
 
+### compute_block_polyhedra_offsets
+
+```cpp
+protected void compute_block_polyhedra_offsets()
+```
+
+
+### clear_export
+
+```cpp
+protected void clear_export()
+```
+
+
 ### initialize_solid_region_attribute
 
 ```cpp
@@ -152,10 +166,24 @@ protected void initialize_surface_cells(index_t first_surface_region_id)
 ```
 
 
+### compute_well_boxes
+
+```cpp
+protected void compute_well_boxes()
+```
+
+
 ### write_well_perforations_boxes
 
 ```cpp
 protected void write_well_perforations_boxes(pugi::xml_node & root)
+```
+
+
+### containing_cell
+
+```cpp
+protected index_t containing_cell(const AABBTree3D & aabb, const Point3D & point)
 ```
 
 
@@ -180,17 +208,24 @@ protected void write_boundary_functions(pugi::xml_node & root)
 ```
 
 
-### check_property_name
-
-```cpp
-protected bool check_property_name(std::string_view property_name)
-```
-
-
 ### transfer_physical_properties
 
 ```cpp
 protected void transfer_physical_properties()
+```
+
+
+### transfer_mechanics_properties
+
+```cpp
+protected void transfer_mechanics_properties()
+```
+
+
+### transfer_initial_stress
+
+```cpp
+protected void transfer_initial_stress()
 ```
 
 
@@ -201,18 +236,26 @@ protected void transfer_boundary_conditions()
 ```
 
 
-### transfer_boundary_condition
+### transfer_mechanics_boundary_conditions
 
 ```cpp
-protected void transfer_boundary_condition(const uuid & attribute_id, std::string_view field_name, std::string_view name_prefix, std::optional<local_index_t> component)
+protected void transfer_mechanics_boundary_conditions()
 ```
 
 
-### delete_mapping_attributes
+### transfer_displacements
 
 ```cpp
-protected void delete_mapping_attributes()
+protected void transfer_displacements(const uuid & attribute_id)
 ```
+
+
+### transfer_tractions
+
+```cpp
+protected void transfer_tractions(const uuid & attribute_id)
+```
+
 
 ### write_solid_file
 

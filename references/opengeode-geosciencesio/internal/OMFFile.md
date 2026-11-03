@@ -30,6 +30,11 @@ public static const auto OMF_ELEMENT_ATTRIBUTE_NAME
 
 ```
 
+```cpp
+public static const uint64_t MAX_ARRAY_VALUES
+
+```
+
 
 
 ## Functions
@@ -164,7 +169,7 @@ public std::vector<std::array<index_t, nb_vertices_per_element>> read_elements(c
 ### read_optional_scalars
 
 ```cpp
-public std::vector<double> read_optional_scalars(const nlohmann::json & geometry, std::string_view key)
+public std::vector<double> read_optional_scalars(const nlohmann::json & geometry, std::string_view key, uint64_t max_values)
 ```
 
 
@@ -186,14 +191,16 @@ public void read_data(const nlohmann::json & element, std::string_view location,
 ### read_scalars
 
 ```cpp
-public std::vector<double> read_scalars(const nlohmann::json & array)
+public std::vector<double> read_scalars(const nlohmann::json & array, uint64_t max_values)
 ```
 
+
+ Read a scalar array. Values of compressed arrays beyond max_values are not decompressed and are ignored with a warning.
 
 ### read_integers
 
 ```cpp
-public std::vector<int64_t> read_integers(const nlohmann::json & array)
+public std::vector<int64_t> read_integers(const nlohmann::json & array, uint64_t max_values)
 ```
 
 
