@@ -37,6 +37,11 @@ public InspectionIssues blocks_with_not_closed_boundary_surfaces
 ```
 
 ```cpp
+public InspectionIssues blocks_split_by_internal_surfaces
+
+```
+
+```cpp
 public InspectionIssues model_boundaries_dont_form_a_closed_surface
 
 ```
