@@ -276,20 +276,6 @@ Triangle<dimension> dummy_triangle()
 ```
 
 
-### allowed_collapse_edge_by_constraints
-
-```cpp
-ALLOWED_COLLAPSE_VERTEX_VERTEX allowed_collapse_edge_by_constraints(const ModifiableTriangulatedSurface<dimension> & surface, const PolygonEdge & edge, const typename TriangulatedSurfaceConstraintModifier<dimension>::Constraints & constraints)
-```
-
-
-### are_component_mesh_vertices_included
-
-```cpp
-bool are_component_mesh_vertices_included(const ComponentMeshVertexInclusionQuery & query)
-```
-
-
 ### AbslHashValue
 
 ```cpp
@@ -304,10 +290,24 @@ SurfaceCutPathInfo3D cut_along_path(BRepGeometricModifier & modifier, const Surf
 ```
 
 
+### allowed_collapse_edge_by_constraints
+
+```cpp
+ALLOWED_COLLAPSE_VERTEX_VERTEX allowed_collapse_edge_by_constraints(const ModifiableTriangulatedSurface<dimension> & surface, const PolygonEdge & edge, const typename TriangulatedSurfaceConstraintModifier<dimension>::Constraints & constraints)
+```
+
+
 ### compute_constant_metric_from_maximal_edge_length
 
 ```cpp
 ConstantMetric3D compute_constant_metric_from_maximal_edge_length(const SolidMesh3D & mesh)
+```
+
+
+### are_component_mesh_vertices_included
+
+```cpp
+bool are_component_mesh_vertices_included(const ComponentMeshVertexInclusionQuery & query)
 ```
 
 
