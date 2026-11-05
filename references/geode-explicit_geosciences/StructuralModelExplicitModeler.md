@@ -67,14 +67,28 @@ public void ~StructuralModelExplicitModeler()
 ### add_fault
 
 ```cpp
-public uuid add_fault(std::vector<std::unique_ptr<TriangulatedSurface3D>> & meshes)
+public uuid add_fault(std::vector<std::unique_ptr<TriangulatedSurface3D>> && meshes)
+```
+
+
+### add_fault
+
+```cpp
+public void add_fault(std::vector<std::unique_ptr<TriangulatedSurface3D>> && meshes, const Fault3D & fault)
 ```
 
 
 ### add_horizon
 
 ```cpp
-public uuid add_horizon(std::vector<std::unique_ptr<TriangulatedSurface3D>> & meshes)
+public uuid add_horizon(std::vector<std::unique_ptr<TriangulatedSurface3D>> && meshes)
+```
+
+
+### add_horizon
+
+```cpp
+public void add_horizon(std::vector<std::unique_ptr<TriangulatedSurface3D>> && meshes, const Horizon3D & horizon)
 ```
 
 
