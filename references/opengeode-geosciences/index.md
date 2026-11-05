@@ -651,15 +651,6 @@ bool is_implicit_structural_model_saveable(const ImplicitStructuralModel & impli
 ```
 
 
-### validate_physical_problem_properties
-
-```cpp
-std::vector<std::string> validate_physical_problem_properties(const PhysicalProblem & problem, const BRep & model)
-```
-
-
- Check the model physical properties read by the problem. For solid mechanics: positive elastic moduli and non-negative density on every Block (density only needed with gravity), finite initial stresses, displacements uniform on each Surface and imposed along each axis, finite tractions, and no flow boundary condition. For flow problems: no mechanical boundary condition. Returns one message per issue, empty if valid.
-
 ### assign_surface_mesh_geographic_coordinate_system_info
 
 ```cpp
@@ -673,6 +664,15 @@ void assign_surface_mesh_geographic_coordinate_system_info(const SurfaceMesh<dim
 index_t horizons_stack_object_priority(std::string_view filename)
 ```
 
+
+### validate_physical_problem_properties
+
+```cpp
+std::vector<std::string> validate_physical_problem_properties(const PhysicalProblem & problem, const BRep & model)
+```
+
+
+ Check the model physical properties read by the problem. For solid mechanics: positive elastic moduli and non-negative density on every Block (density only needed with gravity), finite initial stresses, displacements uniform on each Surface and imposed along each axis, finite tractions, and no flow boundary condition. For poromechanics (flow and solid mechanics): the same mechanical checks with the grain_density instead of the density, a Biot coefficient in (0, 1] and not smaller than the porosity on every Block and, for a thermal problem, a non-negative thermal expansion coefficient on every Block. For flow problems: no mechanical boundary condition. Returns one message per issue, empty if valid.
 
 ### assign_brep_geographic_coordinate_system_info
 
@@ -695,7 +695,7 @@ std::vector<std::string> physical_problem_warnings(const PhysicalProblem & probl
 ```
 
 
- Look for data that is valid but probably wrong. Unlike issues, warnings do not prevent a simulation. For solid mechanics, the in-situ mean stress is a compression: an initial_stress whose mean is a tension in most cells suggests the opposite sign convention than the one declared by the problem. Materials of a solid mechanics problem are ignored. Returns one message per warning.
+ Look for data that is valid but probably wrong. Unlike issues, warnings do not prevent a simulation. For solid mechanics, the in-situ mean stress is a compression: an initial_stress whose mean is a tension in most cells suggests the opposite sign convention than the one declared by the problem. Materials of a solid mechanics problem without flow are ignored, as well as the properties of poromechanics it does not use. Returns one message per warning.
 
 ### convert_edged_curve_coordinate_reference_system
 

@@ -14,7 +14,7 @@ const name = words.join('-');
 # struct SolidMechanics
 
 
- Set when the problem solves quasi-static solid mechanics. Elastic moduli and density are the bulk_modulus, shear_modulus and density PhysicalProperties of the model.
+ Set when the problem solves quasi-static solid mechanics. Elastic moduli and density are the bulk_modulus, shear_modulus and density PhysicalProperties of the model. With a flow model, the problem is poromechanics: the model also gives the biot_coefficient, the grain_density instead of the density and, for a thermal problem, the thermal_expansion_coefficient. The initial_stress is then the total stress.
 
 
 

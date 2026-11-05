@@ -14,7 +14,7 @@ const name = words.join('-');
 # class PhysicalProblem
 
 
- Simulator-independent description of a flow or solid mechanics simulation on a model: fluid, flow process, rock materials, initial state, well source terms, time schedule, outputs and simulator-specific options. Model regions are referenced by component uuid. Spatially varying data (porosity, permeability, elastic moduli, density, initial stress, boundary conditions) stay in the model PhysicalProperties.
+ Simulator-independent description of a flow, solid mechanics, or coupled (poromechanics: both are set) simulation on a model: fluid, flow process, rock materials, initial state, well source terms, time schedule, outputs and simulator-specific options. Model regions are referenced by component uuid. Spatially varying data (porosity, permeability, elastic moduli, density, Biot coefficient, initial stress, boundary conditions) stay in the model PhysicalProperties.
 
 
 
