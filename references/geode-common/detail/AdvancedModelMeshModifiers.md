@@ -45,6 +45,22 @@ protected absl::Mutex & mutex()
 ```
 
 
+### clean_line_and_surface_modifiers
+
+```cpp
+protected void clean_line_and_surface_modifiers()
+```
+
+
+ Clean the existing line and surface modifiers and update the model unique vertices accordingly.
+
+### update_unique_vertices
+
+```cpp
+protected void update_unique_vertices(const ComponentID & component_id, absl::Span<const index_t> old2new)
+```
+
+
 ### AdvancedModelMeshModifiers
 
 ```cpp

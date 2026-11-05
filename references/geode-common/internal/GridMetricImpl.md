@@ -39,6 +39,13 @@ protected void GridMetricImpl<dimension>(const Grid<dimension> & grid)
 ```
 
 
+### ~GridMetricImpl
+
+```cpp
+protected void ~GridMetricImpl<dimension>()
+```
+
+
 ### grid
 
 ```cpp
@@ -113,6 +120,13 @@ public double minimal_metric(const Triangle<dimension> & triangle)
 
 ```cpp
 public CoordinateSystem<dimension> coordinate_system(const Point<dimension> & point)
+```
+
+
+### isotropic_coordinate_system
+
+```cpp
+protected static CoordinateSystem<dimension> isotropic_coordinate_system(double metric)
 ```
 
 

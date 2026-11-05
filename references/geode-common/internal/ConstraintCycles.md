@@ -14,6 +14,10 @@ const name = words.join('-');
 # class ConstraintCycles
 
 
+ Set of vertex cycles given in original vertex ids and queried in updated vertex ids. Updated cycles are cached for the last used VerticesModifier and kept up to date from its updates log: only cycles touching an updated vertex (as original or as current vertex) are recomputed. This relies on VerticesModifier::updated_vertex path compression: once resolved, an original vertex directly maps to its current vertex, so its result only changes if one of them is updated.
+
+
+
 ## Functions
 
 ### contains

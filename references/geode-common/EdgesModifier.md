@@ -40,7 +40,7 @@ public void ~EdgesModifier()
 ### updated_edge
 
 ```cpp
-public const SmallSet<index_t> & updated_edge(index_t edge_id)
+public SmallSet<index_t> updated_edge(index_t edge_id)
 ```
 
 

@@ -29,5 +29,14 @@ public void AdvancedSectionMeshModifiers(const Section & model, SectionBuilder &
 ```
 
 
+### clean_modifiers
+
+```cpp
+public void clean_modifiers(SectionGeometricModifierKey )
+```
+
+
+ Clean the existing component modifiers and update the model unique vertices accordingly.
+
 
 

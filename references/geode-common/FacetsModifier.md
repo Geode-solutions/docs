@@ -40,7 +40,7 @@ public void ~FacetsModifier()
 ### updated_facet
 
 ```cpp
-public const SmallSet<index_t> & updated_facet(index_t facet_id)
+public SmallSet<index_t> updated_facet(index_t facet_id)
 ```
 
 

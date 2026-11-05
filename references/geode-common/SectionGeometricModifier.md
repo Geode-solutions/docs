@@ -33,14 +33,35 @@ SectionSwapEdgeInfo
 ### SectionGeometricModifier
 
 ```cpp
-public void SectionGeometricModifier(const Section & section, SectionBuilder & builder)
+public void SectionGeometricModifier(const SectionGeometricModifier & )
 ```
 
 
 ### SectionGeometricModifier
 
 ```cpp
-public void SectionGeometricModifier(SectionGeometricModifier && other)
+public void SectionGeometricModifier(SectionGeometricModifier && )
+```
+
+
+### operator=
+
+```cpp
+public SectionGeometricModifier & operator=(const SectionGeometricModifier & )
+```
+
+
+### operator=
+
+```cpp
+public SectionGeometricModifier & operator=(SectionGeometricModifier && )
+```
+
+
+### SectionGeometricModifier
+
+```cpp
+public void SectionGeometricModifier(const Section & section, SectionBuilder & builder)
 ```
 
 
@@ -145,7 +166,7 @@ public void set_updated_vertex(const Line2D & line, const VertexMultiMapping & m
 ### updated_edge
 
 ```cpp
-public const SmallSet<index_t> & updated_edge(const Line2D & line, index_t edge)
+public SmallSet<index_t> updated_edge(const Line2D & line, index_t edge)
 ```
 
 
@@ -173,7 +194,7 @@ public void set_updated_vertex(const Surface2D & surface, const VertexMultiMappi
 ### updated_edge
 
 ```cpp
-public const SmallSet<index_t> & updated_edge(const Surface2D & surface, index_t edge)
+public SmallSet<index_t> updated_edge(const Surface2D & surface, index_t edge)
 ```
 
 
@@ -187,7 +208,7 @@ public void set_updated_edge(const Surface2D & surface, const EdgeMapping & mapp
 ### updated_triangle
 
 ```cpp
-public const SmallSet<index_t> & updated_triangle(const Surface2D & surface, index_t triangle)
+public SmallSet<index_t> updated_triangle(const Surface2D & surface, index_t triangle)
 ```
 
 

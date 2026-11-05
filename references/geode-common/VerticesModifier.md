@@ -86,12 +86,23 @@ protected index_t vertices_clean_stamp()
 ```
 
 
-### vertices_updated_stamp
+### vertices_updates_log_id
 
 ```cpp
-protected index_t vertices_updated_stamp()
+protected index_t vertices_updates_log_id()
 ```
 
+
+ Identifier of the updates log, changed when the log is reset (i.e. on clean) and unique among all VerticesModifier
+
+### vertices_updates_log
+
+```cpp
+protected absl::Span<const index_t> vertices_updates_log()
+```
+
+
+ Old vertex ids given to set_updated_vertex since the log was reset, in call order
 
 
 

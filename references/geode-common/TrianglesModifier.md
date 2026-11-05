@@ -40,7 +40,7 @@ public void ~TrianglesModifier()
 ### updated_triangle
 
 ```cpp
-public const SmallSet<index_t> & updated_triangle(index_t triangle_id)
+public SmallSet<index_t> updated_triangle(index_t triangle_id)
 ```
 
 

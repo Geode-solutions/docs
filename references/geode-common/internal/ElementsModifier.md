@@ -19,7 +19,7 @@ const name = words.join('-');
 ### updated_element
 
 ```cpp
-public const Value & updated_element(index_t element_id)
+public Value updated_element(index_t element_id)
 ```
 
 

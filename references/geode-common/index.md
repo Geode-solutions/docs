@@ -269,20 +269,6 @@ std::optional<PolygonVertex> edge_tshape_apex(const TriangulatedSurface<dimensio
 ```
 
 
-### dummy_triangle
-
-```cpp
-Triangle<dimension> dummy_triangle()
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const BlockElement<ElementId> & element)
-```
-
-
 ### cut_along_path
 
 ```cpp
@@ -311,13 +297,6 @@ bool are_component_mesh_vertices_included(const ComponentMeshVertexInclusionQuer
 ```
 
 
-### colocalise_brep_unique_vertices
-
-```cpp
-void colocalise_brep_unique_vertices(ModifiableBRep model, BRepBuilder & builder)
-```
-
-
 ### allowed_collapse_edge_by_constraints
 
 ```cpp
@@ -329,13 +308,6 @@ ALLOWED_COLLAPSE_VERTEX_VERTEX allowed_collapse_edge_by_constraints(const Modifi
 
 ```cpp
 ALLOWED_COLLAPSE_VERTEX_VERTEX allowed_collapse_edge_by_constraints(const ModifiableTetrahedralSolid & solid, const PolyhedronFacetEdge & edge, const TetrahedralSolidConstraintModifier::Constraints & constraints)
-```
-
-
-### colocalise_section_unique_vertices
-
-```cpp
-void colocalise_section_unique_vertices(ModifiableSection model, SectionBuilder & builder)
 ```
 
 
@@ -354,6 +326,34 @@ OwnerPlane mean_plane_around_points(const PointSet3D & mesh)
 
 ```cpp
 std::optional<SolidEdgeTShape> edge_tshape_apex(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge)
+```
+
+
+### dummy_triangle
+
+```cpp
+Triangle<dimension> dummy_triangle()
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const BlockElement<ElementId> & element)
+```
+
+
+### colocalise_brep_unique_vertices
+
+```cpp
+void colocalise_brep_unique_vertices(ModifiableBRep model, BRepBuilder & builder)
+```
+
+
+### colocalise_section_unique_vertices
+
+```cpp
+void colocalise_section_unique_vertices(ModifiableSection model, SectionBuilder & builder)
 ```
 
 
@@ -1041,6 +1041,20 @@ bool does_move_point_improve_metric(const BRep & brep, const Block3D & block, co
 ```
 
 
+### split_triangle_validity
+
+```cpp
+SurfaceSplitTriangleValidity<dimension> split_triangle_validity(const TriangulatedSurface<dimension> & mesh, index_t triangle_id, const Point<dimension> & point)
+```
+
+
+### compute_number_of_negative_tetrahedra
+
+```cpp
+std::optional<index_t> compute_number_of_negative_tetrahedra(absl::Span<const ModifiedTetrahedron> tetrahedra)
+```
+
+
 ### is_split_tetrahedron_valid
 
 ```cpp
@@ -1058,20 +1072,6 @@ bool is_split_tetrahedron_valid(const TetrahedralSolid3D & mesh, index_t tetrahe
 
 **return** true if split will keep mesh valid.
 
-### split_triangle_validity
-
-```cpp
-SurfaceSplitTriangleValidity<dimension> split_triangle_validity(const TriangulatedSurface<dimension> & mesh, index_t triangle_id, const Point<dimension> & point)
-```
-
-
-### compute_number_of_negative_tetrahedra
-
-```cpp
-std::optional<index_t> compute_number_of_negative_tetrahedra(absl::Span<const ModifiedTetrahedron> tetrahedra)
-```
-
-
 ### does_split_collapse_facet_improve_metric
 
 ```cpp
@@ -1079,17 +1079,17 @@ bool does_split_collapse_facet_improve_metric(const TetrahedralSolid3D & solid, 
 ```
 
 
-### split_tetrahedron_validity
-
-```cpp
-SolidSplitTetrahedronValidity split_tetrahedron_validity(const TetrahedralSolid3D & mesh, index_t tetrahedron_id, const Point3D & point)
-```
-
-
 ### compute_number_of_negative_triangles
 
 ```cpp
 std::optional<index_t> compute_number_of_negative_triangles(absl::Span<const Triangle<dimension>> triangles)
+```
+
+
+### split_tetrahedron_validity
+
+```cpp
+SolidSplitTetrahedronValidity split_tetrahedron_validity(const TetrahedralSolid3D & mesh, index_t tetrahedron_id, const Point3D & point)
 ```
 
 
@@ -1131,6 +1131,20 @@ bool is_split_edge_valid(const TriangulatedSurface<dimension> & mesh, const Poly
 
 **return** true if split will keep mesh valid.
 
+### does_split_split_collapse_edge_improve_metric
+
+```cpp
+bool does_split_split_collapse_edge_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+```
+
+
+### edge_from_internal_distance
+
+```cpp
+PolygonEdge edge_from_internal_distance(const SurfaceMesh<dimension> & surface, index_t triangle_id, const InternalDistance & idistance)
+```
+
+
 ### is_split_facet_valid
 
 ```cpp
@@ -1147,20 +1161,6 @@ bool is_split_facet_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacet
 **point** [in] Coordinates of the split point.
 
 **return** true if split will keep mesh valid.
-
-### does_split_split_collapse_edge_improve_metric
-
-```cpp
-bool does_split_split_collapse_edge_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
-```
-
-
-### edge_from_internal_distance
-
-```cpp
-PolygonEdge edge_from_internal_distance(const SurfaceMesh<dimension> & surface, index_t triangle_id, const InternalDistance & idistance)
-```
-
 
 ### split_edge_validity
 
@@ -1193,13 +1193,6 @@ absl::FixedArray<Mapping<index_t>> extract_mappings_from_split_info(absl::Span<c
 ```
 
 
-### split_facet_validity
-
-```cpp
-SolidSplitFacetValidity split_facet_validity(const TetrahedralSolid3D & mesh, const PolyhedronFacet & facet, const Point3D & point)
-```
-
-
 ### is_collapse_edge_valid
 
 ```cpp
@@ -1216,6 +1209,13 @@ bool is_collapse_edge_valid(const TriangulatedSurface<dimension> & mesh, const P
 **point** [in] Coordinates of the collapse point.
 
 **return** true if collapse will keep mesh valid.
+
+### split_facet_validity
+
+```cpp
+SolidSplitFacetValidity split_facet_validity(const TetrahedralSolid3D & mesh, const PolyhedronFacet & facet, const Point3D & point)
+```
+
 
 ### update_vertex_mappings
 
@@ -1294,17 +1294,17 @@ H AbslHashValue(H h, const Points<dimension, nb_points> & points)
 ```
 
 
-### split_facet_validity
-
-```cpp
-SolidSplitFacetValidity split_facet_validity(const TetrahedralSolid3D & mesh, index_t facet_id, const Point3D & point)
-```
-
-
 ### is_collapse_edge_valid
 
 ```cpp
 bool is_collapse_edge_valid(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, local_index_t apex)
+```
+
+
+### split_facet_validity
+
+```cpp
+SolidSplitFacetValidity split_facet_validity(const TetrahedralSolid3D & mesh, index_t facet_id, const Point3D & point)
 ```
 
 
@@ -1459,6 +1459,13 @@ bool is_collapse_edge_valid(const BRep & brep, const Block3D & block, const Poly
 ```
 
 
+### collapse_edge_validity
+
+```cpp
+SurfaceCollapseEdgeValidity<dimension> collapse_edge_validity(const TriangulatedSurface<dimension> & mesh, index_t edge_id, local_index_t apex)
+```
+
+
 ### is_collapse_edge_valid
 
 ```cpp
@@ -1476,10 +1483,10 @@ bool is_collapse_edge_valid(const TetrahedralSolid3D & mesh, index_t edge_id, co
 
 **return** true if collapse will keep mesh valid.
 
-### collapse_edge_validity
+### is_collapse_edge_valid
 
 ```cpp
-SurfaceCollapseEdgeValidity<dimension> collapse_edge_validity(const TriangulatedSurface<dimension> & mesh, index_t edge_id, local_index_t apex)
+bool is_collapse_edge_valid(const BRep & brep, const Surface3D & surface, const PolygonEdge & edge, const Point3D & point)
 ```
 
 
@@ -1487,13 +1494,6 @@ SurfaceCollapseEdgeValidity<dimension> collapse_edge_validity(const Triangulated
 
 ```cpp
 bool is_collapse_edge_valid(const TetrahedralSolid3D & mesh, index_t edge_id, local_index_t apex)
-```
-
-
-### is_collapse_edge_valid
-
-```cpp
-bool is_collapse_edge_valid(const BRep & brep, const Surface3D & surface, const PolygonEdge & edge, const Point3D & point)
 ```
 
 
@@ -1508,13 +1508,6 @@ SolidVertexTopologicalValidity does_collapse_edge_create_topological_invaliditie
 
 ```cpp
 bool is_collapse_edge_valid(const BRep & brep, const Line3D & line, index_t edge, const Point3D & point)
-```
-
-
-### does_split_collapse_edge_create_topological_invalidities
-
-```cpp
-SolidVertexTopologicalValidity does_split_collapse_edge_create_topological_invalidities(const geode::TetrahedralSolid3D & mesh, const geode::PolyhedronFacetEdge & edge, index_t apex)
 ```
 
 
@@ -1533,17 +1526,17 @@ bool is_swap_edge_valid(const TriangulatedSurface<dimension> & mesh, const Polyg
 
 **return** true if swap edge will keep mesh valid.
 
+### does_split_collapse_edge_create_topological_invalidities
+
+```cpp
+SolidVertexTopologicalValidity does_split_collapse_edge_create_topological_invalidities(const geode::TetrahedralSolid3D & mesh, const geode::PolyhedronFacetEdge & edge, index_t apex)
+```
+
+
 ### is_collapse_edge_valid
 
 ```cpp
 bool is_collapse_edge_valid(const BRep & brep, const Line3D & line, index_t edge, local_index_t apex)
-```
-
-
-### does_split_collapse_facet_create_topological_invalidities
-
-```cpp
-SolidVertexTopologicalValidity does_split_collapse_facet_create_topological_invalidities(const geode::TetrahedralSolid3D & mesh, const geode::PolyhedronFacet & facet)
 ```
 
 
@@ -1554,10 +1547,10 @@ SurfaceSwapEdgeValidity<dimension> swap_edge_validity(const TriangulatedSurface<
 ```
 
 
-### collapse_edge_validity
+### does_split_collapse_facet_create_topological_invalidities
 
 ```cpp
-SolidCollapseEdgeValidity collapse_edge_validity(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, const Point3D & point)
+SolidVertexTopologicalValidity does_split_collapse_facet_create_topological_invalidities(const geode::TetrahedralSolid3D & mesh, const geode::PolyhedronFacet & facet)
 ```
 
 
@@ -1571,7 +1564,7 @@ bool is_split_collapse_facet_valid(const BRep & brep, const Block3D & block, con
 ### collapse_edge_validity
 
 ```cpp
-SolidCollapseEdgeValidity collapse_edge_validity(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, local_index_t apex)
+SolidCollapseEdgeValidity collapse_edge_validity(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, const Point3D & point)
 ```
 
 
@@ -1579,6 +1572,13 @@ SolidCollapseEdgeValidity collapse_edge_validity(const TetrahedralSolid3D & mesh
 
 ```cpp
 bool is_split_collapse_facet_valid(const BRep & brep, const Block3D & block, const PolyhedronFacet & facet)
+```
+
+
+### collapse_edge_validity
+
+```cpp
+SolidCollapseEdgeValidity collapse_edge_validity(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, local_index_t apex)
 ```
 
 
@@ -1602,14 +1602,14 @@ bool is_move_point_valid(const TriangulatedSurface<dimension> & mesh, index_t ve
 ### collapse_edge_validity
 
 ```cpp
-SolidCollapseEdgeValidity collapse_edge_validity(const TetrahedralSolid3D & mesh, index_t edge_id, const Point3D & point)
+BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const Point3D & point)
 ```
 
 
 ### collapse_edge_validity
 
 ```cpp
-BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const Point3D & point)
+SolidCollapseEdgeValidity collapse_edge_validity(const TetrahedralSolid3D & mesh, index_t edge_id, const Point3D & point)
 ```
 
 
@@ -1623,14 +1623,14 @@ SurfaceMovePointValidity<dimension> move_point_validity(const TriangulatedSurfac
 ### collapse_edge_validity
 
 ```cpp
-SolidCollapseEdgeValidity collapse_edge_validity(const TetrahedralSolid3D & mesh, index_t edge_id, local_index_t apex)
+BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, local_index_t apex)
 ```
 
 
 ### collapse_edge_validity
 
 ```cpp
-BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, local_index_t apex)
+SolidCollapseEdgeValidity collapse_edge_validity(const TetrahedralSolid3D & mesh, index_t edge_id, local_index_t apex)
 ```
 
 
@@ -1645,13 +1645,6 @@ bool is_split_collapse_edge_valid(const TetrahedralSolid3D & mesh, const Polyhed
 
 ```cpp
 BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Surface3D & surface, const PolygonEdge & edge, const Point3D & point)
-```
-
-
-### is_split_collapse_edge_valid
-
-```cpp
-bool is_split_collapse_edge_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, index_t apex, const Point3D & point)
 ```
 
 
@@ -1670,6 +1663,13 @@ std::array<Triangle<dimension>, 3> triangles_after_split_triangle(const Triangul
 
 **point** [in] Coordinates of the split point.
 
+### is_split_collapse_edge_valid
+
+```cpp
+bool is_split_collapse_edge_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, index_t apex, const Point3D & point)
+```
+
+
 ### collapse_edge_validity
 
 ```cpp
@@ -1684,13 +1684,6 @@ bool is_split_collapse_facet_valid(const TetrahedralSolid3D & mesh, const Polyhe
 ```
 
 
-### is_split_collapse_facet_valid
-
-```cpp
-bool is_split_collapse_facet_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacet & facet, const Point3D & point)
-```
-
-
 ### collapse_edge_validity
 
 ```cpp
@@ -1698,10 +1691,10 @@ BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Line3D 
 ```
 
 
-### is_split_split_collapse_valid
+### is_split_collapse_facet_valid
 
 ```cpp
-bool is_split_split_collapse_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & point)
+bool is_split_collapse_facet_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacet & facet, const Point3D & point)
 ```
 
 
@@ -1712,10 +1705,24 @@ bool is_split_split_collapse_valid(const BRep & brep, const Block3D & block, con
 ```
 
 
+### is_split_split_collapse_valid
+
+```cpp
+bool is_split_split_collapse_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & point)
+```
+
+
 ### is_split_collapse_edge_valid
 
 ```cpp
 bool is_split_collapse_edge_valid(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex)
+```
+
+
+### is_split_collapse_edge_valid
+
+```cpp
+bool is_split_collapse_edge_valid(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex, const Point3D & point)
 ```
 
 
@@ -1733,13 +1740,6 @@ bool is_swap_facet_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacet 
 **facet** [in] Index of the PolyhedronFacet to swap.
 
 **return** true if swap facet will keep mesh valid.
-
-### is_split_collapse_edge_valid
-
-```cpp
-bool is_split_collapse_edge_valid(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex, const Point3D & point)
-```
-
 
 ### swap_facet_validity
 
@@ -1824,17 +1824,17 @@ bool is_move_point_valid(const TetrahedralSolid3D & mesh, index_t vertex, const 
 
 **return** true if vertex relocation will keep mesh valid.
 
-### move_point_validity
-
-```cpp
-SolidMovePointValidity move_point_validity(const TetrahedralSolid3D & mesh, index_t vertex, const Point3D & point)
-```
-
-
 ### split_edge_validity
 
 ```cpp
 BRepSplitEdgeValidity split_edge_validity(const BRep & brep, const Line3D & line, index_t edge, const Point3D & point)
+```
+
+
+### move_point_validity
+
+```cpp
+SolidMovePointValidity move_point_validity(const TetrahedralSolid3D & mesh, index_t vertex, const Point3D & point)
 ```
 
 

@@ -40,7 +40,7 @@ public void ~TetrahedraModifier()
 ### updated_tetrahedron
 
 ```cpp
-public const SmallSet<index_t> & updated_tetrahedron(index_t tetrahedron_id)
+public SmallSet<index_t> updated_tetrahedron(index_t tetrahedron_id)
 ```
 
 

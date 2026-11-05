@@ -29,20 +29,6 @@ public void BRepCutter(const BRep & brep, BRepBuilder & builder)
 ```
 
 
-### BRepCutter
-
-```cpp
-public void BRepCutter(BRepCutter && other)
-```
-
-
-### operator=
-
-```cpp
-public BRepCutter & operator=(BRepCutter && other)
-```
-
-
 ### ~BRepCutter
 
 ```cpp

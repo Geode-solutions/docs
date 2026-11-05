@@ -43,6 +43,15 @@ public void reset_block_modifier(const Block3D & block)
 ```
 
 
+### clean_modifiers
+
+```cpp
+public void clean_modifiers(BRepGeometricModifierKey )
+```
+
+
+ Clean the existing component modifiers and update the model unique vertices accordingly.
+
 ### modifiable_solid
 
 ```cpp

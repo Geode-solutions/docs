@@ -39,21 +39,35 @@ BRepSwapFacetInfo
 ### BRepGeometricModifier
 
 ```cpp
-public void BRepGeometricModifier(const BRep & brep, BRepBuilder & builder)
+public void BRepGeometricModifier(const BRepGeometricModifier & )
 ```
 
 
 ### BRepGeometricModifier
 
 ```cpp
-public void BRepGeometricModifier(BRepGeometricModifier && other)
+public void BRepGeometricModifier(BRepGeometricModifier && )
 ```
 
 
 ### operator=
 
 ```cpp
-public BRepGeometricModifier & operator=(BRepGeometricModifier && other)
+public BRepGeometricModifier & operator=(const BRepGeometricModifier & )
+```
+
+
+### operator=
+
+```cpp
+public BRepGeometricModifier & operator=(BRepGeometricModifier && )
+```
+
+
+### BRepGeometricModifier
+
+```cpp
+public void BRepGeometricModifier(const BRep & brep, BRepBuilder & builder)
 ```
 
 
@@ -221,7 +235,7 @@ public void set_updated_vertex(const Line3D & line, const VertexMultiMapping & m
 ### updated_edge
 
 ```cpp
-public const SmallSet<index_t> & updated_edge(const Line3D & line, index_t edge)
+public SmallSet<index_t> updated_edge(const Line3D & line, index_t edge)
 ```
 
 
@@ -249,7 +263,7 @@ public void set_updated_vertex(const Surface3D & surface, const VertexMultiMappi
 ### updated_edge
 
 ```cpp
-public const SmallSet<index_t> & updated_edge(const Surface3D & surface, index_t edge)
+public SmallSet<index_t> updated_edge(const Surface3D & surface, index_t edge)
 ```
 
 
@@ -263,7 +277,7 @@ public void set_updated_edge(const Surface3D & surface, const EdgeMapping & mapp
 ### updated_triangle
 
 ```cpp
-public const SmallSet<index_t> & updated_triangle(const Surface3D & surface, index_t triangle)
+public SmallSet<index_t> updated_triangle(const Surface3D & surface, index_t triangle)
 ```
 
 
@@ -291,7 +305,7 @@ public void set_updated_vertex(const Block3D & block, const VertexMultiMapping &
 ### updated_edge
 
 ```cpp
-public const SmallSet<index_t> & updated_edge(const Block3D & block, index_t edge)
+public SmallSet<index_t> updated_edge(const Block3D & block, index_t edge)
 ```
 
 
@@ -305,7 +319,7 @@ public void set_updated_edge(const Block3D & block, const EdgeMapping & mapping)
 ### updated_facet
 
 ```cpp
-public const SmallSet<index_t> & updated_facet(const Block3D & block, index_t facet)
+public SmallSet<index_t> updated_facet(const Block3D & block, index_t facet)
 ```
 
 
@@ -319,7 +333,7 @@ public void set_updated_facet(const Block3D & block, const FacetMapping & mappin
 ### updated_tetrahedron
 
 ```cpp
-public const SmallSet<index_t> & updated_tetrahedron(const Block3D & block, index_t tetrahedron)
+public SmallSet<index_t> updated_tetrahedron(const Block3D & block, index_t tetrahedron)
 ```
 
 

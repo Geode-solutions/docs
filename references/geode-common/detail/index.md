@@ -28,7 +28,7 @@ const name = words.join('-');
 ### find_containing_edge
 
 ```cpp
-std::optional<index_t> find_containing_edge(const Point1D & point, const EdgedCurve1D & line, const EdgedCurveModifier1D & modifier_, const index_t initial_edge_id)
+std::optional<index_t> find_containing_edge(const Point1D & point, const EdgedCurve1D & line, const EdgedCurveModifier<1> & modifier_, const index_t initial_edge_id)
 ```
 
 

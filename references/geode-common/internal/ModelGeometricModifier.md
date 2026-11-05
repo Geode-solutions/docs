@@ -216,7 +216,7 @@ public void set_updated_surface_vertex(const Surface<dimension> & surface, const
 ### updated_line_edge
 
 ```cpp
-public const SmallSet<index_t> & updated_line_edge(const Line<dimension> & line, index_t edge)
+public SmallSet<index_t> updated_line_edge(const Line<dimension> & line, index_t edge)
 ```
 
 
@@ -230,7 +230,7 @@ public void set_updated_line_edge(const Line<dimension> & line, const EdgeMappin
 ### updated_surface_edge
 
 ```cpp
-public const SmallSet<index_t> & updated_surface_edge(const Surface<dimension> & surface, index_t edge)
+public SmallSet<index_t> updated_surface_edge(const Surface<dimension> & surface, index_t edge)
 ```
 
 
@@ -244,7 +244,7 @@ public void set_updated_surface_edge(const Surface<dimension> & surface, const E
 ### updated_surface_triangle
 
 ```cpp
-public const SmallSet<index_t> & updated_surface_triangle(const Surface<dimension> & surface, index_t triangle)
+public SmallSet<index_t> updated_surface_triangle(const Surface<dimension> & surface, index_t triangle)
 ```
 
 
