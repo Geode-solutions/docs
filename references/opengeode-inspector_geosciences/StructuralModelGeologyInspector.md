@@ -14,7 +14,7 @@ const name = words.join('-');
 # class StructuralModelGeologyInspector
 
 
- Class for inspecting the geology of a StructuralModel model corners
+ Class for inspecting the geology of a StructuralModel
 
 
 

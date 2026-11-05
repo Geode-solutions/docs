@@ -14,7 +14,7 @@ const name = words.join('-');
 # class CrossSectionInspector
 
 
- Class for inspecting a CrossSection**extends** 
+ Class for inspecting a CrossSection**extends**  CrossSectionGeologyInspector
 
 
 

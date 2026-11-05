@@ -14,7 +14,7 @@ const name = words.join('-');
 # class CrossSectionGeologyInspector
 
 
- Class for inspecting the geology of a CrossSection model corners
+ Class for inspecting the geology of a CrossSection
 
 
 

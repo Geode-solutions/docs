@@ -14,7 +14,7 @@ const name = words.join('-');
 # class StructuralModelInspector
 
 
- Class for inspecting a StructuralModel**extends** 
+ Class for inspecting a StructuralModel**extends**  StructuralModelGeologyInspector
 
 
 
