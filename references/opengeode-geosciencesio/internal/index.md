@@ -131,20 +131,6 @@ std::string geos_names(absl::Span<const std::string> names)
 
  GEOS array of names: "{ a, b, c }"
 
-### check_brep_polygons
-
-```cpp
-bool check_brep_polygons(const BRep & brep)
-```
-
-
-### determine_surface_to_regions_sides
-
-```cpp
-RegionSurfaceSide determine_surface_to_regions_sides(const BRep & brep)
-```
-
-
 ### geos_solver_option_roles
 
 ```cpp
@@ -158,6 +144,20 @@ const absl::flat_hash_map<std::string, std::string> & geos_solver_option_roles()
 
 ```cpp
 void set_attribute(pugi::xml_node & node, std::string_view attribute, std::string_view value)
+```
+
+
+### check_brep_polygons
+
+```cpp
+bool check_brep_polygons(const BRep & brep)
+```
+
+
+### determine_surface_to_regions_sides
+
+```cpp
+RegionSurfaceSide determine_surface_to_regions_sides(const BRep & brep)
 ```
 
 
@@ -247,14 +247,19 @@ std::vector<std::string> validate_geos_deck(const PhysicalProblem & problem, con
 
  GEOS-specific checks of a problem against the model data of the deck (region assignments are checked by assign_geos_materials and assign_geos_initial_conditions). Returns one message per issue, empty if valid.
 
-### assign_geos_regions
+### is_read_by
 
 ```cpp
-GeosRegionAssignment assign_geos_regions(const GeosDeckContext & context, absl::Span<const absl::Span<const uuid>> item_regions, std::string_view item_kind)
+bool is_read_by(const PhysicalProblem & problem, PHYSICAL_PROPERTY_NAME property)
 ```
 
 
- Assigns items to regions: items with regions first, then the default item (no region) to the remaining regions.
+### mechanics_context_property
+
+```cpp
+std::optional<GeosCellProperty> & mechanics_context_property(GeosDeckContext & context, PHYSICAL_PROPERTY_NAME property)
+```
+
 
 ### geos_stress_factor
 
@@ -349,6 +354,15 @@ void write_property_class_header(std::ofstream & file, const PropClassHeaderData
 ```
 
 
+### assign_geos_regions
+
+```cpp
+GeosRegionAssignment assign_geos_regions(const GeosDeckContext & context, absl::Span<const absl::Span<const uuid>> item_regions, std::string_view item_kind)
+```
+
+
+ Assigns items to regions: items with regions first, then the default item (no region) to the remaining regions.
+
 ### read_tsurf
 
 ```cpp
@@ -377,6 +391,20 @@ void set_omf_element_attribute(AttributeManager & manager, index_t element_id, i
 ```cpp
 std::optional<VSetData> read_vs_points(std::ifstream & file)
 ```
+
+
+
+
+## Enums
+
+| enum class SOLVER_PHYSICS |
+
+--
+
+| flow |
+| mechanics |
+| poromechanics |
+
 
 
 

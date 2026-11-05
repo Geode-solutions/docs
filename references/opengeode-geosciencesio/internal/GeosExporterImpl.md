@@ -229,6 +229,27 @@ protected void transfer_initial_stress()
 ```
 
 
+### initial_stress_tensor
+
+```cpp
+protected VariableAttribute<std::array<double, 6>> & initial_stress_tensor()
+```
+
+
+### compute_grain_bulk_modulus
+
+```cpp
+protected void compute_grain_bulk_modulus()
+```
+
+
+### add_initial_pore_pressure
+
+```cpp
+protected void add_initial_pore_pressure(const GeosRegionAssignment & initial_conditions)
+```
+
+
 ### transfer_boundary_conditions
 
 ```cpp

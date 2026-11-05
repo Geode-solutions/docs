@@ -86,6 +86,21 @@ public optional density
 ```
 
 ```cpp
+public optional biot_coefficient
+
+```
+
+```cpp
+public optional grain_bulk_modulus
+
+```
+
+```cpp
+public optional thermal_expansion
+
+```
+
+```cpp
 public optional initial_stress
 
 ```
