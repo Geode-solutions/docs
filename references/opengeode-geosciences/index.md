@@ -88,10 +88,16 @@ const name = words.join('-');
 * [PhysicalProblemInput](PhysicalProblemInput.md)
 * [PhysicalProblemOutput](PhysicalProblemOutput.md)
 * [PhysicalProblem](PhysicalProblem.md)
+* [PhysicalPropertyCoverage](PhysicalPropertyCoverage.md)
+* [PhysicalPropertyRequirement](PhysicalPropertyRequirement.md)
 * [RelativePermeability](RelativePermeability.md)
 * [RockThermalProperties](RockThermalProperties.md)
 * [SaturationTable](SaturationTable.md)
 * [Schedule](Schedule.md)
+* [SimulationChecker](SimulationChecker.md)
+* [SimulationIssueLocation](SimulationIssueLocation.md)
+* [SimulationIssue](SimulationIssue.md)
+* [SimulationReport](SimulationReport.md)
 * [SinglePhaseFlow](SinglePhaseFlow.md)
 * [SinglePhaseFluid](SinglePhaseFluid.md)
 * [SolidMechanics](SolidMechanics.md)
@@ -201,15 +207,6 @@ StratigraphicSection load_stratigraphic_section(std::string_view filename)
  API function for loading a StratigraphicSection. The adequate loader is called depending on the filename extension.
 
 **filename** [in] Path to the file to load.
-
-### validate_physical_problem
-
-```cpp
-std::vector<std::string> validate_physical_problem(const PhysicalProblem & problem)
-```
-
-
- Check the problem consistency, independently of any simulator and model. Returns one message per issue, empty if the problem is valid. Only the content of the leaf classes defined in this library is checked: leaf classes registered by other libraries are accepted as is.
 
 ### load_physical_problem
 
@@ -418,15 +415,6 @@ void assign_point_set_geographic_coordinate_system_info(const PointSet<dimension
 ```
 
 
-### validate_physical_problem_regions
-
-```cpp
-std::vector<std::string> validate_physical_problem_regions(const PhysicalProblem & problem, const BRep & model)
-```
-
-
- Check that every region referenced by the problem is a Block or a collection of Blocks of the model (BlockCollection, StratigraphicUnit...), that no Block is covered by two materials or two initial conditions, and that the recorded model id, if any, matches. Returns one message per issue, empty if valid.
-
 ### implicit_cross_section_additional_files
 
 ```cpp
@@ -501,6 +489,13 @@ Percentage is_stratigraphic_model_loadable(std::string_view filename)
 
 ```cpp
 Percentage is_stratigraphic_section_loadable(std::string_view filename)
+```
+
+
+### physical_property_string
+
+```cpp
+std::string_view physical_property_string(PHYSICAL_PROPERTY_NAME property)
 ```
 
 
@@ -651,6 +646,15 @@ bool is_implicit_structural_model_saveable(const ImplicitStructuralModel & impli
 ```
 
 
+### physical_property_component_type
+
+```cpp
+ComponentType physical_property_component_type(PHYSICAL_PROPERTY_NAME property)
+```
+
+
+ Component type simulators read the property on: Blocks (polyhedra) for rock and initial stress properties, Surfaces (polygons) for boundary conditions
+
 ### assign_surface_mesh_geographic_coordinate_system_info
 
 ```cpp
@@ -665,15 +669,6 @@ index_t horizons_stack_object_priority(std::string_view filename)
 ```
 
 
-### validate_physical_problem_properties
-
-```cpp
-std::vector<std::string> validate_physical_problem_properties(const PhysicalProblem & problem, const BRep & model)
-```
-
-
- Check the model physical properties read by the problem. For solid mechanics: positive elastic moduli and non-negative density on every Block (density only needed with gravity), finite initial stresses, displacements uniform on each Surface and imposed along each axis, finite tractions, and no flow boundary condition. For poromechanics (flow and solid mechanics): the same mechanical checks with the grain_density instead of the density, a Biot coefficient in (0, 1] and not smaller than the porosity on every Block and, for a thermal problem, a non-negative thermal expansion coefficient on every Block. For flow problems: no mechanical boundary condition. Returns one message per issue, empty if valid.
-
 ### assign_brep_geographic_coordinate_system_info
 
 ```cpp
@@ -681,21 +676,21 @@ void assign_brep_geographic_coordinate_system_info(const BRep & brep, BRepBuilde
 ```
 
 
+### is_physical_property_read
+
+```cpp
+bool is_physical_property_read(const PhysicalProblem & problem, PHYSICAL_PROPERTY_NAME property)
+```
+
+
+ True if a simulator of the problem reads the property: flow reads porosity, permeability and flow boundary conditions (phase fractions for multiphase flow only), solid mechanics reads elastic moduli, initial stresses and mechanical boundary conditions, plus density without flow, or biot_coefficient and grain_density with flow, and thermal_expansion_coefficient with flow and thermal parameters.
+
 ### assign_section_geographic_coordinate_system_info
 
 ```cpp
 void assign_section_geographic_coordinate_system_info(const Section & section, SectionBuilder & builder, std::string_view crs_name, const GeographicCoordinateSystemInfo & info)
 ```
 
-
-### physical_problem_warnings
-
-```cpp
-std::vector<std::string> physical_problem_warnings(const PhysicalProblem & problem, const BRep & model)
-```
-
-
- Look for data that is valid but probably wrong. Unlike issues, warnings do not prevent a simulation. For solid mechanics, the in-situ mean stress is a compression: an initial_stress whose mean is a tension in most cells suggests the opposite sign convention than the one declared by the problem. Materials of a solid mechanics problem without flow are ignored, as well as the properties of poromechanics it does not use. Returns one message per warning.
 
 ### convert_edged_curve_coordinate_reference_system
 
@@ -748,6 +743,15 @@ std::optional<index_t> phase_component(const FluidModel & fluid, PHASE phase)
 
  Component carried by a phase. It is defined when the fluid has one component per phase, in the phase order (e.g. dead oil or CO2-brine). Simulator writers use it to translate phase-based data, such as boundary fluid fractions, into component indices.
 
+### simulation_check_stage_string
+
+```cpp
+std::string_view simulation_check_stage_string(SIMULATION_CHECK_STAGE stage)
+```
+
+
+ Title of the stage in reports, e.g. "Region assignment"
+
 
 
 ## Enums
@@ -789,6 +793,53 @@ std::optional<index_t> phase_component(const FluidModel & fluid, PHASE phase)
 
 
  Sign of the stresses and normal tractions stored in the model (initial_stress, initial_shear_stress, boundary_normal_traction) and of the computed stresses.
+
+| enum class SIMULATION_ISSUE_SEVERITY |
+
+--
+
+| error |
+| warning |
+
+
+
+ An error prevents the simulation. A warning points to data the simulation ignores or that is probably wrong, the simulation can run.
+
+| enum class PHYSICAL_PROPERTY_VALUE_TYPE |
+
+--
+
+| scalar |
+| vector3 |
+
+
+
+| enum class SIMULATION_CHECK_STAGE |
+
+--
+
+| problem |
+| regions |
+| mesh |
+| properties |
+| simulator |
+
+
+
+ Part of the check that found an issue, in report order
+
+| enum class SIMULATION_ELEMENT_TYPE |
+
+--
+
+| none |
+| vertex |
+| polygon |
+| polyhedron |
+
+
+
+ Type of the mesh elements of a SimulationIssueLocation
 
 | enum class CO2_BRINE_CORRELATION |
 
