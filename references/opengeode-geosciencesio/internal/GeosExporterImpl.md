@@ -17,12 +17,6 @@ const name = words.join('-');
 # class GeosExporterImpl
 
 
-## Records
-
-RegionDefinitions
-
-
-
 ## Functions
 
 ### GeosExporterImpl
@@ -42,7 +36,7 @@ public void GeosExporterImpl<Model>(GeosExporterImpl<Model> && )
 ### create_region_definitions
 
 ```cpp
-protected RegionDefinitions create_region_definitions(const Model & model)
+protected GeosRegions create_region_definitions(const Model & model)
 ```
 
 ### operator=
@@ -142,6 +136,13 @@ protected void compute_block_polyhedra_offsets()
 
 ```cpp
 protected void clear_export()
+```
+
+
+### define_regions
+
+```cpp
+protected void define_regions()
 ```
 
 
@@ -292,10 +293,10 @@ protected void duplicate_imported_fields(AttributeManager & cell_attributes)
 ```
 
 
-### validate_problem
+### check_problem
 
 ```cpp
-protected void validate_problem()
+protected void check_problem()
 ```
 
 

@@ -24,14 +24,18 @@ const name = words.join('-');
 * [ECurveData](ECurveData.md)
 * [GEOTIFFInput](GEOTIFFInput.md)
 * [GRDECLInput](GRDECLInput.md)
+* [GeosBoundaryConditions](GeosBoundaryConditions.md)
 * [GeosCellArray](GeosCellArray.md)
 * [GeosCellProperty](GeosCellProperty.md)
 * [GeosDeckContext](GeosDeckContext.md)
+* [GeosExportData](GeosExportData.md)
 * [GeosExporterImpl](GeosExporterImpl.md)
 * [GeosImportedField](GeosImportedField.md)
 * [GeosPorosityGroup](GeosPorosityGroup.md)
 * [GeosRegionAssignment](GeosRegionAssignment.md)
 * [GeosRegion](GeosRegion.md)
+* [GeosRegions](GeosRegions.md)
+* [GeosSimulationChecker](GeosSimulationChecker.md)
 * [GeosSimulationWriter](GeosSimulationWriter.md)
 * [GeosTableFunction](GeosTableFunction.md)
 * [GocadVertexProperties](GocadVertexProperties.md)
@@ -59,6 +63,7 @@ const name = words.join('-');
 * [SHPInput](SHPInput.md)
 * [SolidFemOutput](SolidFemOutput.md)
 * [StratigraphicLSOInput](StratigraphicLSOInput.md)
+* [SurfaceValueGroups](SurfaceValueGroups.md)
 * [TSInput](TSInput.md)
 * [TSOutput](TSOutput.md)
 * [TSurfBorderData](TSurfBorderData.md)
@@ -67,6 +72,7 @@ const name = words.join('-');
 * [VSInput](VSInput.md)
 * [VSOutput](VSOutput.md)
 * [VSetData](VSetData.md)
+* [VariableSurface](VariableSurface.md)
 * [WLInput](WLInput.md)
 * [WellDatInput](WellDatInput.md)
 * [WellDevInput](WellDevInput.md)
@@ -85,13 +91,6 @@ std::string geos_real(double value)
 
  Real value written with the fewest significant digits (at least 15) that read back to the same value
 
-### read_header
-
-```cpp
-HeaderData read_header(std::ifstream & file)
-```
-
-
 ### geos_array
 
 ```cpp
@@ -100,27 +99,6 @@ std::string geos_array(absl::Span<const double> values)
 
 
  GEOS array of reals: "{ a, b, c }"
-
-### clone_with_model_boundaries
-
-```cpp
-Model clone_with_model_boundaries(const Model & model)
-```
-
-
-### read_name
-
-```cpp
-std::string read_name(absl::Span<const std::string_view> tokens)
-```
-
-
-### write_header
-
-```cpp
-void write_header(std::ofstream & file, const HeaderData & data)
-```
-
 
 ### geos_names
 
@@ -131,19 +109,31 @@ std::string geos_names(absl::Span<const std::string> names)
 
  GEOS array of names: "{ a, b, c }"
 
-### geos_solver_option_roles
+### is_valid_geos_list_item
 
 ```cpp
-const absl::flat_hash_map<std::string, std::string> & geos_solver_option_roles()
+bool is_valid_geos_list_item(std::string_view name)
 ```
 
 
- XPath of the generated nodes that "geos" solver options can modify
-
-### set_attribute
+### geos_stress_factor
 
 ```cpp
-void set_attribute(pugi::xml_node & node, std::string_view attribute, std::string_view value)
+double geos_stress_factor(const PhysicalProblem & problem)
+```
+
+
+### transfer_stress_components
+
+```cpp
+void transfer_stress_components(const BRep & model, const ModelToMeshMappings & model2solid, const PhysicalProperties::Info & property_info, std::string_view name, local_index_t first_component, double factor, VariableAttribute<StressTensor> & tensor)
+```
+
+
+### clone_with_model_boundaries
+
+```cpp
+Model clone_with_model_boundaries(const Model & model)
 ```
 
 
@@ -154,10 +144,10 @@ bool check_brep_polygons(const BRep & brep)
 ```
 
 
-### determine_surface_to_regions_sides
+### set_attribute
 
 ```cpp
-RegionSurfaceSide determine_surface_to_regions_sides(const BRep & brep)
+void set_attribute(pugi::xml_node & node, std::string_view attribute, std::string_view value)
 ```
 
 
@@ -175,106 +165,6 @@ void add_comment(pugi::xml_node & node, std::string_view comment)
 ```
 
 
-### geos_isothermal_temperature
-
-```cpp
-std::optional<double> geos_isothermal_temperature(const PhysicalProblem & problem)
-```
-
-
- Temperature of an isothermal GEOS simulation: the one shared by every initial condition, if any
-
-### geos_default_boundary_temperature
-
-```cpp
-std::optional<double> geos_default_boundary_temperature(const PhysicalProblem & problem, const GeosDeckContext & context)
-```
-
-
- GEOS compositional solvers need a temperature on every boundary face set. Returns the temperature to impose when the model has none.
-
-### geos_source_term_name
-
-```cpp
-std::string geos_source_term_name(const SourceTerm & source_term)
-```
-
-
- Name of the GEOS SourceFlux of a source term
-
-### read_elevation_raster
-
-```cpp
-void read_elevation_raster(std::string_view filename, absl::Span<const char *const> allowed_drivers, PolygonalSurface3D & surface)
-```
-
-
- Fill a surface from the first band of a georeferenced raster: one vertex per pixel center with the pixel value as elevation (no data pixels are skipped) and one quad between four neighboring pixels.
-
-### assign_geos_materials
-
-```cpp
-GeosRegionAssignment assign_geos_materials(const PhysicalProblem & problem, const GeosDeckContext & context)
-```
-
-
- Material of each solid region, with the assignment issues
-
-### assign_geos_initial_conditions
-
-```cpp
-GeosRegionAssignment assign_geos_initial_conditions(const PhysicalProblem & problem, const GeosDeckContext & context)
-```
-
-
- Initial condition of each solid region, with the assignment issues
-
-### validate_geos_problem
-
-```cpp
-std::vector<std::string> validate_geos_problem(const PhysicalProblem & problem, absl::Span<const std::string> well_names)
-```
-
-
- GEOS-specific checks of a problem that need no model data, only the names of the well perforations given to the exporter (simulator independent checks are done by validate_physical_problem). Returns one message per issue, empty if valid.
-
-### validate_geos_deck
-
-```cpp
-std::vector<std::string> validate_geos_deck(const PhysicalProblem & problem, const GeosDeckContext & context)
-```
-
-
- GEOS-specific checks of a problem against the model data of the deck (region assignments are checked by assign_geos_materials and assign_geos_initial_conditions). Returns one message per issue, empty if valid.
-
-### is_read_by
-
-```cpp
-bool is_read_by(const PhysicalProblem & problem, PHYSICAL_PROPERTY_NAME property)
-```
-
-
-### mechanics_context_property
-
-```cpp
-std::optional<GeosCellProperty> & mechanics_context_property(GeosDeckContext & context, PHYSICAL_PROPERTY_NAME property)
-```
-
-
-### geos_stress_factor
-
-```cpp
-double geos_stress_factor(const PhysicalProblem & problem)
-```
-
-
-### transfer_stress_components
-
-```cpp
-void transfer_stress_components(const Model & model, const ModelToMeshMappings & model2solid, const PhysicalProperties::Info & property_info, std::string_view name, local_index_t first_component, double factor, VariableAttribute<StressTensor> & tensor)
-```
-
-
 ### copy_typed_block_attribute
 
 ```cpp
@@ -289,6 +179,49 @@ bool copy_block_attribute(const Model & model, absl::Span<const index_t> block_p
 ```
 
 
+### geos_solver_option_roles
+
+```cpp
+const absl::flat_hash_map<std::string, std::string> & geos_solver_option_roles()
+```
+
+
+ XPath of the generated nodes that "geos" solver options can modify
+
+### geos_isothermal_temperature
+
+```cpp
+std::optional<double> geos_isothermal_temperature(const PhysicalProblem & problem)
+```
+
+
+ Temperature of an isothermal GEOS simulation: the one shared by every initial condition, if any
+
+### surface_values
+
+```cpp
+std::optional<std::vector<T>> surface_values(const Surface3D & surface, const uuid & attribute_id)
+```
+
+
+### geos_default_boundary_temperature
+
+```cpp
+std::optional<double> geos_default_boundary_temperature(const PhysicalProblem & problem, const GeosBoundaryConditions & boundary_conditions)
+```
+
+
+ GEOS compositional solvers need a temperature on every boundary face set. Returns the temperature to impose when the model has none.
+
+### geos_source_term_name
+
+```cpp
+std::string geos_source_term_name(const SourceTerm & source_term)
+```
+
+
+ Name of the GEOS SourceFlux of a source term
+
 ### unique_attribute_name
 
 ```cpp
@@ -296,10 +229,114 @@ std::string unique_attribute_name(const AttributeManager & manager, std::string_
 ```
 
 
+### read_elevation_raster
+
+```cpp
+void read_elevation_raster(std::string_view filename, absl::Span<const char *const> allowed_drivers, PolygonalSurface3D & surface)
+```
+
+
+ Fill a surface from the first band of a georeferenced raster: one vertex per pixel center with the pixel value as elevation (no data pixels are skipped) and one quad between four neighboring pixels.
+
 ### transfer_block_attribute
 
 ```cpp
-std::optional<std::string> transfer_block_attribute(const Model & model, SolidMesh3D & solid, absl::Span<const index_t> block_polyhedra_offsets, const PhysicalProperties::Info & property_info, std::string_view geos_name)
+std::optional<std::string> transfer_block_attribute(const BRep & model, SolidMesh3D & solid, absl::Span<const index_t> block_polyhedra_offsets, const PhysicalProperties::Info & property_info, std::string_view geos_name)
+```
+
+
+### assign_geos_materials
+
+```cpp
+GeosRegionAssignment assign_geos_materials(const PhysicalProblem & problem, const BRep & model, const GeosRegions & regions)
+```
+
+
+ Material of each solid region, with the materials GEOS cannot assign. Blocks covered by several materials or by none are not issues here: SimulationChecker reports them.
+
+### geos_boundary_conditions
+
+```cpp
+GeosBoundaryConditions geos_boundary_conditions(const BRep & model)
+```
+
+
+### assign_geos_initial_conditions
+
+```cpp
+GeosRegionAssignment assign_geos_initial_conditions(const PhysicalProblem & problem, const BRep & model, const GeosRegions & regions)
+```
+
+
+ Initial condition of each solid region, assigned as materials are
+
+### group_surface_values
+
+```cpp
+SurfaceValueGroups<T> group_surface_values(const BRep & model, const absl::flat_hash_map<uuid, index_t> & surface_regions, const uuid & attribute_id)
+```
+
+
+### axis_values
+
+```cpp
+std::vector<double> axis_values(absl::Span<const std::array<double, 3>> values, local_index_t axis)
+```
+
+
+### face_center
+
+```cpp
+Point3D face_center(const SurfaceMesh3D & mesh, index_t polygon_id)
+```
+
+
+### table_polygon_nodes
+
+```cpp
+std::vector<index_t> table_polygon_nodes(const TableCoordinates & coordinates, absl::Span<const Point3D> centers)
+```
+
+
+### table_node_polygons
+
+```cpp
+std::vector<index_t> table_node_polygons(const TableCoordinates & coordinates, absl::Span<const index_t> polygon_nodes, absl::Span<const Point3D> centers)
+```
+
+
+### mechanics_context_property
+
+```cpp
+std::optional<GeosCellProperty> & mechanics_context_property(GeosDeckContext & context, PHYSICAL_PROPERTY_NAME property)
+```
+
+
+### read_header
+
+```cpp
+HeaderData read_header(std::ifstream & file)
+```
+
+
+### determine_surface_to_regions_sides
+
+```cpp
+RegionSurfaceSide determine_surface_to_regions_sides(const BRep & brep)
+```
+
+
+### read_name
+
+```cpp
+std::string read_name(absl::Span<const std::string_view> tokens)
+```
+
+
+### write_header
+
+```cpp
+void write_header(std::ofstream & file, const HeaderData & data)
 ```
 
 
@@ -340,6 +377,13 @@ void create_attributes(const PropHeaderData & attributes_header, absl::Span<cons
 ```
 
 
+### separating_table_coordinates
+
+```cpp
+std::optional<TableCoordinates> separating_table_coordinates(absl::Span<const Point3D> centers)
+```
+
+
 ### write_prop_header
 
 ```cpp
@@ -354,14 +398,12 @@ void write_property_class_header(std::ofstream & file, const PropClassHeaderData
 ```
 
 
-### assign_geos_regions
+### write_table_values
 
 ```cpp
-GeosRegionAssignment assign_geos_regions(const GeosDeckContext & context, absl::Span<const absl::Span<const uuid>> item_regions, std::string_view item_kind)
+void write_table_values(const std::string & filename, absl::Span<const double> values)
 ```
 
-
- Assigns items to regions: items with regions first, then the default item (no region) to the remaining regions.
 
 ### read_tsurf
 

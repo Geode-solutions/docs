@@ -11,28 +11,23 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct RegionDefinitions
+# struct VariableSurface
 
 
 ## Members
 
 ```cpp
-public flat_hash_map block_regions
+public const geode::Surface3D * surface
 
 ```
 
 ```cpp
-public vector regions
+public geode::index_t region_id
 
 ```
 
 ```cpp
-public flat_hash_map regions_by_uuid
-
-```
-
-```cpp
-public flat_hash_map merged_blocks
+public std::vector<T> values
 
 ```
 

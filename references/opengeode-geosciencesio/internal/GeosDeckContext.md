@@ -21,17 +21,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public vector solid_regions
-
-```
-
-```cpp
-public flat_hash_map regions_by_uuid
-
-```
-
-```cpp
-public flat_hash_map merged_blocks
+public GeosRegions regions
 
 ```
 
@@ -56,17 +46,7 @@ public optional mean_permeability
 ```
 
 ```cpp
-public vector boundary_fraction_phases
-
-```
-
-```cpp
-public bool has_boundary_pressure
-
-```
-
-```cpp
-public bool has_boundary_temperature
+public GeosBoundaryConditions boundary_conditions
 
 ```
 
