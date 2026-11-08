@@ -52,5 +52,16 @@ public std::vector<Point<dimension>> transform(const GeographicCoordinateSystem<
 
 **exception**if a point cannot be transformed.
 
+### transform
+
+```cpp
+public std::vector<Point<dimension>> transform(absl::Span<const Point<dimension>> points)
+```
+
+
+ Return the transformed coordinates of the given points.
+
+**exception**if a point cannot be transformed.
+
 
 

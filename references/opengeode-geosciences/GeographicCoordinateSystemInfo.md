@@ -42,13 +42,6 @@ public void GeographicCoordinateSystemInfo(std::string authority_in, std::string
 ```
 
 
-### authority_code
-
-```cpp
-public std::string authority_code()
-```
-
-
 ### GeographicCoordinateSystemInfo
 
 ```cpp
@@ -60,6 +53,24 @@ public void GeographicCoordinateSystemInfo()
 
 ```cpp
 public void ~GeographicCoordinateSystemInfo()
+```
+
+
+### from_authority_code
+
+```cpp
+public static GeographicCoordinateSystemInfo from_authority_code(std::string_view authority_code)
+```
+
+
+ Create the info from an authority code like "EPSG:4326". A code without authority (e.g. "4326") is considered as an EPSG code.
+
+**exception**if the code is unknown.
+
+### authority_code
+
+```cpp
+public std::string authority_code()
 ```
 
 

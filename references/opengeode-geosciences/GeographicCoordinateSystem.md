@@ -31,13 +31,6 @@ Inherits from AttributeCoordinateReferenceSystem<dimension>
 
 ## Functions
 
-### GeographicCoordinateSystem
-
-```cpp
-public void GeographicCoordinateSystem<dimension>(AttributeManager & manager, GeographicCoordinateSystemInfo info)
-```
-
-
 ### type_name_static
 
 ```cpp
@@ -49,6 +42,13 @@ public static CRSType type_name_static()
 
 ```cpp
 public CRSType type_name()
+```
+
+
+### GeographicCoordinateSystem
+
+```cpp
+public void GeographicCoordinateSystem<dimension>(AttributeManager & manager, GeographicCoordinateSystemInfo info)
 ```
 
 

@@ -44,6 +44,7 @@ const name = words.join('-');
 * [FluidThermalProperties](FluidThermalProperties.md)
 * [GeographicCoordinateSystemInfo](GeographicCoordinateSystemInfo.md)
 * [GeographicCoordinateSystem](GeographicCoordinateSystem.md)
+* [GeographicGridCoordinateSystem](GeographicGridCoordinateSystem.md)
 * [Horizon](Horizon.md)
 * [HorizonsBuilder](HorizonsBuilder.md)
 * [HorizonsStackBuilder](HorizonsStackBuilder.md)
@@ -280,13 +281,6 @@ std::vector<std::string> save_physical_problem(const PhysicalProblem & problem, 
 
 **filename** [in] Path to the file where save the PhysicalProblem.
 
-### assign_edged_curve_geographic_coordinate_system_info
-
-```cpp
-void assign_edged_curve_geographic_coordinate_system_info(const EdgedCurve<dimension> & mesh, EdgedCurveBuilder<dimension> & builder, std::string_view crs_name, GeographicCoordinateSystemInfo info)
-```
-
-
 ### phase_name
 
 ```cpp
@@ -380,6 +374,13 @@ void register_simulation_leaf(PContext & context)
 
 
  Register a leaf class so that it can be saved through a pointer to its base. The leaf type name is written in files: it must never change. Libraries defining their own leaf classes call this from a function given to BitseryExtensions::register_functions. Such leaf classes are saved and loaded like the built-in ones, but validate_physical_problem does not check their content, and simulator writers reject the leaf classes they do not support.
+
+### assign_edged_curve_geographic_coordinate_system_info
+
+```cpp
+void assign_edged_curve_geographic_coordinate_system_info(const EdgedCurve<dimension> & mesh, EdgedCurveBuilder<dimension> & builder, std::string_view crs_name, GeographicCoordinateSystemInfo info)
+```
+
 
 ### register_simulation_serialize_pcontext
 
@@ -534,13 +535,6 @@ bool is_physical_problem_saveable(const PhysicalProblem & problem, std::string_v
 ```
 
 
-### assign_solid_mesh_geographic_coordinate_system_info
-
-```cpp
-void assign_solid_mesh_geographic_coordinate_system_info(const SolidMesh<dimension> & mesh, SolidMeshBuilder<dimension> & builder, std::string_view crs_name, GeographicCoordinateSystemInfo info)
-```
-
-
 ### implicit_cross_section_object_priority
 
 ```cpp
@@ -566,6 +560,13 @@ index_t stratigraphic_model_object_priority(std::string_view filename)
 
 ```cpp
 index_t stratigraphic_section_object_priority(std::string_view filename)
+```
+
+
+### assign_solid_mesh_geographic_coordinate_system_info
+
+```cpp
+void assign_solid_mesh_geographic_coordinate_system_info(const SolidMesh<dimension> & mesh, SolidMeshBuilder<dimension> & builder, std::string_view crs_name, GeographicCoordinateSystemInfo info)
 ```
 
 
@@ -655,17 +656,17 @@ ComponentType physical_property_component_type(PHYSICAL_PROPERTY_NAME property)
 
  Component type simulators read the property on: Blocks (polyhedra) for rock and initial stress properties, Surfaces (polygons) for boundary conditions
 
-### assign_surface_mesh_geographic_coordinate_system_info
-
-```cpp
-void assign_surface_mesh_geographic_coordinate_system_info(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder, std::string_view crs_name, GeographicCoordinateSystemInfo info)
-```
-
-
 ### horizons_stack_object_priority
 
 ```cpp
 index_t horizons_stack_object_priority(std::string_view filename)
+```
+
+
+### assign_surface_mesh_geographic_coordinate_system_info
+
+```cpp
+void assign_surface_mesh_geographic_coordinate_system_info(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder, std::string_view crs_name, GeographicCoordinateSystemInfo info)
 ```
 
 
@@ -742,6 +743,24 @@ std::optional<index_t> phase_component(const FluidModel & fluid, PHASE phase)
 
 
  Component carried by a phase. It is defined when the fluid has one component per phase, in the phase order (e.g. dead oil or CO2-brine). Simulator writers use it to translate phase-based data, such as boundary fluid fractions, into component indices.
+
+### assign_light_regular_grid_geographic_coordinate_system_info
+
+```cpp
+void assign_light_regular_grid_geographic_coordinate_system_info(LightRegularGrid<dimension> & grid, std::string_view crs_name, GeographicCoordinateSystemInfo info)
+```
+
+
+ Replace the active CRS of the grid by a geographic one with the same coordinate system.
+
+### convert_light_regular_grid_coordinate_reference_system
+
+```cpp
+void convert_light_regular_grid_coordinate_reference_system(LightRegularGrid<dimension> & grid, std::string_view crs_name, GeographicCoordinateSystemInfo info)
+```
+
+
+ Register and activate a new geographic CRS on the grid, converted from the active geographic CRS. The grid remains regular: its origin and the far end of each axis are converted, which is exact only for affine conversions.
 
 ### simulation_check_stage_string
 
