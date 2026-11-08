@@ -71,5 +71,16 @@ protected void TetrahedralSolidInternalDistanceOptimizer(TetrahedralSolidConstra
 ```
 
 
+### elements_to_requeue
+
+```cpp
+protected std::vector<index_t> elements_to_requeue(absl::Span<const index_t> new_elements)
+```
+
+
+ Tetrahedra to queue again after a modification.
+
+**new_elements** [in] Active tetrahedra created by the modification, their metric is already reset. Default: all the tetrahedra around the vertices of new_elements.
+
 
 

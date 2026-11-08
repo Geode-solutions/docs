@@ -21,5 +21,10 @@ public array inactive_tetrahedra
 
 ```
 
+```cpp
+public bool removed_vertex
+
+```
+
 
 

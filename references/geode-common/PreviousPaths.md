@@ -17,25 +17,14 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public unique_ptr previous_path
+public const SolidPath * previous_path
 
 ```
 
 ```cpp
-public unique_ptr current_path
+public const SolidPath * current_path
 
 ```
-
-
-
-## Functions
-
-### PreviousPaths
-
-```cpp
-public void PreviousPaths()
-```
-
 
 
 

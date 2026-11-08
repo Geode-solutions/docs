@@ -11,45 +11,25 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class Points
+# struct BorderEdge
 
 
-## Functions
-
-### Points
+## Members
 
 ```cpp
-public void Points<dimension, nb_points>(Vertices points)
+public array vertices
+
 ```
-
-
-### Points
 
 ```cpp
-public void Points<dimension, nb_points>(const RefVertices & points)
+public index_t facet
+
 ```
-
-
-### barycenter
 
 ```cpp
-public Point<dimension> barycenter()
+public local_index_t opposite
+
 ```
-
-
-### point
-
-```cpp
-public const Point<dimension> & point(local_index_t position)
-```
-
-
-### operator==
-
-```cpp
-public bool operator==(const PointsType & other)
-```
-
 
 
 

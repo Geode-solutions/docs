@@ -26,6 +26,11 @@ public PolyhedronFacet facet
 
 ```
 
+```cpp
+public InlinedVector vertices
+
+```
+
 
 
 ## Functions
@@ -33,7 +38,7 @@ public PolyhedronFacet facet
 ### FacetSplit
 
 ```cpp
-public void FacetSplit(Point3D location_in, PolyhedronFacet facet_in)
+public void FacetSplit(Point3D location_in, PolyhedronFacet facet_in, PolyhedronFacetVertices vertices_in)
 ```
 
 

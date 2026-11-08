@@ -32,6 +32,8 @@ BRepSwapEdgeInfo
 
 BRepSwapFacetInfo
 
+BRepSwapFacetsInfo
+
 
 
 ## Functions
@@ -161,6 +163,15 @@ public BRepSplitPolygonEdgeInfo split_edge(const Line3D & line, index_t edge, co
 public BRepSwapFacetInfo swap_facet(const Block3D & block, const PolyhedronFacet & facet)
 ```
 
+
+### swap_facets
+
+```cpp
+public BRepSwapFacetsInfo swap_facets(const Block3D & block, absl::Span<const PolyhedronFacet> facets)
+```
+
+
+ Multi-face removal in a Block, see TetrahedralSolidModifier::swap_facets. The facets are inside the Block mesh, so only this mesh is modified.
 
 ### swap_edge
 

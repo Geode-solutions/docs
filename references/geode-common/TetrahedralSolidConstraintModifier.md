@@ -133,6 +133,17 @@ public std::vector<index_t> swap_facet(const PolyhedronFacet & facet, const std:
 ```
 
 
+### swap_facets
+
+```cpp
+public std::vector<index_t> swap_facets(absl::Span<const PolyhedronFacet> facets)
+```
+
+
+ Multi-face removal, see TetrahedralSolidModifier::swap_facets.
+
+**return** the new tetrahedra.
+
 ### split_collapse_edge
 
 ```cpp

@@ -11,24 +11,45 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct PointsHash
+# struct SwapFacetsInfo
 
 
-## Functions
-
-### operator()
+## Members
 
 ```cpp
-public size_t operator()(const Points<dimension, nb_points> & a)
+public vector inactive_tetrahedra
+
 ```
-
-
-### operator()
 
 ```cpp
-public size_t operator()(const RefPoints<dimension, nb_points> & a)
+public vector new_tetrahedra
+
 ```
 
+```cpp
+public vector modified
+
+```
+
+```cpp
+public vector added
+
+```
+
+```cpp
+public vector removed
+
+```
+
+```cpp
+public array edge_vertices
+
+```
+
+```cpp
+public vector facets_vertices
+
+```
 
 
 

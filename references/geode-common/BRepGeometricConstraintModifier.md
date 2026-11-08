@@ -128,6 +128,15 @@ public absl::flat_hash_map<uuid, std::vector<index_t>> swap_facet(const Block3D 
 ```
 
 
+### swap_facets
+
+```cpp
+public absl::flat_hash_map<uuid, std::vector<index_t>> swap_facets(const Block3D & block, absl::Span<const PolyhedronFacet> facets)
+```
+
+
+ Multi-face removal in a Block, see TetrahedralSolidModifier::swap_facets.
+
 ### split_facet
 
 ```cpp
@@ -202,6 +211,13 @@ protected std::tuple<absl::flat_hash_map<uuid, std::vector<index_t>>, BRepGeomet
 
 ```cpp
 protected std::tuple<absl::flat_hash_map<uuid, std::vector<index_t>>, BRepGeometricModifier::BRepSwapFacetInfo> do_swap_facet(const Block3D & block, const PolyhedronFacet & facet, const BRepFacetTShape & tshape_apexes)
+```
+
+
+### do_swap_facets
+
+```cpp
+protected std::tuple<absl::flat_hash_map<uuid, std::vector<index_t>>, BRepGeometricModifier::BRepSwapFacetsInfo> do_swap_facets(const Block3D & block, absl::Span<const PolyhedronFacet> facets)
 ```
 
 

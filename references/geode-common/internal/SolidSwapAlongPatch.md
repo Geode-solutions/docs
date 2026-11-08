@@ -57,17 +57,17 @@ public SolidSwapAlongPatch & operator=(SolidSwapAlongPatch && )
 ```
 
 
-### swap
-
-```cpp
-public SolidSwapPatchInfo swap()
-```
-
-
 ### ~SolidSwapAlongPatch
 
 ```cpp
 public void ~SolidSwapAlongPatch()
+```
+
+
+### swap
+
+```cpp
+public SolidSwapPatchInfo swap()
 ```
 
 

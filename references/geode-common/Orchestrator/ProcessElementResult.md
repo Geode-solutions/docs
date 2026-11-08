@@ -14,6 +14,10 @@ const name = words.join('-');
 # struct ProcessElementResult
 
 
+ Result of process_element. A failure (success = false) without any retry or new element drops the element: it is neither retried nor counted as a failure.
+
+
+
 ## Members
 
 ```cpp

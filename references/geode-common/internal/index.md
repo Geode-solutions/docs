@@ -28,6 +28,8 @@ const name = words.join('-');
 * [SolidSwapAlongPatch](SolidSwapAlongPatch.md)
 * [SolidSwapAlongPath](SolidSwapAlongPath.md)
 * [SurfaceMeshFusion](SurfaceMeshFusion.md)
+* [SwapFacetsConfiguration](SwapFacetsConfiguration.md)
+* [SwapFacetsSearch](SwapFacetsSearch.md)
 
 
 ## Functions
@@ -101,6 +103,15 @@ void rotate_one_ring_from_apex(absl::FixedArray<index_t> & one_ring_vertices, in
 std::vector<index_t> intersect_one_ring_vertices(const SolidMesh3D & mesh, index_t vertex0, index_t vertex1)
 ```
 
+
+### swap_facets_configuration
+
+```cpp
+std::optional<SwapFacetsConfiguration> swap_facets_configuration(const TetrahedralSolid3D & mesh, absl::Span<const PolyhedronFacet> facets)
+```
+
+
+ Compute the configuration of a multi-face removal, std::nullopt if the facets do not form a valid configuration (facet on border, different apexes, repeated facet, polygon not a disk whose vertices are all on its border).
 
 ### invalid_collapse_edges
 

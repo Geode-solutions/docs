@@ -11,22 +11,29 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct PointsCmp
+# struct BRepSwapFacetsValidity
+
+
+## Members
+
+```cpp
+public SurfaceSwapFacetValidities surface_validities
+
+```
+
+```cpp
+public BlockSwapFacetsValidities block_validities
+
+```
+
 
 
 ## Functions
 
-### operator()
+### operator bool
 
 ```cpp
-public bool operator()(const Points<dimension, nb_points> & a, const Points<dimension, nb_points> & b)
-```
-
-
-### operator()
-
-```cpp
-public bool operator()(const Points<dimension, nb_points> & a, const RefPoints<dimension, nb_points> & b)
+public bool operator bool()
 ```
 
 

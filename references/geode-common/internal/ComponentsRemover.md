@@ -19,13 +19,6 @@ const name = words.join('-');
 ### ComponentsRemover
 
 ```cpp
-public void ComponentsRemover(geode::BRep & model, const geode::RemoveComponentsOptions & options)
-```
-
-
-### ComponentsRemover
-
-```cpp
 public void ComponentsRemover(const ComponentsRemover & )
 ```
 
@@ -34,6 +27,34 @@ public void ComponentsRemover(const ComponentsRemover & )
 
 ```cpp
 public void ComponentsRemover(ComponentsRemover && )
+```
+
+
+### operator=
+
+```cpp
+public ComponentsRemover & operator=(const ComponentsRemover & )
+```
+
+
+### operator=
+
+```cpp
+public ComponentsRemover & operator=(ComponentsRemover && )
+```
+
+
+### ~ComponentsRemover
+
+```cpp
+public void ~ComponentsRemover()
+```
+
+
+### ComponentsRemover
+
+```cpp
+public void ComponentsRemover(geode::BRep & model, const geode::RemoveComponentsOptions & options)
 ```
 
 
@@ -61,20 +82,6 @@ public std::optional<uuid> get_line_to_remove()
 public std::optional<uuid> get_corner_to_remove()
 ```
 
-### operator=
-
-```cpp
-public ComponentsRemover & operator=(const ComponentsRemover & )
-```
-
-
-### operator=
-
-```cpp
-public ComponentsRemover & operator=(ComponentsRemover && )
-```
-
-
 ### remove_components
 
 ```cpp
@@ -89,24 +96,17 @@ protected const BRep & model()
 ```
 
 
-### builder
-
-```cpp
-protected BRepBuilder & builder()
-```
-
-
-### ~ComponentsRemover
-
-```cpp
-public void ~ComponentsRemover()
-```
-
-
 ### have_same_incidences
 
 ```cpp
 protected bool have_same_incidences(const ComponentType & component_1, const ComponentType & component_2)
+```
+
+
+### builder
+
+```cpp
+protected BRepBuilder & builder()
 ```
 
 

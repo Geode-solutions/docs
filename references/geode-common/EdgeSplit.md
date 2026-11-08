@@ -26,6 +26,11 @@ public PolyhedronFacetEdge edge
 
 ```
 
+```cpp
+public array vertices
+
+```
+
 
 
 ## Functions
@@ -33,7 +38,7 @@ public PolyhedronFacetEdge edge
 ### EdgeSplit
 
 ```cpp
-public void EdgeSplit(Point3D location_in, PolyhedronFacetEdge edge_in)
+public void EdgeSplit(Point3D location_in, PolyhedronFacetEdge edge_in, std::array<index_t, 2> vertices_in)
 ```
 
 

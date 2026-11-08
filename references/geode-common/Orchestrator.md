@@ -21,6 +21,16 @@ public static const bool ACTIVE_DEBUG
 
 ```
 
+```cpp
+public static const index_t SAFETY_COUNT_PER_ELEMENT
+
+```
+
+```cpp
+public static const index_t MINIMAL_SAFETY_COUNT
+
+```
+
 
 
 ## Records

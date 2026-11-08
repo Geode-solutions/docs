@@ -24,6 +24,8 @@ Inherits from VerticesModifier, EdgesModifier, FacetsModifier, TetrahedraModifie
 
 AlongSplitEdgeInfo
 
+CavityInfo
+
 CleanMappings
 
 CollapseEdgeInfo
@@ -43,6 +45,8 @@ SplitInfo
 SwapEdgeInfo
 
 SwapFacetInfo
+
+SwapFacetsInfo
 
 
 
@@ -241,6 +245,21 @@ public SwapFacetInfo swap_facet(const PolyhedronFacet & facet)
 
 **warning** Old tetrahedra are set as inactive but not deleted.
 
+### swap_facets
+
+```cpp
+public SwapFacetsInfo swap_facets(absl::Span<const PolyhedronFacet> facets)
+```
+
+
+ Multi-face removal, generalization of swap_facet and inverse of swap_edge. The m given facets form a triangulated polygon whose vertices are all on its border. Each facet is given from the tetrahedron containing the apex a (vertex opposite to the facet), the tetrahedron across the facet contains the apex b. These 2m tetrahedra are set as inactive and replaced by the m+2 tetrahedra around the new edge ab, one for each border edge of the polygon. With m = 1, this is swap_facet.
+
+**facets** [in] The PolyhedronFacets to remove.
+
+**warning** Old tetrahedra are set as inactive but not deleted.
+
+**warning** The edge ab should not exist in the mesh (see swap_facets_validity): it is not checked and would be duplicated.
+
 ### swap_edge
 
 ```cpp
@@ -255,6 +274,23 @@ public SwapEdgeInfo swap_edge(const PolyhedronFacetEdge & edge, index_t apex)
 **apex** [in] Index of the vertex used as the new facets fan common vertex.
 
 **warning** Old tetrahedra are set as inactive but not deleted.
+
+### insert_vertex_in_cavity
+
+```cpp
+public CavityInfo insert_vertex_in_cavity(absl::Span<const index_t> cavity, const Point3D & point)
+```
+
+
+ Replace a star-shaped set of tetrahedra by the tetrahedra linking a new vertex to the boundary facets of this set.
+
+**cavity** [in] Indices of the tetrahedra to replace.
+
+**point** [in] Coordinates of the new vertex.
+
+**warning** Cavity tetrahedra are set as inactive but not deleted.
+
+**return** new vertex index and mappings between old and new mesh.
 
 ### remove_double_adjacency
 

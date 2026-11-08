@@ -64,6 +64,15 @@ public void ~TetrahedralSolidOptimizer()
 ```
 
 
+### try_multi_face_removal
+
+```cpp
+protected std::optional<ProcessElementResult> try_multi_face_removal(index_t tetrahedron_id)
+```
+
+
+ Multi-face removal (TetrahedralSolidModifier::swap_facets) seeded at each facet of the tetrahedron, the facets chosen by the dynamic programming of Shewchuk ("Two Discrete Optimization Algorithms for the Topological Improvement of Tetrahedral Meshes", 2002) to maximize the worst metric of the new tetrahedra. The best one that improves the metric and is allowed (allowed_swap_facets) is applied. Not called by the optimizer itself: a derived optimizer calls it from the configuration processing where it is useful. The edge-edge tetrahedra are slivers (flat, with two almost crossing edges): no single face swap is valid on them, but a multi-face removal can add an edge between the apexes on both sides of the sliver, so a call from process_edge_edge_configuration, after the base one failed, improves them. It costs time (about 20% more on large meshes). A derived optimizer whose modifier or constraints differ from the TetrahedralSolid ones should override allowed_swap_facets and handle TetrahedralSolidModifier::swap_facets before calling it.
+
 ### process_vertex_vertex_configuration
 
 ```cpp
