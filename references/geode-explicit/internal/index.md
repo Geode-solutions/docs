@@ -39,6 +39,20 @@ const name = words.join('-');
 
 ## Functions
 
+### output_subgraphs
+
+```cpp
+void output_subgraphs(const Graph & graph, absl::Span<const index_t> subgraph_ids, index_t nb_subgraph)
+```
+
+
+### corefine_surface_triangles
+
+```cpp
+std::optional<ExtractedMeshes> corefine_surface_triangles(const BRep & brep, const MeshElements & elements)
+```
+
+
 ### extract_macro_info
 
 ```cpp
@@ -120,13 +134,6 @@ StitchingMappings perform_curve_stitching(const EdgedCurve3D & curve, EdgedCurve
 
 ```cpp
 StitchingMappings perform_edge_stitching(const EdgedCurve3D & curve, EdgedCurveModifier3D & modifier, index_t edge_id, absl::Span<const Point3D> points, double threshold)
-```
-
-
-### output_subgraphs
-
-```cpp
-void output_subgraphs(const Graph & graph, absl::Span<const index_t> subgraph_ids, index_t nb_subgraph)
 ```
 
 
