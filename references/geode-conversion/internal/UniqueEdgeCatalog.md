@@ -22,12 +22,12 @@ public linked_hash_map unique_edge_indexation
 ```
 
 ```cpp
-public linked_hash_map unique_edge_to_surface_edges
+public vector unique_edge_to_surface_edges
 
 ```
 
 ```cpp
-public linked_hash_map unique_edge_to_unique_polygon_vertices
+public vector unique_edge_to_unique_polygon_vertices
 
 ```
 

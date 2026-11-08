@@ -101,6 +101,13 @@ public const uuid & line_uuid(index_t wireframe_edge_id)
 ```
 
 
+### is_line_edge
+
+```cpp
+public bool is_line_edge(index_t wireframe_edge_id)
+```
+
+
 ### corner_uuid
 
 ```cpp

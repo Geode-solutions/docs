@@ -46,6 +46,10 @@ public ModelMappings update_model()
 ```
 
 
+ Rebuilds the model topology from its unique vertices.
+
+**return** the mappings from the input components and their mesh items to the output ones. An item absent from the mesh mappings is unchanged, and this applies per item: a component listed in unchanged_components may still have item-level mappings when its mesh elements or vertices were renumbered.
+
 
 
 # class ModelBuilderFromUniqueVertices
