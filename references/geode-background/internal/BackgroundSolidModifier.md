@@ -120,6 +120,13 @@ public SwapEdgeInfo swap_edge(const PolyhedronFacetEdge & edge, index_t apex)
 ```
 
 
+### insert_vertex_in_cavity
+
+```cpp
+public CavityInfo insert_vertex_in_cavity(absl::Span<const index_t> cavity, const Point3D & point)
+```
+
+
 ### clean_tetrahedra
 
 ```cpp

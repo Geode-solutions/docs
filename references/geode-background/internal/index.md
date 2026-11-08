@@ -319,24 +319,10 @@ void shift_optimize_background_solid_elements(BackgroundSolidConstraintModifier 
 ```
 
 
-### is_edge_removal_allowed_by_macro_info
-
-```cpp
-bool is_edge_removal_allowed_by_macro_info(const BackgroundSurface & surface, const PolygonEdge & edge, const std::optional<PolygonVertex> & tshape_apex)
-```
-
-
 ### is_edge_removal_allowed_by_mandatory_macro_info
 
 ```cpp
 bool is_edge_removal_allowed_by_mandatory_macro_info(const BackgroundSurface & surface, const PolygonEdge & edge, const std::optional<PolygonVertex> & tshape_apex)
-```
-
-
-### epsilon_optimize_background_solid_elements
-
-```cpp
-std::vector<index_t> epsilon_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, TetrahedralSolidBuilder3D & builder, absl::Span<const index_t> tetrahedra)
 ```
 
 
@@ -372,6 +358,20 @@ ALLOWED_COLLAPSE_EDGE_VERTEX allowed_split_collapse_edge_by_macro_info(const Bac
 
 ```cpp
 std::vector<BlockElement<index_t>> optimize_background_brep_elements(BackgroundBRepGeometricConstraintModifier & constraint_modifier, const BRepInternalDistanceImprovementSimulator & improvement_simulator, absl::Span<const BlockElement<index_t>> tetrahedra)
+```
+
+
+### is_edge_removal_allowed_by_macro_info
+
+```cpp
+bool is_edge_removal_allowed_by_macro_info(const BackgroundSurface & surface, const PolygonEdge & edge, const std::optional<PolygonVertex> & tshape_apex)
+```
+
+
+### epsilon_optimize_background_solid_elements
+
+```cpp
+std::vector<index_t> epsilon_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, TetrahedralSolidBuilder3D & builder, absl::Span<const index_t> tetrahedra)
 ```
 
 
@@ -572,6 +572,17 @@ SurfaceSplitsOrders find_split_orders(CorafinatedSurface & corafinated_surface, 
 SolidSplitInfo do_corafinated_solid_splits(CorafinatedSurface & corafinated_surface, SurfaceSkinSplitsOrders & split_orders)
 ```
 
+
+### do_corafinated_solid_splits
+
+```cpp
+SolidSplitInfo do_corafinated_solid_splits(CorafinatedSurface & corafinated_surface, BackgroundSolidBuilder & solid_builder, SurfaceSkinSplitsOrders & split_orders)
+```
+
+
+ Same as above, then makes each skin triangulation match the solid facets, swapping solid edges when the other skin splits modified a shared edge.
+
+**exception**if a skin cannot be matched.
 
 ### vertex_skins_solid_mapping
 
