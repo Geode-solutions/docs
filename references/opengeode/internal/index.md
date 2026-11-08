@@ -21,6 +21,7 @@ const name = words.join('-');
 * [CollectionComponentsRegistrator](CollectionComponentsRegistrator.md)
 * [ComponentsExistenceChecker](ComponentsExistenceChecker.md)
 * [ComponentsTypesChecker](ComponentsTypesChecker.md)
+* [CoordinateReferenceSystemManagerImpl](CoordinateReferenceSystemManagerImpl.md)
 * [EdgesImpl](EdgesImpl.md)
 * [FacetEdgesImpl](FacetEdgesImpl.md)
 * [GridImpl](GridImpl.md)

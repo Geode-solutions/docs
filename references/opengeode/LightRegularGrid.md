@@ -48,21 +48,21 @@ public std::string_view native_extension()
 ### LightRegularGrid
 
 ```cpp
-public void LightRegularGrid<dimension>(Point<dimension> origin, std::array<index_t, dimension> cells_number, std::array<double, dimension> cells_length)
+public void LightRegularGrid<value-parameter-0-0>(Point<dimension> origin, std::array<index_t, dimension> cells_number, std::array<double, dimension> cells_length)
 ```
 
 
 ### LightRegularGrid
 
 ```cpp
-public void LightRegularGrid<dimension>(Point<dimension> origin, std::array<index_t, dimension> cells_number, std::array<Vector<dimension>, dimension> directions)
+public void LightRegularGrid<value-parameter-0-0>(Point<dimension> origin, std::array<index_t, dimension> cells_number, std::array<Vector<dimension>, dimension> directions)
 ```
 
 
 ### LightRegularGrid
 
 ```cpp
-public void LightRegularGrid<dimension>(LightRegularGrid<dimension> && other)
+public void LightRegularGrid<value-parameter-0-0>(LightRegularGrid<dimension> && other)
 ```
 
 
@@ -76,7 +76,7 @@ public LightRegularGrid<dimension> & operator=(LightRegularGrid<dimension> && ot
 ### ~LightRegularGrid
 
 ```cpp
-public void ~LightRegularGrid<dimension>()
+public void ~LightRegularGrid<value-parameter-0-0>()
 ```
 
 
@@ -147,6 +147,20 @@ public BoundingBox<dimension> bounding_box()
 
 ```cpp
 public LightRegularGrid<dimension> clone()
+```
+
+
+### grid_coordinate_reference_system_manager
+
+```cpp
+public const GridCoordinateReferenceSystemManager<dimension> & grid_coordinate_reference_system_manager()
+```
+
+
+### modifiable_grid_coordinate_reference_system_manager
+
+```cpp
+public GridCoordinateReferenceSystemManager<dimension> & modifiable_grid_coordinate_reference_system_manager(GridCRSManagerBuilderKey )
 ```
 
 

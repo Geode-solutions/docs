@@ -111,6 +111,15 @@ public std::unique_ptr<TetrahedralSolid<dimension>> clone()
 ```
 
 
+### polyhedron_vertices
+
+```cpp
+public PolyhedronVertices polyhedron_vertices(index_t polyhedron_id)
+```
+
+
+ Return the four vertices of the tetrahedron in one call. Same result as SolidMesh::polyhedron_vertices.
+
 ### polyhedron_edges_vertices
 
 ```cpp

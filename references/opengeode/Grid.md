@@ -56,6 +56,12 @@ public void Grid<value-parameter-0-0>(const Grid<dimension> & )
 ```
 
 
+### cell_attribute_manager
+
+```cpp
+public AttributeManager & cell_attribute_manager()
+```
+
 ### operator=
 
 ```cpp
@@ -76,6 +82,15 @@ public local_index_t nb_cell_vertices()
 public static local_index_t nb_cell_vertices_static()
 ```
 
+
+### grid_coordinate_system_changed
+
+```cpp
+protected void grid_coordinate_system_changed()
+```
+
+
+ Called after any modification of the grid coordinate system
 
 ### ~Grid
 
@@ -233,12 +248,6 @@ public CellsAroundVertex cells(const Point<dimension> & query)
 public CellsAroundVertex cells_around(VertexIndices vertex_indices)
 ```
 
-
-### cell_attribute_manager
-
-```cpp
-public AttributeManager & cell_attribute_manager()
-```
 
 ### grid_vertex_attribute_manager
 

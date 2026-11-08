@@ -499,6 +499,19 @@ public std::optional<PolygonEdge> polygon_edge_from_vertices(index_t from_vertex
 
 **return** Local index if the edge is found.
 
+### polygon_edge_from_edge_vertices
+
+```cpp
+public std::optional<PolygonEdge> polygon_edge_from_edge_vertices(const std::array<index_t, 2> & edge_vertices)
+```
+
+
+ Find one polygon edge corresponding to an unordered pair of vertex indices.
+
+**edge_vertices** [in] Indices of the two edge vertices, in any order
+
+**return** Local index of one of the edges if found.
+
 ### segment
 
 ```cpp
