@@ -11,37 +11,30 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class BlockTetgenMesher
+# struct RelaxFlipsResult
 
 
-```cpp
-Inherits from TetgenMesher
-```
-
-
-
-## Functions
-
-### BlockTetgenMesher
+## Members
 
 ```cpp
-public void BlockTetgenMesher(const BRep & brep, BRepBuilder & builder, const Block3D & block, std::vector<Point3D> && internal_points)
+public index_t nb_processed
+
 ```
-
-
-### ~BlockTetgenMesher
 
 ```cpp
-public void ~BlockTetgenMesher()
+public index_t nb_single_flips
+
 ```
-
-
-### tetrahedralize
 
 ```cpp
-public std::tuple<RemeshedCMV, Mappings> tetrahedralize()
+public index_t nb_multi_face_removals
+
 ```
 
+```cpp
+public index_t nb_nested_flips
+
+```
 
 
 

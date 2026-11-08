@@ -23,6 +23,18 @@ public static const auto dimension
 
 
 
+# class SamplingData
+
+
+## Members
+
+```cpp
+public static const auto dimension
+
+```
+
+
+
 ## Functions
 
 ### SamplingData
@@ -136,18 +148,6 @@ public std::vector<index_t> updated_triangles(const Surface<dimension> & surface
 public std::vector<index_t> updated_tetrahedra(const Block<dimension> & block, index_t tetrahedron)
 ```
 
-
-
-
-# class SamplingData
-
-
-## Members
-
-```cpp
-public static const auto dimension
-
-```
 
 
 

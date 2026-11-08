@@ -155,7 +155,7 @@ protected std::optional<std::tuple<Point<dimension>, index_t>> should_snap_on_ma
 
 
 ```cpp
-Inherits from RemeshAlgo<3U>
+Inherits from RemeshAlgo<2U>
 ```
 
 
@@ -164,7 +164,7 @@ Inherits from RemeshAlgo<3U>
 
 
 ```cpp
-Inherits from RemeshAlgo<2U>
+Inherits from RemeshAlgo<3U>
 ```
 
 

@@ -59,6 +59,7 @@ const name = words.join('-');
 * [GeodeSimplexSurfaceCommonLibrary](GeodeSimplexSurfaceCommonLibrary.md)
 * [GeometricSurfacePath](GeometricSurfacePath.md)
 * [PolygonEdge](PolygonEdge.md)
+* [RelaxOptions](RelaxOptions.md)
 * [RemeshingData](RemeshingData.md)
 * [SamplingData](SamplingData.md)
 * [SectionAnisotropicMetricConstraints](SectionAnisotropicMetricConstraints.md)
@@ -115,13 +116,6 @@ BRepSamplingData::Tasks sample_surfaces(BRepSamplingData & data)
 
 ```cpp
 void sample_corners(BRepSamplingData & data)
-```
-
-
-### relax_blocks
-
-```cpp
-void relax_blocks(const BRep & brep, BRepGeometricModifier & modifier)
 ```
 
 
@@ -251,10 +245,24 @@ index_t nb_minimum_apriori_simplex_elements(const CustomGridMetric<Model::dim> &
 ```
 
 
+### relax_blocks
+
+```cpp
+void relax_blocks(const BRep & brep, BRepGeometricModifier & modifier, const RelaxOptions & options)
+```
+
+
 ### brep_volumic_simplex_remesh
 
 ```cpp
 void brep_volumic_simplex_remesh(BRep & brep, const BRepRemeshOptions & options)
+```
+
+
+### relax_block
+
+```cpp
+void relax_block(const BRep & brep, BRepGeometricModifier & modifier, const Block3D & block, const RelaxOptions & options)
 ```
 
 
