@@ -103,20 +103,6 @@ Type range_bound(T value)
 ```
 
 
-### geode_object_input_reader
-
-```cpp
-std::unique_ptr<typename Factory::BaseClass> geode_object_input_reader(std::string_view & filename)
-```
-
-
-### geode_object_output_writer
-
-```cpp
-std::unique_ptr<typename Factory::BaseClass> geode_object_output_writer(std::string_view & filename)
-```
-
-
 ### merge_mappings
 
 ```cpp
@@ -222,6 +208,27 @@ GenericMapping<index_t> repair_non_manifold_vertices(const BRep & model, BRepBui
 ```
 
 
+### position_to_index
+
+```cpp
+local_index_t position_to_index(POSITION position)
+```
+
+
+### geode_object_input_reader
+
+```cpp
+std::unique_ptr<typename Factory::BaseClass> geode_object_input_reader(std::string_view & filename)
+```
+
+
+### geode_object_output_writer
+
+```cpp
+std::unique_ptr<typename Factory::BaseClass> geode_object_output_writer(std::string_view & filename)
+```
+
+
 ### coords_divide
 
 ```cpp
@@ -236,66 +243,10 @@ void add_loaded_mesh_component(ModelBuilder & builder, const MeshComponent & com
 ```
 
 
-### build_model_boundaries
-
-```cpp
-void build_model_boundaries(const BRep & model, BRepBuilder & builder)
-```
-
-
-### merge_mappings
-
-```cpp
-ModelMappings merge_mappings(const ModelMappings & mappings1, const ModelMappings & mappings2)
-```
-
-
-### solid_polyhedron_is_a_pyramid
-
-```cpp
-bool solid_polyhedron_is_a_pyramid(const SolidMesh3D & solid, index_t polyhedron_id)
-```
-
-
-### transfer_section_meshes
-
-```cpp
-void transfer_section_meshes(const Section & section, SectionBuilder & section_builder, Section && other, const ModelCopyMapping & component_mapping)
-```
-
-
 ### save_segment
 
 ```cpp
 void save_segment(const Segment<dimension> & segment, std::string_view suffix)
-```
-
-
-### geode_object_input_impl
-
-```cpp
-typename Factory::BaseClass::InputData geode_object_input_impl(std::string_view type, std::string_view filename, Args... args)
-```
-
-
-### geode_object_output_impl
-
-```cpp
-std::vector<std::string> geode_object_output_impl(std::string_view type, const Object & object, std::string_view filename)
-```
-
-
-### save_triangle
-
-```cpp
-void save_triangle(const Triangle<dimension> & triangle, std::string_view suffix)
-```
-
-
-### position_to_index
-
-```cpp
-local_index_t position_to_index(POSITION position)
 ```
 
 
@@ -343,10 +294,38 @@ void initialize_crs(Mesh & mesh, const uuid & attribute_id)
 ```
 
 
+### solid_polyhedron_is_a_pyramid
+
+```cpp
+bool solid_polyhedron_is_a_pyramid(const SolidMesh3D & solid, index_t polyhedron_id)
+```
+
+
+### geode_object_input_impl
+
+```cpp
+typename Factory::BaseClass::InputData geode_object_input_impl(std::string_view type, std::string_view filename, Args... args)
+```
+
+
+### geode_object_output_impl
+
+```cpp
+std::vector<std::string> geode_object_output_impl(std::string_view type, const Object & object, std::string_view filename)
+```
+
+
 ### coords_add
 
 ```cpp
 Coords<dimension> coords_add(const Coords<dimension> & input, const Coords<dimension> & other)
+```
+
+
+### save_triangle
+
+```cpp
+void save_triangle(const Triangle<dimension> & triangle, std::string_view suffix)
 ```
 
 
@@ -375,6 +354,13 @@ void load_section_files(Model & section, std::string_view directory)
 
 ```cpp
 void load_brep_files(Model & brep, std::string_view directory)
+```
+
+
+### lowercase_extension
+
+```cpp
+std::string lowercase_extension(std::string_view filename)
 ```
 
 
@@ -426,13 +412,6 @@ std::unique_ptr<typename Component::Mesh> empty_mesh_of_missing_file(const Compo
 
  Create an empty mesh for a component whose mesh file is missing, using the component mesh implementation if it is registered, otherwise the default implementation of the given mesh type.
 
-### add_to_message
-
-```cpp
-void add_to_message(std::string & message, geode::index_t nb_components, std::string_view component_text)
-```
-
-
 ### register_basic_pcontext
 
 ```cpp
@@ -451,6 +430,27 @@ const Component<Model::dim> & model_component(Model & model, const uuid & compon
 
 ```cpp
 void save_triangles(const TriangulatedSurface<dimension> & surface, absl::Span<const index_t> indices, std::string_view suffix)
+```
+
+
+### print_available_extensions_if_unknown
+
+```cpp
+void print_available_extensions_if_unknown(std::string_view type, std::string_view filename, const ParentTypes &... parent_types)
+```
+
+
+### throw_geode_object_input_exception
+
+```cpp
+void throw_geode_object_input_exception(std::string_view type, std::string_view filename, const std::exception & exception, const ParentTypes &... parent_types)
+```
+
+
+### throw_geode_object_output_exception
+
+```cpp
+void throw_geode_object_output_exception(std::string_view type, std::string_view filename, const std::exception & exception, const ParentTypes &... parent_types)
 ```
 
 
@@ -477,10 +477,45 @@ void copy_line_components(const ModelFrom & from, const ModelTo & model_to, type
 ```
 
 
+### build_model_boundaries
+
+```cpp
+void build_model_boundaries(const BRep & model, BRepBuilder & builder)
+```
+
+
+### merge_mappings
+
+```cpp
+ModelMappings merge_mappings(const ModelMappings & mappings1, const ModelMappings & mappings2)
+```
+
+
+### transfer_brep_metadata
+
+```cpp
+void transfer_brep_metadata(const BRep & old_brep, const BRep & new_brep, BRepBuilder & new_brep_builder, const ModelGenericMapping & component_mapping)
+```
+
+
+### transfer_section_metadata
+
+```cpp
+void transfer_section_metadata(const Section & old_section, const Section & new_section, SectionBuilder & new_section_builder, const ModelGenericMapping & component_mapping)
+```
+
+
 ### save_tetrahedron
 
 ```cpp
 void save_tetrahedron(const Tetrahedron & tetrahedron, std::string_view suffix)
+```
+
+
+### add_to_message
+
+```cpp
+void add_to_message(std::string & message, geode::index_t nb_components, std::string_view component_text)
 ```
 
 
@@ -582,10 +617,10 @@ void copy_corner_collection_components(const ModelFrom & from, const ModelTo & m
 ```
 
 
-### transfer_brep_metadata
+### line_component_mesh_edges
 
 ```cpp
-void transfer_brep_metadata(const BRep & old_brep, const BRep & new_brep, BRepBuilder & new_brep_builder, const ModelGenericMapping & component_mapping)
+ModelComponentMeshEdges::LineEdges line_component_mesh_edges(const Model & model, const std::array<index_t, 2> & edge_unique_vertices)
 ```
 
 
@@ -596,24 +631,10 @@ void copy_line_collection_components(const ModelFrom & from, const ModelTo & mod
 ```
 
 
-### transfer_section_metadata
-
-```cpp
-void transfer_section_metadata(const Section & old_section, const Section & new_section, SectionBuilder & new_section_builder, const ModelGenericMapping & component_mapping)
-```
-
-
 ### transfer_pointsets_metadata
 
 ```cpp
 void transfer_pointsets_metadata(absl::Span<const std::reference_wrapper<const PointSet<Model::dim>>> pointsets, const Model & model, typename Model::Builder & builder, const ModelGenericMapping & component_mapping)
-```
-
-
-### line_component_mesh_edges
-
-```cpp
-ModelComponentMeshEdges::LineEdges line_component_mesh_edges(const Model & model, const std::array<index_t, 2> & edge_unique_vertices)
 ```
 
 
@@ -631,6 +652,20 @@ void copy_surface_collection_components(const ModelFrom & from, const ModelTo & 
 ```
 
 
+### copy_block_collection_components
+
+```cpp
+void copy_block_collection_components(const ModelFrom & from, const ModelTo & model_to, typename ModelTo::Builder & builder_to, Mapping & mapping)
+```
+
+
+### transfer_section_meshes
+
+```cpp
+void transfer_section_meshes(const Section & section, SectionBuilder & section_builder, Section && other, const ModelCopyMapping & component_mapping)
+```
+
+
 ### transfer_curves_metadata
 
 ```cpp
@@ -642,13 +677,6 @@ void transfer_curves_metadata(absl::Span<const std::reference_wrapper<const Edge
 
 ```cpp
 void transfer_surfaces_metadata(absl::Span<const std::reference_wrapper<const SurfaceMesh<Model::dim>>> surfaces, const Model & model, typename Model::Builder & model_builder, const ModelGenericMapping & component_mapping)
-```
-
-
-### copy_block_collection_components
-
-```cpp
-void copy_block_collection_components(const ModelFrom & from, const ModelTo & model_to, typename ModelTo::Builder & builder_to, Mapping & mapping)
 ```
 
 
@@ -715,6 +743,17 @@ void copy_block_geometry(const ModelFrom & from, const ModelTo & model_to, typen
 ```
 
 
+### copy_vertex_identifier_components
+
+```cpp
+bool copy_vertex_identifier_components(const Model & from, BuilderTo & builder_to, index_t first_new_unique_vertex_id, const ModelCopyMapping & mapping)
+```
+
+
+ Copy the links between unique vertices and component vertices. Component vertices whose component type is not in the mapping (e.g. Block vertices when copying a BRep into a Section) are skipped.
+
+**return** true if at least one component vertex was skipped
+
 ### transfer_brep_collections
 
 ```cpp
@@ -742,17 +781,6 @@ void transfer_section_collections(const Section & old_section, const Section & n
 BRepComponentMeshEdges::BlockEdges block_component_mesh_edges(const BRep & brep, const std::array<index_t, 2> & edge_unique_vertices)
 ```
 
-
-### copy_vertex_identifier_components
-
-```cpp
-bool copy_vertex_identifier_components(const Model & from, BuilderTo & builder_to, index_t first_new_unique_vertex_id, const ModelCopyMapping & mapping)
-```
-
-
- Copy the links between unique vertices and component vertices. Component vertices whose component type is not in the mapping (e.g. Block vertices when copying a BRep into a Section) are skipped.
-
-**return** true if at least one component vertex was skipped
 
 ### block_component_mesh_edges
 

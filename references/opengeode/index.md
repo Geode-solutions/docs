@@ -385,13 +385,6 @@ void register_geode_builder()
 ```
 
 
-### register_geode_mesh
-
-```cpp
-void register_geode_mesh()
-```
-
-
 ### filename_with_extension
 
 ```cpp
@@ -399,17 +392,24 @@ std::filesystem::path filename_with_extension(const std::filesystem::path & path
 ```
 
 
-### string_split
-
-```cpp
-std::vector<std::string_view> string_split(std::string_view string)
-```
-
-
 ### register_attribute_type
 
 ```cpp
 void register_attribute_type(PContext & context, std::string_view name)
+```
+
+
+### concatenate
+
+```cpp
+void concatenate(Container & container, const Container & values)
+```
+
+
+### register_geode_mesh
+
+```cpp
+void register_geode_mesh()
 ```
 
 
@@ -424,6 +424,13 @@ void register_geode_mesh_input()
 
 ```cpp
 void register_geode_mesh_output()
+```
+
+
+### string_split
+
+```cpp
+std::vector<std::string_view> string_split(std::string_view string)
 ```
 
 
@@ -1072,10 +1079,10 @@ Point<dimension> point_segment_projection(const Point<dimension> & point, const 
 
 **segment** [in] the segment
 
-### concatenate
+### triangle_angle_based_quality
 
 ```cpp
-void concatenate(Container & container, const Container & values)
+double triangle_angle_based_quality(const Triangle<dimension> & triangle)
 ```
 
 
@@ -1190,6 +1197,22 @@ std::vector<std::string> save_section(const Section & section, std::string_view 
 
 **filename** [in] Path to the file where save the section.
 
+### convert_surface_mesh_into_polygonal_surface
+
+```cpp
+std::unique_ptr<PolygonalSurface<dimension>> convert_surface_mesh_into_polygonal_surface(const SurfaceMesh<dimension> & surface)
+```
+
+
+### rasterize_segment
+
+```cpp
+std::vector<typename Grid<dimension>::CellIndices> rasterize_segment(const Grid<dimension> & grid, const Segment<dimension> & segment)
+```
+
+
+ Rasterize the segment in the grid cells. The segment may extend outside the grid: only its part inside the grid is rasterized, and the result is empty if the segment is fully outside.
+
 ### load_polygonal_surface
 
 ```cpp
@@ -1242,6 +1265,43 @@ std::unique_ptr<TriangulatedSurface<dimension>> load_triangulated_surface(const 
 
 **filename** [in] Path to the file to load.
 
+### multiple_permute
+
+```cpp
+void multiple_permute(Container & data, absl::Span<const index_t> permutation)
+```
+
+
+### component_mesh_vertex_generic
+
+```cpp
+ComponentMeshVertexGeneric<dimension> component_mesh_vertex_generic(absl::Span<const absl::Span<const ComponentMeshVertex>> unique_vertices)
+```
+
+
+### create_section_coordinate_system
+
+```cpp
+void create_section_coordinate_system(const Section & model, SectionBuilder & builder, std::string_view new_coordinate_system_name, const CoordinateSystem2D & input, const CoordinateSystem2D & output)
+```
+
+
+### goto_keyword_if_it_exists
+
+```cpp
+std::optional<std::string> goto_keyword_if_it_exists(std::ifstream & file, std::string_view word)
+```
+
+
+### point_side_to_segment
+
+```cpp
+SIDE point_side_to_segment(const Point2D & point, const Segment2D & segment)
+```
+
+
+ Return the point side to a segment.
+
 ### save_raster_image
 
 ```cpp
@@ -1254,13 +1314,6 @@ std::vector<std::string> save_raster_image(const RasterImage<dimension> & raster
 **raster** [in] RasterImage to save.
 
 **filename** [in] Path to the file where save the RasterImage.
-
-### multiple_permute
-
-```cpp
-void multiple_permute(Container & data, absl::Span<const index_t> permutation)
-```
-
 
 ### concatenate
 
@@ -1396,6 +1449,16 @@ SIGN triangle_area_sign(const Triangle2D & triangle)
 
  Return the sign of a 2D triangle area.
 
+### segment_segment_intersection_detection
+
+```cpp
+SegmentSegmentIntersection segment_segment_intersection_detection(const Segment<dimension> & segment0, const Segment<dimension> & segment1)
+```
+
+ Detect if there is an intersection between two segments
+
+**return** the position of the intersection on the two segments. Returns outside-outside if there is no intersection or parallel-pallel if all points are colinear
+
 ### to_string
 
 ```cpp
@@ -1409,136 +1472,6 @@ std::string to_string(std::string_view view)
 H AbslHashValue(H h, const uuid & value)
 ```
 
-
-### print_available_extensions
-
-```cpp
-void print_available_extensions(std::string_view type)
-```
-
-
-### delete_vector_elements
-
-```cpp
-index_t delete_vector_elements(const DeleteContainer & to_delete, ValueContainer & values)
-```
-
-
- Delete some elements from a given vector.
-
-**to_delete** [in] Vector of the same size than values. If to_delete[i] is true the i-th element is deleted, else the element is kept.
-
-**values** [in] Vector in which perform deletions.
-
-**return** The number of deleted elements
-
-### to_array
-
-```cpp
-std::array<T, sizeof...(Args)> to_array(Args &&... args)
-```
-
-
-### save_light_regular_grid
-
-```cpp
-std::vector<std::string> save_light_regular_grid(const LightRegularGrid<dimension> & light_regular_grid, std::string_view filename)
-```
-
-
- API function for saving a LightRegularGrid. The adequate saver is called depending on the given filename extension.
-
-**light_regular_grid** [in] LightRegularGrid to save.
-
-**filename** [in] Path to the file where save the LightRegularGrid.
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const NamedType<Type, Tag> & value)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const ComponentMeshVertex & value)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const ComponentID & value)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const MeshElement & value)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const EdgeVertex & value)
-```
-
-
-### triangle_angle_based_quality
-
-```cpp
-double triangle_angle_based_quality(const Triangle<dimension> & triangle)
-```
-
-
-### convert_surface_mesh_into_polygonal_surface
-
-```cpp
-std::unique_ptr<PolygonalSurface<dimension>> convert_surface_mesh_into_polygonal_surface(const SurfaceMesh<dimension> & surface)
-```
-
-
-### rasterize_segment
-
-```cpp
-std::vector<typename Grid<dimension>::CellIndices> rasterize_segment(const Grid<dimension> & grid, const Segment<dimension> & segment)
-```
-
-
- Rasterize the segment in the grid cells. The segment may extend outside the grid: only its part inside the grid is rasterized, and the result is empty if the segment is fully outside.
-
-### component_mesh_vertex_generic
-
-```cpp
-ComponentMeshVertexGeneric<dimension> component_mesh_vertex_generic(absl::Span<const absl::Span<const ComponentMeshVertex>> unique_vertices)
-```
-
-
-### create_section_coordinate_system
-
-```cpp
-void create_section_coordinate_system(const Section & model, SectionBuilder & builder, std::string_view new_coordinate_system_name, const CoordinateSystem2D & input, const CoordinateSystem2D & output)
-```
-
-
-### goto_keyword_if_it_exists
-
-```cpp
-std::optional<std::string> goto_keyword_if_it_exists(std::ifstream & file, std::string_view word)
-```
-
-
-### point_side_to_segment
-
-```cpp
-SIDE point_side_to_segment(const Point2D & point, const Segment2D & segment)
-```
-
-
- Return the point side to a segment.
 
 ### create_blocks_aabb_tree
 
@@ -1596,6 +1529,19 @@ void load_brep_time_series(BRep & brep, std::string_view filename)
 **brep** [in] BRep receiving the time series.
 
 **filename** [in] Path to the file to load.
+
+### save_light_regular_grid
+
+```cpp
+std::vector<std::string> save_light_regular_grid(const LightRegularGrid<dimension> & light_regular_grid, std::string_view filename)
+```
+
+
+ API function for saving a LightRegularGrid. The adequate saver is called depending on the given filename extension.
+
+**light_regular_grid** [in] LightRegularGrid to save.
+
+**filename** [in] Path to the file where save the LightRegularGrid.
 
 ### brep_active_coordinate_reference_systems
 
@@ -1684,16 +1630,6 @@ void create_point_set_coordinate_system(const PointSet<dimension> & mesh, PointS
 BRep extrude_section_to_brep(const Section & section, const SectionExtruderOptions & options)
 ```
 
-
-### segment_segment_intersection_detection
-
-```cpp
-SegmentSegmentIntersection segment_segment_intersection_detection(const Segment<dimension> & segment0, const Segment<dimension> & segment1)
-```
-
- Detect if there is an intersection between two segments
-
-**return** the position of the intersection on the two segments. Returns outside-outside if there is no intersection or parallel-pallel if all points are colinear
 
 ### component_mesh_vertex_generic
 
@@ -1798,6 +1734,35 @@ Point<dimension> point_line_projection(const Point<dimension> & point, const Inf
 **point** [in] the point to project
 
 **line** [in] the line
+
+### delete_vector_elements
+
+```cpp
+index_t delete_vector_elements(const DeleteContainer & to_delete, ValueContainer & values)
+```
+
+
+ Delete some elements from a given vector.
+
+**to_delete** [in] Vector of the same size than values. If to_delete[i] is true the i-th element is deleted, else the element is kept.
+
+**values** [in] Vector in which perform deletions.
+
+**return** The number of deleted elements
+
+### print_available_extensions
+
+```cpp
+void print_available_extensions(std::string_view type)
+```
+
+
+### to_array
+
+```cpp
+std::array<T, sizeof...(Args)> to_array(Args &&... args)
+```
+
 
 ### point_point_distance
 
@@ -1938,6 +1903,27 @@ AdditionalFiles section_additional_files(std::string_view filename)
 ```
 
 
+### is_graph_saveable
+
+```cpp
+bool is_graph_saveable(const Graph & graph, std::string_view filename)
+```
+
+
+### is_vertex_set_saveable
+
+```cpp
+bool is_vertex_set_saveable(const VertexSet & vertex_set, std::string_view filename)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const NamedType<Type, Tag> & value)
+```
+
+
 ### safe_tetrahedron_barycentric_coordinates
 
 ```cpp
@@ -1977,20 +1963,6 @@ std::shared_ptr<VariableAttribute<double>> euclidean_distance_transform(const Gr
 **return** the created attribute. Its no_value is std::numeric_limits< double >::max(): when 
 
 **grid_cell_ids** is empty, every cell keeps this value and has_value() is false.
-
-### is_graph_saveable
-
-```cpp
-bool is_graph_saveable(const Graph & graph, std::string_view filename)
-```
-
-
-### is_vertex_set_saveable
-
-```cpp
-bool is_vertex_set_saveable(const VertexSet & vertex_set, std::string_view filename)
-```
-
 
 ### is_brep_saveable
 
@@ -2596,6 +2568,13 @@ AdditionalFiles point_set_additional_files(std::string_view filename)
 ```
 
 
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const ComponentMeshVertex & value)
+```
+
+
 ### polygonal_surface_additional_files
 
 ```cpp
@@ -2624,10 +2603,31 @@ AdditionalFiles triangulated_surface_additional_files(std::string_view filename)
 ```
 
 
-### is_point_set_loadable
+### is_regular_grid_loadable
 
 ```cpp
-Percentage is_point_set_loadable(std::string_view filename)
+Percentage is_regular_grid_loadable(std::string_view filename)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const ComponentID & value)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const MeshElement & value)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const EdgeVertex & value)
 ```
 
 
@@ -2649,13 +2649,6 @@ void permute(Container & data, absl::Span<const index_t> permutation)
 
 ```cpp
 H AbslHashValue(H h, const PolygonVertex & value)
-```
-
-
-### is_regular_grid_loadable
-
-```cpp
-Percentage is_regular_grid_loadable(std::string_view filename)
 ```
 
 
@@ -2802,6 +2795,13 @@ void convert_surface_meshes_into_triangulated_surfaces(BRep & brep)
 ```
 
 
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
+```
+
+
 ### segment_segment_distance
 
 ```cpp
@@ -2848,17 +2848,17 @@ POSITION point_triangle_position(const Point2D & point, const Triangle2D & trian
 ```
 
 
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
-```
-
-
 ### convert_brep_into_surface
 
 ```cpp
 std::tuple<std::unique_ptr<SurfaceMesh3D>, ModelToMeshMappings> convert_brep_into_surface(const BRep & brep)
+```
+
+
+### is_point_set_loadable
+
+```cpp
+Percentage is_point_set_loadable(std::string_view filename)
 ```
 
 
