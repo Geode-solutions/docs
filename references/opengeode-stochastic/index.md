@@ -99,17 +99,17 @@ const name = words.join('-');
 
 ## Functions
 
-### build_pairwise_interaction_impl
-
-```cpp
-std::unique_ptr<PairwiseInteraction<ObjectType>> build_pairwise_interaction_impl(const EuclideanDistanceCutoffConfig & cfg)
-```
-
-
 ### add_birth_death_change_moves
 
 ```cpp
 void add_birth_death_change_moves(const geode::ObjectSetSampler<ObjectType> & sampler, geode::ProposalKernel<ObjectType> & kernel, const uuid & set_id, double birth_ratio, double death_ratio, double change_ratio)
+```
+
+
+### pairwise_builder_initialize_interactions_helper
+
+```cpp
+std::pair<std::vector<uuid>, absl::flat_hash_map<uuid, std::vector<uuid>>> pairwise_builder_initialize_interactions_helper(const std::vector<std::pair<uuid, uuid>> & interacting_sets)
 ```
 
 
@@ -118,6 +118,13 @@ void add_birth_death_change_moves(const geode::ObjectSetSampler<ObjectType> & sa
 ```cpp
 std::unique_ptr<ObjectSetSampler<ObjectType>> build_objectset_sampler(const SpatialDomain<ObjectType::dim> & domain, const ObjectSamplerConfig<ObjectType> & config)
 ```
+
+### build_pairwise_interaction_impl
+
+```cpp
+std::unique_ptr<PairwiseInteraction<ObjectType>> build_pairwise_interaction_impl(const EuclideanDistanceCutoffConfig & cfg)
+```
+
 
 ### build_single_object_feature_impl
 
@@ -186,13 +193,6 @@ auto object_barycenter(const Type & object)
 
 ```cpp
 std::unique_ptr<SingleObjectFeature<ObjectType>> build_single_object_feature_impl(const NewObjectFeatureConfig & )
-```
-
-
-### pairwise_builder_initialize_interactions_helper
-
-```cpp
-std::pair<std::vector<uuid>, absl::flat_hash_map<uuid, std::vector<uuid>>> pairwise_builder_initialize_interactions_helper(const std::vector<std::pair<uuid, uuid>> & interacting_sets)
 ```
 
 
