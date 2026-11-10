@@ -17,7 +17,9 @@ const name = words.join('-');
 
 ## Records
 
+* [AdditionalBlockFacets](AdditionalBlockFacets.md)
 * [BRepFromSolidElementsBuilder](BRepFromSolidElementsBuilder.md)
+* [BRepTopologyRebuild](BRepTopologyRebuild.md)
 * [BRepTopologyRebuilder](BRepTopologyRebuilder.md)
 * [CornersLinesBuilder](CornersLinesBuilder.md)
 * [ModelBuilderFromMeshes](ModelBuilderFromMeshes.md)

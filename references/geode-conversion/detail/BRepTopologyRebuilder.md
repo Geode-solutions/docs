@@ -14,7 +14,7 @@ const name = words.join('-');
 # class BRepTopologyRebuilder
 
 
- Class for rebuilding all the brep components topology after adding some component mesh elements to the model topology. The block meshes and the unique vertices needs to be defined beforehand.
+ Class for rebuilding all the brep components topology after adding some component mesh elements to the model topology. The block meshes and the unique vertices needs to be defined beforehand. Each call to rebuild() starts from the initial BRep and takes into account all the modifications registered so far.
 
 
 
