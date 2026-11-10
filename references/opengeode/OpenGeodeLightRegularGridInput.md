@@ -32,7 +32,7 @@ public void OpenGeodeLightRegularGridInput<dimension>(std::string_view filename)
 ### read
 
 ```cpp
-protected LightRegularGrid<dimension> read()
+protected std::vector<LightRegularGrid<dimension>> read()
 ```
 
 

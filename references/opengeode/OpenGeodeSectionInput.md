@@ -32,7 +32,7 @@ public void OpenGeodeSectionInput(std::string_view filename)
 ### read
 
 ```cpp
-public Section read()
+public std::vector<Section> read()
 ```
 
 

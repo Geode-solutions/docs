@@ -53,7 +53,7 @@ public index_t object_priority()
 ### read
 
 ```cpp
-public std::unique_ptr<VertexSet> read(const MeshImpl & )
+public std::vector<std::unique_ptr<VertexSet>> read(const MeshImpl & )
 ```
 
 

@@ -215,17 +215,17 @@ local_index_t position_to_index(POSITION position)
 ```
 
 
-### geode_object_input_reader
-
-```cpp
-std::unique_ptr<typename Factory::BaseClass> geode_object_input_reader(std::string_view & filename)
-```
-
-
 ### geode_object_output_writer
 
 ```cpp
 std::unique_ptr<typename Factory::BaseClass> geode_object_output_writer(std::string_view & filename)
+```
+
+
+### geode_object_input_reader
+
+```cpp
+std::unique_ptr<typename Factory::BaseClass> geode_object_input_reader(std::string_view & filename)
 ```
 
 
@@ -301,13 +301,6 @@ bool solid_polyhedron_is_a_pyramid(const SolidMesh3D & solid, index_t polyhedron
 ```
 
 
-### geode_object_input_impl
-
-```cpp
-typename Factory::BaseClass::InputData geode_object_input_impl(std::string_view type, std::string_view filename, Args... args)
-```
-
-
 ### geode_object_output_impl
 
 ```cpp
@@ -319,6 +312,13 @@ std::vector<std::string> geode_object_output_impl(std::string_view type, const O
 
 ```cpp
 Coords<dimension> coords_add(const Coords<dimension> & input, const Coords<dimension> & other)
+```
+
+
+### geode_object_input_impl
+
+```cpp
+std::vector<typename Factory::BaseClass::InputData> geode_object_input_impl(std::string_view type, std::string_view filename, Args... args)
 ```
 
 
@@ -440,13 +440,6 @@ void print_available_extensions_if_unknown(std::string_view type, std::string_vi
 ```
 
 
-### throw_geode_object_input_exception
-
-```cpp
-void throw_geode_object_input_exception(std::string_view type, std::string_view filename, const std::exception & exception, const ParentTypes &... parent_types)
-```
-
-
 ### throw_geode_object_output_exception
 
 ```cpp
@@ -467,6 +460,13 @@ void initialize_legacy_crs(Mesh & mesh)
 
 ```cpp
 void coords_multiply_equal(Coords<dimension> & input, double multiplier)
+```
+
+
+### throw_geode_object_input_exception
+
+```cpp
+void throw_geode_object_input_exception(std::string_view type, std::string_view filename, const std::exception & exception, const ParentTypes &... parent_types)
 ```
 
 
@@ -498,24 +498,10 @@ void transfer_brep_metadata(const BRep & old_brep, const BRep & new_brep, BRepBu
 ```
 
 
-### transfer_section_metadata
-
-```cpp
-void transfer_section_metadata(const Section & old_section, const Section & new_section, SectionBuilder & new_section_builder, const ModelGenericMapping & component_mapping)
-```
-
-
 ### save_tetrahedron
 
 ```cpp
 void save_tetrahedron(const Tetrahedron & tetrahedron, std::string_view suffix)
-```
-
-
-### add_to_message
-
-```cpp
-void add_to_message(std::string & message, geode::index_t nb_components, std::string_view component_text)
 ```
 
 
@@ -530,6 +516,13 @@ void filter_unsupported_components(Model & model)
 
 ```cpp
 void coords_divide_equal(Coords<dimension> & input, double divider)
+```
+
+
+### add_to_message
+
+```cpp
+void add_to_message(std::string & message, geode::index_t nb_components, std::string_view component_text)
 ```
 
 
@@ -631,20 +624,6 @@ void copy_line_collection_components(const ModelFrom & from, const ModelTo & mod
 ```
 
 
-### transfer_pointsets_metadata
-
-```cpp
-void transfer_pointsets_metadata(absl::Span<const std::reference_wrapper<const PointSet<Model::dim>>> pointsets, const Model & model, typename Model::Builder & builder, const ModelGenericMapping & component_mapping)
-```
-
-
-### check_component_mesh_vertices
-
-```cpp
-void check_component_mesh_vertices(const ComponentID & component_id, absl::Span<const index_t> vertices, index_t nb_vertices)
-```
-
-
 ### copy_surface_collection_components
 
 ```cpp
@@ -666,6 +645,20 @@ void transfer_section_meshes(const Section & section, SectionBuilder & section_b
 ```
 
 
+### transfer_section_metadata
+
+```cpp
+void transfer_section_metadata(const Section & old_section, const Section & new_section, SectionBuilder & new_section_builder, const ModelGenericMapping & component_mapping)
+```
+
+
+### transfer_pointsets_metadata
+
+```cpp
+void transfer_pointsets_metadata(absl::Span<const std::reference_wrapper<const PointSet<Model::dim>>> pointsets, const Model & model, typename Model::Builder & builder, const ModelGenericMapping & component_mapping)
+```
+
+
 ### transfer_curves_metadata
 
 ```cpp
@@ -684,6 +677,13 @@ void transfer_surfaces_metadata(absl::Span<const std::reference_wrapper<const Su
 
 ```cpp
 void transfer_solids_metadata(absl::Span<const std::reference_wrapper<const SolidMesh3D>> solids, const BRep & model, BRepBuilder & model_builder, const ModelGenericMapping & component_mapping)
+```
+
+
+### check_component_mesh_vertices
+
+```cpp
+void check_component_mesh_vertices(const ComponentID & component_id, absl::Span<const index_t> vertices, index_t nb_vertices)
 ```
 
 

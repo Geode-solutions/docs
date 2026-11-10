@@ -32,7 +32,7 @@ public void OpenGeodeBRepInput(std::string_view filename)
 ### read
 
 ```cpp
-public BRep read()
+public std::vector<BRep> read()
 ```
 
 

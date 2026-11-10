@@ -32,7 +32,7 @@ public void OpenGeodeRasterImageInput<dimension>(std::string_view filename)
 ### read
 
 ```cpp
-public RasterImage<dimension> read()
+public std::vector<RasterImage<dimension>> read()
 ```
 
 

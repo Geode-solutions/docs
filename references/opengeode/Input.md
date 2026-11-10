@@ -50,7 +50,7 @@ public Percentage is_loadable()
 ### read
 
 ```cpp
-public Object read(const Args &... args)
+public std::vector<Object> read(const Args &... args)
 ```
 
 ### ~Input
