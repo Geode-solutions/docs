@@ -27,24 +27,17 @@ const name = words.join('-');
 
 ## Functions
 
-### brep_blocks_are_meshed
-
-```cpp
-bool brep_blocks_are_meshed(const BRep & brep)
-```
-
-
-### section_surfaces_are_meshed
-
-```cpp
-bool section_surfaces_are_meshed(const Section & section)
-```
-
-
 ### components_uuids
 
 ```cpp
 std::vector<uuid> components_uuids(const Model & model, index_t unique_vertex_index, const geode::ComponentType & type)
+```
+
+
+### brep_blocks_are_meshed
+
+```cpp
+bool brep_blocks_are_meshed(const BRep & brep)
 ```
 
 
@@ -55,10 +48,31 @@ bool model_component_vertices_are_associated_to_unique_vertices(const Model & mo
 ```
 
 
+### section_surfaces_are_meshed
+
+```cpp
+bool section_surfaces_are_meshed(const Section & section)
+```
+
+
 ### model_component_vertices_not_associated_to_unique_vertices
 
 ```cpp
 InspectionIssues<index_t> model_component_vertices_not_associated_to_unique_vertices(const Model & model, const ComponentID & component_id, const Mesh & component_mesh)
+```
+
+
+### line_end_not_a_corner_message
+
+```cpp
+std::optional<std::string> line_end_not_a_corner_message(const BRep & brep, index_t unique_vertex_index)
+```
+
+
+### line_end_not_a_corner_message
+
+```cpp
+std::optional<std::string> line_end_not_a_corner_message(const Section & section, index_t unique_vertex_index)
 ```
 
 

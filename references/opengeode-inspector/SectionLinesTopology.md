@@ -34,7 +34,7 @@ public bool section_lines_topology_is_valid(index_t unique_vertex_index)
 ```
 
 
- Checks if the section unique vertices are parts of valid lines, i.e. verify: Each line is either internal or boundary. Each internal line is internal to only one object and is not boundary. If the vertex is part of only one line, the vertex is part of no more than 2 surfaces, and the line is either internal to a surface (and the vertex is in one and only one surface) or a boundary of all the surfaces the vertex is in. If the vertex is part of multiple lines, it is also a corner.
+ Checks if the section unique vertices are parts of valid lines, i.e. verify: Each line is either internal or boundary. Each internal line is internal to only one object and is not boundary. If the vertex is part of only one line, the vertex is part of no more than 2 surfaces, and the line is either internal to a surface (and the vertex is in one and only one surface) or a boundary of all the surfaces the vertex is in. If the vertex is an end of a line, it is also a corner. If the vertex is part of multiple lines, it is also a corner.
 
 ### line_is_meshed
 
