@@ -62,7 +62,7 @@ public AdditionalFiles additional_files()
 ### read
 
 ```cpp
-public HorizonsStack<dimension> read()
+public std::vector<HorizonsStack<dimension>> read()
 ```
 
 

@@ -53,7 +53,7 @@ public index_t object_priority()
 ### read
 
 ```cpp
-public CrossSection read()
+public std::vector<CrossSection> read()
 ```
 
 

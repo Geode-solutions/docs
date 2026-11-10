@@ -60,7 +60,7 @@ public Percentage is_loadable()
 ### read
 
 ```cpp
-public StructuralModel read()
+public std::vector<StructuralModel> read()
 ```
 
 

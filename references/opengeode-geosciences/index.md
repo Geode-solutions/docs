@@ -168,7 +168,7 @@ StratigraphicUnitToBlockResult complete_stratigraphic_unit_block_relationships(I
 ### load_implicit_cross_section
 
 ```cpp
-ImplicitCrossSection load_implicit_cross_section(std::string_view filename)
+std::vector<ImplicitCrossSection> load_implicit_cross_section(std::string_view filename)
 ```
 
 
@@ -179,7 +179,7 @@ ImplicitCrossSection load_implicit_cross_section(std::string_view filename)
 ### load_implicit_structural_model
 
 ```cpp
-ImplicitStructuralModel load_implicit_structural_model(std::string_view filename)
+std::vector<ImplicitStructuralModel> load_implicit_structural_model(std::string_view filename)
 ```
 
 
@@ -190,7 +190,7 @@ ImplicitStructuralModel load_implicit_structural_model(std::string_view filename
 ### load_stratigraphic_model
 
 ```cpp
-StratigraphicModel load_stratigraphic_model(std::string_view filename)
+std::vector<StratigraphicModel> load_stratigraphic_model(std::string_view filename)
 ```
 
 
@@ -201,7 +201,7 @@ StratigraphicModel load_stratigraphic_model(std::string_view filename)
 ### load_stratigraphic_section
 
 ```cpp
-StratigraphicSection load_stratigraphic_section(std::string_view filename)
+std::vector<StratigraphicSection> load_stratigraphic_section(std::string_view filename)
 ```
 
 
@@ -212,7 +212,7 @@ StratigraphicSection load_stratigraphic_section(std::string_view filename)
 ### load_physical_problem
 
 ```cpp
-PhysicalProblem load_physical_problem(std::string_view filename)
+std::vector<PhysicalProblem> load_physical_problem(std::string_view filename)
 ```
 
 
@@ -236,7 +236,7 @@ void register_explicit_deserialize_pcontext(PContext & context)
 ### load_cross_section
 
 ```cpp
-CrossSection load_cross_section(std::string_view filename)
+std::vector<CrossSection> load_cross_section(std::string_view filename)
 ```
 
 
@@ -247,7 +247,7 @@ CrossSection load_cross_section(std::string_view filename)
 ### load_structural_model
 
 ```cpp
-StructuralModel load_structural_model(std::string_view filename)
+std::vector<StructuralModel> load_structural_model(std::string_view filename)
 ```
 
 
@@ -258,7 +258,7 @@ StructuralModel load_structural_model(std::string_view filename)
 ### load_horizons_stack
 
 ```cpp
-HorizonsStack<dimension> load_horizons_stack(std::string_view filename)
+std::vector<HorizonsStack<dimension>> load_horizons_stack(std::string_view filename)
 ```
 
 
@@ -507,17 +507,24 @@ Percentage is_cross_section_loadable(std::string_view filename)
 ```
 
 
-### is_structural_model_loadable
-
-```cpp
-Percentage is_structural_model_loadable(std::string_view filename)
-```
-
-
 ### horizons_stack_additional_files
 
 ```cpp
 AdditionalFiles horizons_stack_additional_files(std::string_view filename)
+```
+
+
+### is_physical_problem_saveable
+
+```cpp
+bool is_physical_problem_saveable(const PhysicalProblem & problem, std::string_view filename)
+```
+
+
+### is_structural_model_loadable
+
+```cpp
+Percentage is_structural_model_loadable(std::string_view filename)
 ```
 
 
@@ -528,10 +535,10 @@ Percentage is_physical_problem_loadable(std::string_view filename)
 ```
 
 
-### is_physical_problem_saveable
+### assign_solid_mesh_geographic_coordinate_system_info
 
 ```cpp
-bool is_physical_problem_saveable(const PhysicalProblem & problem, std::string_view filename)
+void assign_solid_mesh_geographic_coordinate_system_info(const SolidMesh<dimension> & mesh, SolidMeshBuilder<dimension> & builder, std::string_view crs_name, GeographicCoordinateSystemInfo info)
 ```
 
 
@@ -563,31 +570,10 @@ index_t stratigraphic_section_object_priority(std::string_view filename)
 ```
 
 
-### assign_solid_mesh_geographic_coordinate_system_info
-
-```cpp
-void assign_solid_mesh_geographic_coordinate_system_info(const SolidMesh<dimension> & mesh, SolidMeshBuilder<dimension> & builder, std::string_view crs_name, GeographicCoordinateSystemInfo info)
-```
-
-
 ### cross_section_object_priority
 
 ```cpp
 index_t cross_section_object_priority(std::string_view filename)
-```
-
-
-### structural_model_object_priority
-
-```cpp
-index_t structural_model_object_priority(std::string_view filename)
-```
-
-
-### physical_problem_object_priority
-
-```cpp
-index_t physical_problem_object_priority(std::string_view filename)
 ```
 
 
@@ -612,10 +598,24 @@ bool is_implicit_cross_section_saveable(const ImplicitCrossSection & section, st
 ```
 
 
+### structural_model_object_priority
+
+```cpp
+index_t structural_model_object_priority(std::string_view filename)
+```
+
+
 ### is_horizons_stack_loadable
 
 ```cpp
 Percentage is_horizons_stack_loadable(std::string_view filename)
+```
+
+
+### physical_problem_object_priority
+
+```cpp
+index_t physical_problem_object_priority(std::string_view filename)
 ```
 
 

@@ -25,7 +25,7 @@ Inherits from PhysicalProblemInput
 ### read
 
 ```cpp
-public PhysicalProblem read()
+public std::vector<PhysicalProblem> read()
 ```
 
 

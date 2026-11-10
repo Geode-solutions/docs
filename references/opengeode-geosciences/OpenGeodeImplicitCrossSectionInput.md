@@ -39,7 +39,7 @@ public static std::string_view extension()
 ### read
 
 ```cpp
-public ImplicitCrossSection read()
+public std::vector<ImplicitCrossSection> read()
 ```
 
 

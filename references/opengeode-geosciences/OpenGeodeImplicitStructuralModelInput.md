@@ -39,7 +39,7 @@ public static std::string_view extension()
 ### read
 
 ```cpp
-public ImplicitStructuralModel read()
+public std::vector<ImplicitStructuralModel> read()
 ```
 
 
