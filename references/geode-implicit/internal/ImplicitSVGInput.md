@@ -60,7 +60,7 @@ public Percentage is_loadable()
 ### read
 
 ```cpp
-public ImplicitCrossSection read()
+public std::vector<ImplicitCrossSection> read()
 ```
 
 
