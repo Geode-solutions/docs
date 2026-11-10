@@ -62,7 +62,6 @@ const name = words.join('-');
 * [RegionSurfaceSide](RegionSurfaceSide.md)
 * [SHPInput](SHPInput.md)
 * [SolidFemOutput](SolidFemOutput.md)
-* [StratigraphicLSOInput](StratigraphicLSOInput.md)
 * [SurfaceValueGroups](SurfaceValueGroups.md)
 * [TSInput](TSInput.md)
 * [TSOutput](TSOutput.md)
@@ -100,6 +99,41 @@ std::string geos_array(absl::Span<const double> values)
 
  GEOS array of reals: "{ a, b, c }"
 
+### clone_with_model_boundaries
+
+```cpp
+Model clone_with_model_boundaries(const Model & model)
+```
+
+
+### read_header
+
+```cpp
+HeaderData read_header(std::ifstream & file)
+```
+
+
+### determine_surface_to_regions_sides
+
+```cpp
+RegionSurfaceSide determine_surface_to_regions_sides(const BRep & brep)
+```
+
+
+### read_name
+
+```cpp
+std::string read_name(absl::Span<const std::string_view> tokens)
+```
+
+
+### write_header
+
+```cpp
+void write_header(std::ofstream & file, const HeaderData & data)
+```
+
+
 ### geos_names
 
 ```cpp
@@ -123,20 +157,6 @@ double geos_stress_factor(const PhysicalProblem & problem)
 ```
 
 
-### transfer_stress_components
-
-```cpp
-void transfer_stress_components(const BRep & model, const ModelToMeshMappings & model2solid, const PhysicalProperties::Info & property_info, std::string_view name, local_index_t first_component, double factor, VariableAttribute<StressTensor> & tensor)
-```
-
-
-### clone_with_model_boundaries
-
-```cpp
-Model clone_with_model_boundaries(const Model & model)
-```
-
-
 ### check_brep_polygons
 
 ```cpp
@@ -155,6 +175,13 @@ void set_attribute(pugi::xml_node & node, std::string_view attribute, std::strin
 
 ```cpp
 void set_real_attribute(pugi::xml_node & node, std::string_view attribute, double value)
+```
+
+
+### transfer_stress_components
+
+```cpp
+void transfer_stress_components(const BRep & model, const ModelToMeshMappings & model2solid, const PhysicalProperties::Info & property_info, std::string_view name, local_index_t first_component, double factor, VariableAttribute<StressTensor> & tensor)
 ```
 
 
@@ -312,34 +339,6 @@ std::optional<GeosCellProperty> & mechanics_context_property(GeosDeckContext & c
 ```
 
 
-### read_header
-
-```cpp
-HeaderData read_header(std::ifstream & file)
-```
-
-
-### determine_surface_to_regions_sides
-
-```cpp
-RegionSurfaceSide determine_surface_to_regions_sides(const BRep & brep)
-```
-
-
-### read_name
-
-```cpp
-std::string read_name(absl::Span<const std::string_view> tokens)
-```
-
-
-### write_header
-
-```cpp
-void write_header(std::ofstream & file, const HeaderData & data)
-```
-
-
 ### read_CRS
 
 ```cpp
@@ -418,15 +417,6 @@ std::optional<TSurfData> read_tsurf(std::ifstream & file)
 std::optional<ECurveData> read_ecurve(std::ifstream & file)
 ```
 
-
-### set_omf_element_attribute
-
-```cpp
-void set_omf_element_attribute(AttributeManager & manager, index_t element_id, index_t begin, index_t end)
-```
-
-
- Set the mesh name and, when several OMF elements are merged into the same mesh, the omf_element attribute giving the element index
 
 ### read_vs_points
 

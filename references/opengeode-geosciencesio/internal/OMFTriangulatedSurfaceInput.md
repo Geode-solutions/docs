@@ -32,7 +32,7 @@ public void OMFTriangulatedSurfaceInput(std::string_view filename)
 ### read
 
 ```cpp
-public std::unique_ptr<TriangulatedSurface3D> read(const MeshImpl & impl)
+public std::vector<std::unique_ptr<TriangulatedSurface3D>> read(const MeshImpl & impl)
 ```
 
 

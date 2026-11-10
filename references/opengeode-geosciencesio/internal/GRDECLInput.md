@@ -53,7 +53,7 @@ public index_t object_priority()
 ### read
 
 ```cpp
-public std::unique_ptr<HybridSolid3D> read(const MeshImpl & impl)
+public std::vector<std::unique_ptr<HybridSolid3D>> read(const MeshImpl & impl)
 ```
 
 

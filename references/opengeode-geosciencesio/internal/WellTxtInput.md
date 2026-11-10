@@ -25,14 +25,7 @@ Inherits from EdgedCurveInput<3>
 ### read
 
 ```cpp
-public std::unique_ptr<EdgedCurve3D> read(const MeshImpl & impl)
-```
-
-
-### is_loadable
-
-```cpp
-public Percentage is_loadable()
+public std::vector<std::unique_ptr<EdgedCurve3D>> read(const MeshImpl & impl)
 ```
 
 
@@ -40,6 +33,13 @@ public Percentage is_loadable()
 
 ```cpp
 public void WellTxtInput(std::string_view filename)
+```
+
+
+### is_loadable
+
+```cpp
+public Percentage is_loadable()
 ```
 
 

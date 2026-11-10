@@ -53,7 +53,7 @@ public index_t object_priority()
 ### read
 
 ```cpp
-public StructuralModel read()
+public std::vector<StructuralModel> read()
 ```
 
 

@@ -32,7 +32,7 @@ public void PolyTIFFInput(std::string_view filename)
 ### read
 
 ```cpp
-public std::unique_ptr<PolygonalSurface3D> read(const MeshImpl & impl)
+public std::vector<std::unique_ptr<PolygonalSurface3D>> read(const MeshImpl & impl)
 ```
 
 

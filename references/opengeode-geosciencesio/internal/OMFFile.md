@@ -26,11 +26,6 @@ public static const auto EXTENSION
 ```
 
 ```cpp
-public static const auto OMF_ELEMENT_ATTRIBUTE_NAME
-
-```
-
-```cpp
 public static const uint64_t MAX_ARRAY_VALUES
 
 ```
@@ -75,13 +70,6 @@ public std::size_t nb_elements()
 
  Number of project elements present in the file
 
-### project_name
-
-```cpp
-public std::string_view project_name()
-```
-
-
 ### elements
 
 ```cpp
@@ -111,15 +99,6 @@ public const nlohmann::json & geometry(const nlohmann::json & element)
 public static std::string_view name(const nlohmann::json & object)
 ```
 
-
-### mesh_name
-
-```cpp
-public std::string_view mesh_name(absl::Span<const nlohmann::json *const> elements)
-```
-
-
- Name of the element if there is only one, project name otherwise
 
 ### read_tensor
 

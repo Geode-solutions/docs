@@ -46,7 +46,7 @@ public index_t object_priority()
 ### read
 
 ```cpp
-public std::unique_ptr<PolygonalSurface<3>> read(const MeshImpl & impl)
+public std::vector<std::unique_ptr<PolygonalSurface<3>>> read(const MeshImpl & impl)
 ```
 
 

@@ -53,7 +53,7 @@ public index_t object_priority()
 ### read
 
 ```cpp
-public HorizonsStack<dimension> read()
+public std::vector<HorizonsStack<dimension>> read()
 ```
 
 
