@@ -53,7 +53,7 @@ public index_t object_priority()
 ### read
 
 ```cpp
-public LightRegularGrid<dimension> read()
+public std::vector<LightRegularGrid<dimension>> read()
 ```
 
 

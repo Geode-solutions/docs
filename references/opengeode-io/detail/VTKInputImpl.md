@@ -23,10 +23,10 @@ public void ~VTKInputImpl<Mesh>()
 ```
 
 
-### initialize_mesh
+### add_mesh
 
 ```cpp
-protected void initialize_mesh(std::unique_ptr<Mesh> && mesh)
+protected void add_mesh(std::unique_ptr<Mesh> && mesh)
 ```
 
 
@@ -39,7 +39,7 @@ protected void is_vtk_object_loadable(const pugi::xml_node & vtk_object, std::ve
 ### read_file
 
 ```cpp
-public std::unique_ptr<Mesh> read_file()
+public std::vector<std::unique_ptr<Mesh>> read_file()
 ```
 
 
@@ -61,13 +61,6 @@ protected void VTKInputImpl<Mesh>(std::string_view filename, const char * type)
 
 ```cpp
 protected void read_common_data()
-```
-
-
-### start_piece
-
-```cpp
-protected void start_piece()
 ```
 
 

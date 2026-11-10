@@ -39,7 +39,7 @@ public static std::string_view extension()
 ### read
 
 ```cpp
-public std::unique_ptr<PolygonalSurface3D> read(const MeshImpl & impl)
+public std::vector<std::unique_ptr<PolygonalSurface3D>> read(const MeshImpl & impl)
 ```
 
 

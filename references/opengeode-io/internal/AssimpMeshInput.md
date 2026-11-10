@@ -39,7 +39,7 @@ public void ~AssimpMeshInput<Mesh>()
 ### read_file
 
 ```cpp
-public std::unique_ptr<Mesh> read_file()
+public std::vector<std::unique_ptr<Mesh>> read_file()
 ```
 
 

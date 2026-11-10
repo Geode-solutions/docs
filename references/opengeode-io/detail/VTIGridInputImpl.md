@@ -47,7 +47,7 @@ public void VTIGridInputImpl<Mesh>(std::string_view filename)
 ### build_grid
 
 ```cpp
-protected void build_grid(const pugi::xml_node & vtk_object)
+protected void build_grid(const pugi::xml_node & vtk_object, const Extent & extent)
 ```
 
 ### read_whole_extent
@@ -57,10 +57,24 @@ protected static std::optional<Extent> read_whole_extent(const pugi::xml_node & 
 ```
 
 
+### read_piece_extent
+
+```cpp
+protected static Extent read_piece_extent(const pugi::xml_node & vtk_object, const pugi::xml_node & piece)
+```
+
+
+### read_extent
+
+```cpp
+protected static std::optional<Extent> read_extent(std::string_view value)
+```
+
+
 ### read_grid_attributes
 
 ```cpp
-protected static GridAttributes read_grid_attributes(const pugi::xml_node & vtk_object)
+protected static GridAttributes read_grid_attributes(const pugi::xml_node & vtk_object, const Extent & extent)
 ```
 
 

@@ -19,7 +19,7 @@ const name = words.join('-');
 ### DataMapping
 
 ```cpp
-public void DataMapping(index_t nb_elements, index_t offset)
+public void DataMapping(index_t nb_elements)
 ```
 
 

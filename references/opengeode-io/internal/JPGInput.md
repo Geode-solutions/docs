@@ -25,14 +25,7 @@ Inherits from RasterImageInput<2>
 ### read
 
 ```cpp
-public RasterImage2D read()
-```
-
-
-### additional_files
-
-```cpp
-public AdditionalFiles additional_files()
+public std::vector<RasterImage2D> read()
 ```
 
 
@@ -43,10 +36,10 @@ public void JPGInput(std::string_view filename)
 ```
 
 
-### is_loadable
+### additional_files
 
 ```cpp
-public Percentage is_loadable()
+public AdditionalFiles additional_files()
 ```
 
 
@@ -54,6 +47,13 @@ public Percentage is_loadable()
 
 ```cpp
 public static std::string_view extension()
+```
+
+
+### is_loadable
+
+```cpp
+public Percentage is_loadable()
 ```
 
 

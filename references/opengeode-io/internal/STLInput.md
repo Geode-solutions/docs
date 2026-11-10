@@ -25,7 +25,7 @@ Inherits from TriangulatedSurfaceInput<3>
 ### read
 
 ```cpp
-public std::unique_ptr<TriangulatedSurface3D> read(const MeshImpl & impl)
+public std::vector<std::unique_ptr<TriangulatedSurface3D>> read(const MeshImpl & impl)
 ```
 
 

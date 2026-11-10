@@ -53,7 +53,7 @@ public index_t object_priority()
 ### read
 
 ```cpp
-public Section read()
+public std::vector<Section> read()
 ```
 
 
