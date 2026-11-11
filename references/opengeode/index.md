@@ -392,20 +392,6 @@ void register_geode_mesh()
 ```
 
 
-### filename_with_extension
-
-```cpp
-std::filesystem::path filename_with_extension(const std::filesystem::path & path)
-```
-
-
-### register_attribute_type
-
-```cpp
-void register_attribute_type(PContext & context, std::string_view name)
-```
-
-
 ### register_geode_mesh_input
 
 ```cpp
@@ -413,24 +399,24 @@ void register_geode_mesh_input()
 ```
 
 
-### string_split
-
-```cpp
-std::vector<std::string_view> string_split(std::string_view string)
-```
-
-
-### concatenate
-
-```cpp
-void concatenate(Container & container, const Container & values)
-```
-
-
 ### register_geode_mesh_output
 
 ```cpp
 void register_geode_mesh_output()
+```
+
+
+### filename_with_extension
+
+```cpp
+std::filesystem::path filename_with_extension(const std::filesystem::path & path)
+```
+
+
+### string_split
+
+```cpp
+std::vector<std::string_view> string_split(std::string_view string)
 ```
 
 
@@ -459,146 +445,6 @@ void compute_model_unique_vertices(const Model & model, typename Model::Builder 
 
 ```cpp
 bool string_starts_with(std::string_view string, std::string_view check)
-```
-
-
-### build_grid_from_bbox_target_length_and_maximum_cell_number
-
-```cpp
-LightRegularGrid<dimension> build_grid_from_bbox_target_length_and_maximum_cell_number(const BoundingBox<dimension> & bbox, double target_cell_length, index_t max_nb_cells)
-```
-
-
-### filepath_without_extension
-
-```cpp
-std::filesystem::path filepath_without_extension(const std::filesystem::path & path)
-```
-
-
-### register_geometry_serialize_pcontext
-
-```cpp
-void register_geometry_serialize_pcontext(PContext & context)
-```
-
-
- Register all the information needed by Bitsery to serialize the objects in the geometry library.
-
-**context** [in] The context where to register this information.
-
-**warning** The context can be used only once per archive.
-
-### register_image_serialize_pcontext
-
-```cpp
-void register_image_serialize_pcontext(PContext & context)
-```
-
-
- Register all the information needed by Bitsery to serialize the objects in the image library.
-
-**context** [in] The context where to register this information.
-
-**warning** The context can be used only once per archive.
-
-### convert_raster_image_into_grid
-
-```cpp
-LightRegularGrid<dimension> convert_raster_image_into_grid(const RasterImage<dimension> & raster, const CoordinateSystem<dimension> & coordinate_system)
-```
-
-
-### convert_point_set3d_into_2d
-
-```cpp
-std::unique_ptr<PointSet2D> convert_point_set3d_into_2d(const PointSet3D & point_set3d, local_index_t axis_to_remove)
-```
-
-
-### string_to_index
-
-```cpp
-index_t string_to_index(std::string_view string)
-```
-
-
-### perpendicular
-
-```cpp
-Vector2D perpendicular(const Vector2D & v)
-```
-
-
- Return a 2D vector perpendicular to the given one
-
-### create_aabb_tree
-
-```cpp
-AABBTree<dimension> create_aabb_tree(const SolidMesh<dimension> & mesh)
-```
-
-
-### multiple_permute
-
-```cpp
-void multiple_permute(Container & data, absl::Span<const index_t> permutation)
-```
-
-
-### concatenate
-
-```cpp
-void concatenate(Container & container, Container && values)
-```
-
-
-### operator""_uc
-
-```cpp
-unsigned char operator""_uc(unsigned long long arg)
-```
-
-
-### convert_edged_curve3d_into_2d
-
-```cpp
-std::unique_ptr<EdgedCurve2D> convert_edged_curve3d_into_2d(const EdgedCurve3D & curve3d, local_index_t axis_to_remove)
-```
-
-
-### filepath_without_filename
-
-```cpp
-std::filesystem::path filepath_without_filename(const std::filesystem::path & path)
-```
-
-
-### string_to_int
-
-```cpp
-int string_to_int(std::string_view string)
-```
-
-
-### convert_point_set2d_into_3d
-
-```cpp
-std::unique_ptr<PointSet3D> convert_point_set2d_into_3d(const PointSet2D & point_set2d, local_index_t axis_to_add, double axis_coordinate)
-```
-
-
-### to_string
-
-```cpp
-std::string to_string(std::string_view view)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const uuid & value)
 ```
 
 
@@ -637,6 +483,47 @@ std::tuple<Section, ModelCopyMapping> convert_brep_into_section(const BRep & bre
 ```
 
 
+### build_grid_from_bbox_target_length_and_maximum_cell_number
+
+```cpp
+LightRegularGrid<dimension> build_grid_from_bbox_target_length_and_maximum_cell_number(const BoundingBox<dimension> & bbox, double target_cell_length, index_t max_nb_cells)
+```
+
+
+### register_geometry_serialize_pcontext
+
+```cpp
+void register_geometry_serialize_pcontext(PContext & context)
+```
+
+
+ Register all the information needed by Bitsery to serialize the objects in the geometry library.
+
+**context** [in] The context where to register this information.
+
+**warning** The context can be used only once per archive.
+
+### register_attribute_type
+
+```cpp
+void register_attribute_type(PContext & context, std::string_view name)
+```
+
+
+### concatenate
+
+```cpp
+void concatenate(Container & container, const Container & values)
+```
+
+
+### filepath_without_extension
+
+```cpp
+std::filesystem::path filepath_without_extension(const std::filesystem::path & path)
+```
+
+
 ### rotate
 
 ```cpp
@@ -652,6 +539,19 @@ Point3D rotate(const Point3D & point, const Vector3D & axis, double angle)
 
 **angle** [in] Rotation angle expresses in radians.
 
+### register_image_serialize_pcontext
+
+```cpp
+void register_image_serialize_pcontext(PContext & context)
+```
+
+
+ Register all the information needed by Bitsery to serialize the objects in the image library.
+
+**context** [in] The context where to register this information.
+
+**warning** The context can be used only once per archive.
+
 ### register_mesh_serialize_pcontext
 
 ```cpp
@@ -664,6 +564,36 @@ void register_mesh_serialize_pcontext(PContext & context)
 **context** [in] The context where to register this information.
 
 **warning** The context can be used only once per archive.
+
+### convert_raster_image_into_grid
+
+```cpp
+LightRegularGrid<dimension> convert_raster_image_into_grid(const RasterImage<dimension> & raster, const CoordinateSystem<dimension> & coordinate_system)
+```
+
+
+### convert_point_set3d_into_2d
+
+```cpp
+std::unique_ptr<PointSet2D> convert_point_set3d_into_2d(const PointSet3D & point_set3d, local_index_t axis_to_remove)
+```
+
+
+### string_to_index
+
+```cpp
+index_t string_to_index(std::string_view string)
+```
+
+
+### perpendicular
+
+```cpp
+Vector2D perpendicular(const Vector2D & v)
+```
+
+
+ Return a 2D vector perpendicular to the given one
 
 ### lexicographic_mapping
 
@@ -700,10 +630,24 @@ std::vector<ComponentID> filter_section_components_with_regards_to_surfaces(Sect
 ```
 
 
+### convert_edged_curve3d_into_2d
+
+```cpp
+std::unique_ptr<EdgedCurve2D> convert_edged_curve3d_into_2d(const EdgedCurve3D & curve3d, local_index_t axis_to_remove)
+```
+
+
 ### polyhedron_unique_vertices
 
 ```cpp
 PolyhedronVertices polyhedron_unique_vertices(const BRep & model, const Block3D & block, index_t polyhedron_id)
+```
+
+
+### filepath_without_filename
+
+```cpp
+std::filesystem::path filepath_without_filename(const std::filesystem::path & path)
 ```
 
 
@@ -732,6 +676,20 @@ void repair_polygons_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMe
 
 ```cpp
 std::tuple<BRep, ModelCopyMapping> convert_section_into_brep(const Section & section, local_index_t axis_to_add, double axis_coordinate)
+```
+
+
+### string_to_int
+
+```cpp
+int string_to_int(std::string_view string)
+```
+
+
+### convert_point_set2d_into_3d
+
+```cpp
+std::unique_ptr<PointSet3D> convert_point_set2d_into_3d(const PointSet2D & point_set2d, local_index_t axis_to_add, double axis_coordinate)
 ```
 
 
@@ -771,6 +729,13 @@ bool is_point_inside_polygon(const Point2D & point, const Polygon2D & polygon)
 
 ```cpp
 std::vector<index_t> morton_mapping(absl::Span<const Point<dimension>> points)
+```
+
+
+### create_aabb_tree
+
+```cpp
+AABBTree<dimension> create_aabb_tree(const SolidMesh<dimension> & mesh)
 ```
 
 
@@ -1231,6 +1196,105 @@ std::vector<std::string> save_section(const Section & section, std::string_view 
 **section** [in] Section to save.
 
 **filename** [in] Path to the file where save the section.
+
+### multiple_permute
+
+```cpp
+void multiple_permute(Container & data, absl::Span<const index_t> permutation)
+```
+
+
+### concatenate
+
+```cpp
+void concatenate(Container & container, Container && values)
+```
+
+
+### operator""_uc
+
+```cpp
+unsigned char operator""_uc(unsigned long long arg)
+```
+
+
+### to_string
+
+```cpp
+std::string to_string(std::string_view view)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const uuid & value)
+```
+
+
+### delete_vector_elements
+
+```cpp
+index_t delete_vector_elements(const DeleteContainer & to_delete, ValueContainer & values)
+```
+
+
+ Delete some elements from a given vector.
+
+**to_delete** [in] Vector of the same size than values. If to_delete[i] is true the i-th element is deleted, else the element is kept.
+
+**values** [in] Vector in which perform deletions.
+
+**return** The number of deleted elements
+
+### print_available_extensions
+
+```cpp
+void print_available_extensions(std::string_view type)
+```
+
+
+### to_array
+
+```cpp
+std::array<T, sizeof...(Args)> to_array(Args &&... args)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const NamedType<Type, Tag> & value)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const ComponentMeshVertex & value)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const ComponentID & value)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const MeshElement & value)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const EdgeVertex & value)
+```
+
 
 ### convert_surface_mesh_into_polygonal_surface
 
@@ -1816,35 +1880,6 @@ SIGN polygon_area_sign(const Polygon2D & polygon)
 
  Return the sign of a 2D polygon area. The polygon is expected to be simple. For a self-intersecting polygon, the returned sign is the orientation around its lexicographically smallest vertex.
 
-### delete_vector_elements
-
-```cpp
-index_t delete_vector_elements(const DeleteContainer & to_delete, ValueContainer & values)
-```
-
-
- Delete some elements from a given vector.
-
-**to_delete** [in] Vector of the same size than values. If to_delete[i] is true the i-th element is deleted, else the element is kept.
-
-**values** [in] Vector in which perform deletions.
-
-**return** The number of deleted elements
-
-### print_available_extensions
-
-```cpp
-void print_available_extensions(std::string_view type)
-```
-
-
-### to_array
-
-```cpp
-std::array<T, sizeof...(Args)> to_array(Args &&... args)
-```
-
-
 ### load_polyhedral_solid
 
 ```cpp
@@ -1855,20 +1890,6 @@ std::vector<std::unique_ptr<PolyhedralSolid<dimension>>> load_polyhedral_solid(s
  API function for loading an PolyhedralSolid. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
 
 **filename** [in] Path to the file to load.
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const NamedType<Type, Tag> & value)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const ComponentMeshVertex & value)
-```
-
 
 ### brep_additional_files
 
@@ -1881,27 +1902,6 @@ AdditionalFiles brep_additional_files(std::string_view filename)
 
 ```cpp
 AdditionalFiles section_additional_files(std::string_view filename)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const ComponentID & value)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const MeshElement & value)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const EdgeVertex & value)
 ```
 
 
@@ -2801,40 +2801,17 @@ void sort_unique(Container & container, Comparison comp)
 
  Sort the container with the given comparison, then remove the duplicated values using operator==.
 
-### convert_surface_meshes_into_triangulated_surfaces
-
-```cpp
-void convert_surface_meshes_into_triangulated_surfaces(BRep & brep)
-```
-
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
-```
-
-
-### convert_brep_into_curve
-
-```cpp
-std::tuple<std::unique_ptr<EdgedCurve3D>, ModelToMeshMappings> convert_brep_into_curve(const BRep & brep)
-```
-
-
-### tetrahedron_volume
-
-```cpp
-double tetrahedron_volume(const Tetrahedron & tetra)
-```
-
-
- Compute the (positive) volume of a tetrahedron
-
 ### AbslHashValue
 
 ```cpp
 H AbslHashValue(H h, const PolyhedronFacetVertex & value)
+```
+
+
+### convert_surface_meshes_into_triangulated_surfaces
+
+```cpp
+void convert_surface_meshes_into_triangulated_surfaces(BRep & brep)
 ```
 
 
@@ -2848,7 +2825,21 @@ H AbslHashValue(H h, const PolyhedronFacetEdge & value)
 ### point_triangle_position
 
 ```cpp
+POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
+```
+
+
+### point_triangle_position
+
+```cpp
 POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### convert_brep_into_curve
+
+```cpp
+std::tuple<std::unique_ptr<EdgedCurve3D>, ModelToMeshMappings> convert_brep_into_curve(const BRep & brep)
 ```
 
 
@@ -2858,6 +2849,15 @@ POSITION point_triangle_position(const Point3D & point, const Triangle3D & trian
 std::unique_ptr<SurfaceMesh3D> convert_surface_mesh2d_into_3d(const SurfaceMesh2D & surface2d, local_index_t axis_to_add, double axis_coordinate)
 ```
 
+
+### tetrahedron_volume
+
+```cpp
+double tetrahedron_volume(const Tetrahedron & tetra)
+```
+
+
+ Compute the (positive) volume of a tetrahedron
 
 ### segment_segment_distance
 
@@ -2971,14 +2971,6 @@ Percentage is_tetrahedral_solid_loadable(std::string_view filename)
 ModelMeshesAABBTree2D create_line_meshes_aabb_trees(const Section & model)
 ```
 
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point<dimension> & point, const Triangle<dimension> & triangle)
-```
-
- Return the position of a point in a triangle: inside, outside, on a triangle vertex or an edge.
 
 ### convert_brep_into_solid
 
@@ -3141,6 +3133,66 @@ std::array<double, 2> segment_barycentric_coordinates(const Point<dimension> & p
 
 **exception**if the segment is degenerated
 
+### component_mesh_vertex_triplets
+
+```cpp
+ComponentMeshVertexTriplets component_mesh_vertex_triplets(absl::Span<const ComponentMeshVertex> unique_vertices0, absl::Span<const ComponentMeshVertex> unique_vertices1, absl::Span<const ComponentMeshVertex> unique_vertices2, const ComponentID & component)
+```
+
+
+### surface_radial_sort
+
+```cpp
+SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
+```
+
+
+### old2new_permutation
+
+```cpp
+std::vector<index_t> old2new_permutation(absl::Span<const index_t> permutation)
+```
+
+
+### safe_segment_barycentric_coordinates
+
+```cpp
+std::array<double, 2> safe_segment_barycentric_coordinates(const Point<dimension> & point, const Segment<dimension> & segment)
+```
+
+
+ Compute barycentric coordinates of a point with regards to a segment. If segment is degenerated, computation fallbacks onto its vertices.
+
+**return** an array containing the parametric coordinates corresponding to the segment vertices.
+
+### segment_segment_intersection_detection
+
+```cpp
+SegmentSegmentIntersection segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
+```
+
+
+### segment_segment_intersection_detection
+
+```cpp
+SegmentSegmentIntersection segment_segment_intersection_detection(const Segment3D & segment0, const Segment3D & segment1)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
+```
+
+
 ### component_mesh_polygons
 
 ```cpp
@@ -3173,13 +3225,6 @@ std::unique_ptr<TriangulatedSurface3D> convert_triangulated_surface2d_into_3d(co
 ```
 
 
-### component_mesh_vertex_triplets
-
-```cpp
-ComponentMeshVertexTriplets component_mesh_vertex_triplets(absl::Span<const ComponentMeshVertex> unique_vertices0, absl::Span<const ComponentMeshVertex> unique_vertices1, absl::Span<const ComponentMeshVertex> unique_vertices2, const ComponentID & component)
-```
-
-
 ### point_line_signed_distance
 
 ```cpp
@@ -3189,45 +3234,12 @@ double point_line_signed_distance(const Point2D & point, const InfiniteLine2D & 
 
  Compute the smallest signed distance between a point and an infinite line in 2D
 
-### surface_radial_sort
-
-```cpp
-SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
-```
-
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point<dimension> & point0, const Point<dimension> & point1, const Point<dimension> & point2)
-```
-
- Return true if the three points are exactly aligned.
-
-### old2new_permutation
-
-```cpp
-std::vector<index_t> old2new_permutation(absl::Span<const index_t> permutation)
-```
-
-
 ### convert_triangulated_surface3d_into_2d
 
 ```cpp
 std::unique_ptr<TriangulatedSurface2D> convert_triangulated_surface3d_into_2d(const TriangulatedSurface3D & surface3d, local_index_t axis_to_remove)
 ```
 
-
-### safe_segment_barycentric_coordinates
-
-```cpp
-std::array<double, 2> safe_segment_barycentric_coordinates(const Point<dimension> & point, const Segment<dimension> & segment)
-```
-
-
- Compute barycentric coordinates of a point with regards to a segment. If segment is degenerated, computation fallbacks onto its vertices.
-
-**return** an array containing the parametric coordinates corresponding to the segment vertices.
 
 ### segment_plane_intersection_detection
 
@@ -3239,16 +3251,6 @@ POSITION segment_plane_intersection_detection(const Segment3D & segment, const P
  Detect if there is an intersection between a segment and a plane
 
 **return** the position of the intersection on the segment. Returns outside if there is no intersection or the segment is coplanar with the plane
-
-### point_triangle_distance
-
-```cpp
-std::tuple<double, Point<dimension>> point_triangle_distance(const Point<dimension> & point, const Triangle<dimension> & triangle)
-```
-
- Compute the smallest distance between a point and a triangle
-
-**return** a tuple containing: - the smallest distance. - the closest point on the triangle.
 
 ### component_mesh_edges
 
@@ -3350,34 +3352,6 @@ int geode_lippincott()
 
 
  Try to catch several exception types. Always return 1.
-
-### segment_segment_intersection_detection
-
-```cpp
-SegmentSegmentIntersection segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
-```
-
-
-### segment_segment_intersection_detection
-
-```cpp
-SegmentSegmentIntersection segment_segment_intersection_detection(const Segment3D & segment0, const Segment3D & segment1)
-```
-
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
-```
-
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
-```
-
 
 ### segment_sphere_intersection
 
@@ -3499,6 +3473,24 @@ SurfacePolygonsEdgeVertices oriented_surface_vertices_from_line_edge(const BRep 
 ```
 
 
+### point_triangle_distance
+
+```cpp
+std::tuple<double, Point3D> point_triangle_distance(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### point_plane_distance
+
+```cpp
+std::tuple<double, Point3D> point_plane_distance(const Point3D & point, const Plane & plane)
+```
+
+
+ Compute the distance between a point and a plane
+
+**return** a tuple containing: - the smallest distance. - the nearest point on the plane.
+
 ### line_line_intersection
 
 ```cpp
@@ -3516,6 +3508,17 @@ IntersectionResult<Point2D> line_line_intersection(const InfiniteLine2D & line0,
 absl::InlinedVector<SurfacePolygonEdge, 2> surface_vertices_from_line_edge(const Section & model, const Surface2D & surface, const Line2D & line, index_t edge_id)
 ```
 
+
+### point_plane_signed_distance
+
+```cpp
+std::tuple<double, Point3D> point_plane_signed_distance(const Point3D & point, const Plane & plane)
+```
+
+
+ Compute the signed distance between a point and a plane
+
+**return** a tuple containing: - the signed distance (sign is given by the plane normal direction). - the nearest point on the plane.
 
 ### oriented_surface_vertices_from_line_edge
 
@@ -3540,38 +3543,9 @@ IntersectionResult<Point2D> segment_segment_intersection(const Segment2D & segme
 ### point_triangle_distance
 
 ```cpp
-std::tuple<double, Point3D> point_triangle_distance(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### point_triangle_distance
-
-```cpp
 std::tuple<double, Point2D> point_triangle_distance(const Point2D & point, const Triangle2D & triangle)
 ```
 
-
-### point_plane_distance
-
-```cpp
-std::tuple<double, Point3D> point_plane_distance(const Point3D & point, const Plane & plane)
-```
-
-
- Compute the distance between a point and a plane
-
-**return** a tuple containing: - the smallest distance. - the nearest point on the plane.
-
-### point_plane_signed_distance
-
-```cpp
-std::tuple<double, Point3D> point_plane_signed_distance(const Point3D & point, const Plane & plane)
-```
-
-
- Compute the signed distance between a point and a plane
-
-**return** a tuple containing: - the signed distance (sign is given by the plane normal direction). - the nearest point on the plane.
 
 ### point_sphere_distance
 
@@ -3774,6 +3748,32 @@ std::tuple<double, std::array<double, dimension>> SqrDistanceSpecial(const std::
 std::tuple<double, std::array<double, dimension>> SquaredDistance(const std::array<double, dimension> & extents, const std::array<double, dimension> & query_point_coordinates)
 ```
 
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point<dimension> & point, const Triangle<dimension> & triangle)
+```
+
+ Return the position of a point in a triangle: inside, outside, on a triangle vertex or an edge.
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point<dimension> & point0, const Point<dimension> & point1, const Point<dimension> & point2)
+```
+
+ Return true if the three points are exactly aligned.
+
+### point_triangle_distance
+
+```cpp
+std::tuple<double, Point<dimension>> point_triangle_distance(const Point<dimension> & point, const Triangle<dimension> & triangle)
+```
+
+ Compute the smallest distance between a point and a triangle
+
+**return** a tuple containing: - the smallest distance. - the closest point on the triangle.
 
 ### point_ellipse_distance
 
