@@ -34,10 +34,17 @@ std::vector<uuid> components_uuids(const Model & model, index_t unique_vertex_in
 ```
 
 
-### brep_blocks_are_meshed
+### mesh_has_isolated_vertices
 
 ```cpp
-bool brep_blocks_are_meshed(const BRep & brep)
+bool mesh_has_isolated_vertices(const Mesh & mesh)
+```
+
+
+### isolated_vertices
+
+```cpp
+InspectionIssues<index_t> isolated_vertices(const Mesh & mesh)
 ```
 
 
@@ -45,6 +52,13 @@ bool brep_blocks_are_meshed(const BRep & brep)
 
 ```cpp
 bool model_component_vertices_are_associated_to_unique_vertices(const Model & model, const ComponentID & component_id, const Mesh & component_mesh)
+```
+
+
+### brep_blocks_are_meshed
+
+```cpp
+bool brep_blocks_are_meshed(const BRep & brep)
 ```
 
 
@@ -76,6 +90,13 @@ std::optional<std::string> line_end_not_a_corner_message(const Section & section
 ```
 
 
+### wrong_nb_boundary_corner_line_cmvs_message
+
+```cpp
+std::optional<std::string> wrong_nb_boundary_corner_line_cmvs_message(const BRep & brep, index_t unique_vertex_index, const Corner3D & corner, const Line3D & line, index_t nb_line_cmvs)
+```
+
+
 ### add_unique_vertex_issue
 
 ```cpp
@@ -101,6 +122,13 @@ index_t nb_expected_block_cmvs(const BRep & brep, index_t unique_vertex_id, cons
 
 ```cpp
 std::optional<std::string> wrong_nb_expected_block_cmvs(const BRep & brep, index_t unique_vertex_id, const geode::uuid & block_uuid, const VertexCMVsByComponent & unique_vertex_cmvs)
+```
+
+
+### wrong_nb_boundary_corner_line_cmvs_message
+
+```cpp
+std::optional<std::string> wrong_nb_boundary_corner_line_cmvs_message(const Section & section, index_t unique_vertex_index, const Corner2D & corner, const Line2D & line, index_t nb_line_cmvs)
 ```
 
 

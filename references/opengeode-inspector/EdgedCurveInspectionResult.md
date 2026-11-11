@@ -26,6 +26,11 @@ public InspectionIssues degenerated_edges
 
 ```
 
+```cpp
+public InspectionIssues isolated_vertices
+
+```
+
 
 
 ## Functions

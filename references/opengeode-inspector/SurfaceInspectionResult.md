@@ -56,6 +56,11 @@ public InspectionIssues negative_polygons
 
 ```
 
+```cpp
+public InspectionIssues isolated_vertices
+
+```
+
 
 
 ## Functions

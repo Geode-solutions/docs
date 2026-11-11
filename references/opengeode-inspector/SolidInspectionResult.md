@@ -56,6 +56,11 @@ public InspectionIssues negative_polyhedra
 
 ```
 
+```cpp
+public InspectionIssues isolated_vertices
+
+```
+
 
 
 ## Functions

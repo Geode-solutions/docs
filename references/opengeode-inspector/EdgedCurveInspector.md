@@ -14,12 +14,12 @@ const name = words.join('-');
 # class EdgedCurveInspector
 
 
- Class for inspecting an EdgedCurve**extends** **extends** 
+ Class for inspecting an EdgedCurve**extends** **extends** **extends** 
 
 
 
 ```cpp
-Inherits from AddInspectors<EdgedCurve<dimension>, EdgedCurveColocation<dimension>, EdgedCurveDegeneration<dimension> >
+Inherits from AddInspectors<EdgedCurve<dimension>, EdgedCurveColocation<dimension>, EdgedCurveDegeneration<dimension>, EdgedCurveIsolation<dimension> >
 ```
 
 
@@ -60,7 +60,7 @@ public EdgedCurveInspector<dimension> & operator=(const EdgedCurveInspector<dime
 
 
 ```cpp
-Inherits from AddInspectors<EdgedCurve<2U>, EdgedCurveColocation<2U>, EdgedCurveDegeneration<2U> >
+Inherits from AddInspectors<EdgedCurve<2U>, EdgedCurveColocation<2U>, EdgedCurveDegeneration<2U>, EdgedCurveIsolation<2U> >
 ```
 
 
@@ -69,7 +69,7 @@ Inherits from AddInspectors<EdgedCurve<2U>, EdgedCurveColocation<2U>, EdgedCurve
 
 
 ```cpp
-Inherits from AddInspectors<EdgedCurve<3U>, EdgedCurveColocation<3U>, EdgedCurveDegeneration<3U> >
+Inherits from AddInspectors<EdgedCurve<3U>, EdgedCurveColocation<3U>, EdgedCurveDegeneration<3U>, EdgedCurveIsolation<3U> >
 ```
 
 
