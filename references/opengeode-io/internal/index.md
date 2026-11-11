@@ -35,6 +35,7 @@ const name = words.join('-');
 * [PLYInput](PLYInput.md)
 * [PLYOutput](PLYOutput.md)
 * [PNGInput](PNGInput.md)
+* [PNTInput](PNTInput.md)
 * [PVDAttributesTransfer](PVDAttributesTransfer.md)
 * [PVDBRepTimeSeriesInput](PVDBRepTimeSeriesInput.md)
 * [PVDDatasetMappings](PVDDatasetMappings.md)
