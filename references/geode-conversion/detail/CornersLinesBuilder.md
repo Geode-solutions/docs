@@ -122,13 +122,6 @@ public index_t line_edge_id(index_t wireframe_edge_id)
 ```
 
 
-### line_vertex_id
-
-```cpp
-public index_t line_vertex_id(index_t wireframe_vertex_id, const uuid & output_line_uuid)
-```
-
-
 ### CornersLinesBuilder
 
 ```cpp
@@ -182,6 +175,13 @@ protected void declare_line_edge(index_t wireframe_edge_id, const uuid & line_uu
 
 ```cpp
 protected void remove_line_edges(const uuid & line_uuid)
+```
+
+
+### remove_lines_edges
+
+```cpp
+protected void remove_lines_edges(const absl::flat_hash_set<uuid> & line_uuids)
 ```
 
 

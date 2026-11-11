@@ -103,19 +103,6 @@ void add_breps_block_mapping_case_bijective(const BRep & initial_brep, const BRe
 ```
 
 
-### add_sharp_features
-
-```cpp
-SectionAddSharpResult add_sharp_features(Section & model, double max_angle)
-```
-
-
- Update the given Section, with the sharp features (e.g., points where the angle between the edges is higher than the given max_angle) on the lines explicited into corners, eventually splitting input lines.
-
-**model** [in] Section
-
-**max_angle** [in] Angle between the edges under which their common vertex is considered a sharp feature.
-
 ### add_breps_block_mapping_case_surjective
 
 ```cpp
@@ -139,6 +126,19 @@ std::tuple<BRep, ModelMappings> convert_meshes_into_brep(absl::Span<const std::r
 **surfaces** [in] Input surfaces
 
 **return** the BRep and the mapping between input corners, curves and surfaces and Corner, Line and Surface uuid. One input surface could contribute to several Surfaces depending on the merging result.
+
+### add_sharp_features
+
+```cpp
+SectionAddSharpResult add_sharp_features(Section & model, double max_angle)
+```
+
+
+ Update the given Section, with the sharp features (e.g., points where the angle between the edges is higher than the given max_angle) on the lines explicited into corners, eventually splitting input lines. If Surface borders have no Lines, Lines and Corners completing the topology are added (with a warning): the returned mappings list them in added_components, while they are not in the sharp collections, and sharp vertices along these borders are not detected.
+
+**model** [in] Section
+
+**max_angle** [in] Angle between the edges under which their common vertex is considered a sharp feature, in degrees in ]0, 180].
 
 ### convert_surface_into_section_from_attribute
 
@@ -198,11 +198,11 @@ BRepAddSharpResult add_sharp_features(BRep & model, double max_angle)
 ```
 
 
- Update the given BRep, with the sharp features (e.g., edges where the angle between the normals of the facets is higher than the given max_angle) on the lines and surfaces explicited into corners and lines, eventually splitting input lines and surfaces.
+ Update the given BRep, with the sharp features (e.g., edges where the angle between the normals of the facets is higher than the given max_angle) on the lines and surfaces explicited into corners and lines, eventually splitting input lines and surfaces. If the input topology is incomplete (Surface borders without Lines, Line ends without Corners), it is first completed: the returned mappings then also list these completion Lines and Corners in added_components, while they are not in the sharp collections. The mesh element and vertex mappings may be incomplete for the components modified by this topology completion.
 
 **model** [in] BRep
 
-**max_angle** [in] Dihedral angle between the facets and angle between line edges, under which their common edge/vertex is considered a sharp feature.
+**max_angle** [in] Dihedral angle between the facets and angle between line edges, under which their common edge/vertex is considered a sharp feature, in degrees in ]0, 180].
 
 ### remove_sharp_features
 
