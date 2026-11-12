@@ -321,6 +321,17 @@ LineRemesherOutput<Data::dimension> remesh_line_step(Data & data, const uuid & i
 ```
 
 
+### remove_steiner_points
+
+```cpp
+void remove_steiner_points(DelaunayTriangulation & mesh, std::vector<index_t> & steiner_vertices, absl::Span<const std::array<index_t, 2>> segments, absl::Span<const std::array<index_t, 3>> triangles)
+```
+
+
+ Try to remove each Steiner vertex by re-tetrahedralizing its star without it (advancing front, or collapse onto one of its neighbors): the result is kept only if every resulting tetrahedron is positive (exact) and every constraint is kept. Passes are repeated while a vertex is removed. Removed vertices stay in mesh.points but are no longer used (vertex_tet is NO_ID).
+
+**steiner_vertices** [in,out] the remaining Steiner vertices.
+
 ### sample_line_step
 
 ```cpp
@@ -362,17 +373,6 @@ typename Data::Tasks sample_lines_impl(Data & data)
 H AbslHashValue(H h, const Edge & other)
 ```
 
-
-### remove_steiner_points
-
-```cpp
-void remove_steiner_points(DelaunayTriangulation & mesh, std::vector<index_t> & steiner_vertices, absl::Span<const std::array<index_t, 2>> segments, absl::Span<const std::array<index_t, 3>> triangles)
-```
-
-
- Try to remove each Steiner vertex by re-tetrahedralizing its star without it (advancing front, or collapse onto one of its neighbors): the result is kept only if every resulting tetrahedron is positive (exact) and every constraint is kept. Passes are repeated while a vertex is removed. Removed vertices stay in mesh.points but are no longer used (vertex_tet is NO_ID).
-
-**steiner_vertices** [in,out] the remaining Steiner vertices.
 
 ### insert_constrained_points
 
