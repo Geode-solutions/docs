@@ -40,7 +40,7 @@ protected std::tuple<bool, std::string> is_license_file_available()
 ### acquire_license_file
 
 ```cpp
-protected void acquire_license_file()
+protected LicenseScope acquire_license_file()
 ```
 
 

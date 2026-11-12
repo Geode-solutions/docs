@@ -128,6 +128,7 @@ const name = words.join('-');
 * [InternalDistance](InternalDistance.md)
 * [Invalidity](Invalidity.md)
 * [IsotropicMetric](IsotropicMetric.md)
+* [LicenseScope](LicenseScope.md)
 * [LineCollapseEdgeValidities](LineCollapseEdgeValidities.md)
 * [LinearSolver](LinearSolver.md)
 * [Mapping](Mapping.md)
@@ -255,13 +256,6 @@ const name = words.join('-');
 
 ## Functions
 
-### dummy_triangle
-
-```cpp
-Triangle<dimension> dummy_triangle()
-```
-
-
 ### combined_allowed
 
 ```cpp
@@ -269,24 +263,21 @@ ALLOWED_COLLAPSE_VERTEX_VERTEX combined_allowed(ALLOWED_COLLAPSE_VERTEX_VERTEX l
 ```
 
 
+### pc_identifier
+
+```cpp
+std::string pc_identifier()
+```
+
+
+ Returns the signature of the current machine, used to bind a license to this machine (see geode-license.py --pc-signature).
+
+**return** an empty string when licensing is disabled or when the machine cannot be identified.
+
 ### edge_tshape_apex
 
 ```cpp
 std::optional<PolygonVertex> edge_tshape_apex(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge)
-```
-
-
-### are_component_mesh_vertices_included
-
-```cpp
-bool are_component_mesh_vertices_included(const ComponentMeshVertexInclusionQuery & query)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const BlockElement<ElementId> & element)
 ```
 
 
@@ -308,6 +299,13 @@ ALLOWED_COLLAPSE_VERTEX_VERTEX allowed_collapse_edge_by_constraints(const Modifi
 
 ```cpp
 ConstantMetric3D compute_constant_metric_from_maximal_edge_length(const SolidMesh3D & mesh)
+```
+
+
+### are_component_mesh_vertices_included
+
+```cpp
+bool are_component_mesh_vertices_included(const ComponentMeshVertexInclusionQuery & query)
 ```
 
 
@@ -354,6 +352,20 @@ OwnerPlane mean_plane_around_points(const PointSet3D & mesh)
 
 ```cpp
 std::optional<SolidEdgeTShape> edge_tshape_apex(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge)
+```
+
+
+### dummy_triangle
+
+```cpp
+Triangle<dimension> dummy_triangle()
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const BlockElement<ElementId> & element)
 ```
 
 

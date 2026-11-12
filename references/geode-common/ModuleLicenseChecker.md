@@ -39,7 +39,7 @@ public static std::tuple<bool, std::string> is_license_available()
 ### acquire_license
 
 ```cpp
-public static void acquire_license()
+public static LicenseScope acquire_license()
 ```
 
 

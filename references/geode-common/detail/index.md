@@ -15,11 +15,20 @@ const name = words.join('-');
 
 
 
+ Process-wide registry of the licensed products, shared by every module embedding the Common core.
+
+ A product licensed on its own is granted to any caller. A product X only delegated by the license of another product is granted to a caller if: walking the current thread stack from the license check, skipping the frames before the first one of X, then the frames of X and of the runtime libraries, the first remaining frame is in a module of a product P with - P holding its own license (a live LicenseScope) delegating X, or - a product holding its own license delegating both P and X. Any other caller is refused: customer code, unknown modules, and a stack ending among frames of X and runtime libraries (e.g. a customer thread function forwarding to X as a tail call, or a thread started by X itself: delegated checks belong to entry points reached on the caller's thread).
+
+
+
 ## Records
 
 * [AdvancedModelMeshModifiers](AdvancedModelMeshModifiers.md)
 * [DistanceToTetrahedron](DistanceToTetrahedron.md)
 * [EdgeDistance](EdgeDistance.md)
+* [LicenseRegistry](LicenseRegistry.md)
+* [ModuleRange](ModuleRange.md)
+* [ModuleRanges](ModuleRanges.md)
 * [TriangleDistance](TriangleDistance.md)
 
 
@@ -136,12 +145,28 @@ OwnerPlane mean_plane_around_points(const PointSet3D & mesh, absl::Span<const ge
 
 **mesh_vertices_indices** [in] Indices of mesh vertices to use
 
+### license_product_id
+
+```cpp
+LicenseProductId license_product_id(std::string_view feature)
+```
+
+
 ### mean_plane_around_curve_points
 
 ```cpp
 OwnerPlane mean_plane_around_curve_points(const EdgedCurve3D & mesh, absl::Span<const geode::index_t> mesh_vertices_indices)
 ```
 
+
+### register_license_module
+
+```cpp
+void register_license_module(std::string_view feature, const void * address_in_module)
+```
+
+
+ Registers the module (shared library or executable) containing the given address as a module of the product feature.
 
 ### mean_plane_around_surface_points
 
@@ -156,6 +181,49 @@ OwnerPlane mean_plane_around_surface_points(const SurfaceMesh3D & mesh, absl::Sp
 std::optional<local_index_t> snapping_detection(const SolidMesh<dimension> & solid, const PolyhedronFacetEdge & edge, const Point<dimension> & point)
 ```
 
+
+### unregister_license_module
+
+```cpp
+void unregister_license_module(const void * address_in_module)
+```
+
+
+### add_license_holder
+
+```cpp
+LicenseHolderShard add_license_holder(LicenseProductId holder, std::uint64_t delegates_mask)
+```
+
+
+ Records a live own license of holder, delegating the products of delegates_mask (bit i for product i).
+
+**return** the shard to give back to remove_license_holder.
+
+### remove_license_holder
+
+```cpp
+void remove_license_holder(LicenseProductId holder, LicenseHolderShard shard)
+```
+
+
+### is_caller_delegated
+
+```cpp
+bool is_caller_delegated(LicenseProductId checked)
+```
+
+
+ Returns whether the caller of the current license check of the product checked is granted a delegated license.
+
+### license_caller_description
+
+```cpp
+std::string license_caller_description(LicenseProductId checked, std::string_view checked_name)
+```
+
+
+ Describes why the caller of the current license check of the product checked, named checked_name in the description, is not delegated (slow, failure path only).
 
 ### is_swap_edge_allowed_by_constraints
 
