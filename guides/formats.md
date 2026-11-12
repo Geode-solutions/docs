@@ -57,11 +57,12 @@ import CodeExample from '/components/CodeExample.vue'
 | .gexf | [`Graph`] | | ✓ | |
 | .gid_msh | [`BRep`] | | ✓ | GiD mesh, requires triangulated surfaces and tetrahedral blocks, both with a material_number attribute |
 | .jpg | [`RasterImage2D`] | ✓ | | |
-| .msh | [`BRep`] | ✓ | ✓ | Gmsh ASCII format, v2 and v4 for input, v4.1 for output, output requires triangulated surfaces and tetrahedral blocks |
+| .msh | [`BRep`] | ✓ | ✓ | Gmsh ASCII format, v2 and v4 for input (partitioned entities are loaded into their parent entities), v4.1 for output, output requires triangulated surfaces and tetrahedral blocks |
 | .obj | [`PolygonalSurface3D`] | ✓ | ✓ | |
 | .obj | [`TriangulatedSurface3D`] | | ✓ | |
 | .ply | [`PolygonalSurface3D`] | ✓ | ✓ | |
 | .png | [`RasterImage2D`] | ✓ | | |
+| .pnt | [`PointSet3D`] | ✓ | | Map3D polylines, each point is a vertex with polyline and flag attributes, plus colour and mtype attributes when the file gives them |
 | .pvd | [`BRep`] time series | ✓ | | ParaView collection, the attributes of each time step are read onto an existing BRep |
 | .smesh | [`TriangulatedSurface3D`] [`EdgedCurve3D`] | ✓ | | |
 | .stl | [`TriangulatedSurface3D`] | ✓ | ✓ | |
