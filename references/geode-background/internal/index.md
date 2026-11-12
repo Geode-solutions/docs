@@ -125,51 +125,17 @@ ALLOWED_COLLAPSE_VERTEX_VERTEX allowed_collapse_edge_by_macro_info(const Backgro
 ```
 
 
-### allowed_collapse_edge_by_mandatory_macro_info
-
-```cpp
-ALLOWED_COLLAPSE_VERTEX_VERTEX allowed_collapse_edge_by_mandatory_macro_info(const BackgroundSurface & surface, const PolygonEdge & edge)
-```
-
-
-### allowed_collapse_edge_vertex_by_macro_info
-
-```cpp
-ALLOWED_COLLAPSE_EDGE_VERTEX allowed_collapse_edge_vertex_by_macro_info(const BackgroundSurface & surface, const PolygonEdge & edge, const std::optional<PolygonVertex> & tshape_apex)
-```
-
-
-### allowed_collapse_edge_by_mandatory_macro_info
-
-```cpp
-ALLOWED_COLLAPSE_VERTEX_VERTEX allowed_collapse_edge_by_mandatory_macro_info(const BackgroundBRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge)
-```
-
-
-### epsilon_optimize_background_brep_elements
-
-```cpp
-void epsilon_optimize_background_brep_elements(BackgroundBRepGeometricConstraintModifier & constraint_modifier, BRepBuilder & brep_builder, absl::Span<const BlockElement<index_t>> tetrahedra)
-```
-
-
-### allowed_collapse_edge_vertex_by_mandatory_macro_info
-
-```cpp
-ALLOWED_COLLAPSE_EDGE_VERTEX allowed_collapse_edge_vertex_by_mandatory_macro_info(const BackgroundSurface & surface, const PolygonEdge & edge, const std::optional<PolygonVertex> & tshape_apex)
-```
-
-### allowed_collapse_edge_vertex_by_mandatory_macro_info_by_macro_info
-
-```cpp
-ALLOWED_COLLAPSE_EDGE_VERTEX allowed_collapse_edge_vertex_by_mandatory_macro_info_by_macro_info(const BackgroundSurface & surface, const PolygonEdge & edge, const std::optional<PolygonVertex> & tshape_apex)
-```
-
-
 ### allowed_collapse_edge_by_macro_info
 
 ```cpp
 ALLOWED_COLLAPSE_VERTEX_VERTEX allowed_collapse_edge_by_macro_info(const BackgroundSolid & solid, const PolyhedronFacetEdge & edge)
+```
+
+
+### allowed_collapse_edge_by_mandatory_macro_info
+
+```cpp
+ALLOWED_COLLAPSE_VERTEX_VERTEX allowed_collapse_edge_by_mandatory_macro_info(const BackgroundSurface & surface, const PolygonEdge & edge)
 ```
 
 
@@ -190,9 +156,36 @@ ALLOWED_COLLAPSE_VERTEX_VERTEX allowed_collapse_edge_by_mandatory_macro_info(con
 ### allowed_collapse_edge_vertex_by_macro_info
 
 ```cpp
+ALLOWED_COLLAPSE_EDGE_VERTEX allowed_collapse_edge_vertex_by_macro_info(const BackgroundSurface & surface, const PolygonEdge & edge, const std::optional<PolygonVertex> & tshape_apex)
+```
+
+
+### allowed_collapse_edge_by_mandatory_macro_info
+
+```cpp
+ALLOWED_COLLAPSE_VERTEX_VERTEX allowed_collapse_edge_by_mandatory_macro_info(const BackgroundBRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge)
+```
+
+
+### allowed_collapse_edge_vertex_by_macro_info
+
+```cpp
 ALLOWED_COLLAPSE_EDGE_VERTEX allowed_collapse_edge_vertex_by_macro_info(const BackgroundSolid & solid, const PolyhedronFacetEdge & edge, index_t apex, const std::optional<SolidEdgeTShape> & tshape)
 ```
 
+
+### epsilon_optimize_background_brep_elements
+
+```cpp
+void epsilon_optimize_background_brep_elements(BackgroundBRepGeometricConstraintModifier & constraint_modifier, BRepBuilder & brep_builder, absl::Span<const BlockElement<index_t>> tetrahedra)
+```
+
+
+### allowed_collapse_edge_vertex_by_mandatory_macro_info
+
+```cpp
+ALLOWED_COLLAPSE_EDGE_VERTEX allowed_collapse_edge_vertex_by_mandatory_macro_info(const BackgroundSurface & surface, const PolygonEdge & edge, const std::optional<PolygonVertex> & tshape_apex)
+```
 
 ### allowed_collapse_edge_vertex_by_macro_info
 
@@ -326,6 +319,13 @@ bool is_edge_removal_allowed_by_mandatory_macro_info(const BackgroundSurface & s
 ```
 
 
+### epsilon_optimize_background_solid_elements
+
+```cpp
+std::vector<index_t> epsilon_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, TetrahedralSolidBuilder3D & builder, absl::Span<const index_t> tetrahedra)
+```
+
+
 ### optimize_background_solid_elements
 
 ```cpp
@@ -361,17 +361,17 @@ std::vector<BlockElement<index_t>> optimize_background_brep_elements(BackgroundB
 ```
 
 
+### allowed_collapse_edge_vertex_by_mandatory_macro_info_by_macro_info
+
+```cpp
+ALLOWED_COLLAPSE_EDGE_VERTEX allowed_collapse_edge_vertex_by_mandatory_macro_info_by_macro_info(const BackgroundSurface & surface, const PolygonEdge & edge, const std::optional<PolygonVertex> & tshape_apex)
+```
+
+
 ### is_edge_removal_allowed_by_macro_info
 
 ```cpp
 bool is_edge_removal_allowed_by_macro_info(const BackgroundSurface & surface, const PolygonEdge & edge, const std::optional<PolygonVertex> & tshape_apex)
-```
-
-
-### epsilon_optimize_background_solid_elements
-
-```cpp
-std::vector<index_t> epsilon_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, TetrahedralSolidBuilder3D & builder, absl::Span<const index_t> tetrahedra)
 ```
 
 
