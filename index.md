@@ -10,15 +10,5 @@ hero:
     - theme: brand
       text: Guides
       link: /guides
-    - theme: brand
-      text: References
-      link: /references
-# features:
-#   - title: User Guides 
-#     details:  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-#   - title: Developer Guides
-#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-#   - title: References
-#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 

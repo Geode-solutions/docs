@@ -1,11 +1,6 @@
 import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-    vite: {
-        ssr: {
-            noExternal: ['vuetify']
-        }
-    },
     head: [['link', { rel: 'icon', href: '/logo.svg' }],
         ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/logo.svg' }],
     ],
@@ -14,7 +9,7 @@ export default defineConfig({
     themeConfig: {
         footer: {
             message: "Geode-solutions' documentation website",
-            copyright: 'Copyright © 2019 - 2023 — Geode-solutions SAS. All rights reserved.',
+            copyright: 'Copyright © 2019 - 2026 — Geode-solutions SAS. All rights reserved.',
         },
         logo: '/logo.svg',
         search: {
@@ -24,7 +19,6 @@ export default defineConfig({
         nav: [
             { text: 'Home', link: '/index' },
             { text: 'Guides', link: '/guides' },
-            { text: 'References', link: '/references' },
         ],
 
         sidebar: {
@@ -48,32 +42,6 @@ export default defineConfig({
                         { text: 'Use OpenGeode binding', link: '/guides/use-opengeode-binding' },
                         { text: 'Get OpenGeode code', link: '/guides/get-opengeode-code' },
                         { text: 'How to link with OpenGeode-IO', link: '/guides/how-to-link-with-opengeode-io' }
-                    ]
-                }
-            ],
-            '/references': [
-                {
-                    text: 'Open-source',
-                    items: [
-                        { text: 'OpenGeode', link: '/references/opengeode/' },
-                        { text: 'OpenGeode-IO', link: '/references/opengeode-io/' },
-                        { text: 'OpenGeode-Geosciences', link: '/references/opengeode-geosciences/' },
-                        { text: 'OpenGeode-GeosciencesIO', link: '/references/opengeode-geosciencesio/' },
-                        { text: 'OpenGeode-Inspector', link: '/references/opengeode-inspector/' },
-                    ]
-                },
-                {
-                    text: 'Proprietary Code Documentation',
-                    items: [
-                        { text: 'Geode-Common', link: '/references/geode-common/' },
-                        { text: 'Geode-Conversion', link: '/references/geode-conversion/' },
-                        { text: 'Geode-Numerics', link: '/references/geode-numerics/' },
-                        { text: 'Geode-Simplex', link: '/references/geode-simplex/' },
-                        { text: 'Geode-SimplexGeosciences', link: '/references/geode-simplexgeosciences/' },
-                        { text: 'Geode-Hybrid', link: '/references/geode-hybrid/' },
-                        { text: 'Geode-Explicit', link: '/references/geode-explicit/' },
-                        { text: 'Geode-Implicit', link: '/references/geode-implicit/' },
-                        { text: 'Geode-Viewables', link: '/references/geode-viewables/' }
                     ]
                 }
             ]
