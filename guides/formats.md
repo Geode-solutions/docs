@@ -48,43 +48,56 @@ import CodeExample from '/components/CodeExample.vue'
 
 ## Using OpenGeode-IO
 
-| File format | OpenGeode object                                                                                                                                                  | Input | Output | Notes                                                                                                               |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ------ | ------------------------------------------------------------------------------------------------------------------- |
-| .gexf        | [`Graph`]                                                                                                                                            |       | ✓      |  
-| .dxf        | [`PolygonalSurface3D`]                                                                                                                                            | ✓     | ✓      |                                                                                                                     |
-| .grdecl        | [`HybridSolid3D`]                                                                                                                                            | ✓     |       |                                                                                                                     |
-| .msh        | [`BRep`]                                                                                                                                                          | ✓     | ✓      | v2 and v4 for input, v4 only for output, requires triangulated surfaces and tetrahedral blocks (if they are meshed) |
-| .obj        | [`PolygonalSurface3D`]                                                                                                                                            | ✓     | ✓      |                                                                                                                     |
-| .obj        | [`TriangulatedSurface3D`]                                                                                                                                         |       | ✓      |                                                                                                                     |
-| .obj        | [`PolygonalSurface3D`]                                                                                                                                            | ✓     | ✓      |                                                                                                                     |
-| .smesh      | [`TriangulatedSurface3D`] [`EdgedCurve3D`]                                                                                                                        | ✓     |        |                                                                                                                     |
-| .shp        | [`Section`]                                                                                                                                                       | ✓     |        |                                                                                                                     |
-| .shz        | [`Section`]                                                                                                                                                       | ✓     |        |                                                                                                                     |
-| .stl        | [`TriangulatedSurface3D`]                                                                                                                                         | ✓     | ✓      |                                                                                                                     |
-| .svg        | [`Section`]                                                                                                                                                       | ✓     |        |                                                                                                                     |
-| .triangle   | [`TriangulatedSurface2D`]                                                                                                                                         | ✓     | ✓      | output three files named: .ele, .node, .neigh                                                                       |
-| .vti        | [`LightRegularGrid3D`] [`LightRegularGrid2D`] [`RegularGrid3D`] [`RegularGrid2D`]                                                                                 | ✓     |        | ascii, binary and encoded appendedData supported                                                                    |
-| .vti        | [`LightRegularGrid2D`] [`LightRegularGrid3D`] [`RegularGrid2D`] [`RegularGrid3D`] [`RasterImage2D`] [`RasterImage3D`]                                             |       | ✓      | ascii only supported                                                                                                |
-| .vtp        | [`PolygonalSurface3D`] [`PolygonalSurface2D`]                                                                                                                     | ✓     |        | ascii, binary and encoded appendedData supported                                                                    |
-| .vtp        | [`PointSet3D`] [`PolygonalSurface3D`] [`TriangulatedSurface3D`] [`EdgedCurve3D`] [`PointSet2D`] [`PolygonalSurface2D`] [`TriangulatedSurface2D`] [`EdgedCurve2D`] |       | ✓      | ascii only supported                                                                                                |
-| .vtu        | [`PolygonalSurface3D`] [`TriangulatedSurface3D`] [`PolyhedralSolid3D`] [`TetrahedralSolid3D`]                                                                     | ✓     |        | ascii, binary and encoded appendedData supported                                                                    |
-| .vtu        | [`PolyhedralSolid3D`] [`TetrahedralSolid3D`] [`HybridSolid3D`]                                                                                                    |       | ✓      | ascii only supported                                                                                                |
-| .vtm        | [`Section`] [`BRep`]                                                                                                                                              |       | ✓      |                                                                                                                     |
-| .jpg        | [`RasterImage2D`]                                                                                                                                                 | ✓     |        |                                                                                                                     |
-| .png        | [`RasterImage2D`]                                                                                                                                                 | ✓     |        |                                                                                                                     |
+| File format | OpenGeode object | Input | Output | Notes |
+| ----------- | ---------------- | ----- | ------ | ----- |
+| .bmp | [`RasterImage2D`] | ✓ | | |
+| .csv | [`PointSet3D`] | ✓ | | requires a .json settings file with the same name (keys: firstRow, headerRow, separator, xColumn, yColumn, zColumn), other columns are read as attributes |
+| .dot | [`PolygonalSurface2D`] [`PolygonalSurface3D`] [`TriangulatedSurface2D`] [`TriangulatedSurface3D`] | | ✓ | Graphviz graph of the mesh edges |
+| .dxf | [`PolygonalSurface3D`] | ✓ | | |
+| .gexf | [`Graph`] | | ✓ | |
+| .gid_msh | [`BRep`] | | ✓ | GiD mesh, requires triangulated surfaces and tetrahedral blocks, both with a material_number attribute |
+| .jpg | [`RasterImage2D`] | ✓ | | |
+| .msh | [`BRep`] | ✓ | ✓ | Gmsh ASCII format, v2 and v4 for input (partitioned entities are loaded into their parent entities), v4.1 for output, output requires triangulated surfaces and tetrahedral blocks |
+| .obj | [`PolygonalSurface3D`] | ✓ | ✓ | |
+| .obj | [`TriangulatedSurface3D`] | | ✓ | |
+| .ply | [`PolygonalSurface3D`] | ✓ | ✓ | |
+| .png | [`RasterImage2D`] | ✓ | | |
+| .pnt | [`PointSet3D`] | ✓ | | Map3D polylines, each point is a vertex with polyline and flag attributes, plus colour and mtype attributes when the file gives them |
+| .pvd | [`BRep`] time series | ✓ | | ParaView collection, the attributes of each time step are read onto an existing BRep |
+| .smesh | [`TriangulatedSurface3D`] [`EdgedCurve3D`] | ✓ | | |
+| .stl | [`TriangulatedSurface3D`] | ✓ | ✓ | |
+| .svg | [`Section`] | ✓ | | |
+| .tif, .tiff | [`RasterImage2D`] | ✓ | | |
+| .triangle | [`TriangulatedSurface2D`] | | ✓ | output three files named: .node, .ele, .neigh |
+| .vti | [`LightRegularGrid2D`] [`LightRegularGrid3D`] [`RegularGrid2D`] [`RegularGrid3D`] | ✓ | | ascii, binary and appended data (raw or base64) supported, with optional zlib compression |
+| .vti | [`LightRegularGrid2D`] [`LightRegularGrid3D`] [`RegularGrid2D`] [`RegularGrid3D`] [`RasterImage2D`] [`RasterImage3D`] | | ✓ | raw binary appended data |
+| .vtm | [`Section`] [`BRep`] | | ✓ | raw binary appended data |
+| .vtp | [`PolygonalSurface3D`] | ✓ | | ascii, binary and appended data (raw or base64) supported, with optional zlib compression |
+| .vtp | [`PointSet2D`] [`PointSet3D`] [`EdgedCurve2D`] [`EdgedCurve3D`] [`PolygonalSurface2D`] [`PolygonalSurface3D`] [`TriangulatedSurface2D`] [`TriangulatedSurface3D`] | | ✓ | raw binary appended data |
+| .vtu | [`PolygonalSurface3D`] [`TriangulatedSurface3D`] [`PolyhedralSolid3D`] [`TetrahedralSolid3D`] [`HybridSolid3D`] | ✓ | | ascii, binary and appended data (raw or base64) supported, with optional zlib compression |
+| .vtu | [`PolyhedralSolid3D`] [`TetrahedralSolid3D`] [`HybridSolid3D`] | | ✓ | raw binary appended data |
 
 ## Using OpenGeode-GeosciencesIO
 
-| File format | OpenGeode object          | Input | Output | Notes                          |
-| ----------- | ------------------------- | ----- | ------ | ------------------------------ |
-| .lso        | [`StructuralModel`]       | ✓     | ✓      | requires tetrahedral blocks    |
-| .ml         | [`StructuralModel`]       | ✓     | ✓      | requires triangulated surfaces |
-| .ml         | [`BRep`]                  |       | ✓      | requires triangulated surfaces |
-| .pl         | [`EdgedCurve3D`]          |       | ✓      |                                |
-| .ts         | [`TriangulatedSurface3D`] | ✓     | ✓      |                                |
-| .wl         | [`EdgedCurve3D`]          | ✓     | ✓      |                                |
-| .vo         | [`RegularGrid3D`]         | ✓     |        |                                |
-| .vs         | [`PointSet3D`]            | ✓     | ✓      |                                |
-| .dev        | [`EdgedCurve3D`]          | ✓     |        |                                |
-| .txt        | [`EdgedCurve3D`]          | ✓     |        |                                |
-| .dat        | [`EdgedCurve3D`]          | ✓     |        |                                |
+| File format | OpenGeode object | Input | Output | Notes |
+| ----------- | ---------------- | ----- | ------ | ----- |
+| .dat | [`EdgedCurve3D`] | ✓ | | well path given as X Y Z coordinates |
+| .dem | [`PolygonalSurface3D`] | ✓ | | USGS DEM elevation grid |
+| .dev | [`EdgedCurve3D`] | ✓ | | Petrel well trace |
+| .fem | [`TetrahedralSolid3D`] [`BRep`] | | ✓ | FEFLOW format, BRep output requires tetrahedral blocks |
+| .grdecl | [`HybridSolid3D`] | ✓ | | Eclipse corner-point grid |
+| .json | [`LightRegularGrid3D`] | ✓ | | grid cells given as a grid_df array of records (x, y, z and attribute values) |
+| .lso | [`StructuralModel`] | ✓ | ✓ | output requires triangulated surfaces and tetrahedral blocks |
+| .ml | [`StructuralModel`] | ✓ | ✓ | output requires triangulated surfaces |
+| .ml | [`BRep`] | | ✓ | requires triangulated surfaces |
+| .omf | [`PointSet3D`] [`EdgedCurve3D`] [`TriangulatedSurface3D`] [`PolygonalSurface3D`] [`LightRegularGrid3D`] | ✓ | | Open Mining Format v1 |
+| .pl | [`EdgedCurve3D`] | ✓ | ✓ | |
+| .shp, .shz | [`Section`] | ✓ | | |
+| .tif, .tiff | [`PolygonalSurface3D`] | ✓ | | elevation raster |
+| .tif, .tiff | [`LightRegularGrid2D`] | ✓ | | GeoTIFF, each data band is read as an attribute |
+| .ts | [`TriangulatedSurface3D`] | ✓ | ✓ | |
+| .txt | [`EdgedCurve3D`] | ✓ | | well path given as X Y Z coordinates |
+| .vo | [`RegularGrid3D`] | ✓ | | |
+| .vs | [`PointSet3D`] | ✓ | ✓ | |
+| .wl | [`EdgedCurve3D`] | ✓ | | |
+| .xml | [`HorizonsStack2D`] [`HorizonsStack3D`] | ✓ | | SKUA stratigraphic column |
